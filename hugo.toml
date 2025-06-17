@@ -1,6 +1,4 @@
 baseURL = "https://stan.ulbrych.org/"
-#theme = ['bearblog']
-
 title = "stan.ulbrych.org"
 author = ""
 copyright = "Copyright © 2025"
