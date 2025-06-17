@@ -1,28 +1,14 @@
 baseURL = "https://stan.ulbrych.org/"
 title = "stan.ulbrych.org"
-author = ""
-copyright = "Copyright © 2025"
 languageCode = "en-IE"
-
 enableRobotsTXT = false
 
 [params]
   description = "stan.ulbrych.org"
   # XXX add this
   favicon = "images/favicon.png"
-
-  # These "images" are used for the structured data templates. This will show up, when
-  # services like Twitter or Slack want to generate a preview of a link to your site.
-  # See https://gohugo.io/templates/internal#twitter-cards and
-  # https://gohugo.io/templates/internal#open-graph.
   images = ["images/share.png"]
-
-  # Another "title" :-). This one is used as the site_name on the Hugo's internal
-  # opengraph structured data template.
-  # See https://ogp.me/ and https://gohugo.io/templates/internal#open-graph.
   title = "stan.ulbrych.org"
-
-  hideMadeWithLine = true
 
 [markup]
   [markup.highlight]
@@ -30,6 +16,9 @@ enableRobotsTXT = false
     lineNos = true
     lineNumbersInTable = false
     codeFences = true
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [menu]
   [[menu.main]]
