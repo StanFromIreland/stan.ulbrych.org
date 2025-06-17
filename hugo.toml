@@ -1,5 +1,5 @@
 baseURL = "https://stan.ulbrych.org/"
-theme = ['bearblog']
+#theme = ['bearblog']
 
 title = "stan.ulbrych.org"
 author = ""
