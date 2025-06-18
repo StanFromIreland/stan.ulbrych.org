@@ -11,11 +11,6 @@ enableRobotsTXT = false
   title = "stan.ulbrych.org"
 
 [markup]
-  [markup.highlight]
-    style = 'friendly'
-    lineNos = true
-    lineNumbersInTable = false
-    codeFences = true
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
