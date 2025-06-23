@@ -6,7 +6,7 @@ enableRobotsTXT = false
 [params]
   description = "stan.ulbrych.org"
   # XXX add this
-  favicon = "images/favicon.png"
+  favicon = "favicon.ico"
   images = ["images/share.png"]
   title = "stan.ulbrych.org"
 
@@ -14,6 +14,3 @@ enableRobotsTXT = false
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
-
-[menu]
-  [[menu.main]]
