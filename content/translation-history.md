@@ -9,7 +9,7 @@ weight = 1
 I've always liked reflecting on the past, for without it, there would be no
 present. And so, with help from Maciek with milestones that predate me,
 I compiled a little chart that shows [python-docs-pl](https://github.com/python/python-docs-pl)'s
-progress since it's beginning, roughly six years ago.
+progress since it's inital commit, roughly six years ago.
 
 
 <img src="/translation_progress_en.svg" alt="Translation progress" style="width: 100%; height: auto;" />
