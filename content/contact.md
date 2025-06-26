@@ -4,6 +4,7 @@ menu = "main"
 weight = 10
 +++
 
+I speak 🇮🇪 English, 🇵🇱 Polish and some 🇮🇪 Irish. <br>
 You can contact me by:
 
 - Email: [stan[at]ulbrych.org](mailto:stan@ulbrych.org)
