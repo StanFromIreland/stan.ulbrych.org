@@ -22,3 +22,5 @@ many times that my CPU would melt. I may return to this in the future...
 
 [Download the Polish version here!](/translation_progress_pl.svg) <br />
 [See the scripts I used here!](/https://gist.github.com/StanFromIreland/ce400e0d497018fc8e8eb6b739e0b8eb)
+
+<meta name="fediverse:creator" content="@stanfromireland@mastodon.social">
