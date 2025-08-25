@@ -85,8 +85,7 @@
 <dl class="rfc2822 field-list simple">
 <dt class="field-odd">Author<span class="colon">:</span></dt>
 <dd class="field-odd">Pablo Galindo Salgado &lt;pablogsal&#32;&#97;t&#32;python.org&gt;,
-Stan Ulbrych &lt;stanulbrych&#32;&#97;t&#32;gmail.com&gt;,
-Petr Viktorin &lt;encukou&#32;&#97;t&#32;gmail.com&gt;</dd>
+Stan Ulbrych &lt;stanulbrych&#32;&#97;t&#32;gmail.com&gt;</dd>
 <dt class="field-even">Discussions-To<span class="colon">:</span></dt>
 <dd class="field-even">Pending</dd>
 <dt class="field-odd">Status<span class="colon">:</span></dt>
@@ -119,6 +118,7 @@ Petr Viktorin &lt;encukou&#32;&#97;t&#32;gmail.com&gt;</dd>
 </ul>
 </li>
 <li><a class="reference internal" href="#security-implications">Security Implications</a></li>
+<li><a class="reference internal" href="#acknowledgements">Acknowledgements</a></li>
 <li><a class="reference internal" href="#references">References</a></li>
 <li><a class="reference internal" href="#copyright">Copyright</a></li>
 </ul>
@@ -131,16 +131,7 @@ This will cause the interpreter to reinterpret what before
 would have been an assert with a two-element tuple that will always be <code class="docutils literal notranslate"><span class="pre">True</span></code>
 (<code class="code docutils literal notranslate"><span class="pre">assert</span> <span class="pre">(expression,</span> <span class="pre">message)</span></code>) to an <code class="xref std std-keyword docutils literal notranslate"><span class="pre">assert</span></code> statement with
 a subject and a failure message, equivalent to the statement with the parentheses
-removed (<code class="code docutils literal notranslate"><span class="pre">assert</span> <span class="pre">expression,</span> <span class="pre">message</span></code>). For example:</p>
-<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="p">(</span><span class="s1">&#39;Petr&#39;</span> <span class="o">==</span> <span class="s1">&#39;Pablo&#39;</span><span class="p">,</span> <span class="s1">&#39;That dosen</span><span class="se">\&#39;</span><span class="s1">t look right!&#39;</span><span class="p">)</span>
-<span class="go">&lt;python-input-0&gt;:0: SyntaxWarning: new assertation syntax, will assert first element of tuple</span>
-<span class="gt">Traceback (most recent call last):</span>
-  File <span class="nb">&quot;&lt;python-input-0&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
-<span class="w">    </span><span class="k">assert</span> <span class="p">(</span><span class="s1">&#39;Petr&#39;</span> <span class="o">==</span> <span class="s1">&#39;Pablo&#39;</span><span class="p">,</span> <span class="s1">&#39;That dosen</span><span class="se">\&#39;</span><span class="s1">t look right!&#39;</span><span class="p">)</span>
-<span class="w">            </span><span class="pm">^^^^^^^^^^^^^^^^^</span>
-<span class="gr">AssertionError</span>: <span class="n">That dosen&#39;t look right!</span>
-</pre></div>
-</div>
+removed (<code class="code docutils literal notranslate"><span class="pre">assert</span> <span class="pre">expression,</span> <span class="pre">message</span></code>).</p>
 </section>
 <section id="motivation">
 <h2><a class="toc-backref" href="#motivation" role="doc-backlink">Motivation</a></h2>
@@ -196,11 +187,15 @@ should be raised during compliation. Therefore, the “ideal”
 implementation cannot be initially implemented, and a compromise is nesecarry.</p>
 <section id="implementing-in-the-parser">
 <h3><a class="toc-backref" href="#implementing-in-the-parser" role="doc-backlink">Implementing in the parser</a></h3>
-<p>The warning implementation only allows for a semi-parser implementation, unlike
-the originally planned one <a class="footnote-reference brackets" href="#previmp" id="id5">[4]</a>. To raise the warning, the complier must
+<p>It is not possible to have a pure parser implementation with the warning
+specification.
+(Note that, without the warning specification the pure parser implementation is
+a small grammar change <a class="footnote-reference brackets" href="#previmp" id="id5">[4]</a>).
+To raise the warning, the complier must
 be aware of the new syntax, which means that a flag would be nesecarry as
-otherwise the information is lost during parsing. As such, the AST of an
-<a class="reference external" href="https://docs.python.org/3/reference/simple_stmts.html#assert" title="(in Python v3.13)"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">assert</span></code></a> would look like so:</p>
+otherwise the information is lost during parsing.
+As such, the AST of an <a class="reference external" href="https://docs.python.org/3/reference/simple_stmts.html#assert" title="(in Python v3.13)"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">assert</span></code></a> would look like so,
+with a <code class="docutils literal notranslate"><span class="pre">new_syntax</span></code> flag:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">ast</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">ast</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="s1">&#39;assert(True, &quot;Error message&quot;)&#39;</span><span class="p">),</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">))</span>
 <span class="go">Module(</span>
 <span class="go">    body=[</span>
@@ -230,7 +225,16 @@ to:</p>
 of the new change of how, what was previously a two element tuple, is parsed,
 a <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#SyntaxWarning" title="(in Python v3.13)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">SyntaxWarning</span></code></a> (with the message,
 <code class="docutils literal notranslate"><span class="pre">&quot;new</span> <span class="pre">assertation</span> <span class="pre">syntax,</span> <span class="pre">first</span> <span class="pre">element</span> <span class="pre">will</span> <span class="pre">be</span> <span class="pre">asserted&quot;</span></code>)
-will be raised till Python 3.17.</p>
+will be raised till Python 3.17. For example:</p>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="p">(</span><span class="s1">&#39;Petr&#39;</span> <span class="o">==</span> <span class="s1">&#39;Pablo&#39;</span><span class="p">,</span> <span class="s2">&quot;That doesn&#39;t look right!&quot;</span><span class="p">)</span>
+<span class="go">&lt;python-input-0&gt;:0: SyntaxWarning: new assertation syntax, will assert first element of tuple</span>
+<span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;&lt;python-input-0&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="w">    </span><span class="k">assert</span> <span class="p">(</span><span class="s1">&#39;Petr&#39;</span> <span class="o">==</span> <span class="s1">&#39;Pablo&#39;</span><span class="p">,</span> <span class="s2">&quot;That doesn&#39;t look right!&quot;</span><span class="p">)</span>
+<span class="w">            </span><span class="pm">^^^^^^^^^^^^^^^^^</span>
+<span class="gr">AssertionError</span>: <span class="n">That doesn&#39;t look right!</span>
+</pre></div>
+</div>
 <p>Optionally, new a “invalid” grammar rule can be added to the parser to
 promote the current <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#SyntaxWarning" title="(in Python v3.13)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">SyntaxWarning</span></code></a> to a <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#SyntaxError" title="(in Python v3.13)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">SyntaxError</span></code></a> in the
 case of tuples with 0, 1, 3 or more elements.</p>
@@ -275,14 +279,16 @@ adding a completely new syntax will, first and formost, not solve the common
 beginner footgun that this PEP aims to patch, but complicate the syntax further,
 it will also not improve the formatting of assert statements across multiple
 lines, with the proposed syntax improves.</p>
-<p>This does however offer a simpler implemenation, as without the backwards
-compatibility concerns of the proposed syntax, implementation can be done
-purley in the parser <a class="footnote-reference brackets" href="#easyimp" id="id7">[7]</a>.</p>
 </section>
 </section>
 <section id="security-implications">
 <h2><a class="toc-backref" href="#security-implications" role="doc-backlink">Security Implications</a></h2>
 <p>There are no security implications for this change.</p>
+</section>
+<section id="acknowledgements">
+<h2><a class="toc-backref" href="#acknowledgements" role="doc-backlink">Acknowledgements</a></h2>
+<p>Thanks Petr!
+.. TODO: Write Petr’s section</p>
 </section>
 <section id="references">
 <h2><a class="toc-backref" href="#references" role="doc-backlink">References</a></h2>
@@ -307,7 +313,7 @@ purley in the parser <a class="footnote-reference brackets" href="#easyimp" id="
 <dt class="label" id="assertwith">[<a href="#id6">6</a>]</dt>
 <dd><a class="reference external" href="https://discuss.python.org/t/pre-pep-assert-with-dedicated-syntax-for-assertion-messages/13247">[DPO] Pre-PEP: Assert-with: Dedicated syntax for assertion messages</a></aside>
 <aside class="footnote brackets" id="easyimp" role="doc-footnote">
-<dt class="label" id="easyimp">[<a href="#id7">7</a>]</dt>
+<dt class="label" id="easyimp">[7]</dt>
 <dd>An implementation of the rejected syntax can be found on this <a class="reference external" href="https://github.com/python/cpython/compare/main...StanFromIreland:assert-with?expand=1">branch</a></aside>
 </aside>
 </section>
@@ -341,6 +347,7 @@ CC0-1.0-Universal license, whichever is more permissive.</p>
 </ul>
 </li>
 <li><a class="reference internal" href="#security-implications">Security Implications</a></li>
+<li><a class="reference internal" href="#acknowledgements">Acknowledgements</a></li>
 <li><a class="reference internal" href="#references">References</a></li>
 <li><a class="reference internal" href="#copyright">Copyright</a></li>
 </ul>
