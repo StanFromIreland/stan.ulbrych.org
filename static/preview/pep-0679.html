@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="light dark">
-    <title>PEP 679 – New assert statment syntax with parentheses | peps.python.org</title>
+    <title>PEP 679 – New assert statement syntax with parentheses | peps.python.org</title>
     <link rel="shortcut icon" href="_static/py.png">
     <link rel="canonical" href="https://peps.python.org/pep-0679/">
     <link rel="stylesheet" href="_static/style.css" type="text/css">
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" media="(prefers-color-scheme: light)" id="pyg-light">
     <link rel="stylesheet" href="_static/pygments_dark.css" type="text/css" media="(prefers-color-scheme: dark)" id="pyg-dark">
     <link rel="alternate" type="application/rss+xml" title="Latest PEPs" href="https://peps.python.org/peps.rss">
-    <meta property="og:title" content='PEP 679 – New assert statment syntax with parentheses | peps.python.org'>
+    <meta property="og:title" content='PEP 679 – New assert statement syntax with parentheses | peps.python.org'>
     <meta property="og:description" content="This PEP proposes to allow function-like syntax, that is, parentheses surrounding the two-argument form of assert statements. This will cause the interpreter to reinterpret what before would have been an assert with a two-element tuple that will always ...">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://peps.python.org/pep-0679/">
@@ -81,7 +81,7 @@
         </header>
         <article>
             <section id="pep-content">
-<h1 class="page-title">PEP 679 – New assert statment syntax with parentheses</h1>
+<h1 class="page-title">PEP 679 – New assert statement syntax with parentheses</h1>
 <dl class="rfc2822 field-list simple">
 <dt class="field-odd">Author<span class="colon">:</span></dt>
 <dd class="field-odd">Pablo Galindo Salgado &lt;pablogsal&#32;&#97;t&#32;python.org&gt;,
@@ -148,31 +148,32 @@ code linters <a class="footnote-reference brackets" href="#fl8" id="id3">[2]</a>
 in one way or another like <code class="docutils literal notranslate"><span class="pre">import</span></code> statements (<code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">x</span> <span class="pre">import</span> <span class="pre">(a,b,c)</span></code>) and
 <code class="docutils literal notranslate"><span class="pre">del</span></code> statements (<code class="docutils literal notranslate"><span class="pre">del</span> <span class="pre">(a,b,c)</span></code>), not to mention function syntax, which is
 often expected by beginners.</p>
-<p>The new asserts are also similar to the prominent <a class="reference external" href="https://docs.python.org/3/library/unittest.html#module-unittest" title="(in Python v3.13)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">unittest</span></code></a> methods,
-particulary <a class="reference external" href="https://docs.python.org/3/library/unittest.html#unittest.TestCase.assertTrue" title="(in Python v3.13)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">assertTrue()</span></code></a>.</p>
+<p>The new assert syntax is also similar to the prominent <a class="reference external" href="https://docs.python.org/3/library/unittest.html#module-unittest" title="(in Python v3.13)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">unittest</span></code></a> methods,
+particularly <a class="reference external" href="https://docs.python.org/3/library/unittest.html#unittest.TestCase.assertTrue" title="(in Python v3.13)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">assertTrue()</span></code></a>.</p>
 <p>Allowing parentheses not only will remove the common mistake but also will allow
 users and auto-formatters to format long assert statements over multiple lines
 in what the authors of this document believe will be a more natural way.
 Although is possible to currently format long <a class="reference external" href="https://docs.python.org/3/reference/simple_stmts.html#assert" title="(in Python v3.13)"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">assert</span></code></a> statements over
-multiple lines with back slashes (as is recommended by <a class="pep reference internal" href="pep-0008.html" title="PEP 8 – Style Guide for Python Code">PEP 8</a>) or parentisies:</p>
+multiple lines with back slashes (as is recommended by
+<a class="pep reference internal" href="pep-0008.html#maximum-line-length" title="PEP 8 – Style Guide for Python Code § Maximum Line Length">PEP 8</a>) or parentheses and a comma:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="p">(</span>
-    <span class="n">very</span> <span class="n">very</span> <span class="n">long</span>
-    <span class="n">expression</span>
+  <span class="n">very</span> <span class="n">very</span> <span class="n">long</span>
+  <span class="n">expression</span>
 <span class="p">),</span> <span class="p">(</span>
-    <span class="s2">&quot;very very long &quot;</span>
-    <span class="s2">&quot;error message&quot;</span>
+  <span class="s2">&quot;very very long &quot;</span>
+  <span class="s2">&quot;error message&quot;</span>
 <span class="p">)</span>
 </pre></div>
 </div>
 <p>the authors of this document believe the proposed parenthesized form is more
-clear and intutive, along with being more consistent with the formatting of
+clear and intuitive, along with being more consistent with the formatting of
 other grammar constructs:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="p">(</span>
-    <span class="n">very</span> <span class="n">very</span> <span class="n">long</span>
-    <span class="n">expression</span><span class="p">,</span>
+  <span class="n">very</span> <span class="n">very</span> <span class="n">long</span>
+  <span class="n">expression</span><span class="p">,</span>
 
-    <span class="s2">&quot;very very long &quot;</span>
-    <span class="s2">&quot;message&quot;</span>
+  <span class="s2">&quot;very very long &quot;</span>
+  <span class="s2">&quot;message&quot;</span>
 <span class="p">)</span>
 </pre></div>
 </div>
@@ -183,16 +184,17 @@ other grammar constructs:</p>
 <p>This change can be implemented in the parser or in the compiler.
 The specification that a <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#SyntaxWarning" title="(in Python v3.13)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">SyntaxWarning</span></code></a> be raised informing users
 of the new syntax complicates the implementation, as warnings
-should be raised during compliation. Therefore, the “ideal”
-implementation cannot be initially implemented, and a compromise is nesecarry.</p>
+should be raised during compilation. Therefore, the “ideal”
+implementation cannot be initially implemented, and a temporary compromise is
+necessary.</p>
 <section id="implementing-in-the-parser">
 <h3><a class="toc-backref" href="#implementing-in-the-parser" role="doc-backlink">Implementing in the parser</a></h3>
 <p>It is not possible to have a pure parser implementation with the warning
 specification.
 (Note that, without the warning specification the pure parser implementation is
 a small grammar change <a class="footnote-reference brackets" href="#previmp" id="id5">[4]</a>).
-To raise the warning, the complier must
-be aware of the new syntax, which means that a flag would be nesecarry as
+To raise the warning, the compiler must
+be aware of the new syntax, which means that a flag would be necessary as
 otherwise the information is lost during parsing.
 As such, the AST of an <a class="reference external" href="https://docs.python.org/3/reference/simple_stmts.html#assert" title="(in Python v3.13)"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">assert</span></code></a> would look like so,
 with a <code class="docutils literal notranslate"><span class="pre">new_syntax</span></code> flag:</p>
@@ -208,9 +210,13 @@ with a <code class="docutils literal notranslate"><span class="pre">new_syntax</
 </section>
 <section id="implementing-in-the-compiler">
 <h3><a class="toc-backref" href="#implementing-in-the-compiler" role="doc-backlink">Implementing in the compiler</a></h3>
-<p>The new syntax can be implemented in the complier by special casing tuples
+<p>The new syntax can be implemented in the compiler by special casing tuples
 of length two. This however, will have the side-effect of not modifying the
-AST whatsoever.</p>
+AST whatsoever during the transition period while the <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#SyntaxWarning" title="(in Python v3.13)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">SyntaxWarning</span></code></a>
+is being emitted.</p>
+<p>Once the <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#SyntaxWarning" title="(in Python v3.13)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">SyntaxWarning</span></code></a> is removed, the implementation
+can be moved to the parser level, where the parenthesized form would be
+parsed directly into the same AST structure as <code class="docutils literal notranslate"><span class="pre">assert</span> <span class="pre">expression,</span> <span class="pre">message</span></code>.</p>
 </section>
 </section>
 <section id="specification">
@@ -223,11 +229,11 @@ to:</p>
 </div>
 <p>Due to backwards compatibility concerns (see section below), to inform users
 of the new change of how, what was previously a two element tuple, is parsed,
-a <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#SyntaxWarning" title="(in Python v3.13)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">SyntaxWarning</span></code></a> (with the message,
-<code class="docutils literal notranslate"><span class="pre">&quot;new</span> <span class="pre">assertation</span> <span class="pre">syntax,</span> <span class="pre">first</span> <span class="pre">element</span> <span class="pre">will</span> <span class="pre">be</span> <span class="pre">asserted&quot;</span></code>)
+a <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#SyntaxWarning" title="(in Python v3.13)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">SyntaxWarning</span></code></a> (with the message like:
+<code class="docutils literal notranslate"><span class="pre">&quot;new</span> <span class="pre">assertion</span> <span class="pre">syntax,</span> <span class="pre">will</span> <span class="pre">assert</span> <span class="pre">first</span> <span class="pre">element</span> <span class="pre">of</span> <span class="pre">tuple&quot;</span></code>)
 will be raised till Python 3.17. For example:</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="p">(</span><span class="s1">&#39;Petr&#39;</span> <span class="o">==</span> <span class="s1">&#39;Pablo&#39;</span><span class="p">,</span> <span class="s2">&quot;That doesn&#39;t look right!&quot;</span><span class="p">)</span>
-<span class="go">&lt;python-input-0&gt;:0: SyntaxWarning: new assertation syntax, will assert first element of tuple</span>
+<span class="go">&lt;python-input-0&gt;:0: SyntaxWarning: new assertion syntax, will assert first element of tuple</span>
 <span class="gt">Traceback (most recent call last):</span>
   File <span class="nb">&quot;&lt;python-input-0&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
 <span class="w">    </span><span class="k">assert</span> <span class="p">(</span><span class="s1">&#39;Petr&#39;</span> <span class="o">==</span> <span class="s1">&#39;Pablo&#39;</span><span class="p">,</span> <span class="s2">&quot;That doesn&#39;t look right!&quot;</span><span class="p">)</span>
@@ -235,7 +241,7 @@ will be raised till Python 3.17. For example:</p>
 <span class="gr">AssertionError</span>: <span class="n">That doesn&#39;t look right!</span>
 </pre></div>
 </div>
-<p>Optionally, new a “invalid” grammar rule can be added to the parser to
+<p>Optionally, a new “invalid” grammar rule can be added to the parser to
 promote the current <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#SyntaxWarning" title="(in Python v3.13)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">SyntaxWarning</span></code></a> to a <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#SyntaxError" title="(in Python v3.13)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">SyntaxError</span></code></a> in the
 case of tuples with 0, 1, 3 or more elements.</p>
 </section>
@@ -250,7 +256,7 @@ that this backwards incompatibility nature is beneficial, as it will highlight
 these cases in user code while before they will have passed unnoticed. This case
 has already raised a <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#SyntaxWarning" title="(in Python v3.13)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">SyntaxWarning</span></code></a> since 3.10, therefore these cases
 only exist if users are ignoring syntax warnings. The continued raising of a
-<code class="xref py py-exc docutils literal notranslate"><span class="pre">SyntaxWarning</span></code> should hopefully mitigate suprises.</p>
+<code class="xref py py-exc docutils literal notranslate"><span class="pre">SyntaxWarning</span></code> should hopefully mitigate surprises.</p>
 </section>
 <section id="how-to-teach-this">
 <h2><a class="toc-backref" href="#how-to-teach-this" role="doc-backlink">How to Teach This</a></h2>
@@ -264,7 +270,7 @@ the statement over multiple lines.</p>
 <h2><a class="toc-backref" href="#reference-implementation" role="doc-backlink">Reference Implementation</a></h2>
 <p>A reference implementation in the parser can be found in this
 <a class="reference external" href="https://github.com/python/cpython/compare/main...StanFromIreland:assert-prototype?expand=1">branch</a>
-and reference implementation in the complier can be found in this
+and reference implementation in the compiler can be found in this
 <a class="reference external" href="https://github.com/python/cpython/compare/main...StanFromIreland:assert-codegen?expand=1">branch</a>.</p>
 </section>
 <section id="rejected-ideas">
@@ -275,10 +281,10 @@ and reference implementation in the complier can be found in this
 </pre></div>
 </div>
 <p>This has been proposed before <a class="footnote-reference brackets" href="#assertwith" id="id6">[6]</a> however the authors believe that
-adding a completely new syntax will, first and formost, not solve the common
-beginner footgun that this PEP aims to patch, but complicate the syntax further,
-it will also not improve the formatting of assert statements across multiple
-lines, with the proposed syntax improves.</p>
+adding a completely new syntax will, first and foremost, not solve the common
+beginner footgun that this PEP aims to patch, but complicate the syntax further.
+It will also not improve the formatting of assert statements across multiple
+lines, which the proposed syntax improves.</p>
 </section>
 </section>
 <section id="security-implications">
@@ -287,8 +293,7 @@ lines, with the proposed syntax improves.</p>
 </section>
 <section id="acknowledgements">
 <h2><a class="toc-backref" href="#acknowledgements" role="doc-backlink">Acknowledgements</a></h2>
-<p>Thanks Petr!
-.. TODO: Write Petr’s section</p>
+<p>Thanks Petr!</p>
 </section>
 <section id="references">
 <h2><a class="toc-backref" href="#references" role="doc-backlink">References</a></h2>
@@ -308,13 +313,10 @@ lines, with the proposed syntax improves.</p>
 <aside class="footnote brackets" id="exception" role="doc-footnote">
 <dt class="label" id="exception">[<a href="#id2">5</a>]</dt>
 <dd>During the updating of this PEP, an exception
-(<code class="docutils literal notranslate"><span class="pre">assert</span> <span class="pre">(*(t</span> <span class="pre">:=</span> <span class="pre">()),)</span></code>) was found, contradciting the warning.</aside>
+(<code class="docutils literal notranslate"><span class="pre">assert</span> <span class="pre">(*(t</span> <span class="pre">:=</span> <span class="pre">()),)</span></code>) was found, contradicting the warning.</aside>
 <aside class="footnote brackets" id="assertwith" role="doc-footnote">
 <dt class="label" id="assertwith">[<a href="#id6">6</a>]</dt>
 <dd><a class="reference external" href="https://discuss.python.org/t/pre-pep-assert-with-dedicated-syntax-for-assertion-messages/13247">[DPO] Pre-PEP: Assert-with: Dedicated syntax for assertion messages</a></aside>
-<aside class="footnote brackets" id="easyimp" role="doc-footnote">
-<dt class="label" id="easyimp">[7]</dt>
-<dd>An implementation of the rejected syntax can be found on this <a class="reference external" href="https://github.com/python/cpython/compare/main...StanFromIreland:assert-with?expand=1">branch</a></aside>
 </aside>
 </section>
 <section id="copyright">
