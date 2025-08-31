@@ -100,6 +100,7 @@
 <section id="contents">
 <details><summary>Table of Contents</summary><ul class="simple">
 <li><a class="reference internal" href="#abstract">Abstract</a></li>
+<li><a class="reference internal" href="#motivation">Motivation</a></li>
 <li><a class="reference internal" href="#rationale">Rationale</a></li>
 <li><a class="reference internal" href="#specification">Specification</a></li>
 <li><a class="reference internal" href="#security-implications">Security Implications</a></li>
@@ -114,15 +115,16 @@
 currently hosted on GitHub (since <a class="pep reference internal" href="pep-0512.html" title="PEP 512 – Migrating from hg.python.org to GitHub">PEP 512</a>), on an additional hosting
 platform to ensure resilience.</p>
 </section>
-<section id="rationale">
-<h2><a class="toc-backref" href="#rationale" role="doc-backlink">Rationale</a></h2>
+<section id="motivation">
+<h2><a class="toc-backref" href="#motivation" role="doc-backlink">Motivation</a></h2>
 <p>The authors believe that mirroring the repository on an alternative
 platform will limit
 <a class="reference external" href="https://en.wikipedia.org/wiki/Vendor_lock-in">vendor lock-in</a>  and improve
 the security, resilience, and accessibility of CPython without impacting the
 current development workflow.
 Currently, the up-to-date CPython source code is officially available only
-on GitHub, following the retirement of <a class="reference external" href="https://hg.python.org/">hg.python.org</a>.</p>
+on GitHub, following the retirement of <a class="reference external" href="https://hg.python.org/">hg.python.org</a>.
+The idea of mirror was orignally noted in <a class="pep reference internal" href="pep-0512.html#the-fate-of-hg-python-org" title="PEP 512 – Migrating from hg.python.org to GitHub § The fate of hg.python.org">PEP 512</a>.</p>
 <p>Many open source projects provide mirrors, for example
 <a class="reference external" href="https://github.com/GNOME">GNOME</a>, <a class="reference external" href="https://github.com/KDE?">KDE</a>,
 <a class="reference external" href="https://github.com/git/git">Git</a>, <a class="reference external" href="https://github.com/gcc-mirror/gcc">GCC</a>
@@ -141,9 +143,12 @@ one can pull the most recent state of the repository from the mirror.
 In the event of a permanent outage, having a mirror with the
 <code class="docutils literal notranslate"><span class="pre">python</span></code> namespace would allow for a much smoother migration to a new
 contribution platform.</p>
-<p>Some people prefer using open source platforms to develop open source projects.
+<p>Some contributors prefer using open source platforms to develop open source projects.
 Since <a class="reference external" href="github.com">GitHub</a> is not open source, a mirror would allow us to
 address this concern.</p>
+</section>
+<section id="rationale">
+<h2><a class="toc-backref" href="#rationale" role="doc-backlink">Rationale</a></h2>
 <p>The mirror is <strong>not</strong> intended to replace the host for contributions
 (issues, pull requests, CI), but to provide an additional
 read-only distribution channel for the Git data (commits, branches, tags etc.)
@@ -172,9 +177,9 @@ The mirror being read-only alleviates some risk of compromise, but not all.</p>
 </section>
 <section id="open-questions">
 <h2><a class="toc-backref" href="#open-questions" role="doc-backlink">Open Questions</a></h2>
-<p>What platform should be used? The platform should be free, as so to not have a
+<p>What platform should be used? The platform should be free, so as not to have a
 financial impact on the PSF. There are several options, for example
-<a class="reference external" href="https://gitlab.com/">GitLab</a> and <a class="reference external" href="https://codeberg.org/">codeberg</a>.</p>
+<a class="reference external" href="https://gitlab.com/">GitLab</a> and <a class="reference external" href="https://codeberg.org/">Codeberg</a>.</p>
 </section>
 <section id="copyright">
 <h2><a class="toc-backref" href="#copyright" role="doc-backlink">Copyright</a></h2>
@@ -184,13 +189,14 @@ CC0-1.0-Universal license, whichever is more permissive.</p>
 </section>
 <hr class="docutils" />
 <p>Source: <a class="reference external" href="https://github.com/python/peps/blob/main/peps/pep-0804.rst">https://github.com/python/peps/blob/main/peps/pep-0804.rst</a></p>
-<p>Last modified: <a class="reference external" href="https://github.com/python/peps/commits/main/peps/pep-0804.rst"> GMT</a></p>
+<p>Last modified: <a class="reference external" href="https://github.com/python/peps/commits/main/peps/pep-0804.rst">2025-08-31 16:33:06 GMT</a></p>
 
         </article>
         <nav id="pep-sidebar">
             <h2>Contents</h2>
             <ul>
 <li><a class="reference internal" href="#abstract">Abstract</a></li>
+<li><a class="reference internal" href="#motivation">Motivation</a></li>
 <li><a class="reference internal" href="#rationale">Rationale</a></li>
 <li><a class="reference internal" href="#specification">Specification</a></li>
 <li><a class="reference internal" href="#security-implications">Security Implications</a></li>
