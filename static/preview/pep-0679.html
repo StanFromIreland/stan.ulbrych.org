@@ -105,12 +105,13 @@ Stan Ulbrych &lt;stanulbrych&#32;&#97;t&#32;gmail.com&gt;</dd>
 <details><summary>Table of Contents</summary><ul class="simple">
 <li><a class="reference internal" href="#abstract">Abstract</a></li>
 <li><a class="reference internal" href="#motivation">Motivation</a></li>
-<li><a class="reference internal" href="#rationale">Rationale</a><ul>
+<li><a class="reference internal" href="#rationale">Rationale</a></li>
+<li><a class="reference internal" href="#specification">Specification</a></li>
+<li><a class="reference internal" href="#implementation-notes">Implementation Notes</a><ul>
 <li><a class="reference internal" href="#implementing-in-the-parser">Implementing in the parser</a></li>
 <li><a class="reference internal" href="#implementing-in-the-compiler">Implementing in the compiler</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#specification">Specification</a></li>
 <li><a class="reference internal" href="#backwards-compatibility">Backwards Compatibility</a></li>
 <li><a class="reference internal" href="#how-to-teach-this">How to Teach This</a></li>
 <li><a class="reference internal" href="#reference-implementation">Reference Implementation</a></li>
@@ -128,14 +129,15 @@ Stan Ulbrych &lt;stanulbrych&#32;&#97;t&#32;gmail.com&gt;</dd>
 <h2><a class="toc-backref" href="#abstract" role="doc-backlink">Abstract</a></h2>
 <p>This PEP proposes allowing parentheses in the two-argument form of <a class="reference external" href="https://docs.python.org/3/reference/simple_stmts.html#assert" title="(in Python v3.13)"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">assert</span></code></a>.
 The interpreter will reinterpret <code class="docutils literal notranslate"><span class="pre">assert</span> <span class="pre">(expr,</span> <span class="pre">msg)</span></code> as <code class="docutils literal notranslate"><span class="pre">assert</span> <span class="pre">expr,</span> <span class="pre">msg</span></code>,
-eliminating the common footgun where such code was previously treated as
-asserting a two-element tuple, which is always truthy.</p>
+eliminating the common <a class="reference external" href="https://en.wiktionary.org/wiki/footgun">footgun</a>
+where such code was previously treated as asserting a two-element <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.13)"><code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></a>,
+which is always truthy.</p>
 </section>
 <section id="motivation">
 <h2><a class="toc-backref" href="#motivation" role="doc-backlink">Motivation</a></h2>
 <p>It is a common user mistake when using the form of the <a class="reference external" href="https://docs.python.org/3/reference/simple_stmts.html#assert" title="(in Python v3.13)"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">assert</span></code></a>
 statement that includes the error message to surround it with parentheses <a class="footnote-reference brackets" href="#so1" id="id1">[1]</a>.
-This is because many begginers assume <code class="xref std std-keyword docutils literal notranslate"><span class="pre">assert</span></code> is a function.
+This is because many beginners assume <code class="xref std std-keyword docutils literal notranslate"><span class="pre">assert</span></code> is a function.
 Unfortunately, this mistake passes undetected as the <code class="docutils literal notranslate"><span class="pre">assert</span></code> will always pass
 <a class="footnote-reference brackets" href="#exception" id="id2">[5]</a>, because it is interpreted as an <code class="docutils literal notranslate"><span class="pre">assert</span></code> statement where the
 expression is a two-tuple, which always has truth-y value.
@@ -175,11 +177,15 @@ other grammar constructs:</p>
 <span class="p">)</span>
 </pre></div>
 </div>
+</section>
+<section id="rationale">
+<h2><a class="toc-backref" href="#rationale" role="doc-backlink">Rationale</a></h2>
 <p>Due to backwards compatibility concerns (see section below), to inform users
 of the new change of how, what was previously a two element tuple, is parsed,
 a <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#SyntaxWarning" title="(in Python v3.13)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">SyntaxWarning</span></code></a> (with the message like:
 <code class="docutils literal notranslate"><span class="pre">&quot;new</span> <span class="pre">assertion</span> <span class="pre">syntax,</span> <span class="pre">will</span> <span class="pre">assert</span> <span class="pre">first</span> <span class="pre">element</span> <span class="pre">of</span> <span class="pre">tuple&quot;</span></code>)
-will be raised till Python 3.17. For example:</p>
+will be raised till Python 3.17. Note that improving syntax warnings in general
+is out of the scope of this PEP. For example, when using the new syntax:</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="p">(</span><span class="s1">&#39;Petr&#39;</span> <span class="o">==</span> <span class="s1">&#39;Pablo&#39;</span><span class="p">,</span> <span class="s2">&quot;That doesn&#39;t look right!&quot;</span><span class="p">)</span>
 <span class="go">&lt;python-input-0&gt;:0: SyntaxWarning: new assertion syntax, will assert first element of tuple</span>
 <span class="gt">Traceback (most recent call last):</span>
@@ -190,8 +196,21 @@ will be raised till Python 3.17. For example:</p>
 </pre></div>
 </div>
 </section>
-<section id="rationale">
-<h2><a class="toc-backref" href="#rationale" role="doc-backlink">Rationale</a></h2>
+<section id="specification">
+<h2><a class="toc-backref" href="#specification" role="doc-backlink">Specification</a></h2>
+<p>This PEP proposes changing the formal grammar of the <a class="reference external" href="https://docs.python.org/3/reference/simple_stmts.html#assert" title="(in Python v3.13)"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">assert</span></code></a> statement
+to:</p>
+<div class="highlight-bnf notranslate"><div class="highlight"><pre><span></span>assert_stmt <span class="o">::=</span> &quot;assert&quot; expression [&#39;,&#39; expression]
+                | &quot;assert&quot; &#39;(&#39; expression [&#39;,&#39; expression] [&#39;,&#39;] &#39;)&#39;
+</pre></div>
+</div>
+<p>The second case will raise a <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#SyntaxWarning" title="(in Python v3.13)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">SyntaxWarning</span></code></a> till 3.17.</p>
+<p>Optionally, a new “invalid” grammar rule can be added to the parser to
+promote the current <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#SyntaxWarning" title="(in Python v3.13)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">SyntaxWarning</span></code></a> to a <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#SyntaxError" title="(in Python v3.13)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">SyntaxError</span></code></a> in the
+case of tuples with 0, 1, 3 or more elements.</p>
+</section>
+<section id="implementation-notes">
+<h2><a class="toc-backref" href="#implementation-notes" role="doc-backlink">Implementation Notes</a></h2>
 <p>This change can be implemented in the parser or in the compiler.
 The specification that a <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#SyntaxWarning" title="(in Python v3.13)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">SyntaxWarning</span></code></a> be raised informing users
 of the new syntax complicates the implementation, as warnings
@@ -210,14 +229,14 @@ To raise the warning, the compiler must
 be aware of the new syntax, which means that a flag would be necessary as
 otherwise the information is lost during parsing.
 As such, the AST of an <a class="reference external" href="https://docs.python.org/3/reference/simple_stmts.html#assert" title="(in Python v3.13)"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">assert</span></code></a> would look like so,
-with a <code class="docutils literal notranslate"><span class="pre">new_syntax</span></code> flag:</p>
+with a <code class="docutils literal notranslate"><span class="pre">paren_syntax</span></code> flag:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">ast</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">ast</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="s1">&#39;assert(True, &quot;Error message&quot;)&#39;</span><span class="p">),</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">))</span>
 <span class="go">Module(</span>
 <span class="go">    body=[</span>
 <span class="go">        Assert(</span>
 <span class="go">            test=Constant(value=True),</span>
 <span class="go">            msg=Constant(value=&#39;Error message&#39;),</span>
-<span class="go">            new_syntax=1)])</span>
+<span class="go">            paren_syntax=1)])</span>
 </pre></div>
 </div>
 </section>
@@ -233,19 +252,6 @@ parsed directly into the same AST structure as <code class="docutils literal not
 This approach is more backwards-compatible, as the many tools that deal with
 ASTs will have more time to adapt.</p>
 </section>
-</section>
-<section id="specification">
-<h2><a class="toc-backref" href="#specification" role="doc-backlink">Specification</a></h2>
-<p>This PEP proposes changing the formal grammar of the <a class="reference external" href="https://docs.python.org/3/reference/simple_stmts.html#assert" title="(in Python v3.13)"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">assert</span></code></a> statement
-to:</p>
-<div class="highlight-bnf notranslate"><div class="highlight"><pre><span></span>assert_stmt <span class="o">::=</span> &quot;assert&quot; expression [&#39;,&#39; expression]
-                | &quot;assert&quot; &#39;(&#39; expression [&#39;,&#39; expression] [&#39;,&#39;] &#39;)&#39;
-</pre></div>
-</div>
-<p>The second case will raise a <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#SyntaxWarning" title="(in Python v3.13)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">SyntaxWarning</span></code></a> till 3.17.</p>
-<p>Optionally, a new “invalid” grammar rule can be added to the parser to
-promote the current <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#SyntaxWarning" title="(in Python v3.13)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">SyntaxWarning</span></code></a> to a <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#SyntaxError" title="(in Python v3.13)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">SyntaxError</span></code></a> in the
-case of tuples with 0, 1, 3 or more elements.</p>
 </section>
 <section id="backwards-compatibility">
 <h2><a class="toc-backref" href="#backwards-compatibility" role="doc-backlink">Backwards Compatibility</a></h2>
@@ -308,13 +314,28 @@ and reference implementation in the compiler can be found in this
 <h2><a class="toc-backref" href="#rejected-ideas" role="doc-backlink">Rejected Ideas</a></h2>
 <section id="adding-a-syntax-with-a-keyword">
 <h3><a class="toc-backref" href="#adding-a-syntax-with-a-keyword" role="doc-backlink">Adding a syntax with a keyword</a></h3>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">condition</span> <span class="k">else</span> <span class="s2">&quot;Error message&quot;</span>
+<p>Everywhere else in Python syntax, the comma separates variable-length “lists”
+of homogeneous elements, like the the items of a <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.13)"><code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.13)"><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></a>,
+parameters/arguments of functions, or import targets.
+After Python 3.0 introduced <a class="reference external" href="https://docs.python.org/3/reference/compound_stmts.html#except" title="(in Python v3.13)"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">except...as</span></code></a>,
+the <a class="reference external" href="https://docs.python.org/3/reference/simple_stmts.html#assert" title="(in Python v3.13)"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">assert</span></code></a> statement remains as the only exception to this convention.</p>
+<p>It’s possible that user confusion stems, at least partly, from an expectation
+that comma-separated items are equivalent.
+Enclosing an <code class="xref std std-keyword docutils literal notranslate"><span class="pre">assert</span></code> statement’s expression and message in
+parentheses would visually bind them together even further, making them more
+similar to a function call, which can be confusing.</p>
+<p>As a possible solution, it was proposed <a class="footnote-reference brackets" href="#assertwith" id="id6">[6]</a> to replace the comma with
+a keyword, and the form would allow parentheses, for example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">condition</span> <span class="k">else</span> <span class="s2">&quot;message&quot;</span>
+<span class="k">assert</span> <span class="p">(</span><span class="n">condition</span> <span class="k">else</span> <span class="s2">&quot;message&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>This has been proposed before <a class="footnote-reference brackets" href="#assertwith" id="id6">[6]</a> however the authors believe that
-adding a completely new syntax will, first and foremost, not solve the common
-beginner footgun that this PEP aims to patch, but complicate the syntax further.
-It will also not improve the formatting of assert statements across multiple
+<p>The comma could then be slowly and carefully deprecated, starting with
+the case where they appear in parentheses, which already raises a
+<a class="reference external" href="https://docs.python.org/3/library/exceptions.html#SyntaxWarning" title="(in Python v3.13)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">SyntaxWarning</span></code></a>.</p>
+<p>The authors of this PEP believe that adding a completely new syntax will,
+first and foremost, not solve the common beginner footgun that this PEP aims to
+patch, and will not improve the formatting of assert statements across multiple
 lines, which the authors believe the proposed syntax improves.</p>
 </section>
 </section>
@@ -325,7 +346,7 @@ lines, which the authors believe the proposed syntax improves.</p>
 <section id="acknowledgements">
 <h2><a class="toc-backref" href="#acknowledgements" role="doc-backlink">Acknowledgements</a></h2>
 <p>This change was originally discussed and proposed in <a class="extlink-cpython-issue reference external" href="https://github.com/python/cpython/issues/90325">python/cpython#90325</a>.</p>
-<p>Many thanks to Petr Viktorin for his help during the drafting process.</p>
+<p>Many thanks to Petr Viktorin for his help during the drafting process of this PEP.</p>
 </section>
 <section id="footnotes">
 <h2><a class="toc-backref" href="#footnotes" role="doc-backlink">Footnotes</a></h2>
@@ -367,12 +388,13 @@ CC0-1.0-Universal license, whichever is more permissive.</p>
             <ul>
 <li><a class="reference internal" href="#abstract">Abstract</a></li>
 <li><a class="reference internal" href="#motivation">Motivation</a></li>
-<li><a class="reference internal" href="#rationale">Rationale</a><ul>
+<li><a class="reference internal" href="#rationale">Rationale</a></li>
+<li><a class="reference internal" href="#specification">Specification</a></li>
+<li><a class="reference internal" href="#implementation-notes">Implementation Notes</a><ul>
 <li><a class="reference internal" href="#implementing-in-the-parser">Implementing in the parser</a></li>
 <li><a class="reference internal" href="#implementing-in-the-compiler">Implementing in the compiler</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#specification">Specification</a></li>
 <li><a class="reference internal" href="#backwards-compatibility">Backwards Compatibility</a></li>
 <li><a class="reference internal" href="#how-to-teach-this">How to Teach This</a></li>
 <li><a class="reference internal" href="#reference-implementation">Reference Implementation</a></li>
