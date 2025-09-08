@@ -5,18 +5,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="light dark">
-    <title>PEP 805 – Creation of a CPython mirror | peps.python.org</title>
+    <title>PEP 806 – Creation of a CPython mirror | peps.python.org</title>
     <link rel="shortcut icon" href="_static/py.png">
-    <link rel="canonical" href="https://peps.python.org/pep-0805/">
+    <link rel="canonical" href="https://peps.python.org/pep-0806/">
     <link rel="stylesheet" href="_static/style.css" type="text/css">
     <link rel="stylesheet" href="_static/mq.css" type="text/css">
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" media="(prefers-color-scheme: light)" id="pyg-light">
     <link rel="stylesheet" href="_static/pygments_dark.css" type="text/css" media="(prefers-color-scheme: dark)" id="pyg-dark">
     <link rel="alternate" type="application/rss+xml" title="Latest PEPs" href="https://peps.python.org/peps.rss">
-    <meta property="og:title" content='PEP 805 – Creation of a CPython mirror | peps.python.org'>
+    <meta property="og:title" content='PEP 806 – Creation of a CPython mirror | peps.python.org'>
     <meta property="og:description" content="This PEP proposes the creation of an official read-only mirror of the CPython Git repository, currently hosted on GitHub (since PEP 512), on an additional hosting platform to ensure resilience.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://peps.python.org/pep-0805/">
+    <meta property="og:url" content="https://peps.python.org/pep-0806/">
     <meta property="og:site_name" content="Python Enhancement Proposals (PEPs)">
     <meta property="og:image" content="https://peps.python.org/_static/og-image.png">
     <meta property="og:image:alt" content="Python PEPs">
@@ -70,7 +70,7 @@
             <ul class="breadcrumbs">
                 <li><a href="https://www.python.org/" title="The Python Programming Language">Python</a> &raquo; </li>
                 <li><a href="pep-0000.html">PEP Index</a> &raquo; </li>
-                <li>PEP 805</li>
+                <li>PEP 806</li>
             </ul>
             <button id="colour-scheme-cycler" onClick="setColourScheme(nextColourScheme())">
                 <svg aria-hidden="true" class="colour-scheme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
@@ -81,7 +81,7 @@
         </header>
         <article>
             <section id="pep-content">
-<h1 class="page-title">PEP 805 – Creation of a CPython mirror</h1>
+<h1 class="page-title">PEP 806 – Creation of a CPython mirror</h1>
 <dl class="rfc2822 field-list simple">
 <dt class="field-odd">Author<span class="colon">:</span></dt>
 <dd class="field-odd">Stan Ulbrych &lt;stanulbrych&#32;&#97;t&#32;gmail.com&gt;</dd>
@@ -104,7 +104,9 @@
 <li><a class="reference internal" href="#rationale">Rationale</a></li>
 <li><a class="reference internal" href="#specification">Specification</a></li>
 <li><a class="reference internal" href="#security-implications">Security Implications</a></li>
+<li><a class="reference internal" href="#backwards-compatibility">Backwards Compatibility</a></li>
 <li><a class="reference internal" href="#open-questions">Open Questions</a></li>
+<li><a class="reference internal" href="#footnotes">Footnotes</a></li>
 <li><a class="reference internal" href="#copyright">Copyright</a></li>
 </ul>
 </details></section>
@@ -124,11 +126,12 @@ the security, resilience, and accessibility of CPython without impacting the
 current development workflow.
 Currently, the up-to-date CPython source code is officially available only
 on GitHub, following the retirement of <a class="reference external" href="https://hg.python.org/">hg.python.org</a>.
-The idea of mirror was orignally noted in <a class="pep reference internal" href="pep-0512.html#the-fate-of-hg-python-org" title="PEP 512 – Migrating from hg.python.org to GitHub § The fate of hg.python.org">PEP 512</a>.</p>
+The idea of mirror was originally noted in <a class="pep reference internal" href="pep-0512.html#the-fate-of-hg-python-org" title="PEP 512 – Migrating from hg.python.org to GitHub § The fate of hg.python.org">PEP 512</a>.</p>
 <p>Many open source projects provide mirrors, for example
-<a class="reference external" href="https://github.com/GNOME">GNOME</a>, <a class="reference external" href="https://github.com/KDE?">KDE</a>,
-<a class="reference external" href="https://github.com/git/git">Git</a>, <a class="reference external" href="https://github.com/gcc-mirror/gcc">GCC</a>
-and <a class="reference external" href="https://github.com/openbsd/src">OpenBSD</a>.</p>
+<a class="reference external" href="https://github.com/GNOME">GNOME</a>, <a class="reference external" href="https://github.com/KDE">KDE</a>,
+<a class="reference external" href="https://github.com/git/git">Git</a>, <a class="reference external" href="https://github.com/gcc-mirror/gcc">GCC</a>,
+<a class="reference external" href="https://gitlab.com/linux-kernel/linux">Linux</a>,
+<a class="reference external" href="https://codeberg.org/curl/curl-mirror">curl</a> and <a class="reference external" href="https://github.com/openbsd/src">OpenBSD</a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The standard clone of a repository does not pull all information, see
@@ -145,7 +148,8 @@ In the event of a permanent outage, having a mirror with the
 contribution platform.</p>
 <p>Some contributors prefer using open source platforms to develop open source projects.
 Since <a class="reference external" href="github.com">GitHub</a> is not open source, a mirror would allow us to
-address this concern.</p>
+address this concern. Mirrors improve accessibility for contributors in
+regions where GitHub may be blocked <a class="footnote-reference brackets" href="#ghcens" id="id1">[1]</a> or slow.</p>
 </section>
 <section id="rationale">
 <h2><a class="toc-backref" href="#rationale" role="doc-backlink">Rationale</a></h2>
@@ -162,11 +166,12 @@ a mirror.</p>
 <h2><a class="toc-backref" href="#specification" role="doc-backlink">Specification</a></h2>
 <p>The repository will be mirrored using Git’s
 <a class="reference external" href="https://git-scm.com/docs/git-clone#Documentation/git-clone.txt---mirror">–mirror</a>
-option, either using a platform’s built-in integration or a script.
+option, either using a platform’s built-in integration <a class="footnote-reference brackets" href="#glbuiltin" id="id2">[2]</a> or a script.
 The repository should be in the platform’s equivalent of the GitHub
 <a class="reference external" href="https://github.com/python/">python organization</a></p>
-<p>The fact that the repository is a mirror will be clearly noted in the description
-so as to avoid possible confusion.</p>
+<p>To avoid confusion, all tabs (Issues, Pull Requests, Discussions, etc.)
+will be disabled, and the fact that the repository is a mirror will be clearly
+noted in the description.</p>
 </section>
 <section id="security-implications">
 <h2><a class="toc-backref" href="#security-implications" role="doc-backlink">Security Implications</a></h2>
@@ -175,11 +180,26 @@ The mirror being read-only alleviates some risk of compromise, but not all.</p>
 <p>Access to the repository should follow the
 <a class="reference external" href="https://en.wikipedia.org/wiki/Principle_of_least_privilege">principle of least privilege</a>.</p>
 </section>
+<section id="backwards-compatibility">
+<h2><a class="toc-backref" href="#backwards-compatibility" role="doc-backlink">Backwards Compatibility</a></h2>
+<p>This PEP has no effect on existing contributor workflows.</p>
+</section>
 <section id="open-questions">
 <h2><a class="toc-backref" href="#open-questions" role="doc-backlink">Open Questions</a></h2>
 <p>What platform should be used? The platform should be free, so as not to have a
 financial impact on the PSF. There are several options, for example
 <a class="reference external" href="https://gitlab.com/">GitLab</a> and <a class="reference external" href="https://codeberg.org/">Codeberg</a>.</p>
+</section>
+<section id="footnotes">
+<h2><a class="toc-backref" href="#footnotes" role="doc-backlink">Footnotes</a></h2>
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="ghcens" role="doc-footnote">
+<dt class="label" id="ghcens">[<a href="#id1">1</a>]</dt>
+<dd><a class="reference external" href="https://en.wikipedia.org/wiki/Censorship_of_GitHub">Wikipedia: Censorship of GitHub</a></aside>
+<aside class="footnote brackets" id="glbuiltin" role="doc-footnote">
+<dt class="label" id="glbuiltin">[<a href="#id2">2</a>]</dt>
+<dd><a class="reference external" href="https://docs.gitlab.com/user/project/repository/mirror/">GitLab: Repository mirroring documentation</a></aside>
+</aside>
 </section>
 <section id="copyright">
 <h2><a class="toc-backref" href="#copyright" role="doc-backlink">Copyright</a></h2>
@@ -188,8 +208,8 @@ CC0-1.0-Universal license, whichever is more permissive.</p>
 </section>
 </section>
 <hr class="docutils" />
-<p>Source: <a class="reference external" href="https://github.com/python/peps/blob/main/peps/pep-0805.rst">https://github.com/python/peps/blob/main/peps/pep-0805.rst</a></p>
-<p>Last modified: <a class="reference external" href="https://github.com/python/peps/commits/main/peps/pep-0805.rst"> GMT</a></p>
+<p>Source: <a class="reference external" href="https://github.com/python/peps/blob/main/peps/pep-0806.rst">https://github.com/python/peps/blob/main/peps/pep-0806.rst</a></p>
+<p>Last modified: <a class="reference external" href="https://github.com/python/peps/commits/main/peps/pep-0806.rst"> GMT</a></p>
 
         </article>
         <nav id="pep-sidebar">
@@ -200,12 +220,14 @@ CC0-1.0-Universal license, whichever is more permissive.</p>
 <li><a class="reference internal" href="#rationale">Rationale</a></li>
 <li><a class="reference internal" href="#specification">Specification</a></li>
 <li><a class="reference internal" href="#security-implications">Security Implications</a></li>
+<li><a class="reference internal" href="#backwards-compatibility">Backwards Compatibility</a></li>
 <li><a class="reference internal" href="#open-questions">Open Questions</a></li>
+<li><a class="reference internal" href="#footnotes">Footnotes</a></li>
 <li><a class="reference internal" href="#copyright">Copyright</a></li>
 </ul>
 
             <br>
-            <a id="source" href="https://github.com/python/peps/blob/main/peps/pep-0805.rst">Page Source (GitHub)</a>
+            <a id="source" href="https://github.com/python/peps/blob/main/peps/pep-0806.rst?plain=1">Page Source (GitHub)</a>
         </nav>
     </section>
     <script src="_static/colour_scheme.js"></script>
