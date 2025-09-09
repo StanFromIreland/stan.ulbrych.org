@@ -31,14 +31,14 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="bdb — Debugger framework" href="bdb.html" />
-    <link rel="prev" title="Debugging and Profiling" href="debug.html" />
+    <link rel="prev" title="Debugowanie i profilowanie" href="debug.html" />
     
       
       <link rel="canonical" href="https://docs.python.org/3/library/audit_events.html">
@@ -98,14 +98,14 @@
     </select>
 </label>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="debug.html"
-                          title="previous chapter">Debugging and Profiling</a></p>
+                          title="poprzedni rozdział">Debugowanie i profilowanie</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="bdb.html"
-                          title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">bdb</span></code> — Debugger framework</a></p>
+                          title="następny rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">bdb</span></code> — Debugger framework</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -136,7 +136,7 @@
           <a href="bdb.html" title="bdb — Debugger framework"
              accesskey="N">dalej</a> |</li>
         <li class="right" >
-          <a href="debug.html" title="Debugging and Profiling"
+          <a href="debug.html" title="Debugowanie i profilowanie"
              accesskey="P">wstecz</a> |</li>
 
           <li><img src="../_static/py.svg" alt="Python logo" style="vertical-align: middle; margin-top: -1px"></li>
@@ -152,8 +152,8 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
-          <li class="nav-item nav-item-2"><a href="debug.html" accesskey="U">Debugging and Profiling</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="debug.html" accesskey="U">Debugowanie i profilowanie</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Audit events table</a></li>
                 <li class="right">
                     
@@ -192,7 +192,7 @@ standard library.  These calls were added in 3.8 or later (see <span class="targ
 <p>See <a class="reference internal" href="sys.html#sys.addaudithook" title="sys.addaudithook"><code class="xref py py-func docutils literal notranslate"><span class="pre">sys.addaudithook()</span></code></a> and <a class="reference internal" href="../c-api/sys.html#c.PySys_AddAuditHook" title="PySys_AddAuditHook"><code class="xref c c-func docutils literal notranslate"><span class="pre">PySys_AddAuditHook()</span></code></a> for
 information on handling these events.</p>
 <div class="impl-detail compound">
-<p><strong>CPython implementation detail:</strong> This table is generated from the CPython documentation, and may not
+<p><strong>Szczegół implementacyjny CPythona:</strong> This table is generated from the CPython documentation, and may not
 represent events raised by other implementations. See your runtime
 specific documentation for actual events raised.</p>
 </div>
@@ -254,7 +254,7 @@ specific documentation for actual events raised.</p>
 </tr>
 <tr class="row-even"><td><p>cpython.remote_debugger_script</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">script_path</span></code></p></td>
-<td><p><a class="reference internal" href="sys.html#audit_event_cpython_remote_debugger_script_0">[1]</a></p></td>
+<td><p><a class="reference internal" href="sys.html#audit_event_cpython_remote_debugger_script_0">[1]</a><a class="reference internal" href="sys.html#audit_event_cpython_remote_debugger_script_1">[2]</a><a class="reference internal" href="sys.html#audit_event_cpython_remote_debugger_script_2">[3]</a></p></td>
 </tr>
 <tr class="row-odd"><td><p>cpython.run_command</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">command</span></code></p></td>
@@ -262,7 +262,7 @@ specific documentation for actual events raised.</p>
 </tr>
 <tr class="row-even"><td><p>cpython.run_file</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">filename</span></code></p></td>
-<td><p><a class="reference internal" href="../using/cmdline.html#audit_event_cpython_run_file_0">[1]</a></p></td>
+<td><p><a class="reference internal" href="../using/cmdline.html#audit_event_cpython_run_file_0">[1]</a><a class="reference internal" href="../using/cmdline.html#audit_event_cpython_run_file_1">[2]</a></p></td>
 </tr>
 <tr class="row-odd"><td><p>cpython.run_interactivehook</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">hook</span></code></p></td>
@@ -278,7 +278,7 @@ specific documentation for actual events raised.</p>
 </tr>
 <tr class="row-even"><td><p>cpython.run_stdin</p></td>
 <td><p></p></td>
-<td><p><a class="reference internal" href="asyncio.html#audit_event_cpython_run_stdin_0">[1]</a><a class="reference internal" href="../using/cmdline.html#audit_event_cpython_run_stdin_0">[2]</a><a class="reference internal" href="../using/cmdline.html#audit_event_cpython_run_stdin_1">[3]</a></p></td>
+<td><p><a class="reference internal" href="asyncio.html#audit_event_cpython_run_stdin_0">[1]</a><a class="reference internal" href="asyncio.html#audit_event_cpython_run_stdin_3">[2]</a><a class="reference internal" href="../using/cmdline.html#audit_event_cpython_run_stdin_0">[3]</a><a class="reference internal" href="../using/cmdline.html#audit_event_cpython_run_stdin_1">[4]</a><a class="reference internal" href="../using/cmdline.html#audit_event_cpython_run_stdin_3">[5]</a><a class="reference internal" href="../using/cmdline.html#audit_event_cpython_run_stdin_4">[6]</a></p></td>
 </tr>
 <tr class="row-odd"><td><p>ctypes.addressof</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">obj</span></code></p></td>
@@ -326,7 +326,7 @@ specific documentation for actual events raised.</p>
 </tr>
 <tr class="row-even"><td><p>ctypes.memoryview_at</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">address</span></code>, <code class="docutils literal notranslate"><span class="pre">size</span></code>, <code class="docutils literal notranslate"><span class="pre">readonly</span></code></p></td>
-<td><p><a class="reference internal" href="ctypes.html#audit_event_ctypes_memoryview_at_0">[1]</a></p></td>
+<td><p><a class="reference internal" href="ctypes.html#audit_event_ctypes_memoryview_at_0">[1]</a><a class="reference internal" href="ctypes.html#audit_event_ctypes_memoryview_at_1">[2]</a></p></td>
 </tr>
 <tr class="row-odd"><td><p>ctypes.set_errno</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">errno</span></code></p></td>
@@ -854,7 +854,7 @@ specific documentation for actual events raised.</p>
 </tr>
 <tr class="row-even"><td><p>time.sleep</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">secs</span></code></p></td>
-<td><p><a class="reference internal" href="time.html#audit_event_time_sleep_0">[1]</a></p></td>
+<td><p><a class="reference internal" href="time.html#audit_event_time_sleep_0">[1]</a><a class="reference internal" href="time.html#audit_event_time_sleep_1">[2]</a></p></td>
 </tr>
 <tr class="row-odd"><td><p>urllib.Request</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">fullurl</span></code>, <code class="docutils literal notranslate"><span class="pre">data</span></code>, <code class="docutils literal notranslate"><span class="pre">headers</span></code>, <code class="docutils literal notranslate"><span class="pre">method</span></code></p></td>
@@ -876,63 +876,67 @@ specific documentation for actual events raised.</p>
 <td><p><code class="docutils literal notranslate"><span class="pre">key</span></code>, <code class="docutils literal notranslate"><span class="pre">sub_key</span></code>, <code class="docutils literal notranslate"><span class="pre">access</span></code></p></td>
 <td><p><a class="reference internal" href="winreg.html#winreg.DeleteKey">[1]</a><a class="reference internal" href="winreg.html#winreg.DeleteKeyEx">[2]</a></p></td>
 </tr>
-<tr class="row-even"><td><p>winreg.DeleteValue</p></td>
+<tr class="row-even"><td><p>winreg.DeleteTree</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">key</span></code>, <code class="docutils literal notranslate"><span class="pre">sub_key</span></code></p></td>
+<td><p><a class="reference internal" href="winreg.html#winreg.DeleteTree">[1]</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>winreg.DeleteValue</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">key</span></code>, <code class="docutils literal notranslate"><span class="pre">value</span></code></p></td>
 <td><p><a class="reference internal" href="winreg.html#winreg.DeleteValue">[1]</a></p></td>
 </tr>
-<tr class="row-odd"><td><p>winreg.DisableReflectionKey</p></td>
+<tr class="row-even"><td><p>winreg.DisableReflectionKey</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">key</span></code></p></td>
 <td><p><a class="reference internal" href="winreg.html#winreg.DisableReflectionKey">[1]</a></p></td>
 </tr>
-<tr class="row-even"><td><p>winreg.EnableReflectionKey</p></td>
+<tr class="row-odd"><td><p>winreg.EnableReflectionKey</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">key</span></code></p></td>
 <td><p><a class="reference internal" href="winreg.html#winreg.EnableReflectionKey">[1]</a></p></td>
 </tr>
-<tr class="row-odd"><td><p>winreg.EnumKey</p></td>
+<tr class="row-even"><td><p>winreg.EnumKey</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">key</span></code>, <code class="docutils literal notranslate"><span class="pre">index</span></code></p></td>
 <td><p><a class="reference internal" href="winreg.html#winreg.EnumKey">[1]</a></p></td>
 </tr>
-<tr class="row-even"><td><p>winreg.EnumValue</p></td>
+<tr class="row-odd"><td><p>winreg.EnumValue</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">key</span></code>, <code class="docutils literal notranslate"><span class="pre">index</span></code></p></td>
 <td><p><a class="reference internal" href="winreg.html#winreg.EnumValue">[1]</a></p></td>
 </tr>
-<tr class="row-odd"><td><p>winreg.ExpandEnvironmentStrings</p></td>
+<tr class="row-even"><td><p>winreg.ExpandEnvironmentStrings</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">str</span></code></p></td>
 <td><p><a class="reference internal" href="winreg.html#winreg.ExpandEnvironmentStrings">[1]</a></p></td>
 </tr>
-<tr class="row-even"><td><p>winreg.LoadKey</p></td>
+<tr class="row-odd"><td><p>winreg.LoadKey</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">key</span></code>, <code class="docutils literal notranslate"><span class="pre">sub_key</span></code>, <code class="docutils literal notranslate"><span class="pre">file_name</span></code></p></td>
 <td><p><a class="reference internal" href="winreg.html#winreg.LoadKey">[1]</a></p></td>
 </tr>
-<tr class="row-odd"><td><p>winreg.OpenKey</p></td>
+<tr class="row-even"><td><p>winreg.OpenKey</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">key</span></code>, <code class="docutils literal notranslate"><span class="pre">sub_key</span></code>, <code class="docutils literal notranslate"><span class="pre">access</span></code></p></td>
 <td><p><a class="reference internal" href="winreg.html#winreg.OpenKey">[1]</a></p></td>
 </tr>
-<tr class="row-even"><td><p>winreg.OpenKey/result</p></td>
+<tr class="row-odd"><td><p>winreg.OpenKey/result</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">key</span></code></p></td>
 <td><p><a class="reference internal" href="winreg.html#winreg.CreateKey">[1]</a><a class="reference internal" href="winreg.html#winreg.CreateKeyEx">[2]</a><a class="reference internal" href="winreg.html#winreg.OpenKey">[3]</a></p></td>
 </tr>
-<tr class="row-odd"><td><p>winreg.PyHKEY.Detach</p></td>
+<tr class="row-even"><td><p>winreg.PyHKEY.Detach</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">key</span></code></p></td>
 <td><p><a class="reference internal" href="winreg.html#winreg.PyHKEY.Detach">[1]</a></p></td>
 </tr>
-<tr class="row-even"><td><p>winreg.QueryInfoKey</p></td>
+<tr class="row-odd"><td><p>winreg.QueryInfoKey</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">key</span></code></p></td>
 <td><p><a class="reference internal" href="winreg.html#winreg.QueryInfoKey">[1]</a></p></td>
 </tr>
-<tr class="row-odd"><td><p>winreg.QueryReflectionKey</p></td>
+<tr class="row-even"><td><p>winreg.QueryReflectionKey</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">key</span></code></p></td>
 <td><p><a class="reference internal" href="winreg.html#winreg.QueryReflectionKey">[1]</a></p></td>
 </tr>
-<tr class="row-even"><td><p>winreg.QueryValue</p></td>
+<tr class="row-odd"><td><p>winreg.QueryValue</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">key</span></code>, <code class="docutils literal notranslate"><span class="pre">sub_key</span></code>, <code class="docutils literal notranslate"><span class="pre">value_name</span></code></p></td>
 <td><p><a class="reference internal" href="winreg.html#winreg.QueryValue">[1]</a><a class="reference internal" href="winreg.html#winreg.QueryValueEx">[2]</a></p></td>
 </tr>
-<tr class="row-odd"><td><p>winreg.SaveKey</p></td>
+<tr class="row-even"><td><p>winreg.SaveKey</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">key</span></code>, <code class="docutils literal notranslate"><span class="pre">file_name</span></code></p></td>
 <td><p><a class="reference internal" href="winreg.html#winreg.SaveKey">[1]</a></p></td>
 </tr>
-<tr class="row-even"><td><p>winreg.SetValue</p></td>
+<tr class="row-odd"><td><p>winreg.SetValue</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">key</span></code>, <code class="docutils literal notranslate"><span class="pre">sub_key</span></code>, <code class="docutils literal notranslate"><span class="pre">type</span></code>, <code class="docutils literal notranslate"><span class="pre">value</span></code></p></td>
 <td><p><a class="reference internal" href="winreg.html#winreg.SetValue">[1]</a><a class="reference internal" href="winreg.html#winreg.SetValueEx">[2]</a></p></td>
 </tr>
@@ -992,14 +996,14 @@ public API of CPython:</p>
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="debug.html"
-                          title="previous chapter">Debugging and Profiling</a></p>
+                          title="poprzedni rozdział">Debugowanie i profilowanie</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="bdb.html"
-                          title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">bdb</span></code> — Debugger framework</a></p>
+                          title="następny rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">bdb</span></code> — Debugger framework</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -1013,7 +1017,7 @@ public API of CPython:</p>
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -1033,7 +1037,7 @@ public API of CPython:</p>
           <a href="bdb.html" title="bdb — Debugger framework"
              >dalej</a> |</li>
         <li class="right" >
-          <a href="debug.html" title="Debugging and Profiling"
+          <a href="debug.html" title="Debugowanie i profilowanie"
              >wstecz</a> |</li>
 
           <li><img src="../_static/py.svg" alt="Python logo" style="vertical-align: middle; margin-top: -1px"></li>
@@ -1049,8 +1053,8 @@ public API of CPython:</p>
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
-          <li class="nav-item nav-item-2"><a href="debug.html" >Debugging and Profiling</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="debug.html" >Debugowanie i profilowanie</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Audit events table</a></li>
                 <li class="right">
                     
@@ -1098,7 +1102,7 @@ public API of CPython:</p>
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

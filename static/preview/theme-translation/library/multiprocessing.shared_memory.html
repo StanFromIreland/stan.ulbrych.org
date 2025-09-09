@@ -8,10 +8,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://docs.python.org/3/library/multiprocessing.shared_memory.html" />
 <meta property="og:site_name" content="Python documentation" />
-<meta property="og:description" content="Source code: Lib/multiprocessing/shared_memory.py This module provides a class, SharedMemory, for the allocation and management of shared memory to be accessed by one or more processes on a multico..." />
+<meta property="og:description" content="Kod źródłowy: Lib/multiprocessing/shared_memory.py This module provides a class, SharedMemory, for the allocation and management of shared memory to be accessed by one or more processes on a multic..." />
 <meta property="og:image" content="_static/og-image.png" />
 <meta property="og:image:alt" content="Python documentation" />
-<meta name="description" content="Source code: Lib/multiprocessing/shared_memory.py This module provides a class, SharedMemory, for the allocation and management of shared memory to be accessed by one or more processes on a multico..." />
+<meta name="description" content="Kod źródłowy: Lib/multiprocessing/shared_memory.py This module provides a class, SharedMemory, for the allocation and management of shared memory to be accessed by one or more processes on a multic..." />
 <meta name="theme-color" content="#3776ab">
 <meta property="og:image:width" content="200">
 <meta property="og:image:height" content="200">
@@ -31,11 +31,11 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="The concurrent package" href="concurrent.html" />
     <link rel="prev" title="multiprocessing — Process-based parallelism" href="multiprocessing.html" />
@@ -98,14 +98,14 @@
     </select>
 </label>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="multiprocessing.html"
-                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">multiprocessing</span></code> — Process-based parallelism</a></p>
+                          title="poprzedni rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">multiprocessing</span></code> — Process-based parallelism</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="concurrent.html"
-                          title="next chapter">The <code class="xref py py-mod docutils literal notranslate"><span class="pre">concurrent</span></code> package</a></p>
+                          title="następny rozdział">The <code class="xref py py-mod docutils literal notranslate"><span class="pre">concurrent</span></code> package</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -152,7 +152,7 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="concurrency.html" accesskey="U">Concurrent Execution</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">multiprocessing.shared_memory</span></code> — Shared memory for direct access across processes</a></li>
                 <li class="right">
@@ -186,7 +186,7 @@
             
   <section id="module-multiprocessing.shared_memory">
 <span id="multiprocessing-shared-memory-shared-memory-for-direct-access-across-processes"></span><h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">multiprocessing.shared_memory</span></code> — Shared memory for direct access across processes<a class="headerlink" href="#module-multiprocessing.shared_memory" title="Link to this heading">¶</a></h1>
-<p><strong>Source code:</strong> <a class="extlink-source reference external" href="https://github.com/python/cpython/tree/main/Lib/multiprocessing/shared_memory.py">Lib/multiprocessing/shared_memory.py</a></p>
+<p><strong>Kod źródłowy:</strong> <a class="extlink-source reference external" href="https://github.com/python/cpython/tree/main/Lib/multiprocessing/shared_memory.py">Lib/multiprocessing/shared_memory.py</a></p>
 <div class="versionadded">
 <p><span class="versionmodified added"> Dodane w wersji 3.8.</span></p>
 </div>
@@ -461,7 +461,7 @@ This constrains storable values to the following built-in data types:</p>
 <li><p><a class="reference internal" href="functions.html#bool" title="bool"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></p></li>
 <li><p><a class="reference internal" href="stdtypes.html#str" title="str"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a> (less than 10M bytes each when encoded as UTF-8)</p></li>
 <li><p><a class="reference internal" href="stdtypes.html#bytes" title="bytes"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a> (less than 10M bytes each)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">None</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">None</span></code> - z ang. - <code class="docutils literal notranslate"><span class="pre">Żaden</span></code></p></li>
 </ul>
 <p>It also notably differs from the built-in <a class="reference internal" href="stdtypes.html#list" title="list"><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></a> type
 in that these lists can not change their overall length
@@ -619,14 +619,14 @@ object with the same name (if the object is still alive):</p>
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="multiprocessing.html"
-                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">multiprocessing</span></code> — Process-based parallelism</a></p>
+                          title="poprzedni rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">multiprocessing</span></code> — Process-based parallelism</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="concurrent.html"
-                          title="next chapter">The <code class="xref py py-mod docutils literal notranslate"><span class="pre">concurrent</span></code> package</a></p>
+                          title="następny rozdział">The <code class="xref py py-mod docutils literal notranslate"><span class="pre">concurrent</span></code> package</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -640,7 +640,7 @@ object with the same name (if the object is still alive):</p>
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -676,7 +676,7 @@ object with the same name (if the object is still alive):</p>
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="concurrency.html" >Concurrent Execution</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">multiprocessing.shared_memory</span></code> — Shared memory for direct access across processes</a></li>
                 <li class="right">
@@ -725,7 +725,7 @@ object with the same name (if the object is still alive):</p>
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

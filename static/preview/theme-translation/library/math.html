@@ -31,11 +31,11 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="cmath — Mathematical functions for complex numbers" href="cmath.html" />
     <link rel="prev" title="numbers — Numeric abstract base classes" href="numbers.html" />
@@ -98,7 +98,7 @@
     </select>
 </label>
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">math</span></code> — Mathematical functions</a><ul>
 <li><a class="reference internal" href="#number-theoretic-functions">Number-theoretic functions</a></li>
@@ -110,21 +110,21 @@
 <li><a class="reference internal" href="#trigonometric-functions">Trigonometric functions</a></li>
 <li><a class="reference internal" href="#hyperbolic-functions">Hyperbolic functions</a></li>
 <li><a class="reference internal" href="#special-functions">Special functions</a></li>
-<li><a class="reference internal" href="#constants">Constants</a></li>
+<li><a class="reference internal" href="#constants">Stały</a></li>
 </ul>
 </li>
 </ul>
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="numbers.html"
-                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">numbers</span></code> — Numeric abstract base classes</a></p>
+                          title="poprzedni rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">numbers</span></code> — Numeric abstract base classes</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="cmath.html"
-                          title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">cmath</span></code> — Mathematical functions for complex numbers</a></p>
+                          title="następny rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">cmath</span></code> — Mathematical functions for complex numbers</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -171,7 +171,7 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="numeric.html" accesskey="U">Numeric and Mathematical Modules</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">math</span></code> — Mathematical functions</a></li>
                 <li class="right">
@@ -690,8 +690,7 @@ parameter» (there is no such thing in Python).</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="math.isclose">
 <span class="sig-prename descclassname"><span class="pre">math.</span></span><span class="sig-name descname"><span class="pre">isclose</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">rel_tol</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1e-09</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">abs_tol</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#math.isclose" title="Link to this definition">¶</a></dt>
-<dd><p>Return <code class="docutils literal notranslate"><span class="pre">True</span></code> if the values <em>a</em> and <em>b</em> are close to each other and
-<code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise.</p>
+<dd><p>Zwraca <code class="docutils literal notranslate"><span class="pre">True</span></code> jeżeli wartości <em>a</em> i <em>b</em> są zbliżone do siebie i <code class="docutils literal notranslate"><span class="pre">False</span></code> w przeciwnym wypadku.</p>
 <p>Whether or not two values are considered close is determined according to
 given absolute and relative tolerances.  If no errors occur, the result will
 be: <code class="docutils literal notranslate"><span class="pre">abs(a-b)</span> <span class="pre">&lt;=</span> <span class="pre">max(rel_tol</span> <span class="pre">*</span> <span class="pre">max(abs(a),</span> <span class="pre">abs(b)),</span> <span class="pre">abs_tol)</span></code>.</p>
@@ -776,7 +775,7 @@ Return <code class="docutils literal notranslate"><span class="pre">False</span>
 <span class="sig-prename descclassname"><span class="pre">math.</span></span><span class="sig-name descname"><span class="pre">nextafter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">steps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#math.nextafter" title="Link to this definition">¶</a></dt>
 <dd><p>Return the floating-point value <em>steps</em> steps after <em>x</em> towards <em>y</em>.</p>
 <p>If <em>x</em> is equal to <em>y</em>, return <em>y</em>, unless <em>steps</em> is zero.</p>
-<p>Examples:</p>
+<p>Przykłady:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">math.nextafter(x,</span> <span class="pre">math.inf)</span></code> goes up: towards positive infinity.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">math.nextafter(x,</span> <span class="pre">-math.inf)</span></code> goes down: towards minus infinity.</p></li>
@@ -1113,19 +1112,19 @@ instead of circles.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="math.cosh">
 <span class="sig-prename descclassname"><span class="pre">math.</span></span><span class="sig-name descname"><span class="pre">cosh</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#math.cosh" title="Link to this definition">¶</a></dt>
-<dd><p>Return the hyperbolic cosine of <em>x</em>.</p>
+<dd><p>Zwraca cosinus hiperboliczny z <em>x</em>.</p>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="math.sinh">
 <span class="sig-prename descclassname"><span class="pre">math.</span></span><span class="sig-name descname"><span class="pre">sinh</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#math.sinh" title="Link to this definition">¶</a></dt>
-<dd><p>Return the hyperbolic sine of <em>x</em>.</p>
+<dd><p>Zwraca sinus hiperboliczny z <em>x</em>.</p>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="math.tanh">
 <span class="sig-prename descclassname"><span class="pre">math.</span></span><span class="sig-name descname"><span class="pre">tanh</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#math.tanh" title="Link to this definition">¶</a></dt>
-<dd><p>Return the hyperbolic tangent of <em>x</em>.</p>
+<dd><p>Zwraca tangens hiperboliczny z <em>x</em>.</p>
 </dd></dl>
 
 </section>
@@ -1182,7 +1181,7 @@ function at <em>x</em>.</p>
 
 </section>
 <section id="constants">
-<h2>Constants<a class="headerlink" href="#constants" title="Link to this heading">¶</a></h2>
+<h2>Stały<a class="headerlink" href="#constants" title="Link to this heading">¶</a></h2>
 <dl class="py data">
 <dt class="sig sig-object py" id="math.pi">
 <span class="sig-prename descclassname"><span class="pre">math.</span></span><span class="sig-name descname"><span class="pre">pi</span></span><a class="headerlink" href="#math.pi" title="Link to this definition">¶</a></dt>
@@ -1247,7 +1246,7 @@ Example:</p>
 </dd></dl>
 
 <div class="impl-detail compound">
-<p><strong>CPython implementation detail:</strong> The <a class="reference internal" href="#module-math" title="math: Mathematical functions (sin() etc.)."><code class="xref py py-mod docutils literal notranslate"><span class="pre">math</span></code></a> module consists mostly of thin wrappers around the platform C
+<p><strong>Szczegół implementacyjny CPythona:</strong> The <a class="reference internal" href="#module-math" title="math: Mathematical functions (sin() etc.)."><code class="xref py py-mod docutils literal notranslate"><span class="pre">math</span></code></a> module consists mostly of thin wrappers around the platform C
 math library functions.  Behavior in exceptional cases follows Annex F of
 the C99 standard where appropriate.  The current implementation will raise
 <a class="reference internal" href="exceptions.html#ValueError" title="ValueError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">ValueError</span></code></a> for invalid operations like <code class="docutils literal notranslate"><span class="pre">sqrt(-1.0)</span></code> or <code class="docutils literal notranslate"><span class="pre">log(0.0)</span></code>
@@ -1280,7 +1279,7 @@ Typical behavior is to treat all NaNs as though they were quiet.</p>
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">math</span></code> — Mathematical functions</a><ul>
 <li><a class="reference internal" href="#number-theoretic-functions">Number-theoretic functions</a></li>
@@ -1292,21 +1291,21 @@ Typical behavior is to treat all NaNs as though they were quiet.</p>
 <li><a class="reference internal" href="#trigonometric-functions">Trigonometric functions</a></li>
 <li><a class="reference internal" href="#hyperbolic-functions">Hyperbolic functions</a></li>
 <li><a class="reference internal" href="#special-functions">Special functions</a></li>
-<li><a class="reference internal" href="#constants">Constants</a></li>
+<li><a class="reference internal" href="#constants">Stały</a></li>
 </ul>
 </li>
 </ul>
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="numbers.html"
-                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">numbers</span></code> — Numeric abstract base classes</a></p>
+                          title="poprzedni rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">numbers</span></code> — Numeric abstract base classes</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="cmath.html"
-                          title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">cmath</span></code> — Mathematical functions for complex numbers</a></p>
+                          title="następny rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">cmath</span></code> — Mathematical functions for complex numbers</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -1320,7 +1319,7 @@ Typical behavior is to treat all NaNs as though they were quiet.</p>
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -1356,7 +1355,7 @@ Typical behavior is to treat all NaNs as though they were quiet.</p>
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="numeric.html" >Numeric and Mathematical Modules</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">math</span></code> — Mathematical functions</a></li>
                 <li class="right">
@@ -1405,7 +1404,7 @@ Typical behavior is to treat all NaNs as though they were quiet.</p>
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

@@ -8,10 +8,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://docs.python.org/3/library/unittest.mock.html" />
 <meta property="og:site_name" content="Python documentation" />
-<meta property="og:description" content="Source code: Lib/unittest/mock.py unittest.mock is a library for testing in Python. It allows you to replace parts of your system under test with mock objects and make assertions about how they hav..." />
+<meta property="og:description" content="Kod źródłowy: Lib/unittest/mock.py unittest.mock is a library for testing in Python. It allows you to replace parts of your system under test with mock objects and make assertions about how they ha..." />
 <meta property="og:image" content="_static/og-image.png" />
 <meta property="og:image:alt" content="Python documentation" />
-<meta name="description" content="Source code: Lib/unittest/mock.py unittest.mock is a library for testing in Python. It allows you to replace parts of your system under test with mock objects and make assertions about how they hav..." />
+<meta name="description" content="Kod źródłowy: Lib/unittest/mock.py unittest.mock is a library for testing in Python. It allows you to replace parts of your system under test with mock objects and make assertions about how they ha..." />
 <meta name="theme-color" content="#3776ab">
 <meta property="og:image:width" content="200">
 <meta property="og:image:height" content="200">
@@ -31,11 +31,11 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="unittest.mock — getting started" href="unittest.mock-examples.html" />
     <link rel="prev" title="unittest — Unit testing framework" href="unittest.html" />
@@ -98,7 +98,7 @@
     </select>
 </label>
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">unittest.mock</span></code> — mock object library</a><ul>
 <li><a class="reference internal" href="#quick-guide">Quick Guide</a></li>
@@ -146,14 +146,14 @@
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="unittest.html"
-                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">unittest</span></code> — Unit testing framework</a></p>
+                          title="poprzedni rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">unittest</span></code> — Unit testing framework</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="unittest.mock-examples.html"
-                          title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">unittest.mock</span></code> — getting started</a></p>
+                          title="następny rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">unittest.mock</span></code> — getting started</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -200,7 +200,7 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="development.html" accesskey="U">Development Tools</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">unittest.mock</span></code> — mock object library</a></li>
                 <li class="right">
@@ -237,7 +237,7 @@
 <div class="versionadded">
 <p><span class="versionmodified added"> Dodane w wersji 3.3.</span></p>
 </div>
-<p><strong>Source code:</strong> <a class="extlink-source reference external" href="https://github.com/python/cpython/tree/main/Lib/unittest/mock.py">Lib/unittest/mock.py</a></p>
+<p><strong>Kod źródłowy:</strong> <a class="extlink-source reference external" href="https://github.com/python/cpython/tree/main/Lib/unittest/mock.py">Lib/unittest/mock.py</a></p>
 <hr class="docutils" />
 <p><a class="reference internal" href="#module-unittest.mock" title="unittest.mock: Mock object library."><code class="xref py py-mod docutils literal notranslate"><span class="pre">unittest.mock</span></code></a> is a library for testing in Python. It allows you to
 replace parts of your system under test with mock objects and make assertions
@@ -768,17 +768,9 @@ the normal way:</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="unittest.mock.Mock.side_effect">
 <span class="sig-name descname"><span class="pre">side_effect</span></span><a class="headerlink" href="#unittest.mock.Mock.side_effect" title="Link to this definition">¶</a></dt>
-<dd><p>This can either be a function to be called when the mock is called,
-an iterable or an exception (class or instance) to be raised.</p>
-<p>If you pass in a function it will be called with same arguments as the
-mock and unless the function returns the <a class="reference internal" href="#unittest.mock.DEFAULT" title="unittest.mock.DEFAULT"><code class="xref py py-data docutils literal notranslate"><span class="pre">DEFAULT</span></code></a> singleton the
-call to the mock will then return whatever the function returns. If the
-function returns <a class="reference internal" href="#unittest.mock.DEFAULT" title="unittest.mock.DEFAULT"><code class="xref py py-data docutils literal notranslate"><span class="pre">DEFAULT</span></code></a> then the mock will return its normal
-value (from the <a class="reference internal" href="#unittest.mock.Mock.return_value" title="unittest.mock.Mock.return_value"><code class="xref py py-attr docutils literal notranslate"><span class="pre">return_value</span></code></a>).</p>
-<p>If you pass in an iterable, it is used to retrieve an iterator which
-must yield a value on every call.  This value can either be an exception
-instance to be raised, or a value to be returned from the call to the
-mock (<a class="reference internal" href="#unittest.mock.DEFAULT" title="unittest.mock.DEFAULT"><code class="xref py py-data docutils literal notranslate"><span class="pre">DEFAULT</span></code></a> handling is identical to the function case).</p>
+<dd><p>Może to być albo funkcja do wywołania, gdy wywoływany jest mock, iterable lub wyjątek (klasa lub instancja) do rzucenia.</p>
+<p>Jeśli przekażesz funkcję, zostanie ona wywołana z tymi samymi argumentami co mock i dopóki funkcja nie zwróci singletona <a class="reference internal" href="#unittest.mock.DEFAULT" title="unittest.mock.DEFAULT"><code class="xref py py-data docutils literal notranslate"><span class="pre">DEFAULT</span></code></a>, wywołanie mocka będzie zwracać cokolwiek zwraca funkcja. Jeśli funkcja zwróci <a class="reference internal" href="#unittest.mock.DEFAULT" title="unittest.mock.DEFAULT"><code class="xref py py-data docutils literal notranslate"><span class="pre">DEFAULT</span></code></a>, to mock zwróci swoją normalną wartość (z <a class="reference internal" href="#unittest.mock.Mock.return_value" title="unittest.mock.Mock.return_value"><code class="xref py py-attr docutils literal notranslate"><span class="pre">return_value</span></code></a>).</p>
+<p>Jeśli przekażesz iterable, zostanie on użyty do pobrania iteratora, który musi zwrócić wartość przy każdym wywołaniu. Wartość ta może być albo instancją wyjątku, która ma być rzucony, albo wartością, która ma być zwrócona z wywołania mocka (obsługa <a class="reference internal" href="#unittest.mock.DEFAULT" title="unittest.mock.DEFAULT"><code class="xref py py-data docutils literal notranslate"><span class="pre">DEFAULT</span></code></a> jest identyczna do przypadku funkcji).</p>
 <p>An example of a mock that raises an exception (to test exception
 handling of an API):</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">mock</span> <span class="o">=</span> <span class="n">Mock</span><span class="p">()</span>
@@ -2374,7 +2366,7 @@ to change the default.</p>
 <li><p><code class="docutils literal notranslate"><span class="pre">__str__</span></code>: default str for the mock</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">__sizeof__</span></code>: default sizeof for the mock</p></li>
 </ul>
-<p>For example:</p>
+<p>Na przykład:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">mock</span> <span class="o">=</span> <span class="n">MagicMock</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">int</span><span class="p">(</span><span class="n">mock</span><span class="p">)</span>
 <span class="go">1</span>
@@ -3130,7 +3122,7 @@ exception is raised.</p>
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">unittest.mock</span></code> — mock object library</a><ul>
 <li><a class="reference internal" href="#quick-guide">Quick Guide</a></li>
@@ -3178,14 +3170,14 @@ exception is raised.</p>
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="unittest.html"
-                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">unittest</span></code> — Unit testing framework</a></p>
+                          title="poprzedni rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">unittest</span></code> — Unit testing framework</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="unittest.mock-examples.html"
-                          title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">unittest.mock</span></code> — getting started</a></p>
+                          title="następny rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">unittest.mock</span></code> — getting started</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -3199,7 +3191,7 @@ exception is raised.</p>
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -3235,7 +3227,7 @@ exception is raised.</p>
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="development.html" >Development Tools</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">unittest.mock</span></code> — mock object library</a></li>
                 <li class="right">
@@ -3284,7 +3276,7 @@ exception is raised.</p>
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

@@ -31,11 +31,11 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="Iterator Objects" href="iterator.html" />
     <link rel="prev" title="File Objects" href="file.html" />
@@ -98,7 +98,7 @@
     </select>
 </label>
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#">Module Objects</a></li>
 <li><a class="reference internal" href="#module-definitions">Module definitions</a><ul>
@@ -114,14 +114,14 @@
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="file.html"
-                          title="previous chapter">File Objects</a></p>
+                          title="poprzedni rozdział">File Objects</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="iterator.html"
-                          title="next chapter">Iterator Objects</a></p>
+                          title="następny rozdział">Iterator Objects</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -168,7 +168,7 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Reference Manual</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Podręcznik</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="concrete.html" accesskey="U">Concrete Objects Layer</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Module Objects</a></li>
                 <li class="right">
@@ -205,7 +205,7 @@
 <dl class="c var" id="index-0">
 <dt class="sig sig-object c" id="c.PyModule_Type">
 <a class="reference internal" href="type.html#c.PyTypeObject" title="PyTypeObject"><span class="n"><span class="pre">PyTypeObject</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyModule_Type</span></span></span><a class="headerlink" href="#c.PyModule_Type" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p id="index-1">This instance of <a class="reference internal" href="type.html#c.PyTypeObject" title="PyTypeObject"><code class="xref c c-type docutils literal notranslate"><span class="pre">PyTypeObject</span></code></a> represents the Python module type.  This
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p id="index-1">This instance of <a class="reference internal" href="type.html#c.PyTypeObject" title="PyTypeObject"><code class="xref c c-type docutils literal notranslate"><span class="pre">PyTypeObject</span></code></a> represents the Python module type.  This
 is exposed to Python programs as <code class="docutils literal notranslate"><span class="pre">types.ModuleType</span></code>.</p>
 </dd></dl>
 
@@ -226,7 +226,7 @@ This function always succeeds.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyModule_NewObject">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyModule_NewObject</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">name</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyModule_NewObject" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.7.</em><p id="index-2">Return a new module object with <a class="reference internal" href="../reference/datamodel.html#module.__name__" title="module.__name__"><code class="xref py py-attr docutils literal notranslate"><span class="pre">module.__name__</span></code></a> set to <em>name</em>.
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.7.</em><p id="index-2">Return a new module object with <a class="reference internal" href="../reference/datamodel.html#module.__name__" title="module.__name__"><code class="xref py py-attr docutils literal notranslate"><span class="pre">module.__name__</span></code></a> set to <em>name</em>.
 The module’s <code class="xref py py-attr docutils literal notranslate"><span class="pre">__name__</span></code>, <a class="reference internal" href="../reference/datamodel.html#module.__doc__" title="module.__doc__"><code class="xref py py-attr docutils literal notranslate"><span class="pre">__doc__</span></code></a>,
 <a class="reference internal" href="../reference/datamodel.html#module.__package__" title="module.__package__"><code class="xref py py-attr docutils literal notranslate"><span class="pre">__package__</span></code></a> and <a class="reference internal" href="../reference/datamodel.html#module.__loader__" title="module.__loader__"><code class="xref py py-attr docutils literal notranslate"><span class="pre">__loader__</span></code></a> attributes are
 filled in (all but <code class="xref py py-attr docutils literal notranslate"><span class="pre">__name__</span></code> are set to <code class="docutils literal notranslate"><span class="pre">None</span></code>). The caller is
@@ -244,14 +244,14 @@ responsible for setting a <a class="reference internal" href="../reference/datam
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyModule_New">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyModule_New</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">name</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyModule_New" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Similar to <a class="reference internal" href="#c.PyModule_NewObject" title="PyModule_NewObject"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyModule_NewObject()</span></code></a>, but the name is a UTF-8 encoded
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Similar to <a class="reference internal" href="#c.PyModule_NewObject" title="PyModule_NewObject"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyModule_NewObject()</span></code></a>, but the name is a UTF-8 encoded
 string instead of a Unicode object.</p>
 </dd></dl>
 
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyModule_GetDict">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyModule_GetDict</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">module</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyModule_GetDict" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_borrowed_ref">Return value: Borrowed reference.</em><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p id="index-3">Return the dictionary object that implements <em>module</em>’s namespace; this object
+<dd><em class="refcount return_borrowed_ref">Wartość zwracana: pożyczona referencja.</em><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p id="index-3">Return the dictionary object that implements <em>module</em>’s namespace; this object
 is the same as the <a class="reference internal" href="../reference/datamodel.html#object.__dict__" title="object.__dict__"><code class="xref py py-attr docutils literal notranslate"><span class="pre">__dict__</span></code></a> attribute of the module object.
 If <em>module</em> is not a module object (or a subtype of a module object),
 <a class="reference internal" href="../library/exceptions.html#SystemError" title="SystemError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">SystemError</span></code></a> is raised and <code class="docutils literal notranslate"><span class="pre">NULL</span></code> is returned.</p>
@@ -263,7 +263,7 @@ If <em>module</em> is not a module object (or a subtype of a module object),
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyModule_GetNameObject">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyModule_GetNameObject</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">module</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyModule_GetNameObject" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.7.</em><p id="index-4">Return <em>module</em>’s <a class="reference internal" href="../reference/datamodel.html#module.__name__" title="module.__name__"><code class="xref py py-attr docutils literal notranslate"><span class="pre">__name__</span></code></a> value.  If the module does not
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.7.</em><p id="index-4">Return <em>module</em>’s <a class="reference internal" href="../reference/datamodel.html#module.__name__" title="module.__name__"><code class="xref py py-attr docutils literal notranslate"><span class="pre">__name__</span></code></a> value.  If the module does not
 provide one, or if it is not a string, <a class="reference internal" href="../library/exceptions.html#SystemError" title="SystemError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">SystemError</span></code></a> is raised and
 <code class="docutils literal notranslate"><span class="pre">NULL</span></code> is returned.</p>
 <div class="versionadded">
@@ -274,14 +274,14 @@ provide one, or if it is not a string, <a class="reference internal" href="../li
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyModule_GetName">
 <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyModule_GetName</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">module</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyModule_GetName" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Similar to <a class="reference internal" href="#c.PyModule_GetNameObject" title="PyModule_GetNameObject"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyModule_GetNameObject()</span></code></a> but return the name encoded to
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Similar to <a class="reference internal" href="#c.PyModule_GetNameObject" title="PyModule_GetNameObject"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyModule_GetNameObject()</span></code></a> but return the name encoded to
 <code class="docutils literal notranslate"><span class="pre">'utf-8'</span></code>.</p>
 </dd></dl>
 
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyModule_GetState">
 <span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyModule_GetState</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">module</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyModule_GetState" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Return the „state” of the module, that is, a pointer to the block of memory
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Return the „state” of the module, that is, a pointer to the block of memory
 allocated at module creation time, or <code class="docutils literal notranslate"><span class="pre">NULL</span></code>.  See
 <a class="reference internal" href="#c.PyModuleDef.m_size" title="PyModuleDef.m_size"><code class="xref c c-member docutils literal notranslate"><span class="pre">PyModuleDef.m_size</span></code></a>.</p>
 </dd></dl>
@@ -289,14 +289,14 @@ allocated at module creation time, or <code class="docutils literal notranslate"
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyModule_GetDef">
 <a class="reference internal" href="#c.PyModuleDef" title="PyModuleDef"><span class="n"><span class="pre">PyModuleDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyModule_GetDef</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">module</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyModule_GetDef" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Return a pointer to the <a class="reference internal" href="#c.PyModuleDef" title="PyModuleDef"><code class="xref c c-type docutils literal notranslate"><span class="pre">PyModuleDef</span></code></a> struct from which the module was
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Return a pointer to the <a class="reference internal" href="#c.PyModuleDef" title="PyModuleDef"><code class="xref c c-type docutils literal notranslate"><span class="pre">PyModuleDef</span></code></a> struct from which the module was
 created, or <code class="docutils literal notranslate"><span class="pre">NULL</span></code> if the module wasn’t created from a definition.</p>
 </dd></dl>
 
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyModule_GetFilenameObject">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyModule_GetFilenameObject</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">module</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyModule_GetFilenameObject" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p id="index-5">Return the name of the file from which <em>module</em> was loaded using <em>module</em>’s
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p id="index-5">Return the name of the file from which <em>module</em> was loaded using <em>module</em>’s
 <a class="reference internal" href="../reference/datamodel.html#module.__file__" title="module.__file__"><code class="xref py py-attr docutils literal notranslate"><span class="pre">__file__</span></code></a> attribute.  If this is not defined, or if it is not a
 string, raise <a class="reference internal" href="../library/exceptions.html#SystemError" title="SystemError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">SystemError</span></code></a> and return <code class="docutils literal notranslate"><span class="pre">NULL</span></code>; otherwise return
 a reference to a Unicode object.</p>
@@ -308,7 +308,7 @@ a reference to a Unicode object.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyModule_GetFilename">
 <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyModule_GetFilename</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">module</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyModule_GetFilename" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Similar to <a class="reference internal" href="#c.PyModule_GetFilenameObject" title="PyModule_GetFilenameObject"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyModule_GetFilenameObject()</span></code></a> but return the filename
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Similar to <a class="reference internal" href="#c.PyModule_GetFilenameObject" title="PyModule_GetFilenameObject"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyModule_GetFilenameObject()</span></code></a> but return the filename
 encoded to «utf-8».</p>
 <div class="deprecated">
 <p><span class="versionmodified deprecated">Niezalecane od wersji 3.2: </span><a class="reference internal" href="#c.PyModule_GetFilename" title="PyModule_GetFilename"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyModule_GetFilename()</span></code></a> raises <a class="reference internal" href="../library/exceptions.html#UnicodeEncodeError" title="UnicodeEncodeError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">UnicodeEncodeError</span></code></a> on
@@ -336,7 +336,7 @@ data stored in module state.</p>
 <dl class="c type">
 <dt class="sig sig-object c" id="c.PyModuleDef">
 <span class="k"><span class="pre">type</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyModuleDef</span></span></span><a class="headerlink" href="#c.PyModuleDef" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> (including all members).</em><p>The module definition struct, which holds all information needed to create
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> (w tym wszystkie składniki).</em><p>The module definition struct, which holds all information needed to create
 a module object.
 This structure must be statically allocated (or be otherwise guaranteed
 to be valid while any modules created from it exist).
@@ -598,6 +598,28 @@ this module will cause the GIL to be automatically enabled. See
 </div>
 </dd></dl>
 
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.Py_mod_abi">
+<span class="sig-name descname"><span class="n"><span class="pre">Py_mod_abi</span></span></span><a class="headerlink" href="#c.Py_mod_abi" title="Link to this definition">¶</a><br /></dt>
+<dd><p>A pointer to a <a class="reference internal" href="stable.html#c.PyABIInfo" title="PyABIInfo"><code class="xref c c-struct docutils literal notranslate"><span class="pre">PyABIInfo</span></code></a> structure that describes the ABI that
+the extension is using.</p>
+<p>When the module is loaded, the <code class="xref c c-struct docutils literal notranslate"><span class="pre">PyABIInfo</span></code> in this slot is checked
+using <a class="reference internal" href="stable.html#c.PyABIInfo_Check" title="PyABIInfo_Check"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyABIInfo_Check()</span></code></a>.</p>
+<p>A suitable <code class="xref c c-struct docutils literal notranslate"><span class="pre">PyABIInfo</span></code> variable can be defined using the
+<a class="reference internal" href="stable.html#c.PyABIInfo_VAR" title="PyABIInfo_VAR"><code class="xref c c-macro docutils literal notranslate"><span class="pre">PyABIInfo_VAR</span></code></a> macro, as in:</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">PyABIInfo_VAR</span><span class="p">(</span><span class="n">abi_info</span><span class="p">);</span>
+
+<span class="k">static</span><span class="w"> </span><span class="n">PyModuleDef_Slot</span><span class="w"> </span><span class="n">mymodule_slots</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">   </span><span class="p">{</span><span class="n">Py_mod_abi</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">abi_info</span><span class="p">},</span>
+<span class="w">   </span><span class="p">...</span>
+<span class="p">};</span>
+</pre></div>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified added"> Dodane w wersji 3.15.</span></p>
+</div>
+</dd></dl>
+
 </section>
 </section>
 <section id="creating-extension-modules-dynamically">
@@ -609,7 +631,7 @@ They are also used in
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyModule_Create">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyModule_Create</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.PyModuleDef" title="PyModuleDef"><span class="n"><span class="pre">PyModuleDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">def</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyModule_Create" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><p>Create a new module object, given the definition in <em>def</em>.
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><p>Create a new module object, given the definition in <em>def</em>.
 This is a macro that calls <a class="reference internal" href="#c.PyModule_Create2" title="PyModule_Create2"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyModule_Create2()</span></code></a> with
 <em>module_api_version</em> set to <a class="reference internal" href="#c.PYTHON_API_VERSION" title="PYTHON_API_VERSION"><code class="xref c c-macro docutils literal notranslate"><span class="pre">PYTHON_API_VERSION</span></code></a>, or
 to <a class="reference internal" href="#c.PYTHON_ABI_VERSION" title="PYTHON_ABI_VERSION"><code class="xref c c-macro docutils literal notranslate"><span class="pre">PYTHON_ABI_VERSION</span></code></a> if using the
@@ -619,7 +641,7 @@ to <a class="reference internal" href="#c.PYTHON_ABI_VERSION" title="PYTHON_ABI_
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyModule_Create2">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyModule_Create2</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.PyModuleDef" title="PyModuleDef"><span class="n"><span class="pre">PyModuleDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">def</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n"><span class="pre">module_api_version</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyModule_Create2" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Create a new module object, given the definition in <em>def</em>, assuming the
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Create a new module object, given the definition in <em>def</em>, assuming the
 API version <em>module_api_version</em>.  If that version does not match the version
 of the running interpreter, a <a class="reference internal" href="../library/exceptions.html#RuntimeWarning" title="RuntimeWarning"><code class="xref py py-exc docutils literal notranslate"><span class="pre">RuntimeWarning</span></code></a> is emitted.</p>
 <p>Return <code class="docutils literal notranslate"><span class="pre">NULL</span></code> with an exception set on error.</p>
@@ -635,7 +657,7 @@ instead; only use this if you are sure you need it.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyModule_FromDefAndSpec">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyModule_FromDefAndSpec</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.PyModuleDef" title="PyModuleDef"><span class="n"><span class="pre">PyModuleDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">def</span></span>, <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">spec</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyModule_FromDefAndSpec" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><p>This macro calls <a class="reference internal" href="#c.PyModule_FromDefAndSpec2" title="PyModule_FromDefAndSpec2"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyModule_FromDefAndSpec2()</span></code></a> with
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><p>This macro calls <a class="reference internal" href="#c.PyModule_FromDefAndSpec2" title="PyModule_FromDefAndSpec2"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyModule_FromDefAndSpec2()</span></code></a> with
 <em>module_api_version</em> set to <a class="reference internal" href="#c.PYTHON_API_VERSION" title="PYTHON_API_VERSION"><code class="xref c c-macro docutils literal notranslate"><span class="pre">PYTHON_API_VERSION</span></code></a>, or
 to <a class="reference internal" href="#c.PYTHON_ABI_VERSION" title="PYTHON_ABI_VERSION"><code class="xref c c-macro docutils literal notranslate"><span class="pre">PYTHON_ABI_VERSION</span></code></a> if using the
 <a class="reference internal" href="stable.html#limited-c-api"><span class="std std-ref">limited API</span></a>.</p>
@@ -647,7 +669,7 @@ to <a class="reference internal" href="#c.PYTHON_ABI_VERSION" title="PYTHON_ABI_
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyModule_FromDefAndSpec2">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyModule_FromDefAndSpec2</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.PyModuleDef" title="PyModuleDef"><span class="n"><span class="pre">PyModuleDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">def</span></span>, <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">spec</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n"><span class="pre">module_api_version</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyModule_FromDefAndSpec2" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.7.</em><p>Create a new module object, given the definition in <em>def</em> and the
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.7.</em><p>Create a new module object, given the definition in <em>def</em> and the
 ModuleSpec <em>spec</em>, assuming the API version <em>module_api_version</em>.
 If that version does not match the version of the running interpreter,
 a <a class="reference internal" href="../library/exceptions.html#RuntimeWarning" title="RuntimeWarning"><code class="xref py py-exc docutils literal notranslate"><span class="pre">RuntimeWarning</span></code></a> is emitted.</p>
@@ -668,7 +690,7 @@ instead; only use this if you are sure you need it.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyModule_ExecDef">
 <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyModule_ExecDef</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">module</span></span>, <a class="reference internal" href="#c.PyModuleDef" title="PyModuleDef"><span class="n"><span class="pre">PyModuleDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">def</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyModule_ExecDef" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.7.</em><p>Process any execution slots (<a class="reference internal" href="#c.Py_mod_exec" title="Py_mod_exec"><code class="xref c c-data docutils literal notranslate"><span class="pre">Py_mod_exec</span></code></a>) given in <em>def</em>.</p>
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.7.</em><p>Process any execution slots (<a class="reference internal" href="#c.Py_mod_exec" title="Py_mod_exec"><code class="xref c c-data docutils literal notranslate"><span class="pre">Py_mod_exec</span></code></a>) given in <em>def</em>.</p>
 <div class="versionadded">
 <p><span class="versionmodified added"> Dodane w wersji 3.5.</span></p>
 </div>
@@ -701,7 +723,7 @@ or code that creates modules dynamically.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyModule_AddObjectRef">
 <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyModule_AddObjectRef</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">module</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">name</span></span>, <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">value</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyModule_AddObjectRef" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.10.</em><p>Add an object to <em>module</em> as <em>name</em>.  This is a convenience function which
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.10.</em><p>Add an object to <em>module</em> as <em>name</em>.  This is a convenience function which
 can be used from the module’s initialization function.</p>
 <p>On success, return <code class="docutils literal notranslate"><span class="pre">0</span></code>. On error, raise an exception and return <code class="docutils literal notranslate"><span class="pre">-1</span></code>.</p>
 <p>Example usage:</p>
@@ -750,7 +772,7 @@ used internally to create a key object.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyModule_Add">
 <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyModule_Add</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">module</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">name</span></span>, <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">value</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyModule_Add" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.13.</em><p>Similar to <a class="reference internal" href="#c.PyModule_AddObjectRef" title="PyModule_AddObjectRef"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyModule_AddObjectRef()</span></code></a>, but „steals” a reference
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.13.</em><p>Similar to <a class="reference internal" href="#c.PyModule_AddObjectRef" title="PyModule_AddObjectRef"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyModule_AddObjectRef()</span></code></a>, but „steals” a reference
 to <em>value</em>.
 It can be called with a result of function that returns a new reference
 without bothering to check its result or even saving it to a variable.</p>
@@ -768,7 +790,7 @@ without bothering to check its result or even saving it to a variable.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyModule_AddObject">
 <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyModule_AddObject</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">module</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">name</span></span>, <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">value</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyModule_AddObject" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Similar to <a class="reference internal" href="#c.PyModule_AddObjectRef" title="PyModule_AddObjectRef"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyModule_AddObjectRef()</span></code></a>, but steals a reference to
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Similar to <a class="reference internal" href="#c.PyModule_AddObjectRef" title="PyModule_AddObjectRef"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyModule_AddObjectRef()</span></code></a>, but steals a reference to
 <em>value</em> on success (if it returns <code class="docutils literal notranslate"><span class="pre">0</span></code>).</p>
 <p>The new <a class="reference internal" href="#c.PyModule_Add" title="PyModule_Add"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyModule_Add()</span></code></a> or <a class="reference internal" href="#c.PyModule_AddObjectRef" title="PyModule_AddObjectRef"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyModule_AddObjectRef()</span></code></a>
 functions are recommended, since it is
@@ -802,7 +824,7 @@ only releases the reference to <em>value</em> <strong>on success</strong>.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyModule_AddIntConstant">
 <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyModule_AddIntConstant</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">module</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">name</span></span>, <span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="n"><span class="pre">value</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyModule_AddIntConstant" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Add an integer constant to <em>module</em> as <em>name</em>.  This convenience function can be
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Add an integer constant to <em>module</em> as <em>name</em>.  This convenience function can be
 used from the module’s initialization function.
 Return <code class="docutils literal notranslate"><span class="pre">-1</span></code> with an exception set on error, <code class="docutils literal notranslate"><span class="pre">0</span></code> on success.</p>
 <p>This is a convenience function that calls <a class="reference internal" href="long.html#c.PyLong_FromLong" title="PyLong_FromLong"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyLong_FromLong()</span></code></a> and
@@ -812,7 +834,7 @@ Return <code class="docutils literal notranslate"><span class="pre">-1</span></c
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyModule_AddStringConstant">
 <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyModule_AddStringConstant</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">module</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">name</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">value</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyModule_AddStringConstant" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Add a string constant to <em>module</em> as <em>name</em>.  This convenience function can be
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Add a string constant to <em>module</em> as <em>name</em>.  This convenience function can be
 used from the module’s initialization function.  The string <em>value</em> must be
 <code class="docutils literal notranslate"><span class="pre">NULL</span></code>-terminated.
 Return <code class="docutils literal notranslate"><span class="pre">-1</span></code> with an exception set on error, <code class="docutils literal notranslate"><span class="pre">0</span></code> on success.</p>
@@ -839,7 +861,7 @@ Return <code class="docutils literal notranslate"><span class="pre">-1</span></c
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyModule_AddType">
 <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyModule_AddType</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">module</span></span>, <a class="reference internal" href="type.html#c.PyTypeObject" title="PyTypeObject"><span class="n"><span class="pre">PyTypeObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">type</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyModule_AddType" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.10.</em><p>Add a type object to <em>module</em>.
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.10.</em><p>Add a type object to <em>module</em>.
 The type object is finalized by calling internally <a class="reference internal" href="type.html#c.PyType_Ready" title="PyType_Ready"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyType_Ready()</span></code></a>.
 The name of the type object is taken from the last component of
 <a class="reference internal" href="typeobj.html#c.PyTypeObject.tp_name" title="PyTypeObject.tp_name"><code class="xref c c-member docutils literal notranslate"><span class="pre">tp_name</span></code></a> after dot.
@@ -852,7 +874,7 @@ Return <code class="docutils literal notranslate"><span class="pre">-1</span></c
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyModule_AddFunctions">
 <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyModule_AddFunctions</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">module</span></span>, <a class="reference internal" href="structures.html#c.PyMethodDef" title="PyMethodDef"><span class="n"><span class="pre">PyMethodDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">functions</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyModule_AddFunctions" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.7.</em><p>Add the functions from the <code class="docutils literal notranslate"><span class="pre">NULL</span></code> terminated <em>functions</em> array to <em>module</em>.
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.7.</em><p>Add the functions from the <code class="docutils literal notranslate"><span class="pre">NULL</span></code> terminated <em>functions</em> array to <em>module</em>.
 Refer to the <a class="reference internal" href="structures.html#c.PyMethodDef" title="PyMethodDef"><code class="xref c c-type docutils literal notranslate"><span class="pre">PyMethodDef</span></code></a> documentation for details on individual
 entries (due to the lack of a shared module namespace, module level
 „functions” implemented in C typically receive the module as their first
@@ -871,7 +893,7 @@ directly.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyModule_SetDocString">
 <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyModule_SetDocString</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">module</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">docstring</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyModule_SetDocString" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.7.</em><p>Set the docstring for <em>module</em> to <em>docstring</em>.
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.7.</em><p>Set the docstring for <em>module</em> to <em>docstring</em>.
 This function is called automatically when creating a module from
 <code class="docutils literal notranslate"><span class="pre">PyModuleDef</span></code> (such as when using <a class="reference internal" href="extension-modules.html#multi-phase-initialization"><span class="std std-ref">Multi-phase initialization</span></a>,
 <code class="docutils literal notranslate"><span class="pre">PyModule_Create</span></code>, or <code class="docutils literal notranslate"><span class="pre">PyModule_FromDefAndSpec</span></code>).</p>
@@ -884,7 +906,7 @@ This function is called automatically when creating a module from
 <dt class="sig sig-object c" id="c.PyUnstable_Module_SetGIL">
 <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyUnstable_Module_SetGIL</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">module</span></span>, <span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">gil</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyUnstable_Module_SetGIL" title="Link to this definition">¶</a><br /></dt>
 <dd><div class="unstable-c-api warning admonition">
-<em>This is <a class="reference internal" href="stable.html#unstable-c-api"><span class="std std-ref">Unstable API</span></a>. It may change without warning in minor releases.</em></div>
+<em>To jest <a class="reference internal" href="stable.html#unstable-c-api"><span class="std std-ref">niestabilne API</span></a>. Może ulec zmianie bez ostrzeżenia w wydaniach minor.</em></div>
 <p>Indicate that <em>module</em> does or does not support running without the global
 interpreter lock (GIL), using one of the values from
 <a class="reference internal" href="#c.Py_mod_gil" title="Py_mod_gil"><code class="xref c c-macro docutils literal notranslate"><span class="pre">Py_mod_gil</span></code></a>. It must be called during <em>module</em>’s initialization
@@ -910,7 +932,7 @@ since multiple such modules can be created from a single definition.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyState_FindModule">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyState_FindModule</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.PyModuleDef" title="PyModuleDef"><span class="n"><span class="pre">PyModuleDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">def</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyState_FindModule" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_borrowed_ref">Return value: Borrowed reference.</em><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Returns the module object that was created from <em>def</em> for the current interpreter.
+<dd><em class="refcount return_borrowed_ref">Wartość zwracana: pożyczona referencja.</em><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Returns the module object that was created from <em>def</em> for the current interpreter.
 This method requires that the module object has been attached to the interpreter state with
 <a class="reference internal" href="#c.PyState_AddModule" title="PyState_AddModule"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyState_AddModule()</span></code></a> beforehand. In case the corresponding module object is not
 found or has not been attached to the interpreter state yet, it returns <code class="docutils literal notranslate"><span class="pre">NULL</span></code>.</p>
@@ -919,7 +941,7 @@ found or has not been attached to the interpreter state yet, it returns <code cl
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyState_AddModule">
 <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyState_AddModule</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">module</span></span>, <a class="reference internal" href="#c.PyModuleDef" title="PyModuleDef"><span class="n"><span class="pre">PyModuleDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">def</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyState_AddModule" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.3.</em><p>Attaches the module object passed to the function to the interpreter state. This allows
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.3.</em><p>Attaches the module object passed to the function to the interpreter state. This allows
 the module object to be accessible via <a class="reference internal" href="#c.PyState_FindModule" title="PyState_FindModule"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyState_FindModule()</span></code></a>.</p>
 <p>Only effective on modules created using single-phase initialization.</p>
 <p>Python calls <code class="docutils literal notranslate"><span class="pre">PyState_AddModule</span></code> automatically after importing a module
@@ -942,7 +964,7 @@ by the new <em>module</em>.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyState_RemoveModule">
 <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyState_RemoveModule</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.PyModuleDef" title="PyModuleDef"><span class="n"><span class="pre">PyModuleDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">def</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyState_RemoveModule" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.3.</em><p>Removes the module object created from <em>def</em> from the interpreter state.
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.3.</em><p>Removes the module object created from <em>def</em> from the interpreter state.
 Return <code class="docutils literal notranslate"><span class="pre">-1</span></code> with an exception set on error, <code class="docutils literal notranslate"><span class="pre">0</span></code> on success.</p>
 <p>The caller must have an <a class="reference internal" href="../glossary.html#term-attached-thread-state"><span class="xref std std-term">attached thread state</span></a>.</p>
 <div class="versionadded">
@@ -961,7 +983,7 @@ Return <code class="docutils literal notranslate"><span class="pre">-1</span></c
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#">Module Objects</a></li>
 <li><a class="reference internal" href="#module-definitions">Module definitions</a><ul>
@@ -977,14 +999,14 @@ Return <code class="docutils literal notranslate"><span class="pre">-1</span></c
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="file.html"
-                          title="previous chapter">File Objects</a></p>
+                          title="poprzedni rozdział">File Objects</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="iterator.html"
-                          title="next chapter">Iterator Objects</a></p>
+                          title="następny rozdział">Iterator Objects</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -998,7 +1020,7 @@ Return <code class="docutils literal notranslate"><span class="pre">-1</span></c
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -1034,7 +1056,7 @@ Return <code class="docutils literal notranslate"><span class="pre">-1</span></c
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Reference Manual</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Podręcznik</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="concrete.html" >Concrete Objects Layer</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Module Objects</a></li>
                 <li class="right">
@@ -1083,7 +1105,7 @@ Return <code class="docutils literal notranslate"><span class="pre">-1</span></c
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

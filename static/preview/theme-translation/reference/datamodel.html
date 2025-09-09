@@ -31,11 +31,11 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="4. Execution model" href="executionmodel.html" />
     <link rel="prev" title="2. Lexical analysis" href="lexical_analysis.html" />
@@ -98,7 +98,7 @@
     </select>
 </label>
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#">3. Data model</a><ul>
 <li><a class="reference internal" href="#objects-values-and-types">3.1. Objects, values and types</a></li>
@@ -119,7 +119,7 @@
 </li>
 <li><a class="reference internal" href="#set-types">3.2.6. Set types</a></li>
 <li><a class="reference internal" href="#mappings">3.2.7. Mappings</a><ul>
-<li><a class="reference internal" href="#dictionaries">3.2.7.1. Dictionaries</a></li>
+<li><a class="reference internal" href="#dictionaries">3.2.7.1. Słowniki</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#callable-types">3.2.8. Callable types</a><ul>
@@ -134,11 +134,11 @@
 <li><a class="reference internal" href="#asynchronous-generator-functions">3.2.8.5. Asynchronous generator functions</a></li>
 <li><a class="reference internal" href="#built-in-functions">3.2.8.6. Built-in functions</a></li>
 <li><a class="reference internal" href="#built-in-methods">3.2.8.7. Built-in methods</a></li>
-<li><a class="reference internal" href="#classes">3.2.8.8. Classes</a></li>
+<li><a class="reference internal" href="#classes">3.2.8.8. Klasy</a></li>
 <li><a class="reference internal" href="#class-instances">3.2.8.9. Class Instances</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#modules">3.2.9. Modules</a><ul>
+<li><a class="reference internal" href="#modules">3.2.9. Moduły</a><ul>
 <li><a class="reference internal" href="#import-related-attributes-on-module-objects">3.2.9.1. Import-related attributes on module objects</a></li>
 <li><a class="reference internal" href="#other-writable-attributes-on-module-objects">3.2.9.2. Other writable attributes on module objects</a></li>
 <li><a class="reference internal" href="#module-dictionaries">3.2.9.3. Module dictionaries</a></li>
@@ -222,14 +222,14 @@
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="lexical_analysis.html"
-                          title="previous chapter"><span class="section-number">2. </span>Lexical analysis</a></p>
+                          title="poprzedni rozdział"><span class="section-number">2. </span>Lexical analysis</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="executionmodel.html"
-                          title="next chapter"><span class="section-number">4. </span>Execution model</a></p>
+                          title="następny rozdział"><span class="section-number">4. </span>Execution model</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -276,7 +276,7 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">The Python Language Reference</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Dokumentacja języka Python</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><span class="section-number">3. </span>Data model</a></li>
                 <li class="right">
                     
@@ -320,7 +320,7 @@ changes once it has been created; you may think of it as the object’s address 
 memory.  The <a class="reference internal" href="expressions.html#is"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">is</span></code></a> operator compares the identity of two objects; the
 <a class="reference internal" href="../library/functions.html#id" title="id"><code class="xref py py-func docutils literal notranslate"><span class="pre">id()</span></code></a> function returns an integer representing its identity.</p>
 <div class="impl-detail compound">
-<p><strong>CPython implementation detail:</strong> For CPython, <code class="docutils literal notranslate"><span class="pre">id(x)</span></code> is the memory address where <code class="docutils literal notranslate"><span class="pre">x</span></code> is stored.</p>
+<p><strong>Szczegół implementacyjny CPythona:</strong> For CPython, <code class="docutils literal notranslate"><span class="pre">id(x)</span></code> is the memory address where <code class="docutils literal notranslate"><span class="pre">x</span></code> is stored.</p>
 </div>
 <p>An object’s type determines the operations that the object supports (e.g., „does
 it have a length?”) and also defines the possible values for objects of that
@@ -342,7 +342,7 @@ collection or omit it altogether — it is a matter of implementation quality
 how garbage collection is implemented, as long as no objects are collected that
 are still reachable.</p>
 <div class="impl-detail compound">
-<p><strong>CPython implementation detail:</strong> CPython currently uses a reference-counting scheme with (optional) delayed
+<p><strong>Szczegół implementacyjny CPythona:</strong> CPython currently uses a reference-counting scheme with (optional) delayed
 detection of cyclically linked garbage, which collects most objects as soon
 as they become unreachable, but is not guaranteed to collect garbage
 containing circular references.  See the documentation of the <a class="reference internal" href="../library/gc.html#module-gc" title="gc: Interface to the cycle-detecting garbage collector."><code class="xref py py-mod docutils literal notranslate"><span class="pre">gc</span></code></a>
@@ -518,7 +518,7 @@ mutable and may be changed; however, the collection of objects directly
 referenced by an immutable object cannot change.)</p>
 <p>The following types are immutable sequences:</p>
 <dl id="index-18">
-<dt>Strings</dt><dd><p id="index-19">A string is a sequence of values that represent Unicode code points.
+<dt>Ciągi znaków</dt><dd><p id="index-19">A string is a sequence of values that represent Unicode code points.
 All the code points in the range <code class="docutils literal notranslate"><span class="pre">U+0000</span> <span class="pre">-</span> <span class="pre">U+10FFFF</span></code> can be
 represented in a string.  Python doesn’t have a <span class="c-expr sig sig-inline c"><span class="kt">char</span></span> type;
 instead, every code point in the string is represented as a string
@@ -537,7 +537,7 @@ expression (an expression by itself does not create a tuple, since
 parentheses must be usable for grouping of expressions).  An empty
 tuple can be formed by an empty pair of parentheses.</p>
 </dd>
-<dt>Bytes</dt><dd><p id="index-21">A bytes object is an immutable array.  The items are 8-bit bytes,
+<dt>Bajty</dt><dd><p id="index-21">A bytes object is an immutable array.  The items are 8-bit bytes,
 represented by integers in the range 0 &lt;= x &lt; 256.  Bytes literals
 (like <code class="docutils literal notranslate"><span class="pre">b'abc'</span></code>) and the built-in <a class="reference internal" href="../library/stdtypes.html#bytes" title="bytes"><code class="xref py py-func docutils literal notranslate"><span class="pre">bytes()</span></code></a> constructor
 can be used to create bytes objects.  Also, bytes objects can be
@@ -557,7 +557,7 @@ additional examples of mutable sequence types.</p>
 </div>
 <p>There are currently two intrinsic mutable sequence types:</p>
 <dl>
-<dt>Lists</dt><dd><p id="index-25">The items of a list are arbitrary Python objects.  Lists are formed by
+<dt>Listy</dt><dd><p id="index-25">The items of a list are arbitrary Python objects.  Lists are formed by
 placing a comma-separated list of expressions in square brackets. (Note
 that there are no special cases needed to form lists of length 0 or 1.)</p>
 </dd>
@@ -583,9 +583,9 @@ compare equal (e.g., <code class="docutils literal notranslate"><span class="pre
 set.</p>
 <p>There are currently two intrinsic set types:</p>
 <dl>
-<dt>Sets</dt><dd><p id="index-28">These represent a mutable set. They are created by the built-in <a class="reference internal" href="../library/stdtypes.html#set" title="set"><code class="xref py py-func docutils literal notranslate"><span class="pre">set()</span></code></a>
+<dt>Zbiory</dt><dd><p id="index-28">These represent a mutable set. They are created by the built-in <a class="reference internal" href="../library/stdtypes.html#set" title="set"><code class="xref py py-func docutils literal notranslate"><span class="pre">set()</span></code></a>
 constructor and can be modified afterwards by several methods, such as
-<code class="xref py py-meth docutils literal notranslate"><span class="pre">add()</span></code>.</p>
+<a class="reference internal" href="../library/stdtypes.html#frozenset.add" title="frozenset.add"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add</span></code></a>.</p>
 </dd>
 <dt>Frozen sets</dt><dd><p id="index-29">These represent an immutable set.  They are created by the built-in
 <a class="reference internal" href="../library/stdtypes.html#frozenset" title="frozenset"><code class="xref py py-func docutils literal notranslate"><span class="pre">frozenset()</span></code></a> constructor.  As a frozenset is immutable and
@@ -603,7 +603,7 @@ subscript notation <code class="docutils literal notranslate"><span class="pre">
 of items in a mapping.</p>
 <p>There is currently a single intrinsic mapping type:</p>
 <section id="dictionaries">
-<h4><span class="section-number">3.2.7.1. </span>Dictionaries<a class="headerlink" href="#dictionaries" title="Link to this heading">¶</a></h4>
+<h4><span class="section-number">3.2.7.1. </span>Słowniki<a class="headerlink" href="#dictionaries" title="Link to this heading">¶</a></h4>
 <p id="index-31">These represent finite sets of objects indexed by nearly arbitrary values.  The
 only types of values not acceptable as keys are values containing lists or
 dictionaries or other mutable types that are compared by value rather than by
@@ -642,8 +642,8 @@ list.</p>
 <h5><span class="section-number">3.2.8.1.1. </span>Special read-only attributes<a class="headerlink" href="#special-read-only-attributes" title="Link to this heading">¶</a></h5>
 <table class="docutils align-default" id="index-35">
 <thead>
-<tr class="row-odd"><th class="head"><p>Attribute</p></th>
-<th class="head"><p>Meaning</p></th>
+<tr class="row-odd"><th class="head"><p>atrybut</p></th>
+<th class="head"><p>Znaczenie</p></th>
 </tr>
 </thead>
 <tbody>
@@ -678,8 +678,8 @@ This can be used to get the value of the cell, as well as set the value.</p>
 <p id="index-36">Most of these attributes check the type of the assigned value:</p>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head"><p>Attribute</p></th>
-<th class="head"><p>Meaning</p></th>
+<tr class="row-odd"><th class="head"><p>atrybut</p></th>
+<th class="head"><p>Znaczenie</p></th>
 </tr>
 </thead>
 <tbody>
@@ -808,7 +808,7 @@ a <a class="reference internal" href="compound_stmts.html#generic-functions"><sp
 can be used, for example, to attach metadata to functions.  Regular attribute
 dot-notation is used to get and set such attributes.</p>
 <div class="impl-detail compound">
-<p><strong>CPython implementation detail:</strong> CPython’s current implementation only supports function attributes
+<p><strong>Szczegół implementacyjny CPythona:</strong> CPython’s current implementation only supports function attributes
 on user-defined functions. Function attributes on
 <a class="reference internal" href="#builtin-functions"><span class="std std-ref">built-in functions</span></a> may be supported in the
 future.</p>
@@ -965,7 +965,7 @@ denoted by <em>alist</em>. (The attribute has the same semantics as it does with
 <a class="reference internal" href="#method.__self__" title="method.__self__"><code class="xref py py-attr docutils literal notranslate"><span class="pre">other</span> <span class="pre">instance</span> <span class="pre">methods</span></code></a>.)</p>
 </section>
 <section id="classes">
-<span id="id3"></span><h4><span class="section-number">3.2.8.8. </span>Classes<a class="headerlink" href="#classes" title="Link to this heading">¶</a></h4>
+<span id="id3"></span><h4><span class="section-number">3.2.8.8. </span>Klasy<a class="headerlink" href="#classes" title="Link to this heading">¶</a></h4>
 <p>Classes are callable.  These objects normally act as factories for new
 instances of themselves, but variations are possible for class types that
 override <a class="reference internal" href="#object.__new__" title="object.__new__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">__new__()</span></code></a>.  The arguments of the call are passed to
@@ -979,7 +979,7 @@ initialize the new instance.</p>
 </section>
 </section>
 <section id="modules">
-<span id="module-objects"></span><h3><span class="section-number">3.2.9. </span>Modules<a class="headerlink" href="#modules" title="Link to this heading">¶</a></h3>
+<span id="module-objects"></span><h3><span class="section-number">3.2.9. </span>Moduły<a class="headerlink" href="#modules" title="Link to this heading">¶</a></h3>
 <p id="index-45">Modules are a basic organizational unit of Python code, and are created by
 the <a class="reference internal" href="import.html#importsystem"><span class="std std-ref">import system</span></a> as invoked either by the
 <a class="reference internal" href="simple_stmts.html#import"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">import</span></code></a> statement, or by calling
@@ -1217,7 +1217,7 @@ no annotations. See also: <a class="reference internal" href="#object.__annotate
 listed here, <code class="xref py py-attr docutils literal notranslate"><span class="pre">__dict__</span></code> cannot be accessed as a global variable from
 within a module; it can only be accessed as an attribute on module objects.</p>
 <div class="impl-detail compound">
-<p><strong>CPython implementation detail:</strong> Because of the way CPython clears module dictionaries, the module
+<p><strong>Szczegół implementacyjny CPythona:</strong> Because of the way CPython clears module dictionaries, the module
 dictionary will be cleared when the module falls out of scope even if the
 dictionary still has live references.  To avoid this, copy the dictionary
 or keep the module around while using its dictionary directly.</p>
@@ -1254,8 +1254,8 @@ of a base class.</p>
 <h4><span class="section-number">3.2.10.1. </span>Special attributes<a class="headerlink" href="#special-attributes" title="Link to this heading">¶</a></h4>
 <table class="docutils align-default" id="index-54">
 <thead>
-<tr class="row-odd"><th class="head"><p>Attribute</p></th>
-<th class="head"><p>Meaning</p></th>
+<tr class="row-odd"><th class="head"><p>atrybut</p></th>
+<th class="head"><p>Znaczenie</p></th>
 </tr>
 </thead>
 <tbody>
@@ -1393,7 +1393,7 @@ assigned through <code class="docutils literal notranslate"><span class="pre">se
 </td>
 <td><p>The line number of the first line of the class definition,
 including decorators.
-Setting the <code class="xref py py-attr docutils literal notranslate"><span class="pre">__module__</span></code> attribute removes the
+Setting the <a class="reference internal" href="#type.__module__" title="type.__module__"><code class="xref py py-attr docutils literal notranslate"><span class="pre">__module__</span></code></a> attribute removes the
 <code class="xref py py-attr docutils literal notranslate"><span class="pre">__firstlineno__</span></code> item from the type’s dictionary.</p>
 <div class="versionadded">
 <p><span class="versionmodified added"> Dodane w wersji 3.13.</span></p>
@@ -1850,6 +1850,19 @@ this may return a write-through proxy object.</p>
 (this is an index into the <a class="reference internal" href="../glossary.html#term-bytecode"><span class="xref std std-term">bytecode</span></a> string of the
 <a class="reference internal" href="#code-objects"><span class="std std-ref">code object</span></a>)</p></td>
 </tr>
+<tr class="row-odd"><td><dl class="py attribute">
+<dt class="sig sig-object py" id="frame.f_generator">
+<span class="sig-prename descclassname"><span class="pre">frame.</span></span><span class="sig-name descname"><span class="pre">f_generator</span></span><a class="headerlink" href="#frame.f_generator" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</td>
+<td><p>The <a class="reference internal" href="../glossary.html#term-generator"><span class="xref std std-term">generator</span></a> or <a class="reference internal" href="../glossary.html#term-coroutine"><span class="xref std std-term">coroutine</span></a> object that owns this frame,
+or <code class="docutils literal notranslate"><span class="pre">None</span></code> if the frame is a normal function.</p>
+<div class="versionadded">
+<p><span class="versionmodified added"> Dodane w wersji 3.14.</span></p>
+</div>
+</td>
+</tr>
 </tbody>
 </table>
 </section>
@@ -2061,9 +2074,9 @@ falling back to <a class="reference internal" href="#object.__getitem__" title="
 <p>When implementing a class that emulates any built-in type, it is important that
 the emulation only be implemented to the degree that it makes sense for the
 object being modelled.  For example, some sequences may work well with retrieval
-of individual elements, but extracting a slice may not make sense.  (One example
-of this is the <code class="xref py py-class docutils literal notranslate"><span class="pre">NodeList</span></code> interface in the W3C’s Document
-Object Model.)</p>
+of individual elements, but extracting a slice may not make sense.
+(One example of this is the <a class="reference internal" href="../library/xml.dom.html#dom-nodelist-objects"><span class="std std-ref">NodeList</span></a> interface
+in the W3C’s Document Object Model.)</p>
 <section id="basic-customization">
 <span id="customization"></span><h3><span class="section-number">3.3.1. </span>Basic customization<a class="headerlink" href="#basic-customization" title="Link to this heading">¶</a></h3>
 <dl class="py method">
@@ -2130,7 +2143,7 @@ the reference count for <code class="docutils literal notranslate"><span class="
 <code class="docutils literal notranslate"><span class="pre">x</span></code>’s reference count reaches zero.</p>
 </div>
 <div class="impl-detail compound">
-<p><strong>CPython implementation detail:</strong> It is possible for a reference cycle to prevent the reference count
+<p><strong>Szczegół implementacyjny CPythona:</strong> It is possible for a reference cycle to prevent the reference count
 of an object from going to zero.  In this case, the cycle will be
 later detected and deleted by the <a class="reference internal" href="../glossary.html#term-garbage-collection"><span class="xref std std-term">cyclic garbage collector</span></a>.  A common cause of reference cycles is when
 an exception has been caught in a local variable.  The frame’s
@@ -2448,7 +2461,14 @@ returned. <a class="reference internal" href="../library/functions.html#dir" tit
 
 <section id="customizing-module-attribute-access">
 <h4><span class="section-number">3.3.2.1. </span>Customizing module attribute access<a class="headerlink" href="#customizing-module-attribute-access" title="Link to this heading">¶</a></h4>
-<p id="index-89">Special names <code class="docutils literal notranslate"><span class="pre">__getattr__</span></code> and <code class="docutils literal notranslate"><span class="pre">__dir__</span></code> can be also used to customize
+<dl class="py method" id="index-89">
+<dt class="sig sig-object py" id="module.__getattr__">
+<span class="sig-prename descclassname"><span class="pre">module.</span></span><span class="sig-name descname"><span class="pre">__getattr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#module.__getattr__" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="module.__dir__">
+<span class="sig-prename descclassname"><span class="pre">module.</span></span><span class="sig-name descname"><span class="pre">__dir__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#module.__dir__" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>Special names <code class="docutils literal notranslate"><span class="pre">__getattr__</span></code> and <code class="docutils literal notranslate"><span class="pre">__dir__</span></code> can be also used to customize
 access to module attributes. The <code class="docutils literal notranslate"><span class="pre">__getattr__</span></code> function at the module level
 should accept one argument which is the name of an attribute and return the
 computed value or raise an <a class="reference internal" href="../library/exceptions.html#AttributeError" title="AttributeError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">AttributeError</span></code></a>. If an attribute is
@@ -2459,6 +2479,11 @@ it is called with the attribute name and the result is returned.</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">__dir__</span></code> function should accept no arguments, and return an iterable of
 strings that represents the names accessible on module. If present, this
 function overrides the standard <a class="reference internal" href="../library/functions.html#dir" title="dir"><code class="xref py py-func docutils literal notranslate"><span class="pre">dir()</span></code></a> search on a module.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="module.__class__">
+<span class="sig-prename descclassname"><span class="pre">module.</span></span><span class="sig-name descname"><span class="pre">__class__</span></span><a class="headerlink" href="#module.__class__" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
 <p>For a more fine grained customization of the module behavior (setting
 attributes, properties, etc.), one can set the <code class="docutils literal notranslate"><span class="pre">__class__</span></code> attribute of
 a module object to a subclass of <a class="reference internal" href="../library/types.html#types.ModuleType" title="types.ModuleType"><code class="xref py py-class docutils literal notranslate"><span class="pre">types.ModuleType</span></code></a>. For example:</p>
@@ -2870,7 +2895,7 @@ created by the compiler if any methods in a class body refer to either
 lexical scoping, while the class or instance that was used to make the
 current call is identified based on the first argument passed to the method.</p>
 <div class="impl-detail compound">
-<p><strong>CPython implementation detail:</strong> In CPython 3.6 and later, the <code class="docutils literal notranslate"><span class="pre">__class__</span></code> cell is passed to the metaclass
+<p><strong>Szczegół implementacyjny CPythona:</strong> In CPython 3.6 and later, the <code class="docutils literal notranslate"><span class="pre">__class__</span></code> cell is passed to the metaclass
 as a <code class="docutils literal notranslate"><span class="pre">__classcell__</span></code> entry in the class namespace. If present, this must
 be propagated up to the <code class="docutils literal notranslate"><span class="pre">type.__new__</span></code> call in order for the class to be
 initialised correctly.
@@ -3113,11 +3138,12 @@ objects.  The <a class="reference internal" href="../library/collections.abc.htm
 <a class="reference internal" href="../glossary.html#term-abstract-base-class"><span class="xref std std-term">abstract base class</span></a> to help create those methods from a base set of
 <a class="reference internal" href="#object.__getitem__" title="object.__getitem__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">__getitem__()</span></code></a>, <a class="reference internal" href="#object.__setitem__" title="object.__setitem__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">__setitem__()</span></code></a>,
 <a class="reference internal" href="#object.__delitem__" title="object.__delitem__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">__delitem__()</span></code></a>, and <code class="xref py py-meth docutils literal notranslate"><span class="pre">keys()</span></code>.
-Mutable sequences should provide methods <code class="xref py py-meth docutils literal notranslate"><span class="pre">append()</span></code>, <code class="xref py py-meth docutils literal notranslate"><span class="pre">count()</span></code>,
-<code class="xref py py-meth docutils literal notranslate"><span class="pre">index()</span></code>, <code class="xref py py-meth docutils literal notranslate"><span class="pre">extend()</span></code>, <code class="xref py py-meth docutils literal notranslate"><span class="pre">insert()</span></code>, <code class="xref py py-meth docutils literal notranslate"><span class="pre">pop()</span></code>, <code class="xref py py-meth docutils literal notranslate"><span class="pre">remove()</span></code>,
-<code class="xref py py-meth docutils literal notranslate"><span class="pre">reverse()</span></code> and <code class="xref py py-meth docutils literal notranslate"><span class="pre">sort()</span></code>, like Python standard <a class="reference internal" href="../library/stdtypes.html#list" title="list"><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></a>
-objects. Finally,
-sequence types should implement addition (meaning concatenation) and
+Mutable sequences should provide methods <a class="reference internal" href="../library/stdtypes.html#sequence.append" title="sequence.append"><code class="xref py py-meth docutils literal notranslate"><span class="pre">append()</span></code></a>,
+<a class="reference internal" href="../library/stdtypes.html#sequence.count" title="sequence.count"><code class="xref py py-meth docutils literal notranslate"><span class="pre">count()</span></code></a>, <a class="reference internal" href="../library/stdtypes.html#sequence.index" title="sequence.index"><code class="xref py py-meth docutils literal notranslate"><span class="pre">index()</span></code></a>, <a class="reference internal" href="../library/stdtypes.html#sequence.extend" title="sequence.extend"><code class="xref py py-meth docutils literal notranslate"><span class="pre">extend()</span></code></a>,
+<a class="reference internal" href="../library/stdtypes.html#sequence.insert" title="sequence.insert"><code class="xref py py-meth docutils literal notranslate"><span class="pre">insert()</span></code></a>, <a class="reference internal" href="../library/stdtypes.html#sequence.pop" title="sequence.pop"><code class="xref py py-meth docutils literal notranslate"><span class="pre">pop()</span></code></a>, <a class="reference internal" href="../library/stdtypes.html#sequence.remove" title="sequence.remove"><code class="xref py py-meth docutils literal notranslate"><span class="pre">remove()</span></code></a>,
+<a class="reference internal" href="../library/stdtypes.html#sequence.reverse" title="sequence.reverse"><code class="xref py py-meth docutils literal notranslate"><span class="pre">reverse()</span></code></a> and <code class="xref py py-meth docutils literal notranslate"><span class="pre">sort()</span></code>,
+like Python standard <a class="reference internal" href="../library/stdtypes.html#list" title="list"><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></a> objects.
+Finally, sequence types should implement addition (meaning concatenation) and
 multiplication (meaning repetition) by defining the methods
 <a class="reference internal" href="#object.__add__" title="object.__add__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">__add__()</span></code></a>, <a class="reference internal" href="#object.__radd__" title="object.__radd__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">__radd__()</span></code></a>, <a class="reference internal" href="#object.__iadd__" title="object.__iadd__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">__iadd__()</span></code></a>,
 <a class="reference internal" href="#object.__mul__" title="object.__mul__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">__mul__()</span></code></a>, <a class="reference internal" href="#object.__rmul__" title="object.__rmul__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">__rmul__()</span></code></a> and <a class="reference internal" href="#object.__imul__" title="object.__imul__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">__imul__()</span></code></a>
@@ -3138,7 +3164,7 @@ of the object, an integer <code class="docutils literal notranslate"><span class
 <a class="reference internal" href="#object.__bool__" title="object.__bool__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">__bool__()</span></code></a> method and whose <code class="xref py py-meth docutils literal notranslate"><span class="pre">__len__()</span></code> method returns zero is
 considered to be false in a Boolean context.</p>
 <div class="impl-detail compound">
-<p><strong>CPython implementation detail:</strong> In CPython, the length is required to be at most <a class="reference internal" href="../library/sys.html#sys.maxsize" title="sys.maxsize"><code class="xref py py-data docutils literal notranslate"><span class="pre">sys.maxsize</span></code></a>.
+<p><strong>Szczegół implementacyjny CPythona:</strong> In CPython, the length is required to be at most <a class="reference internal" href="../library/sys.html#sys.maxsize" title="sys.maxsize"><code class="xref py py-data docutils literal notranslate"><span class="pre">sys.maxsize</span></code></a>.
 If the length is larger than <code class="xref py py-data docutils literal notranslate"><span class="pre">sys.maxsize</span></code> some features (such as
 <a class="reference internal" href="../library/functions.html#len" title="len"><code class="xref py py-func docutils literal notranslate"><span class="pre">len()</span></code></a>) may raise <a class="reference internal" href="../library/exceptions.html#OverflowError" title="OverflowError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">OverflowError</span></code></a>.  To prevent raising
 <code class="xref py py-exc docutils literal notranslate"><span class="pre">OverflowError</span></code> by truth value testing, an object must define a
@@ -3884,7 +3910,7 @@ difference being that it must return an <em>awaitable</em>.</p>
 <div class="versionadded">
 <p><span class="versionmodified added"> Dodane w wersji 3.5.</span></p>
 </div>
-<p class="rubric">Footnotes</p>
+<p class="rubric">Przypisy</p>
 <aside class="footnote-list brackets">
 <aside class="footnote brackets" id="id20" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
@@ -3934,7 +3960,7 @@ operations.</p>
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#">3. Data model</a><ul>
 <li><a class="reference internal" href="#objects-values-and-types">3.1. Objects, values and types</a></li>
@@ -3955,7 +3981,7 @@ operations.</p>
 </li>
 <li><a class="reference internal" href="#set-types">3.2.6. Set types</a></li>
 <li><a class="reference internal" href="#mappings">3.2.7. Mappings</a><ul>
-<li><a class="reference internal" href="#dictionaries">3.2.7.1. Dictionaries</a></li>
+<li><a class="reference internal" href="#dictionaries">3.2.7.1. Słowniki</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#callable-types">3.2.8. Callable types</a><ul>
@@ -3970,11 +3996,11 @@ operations.</p>
 <li><a class="reference internal" href="#asynchronous-generator-functions">3.2.8.5. Asynchronous generator functions</a></li>
 <li><a class="reference internal" href="#built-in-functions">3.2.8.6. Built-in functions</a></li>
 <li><a class="reference internal" href="#built-in-methods">3.2.8.7. Built-in methods</a></li>
-<li><a class="reference internal" href="#classes">3.2.8.8. Classes</a></li>
+<li><a class="reference internal" href="#classes">3.2.8.8. Klasy</a></li>
 <li><a class="reference internal" href="#class-instances">3.2.8.9. Class Instances</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#modules">3.2.9. Modules</a><ul>
+<li><a class="reference internal" href="#modules">3.2.9. Moduły</a><ul>
 <li><a class="reference internal" href="#import-related-attributes-on-module-objects">3.2.9.1. Import-related attributes on module objects</a></li>
 <li><a class="reference internal" href="#other-writable-attributes-on-module-objects">3.2.9.2. Other writable attributes on module objects</a></li>
 <li><a class="reference internal" href="#module-dictionaries">3.2.9.3. Module dictionaries</a></li>
@@ -4058,14 +4084,14 @@ operations.</p>
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="lexical_analysis.html"
-                          title="previous chapter"><span class="section-number">2. </span>Lexical analysis</a></p>
+                          title="poprzedni rozdział"><span class="section-number">2. </span>Lexical analysis</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="executionmodel.html"
-                          title="next chapter"><span class="section-number">4. </span>Execution model</a></p>
+                          title="następny rozdział"><span class="section-number">4. </span>Execution model</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -4079,7 +4105,7 @@ operations.</p>
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -4115,7 +4141,7 @@ operations.</p>
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Language Reference</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Dokumentacja języka Python</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><span class="section-number">3. </span>Data model</a></li>
                 <li class="right">
                     
@@ -4163,7 +4189,7 @@ operations.</p>
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

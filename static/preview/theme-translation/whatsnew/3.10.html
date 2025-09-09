@@ -4,19 +4,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="What’s New In Python 3.10" />
+<meta property="og:title" content="Co nowego w Pythonie 3.10" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://docs.python.org/3/whatsnew/3.10.html" />
 <meta property="og:site_name" content="Python documentation" />
-<meta property="og:description" content="Editor, Pablo Galindo Salgado,. This article explains the new features in Python 3.10, compared to 3.9. Python 3.10 was released on October 4, 2021. For full details, see the changelog. Summary – R..." />
+<meta property="og:description" content="redakcja, Pablo Galindo Salgado,. This article explains the new features in Python 3.10, compared to 3.9. Python 3.10 was released on October 4, 2021. For full details, see the changelog. Podsumowa..." />
 <meta property="og:image" content="_static/og-image.png" />
 <meta property="og:image:alt" content="Python documentation" />
-<meta name="description" content="Editor, Pablo Galindo Salgado,. This article explains the new features in Python 3.10, compared to 3.9. Python 3.10 was released on October 4, 2021. For full details, see the changelog. Summary – R..." />
+<meta name="description" content="redakcja, Pablo Galindo Salgado,. This article explains the new features in Python 3.10, compared to 3.9. Python 3.10 was released on October 4, 2021. For full details, see the changelog. Podsumowa..." />
 <meta name="theme-color" content="#3776ab">
 <meta property="og:image:width" content="200">
 <meta property="og:image:height" content="200">
 
-    <title>What’s New In Python 3.10 &#8212; Python 3.15.0a0 - dokumentacja</title><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Co nowego w Pythonie 3.10 &#8212; Python 3.15.0a0 - dokumentacja</title><meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=234b1a7c" />
@@ -31,14 +31,14 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
-    <link rel="next" title="What’s New In Python 3.9" href="3.9.html" />
-    <link rel="prev" title="What’s New In Python 3.11" href="3.11.html" />
+    <link rel="next" title="Co nowego w Pythonie 3.9" href="3.9.html" />
+    <link rel="prev" title="Co nowego w Pythonie 3.11" href="3.11.html" />
     
       
       <link rel="canonical" href="https://docs.python.org/3/whatsnew/3.10.html">
@@ -98,13 +98,13 @@
     </select>
 </label>
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
-<li><a class="reference internal" href="#">What’s New In Python 3.10</a><ul>
-<li><a class="reference internal" href="#summary-release-highlights">Summary – Release highlights</a></li>
-<li><a class="reference internal" href="#new-features">New Features</a><ul>
-<li><a class="reference internal" href="#parenthesized-context-managers">Parenthesized context managers</a></li>
-<li><a class="reference internal" href="#better-error-messages">Better error messages</a><ul>
+<li><a class="reference internal" href="#">Co nowego w Pythonie 3.10</a><ul>
+<li><a class="reference internal" href="#summary-release-highlights">Podsumowanie – najważniejsze nowości</a></li>
+<li><a class="reference internal" href="#new-features">Nowe funkcjonalności</a><ul>
+<li><a class="reference internal" href="#parenthesized-context-managers">Context managery w nawiasach</a></li>
+<li><a class="reference internal" href="#better-error-messages">Lepsze komunikaty błędów</a><ul>
 <li><a class="reference internal" href="#syntaxerrors">SyntaxErrors</a></li>
 <li><a class="reference internal" href="#indentationerrors">IndentationErrors</a></li>
 <li><a class="reference internal" href="#attributeerrors">AttributeErrors</a></li>
@@ -142,7 +142,7 @@
 </li>
 <li><a class="reference internal" href="#other-language-changes">Other Language Changes</a></li>
 <li><a class="reference internal" href="#new-modules">New Modules</a></li>
-<li><a class="reference internal" href="#improved-modules">Improved Modules</a><ul>
+<li><a class="reference internal" href="#improved-modules">Ulepszone moduły</a><ul>
 <li><a class="reference internal" href="#asyncio">asyncio</a></li>
 <li><a class="reference internal" href="#argparse">argparse</a></li>
 <li><a class="reference internal" href="#array">array</a></li>
@@ -210,9 +210,9 @@
 </li>
 <li><a class="reference internal" href="#cpython-bytecode-changes">CPython bytecode changes</a></li>
 <li><a class="reference internal" href="#build-changes">Build Changes</a></li>
-<li><a class="reference internal" href="#c-api-changes">C API Changes</a><ul>
+<li><a class="reference internal" href="#c-api-changes">Zmiany w C API</a><ul>
 <li><a class="reference internal" href="#pep-652-maintaining-the-stable-abi">PEP 652: Maintaining the Stable ABI</a></li>
-<li><a class="reference internal" href="#id1">New Features</a></li>
+<li><a class="reference internal" href="#id1">Nowe funkcjonalności</a></li>
 <li><a class="reference internal" href="#id2">Porting to Python 3.10</a></li>
 <li><a class="reference internal" href="#id3">Deprecated</a></li>
 <li><a class="reference internal" href="#id4">Removed</a></li>
@@ -230,14 +230,14 @@
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="3.11.html"
-                          title="previous chapter">What’s New In Python 3.11</a></p>
+                          title="poprzedni rozdział">Co nowego w Pythonie 3.11</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="3.9.html"
-                          title="next chapter">What’s New In Python 3.9</a></p>
+                          title="następny rozdział">Co nowego w Pythonie 3.9</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -265,10 +265,10 @@
           <a href="../py-modindex.html" title="Indeks modułów Pythona"
              >moduły</a> |</li>
         <li class="right" >
-          <a href="3.9.html" title="What’s New In Python 3.9"
+          <a href="3.9.html" title="Co nowego w Pythonie 3.9"
              accesskey="N">dalej</a> |</li>
         <li class="right" >
-          <a href="3.11.html" title="What’s New In Python 3.11"
+          <a href="3.11.html" title="Co nowego w Pythonie 3.11"
              accesskey="P">wstecz</a> |</li>
 
           <li><img src="../_static/py.svg" alt="Python logo" style="vertical-align: middle; margin-top: -1px"></li>
@@ -284,8 +284,8 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">What’s New in Python</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">What’s New In Python 3.10</a></li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Co nowego w Pythonie</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Co nowego w Pythonie 3.10</a></li>
                 <li class="right">
                     
 
@@ -316,9 +316,9 @@
           <div class="body" role="main">
             
   <section id="what-s-new-in-python-3-10">
-<h1>What’s New In Python 3.10<a class="headerlink" href="#what-s-new-in-python-3-10" title="Link to this heading">¶</a></h1>
+<h1>Co nowego w Pythonie 3.10<a class="headerlink" href="#what-s-new-in-python-3-10" title="Link to this heading">¶</a></h1>
 <dl class="field-list simple">
-<dt class="field-odd">Editor<span class="colon">:</span></dt>
+<dt class="field-odd">redakcja<span class="colon">:</span></dt>
 <dd class="field-odd"><p>Pablo Galindo Salgado</p>
 </dd>
 </dl>
@@ -326,47 +326,43 @@
 Python 3.10 was released on October 4, 2021.
 For full details, see the <a class="reference internal" href="changelog.html#changelog"><span class="std std-ref">changelog</span></a>.</p>
 <section id="summary-release-highlights">
-<h2>Summary – Release highlights<a class="headerlink" href="#summary-release-highlights" title="Link to this heading">¶</a></h2>
-<p>New syntax features:</p>
+<h2>Podsumowanie – najważniejsze nowości<a class="headerlink" href="#summary-release-highlights" title="Link to this heading">¶</a></h2>
+<p>Nowe cechy składni:</p>
 <ul class="simple">
-<li><p><span class="target" id="index-0"></span><a class="pep reference external" href="https://peps.python.org/pep-0634/"><strong>PEP 634</strong></a>, Structural Pattern Matching: Specification</p></li>
-<li><p><span class="target" id="index-1"></span><a class="pep reference external" href="https://peps.python.org/pep-0635/"><strong>PEP 635</strong></a>, Structural Pattern Matching: Motivation and Rationale</p></li>
+<li><p><span class="target" id="index-54"></span><a class="pep reference external" href="https://peps.python.org/pep-0634/"><strong>PEP 634</strong></a>, Structural Pattern Matching: Specyfikacja</p></li>
+<li><p><span class="target" id="index-55"></span><a class="pep reference external" href="https://peps.python.org/pep-0635/"><strong>PEP 635</strong></a>, Structural Pattern Matching: Motywacja i uzasadnienie</p></li>
 <li><p><span class="target" id="index-2"></span><a class="pep reference external" href="https://peps.python.org/pep-0636/"><strong>PEP 636</strong></a>, Structural Pattern Matching: Tutorial</p></li>
-<li><p><a class="reference external" href="https://bugs.python.org/issue?&#64;action=redirect&amp;bpo=12782">bpo-12782</a>, Parenthesized context managers are now officially allowed.</p></li>
+<li><p><a class="reference external" href="https://bugs.python.org/issue?&#64;action=redirect&amp;bpo=12782">bpo-12782</a>, Context managery otoczone nawiasami są teraz oficjalnie wspierane.</p></li>
 </ul>
-<p>New features in the standard library:</p>
+<p>Nowe funkcjonalności w bibliotece standardowej:</p>
 <ul class="simple">
-<li><p><span class="target" id="index-3"></span><a class="pep reference external" href="https://peps.python.org/pep-0618/"><strong>PEP 618</strong></a>, Add Optional Length-Checking To zip.</p></li>
+<li><p><span class="target" id="index-56"></span><a class="pep reference external" href="https://peps.python.org/pep-0618/"><strong>PEP 618</strong></a>, Dodane opcjonalne sprawdzenie długości do zip.</p></li>
 </ul>
-<p>Interpreter improvements:</p>
+<p>Udoskonalenia interpretera:</p>
 <ul class="simple">
-<li><p><span class="target" id="index-4"></span><a class="pep reference external" href="https://peps.python.org/pep-0626/"><strong>PEP 626</strong></a>, Precise line numbers for debugging and other tools.</p></li>
+<li><p><span class="target" id="index-57"></span><a class="pep reference external" href="https://peps.python.org/pep-0626/"><strong>PEP 626</strong></a>, Dokładne numery linii dla debuggowania i innych narzędzi.</p></li>
 </ul>
-<p>New typing features:</p>
+<p>Nowe cechy typowania:</p>
 <ul class="simple">
-<li><p><span class="target" id="index-5"></span><a class="pep reference external" href="https://peps.python.org/pep-0604/"><strong>PEP 604</strong></a>, Allow writing union types as X | Y</p></li>
-<li><p><span class="target" id="index-6"></span><a class="pep reference external" href="https://peps.python.org/pep-0612/"><strong>PEP 612</strong></a>, Parameter Specification Variables</p></li>
+<li><p><span class="target" id="index-58"></span><a class="pep reference external" href="https://peps.python.org/pep-0604/"><strong>PEP 604</strong></a>, Zezwolone pisanie sumy typów jako X | Y</p></li>
+<li><p><span class="target" id="index-59"></span><a class="pep reference external" href="https://peps.python.org/pep-0612/"><strong>PEP 612</strong></a>, Zmienne specyfikacji parametrów</p></li>
 <li><p><span class="target" id="index-7"></span><a class="pep reference external" href="https://peps.python.org/pep-0613/"><strong>PEP 613</strong></a>, Explicit Type Aliases</p></li>
 <li><p><span class="target" id="index-8"></span><a class="pep reference external" href="https://peps.python.org/pep-0647/"><strong>PEP 647</strong></a>, User-Defined Type Guards</p></li>
 </ul>
-<p>Important deprecations, removals or restrictions:</p>
+<p>Ważne dezaprobaty, usunięcia lub ograniczenia:</p>
 <ul class="simple">
-<li><p><span class="target" id="index-9"></span><a class="pep reference external" href="https://peps.python.org/pep-0644/"><strong>PEP 644</strong></a>, Require OpenSSL 1.1.1 or newer</p></li>
-<li><p><span class="target" id="index-10"></span><a class="pep reference external" href="https://peps.python.org/pep-0632/"><strong>PEP 632</strong></a>, Deprecate distutils module.</p></li>
-<li><p><span class="target" id="index-11"></span><a class="pep reference external" href="https://peps.python.org/pep-0623/"><strong>PEP 623</strong></a>, Deprecate and prepare for the removal of the wstr member in PyUnicodeObject.</p></li>
-<li><p><span class="target" id="index-12"></span><a class="pep reference external" href="https://peps.python.org/pep-0624/"><strong>PEP 624</strong></a>, Remove Py_UNICODE encoder APIs</p></li>
-<li><p><span class="target" id="index-13"></span><a class="pep reference external" href="https://peps.python.org/pep-0597/"><strong>PEP 597</strong></a>, Add optional EncodingWarning</p></li>
+<li><p><span class="target" id="index-60"></span><a class="pep reference external" href="https://peps.python.org/pep-0644/"><strong>PEP 644</strong></a>, Wymagane OpenSSL 1.1.1 lub nowsze</p></li>
+<li><p><span class="target" id="index-61"></span><a class="pep reference external" href="https://peps.python.org/pep-0632/"><strong>PEP 632</strong></a>, Zdezaprobowany moduł distutils.</p></li>
+<li><p><span class="target" id="index-62"></span><a class="pep reference external" href="https://peps.python.org/pep-0623/"><strong>PEP 623</strong></a>, Zdezaprobowanie i przygotowanie do usunięcia elementu wstr w PyUnicodeObject.</p></li>
+<li><p><span class="target" id="index-63"></span><a class="pep reference external" href="https://peps.python.org/pep-0624/"><strong>PEP 624</strong></a>, Usunięte API encodera Py_UNICODE</p></li>
+<li><p><span class="target" id="index-64"></span><a class="pep reference external" href="https://peps.python.org/pep-0597/"><strong>PEP 597</strong></a>, Dodany opcjonalny EncodingWarning</p></li>
 </ul>
 </section>
 <section id="new-features">
-<h2>New Features<a class="headerlink" href="#new-features" title="Link to this heading">¶</a></h2>
+<h2>Nowe funkcjonalności<a class="headerlink" href="#new-features" title="Link to this heading">¶</a></h2>
 <section id="parenthesized-context-managers">
-<span id="whatsnew310-pep563"></span><h3>Parenthesized context managers<a class="headerlink" href="#parenthesized-context-managers" title="Link to this heading">¶</a></h3>
-<p>Using enclosing parentheses for continuation across multiple lines
-in context managers is now supported. This allows formatting a long
-collection of context managers in multiple lines in a similar way
-as it was previously possible with import statements. For instance,
-all these examples are now valid:</p>
+<span id="whatsnew310-pep563"></span><h3>Context managery w nawiasach<a class="headerlink" href="#parenthesized-context-managers" title="Link to this heading">¶</a></h3>
+<p>Użycie zewnętrzych nawiasów dla kontynuacji w wielu liniach w context managerach jest teraz wspierane. Pozwala to formatować długą kolekcję context managerów w wielu liniach w podobny sposób, jak można to robić z instrukcjami import. Na przykład wszystkie te przykłady są teraz poprawne:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="p">(</span><span class="n">CtxManager</span><span class="p">()</span> <span class="k">as</span> <span class="n">example</span><span class="p">):</span>
     <span class="o">...</span>
 
@@ -391,8 +387,7 @@ all these examples are now valid:</p>
     <span class="o">...</span>
 </pre></div>
 </div>
-<p>it is also possible to use a trailing comma at the end of the
-enclosed group:</p>
+<p>Można też użyć przecinka na końcu grupy otoczonej nawiasami:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="p">(</span>
     <span class="n">CtxManager1</span><span class="p">()</span> <span class="k">as</span> <span class="n">example1</span><span class="p">,</span>
     <span class="n">CtxManager2</span><span class="p">()</span> <span class="k">as</span> <span class="n">example2</span><span class="p">,</span>
@@ -401,13 +396,11 @@ enclosed group:</p>
     <span class="o">...</span>
 </pre></div>
 </div>
-<p>This new syntax uses the non LL(1) capacities of the new parser.
-Check <span class="target" id="index-14"></span><a class="pep reference external" href="https://peps.python.org/pep-0617/"><strong>PEP 617</strong></a> for more details.</p>
-<p>(Contributed by Guido van Rossum, Pablo Galindo and Lysandros Nikolaou
-in <a class="reference external" href="https://bugs.python.org/issue?&#64;action=redirect&amp;bpo=12782">bpo-12782</a> and <a class="reference external" href="https://bugs.python.org/issue?&#64;action=redirect&amp;bpo=40334">bpo-40334</a>.)</p>
+<p>Ta nowa składnia używa zdolności nie-LL(1) nowego parsera. Więcej szczegółów znajdziesz w <span class="target" id="index-65"></span><a class="pep reference external" href="https://peps.python.org/pep-0617/"><strong>PEP 617</strong></a>.</p>
+<p>(Napisane przez Guido van Rossuma, Pablo Galinda i Lysandrosa Nikolaou w <a class="reference external" href="https://bugs.python.org/issue?&#64;action=redirect&amp;bpo=12782">bpo-12782</a> i <a class="reference external" href="https://bugs.python.org/issue?&#64;action=redirect&amp;bpo=40334">bpo-40334</a>.)</p>
 </section>
 <section id="better-error-messages">
-<h3>Better error messages<a class="headerlink" href="#better-error-messages" title="Link to this heading">¶</a></h3>
+<h3>Lepsze komunikaty błędów<a class="headerlink" href="#better-error-messages" title="Link to this heading">¶</a></h3>
 <section id="syntaxerrors">
 <h4>SyntaxErrors<a class="headerlink" href="#syntaxerrors" title="Link to this heading">¶</a></h4>
 <p>When parsing code that contains unclosed parentheses or brackets the interpreter
@@ -693,13 +686,13 @@ The associated action to the case is executed after a match:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">http_error</span><span class="p">(</span><span class="n">status</span><span class="p">):</span>
     <span class="k">match</span> <span class="n">status</span><span class="p">:</span>
         <span class="k">case</span> <span class="mi">400</span><span class="p">:</span>
-            <span class="k">return</span> <span class="s2">&quot;Bad request&quot;</span>
+            <span class="k">return</span> <span class="s2">&quot;Niewłaściwe żądanie&quot;</span>
         <span class="k">case</span> <span class="mi">404</span><span class="p">:</span>
-            <span class="k">return</span> <span class="s2">&quot;Not found&quot;</span>
+            <span class="k">return</span> <span class="s2">&quot;Nie znaleziono&quot;</span>
         <span class="k">case</span> <span class="mi">418</span><span class="p">:</span>
-            <span class="k">return</span> <span class="s2">&quot;I&#39;m a teapot&quot;</span>
+            <span class="k">return</span> <span class="s2">&quot;Jestem czajniczkiem&quot;</span>
         <span class="k">case</span><span class="w"> </span><span class="k">_</span><span class="p">:</span>
-            <span class="k">return</span> <span class="s2">&quot;Something&#39;s wrong with the internet&quot;</span>
+            <span class="k">return</span> <span class="s2">&quot;Coś jest nie tak z internetem&quot;</span>
 </pre></div>
 </div>
 <p>If the above function is passed a <code class="docutils literal notranslate"><span class="pre">status</span></code> of 418, „I’m a teapot” is returned.
@@ -708,9 +701,9 @@ If the above function is passed a <code class="docutils literal notranslate"><sp
 returned.
 Note the last block: the variable name, <code class="docutils literal notranslate"><span class="pre">_</span></code>, acts as a <em>wildcard</em> and insures
 the subject will always match. The use of <code class="docutils literal notranslate"><span class="pre">_</span></code> is optional.</p>
-<p>You can combine several literals in a single pattern using <code class="docutils literal notranslate"><span class="pre">|</span></code> („or”):</p>
+<p>Możesz łączyć kilka literałów w jeden wzorzec używając <code class="docutils literal notranslate"><span class="pre">|</span></code> („or”):</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">case</span> <span class="mi">401</span> <span class="o">|</span> <span class="mi">403</span> <span class="o">|</span> <span class="mi">404</span><span class="p">:</span>
-    <span class="k">return</span> <span class="s2">&quot;Not allowed&quot;</span>
+    <span class="k">return</span> <span class="s2">&quot;Niedozwolone&quot;</span>
 </pre></div>
 </div>
 <section id="behavior-without-the-wildcard">
@@ -737,10 +730,10 @@ passed, a no-op occurs.</p>
 <p>Patterns can look like unpacking assignments, and a pattern may be used to bind
 variables. In this example, a data point can be unpacked to its x-coordinate
 and y-coordinate:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># point is an (x, y) tuple</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># punkt to dwukrotka (x, y)</span>
 <span class="k">match</span> <span class="n">point</span><span class="p">:</span>
     <span class="k">case</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Origin&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Początek&quot;</span><span class="p">)</span>
     <span class="k">case</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
         <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Y=</span><span class="si">{</span><span class="n">y</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
     <span class="k">case</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">0</span><span class="p">):</span>
@@ -748,7 +741,7 @@ and y-coordinate:</p>
     <span class="k">case</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
         <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;X=</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s2">, Y=</span><span class="si">{</span><span class="n">y</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
     <span class="k">case</span><span class="w"> </span><span class="k">_</span><span class="p">:</span>
-        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Not a point&quot;</span><span class="p">)</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Nie punkt&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>The first pattern has two literals, <code class="docutils literal notranslate"><span class="pre">(0,</span> <span class="pre">0)</span></code>, and may be thought of as an
@@ -783,11 +776,7 @@ pattern has the ability to capture instance attributes into variables:</p>
 </div>
 <section id="patterns-with-positional-parameters">
 <h5>Patterns with positional parameters<a class="headerlink" href="#patterns-with-positional-parameters" title="Link to this heading">¶</a></h5>
-<p>You can use positional parameters with some builtin classes that provide an
-ordering for their attributes (e.g. dataclasses). You can also define a specific
-position for attributes in patterns by setting the <code class="docutils literal notranslate"><span class="pre">__match_args__</span></code> special
-attribute in your classes. If it’s set to („x”, „y”), the following patterns
-are all equivalent (and all bind the <code class="docutils literal notranslate"><span class="pre">y</span></code> attribute to the <code class="docutils literal notranslate"><span class="pre">var</span></code> variable):</p>
+<p>Możesz użyć parametrów pozycyjnych z jakimiś wbudowanymi klasami, które posiadają kolejność dla atrybutów (na przykład dataclasses). Możesz też określić wybrane pozycje dla atrybutów we wzorcach ustawiając specjalny atrybut <code class="docutils literal notranslate"><span class="pre">__match_args__</span></code> w twoich klasach. Jeśli jest on ustawiony na („x”, „y”), wszystkie następujące wzorce są równoważne (i wszystkie powiązują atrybut <code class="docutils literal notranslate"><span class="pre">y</span></code> ze zmienną <code class="docutils literal notranslate"><span class="pre">var</span></code>):</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">Point</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">var</span><span class="p">)</span>
 <span class="n">Point</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">var</span><span class="p">)</span>
 <span class="n">Point</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">var</span><span class="p">)</span>
@@ -831,9 +820,7 @@ For example:</p>
 </section>
 <section id="guard">
 <h4>Guard<a class="headerlink" href="#guard" title="Link to this heading">¶</a></h4>
-<p>We can add an <code class="docutils literal notranslate"><span class="pre">if</span></code> clause to a pattern, known as a „guard”.  If the
-guard is false, <code class="docutils literal notranslate"><span class="pre">match</span></code> goes on to try the next case block.  Note
-that value capture happens before the guard is evaluated:</p>
+<p>Możemy dodać klauzulę <code class="docutils literal notranslate"><span class="pre">if</span></code> do wzorca, nazywaną „guardem”. Jeśli guard jest fałszywy, <code class="docutils literal notranslate"><span class="pre">match</span></code> próbuje dopasować następny blok case. Zwróć uwagę, że przechwycenie wartości dzieje się zanim wyliczona jest wartość guarda:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">match</span> <span class="n">point</span><span class="p">:</span>
     <span class="k">case</span> <span class="n">Point</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="n">y</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The point is located on the diagonal Y=X at </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
@@ -859,7 +846,7 @@ of at least two items without binding the remaining items.</p></li>
 <code class="docutils literal notranslate"><span class="pre">&quot;bandwidth&quot;</span></code> and <code class="docutils literal notranslate"><span class="pre">&quot;latency&quot;</span></code> values from a dict.  Unlike sequence
 patterns, extra keys are ignored.  A wildcard <code class="docutils literal notranslate"><span class="pre">**rest</span></code> is also
 supported.  (But <code class="docutils literal notranslate"><span class="pre">**_</span></code> would be redundant, so is not allowed.)</p></li>
-<li><p>Subpatterns may be captured using the <code class="docutils literal notranslate"><span class="pre">as</span></code> keyword:</p>
+<li><p>Można przechwytywać podwzorce używając słowa kluczowego <code class="docutils literal notranslate"><span class="pre">as</span></code>:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">case</span> <span class="p">(</span><span class="n">Point</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">y1</span><span class="p">),</span> <span class="n">Point</span><span class="p">(</span><span class="n">x2</span><span class="p">,</span> <span class="n">y2</span><span class="p">)</span> <span class="k">as</span> <span class="n">p2</span><span class="p">):</span> <span class="o">...</span>
 </pre></div>
 </div>
@@ -1065,10 +1052,10 @@ the <a class="reference internal" href="../library/constants.html#debug__" title
 </ul>
 </section>
 <section id="improved-modules">
-<h2>Improved Modules<a class="headerlink" href="#improved-modules" title="Link to this heading">¶</a></h2>
+<h2>Ulepszone moduły<a class="headerlink" href="#improved-modules" title="Link to this heading">¶</a></h2>
 <section id="asyncio">
 <h3>asyncio<a class="headerlink" href="#asyncio" title="Link to this heading">¶</a></h3>
-<p>Add missing <code class="xref py py-meth docutils literal notranslate"><span class="pre">connect_accepted_socket()</span></code>
+<p>Add missing <a class="reference internal" href="../library/asyncio-eventloop.html#asyncio.loop.connect_accepted_socket" title="asyncio.loop.connect_accepted_socket"><code class="xref py py-meth docutils literal notranslate"><span class="pre">connect_accepted_socket()</span></code></a>
 method.
 (Contributed by Alex Grönholm in <a class="reference external" href="https://bugs.python.org/issue?&#64;action=redirect&amp;bpo=41332">bpo-41332</a>.)</p>
 </section>
@@ -1478,7 +1465,7 @@ suites may prevent a successful handshake.</p>
 </section>
 <section id="sqlite3">
 <h3>sqlite3<a class="headerlink" href="#sqlite3" title="Link to this heading">¶</a></h3>
-<p>Add audit events for <code class="xref py py-func docutils literal notranslate"><span class="pre">connect/handle()</span></code>,
+<p>Add audit events for <a class="reference internal" href="../library/sqlite3.html#sqlite3.connect" title="sqlite3.connect"><code class="xref py py-func docutils literal notranslate"><span class="pre">connect()</span></code></a>,
 <a class="reference internal" href="../library/sqlite3.html#sqlite3.Connection.enable_load_extension" title="sqlite3.Connection.enable_load_extension"><code class="xref py py-meth docutils literal notranslate"><span class="pre">enable_load_extension()</span></code></a>, and
 <a class="reference internal" href="../library/sqlite3.html#sqlite3.Connection.load_extension" title="sqlite3.Connection.load_extension"><code class="xref py py-meth docutils literal notranslate"><span class="pre">load_extension()</span></code></a>.
 (Contributed by Erlend E. Aasland in <a class="reference external" href="https://bugs.python.org/issue?&#64;action=redirect&amp;bpo=43762">bpo-43762</a>.)</p>
@@ -1952,7 +1939,7 @@ to the new PEG parser.</p>
 <p>Source should be now be compiled directly to a code object using, for
 example, <a class="reference internal" href="../c-api/veryhigh.html#c.Py_CompileString" title="Py_CompileString"><code class="xref c c-func docutils literal notranslate"><span class="pre">Py_CompileString()</span></code></a>. The resulting code object can then be
 evaluated using, for example, <a class="reference internal" href="../c-api/veryhigh.html#c.PyEval_EvalCode" title="PyEval_EvalCode"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyEval_EvalCode()</span></code></a>.</p>
-<p>Specifically:</p>
+<p>W szczególności:</p>
 <ul>
 <li><p>A call to <code class="docutils literal notranslate"><span class="pre">PyParser_SimpleParseStringFlags</span></code> followed by
 <code class="docutils literal notranslate"><span class="pre">PyNode_Compile</span></code> can be replaced by calling <a class="reference internal" href="../c-api/veryhigh.html#c.Py_CompileString" title="Py_CompileString"><code class="xref c c-func docutils literal notranslate"><span class="pre">Py_CompileString()</span></code></a>.</p></li>
@@ -2035,17 +2022,17 @@ simplifies building Python with a custom OpenSSL installation, e.g.
 </ul>
 </section>
 <section id="c-api-changes">
-<h2>C API Changes<a class="headerlink" href="#c-api-changes" title="Link to this heading">¶</a></h2>
+<h2>Zmiany w C API<a class="headerlink" href="#c-api-changes" title="Link to this heading">¶</a></h2>
 <section id="pep-652-maintaining-the-stable-abi">
 <h3>PEP 652: Maintaining the Stable ABI<a class="headerlink" href="#pep-652-maintaining-the-stable-abi" title="Link to this heading">¶</a></h3>
 <p>The Stable ABI (Application Binary Interface) for extension modules or
 embedding Python is now explicitly defined.
-<a class="reference internal" href="../c-api/stable.html#stable"><span class="std std-ref">C API Stability</span></a> describes C API and ABI stability guarantees along with best
+<a class="reference internal" href="../c-api/stable.html#stable"><span class="std std-ref">C API and ABI Stability</span></a> describes C API and ABI stability guarantees along with best
 practices for using the Stable ABI.</p>
 <p>(Contributed by Petr Viktorin in <span class="target" id="index-36"></span><a class="pep reference external" href="https://peps.python.org/pep-0652/"><strong>PEP 652</strong></a> and <a class="reference external" href="https://bugs.python.org/issue?&#64;action=redirect&amp;bpo=43795">bpo-43795</a>.)</p>
 </section>
 <section id="id1">
-<h3>New Features<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h3>
+<h3>Nowe funkcjonalności<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h3>
 <ul>
 <li><p>The result of <a class="reference internal" href="../c-api/number.html#c.PyNumber_Index" title="PyNumber_Index"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyNumber_Index()</span></code></a> now always has exact type <a class="reference internal" href="../library/functions.html#int" title="int"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>.
 Previously, the result could have been an instance of a subclass of <code class="docutils literal notranslate"><span class="pre">int</span></code>.
@@ -2127,7 +2114,7 @@ type objects: type attributes cannot be set nor deleted.
 <li><p>The <code class="docutils literal notranslate"><span class="pre">PY_SSIZE_T_CLEAN</span></code> macro must now be defined to use
 <a class="reference internal" href="../c-api/arg.html#c.PyArg_ParseTuple" title="PyArg_ParseTuple"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyArg_ParseTuple()</span></code></a> and <a class="reference internal" href="../c-api/arg.html#c.Py_BuildValue" title="Py_BuildValue"><code class="xref c c-func docutils literal notranslate"><span class="pre">Py_BuildValue()</span></code></a> formats which use
 <code class="docutils literal notranslate"><span class="pre">#</span></code>: <code class="docutils literal notranslate"><span class="pre">es#</span></code>, <code class="docutils literal notranslate"><span class="pre">et#</span></code>, <code class="docutils literal notranslate"><span class="pre">s#</span></code>, <code class="docutils literal notranslate"><span class="pre">u#</span></code>, <code class="docutils literal notranslate"><span class="pre">y#</span></code>, <code class="docutils literal notranslate"><span class="pre">z#</span></code>, <code class="docutils literal notranslate"><span class="pre">U#</span></code> and <code class="docutils literal notranslate"><span class="pre">Z#</span></code>.
-See <a class="reference internal" href="../c-api/arg.html#arg-parsing"><span class="std std-ref">Parsing arguments and building values</span></a> and <span class="target" id="index-37"></span><a class="pep reference external" href="https://peps.python.org/pep-0353/"><strong>PEP 353</strong></a>.
+See <a class="reference internal" href="../c-api/arg.html#arg-parsing"><span class="std std-ref">Pobieranie kolejnych rzeczy podanych na wejściu i konstruowanie wartości.</span></a> and <span class="target" id="index-37"></span><a class="pep reference external" href="https://peps.python.org/pep-0353/"><strong>PEP 353</strong></a>.
 (Contributed by Victor Stinner in <a class="reference external" href="https://bugs.python.org/issue?&#64;action=redirect&amp;bpo=40943">bpo-40943</a>.)</p></li>
 <li><p>Since <a class="reference internal" href="../c-api/refcounting.html#c.Py_REFCNT" title="Py_REFCNT"><code class="xref c c-func docutils literal notranslate"><span class="pre">Py_REFCNT()</span></code></a> is changed to the inline static function,
 <code class="docutils literal notranslate"><span class="pre">Py_REFCNT(obj)</span> <span class="pre">=</span> <span class="pre">new_refcnt</span></code> must be replaced with <code class="docutils literal notranslate"><span class="pre">Py_SET_REFCNT(obj,</span> <span class="pre">new_refcnt)</span></code>:
@@ -2166,7 +2153,7 @@ bugs like <code class="docutils literal notranslate"><span class="pre">if</span>
 <code class="docutils literal notranslate"><span class="pre">picklebufobject.h</span></code>, <code class="docutils literal notranslate"><span class="pre">pyarena.h</span></code>, <code class="docutils literal notranslate"><span class="pre">pyctype.h</span></code>, <code class="docutils literal notranslate"><span class="pre">pydebug.h</span></code>,
 <code class="docutils literal notranslate"><span class="pre">pyfpe.h</span></code>, and <code class="docutils literal notranslate"><span class="pre">pytime.h</span></code> have been moved to the <code class="docutils literal notranslate"><span class="pre">Include/cpython</span></code>
 directory. These files must not be included directly, as they are already
-included in <code class="docutils literal notranslate"><span class="pre">Python.h</span></code>; see <a class="reference internal" href="../c-api/intro.html#api-includes"><span class="std std-ref">Include Files</span></a>. If they have
+included in <code class="docutils literal notranslate"><span class="pre">Python.h</span></code>; see <a class="reference internal" href="../c-api/intro.html#api-includes"><span class="std std-ref">Pliki Włączania - z ang. Include</span></a>. If they have
 been included directly, consider including <code class="docutils literal notranslate"><span class="pre">Python.h</span></code> instead.
 (Contributed by Nicholas Sim in <a class="reference external" href="https://bugs.python.org/issue?&#64;action=redirect&amp;bpo=35134">bpo-35134</a>.)</p></li>
 <li><p>Use the <a class="reference internal" href="../c-api/typeobj.html#c.Py_TPFLAGS_IMMUTABLETYPE" title="Py_TPFLAGS_IMMUTABLETYPE"><code class="xref c c-macro docutils literal notranslate"><span class="pre">Py_TPFLAGS_IMMUTABLETYPE</span></code></a> type flag to create immutable type
@@ -2335,13 +2322,13 @@ In Python 3.14, the default will switch to <code class="docutils literal notrans
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
-<li><a class="reference internal" href="#">What’s New In Python 3.10</a><ul>
-<li><a class="reference internal" href="#summary-release-highlights">Summary – Release highlights</a></li>
-<li><a class="reference internal" href="#new-features">New Features</a><ul>
-<li><a class="reference internal" href="#parenthesized-context-managers">Parenthesized context managers</a></li>
-<li><a class="reference internal" href="#better-error-messages">Better error messages</a><ul>
+<li><a class="reference internal" href="#">Co nowego w Pythonie 3.10</a><ul>
+<li><a class="reference internal" href="#summary-release-highlights">Podsumowanie – najważniejsze nowości</a></li>
+<li><a class="reference internal" href="#new-features">Nowe funkcjonalności</a><ul>
+<li><a class="reference internal" href="#parenthesized-context-managers">Context managery w nawiasach</a></li>
+<li><a class="reference internal" href="#better-error-messages">Lepsze komunikaty błędów</a><ul>
 <li><a class="reference internal" href="#syntaxerrors">SyntaxErrors</a></li>
 <li><a class="reference internal" href="#indentationerrors">IndentationErrors</a></li>
 <li><a class="reference internal" href="#attributeerrors">AttributeErrors</a></li>
@@ -2379,7 +2366,7 @@ In Python 3.14, the default will switch to <code class="docutils literal notrans
 </li>
 <li><a class="reference internal" href="#other-language-changes">Other Language Changes</a></li>
 <li><a class="reference internal" href="#new-modules">New Modules</a></li>
-<li><a class="reference internal" href="#improved-modules">Improved Modules</a><ul>
+<li><a class="reference internal" href="#improved-modules">Ulepszone moduły</a><ul>
 <li><a class="reference internal" href="#asyncio">asyncio</a></li>
 <li><a class="reference internal" href="#argparse">argparse</a></li>
 <li><a class="reference internal" href="#array">array</a></li>
@@ -2447,9 +2434,9 @@ In Python 3.14, the default will switch to <code class="docutils literal notrans
 </li>
 <li><a class="reference internal" href="#cpython-bytecode-changes">CPython bytecode changes</a></li>
 <li><a class="reference internal" href="#build-changes">Build Changes</a></li>
-<li><a class="reference internal" href="#c-api-changes">C API Changes</a><ul>
+<li><a class="reference internal" href="#c-api-changes">Zmiany w C API</a><ul>
 <li><a class="reference internal" href="#pep-652-maintaining-the-stable-abi">PEP 652: Maintaining the Stable ABI</a></li>
-<li><a class="reference internal" href="#id1">New Features</a></li>
+<li><a class="reference internal" href="#id1">Nowe funkcjonalności</a></li>
 <li><a class="reference internal" href="#id2">Porting to Python 3.10</a></li>
 <li><a class="reference internal" href="#id3">Deprecated</a></li>
 <li><a class="reference internal" href="#id4">Removed</a></li>
@@ -2467,14 +2454,14 @@ In Python 3.14, the default will switch to <code class="docutils literal notrans
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="3.11.html"
-                          title="previous chapter">What’s New In Python 3.11</a></p>
+                          title="poprzedni rozdział">Co nowego w Pythonie 3.11</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="3.9.html"
-                          title="next chapter">What’s New In Python 3.9</a></p>
+                          title="następny rozdział">Co nowego w Pythonie 3.9</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -2488,7 +2475,7 @@ In Python 3.14, the default will switch to <code class="docutils literal notrans
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -2505,10 +2492,10 @@ In Python 3.14, the default will switch to <code class="docutils literal notrans
           <a href="../py-modindex.html" title="Indeks modułów Pythona"
              >moduły</a> |</li>
         <li class="right" >
-          <a href="3.9.html" title="What’s New In Python 3.9"
+          <a href="3.9.html" title="Co nowego w Pythonie 3.9"
              >dalej</a> |</li>
         <li class="right" >
-          <a href="3.11.html" title="What’s New In Python 3.11"
+          <a href="3.11.html" title="Co nowego w Pythonie 3.11"
              >wstecz</a> |</li>
 
           <li><img src="../_static/py.svg" alt="Python logo" style="vertical-align: middle; margin-top: -1px"></li>
@@ -2524,8 +2511,8 @@ In Python 3.14, the default will switch to <code class="docutils literal notrans
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >What’s New in Python</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">What’s New In Python 3.10</a></li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Co nowego w Pythonie</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Co nowego w Pythonie 3.10</a></li>
                 <li class="right">
                     
 
@@ -2572,7 +2559,7 @@ In Python 3.14, the default will switch to <code class="docutils literal notrans
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

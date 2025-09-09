@@ -8,10 +8,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://docs.python.org/3/library/sqlite3.html" />
 <meta property="og:site_name" content="Python documentation" />
-<meta property="og:description" content="Source code: Lib/sqlite3/ SQLite is a C library that provides a lightweight disk-based database that doesn’t require a separate server process and allows accessing the database using a nonstandard ..." />
+<meta property="og:description" content="Kod źródłowy:. Lib/sqlite3/ SQLite is a C library that provides a lightweight disk-based database that doesn’t require a separate server process and allows accessing the database using a nonstandar..." />
 <meta property="og:image" content="_static/og-image.png" />
 <meta property="og:image:alt" content="Python documentation" />
-<meta name="description" content="Source code: Lib/sqlite3/ SQLite is a C library that provides a lightweight disk-based database that doesn’t require a separate server process and allows accessing the database using a nonstandard ..." />
+<meta name="description" content="Kod źródłowy:. Lib/sqlite3/ SQLite is a C library that provides a lightweight disk-based database that doesn’t require a separate server process and allows accessing the database using a nonstandar..." />
 <meta name="theme-color" content="#3776ab">
 <meta property="og:image:width" content="200">
 <meta property="og:image:height" content="200">
@@ -31,11 +31,11 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="Data Compression and Archiving" href="archiving.html" />
     <link rel="prev" title="dbm — Interfaces to Unix „databases”" href="dbm.html" />
@@ -98,7 +98,7 @@
     </select>
 </label>
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">sqlite3</span></code> — DB-API 2.0 interface for SQLite databases</a><ul>
 <li><a class="reference internal" href="#tutorial">Tutorial</a></li>
@@ -110,7 +110,7 @@
 <li><a class="reference internal" href="#row-objects">Row objects</a></li>
 <li><a class="reference internal" href="#blob-objects">Blob objects</a></li>
 <li><a class="reference internal" href="#prepareprotocol-objects">PrepareProtocol objects</a></li>
-<li><a class="reference internal" href="#exceptions">Exceptions</a></li>
+<li><a class="reference internal" href="#exceptions">Wyjątki</a></li>
 <li><a class="reference internal" href="#sqlite-and-python-types">SQLite and Python types</a></li>
 <li><a class="reference internal" href="#default-adapters-and-converters-deprecated">Default adapters and converters (deprecated)</a></li>
 <li><a class="reference internal" href="#command-line-interface">Command-line interface</a></li>
@@ -132,7 +132,7 @@
 <li><a class="reference internal" href="#how-to-handle-non-utf-8-text-encodings">How to handle non-UTF-8 text encodings</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#explanation">Explanation</a><ul>
+<li><a class="reference internal" href="#explanation">Wytłumaczenie</a><ul>
 <li><a class="reference internal" href="#transaction-control">Transaction control</a><ul>
 <li><a class="reference internal" href="#transaction-control-via-the-autocommit-attribute">Transaction control via the <code class="docutils literal notranslate"><span class="pre">autocommit</span></code> attribute</a></li>
 <li><a class="reference internal" href="#transaction-control-via-the-isolation-level-attribute">Transaction control via the <code class="docutils literal notranslate"><span class="pre">isolation_level</span></code> attribute</a></li>
@@ -146,14 +146,14 @@
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="dbm.html"
-                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">dbm</span></code> — Interfaces to Unix „databases”</a></p>
+                          title="poprzedni rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">dbm</span></code> — Interfaces to Unix „databases”</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="archiving.html"
-                          title="next chapter">Data Compression and Archiving</a></p>
+                          title="następny rozdział">Data Compression and Archiving</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -200,7 +200,7 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="persistence.html" accesskey="U">Data Persistence</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">sqlite3</span></code> — DB-API 2.0 interface for SQLite databases</a></li>
                 <li class="right">
@@ -234,7 +234,7 @@
             
   <section id="module-sqlite3">
 <span id="sqlite3-db-api-2-0-interface-for-sqlite-databases"></span><h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">sqlite3</span></code> — DB-API 2.0 interface for SQLite databases<a class="headerlink" href="#module-sqlite3" title="Link to this heading">¶</a></h1>
-<p><strong>Source code:</strong> <a class="extlink-source reference external" href="https://github.com/python/cpython/tree/main/Lib/sqlite3/">Lib/sqlite3/</a></p>
+<p><strong>Kod źródłowy:</strong>. <a class="extlink-source reference external" href="https://github.com/python/cpython/tree/main/Lib/sqlite3/">Lib/sqlite3/</a></p>
 <p id="sqlite3-intro">SQLite is a C library that provides a lightweight disk-based database that
 doesn’t require a separate server process and allows accessing the database
 using a nonstandard variant of the SQL query language. Some applications can use
@@ -250,7 +250,7 @@ requires SQLite 3.15.2 or newer.</p>
 <li><p><a class="reference internal" href="#sqlite3-reference"><span class="std std-ref">Reference</span></a> describes the classes and functions this module
 defines.</p></li>
 <li><p><a class="reference internal" href="#sqlite3-howtos"><span class="std std-ref">How-to guides</span></a> details how to handle specific tasks.</p></li>
-<li><p><a class="reference internal" href="#sqlite3-explanation"><span class="std std-ref">Explanation</span></a> provides in-depth background on
+<li><p><a class="reference internal" href="#sqlite3-explanation"><span class="std std-ref">Wytłumaczenie</span></a> provides in-depth background on
 transaction control.</p></li>
 </ul>
 <div class="admonition seealso">
@@ -408,7 +408,7 @@ inserted data and retrieved values from it in multiple ways.</p>
 <li><p><a class="reference internal" href="#sqlite3-howto-row-factory"><span class="std std-ref">How to create and use row factories</span></a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#sqlite3-explanation"><span class="std std-ref">Explanation</span></a> for in-depth background on transaction control.</p></li>
+<li><p><a class="reference internal" href="#sqlite3-explanation"><span class="std std-ref">Wytłumaczenie</span></a> for in-depth background on transaction control.</p></li>
 </ul>
 </div>
 </section>
@@ -506,7 +506,7 @@ one or more complete SQL statements.
 No syntactic verification or parsing of any kind is performed,
 other than checking that there are no unclosed string literals
 and the statement is terminated by a semicolon.</p>
-<p>For example:</p>
+<p>Na przykład:</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">sqlite3</span><span class="o">.</span><span class="n">complete_statement</span><span class="p">(</span><span class="s2">&quot;SELECT foo FROM bar;&quot;</span><span class="p">)</span>
 <span class="go">True</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">sqlite3</span><span class="o">.</span><span class="n">complete_statement</span><span class="p">(</span><span class="s2">&quot;SELECT foo&quot;</span><span class="p">)</span>
@@ -925,7 +925,7 @@ which allows SQLite to perform additional optimizations.</p></li>
 <div class="versionchanged">
 <p><span class="versionmodified changed">Zmienione w wersji 3.15: </span>The first three parameters are now positional-only.</p>
 </div>
-<p>Example:</p>
+<p>Przykład:</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">hashlib</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">def</span><span class="w"> </span><span class="nf">md5sum</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
 <span class="gp">... </span>    <span class="k">return</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">md5</span><span class="p">(</span><span class="n">t</span><span class="p">)</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()</span>
@@ -965,7 +965,7 @@ is controlled by <em>n_arg</em>.</p>
 <div class="versionchanged">
 <p><span class="versionmodified changed">Zmienione w wersji 3.15: </span>All three parameters are now positional-only.</p>
 </div>
-<p>Example:</p>
+<p>Przykład:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">MySum</span><span class="p">:</span>
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
@@ -1021,7 +1021,7 @@ which does not support aggregate window functions.</p>
 <div class="versionadded">
 <p><span class="versionmodified added"> Dodane w wersji 3.11.</span></p>
 </div>
-<p>Example:</p>
+<p>Przykład:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example taken from https://www.sqlite.org/windowfunctions.html#udfwinfunc</span>
 <span class="k">class</span><span class="w"> </span><span class="nc">WindowSumInt</span><span class="p">:</span>
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
@@ -1279,7 +1279,7 @@ Similar to the <code class="docutils literal notranslate"><span class="pre">.dum
 If <code class="docutils literal notranslate"><span class="pre">None</span></code> (the default), all database objects will be included.</p>
 </dd>
 </dl>
-<p>Example:</p>
+<p>Przykład:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Convert file example.db to SQL dump file dump.sql</span>
 <span class="n">con</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">&#39;example.db&#39;</span><span class="p">)</span>
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;dump.sql&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
@@ -1688,7 +1688,7 @@ When <a class="reference internal" href="#sqlite3-placeholders"><span class="std
 and the items in <em>parameters</em> are sequences instead of <a class="reference internal" href="stdtypes.html#dict" title="dict"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a>s.</p>
 </dd>
 </dl>
-<p>Example:</p>
+<p>Przykład:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rows</span> <span class="o">=</span> <span class="p">[</span>
     <span class="p">(</span><span class="s2">&quot;row1&quot;</span><span class="p">,),</span>
     <span class="p">(</span><span class="s2">&quot;row2&quot;</span><span class="p">,),</span>
@@ -1721,7 +1721,7 @@ an implicit <code class="docutils literal notranslate"><span class="pre">COMMIT<
 No other implicit transaction control is performed;
 any transaction control must be added to <em>sql_script</em>.</p>
 <p><em>sql_script</em> must be a <a class="reference internal" href="stdtypes.html#str" title="str"><code class="xref py py-class docutils literal notranslate"><span class="pre">string</span></code></a>.</p>
-<p>Example:</p>
+<p>Przykład:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># cur is an sqlite3.Cursor object</span>
 <span class="n">cur</span><span class="o">.</span><span class="n">executescript</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">    BEGIN;</span>
@@ -1987,7 +1987,7 @@ adaption protocol for objects that can <a class="reference internal" href="#sqli
 
 </section>
 <section id="exceptions">
-<span id="sqlite3-exceptions"></span><h3>Exceptions<a class="headerlink" href="#exceptions" title="Link to this heading">¶</a></h3>
+<span id="sqlite3-exceptions"></span><h3>Wyjątki<a class="headerlink" href="#exceptions" title="Link to this heading">¶</a></h3>
 <p>The exception hierarchy is defined by the DB-API 2.0 (<span class="target" id="index-10"></span><a class="pep reference external" href="https://peps.python.org/pep-0249/"><strong>PEP 249</strong></a>).</p>
 <dl class="py exception">
 <dt class="sig sig-object py" id="sqlite3.Warning">
@@ -2112,7 +2112,7 @@ does not support deterministic functions.
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">None</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">None</span></code> - z ang. - <code class="docutils literal notranslate"><span class="pre">Żaden</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">NULL</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="functions.html#int" title="int"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a></p></td>
@@ -2138,7 +2138,7 @@ does not support deterministic functions.
 </thead>
 <tbody>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">NULL</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">None</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">None</span></code> - z ang. - <code class="docutils literal notranslate"><span class="pre">Żaden</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">INTEGER</span></code></p></td>
 <td><p><a class="reference internal" href="functions.html#int" title="int"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a></p></td>
@@ -2680,7 +2680,7 @@ containing surrogates.</p>
 </section>
 </section>
 <section id="explanation">
-<span id="sqlite3-explanation"></span><h2>Explanation<a class="headerlink" href="#explanation" title="Link to this heading">¶</a></h2>
+<span id="sqlite3-explanation"></span><h2>Wytłumaczenie<a class="headerlink" href="#explanation" title="Link to this heading">¶</a></h2>
 <section id="transaction-control">
 <span id="sqlite3-controlling-transactions"></span><span id="sqlite3-transaction-control"></span><h3>Transaction control<a class="headerlink" href="#transaction-control" title="Link to this heading">¶</a></h3>
 <p><code class="xref py py-mod docutils literal notranslate"><span class="pre">sqlite3</span></code> offers multiple methods of controlling whether,
@@ -2776,7 +2776,7 @@ statements.  This is no longer the case.</p>
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">sqlite3</span></code> — DB-API 2.0 interface for SQLite databases</a><ul>
 <li><a class="reference internal" href="#tutorial">Tutorial</a></li>
@@ -2788,7 +2788,7 @@ statements.  This is no longer the case.</p>
 <li><a class="reference internal" href="#row-objects">Row objects</a></li>
 <li><a class="reference internal" href="#blob-objects">Blob objects</a></li>
 <li><a class="reference internal" href="#prepareprotocol-objects">PrepareProtocol objects</a></li>
-<li><a class="reference internal" href="#exceptions">Exceptions</a></li>
+<li><a class="reference internal" href="#exceptions">Wyjątki</a></li>
 <li><a class="reference internal" href="#sqlite-and-python-types">SQLite and Python types</a></li>
 <li><a class="reference internal" href="#default-adapters-and-converters-deprecated">Default adapters and converters (deprecated)</a></li>
 <li><a class="reference internal" href="#command-line-interface">Command-line interface</a></li>
@@ -2810,7 +2810,7 @@ statements.  This is no longer the case.</p>
 <li><a class="reference internal" href="#how-to-handle-non-utf-8-text-encodings">How to handle non-UTF-8 text encodings</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#explanation">Explanation</a><ul>
+<li><a class="reference internal" href="#explanation">Wytłumaczenie</a><ul>
 <li><a class="reference internal" href="#transaction-control">Transaction control</a><ul>
 <li><a class="reference internal" href="#transaction-control-via-the-autocommit-attribute">Transaction control via the <code class="docutils literal notranslate"><span class="pre">autocommit</span></code> attribute</a></li>
 <li><a class="reference internal" href="#transaction-control-via-the-isolation-level-attribute">Transaction control via the <code class="docutils literal notranslate"><span class="pre">isolation_level</span></code> attribute</a></li>
@@ -2824,14 +2824,14 @@ statements.  This is no longer the case.</p>
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="dbm.html"
-                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">dbm</span></code> — Interfaces to Unix „databases”</a></p>
+                          title="poprzedni rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">dbm</span></code> — Interfaces to Unix „databases”</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="archiving.html"
-                          title="next chapter">Data Compression and Archiving</a></p>
+                          title="następny rozdział">Data Compression and Archiving</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -2845,7 +2845,7 @@ statements.  This is no longer the case.</p>
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -2881,7 +2881,7 @@ statements.  This is no longer the case.</p>
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="persistence.html" >Data Persistence</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">sqlite3</span></code> — DB-API 2.0 interface for SQLite databases</a></li>
                 <li class="right">
@@ -2930,7 +2930,7 @@ statements.  This is no longer the case.</p>
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

@@ -31,11 +31,11 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="importlib.metadata – Accessing package metadata" href="importlib.metadata.html" />
     <link rel="prev" title="importlib.resources – Package resource reading, opening and access" href="importlib.resources.html" />
@@ -98,14 +98,14 @@
     </select>
 </label>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="importlib.resources.html"
-                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">importlib.resources</span></code> – Package resource reading, opening and access</a></p>
+                          title="poprzedni rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">importlib.resources</span></code> – Package resource reading, opening and access</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="importlib.metadata.html"
-                          title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">importlib.metadata</span></code> – Accessing package metadata</a></p>
+                          title="następny rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">importlib.metadata</span></code> – Accessing package metadata</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -152,7 +152,7 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="modules.html" accesskey="U">Importing Modules</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">importlib.resources.abc</span></code> – Abstract base classes for resources</a></li>
                 <li class="right">
@@ -194,9 +194,8 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="importlib.resources.abc.ResourceReader">
 <em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">importlib.resources.abc.</span></span><span class="sig-name descname"><span class="pre">ResourceReader</span></span><a class="headerlink" href="#importlib.resources.abc.ResourceReader" title="Link to this definition">¶</a></dt>
-<dd><p><em>Superseded by TraversableResources</em></p>
-<p>An <a class="reference internal" href="../glossary.html#term-abstract-base-class"><span class="xref std std-term">abstract base class</span></a> to provide the ability to read
-<em>resources</em>.</p>
+<dd><p><em>Замінено TraversableResources</em></p>
+<p><a class="reference internal" href="../glossary.html#term-abstract-base-class"><span class="xref std std-term">abstract base class</span></a> для надання можливості читати <em>ресурси</em>.</p>
 <p>From the perspective of this ABC, a <em>resource</em> is a binary
 artifact that is shipped within a package. Typically this is
 something like a data file that lives next to the <code class="docutils literal notranslate"><span class="pre">__init__.py</span></code>
@@ -204,65 +203,37 @@ file of the package. The purpose of this class is to help abstract
 out the accessing of such data files so that it does not matter if
 the package and its data file(s) are stored e.g. in a zip file
 versus on the file system.</p>
-<p>For any of methods of this class, a <em>resource</em> argument is
-expected to be a <a class="reference internal" href="../glossary.html#term-path-like-object"><span class="xref std std-term">path-like object</span></a> which represents
-conceptually just a file name. This means that no subdirectory
-paths should be included in the <em>resource</em> argument. This is
-because the location of the package the reader is for, acts as the
-„directory”. Hence the metaphor for directories and file
-names is packages and resources, respectively. This is also why
-instances of this class are expected to directly correlate to
-a specific package (instead of potentially representing multiple
-packages or a module).</p>
-<p>Loaders that wish to support resource reading are expected to
-provide a method called <code class="docutils literal notranslate"><span class="pre">get_resource_reader(fullname)</span></code> which
-returns an object implementing this ABC’s interface. If the module
-specified by fullname is not a package, this method should return
-<a class="reference internal" href="constants.html#None" title="None"><code class="xref py py-const docutils literal notranslate"><span class="pre">None</span></code></a>. An object compatible with this ABC should only be
-returned when the specified module is a package.</p>
+<p>Для будь-якого методу цього класу очікується, що аргумент <em>resource</em> буде <a class="reference internal" href="../glossary.html#term-path-like-object"><span class="xref std std-term">path-like object</span></a>, який концептуально представляє лише ім’я файлу. Це означає, що шляхи підкаталогів не повинні включатися в аргумент <em>resource</em>. Це пояснюється тим, що місце розташування пакета, для якого призначений зчитувач, діє як „каталог”. Тому метафорою для каталогів і імен файлів є пакети та ресурси відповідно. Ось чому очікується, що екземпляри цього класу безпосередньо співвідносяться з певним пакетом (замість того, щоб потенційно представляти кілька пакетів або модуль).</p>
+<p>Очікується, що завантажувачі, які бажають підтримувати читання ресурсів, нададуть метод під назвою <code class="docutils literal notranslate"><span class="pre">get_resource_reader(fullname)</span></code>, який повертає об’єкт, що реалізує цей інтерфейс ABC. Якщо модуль, указаний повним іменем, не є пакетом, цей метод має повернути <a class="reference internal" href="constants.html#None" title="None"><code class="xref py py-const docutils literal notranslate"><span class="pre">None</span></code></a>. Об’єкт, сумісний із цим ABC, слід повертати лише тоді, коли вказаний модуль є пакетом.</p>
 <div class="deprecated">
 <p><span class="versionmodified deprecated">Niezalecane od wersji 3.12: </span>Use <a class="reference internal" href="#importlib.resources.abc.TraversableResources" title="importlib.resources.abc.TraversableResources"><code class="xref py py-class docutils literal notranslate"><span class="pre">importlib.resources.abc.TraversableResources</span></code></a> instead.</p>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="importlib.resources.abc.ResourceReader.open_resource">
 <em class="property"><span class="k"><span class="pre">abstractmethod</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">open_resource</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">resource</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#importlib.resources.abc.ResourceReader.open_resource" title="Link to this definition">¶</a></dt>
-<dd><p>Returns an opened, <a class="reference internal" href="../glossary.html#term-file-like-object"><span class="xref std std-term">file-like object</span></a> for binary reading
-of the <em>resource</em>.</p>
-<p>If the resource cannot be found, <a class="reference internal" href="exceptions.html#FileNotFoundError" title="FileNotFoundError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">FileNotFoundError</span></code></a> is
-raised.</p>
+<dd><p>Повертає відкритий <a class="reference internal" href="../glossary.html#term-file-like-object"><span class="xref std std-term">file-like object</span></a> для двійкового читання <em>ресурсу</em>.</p>
+<p>Якщо ресурс не знайдено, виникає <a class="reference internal" href="exceptions.html#FileNotFoundError" title="FileNotFoundError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">FileNotFoundError</span></code></a>.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="importlib.resources.abc.ResourceReader.resource_path">
 <em class="property"><span class="k"><span class="pre">abstractmethod</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">resource_path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">resource</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#importlib.resources.abc.ResourceReader.resource_path" title="Link to this definition">¶</a></dt>
-<dd><p>Returns the file system path to the <em>resource</em>.</p>
-<p>If the resource does not concretely exist on the file system,
-raise <a class="reference internal" href="exceptions.html#FileNotFoundError" title="FileNotFoundError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">FileNotFoundError</span></code></a>.</p>
+<dd><p>Повертає шлях файлової системи до <em>ресурсу</em>.</p>
+<p>Якщо ресурс конкретно не існує у файловій системі, викликайте <a class="reference internal" href="exceptions.html#FileNotFoundError" title="FileNotFoundError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">FileNotFoundError</span></code></a>.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="importlib.resources.abc.ResourceReader.is_resource">
 <em class="property"><span class="k"><span class="pre">abstractmethod</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_resource</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#importlib.resources.abc.ResourceReader.is_resource" title="Link to this definition">¶</a></dt>
-<dd><p>Returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if the named <em>name</em> is considered a resource.
-<a class="reference internal" href="exceptions.html#FileNotFoundError" title="FileNotFoundError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">FileNotFoundError</span></code></a> is raised if <em>name</em> does not exist.</p>
+<dd><p>Повертає <code class="docutils literal notranslate"><span class="pre">True</span></code>, якщо назване <em>ім’я</em> вважається ресурсом. <a class="reference internal" href="exceptions.html#FileNotFoundError" title="FileNotFoundError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">FileNotFoundError</span></code></a> виникає, якщо <em>name</em> не існує.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="importlib.resources.abc.ResourceReader.contents">
 <em class="property"><span class="k"><span class="pre">abstractmethod</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">contents</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#importlib.resources.abc.ResourceReader.contents" title="Link to this definition">¶</a></dt>
-<dd><p>Returns an <a class="reference internal" href="../glossary.html#term-iterable"><span class="xref std std-term">iterable</span></a> of strings over the contents of
-the package. Do note that it is not required that all names
-returned by the iterator be actual resources, e.g. it is
-acceptable to return names for which <a class="reference internal" href="#importlib.resources.abc.ResourceReader.is_resource" title="importlib.resources.abc.ResourceReader.is_resource"><code class="xref py py-meth docutils literal notranslate"><span class="pre">is_resource()</span></code></a> would
-be false.</p>
-<p>Allowing non-resource names to be returned is to allow for
-situations where how a package and its resources are stored
-are known a priori and the non-resource names would be useful.
-For instance, returning subdirectory names is allowed so that
-when it is known that the package and resources are stored on
-the file system then those subdirectory names can be used
-directly.</p>
-<p>The abstract method returns an iterable of no items.</p>
+<dd><p>Повертає <a class="reference internal" href="../glossary.html#term-iterable"><span class="xref std std-term">iterable</span></a> рядків над вмістом пакета. Зауважте, що не обов’язково, щоб усі імена, які повертає ітератор, були фактичними ресурсами, наприклад. прийнятно повертати імена, для яких <a class="reference internal" href="#importlib.resources.abc.ResourceReader.is_resource" title="importlib.resources.abc.ResourceReader.is_resource"><code class="xref py py-meth docutils literal notranslate"><span class="pre">is_resource()</span></code></a> буде false.</p>
+<p>Дозволити повертати нересурсні імена, щоб дозволити ситуації, коли те, як пакет і його ресурси зберігаються, відомі апріорі, і нересурсні імена будуть корисними. Наприклад, дозволено повертати імена підкаталогів, щоб, якщо відомо, що пакет і ресурси зберігаються у файловій системі, ці імена підкаталогів можна було використовувати безпосередньо.</p>
+<p>Абстрактний метод повертає ітерацію без елементів.</p>
 </dd></dl>
 
 </dd></dl>
@@ -283,7 +254,7 @@ traversing directories and opening files.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="importlib.resources.abc.Traversable.iterdir">
 <em class="property"><span class="k"><span class="pre">abstractmethod</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">iterdir</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#importlib.resources.abc.Traversable.iterdir" title="Link to this definition">¶</a></dt>
-<dd><p>Yield Traversable objects in self.</p>
+<dd><p>Прибуток Traversable об’єктів в себе.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -334,8 +305,7 @@ Equivalent to <code class="docutils literal notranslate"><span class="pre">joinp
 <dl class="py method">
 <dt class="sig sig-object py" id="importlib.resources.abc.Traversable.open">
 <em class="property"><span class="k"><span class="pre">abstractmethod</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">open</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'r'</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#importlib.resources.abc.Traversable.open" title="Link to this definition">¶</a></dt>
-<dd><p><em>mode</em> may be «r» or «rb» to open as text or binary. Return a handle
-suitable for reading (same as <a class="reference internal" href="pathlib.html#pathlib.Path.open" title="pathlib.Path.open"><code class="xref py py-attr docutils literal notranslate"><span class="pre">pathlib.Path.open</span></code></a>).</p>
+<dd><p><em>mode</em> може бути „r” або „rb”, щоб відкрити як текстовий або двійковий файл. Повертає дескриптор, придатний для читання (те саме, що <a class="reference internal" href="pathlib.html#pathlib.Path.open" title="pathlib.Path.open"><code class="xref py py-attr docutils literal notranslate"><span class="pre">pathlib.Path.open</span></code></a>).</p>
 <p>When opening as text, accepts encoding parameters such as those
 accepted by <a class="reference internal" href="io.html#io.TextIOWrapper" title="io.TextIOWrapper"><code class="xref py py-class docutils literal notranslate"><span class="pre">io.TextIOWrapper</span></code></a>.</p>
 </dd></dl>
@@ -343,13 +313,13 @@ accepted by <a class="reference internal" href="io.html#io.TextIOWrapper" title=
 <dl class="py method">
 <dt class="sig sig-object py" id="importlib.resources.abc.Traversable.read_bytes">
 <span class="sig-name descname"><span class="pre">read_bytes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#importlib.resources.abc.Traversable.read_bytes" title="Link to this definition">¶</a></dt>
-<dd><p>Read contents of self as bytes.</p>
+<dd><p>Читати вміст себе як байти.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="importlib.resources.abc.Traversable.read_text">
 <span class="sig-name descname"><span class="pre">read_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">encoding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#importlib.resources.abc.Traversable.read_text" title="Link to this definition">¶</a></dt>
-<dd><p>Read contents of self as text.</p>
+<dd><p>Прочитати вміст себе як текст.</p>
 </dd></dl>
 
 </dd></dl>
@@ -384,14 +354,14 @@ package.</p>
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="importlib.resources.html"
-                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">importlib.resources</span></code> – Package resource reading, opening and access</a></p>
+                          title="poprzedni rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">importlib.resources</span></code> – Package resource reading, opening and access</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="importlib.metadata.html"
-                          title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">importlib.metadata</span></code> – Accessing package metadata</a></p>
+                          title="następny rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">importlib.metadata</span></code> – Accessing package metadata</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -405,7 +375,7 @@ package.</p>
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -441,7 +411,7 @@ package.</p>
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="modules.html" >Importing Modules</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">importlib.resources.abc</span></code> – Abstract base classes for resources</a></li>
                 <li class="right">
@@ -490,7 +460,7 @@ package.</p>
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

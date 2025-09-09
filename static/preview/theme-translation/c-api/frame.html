@@ -31,11 +31,11 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="Generator Objects" href="gen.html" />
     <link rel="prev" title="Capsules" href="capsule.html" />
@@ -98,7 +98,7 @@
     </select>
 </label>
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#">Frame Objects</a><ul>
 <li><a class="reference internal" href="#frame-locals-proxies">Frame Locals Proxies</a></li>
@@ -109,14 +109,14 @@
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="capsule.html"
-                          title="previous chapter">Capsules</a></p>
+                          title="poprzedni rozdział">Capsules</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="gen.html"
-                          title="next chapter">Generator Objects</a></p>
+                          title="następny rozdział">Generator Objects</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -163,7 +163,7 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Reference Manual</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Podręcznik</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="concrete.html" accesskey="U">Concrete Objects Layer</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Frame Objects</a></li>
                 <li class="right">
@@ -200,7 +200,7 @@
 <dl class="c type">
 <dt class="sig sig-object c" id="c.PyFrameObject">
 <span class="k"><span class="pre">type</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyFrameObject</span></span></span><a class="headerlink" href="#c.PyFrameObject" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Limited API</span></a> (as an opaque struct).</em><p>The C structure of the objects used to describe frame objects.</p>
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">ograniczonego API</span></a> (jako nieprzezroczysta struktura).</em><p>The C structure of the objects used to describe frame objects.</p>
 <p>There are no public members in this structure.</p>
 <div class="versionchanged">
 <p><span class="versionmodified changed">Zmienione w wersji 3.11: </span>The members of this structure were removed from the public C API.
@@ -236,7 +236,7 @@ It is the same object as <a class="reference internal" href="../library/types.ht
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyFrame_GetBack">
 <a class="reference internal" href="#c.PyFrameObject" title="PyFrameObject"><span class="n"><span class="pre">PyFrameObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyFrame_GetBack</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.PyFrameObject" title="PyFrameObject"><span class="n"><span class="pre">PyFrameObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">frame</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyFrame_GetBack" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><p>Get the <em>frame</em> next outer frame.</p>
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><p>Get the <em>frame</em> next outer frame.</p>
 <p>Return a <a class="reference internal" href="../glossary.html#term-strong-reference"><span class="xref std std-term">strong reference</span></a>, or <code class="docutils literal notranslate"><span class="pre">NULL</span></code> if <em>frame</em> has no outer
 frame.</p>
 <div class="versionadded">
@@ -247,7 +247,7 @@ frame.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyFrame_GetBuiltins">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyFrame_GetBuiltins</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.PyFrameObject" title="PyFrameObject"><span class="n"><span class="pre">PyFrameObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">frame</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyFrame_GetBuiltins" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><p>Get the <em>frame</em>’s <a class="reference internal" href="../reference/datamodel.html#frame.f_builtins" title="frame.f_builtins"><code class="xref py py-attr docutils literal notranslate"><span class="pre">f_builtins</span></code></a> attribute.</p>
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><p>Get the <em>frame</em>’s <a class="reference internal" href="../reference/datamodel.html#frame.f_builtins" title="frame.f_builtins"><code class="xref py py-attr docutils literal notranslate"><span class="pre">f_builtins</span></code></a> attribute.</p>
 <p>Return a <a class="reference internal" href="../glossary.html#term-strong-reference"><span class="xref std std-term">strong reference</span></a>. The result cannot be <code class="docutils literal notranslate"><span class="pre">NULL</span></code>.</p>
 <div class="versionadded">
 <p><span class="versionmodified added"> Dodane w wersji 3.11.</span></p>
@@ -257,7 +257,7 @@ frame.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyFrame_GetCode">
 <a class="reference internal" href="code.html#c.PyCodeObject" title="PyCodeObject"><span class="n"><span class="pre">PyCodeObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyFrame_GetCode</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.PyFrameObject" title="PyFrameObject"><span class="n"><span class="pre">PyFrameObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">frame</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyFrame_GetCode" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.10.</em><p>Get the <em>frame</em> code.</p>
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.10.</em><p>Get the <em>frame</em> code.</p>
 <p>Return a <a class="reference internal" href="../glossary.html#term-strong-reference"><span class="xref std std-term">strong reference</span></a>.</p>
 <p>The result (frame code) cannot be <code class="docutils literal notranslate"><span class="pre">NULL</span></code>.</p>
 <div class="versionadded">
@@ -268,7 +268,7 @@ frame.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyFrame_GetGenerator">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyFrame_GetGenerator</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.PyFrameObject" title="PyFrameObject"><span class="n"><span class="pre">PyFrameObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">frame</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyFrame_GetGenerator" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><p>Get the generator, coroutine, or async generator that owns this frame,
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><p>Get the generator, coroutine, or async generator that owns this frame,
 or <code class="docutils literal notranslate"><span class="pre">NULL</span></code> if this frame is not owned by a generator.
 Does not raise an exception, even if the return value is <code class="docutils literal notranslate"><span class="pre">NULL</span></code>.</p>
 <p>Return a <a class="reference internal" href="../glossary.html#term-strong-reference"><span class="xref std std-term">strong reference</span></a>, or <code class="docutils literal notranslate"><span class="pre">NULL</span></code>.</p>
@@ -280,7 +280,7 @@ Does not raise an exception, even if the return value is <code class="docutils l
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyFrame_GetGlobals">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyFrame_GetGlobals</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.PyFrameObject" title="PyFrameObject"><span class="n"><span class="pre">PyFrameObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">frame</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyFrame_GetGlobals" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><p>Get the <em>frame</em>’s <a class="reference internal" href="../reference/datamodel.html#frame.f_globals" title="frame.f_globals"><code class="xref py py-attr docutils literal notranslate"><span class="pre">f_globals</span></code></a> attribute.</p>
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><p>Get the <em>frame</em>’s <a class="reference internal" href="../reference/datamodel.html#frame.f_globals" title="frame.f_globals"><code class="xref py py-attr docutils literal notranslate"><span class="pre">f_globals</span></code></a> attribute.</p>
 <p>Return a <a class="reference internal" href="../glossary.html#term-strong-reference"><span class="xref std std-term">strong reference</span></a>. The result cannot be <code class="docutils literal notranslate"><span class="pre">NULL</span></code>.</p>
 <div class="versionadded">
 <p><span class="versionmodified added"> Dodane w wersji 3.11.</span></p>
@@ -300,7 +300,7 @@ Does not raise an exception, even if the return value is <code class="docutils l
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyFrame_GetVar">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyFrame_GetVar</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.PyFrameObject" title="PyFrameObject"><span class="n"><span class="pre">PyFrameObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">frame</span></span>, <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">name</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyFrame_GetVar" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><p>Get the variable <em>name</em> of <em>frame</em>.</p>
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><p>Get the variable <em>name</em> of <em>frame</em>.</p>
 <ul class="simple">
 <li><p>Return a <a class="reference internal" href="../glossary.html#term-strong-reference"><span class="xref std std-term">strong reference</span></a> to the variable value on success.</p></li>
 <li><p>Raise <a class="reference internal" href="../library/exceptions.html#NameError" title="NameError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">NameError</span></code></a> and return <code class="docutils literal notranslate"><span class="pre">NULL</span></code> if the variable does not exist.</p></li>
@@ -315,7 +315,7 @@ Does not raise an exception, even if the return value is <code class="docutils l
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyFrame_GetVarString">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyFrame_GetVarString</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.PyFrameObject" title="PyFrameObject"><span class="n"><span class="pre">PyFrameObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">frame</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">name</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyFrame_GetVarString" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><p>Similar to <a class="reference internal" href="#c.PyFrame_GetVar" title="PyFrame_GetVar"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyFrame_GetVar()</span></code></a>, but the variable name is a C string
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><p>Similar to <a class="reference internal" href="#c.PyFrame_GetVar" title="PyFrame_GetVar"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyFrame_GetVar()</span></code></a>, but the variable name is a C string
 encoded in UTF-8.</p>
 <div class="versionadded">
 <p><span class="versionmodified added"> Dodane w wersji 3.12.</span></p>
@@ -325,7 +325,7 @@ encoded in UTF-8.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyFrame_GetLocals">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyFrame_GetLocals</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.PyFrameObject" title="PyFrameObject"><span class="n"><span class="pre">PyFrameObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">frame</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyFrame_GetLocals" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><p>Get the <em>frame</em>’s <a class="reference internal" href="../reference/datamodel.html#frame.f_locals" title="frame.f_locals"><code class="xref py py-attr docutils literal notranslate"><span class="pre">f_locals</span></code></a> attribute.
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><p>Get the <em>frame</em>’s <a class="reference internal" href="../reference/datamodel.html#frame.f_locals" title="frame.f_locals"><code class="xref py py-attr docutils literal notranslate"><span class="pre">f_locals</span></code></a> attribute.
 If the frame refers to an <a class="reference internal" href="../glossary.html#term-optimized-scope"><span class="xref std std-term">optimized scope</span></a>, this returns a
 write-through proxy object that allows modifying the locals.
 In all other cases (classes, modules, <a class="reference internal" href="../library/functions.html#exec" title="exec"><code class="xref py py-func docutils literal notranslate"><span class="pre">exec()</span></code></a>, <a class="reference internal" href="../library/functions.html#eval" title="eval"><code class="xref py py-func docutils literal notranslate"><span class="pre">eval()</span></code></a>) it returns
@@ -343,7 +343,7 @@ the mapping representing the frame locals directly (as described for
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyFrame_GetLineNumber">
 <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyFrame_GetLineNumber</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.PyFrameObject" title="PyFrameObject"><span class="n"><span class="pre">PyFrameObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">frame</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyFrame_GetLineNumber" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.10.</em><p>Return the line number that <em>frame</em> is currently executing.</p>
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.10.</em><p>Return the line number that <em>frame</em> is currently executing.</p>
 </dd></dl>
 
 <section id="frame-locals-proxies">
@@ -386,7 +386,7 @@ the live local variables in the frame itself.</p>
 <dt class="sig sig-object c" id="c.PyUnstable_InterpreterFrame_GetCode">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyUnstable_InterpreterFrame_GetCode</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c._PyInterpreterFrame" title="_PyInterpreterFrame"><span class="n"><span class="pre">_PyInterpreterFrame</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">frame</span></span><span class="sig-paren">)</span><span class="p"><span class="pre">;</span></span><a class="headerlink" href="#c.PyUnstable_InterpreterFrame_GetCode" title="Link to this definition">¶</a><br /></dt>
 <dd><div class="unstable-c-api warning admonition">
-<em>This is <a class="reference internal" href="stable.html#unstable-c-api"><span class="std std-ref">Unstable API</span></a>. It may change without warning in minor releases.</em></div>
+<em>To jest <a class="reference internal" href="stable.html#unstable-c-api"><span class="std std-ref">niestabilne API</span></a>. Może ulec zmianie bez ostrzeżenia w wydaniach minor.</em></div>
 <blockquote>
 <div><p>Return a <a class="reference internal" href="../glossary.html#term-strong-reference"><span class="xref std std-term">strong reference</span></a> to the code object for the frame.</p>
 </div></blockquote>
@@ -399,7 +399,7 @@ the live local variables in the frame itself.</p>
 <dt class="sig sig-object c" id="c.PyUnstable_InterpreterFrame_GetLasti">
 <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyUnstable_InterpreterFrame_GetLasti</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c._PyInterpreterFrame" title="_PyInterpreterFrame"><span class="n"><span class="pre">_PyInterpreterFrame</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">frame</span></span><span class="sig-paren">)</span><span class="p"><span class="pre">;</span></span><a class="headerlink" href="#c.PyUnstable_InterpreterFrame_GetLasti" title="Link to this definition">¶</a><br /></dt>
 <dd><div class="unstable-c-api warning admonition">
-<em>This is <a class="reference internal" href="stable.html#unstable-c-api"><span class="std std-ref">Unstable API</span></a>. It may change without warning in minor releases.</em></div>
+<em>To jest <a class="reference internal" href="stable.html#unstable-c-api"><span class="std std-ref">niestabilne API</span></a>. Może ulec zmianie bez ostrzeżenia w wydaniach minor.</em></div>
 <p>Return the byte offset into the last executed instruction.</p>
 <div class="versionadded">
 <p><span class="versionmodified added"> Dodane w wersji 3.12.</span></p>
@@ -410,7 +410,7 @@ the live local variables in the frame itself.</p>
 <dt class="sig sig-object c" id="c.PyUnstable_InterpreterFrame_GetLine">
 <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyUnstable_InterpreterFrame_GetLine</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c._PyInterpreterFrame" title="_PyInterpreterFrame"><span class="n"><span class="pre">_PyInterpreterFrame</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">frame</span></span><span class="sig-paren">)</span><span class="p"><span class="pre">;</span></span><a class="headerlink" href="#c.PyUnstable_InterpreterFrame_GetLine" title="Link to this definition">¶</a><br /></dt>
 <dd><div class="unstable-c-api warning admonition">
-<em>This is <a class="reference internal" href="stable.html#unstable-c-api"><span class="std std-ref">Unstable API</span></a>. It may change without warning in minor releases.</em></div>
+<em>To jest <a class="reference internal" href="stable.html#unstable-c-api"><span class="std std-ref">niestabilne API</span></a>. Może ulec zmianie bez ostrzeżenia w wydaniach minor.</em></div>
 <p>Return the currently executing line number, or -1 if there is no line number.</p>
 <div class="versionadded">
 <p><span class="versionmodified added"> Dodane w wersji 3.12.</span></p>
@@ -428,7 +428,7 @@ the live local variables in the frame itself.</p>
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#">Frame Objects</a><ul>
 <li><a class="reference internal" href="#frame-locals-proxies">Frame Locals Proxies</a></li>
@@ -439,14 +439,14 @@ the live local variables in the frame itself.</p>
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="capsule.html"
-                          title="previous chapter">Capsules</a></p>
+                          title="poprzedni rozdział">Capsules</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="gen.html"
-                          title="next chapter">Generator Objects</a></p>
+                          title="następny rozdział">Generator Objects</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -460,7 +460,7 @@ the live local variables in the frame itself.</p>
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -496,7 +496,7 @@ the live local variables in the frame itself.</p>
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Reference Manual</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Podręcznik</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="concrete.html" >Concrete Objects Layer</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Frame Objects</a></li>
                 <li class="right">
@@ -545,7 +545,7 @@ the live local variables in the frame itself.</p>
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

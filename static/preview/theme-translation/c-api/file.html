@@ -31,11 +31,11 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="Module Objects" href="module.html" />
     <link rel="prev" title="Code Objects" href="code.html" />
@@ -98,14 +98,14 @@
     </select>
 </label>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="code.html"
-                          title="previous chapter">Code Objects</a></p>
+                          title="poprzedni rozdział">Code Objects</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="module.html"
-                          title="next chapter">Module Objects</a></p>
+                          title="następny rozdział">Module Objects</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -152,7 +152,7 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Reference Manual</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Podręcznik</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="concrete.html" accesskey="U">Concrete Objects Layer</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">File Objects</a></li>
                 <li class="right">
@@ -197,7 +197,7 @@ the <a class="reference internal" href="../library/io.html#module-io" title="io:
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyFile_FromFd">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyFile_FromFd</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n"><span class="pre">fd</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">name</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">mode</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n"><span class="pre">buffering</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">encoding</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">errors</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">newline</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n"><span class="pre">closefd</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyFile_FromFd" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Create a Python file object from the file descriptor of an already
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Create a Python file object from the file descriptor of an already
 opened file <em>fd</em>.  The arguments <em>name</em>, <em>encoding</em>, <em>errors</em> and <em>newline</em>
 can be <code class="docutils literal notranslate"><span class="pre">NULL</span></code> to use the defaults; <em>buffering</em> can be <em>-1</em> to use the
 default. <em>name</em> is ignored and kept for backward compatibility. Return
@@ -210,14 +210,14 @@ OS-level file descriptors can produce various issues (such as unexpected
 ordering of data).</p>
 </div>
 <div class="versionchanged">
-<p><span class="versionmodified changed">Zmienione w wersji 3.2: </span>Ignore <em>name</em> attribute.</p>
+<p><span class="versionmodified changed">Zmienione w wersji 3.2: </span>Zignoruj atrybut <em>name</em>.</p>
 </div>
 </dd></dl>
 
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyObject_AsFileDescriptor">
 <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyObject_AsFileDescriptor</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">p</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyObject_AsFileDescriptor" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Return the file descriptor associated with <em>p</em> as an <span class="c-expr sig sig-inline c"><span class="kt">int</span></span>.  If the
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Return the file descriptor associated with <em>p</em> as an <span class="c-expr sig sig-inline c"><span class="kt">int</span></span>.  If the
 object is an integer, its value is returned.  If not, the
 object’s <a class="reference internal" href="../library/io.html#io.IOBase.fileno" title="io.IOBase.fileno"><code class="xref py py-meth docutils literal notranslate"><span class="pre">fileno()</span></code></a> method is called if it exists; the
 method must return an integer, which is returned as the file descriptor
@@ -227,7 +227,7 @@ value.  Sets an exception and returns <code class="docutils literal notranslate"
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyFile_GetLine">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyFile_GetLine</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">p</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n"><span class="pre">n</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyFile_GetLine" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p id="index-1">Equivalent to <code class="docutils literal notranslate"><span class="pre">p.readline([n])</span></code>, this function reads one line from the
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p id="index-1">Equivalent to <code class="docutils literal notranslate"><span class="pre">p.readline([n])</span></code>, this function reads one line from the
 object <em>p</em>.  <em>p</em> may be a file object or any object with a
 <a class="reference internal" href="../library/io.html#io.IOBase.readline" title="io.IOBase.readline"><code class="xref py py-meth docutils literal notranslate"><span class="pre">readline()</span></code></a>
 method.  If <em>n</em> is <code class="docutils literal notranslate"><span class="pre">0</span></code>, exactly one line is read, regardless of the length of
@@ -260,7 +260,7 @@ during its execution unless they are known to be frozen or available in
 <p>Once a hook has been set, it cannot be removed or replaced, and later calls to
 <a class="reference internal" href="#c.PyFile_SetOpenCodeHook" title="PyFile_SetOpenCodeHook"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyFile_SetOpenCodeHook()</span></code></a> will fail. On failure, the function returns
 -1 and sets an exception if the interpreter has been initialized.</p>
-<p>This function is safe to call before <a class="reference internal" href="init.html#c.Py_Initialize" title="Py_Initialize"><code class="xref c c-func docutils literal notranslate"><span class="pre">Py_Initialize()</span></code></a>.</p>
+<p>Funkcja ta może być bezpiecznie wywołana przed <a class="reference internal" href="init.html#c.Py_Initialize" title="Py_Initialize"><code class="xref c c-func docutils literal notranslate"><span class="pre">Py_Initialize()</span></code></a>.</p>
 <p class="audit-hook">Raises an <a class="reference internal" href="../library/sys.html#auditing"><span class="std std-ref">auditing event</span></a> <code class="docutils literal notranslate"><span class="pre">setopencodehook</span></code> with no arguments.</p>
 <div class="versionadded">
 <p><span class="versionmodified added"> Dodane w wersji 3.8.</span></p>
@@ -270,7 +270,7 @@ during its execution unless they are known to be frozen or available in
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyFile_WriteObject">
 <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyFile_WriteObject</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">obj</span></span>, <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">p</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n"><span class="pre">flags</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyFile_WriteObject" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p id="index-2">Write object <em>obj</em> to file object <em>p</em>.  The only supported flag for <em>flags</em> is
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p id="index-2">Write object <em>obj</em> to file object <em>p</em>.  The only supported flag for <em>flags</em> is
 <a class="reference internal" href="object.html#c.Py_PRINT_RAW" title="Py_PRINT_RAW"><code class="xref c c-macro docutils literal notranslate"><span class="pre">Py_PRINT_RAW</span></code></a>; if given, the <a class="reference internal" href="../library/stdtypes.html#str" title="str"><code class="xref py py-func docutils literal notranslate"><span class="pre">str()</span></code></a> of the object is written
 instead of the <a class="reference internal" href="../library/functions.html#repr" title="repr"><code class="xref py py-func docutils literal notranslate"><span class="pre">repr()</span></code></a>.  Return <code class="docutils literal notranslate"><span class="pre">0</span></code> on success or <code class="docutils literal notranslate"><span class="pre">-1</span></code> on failure; the
 appropriate exception will be set.</p>
@@ -279,7 +279,7 @@ appropriate exception will be set.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyFile_WriteString">
 <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyFile_WriteString</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">s</span></span>, <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">p</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyFile_WriteString" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Write string <em>s</em> to file object <em>p</em>.  Return <code class="docutils literal notranslate"><span class="pre">0</span></code> on success or <code class="docutils literal notranslate"><span class="pre">-1</span></code> on
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Write string <em>s</em> to file object <em>p</em>.  Return <code class="docutils literal notranslate"><span class="pre">0</span></code> on success or <code class="docutils literal notranslate"><span class="pre">-1</span></code> on
 failure; the appropriate exception will be set.</p>
 </dd></dl>
 
@@ -293,14 +293,14 @@ failure; the appropriate exception will be set.</p>
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="code.html"
-                          title="previous chapter">Code Objects</a></p>
+                          title="poprzedni rozdział">Code Objects</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="module.html"
-                          title="next chapter">Module Objects</a></p>
+                          title="następny rozdział">Module Objects</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -314,7 +314,7 @@ failure; the appropriate exception will be set.</p>
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -350,7 +350,7 @@ failure; the appropriate exception will be set.</p>
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Reference Manual</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Podręcznik</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="concrete.html" >Concrete Objects Layer</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">File Objects</a></li>
                 <li class="right">
@@ -399,7 +399,7 @@ failure; the appropriate exception will be set.</p>
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

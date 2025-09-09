@@ -31,11 +31,11 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="Number Protocol" href="number.html" />
     <link rel="prev" title="Object Protocol" href="object.html" />
@@ -98,12 +98,12 @@
     </select>
 </label>
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#">Call Protocol</a><ul>
 <li><a class="reference internal" href="#the-tp-call-protocol">The <em>tp_call</em> Protocol</a></li>
 <li><a class="reference internal" href="#the-vectorcall-protocol">The Vectorcall Protocol</a><ul>
-<li><a class="reference internal" href="#recursion-control">Recursion Control</a></li>
+<li><a class="reference internal" href="#recursion-control">Kontrola Rekursji</a></li>
 <li><a class="reference internal" href="#vectorcall-support-api">Vectorcall Support API</a></li>
 </ul>
 </li>
@@ -115,14 +115,14 @@
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="object.html"
-                          title="previous chapter">Object Protocol</a></p>
+                          title="poprzedni rozdział">Object Protocol</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="number.html"
-                          title="next chapter">Number Protocol</a></p>
+                          title="następny rozdział">Number Protocol</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -169,8 +169,8 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Reference Manual</a> &#187;</li>
-          <li class="nav-item nav-item-2"><a href="abstract.html" accesskey="U">Abstract Objects Layer</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Podręcznik</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="abstract.html" accesskey="U">Warstwa obiektów abstrakcyjnych</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Call Protocol</a></li>
                 <li class="right">
                     
@@ -266,7 +266,7 @@ This is a pointer to a function with the following signature:</p>
 <dl class="c type">
 <dt class="sig sig-object c" id="c.vectorcallfunc">
 <span class="k"><span class="pre">typedef</span></span><span class="w"> </span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">vectorcallfunc</span></span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">callable</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n"><span class="pre">nargsf</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">kwnames</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#c.vectorcallfunc" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.12.</em></dd></dl>
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.12.</em></dd></dl>
 
 <ul class="simple">
 <li><p><em>callable</em> is the object being called.</p></li>
@@ -295,7 +295,7 @@ If there are no keyword arguments, then <em>kwnames</em> can instead be <em>NULL
 <dl class="c macro">
 <dt class="sig sig-object c" id="c.PY_VECTORCALL_ARGUMENTS_OFFSET">
 <span class="sig-name descname"><span class="n"><span class="pre">PY_VECTORCALL_ARGUMENTS_OFFSET</span></span></span><a class="headerlink" href="#c.PY_VECTORCALL_ARGUMENTS_OFFSET" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.12.</em><p>If this flag is set in a vectorcall <em>nargsf</em> argument, the callee is allowed
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.12.</em><p>If this flag is set in a vectorcall <em>nargsf</em> argument, the callee is allowed
 to temporarily change <code class="docutils literal notranslate"><span class="pre">args[-1]</span></code>. In other words, <em>args</em> points to
 argument 1 (not 0) in the allocated vector.
 The callee must restore the value of <code class="docutils literal notranslate"><span class="pre">args[-1]</span></code> before returning.</p>
@@ -314,7 +314,7 @@ calls (which include a prepended <em>self</em> argument) very efficiently.</p>
 function as with any other callable.
 <a class="reference internal" href="#c.PyObject_Vectorcall" title="PyObject_Vectorcall"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyObject_Vectorcall()</span></code></a> will usually be most efficient.</p>
 <section id="recursion-control">
-<h3>Recursion Control<a class="headerlink" href="#recursion-control" title="Link to this heading">¶</a></h3>
+<h3>Kontrola Rekursji<a class="headerlink" href="#recursion-control" title="Link to this heading">¶</a></h3>
 <p>When using <em>tp_call</em>, callees do not need to worry about
 <a class="reference internal" href="exceptions.html#recursion"><span class="std std-ref">recursion</span></a>: CPython uses
 <a class="reference internal" href="exceptions.html#c.Py_EnterRecursiveCall" title="Py_EnterRecursiveCall"><code class="xref c c-func docutils literal notranslate"><span class="pre">Py_EnterRecursiveCall()</span></code></a> and <a class="reference internal" href="exceptions.html#c.Py_LeaveRecursiveCall" title="Py_LeaveRecursiveCall"><code class="xref c c-func docutils literal notranslate"><span class="pre">Py_LeaveRecursiveCall()</span></code></a>
@@ -328,7 +328,7 @@ if needed.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyVectorcall_NARGS">
 <a class="reference internal" href="intro.html#c.Py_ssize_t" title="Py_ssize_t"><span class="n"><span class="pre">Py_ssize_t</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyVectorcall_NARGS</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n"><span class="pre">nargsf</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyVectorcall_NARGS" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.12.</em><p>Given a vectorcall <em>nargsf</em> argument, return the actual number of
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.12.</em><p>Given a vectorcall <em>nargsf</em> argument, return the actual number of
 arguments.
 Currently equivalent to:</p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">Py_ssize_t</span><span class="p">)(</span><span class="n">nargsf</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="o">~</span><span class="n">PY_VECTORCALL_ARGUMENTS_OFFSET</span><span class="p">)</span>
@@ -358,7 +358,7 @@ which can be done by checking <code class="docutils literal notranslate"><span c
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyVectorcall_Call">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyVectorcall_Call</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">callable</span></span>, <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">tuple</span></span>, <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">dict</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyVectorcall_Call" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.12.</em><p>Call <em>callable</em>’s <a class="reference internal" href="#c.vectorcallfunc" title="vectorcallfunc"><code class="xref c c-type docutils literal notranslate"><span class="pre">vectorcallfunc</span></code></a> with positional and keyword
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.12.</em><p>Call <em>callable</em>’s <a class="reference internal" href="#c.vectorcallfunc" title="vectorcallfunc"><code class="xref c c-type docutils literal notranslate"><span class="pre">vectorcallfunc</span></code></a> with positional and keyword
 arguments given in a tuple and dict, respectively.</p>
 <p>This is a specialized function, intended to be put in the
 <a class="reference internal" href="typeobj.html#c.PyTypeObject.tp_call" title="PyTypeObject.tp_call"><code class="xref c c-member docutils literal notranslate"><span class="pre">tp_call</span></code></a> slot or be used in an implementation of <code class="docutils literal notranslate"><span class="pre">tp_call</span></code>.
@@ -382,7 +382,7 @@ the format of data you have available.</p>
 please see individual documentation for details.</p>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head"><p>Function</p></th>
+<tr class="row-odd"><th class="head"><p>Funkcja</p></th>
 <th class="head"><p>callable</p></th>
 <th class="head"><p>args</p></th>
 <th class="head"><p>kwargs</p></th>
@@ -459,7 +459,7 @@ please see individual documentation for details.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyObject_Call">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyObject_Call</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">callable</span></span>, <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span>, <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">kwargs</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyObject_Call" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Call a callable Python object <em>callable</em>, with arguments given by the
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Call a callable Python object <em>callable</em>, with arguments given by the
 tuple <em>args</em>, and named arguments given by the dictionary <em>kwargs</em>.</p>
 <p><em>args</em> must not be <em>NULL</em>; use an empty tuple if no arguments are needed.
 If no named arguments are needed, <em>kwargs</em> can be <em>NULL</em>.</p>
@@ -472,7 +472,7 @@ If no named arguments are needed, <em>kwargs</em> can be <em>NULL</em>.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyObject_CallNoArgs">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyObject_CallNoArgs</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">callable</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyObject_CallNoArgs" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.10.</em><p>Call a callable Python object <em>callable</em> without any arguments. It is the
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.10.</em><p>Call a callable Python object <em>callable</em> without any arguments. It is the
 most efficient way to call a callable Python object without any argument.</p>
 <p>Return the result of the call on success, or raise an exception and return
 <em>NULL</em> on failure.</p>
@@ -484,7 +484,7 @@ most efficient way to call a callable Python object without any argument.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyObject_CallOneArg">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyObject_CallOneArg</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">callable</span></span>, <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">arg</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyObject_CallOneArg" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><p>Call a callable Python object <em>callable</em> with exactly 1 positional argument
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><p>Call a callable Python object <em>callable</em> with exactly 1 positional argument
 <em>arg</em> and no keyword arguments.</p>
 <p>Return the result of the call on success, or raise an exception and return
 <em>NULL</em> on failure.</p>
@@ -496,7 +496,7 @@ most efficient way to call a callable Python object without any argument.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyObject_CallObject">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyObject_CallObject</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">callable</span></span>, <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyObject_CallObject" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Call a callable Python object <em>callable</em>, with arguments given by the
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Call a callable Python object <em>callable</em>, with arguments given by the
 tuple <em>args</em>.  If no arguments are needed, then <em>args</em> can be <em>NULL</em>.</p>
 <p>Return the result of the call on success, or raise an exception and return
 <em>NULL</em> on failure.</p>
@@ -506,7 +506,7 @@ tuple <em>args</em>.  If no arguments are needed, then <em>args</em> can be <em>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyObject_CallFunction">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyObject_CallFunction</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">callable</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">format</span></span>, <span class="p"><span class="pre">...</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyObject_CallFunction" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Call a callable Python object <em>callable</em>, with a variable number of C arguments.
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Call a callable Python object <em>callable</em>, with a variable number of C arguments.
 The C arguments are described using a <a class="reference internal" href="arg.html#c.Py_BuildValue" title="Py_BuildValue"><code class="xref c c-func docutils literal notranslate"><span class="pre">Py_BuildValue()</span></code></a> style format
 string.  The format can be <em>NULL</em>, indicating that no arguments are provided.</p>
 <p>Return the result of the call on success, or raise an exception and return
@@ -522,7 +522,7 @@ string.  The format can be <em>NULL</em>, indicating that no arguments are provi
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyObject_CallMethod">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyObject_CallMethod</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">obj</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">name</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">format</span></span>, <span class="p"><span class="pre">...</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyObject_CallMethod" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Call the method named <em>name</em> of object <em>obj</em> with a variable number of C
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Call the method named <em>name</em> of object <em>obj</em> with a variable number of C
 arguments.  The C arguments are described by a <a class="reference internal" href="arg.html#c.Py_BuildValue" title="Py_BuildValue"><code class="xref c c-func docutils literal notranslate"><span class="pre">Py_BuildValue()</span></code></a> format
 string that should produce a tuple.</p>
 <p>The format can be <em>NULL</em>, indicating that no arguments are provided.</p>
@@ -540,7 +540,7 @@ string that should produce a tuple.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyObject_CallFunctionObjArgs">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyObject_CallFunctionObjArgs</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">callable</span></span>, <span class="p"><span class="pre">...</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyObject_CallFunctionObjArgs" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Call a callable Python object <em>callable</em>, with a variable number of
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Call a callable Python object <em>callable</em>, with a variable number of
 <span class="c-expr sig sig-inline c"><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n">PyObject</span></a><span class="p">*</span></span> arguments.  The arguments are provided as a variable number
 of parameters followed by <em>NULL</em>.</p>
 <p>Return the result of the call on success, or raise an exception and return
@@ -552,7 +552,7 @@ of parameters followed by <em>NULL</em>.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyObject_CallMethodObjArgs">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyObject_CallMethodObjArgs</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">obj</span></span>, <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">name</span></span>, <span class="p"><span class="pre">...</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyObject_CallMethodObjArgs" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Call a method of the Python object <em>obj</em>, where the name of the method is given as a
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Call a method of the Python object <em>obj</em>, where the name of the method is given as a
 Python string object in <em>name</em>.  It is called with a variable number of
 <span class="c-expr sig sig-inline c"><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n">PyObject</span></a><span class="p">*</span></span> arguments.  The arguments are provided as a variable number
 of parameters followed by <em>NULL</em>.</p>
@@ -588,7 +588,7 @@ where the name of the method is given as a Python string object in <em>name</em>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyObject_Vectorcall">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyObject_Vectorcall</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">callable</span></span>, <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n"><span class="pre">nargsf</span></span>, <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">kwnames</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyObject_Vectorcall" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.12.</em><p>Call a callable Python object <em>callable</em>.
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.12.</em><p>Call a callable Python object <em>callable</em>.
 The arguments are the same as for <a class="reference internal" href="#c.vectorcallfunc" title="vectorcallfunc"><code class="xref c c-type docutils literal notranslate"><span class="pre">vectorcallfunc</span></code></a>.
 If <em>callable</em> supports <a class="reference internal" href="#vectorcall">vectorcall</a>, this directly calls
 the vectorcall function stored in <em>callable</em>.</p>
@@ -618,7 +618,7 @@ but not a tuple for the positional arguments.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyObject_VectorcallMethod">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyObject_VectorcallMethod</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">name</span></span>, <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n"><span class="pre">nargsf</span></span>, <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">kwnames</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyObject_VectorcallMethod" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.12.</em><p>Call a method using the vectorcall calling convention. The name of the method
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.12.</em><p>Call a method using the vectorcall calling convention. The name of the method
 is given as a Python string <em>name</em>. The object whose method is called is
 <em>args[0]</em>, and the <em>args</em> array starting at <em>args[1]</em> represents the arguments
 of the call. There must be at least one positional argument.
@@ -642,7 +642,7 @@ this will call the unbound method object with the full
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyCallable_Check">
 <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyCallable_Check</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">o</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyCallable_Check" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Determine if the object <em>o</em> is callable.  Return <code class="docutils literal notranslate"><span class="pre">1</span></code> if the object is callable
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Determine if the object <em>o</em> is callable.  Return <code class="docutils literal notranslate"><span class="pre">1</span></code> if the object is callable
 and <code class="docutils literal notranslate"><span class="pre">0</span></code> otherwise.  This function always succeeds.</p>
 </dd></dl>
 
@@ -657,12 +657,12 @@ and <code class="docutils literal notranslate"><span class="pre">0</span></code>
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#">Call Protocol</a><ul>
 <li><a class="reference internal" href="#the-tp-call-protocol">The <em>tp_call</em> Protocol</a></li>
 <li><a class="reference internal" href="#the-vectorcall-protocol">The Vectorcall Protocol</a><ul>
-<li><a class="reference internal" href="#recursion-control">Recursion Control</a></li>
+<li><a class="reference internal" href="#recursion-control">Kontrola Rekursji</a></li>
 <li><a class="reference internal" href="#vectorcall-support-api">Vectorcall Support API</a></li>
 </ul>
 </li>
@@ -674,14 +674,14 @@ and <code class="docutils literal notranslate"><span class="pre">0</span></code>
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="object.html"
-                          title="previous chapter">Object Protocol</a></p>
+                          title="poprzedni rozdział">Object Protocol</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="number.html"
-                          title="next chapter">Number Protocol</a></p>
+                          title="następny rozdział">Number Protocol</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -695,7 +695,7 @@ and <code class="docutils literal notranslate"><span class="pre">0</span></code>
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -731,8 +731,8 @@ and <code class="docutils literal notranslate"><span class="pre">0</span></code>
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Reference Manual</a> &#187;</li>
-          <li class="nav-item nav-item-2"><a href="abstract.html" >Abstract Objects Layer</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Podręcznik</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="abstract.html" >Warstwa obiektów abstrakcyjnych</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Call Protocol</a></li>
                 <li class="right">
                     
@@ -780,7 +780,7 @@ and <code class="docutils literal notranslate"><span class="pre">0</span></code>
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

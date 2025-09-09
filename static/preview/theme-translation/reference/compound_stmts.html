@@ -31,11 +31,11 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="9. Top-level components" href="toplevel_components.html" />
     <link rel="prev" title="7. Simple statements" href="simple_stmts.html" />
@@ -98,7 +98,7 @@
     </select>
 </label>
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#">8. Compound statements</a><ul>
 <li><a class="reference internal" href="#the-if-statement">8.1. The <code class="xref std std-keyword docutils literal notranslate"><span class="pre">if</span></code> statement</a></li>
@@ -113,7 +113,7 @@
 </li>
 <li><a class="reference internal" href="#the-with-statement">8.5. The <code class="xref std std-keyword docutils literal notranslate"><span class="pre">with</span></code> statement</a></li>
 <li><a class="reference internal" href="#the-match-statement">8.6. The <code class="xref std std-keyword docutils literal notranslate"><span class="pre">match</span></code> statement</a><ul>
-<li><a class="reference internal" href="#overview">8.6.1. Overview</a></li>
+<li><a class="reference internal" href="#overview">8.6.1. Skorowidz</a></li>
 <li><a class="reference internal" href="#guards">8.6.2. Guards</a></li>
 <li><a class="reference internal" href="#irrefutable-case-blocks">8.6.3. Irrefutable Case Blocks</a></li>
 <li><a class="reference internal" href="#patterns">8.6.4. Patterns</a><ul>
@@ -155,14 +155,14 @@
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="simple_stmts.html"
-                          title="previous chapter"><span class="section-number">7. </span>Simple statements</a></p>
+                          title="poprzedni rozdział"><span class="section-number">7. </span>Simple statements</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="toplevel_components.html"
-                          title="next chapter"><span class="section-number">9. </span>Top-level components</a></p>
+                          title="następny rozdział"><span class="section-number">9. </span>Top-level components</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -209,7 +209,7 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">The Python Language Reference</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Dokumentacja języka Python</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><span class="section-number">8. </span>Compound statements</a></li>
                 <li class="right">
                     
@@ -382,7 +382,7 @@ for a group of statements:</p>
 <strong id="grammar-token-python-grammar-try3_stmt">try3_stmt</strong>: <span class="sx">&quot;try&quot;</span> <span class="sx">&quot;:&quot;</span> <a class="reference internal" href="#grammar-token-python-grammar-suite"><code class="xref docutils literal notranslate"><span class="pre">suite</span></code></a>
            <span class="sx">&quot;finally&quot;</span> <span class="sx">&quot;:&quot;</span> <a class="reference internal" href="#grammar-token-python-grammar-suite"><code class="xref docutils literal notranslate"><span class="pre">suite</span></code></a>
 </pre>
-<p>Additional information on exceptions can be found in section <a class="reference internal" href="executionmodel.html#exceptions"><span class="std std-ref">Exceptions</span></a>,
+<p>Additional information on exceptions can be found in section <a class="reference internal" href="executionmodel.html#exceptions"><span class="std std-ref">Wyjątki</span></a>,
 and information on using the <a class="reference internal" href="simple_stmts.html#raise"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">raise</span></code></a> statement to generate exceptions
 may be found in section <a class="reference internal" href="simple_stmts.html#raise"><span class="std std-ref">The raise statement</span></a>.</p>
 <div class="versionchanged">
@@ -529,12 +529,14 @@ clauses.</p>
 <section id="finally-clause">
 <span id="finally"></span><span id="index-15"></span><h3><span class="section-number">8.4.4. </span><code class="xref std std-keyword docutils literal notranslate"><span class="pre">finally</span></code> clause<a class="headerlink" href="#finally-clause" title="Link to this heading">¶</a></h3>
 <p>If <code class="xref std std-keyword docutils literal notranslate"><span class="pre">finally</span></code> is present, it specifies a «cleanup» handler.  The
-<a class="reference internal" href="#try"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">try</span></code></a> clause is executed, including any <a class="reference internal" href="#except"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">except</span></code></a> and
-<a class="reference internal" href="#else"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">else</span></code></a> clauses.  If an exception occurs in any of the clauses and is
-not handled, the exception is temporarily saved. The <code class="xref std std-keyword docutils literal notranslate"><span class="pre">finally</span></code> clause
-is executed.  If there is a saved exception it is re-raised at the end of the
-<code class="xref std std-keyword docutils literal notranslate"><span class="pre">finally</span></code> clause.  If the <code class="xref std std-keyword docutils literal notranslate"><span class="pre">finally</span></code> clause raises another
-exception, the saved exception is set as the context of the new exception.
+<a class="reference internal" href="#try"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">try</span></code></a> clause is executed, including any <a class="reference internal" href="#except"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">except</span></code></a>
+and <a class="reference internal" href="#except-else"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">else</span></code></a> clauses.
+If an exception occurs in any of the clauses and is not handled,
+the exception is temporarily saved.
+The <code class="xref std std-keyword docutils literal notranslate"><span class="pre">finally</span></code> clause is executed.  If there is a saved exception
+it is re-raised at the end of the <code class="xref std std-keyword docutils literal notranslate"><span class="pre">finally</span></code> clause.
+If the <code class="xref std std-keyword docutils literal notranslate"><span class="pre">finally</span></code> clause raises another exception, the saved exception
+is set as the context of the new exception.
 If the <code class="xref std std-keyword docutils literal notranslate"><span class="pre">finally</span></code> clause executes a <a class="reference internal" href="simple_stmts.html#return"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">return</span></code></a>, <a class="reference internal" href="simple_stmts.html#break"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">break</span></code></a>
 or <a class="reference internal" href="simple_stmts.html#continue"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">continue</span></code></a> statement, the saved exception is discarded. For example,
 this function returns 42.</p>
@@ -683,9 +685,9 @@ statement.</p>
 <p>The match statement is used for pattern matching.  Syntax:</p>
 <pre class="highlight">
 <strong id="grammar-token-python-grammar-match_stmt">match_stmt</strong>:   <span class="sx">'match'</span> <a class="reference internal" href="#grammar-token-python-grammar-subject_expr"><code class="xref docutils literal notranslate"><span class="pre">subject_expr</span></code></a> <span class="sx">&quot;:&quot;</span> NEWLINE INDENT <a class="reference internal" href="#grammar-token-python-grammar-case_block"><code class="xref docutils literal notranslate"><span class="pre">case_block</span></code></a>+ DEDENT
-<strong id="grammar-token-python-grammar-subject_expr">subject_expr</strong>: <code class="xref docutils literal notranslate"><span class="pre">star_named_expression</span></code> <span class="sx">&quot;,&quot;</span> <code class="xref docutils literal notranslate"><span class="pre">star_named_expressions</span></code>?
-              | <code class="xref docutils literal notranslate"><span class="pre">named_expression</span></code>
-<strong id="grammar-token-python-grammar-case_block">case_block</strong>:   <span class="sx">'case'</span> <a class="reference internal" href="#grammar-token-python-grammar-patterns"><code class="xref docutils literal notranslate"><span class="pre">patterns</span></code></a> [<a class="reference internal" href="#grammar-token-python-grammar-guard"><code class="xref docutils literal notranslate"><span class="pre">guard</span></code></a>] <span class="sx">&quot;:&quot;</span> <code class="xref docutils literal notranslate"><span class="pre">block</span></code>
+<strong id="grammar-token-python-grammar-subject_expr">subject_expr</strong>: `!star_named_expression` <span class="sx">&quot;,&quot;</span> `!star_named_expressions`?
+              | `!named_expression`
+<strong id="grammar-token-python-grammar-case_block">case_block</strong>:   <span class="sx">'case'</span> <a class="reference internal" href="#grammar-token-python-grammar-patterns"><code class="xref docutils literal notranslate"><span class="pre">patterns</span></code></a> [<a class="reference internal" href="#grammar-token-python-grammar-guard"><code class="xref docutils literal notranslate"><span class="pre">guard</span></code></a>] <span class="sx">&quot;:&quot;</span> `!block`
 </pre>
 <div class="admonition note">
 <p class="admonition-title">Informacja</p>
@@ -709,7 +711,7 @@ further discussed below.</p></li>
 </ul>
 </div>
 <section id="overview">
-<h3><span class="section-number">8.6.1. </span>Overview<a class="headerlink" href="#overview" title="Link to this heading">¶</a></h3>
+<h3><span class="section-number">8.6.1. </span>Skorowidz<a class="headerlink" href="#overview" title="Link to this heading">¶</a></h3>
 <p>Here’s an overview of the logical flow of a match statement:</p>
 <ol class="arabic">
 <li><p>The subject expression <code class="docutils literal notranslate"><span class="pre">subject_expr</span></code> is evaluated and a resulting subject
@@ -767,7 +769,7 @@ which skip repeated evaluations.</p>
 <section id="guards">
 <h3><span class="section-number">8.6.2. </span>Guards<a class="headerlink" href="#guards" title="Link to this heading">¶</a></h3>
 <pre class="highlight" id="index-23">
-<strong id="grammar-token-python-grammar-guard">guard</strong>: <span class="sx">&quot;if&quot;</span> <code class="xref docutils literal notranslate"><span class="pre">named_expression</span></code>
+<strong id="grammar-token-python-grammar-guard">guard</strong>: <span class="sx">&quot;if&quot;</span> `!named_expression`
 </pre>
 <p>A <code class="docutils literal notranslate"><span class="pre">guard</span></code> (which is part of the <code class="docutils literal notranslate"><span class="pre">case</span></code>) must succeed for code inside
 the <code class="docutils literal notranslate"><span class="pre">case</span></code> block to execute.  It takes the form: <a class="reference internal" href="#if"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">if</span></code></a> followed by an
@@ -1010,8 +1012,8 @@ items, as for a fixed-length sequence.</p></li>
 <div class="admonition note">
 <p class="admonition-title">Informacja</p>
 <p>The length of the subject sequence is obtained via
-<a class="reference internal" href="../library/functions.html#len" title="len"><code class="xref py py-func docutils literal notranslate"><span class="pre">len()</span></code></a> (i.e. via the <code class="xref py py-meth docutils literal notranslate"><span class="pre">__len__()</span></code> protocol).  This length may be
-cached by the interpreter in a similar manner as
+<a class="reference internal" href="../library/functions.html#len" title="len"><code class="xref py py-func docutils literal notranslate"><span class="pre">len()</span></code></a> (i.e. via the <a class="reference internal" href="datamodel.html#object.__len__" title="object.__len__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">__len__()</span></code></a> protocol).
+This length may be cached by the interpreter in a similar manner as
 <a class="reference internal" href="#value-patterns"><span class="std std-ref">value patterns</span></a>.</p>
 </div>
 </li>
@@ -1058,8 +1060,8 @@ values; or a <a class="reference internal" href="../library/exceptions.html#Valu
 <p class="admonition-title">Informacja</p>
 <p>Key-value pairs are matched using the two-argument form of the mapping
 subject’s <code class="docutils literal notranslate"><span class="pre">get()</span></code> method.  Matched key-value pairs must already be present
-in the mapping, and not created on-the-fly via <code class="xref py py-meth docutils literal notranslate"><span class="pre">__missing__()</span></code> or
-<a class="reference internal" href="datamodel.html#object.__getitem__" title="object.__getitem__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">__getitem__()</span></code></a>.</p>
+in the mapping, and not created on-the-fly via <a class="reference internal" href="datamodel.html#object.__missing__" title="object.__missing__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">__missing__()</span></code></a>
+or <a class="reference internal" href="datamodel.html#object.__getitem__" title="object.__getitem__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">__getitem__()</span></code></a>.</p>
 </div>
 <p>In simple terms <code class="docutils literal notranslate"><span class="pre">{KEY1:</span> <span class="pre">P1,</span> <span class="pre">KEY2:</span> <span class="pre">P2,</span> <span class="pre">...</span> <span class="pre">}</span></code> matches only if all the following
 happens:</p>
@@ -1452,7 +1454,7 @@ the class cannot be created, as explained in <a class="reference internal" href=
 possible to compute a <em>solid base</em> for the class. Exactly which classes are solid bases
 depends on the Python implementation.</p>
 <div class="impl-detail compound">
-<p><strong>CPython implementation detail:</strong> In CPython, a class is a solid base if it has a
+<p><strong>Szczegół implementacyjny CPythona:</strong> In CPython, a class is a solid base if it has a
 nonempty <a class="reference internal" href="datamodel.html#object.__slots__" title="object.__slots__"><code class="xref py py-attr docutils literal notranslate"><span class="pre">__slots__</span></code></a> definition.
 Many but not all classes defined in C are also solid bases, including most
 builtins (such as <a class="reference internal" href="../library/functions.html#int" title="int"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a> or <a class="reference internal" href="../library/exceptions.html#BaseException" title="BaseException"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseException</span></code></a>)
@@ -1859,7 +1861,7 @@ but not before Python 3.13 reaches its end of life (see <span class="target" id=
 When it is used, introspection tools like
 <a class="reference internal" href="../library/annotationlib.html#annotationlib.get_annotations" title="annotationlib.get_annotations"><code class="xref py py-func docutils literal notranslate"><span class="pre">annotationlib.get_annotations()</span></code></a> and <a class="reference internal" href="../library/typing.html#typing.get_type_hints" title="typing.get_type_hints"><code class="xref py py-func docutils literal notranslate"><span class="pre">typing.get_type_hints()</span></code></a> are
 less likely to be able to resolve annotations at runtime.</p>
-<p class="rubric">Footnotes</p>
+<p class="rubric">Przypisy</p>
 <aside class="footnote-list brackets">
 <aside class="footnote brackets" id="id22" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
@@ -1927,7 +1929,7 @@ the class’s <a class="reference internal" href="../glossary.html#term-docstrin
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#">8. Compound statements</a><ul>
 <li><a class="reference internal" href="#the-if-statement">8.1. The <code class="xref std std-keyword docutils literal notranslate"><span class="pre">if</span></code> statement</a></li>
@@ -1942,7 +1944,7 @@ the class’s <a class="reference internal" href="../glossary.html#term-docstrin
 </li>
 <li><a class="reference internal" href="#the-with-statement">8.5. The <code class="xref std std-keyword docutils literal notranslate"><span class="pre">with</span></code> statement</a></li>
 <li><a class="reference internal" href="#the-match-statement">8.6. The <code class="xref std std-keyword docutils literal notranslate"><span class="pre">match</span></code> statement</a><ul>
-<li><a class="reference internal" href="#overview">8.6.1. Overview</a></li>
+<li><a class="reference internal" href="#overview">8.6.1. Skorowidz</a></li>
 <li><a class="reference internal" href="#guards">8.6.2. Guards</a></li>
 <li><a class="reference internal" href="#irrefutable-case-blocks">8.6.3. Irrefutable Case Blocks</a></li>
 <li><a class="reference internal" href="#patterns">8.6.4. Patterns</a><ul>
@@ -1984,14 +1986,14 @@ the class’s <a class="reference internal" href="../glossary.html#term-docstrin
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="simple_stmts.html"
-                          title="previous chapter"><span class="section-number">7. </span>Simple statements</a></p>
+                          title="poprzedni rozdział"><span class="section-number">7. </span>Simple statements</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="toplevel_components.html"
-                          title="next chapter"><span class="section-number">9. </span>Top-level components</a></p>
+                          title="następny rozdział"><span class="section-number">9. </span>Top-level components</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -2005,7 +2007,7 @@ the class’s <a class="reference internal" href="../glossary.html#term-docstrin
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -2041,7 +2043,7 @@ the class’s <a class="reference internal" href="../glossary.html#term-docstrin
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Language Reference</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Dokumentacja języka Python</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><span class="section-number">8. </span>Compound statements</a></li>
                 <li class="right">
                     
@@ -2089,7 +2091,7 @@ the class’s <a class="reference internal" href="../glossary.html#term-docstrin
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

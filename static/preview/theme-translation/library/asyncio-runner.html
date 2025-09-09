@@ -8,10 +8,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://docs.python.org/3/library/asyncio-runner.html" />
 <meta property="og:site_name" content="Python documentation" />
-<meta property="og:description" content="Source code: Lib/asyncio/runners.py This section outlines high-level asyncio primitives to run asyncio code. They are built on top of an event loop with the aim to simplify async code usage for com..." />
+<meta property="og:description" content="Kod źródłowy: Lib/asyncio/runners.py This section outlines high-level asyncio primitives to run asyncio code. They are built on top of an event loop with the aim to simplify async code usage for co..." />
 <meta property="og:image" content="_static/og-image.png" />
 <meta property="og:image:alt" content="Python documentation" />
-<meta name="description" content="Source code: Lib/asyncio/runners.py This section outlines high-level asyncio primitives to run asyncio code. They are built on top of an event loop with the aim to simplify async code usage for com..." />
+<meta name="description" content="Kod źródłowy: Lib/asyncio/runners.py This section outlines high-level asyncio primitives to run asyncio code. They are built on top of an event loop with the aim to simplify async code usage for co..." />
 <meta name="theme-color" content="#3776ab">
 <meta property="og:image:width" content="200">
 <meta property="og:image:height" content="200">
@@ -31,11 +31,11 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="Coroutines and Tasks" href="asyncio-task.html" />
     <link rel="prev" title="asyncio — Asynchronous I/O" href="asyncio.html" />
@@ -98,7 +98,7 @@
     </select>
 </label>
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#">Runners</a><ul>
 <li><a class="reference internal" href="#running-an-asyncio-program">Running an asyncio Program</a></li>
@@ -110,14 +110,14 @@
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="asyncio.html"
-                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">asyncio</span></code> — Asynchronous I/O</a></p>
+                          title="poprzedni rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">asyncio</span></code> — Asynchronous I/O</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="asyncio-task.html"
-                          title="next chapter">Coroutines and Tasks</a></p>
+                          title="następny rozdział">Coroutines and Tasks</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -164,7 +164,7 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="ipc.html" >Networking and Interprocess Communication</a> &#187;</li>
           <li class="nav-item nav-item-3"><a href="asyncio.html" accesskey="U"><code class="xref py py-mod docutils literal notranslate"><span class="pre">asyncio</span></code> — Asynchronous I/O</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Runners</a></li>
@@ -199,7 +199,7 @@
             
   <section id="runners">
 <h1>Runners<a class="headerlink" href="#runners" title="Link to this heading">¶</a></h1>
-<p><strong>Source code:</strong> <a class="extlink-source reference external" href="https://github.com/python/cpython/tree/main/Lib/asyncio/runners.py">Lib/asyncio/runners.py</a></p>
+<p><strong>Kod źródłowy:</strong> <a class="extlink-source reference external" href="https://github.com/python/cpython/tree/main/Lib/asyncio/runners.py">Lib/asyncio/runners.py</a></p>
 <p>This section outlines high-level asyncio primitives to run asyncio code.</p>
 <p>They are built on top of an <a class="reference internal" href="asyncio-eventloop.html#asyncio-event-loop"><span class="std std-ref">event loop</span></a> with the aim
 to simplify async code usage for common wide-spread scenarios.</p>
@@ -235,7 +235,7 @@ policy system.</p>
 <p>The executor is given a timeout duration of 5 minutes to shutdown.
 If the executor hasn’t finished within that duration, a warning is
 emitted and the executor is closed.</p>
-<p>Example:</p>
+<p>Przykład:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
     <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span>
@@ -372,7 +372,7 @@ immediately raises the <a class="reference internal" href="exceptions.html#Keybo
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#">Runners</a><ul>
 <li><a class="reference internal" href="#running-an-asyncio-program">Running an asyncio Program</a></li>
@@ -384,14 +384,14 @@ immediately raises the <a class="reference internal" href="exceptions.html#Keybo
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="asyncio.html"
-                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">asyncio</span></code> — Asynchronous I/O</a></p>
+                          title="poprzedni rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">asyncio</span></code> — Asynchronous I/O</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="asyncio-task.html"
-                          title="next chapter">Coroutines and Tasks</a></p>
+                          title="następny rozdział">Coroutines and Tasks</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -405,7 +405,7 @@ immediately raises the <a class="reference internal" href="exceptions.html#Keybo
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -441,7 +441,7 @@ immediately raises the <a class="reference internal" href="exceptions.html#Keybo
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="ipc.html" >Networking and Interprocess Communication</a> &#187;</li>
           <li class="nav-item nav-item-3"><a href="asyncio.html" ><code class="xref py py-mod docutils literal notranslate"><span class="pre">asyncio</span></code> — Asynchronous I/O</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Runners</a></li>
@@ -491,7 +491,7 @@ immediately raises the <a class="reference internal" href="exceptions.html#Keybo
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

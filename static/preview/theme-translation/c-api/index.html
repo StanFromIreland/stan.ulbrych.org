@@ -4,19 +4,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="Python/C API Reference Manual" />
+<meta property="og:title" content="Python/C API Podręcznik" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://docs.python.org/3/c-api/index.html" />
 <meta property="og:site_name" content="Python documentation" />
-<meta property="og:description" content="This manual documents the API used by C and C++ programmers who want to write extension modules or embed Python. It is a companion to Extending and Embedding the Python Interpreter, which describes..." />
+<meta property="og:description" content="Ten podręcznik dokumentuje API używany przez programistów C i C++, którzy chcą napisać rozszerzenie moduł lub osadzić Pythona. Jest to dodatek do Rozszerzony i wbudowany interpreter Python, który o..." />
 <meta property="og:image" content="_static/og-image.png" />
 <meta property="og:image:alt" content="Python documentation" />
-<meta name="description" content="This manual documents the API used by C and C++ programmers who want to write extension modules or embed Python. It is a companion to Extending and Embedding the Python Interpreter, which describes..." />
+<meta name="description" content="Ten podręcznik dokumentuje API używany przez programistów C i C++, którzy chcą napisać rozszerzenie moduł lub osadzić Pythona. Jest to dodatek do Rozszerzony i wbudowany interpreter Python, który o..." />
 <meta name="theme-color" content="#3776ab">
 <meta property="og:image:width" content="200">
 <meta property="og:image:height" content="200">
 
-    <title>Python/C API Reference Manual &#8212; Python 3.15.0a0 - dokumentacja</title><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python/C API Podręcznik &#8212; Python 3.15.0a0 - dokumentacja</title><meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=234b1a7c" />
@@ -31,13 +31,13 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
-    <link rel="next" title="Introduction" href="intro.html" />
+    <link rel="next" title="Wprowadzenie" href="intro.html" />
     <link rel="prev" title="1. Embedding Python in Another Application" href="../extending/embedding.html" />
     
       
@@ -98,14 +98,14 @@
     </select>
 </label>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="../extending/embedding.html"
-                          title="previous chapter"><span class="section-number">1. </span>Embedding Python in Another Application</a></p>
+                          title="poprzedni rozdział"><span class="section-number">1. </span>Embedding Python in Another Application</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="intro.html"
-                          title="next chapter">Introduction</a></p>
+                          title="następny rozdział">Wprowadzenie</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -133,7 +133,7 @@
           <a href="../py-modindex.html" title="Indeks modułów Pythona"
              >moduły</a> |</li>
         <li class="right" >
-          <a href="intro.html" title="Introduction"
+          <a href="intro.html" title="Wprowadzenie"
              accesskey="N">dalej</a> |</li>
         <li class="right" >
           <a href="../extending/embedding.html" title="1. Embedding Python in Another Application"
@@ -152,7 +152,7 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-        <li class="nav-item nav-item-this"><a href="">Python/C API Reference Manual</a></li>
+        <li class="nav-item nav-item-this"><a href="">Python/C API Podręcznik</a></li>
                 <li class="right">
                     
 
@@ -183,44 +183,42 @@
           <div class="body" role="main">
             
   <section id="python-c-api-reference-manual">
-<span id="c-api-index"></span><h1>Python/C API Reference Manual<a class="headerlink" href="#python-c-api-reference-manual" title="Link to this heading">¶</a></h1>
-<p>This manual documents the API used by C and C++ programmers who want to write
-extension modules or embed Python.  It is a companion to <a class="reference internal" href="../extending/index.html#extending-index"><span class="std std-ref">Extending and Embedding the Python Interpreter</span></a>,
-which describes the general principles of extension writing but does not
-document the API functions in detail.</p>
+<span id="c-api-index"></span><h1>Python/C API Podręcznik<a class="headerlink" href="#python-c-api-reference-manual" title="Link to this heading">¶</a></h1>
+<p>Ten podręcznik dokumentuje API używany przez programistów C i C++, którzy chcą napisać rozszerzenie moduł lub osadzić Pythona.  Jest to dodatek do <a class="reference internal" href="../extending/index.html#extending-index"><span class="std std-ref">Rozszerzony i wbudowany interpreter Python</span></a>, który opisuje ogólne zasady pisania rozszerzeń, ale nie dokumentuje szczegółowo API .</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Wprowadzenie</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="intro.html#language-version-compatibility">Language version compatibility</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro.html#coding-standards">Coding standards</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro.html#include-files">Include Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro.html#coding-standards">Standardy kodowania</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro.html#include-files">Pliki Włączania - z ang. Include</a></li>
 <li class="toctree-l2"><a class="reference internal" href="intro.html#useful-macros">Useful macros</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro.html#objects-types-and-reference-counts">Objects, Types and Reference Counts</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro.html#exceptions">Exceptions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro.html#embedding-python">Embedding Python</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro.html#debugging-builds">Debugging Builds</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro.html#recommended-third-party-tools">Recommended third party tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro.html#objects-types-and-reference-counts">Przedmioty, ich Rodzaje i Liczby Odwołań</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro.html#exceptions">Wyjątki</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro.html#embedding-python">Załączanie programu interpretującego język pytonowski</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro.html#debugging-builds">Odpluskwiające Budowy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro.html#recommended-third-party-tools">Rekomendowane zewnętrzne narzędzia.</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="stable.html">C API Stability</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="stable.html">C API and ABI Stability</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="stable.html#unstable-c-api">Unstable C API</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stable.html#stable-application-binary-interface">Stable Application Binary Interface</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stable.html#platform-considerations">Platform Considerations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stable.html#abi-checking">ABI Checking</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stable.html#contents-of-limited-api">Contents of Limited API</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="veryhigh.html">The Very High Level Layer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="refcounting.html">Reference Counting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="exceptions.html">Exception Handling</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="exceptions.html">Obsługa sytuacji wyjątkowych</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="exceptions.html#printing-and-clearing">Printing and clearing</a></li>
 <li class="toctree-l2"><a class="reference internal" href="exceptions.html#raising-exceptions">Raising exceptions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="exceptions.html#issuing-warnings">Issuing warnings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="exceptions.html#querying-the-error-indicator">Querying the error indicator</a></li>
 <li class="toctree-l2"><a class="reference internal" href="exceptions.html#signal-handling">Signal Handling</a></li>
 <li class="toctree-l2"><a class="reference internal" href="exceptions.html#exception-classes">Exception Classes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="exceptions.html#exception-objects">Exception Objects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exceptions.html#exception-objects">Przedmioty Sytuacji Wyjątkowych</a></li>
 <li class="toctree-l2"><a class="reference internal" href="exceptions.html#unicode-exception-objects">Unicode Exception Objects</a></li>
-<li class="toctree-l2"><a class="reference internal" href="exceptions.html#recursion-control">Recursion Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exceptions.html#recursion-control">Kontrola Rekursji</a></li>
 <li class="toctree-l2"><a class="reference internal" href="exceptions.html#exception-and-warning-types">Exception and warning types</a></li>
 </ul>
 </li>
@@ -231,13 +229,13 @@ document the API functions in detail.</p>
 <li class="toctree-l2"><a class="reference internal" href="extension-modules.html#legacy-single-phase-initialization">Legacy single-phase initialization</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="utilities.html">Utilities</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="utilities.html">Utilitas</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="sys.html">Operating System Utilities</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sys.html#system-functions">System Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sys.html#process-control">Process Control</a></li>
 <li class="toctree-l2"><a class="reference internal" href="import.html">Importing Modules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="marshal.html">Data marshalling support</a></li>
-<li class="toctree-l2"><a class="reference internal" href="arg.html">Parsing arguments and building values</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arg.html">Pobieranie kolejnych rzeczy podanych na wejściu i konstruowanie wartości.</a></li>
 <li class="toctree-l2"><a class="reference internal" href="conversion.html">String conversion and formatting</a></li>
 <li class="toctree-l2"><a class="reference internal" href="hash.html">PyHash API</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reflection.html">Reflection</a></li>
@@ -246,7 +244,7 @@ document the API functions in detail.</p>
 <li class="toctree-l2"><a class="reference internal" href="perfmaps.html">Support for Perf Maps</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="abstract.html">Abstract Objects Layer</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="abstract.html">Warstwa obiektów abstrakcyjnych</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="object.html">Object Protocol</a></li>
 <li class="toctree-l2"><a class="reference internal" href="call.html">Call Protocol</a></li>
 <li class="toctree-l2"><a class="reference internal" href="number.html">Number Protocol</a></li>
@@ -261,7 +259,7 @@ document the API functions in detail.</p>
 <li class="toctree-l2"><a class="reference internal" href="concrete.html#numeric-objects">Numeric Objects</a></li>
 <li class="toctree-l2"><a class="reference internal" href="concrete.html#sequence-objects">Sequence Objects</a></li>
 <li class="toctree-l2"><a class="reference internal" href="concrete.html#container-objects">Container Objects</a></li>
-<li class="toctree-l2"><a class="reference internal" href="concrete.html#function-objects">Function Objects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="concrete.html#function-objects">Obiekty Funkcja</a></li>
 <li class="toctree-l2"><a class="reference internal" href="concrete.html#other-objects">Other Objects</a></li>
 </ul>
 </li>
@@ -289,11 +287,11 @@ document the API functions in detail.</p>
 <li class="toctree-l2"><a class="reference internal" href="init_config.html#delaying-main-module-execution">Delaying main module execution</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="memory.html">Memory Management</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="memory.html#overview">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="memory.html">Zarządzanie Pamięcią</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="memory.html#overview">Skorowidz</a></li>
 <li class="toctree-l2"><a class="reference internal" href="memory.html#allocator-domains">Allocator Domains</a></li>
 <li class="toctree-l2"><a class="reference internal" href="memory.html#raw-memory-interface">Raw Memory Interface</a></li>
-<li class="toctree-l2"><a class="reference internal" href="memory.html#memory-interface">Memory Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="memory.html#memory-interface">Sprzęg Pamięci</a></li>
 <li class="toctree-l2"><a class="reference internal" href="memory.html#object-allocators">Object allocators</a></li>
 <li class="toctree-l2"><a class="reference internal" href="memory.html#default-memory-allocators">Default Memory Allocators</a></li>
 <li class="toctree-l2"><a class="reference internal" href="memory.html#customize-memory-allocators">Customize Memory Allocators</a></li>
@@ -301,18 +299,18 @@ document the API functions in detail.</p>
 <li class="toctree-l2"><a class="reference internal" href="memory.html#the-pymalloc-allocator">The pymalloc allocator</a></li>
 <li class="toctree-l2"><a class="reference internal" href="memory.html#the-mimalloc-allocator">The mimalloc allocator</a></li>
 <li class="toctree-l2"><a class="reference internal" href="memory.html#tracemalloc-c-api">tracemalloc C API</a></li>
-<li class="toctree-l2"><a class="reference internal" href="memory.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="memory.html#examples">Przykłady</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="objimpl.html">Object Implementation Support</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="allocation.html">Allocating Objects on the Heap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="allocation.html">Przydzielanie obiektów na stercie</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lifecycle.html">Object Life Cycle</a></li>
-<li class="toctree-l2"><a class="reference internal" href="structures.html">Common Object Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structures.html">Wspólne struktury obiektów</a></li>
 <li class="toctree-l2"><a class="reference internal" href="typeobj.html">Type Object Structures</a></li>
 <li class="toctree-l2"><a class="reference internal" href="gcsupport.html">Supporting Cyclic Garbage Collection</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="apiabiversion.html">API and ABI Versioning</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="apiabiversion.html">API i wersjonowanie ABI</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="apiabiversion.html#build-time-version-constants">Build-time version constants</a></li>
 <li class="toctree-l2"><a class="reference internal" href="apiabiversion.html#run-time-version">Run-time version</a></li>
 <li class="toctree-l2"><a class="reference internal" href="apiabiversion.html#bit-packing-macros">Bit-packing macros</a></li>
@@ -335,14 +333,14 @@ document the API functions in detail.</p>
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="../extending/embedding.html"
-                          title="previous chapter"><span class="section-number">1. </span>Embedding Python in Another Application</a></p>
+                          title="poprzedni rozdział"><span class="section-number">1. </span>Embedding Python in Another Application</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="intro.html"
-                          title="next chapter">Introduction</a></p>
+                          title="następny rozdział">Wprowadzenie</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -356,7 +354,7 @@ document the API functions in detail.</p>
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -373,7 +371,7 @@ document the API functions in detail.</p>
           <a href="../py-modindex.html" title="Indeks modułów Pythona"
              >moduły</a> |</li>
         <li class="right" >
-          <a href="intro.html" title="Introduction"
+          <a href="intro.html" title="Wprowadzenie"
              >dalej</a> |</li>
         <li class="right" >
           <a href="../extending/embedding.html" title="1. Embedding Python in Another Application"
@@ -392,7 +390,7 @@ document the API functions in detail.</p>
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-        <li class="nav-item nav-item-this"><a href="">Python/C API Reference Manual</a></li>
+        <li class="nav-item nav-item-this"><a href="">Python/C API Podręcznik</a></li>
                 <li class="right">
                     
 
@@ -439,7 +437,7 @@ document the API functions in detail.</p>
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

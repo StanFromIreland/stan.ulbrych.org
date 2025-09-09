@@ -31,11 +31,11 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="MemoryView objects" href="memoryview.html" />
     <link rel="prev" title="Descriptor Objects" href="descriptor.html" />
@@ -98,7 +98,7 @@
     </select>
 </label>
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#">Slice Objects</a><ul>
 <li><a class="reference internal" href="#ellipsis-object">Ellipsis Object</a></li>
@@ -108,14 +108,14 @@
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="descriptor.html"
-                          title="previous chapter">Descriptor Objects</a></p>
+                          title="poprzedni rozdział">Descriptor Objects</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="memoryview.html"
-                          title="next chapter">MemoryView objects</a></p>
+                          title="następny rozdział">MemoryView objects</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -162,7 +162,7 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Reference Manual</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Podręcznik</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="concrete.html" accesskey="U">Concrete Objects Layer</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Slice Objects</a></li>
                 <li class="right">
@@ -199,7 +199,7 @@
 <dl class="c var">
 <dt class="sig sig-object c" id="c.PySlice_Type">
 <a class="reference internal" href="type.html#c.PyTypeObject" title="PyTypeObject"><span class="n"><span class="pre">PyTypeObject</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PySlice_Type</span></span></span><a class="headerlink" href="#c.PySlice_Type" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>The type object for slice objects.  This is the same as <a class="reference internal" href="../library/functions.html#slice" title="slice"><code class="xref py py-class docutils literal notranslate"><span class="pre">slice</span></code></a> in the
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>The type object for slice objects.  This is the same as <a class="reference internal" href="../library/functions.html#slice" title="slice"><code class="xref py py-class docutils literal notranslate"><span class="pre">slice</span></code></a> in the
 Python layer.</p>
 </dd></dl>
 
@@ -213,7 +213,7 @@ function always succeeds.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PySlice_New">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PySlice_New</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">start</span></span>, <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">stop</span></span>, <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">step</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PySlice_New" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Return a new slice object with the given values.  The <em>start</em>, <em>stop</em>, and
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Return a new slice object with the given values.  The <em>start</em>, <em>stop</em>, and
 <em>step</em> parameters are used as the values of the slice object attributes of
 the same names.  Any of the values may be <code class="docutils literal notranslate"><span class="pre">NULL</span></code>, in which case the
 <code class="docutils literal notranslate"><span class="pre">None</span></code> will be used for the corresponding attribute.</p>
@@ -224,7 +224,7 @@ the new object could not be allocated.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PySlice_GetIndices">
 <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PySlice_GetIndices</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">slice</span></span>, <a class="reference internal" href="intro.html#c.Py_ssize_t" title="Py_ssize_t"><span class="n"><span class="pre">Py_ssize_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">length</span></span>, <a class="reference internal" href="intro.html#c.Py_ssize_t" title="Py_ssize_t"><span class="n"><span class="pre">Py_ssize_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">start</span></span>, <a class="reference internal" href="intro.html#c.Py_ssize_t" title="Py_ssize_t"><span class="n"><span class="pre">Py_ssize_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">stop</span></span>, <a class="reference internal" href="intro.html#c.Py_ssize_t" title="Py_ssize_t"><span class="n"><span class="pre">Py_ssize_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">step</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PySlice_GetIndices" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Retrieve the start, stop and step indices from the slice object <em>slice</em>,
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Retrieve the start, stop and step indices from the slice object <em>slice</em>,
 assuming a sequence of length <em>length</em>. Treats indices greater than
 <em>length</em> as errors.</p>
 <p>Returns <code class="docutils literal notranslate"><span class="pre">0</span></code> on success and <code class="docutils literal notranslate"><span class="pre">-1</span></code> on error with no exception set (unless one of
@@ -240,7 +240,7 @@ before.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PySlice_GetIndicesEx">
 <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PySlice_GetIndicesEx</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">slice</span></span>, <a class="reference internal" href="intro.html#c.Py_ssize_t" title="Py_ssize_t"><span class="n"><span class="pre">Py_ssize_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">length</span></span>, <a class="reference internal" href="intro.html#c.Py_ssize_t" title="Py_ssize_t"><span class="n"><span class="pre">Py_ssize_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">start</span></span>, <a class="reference internal" href="intro.html#c.Py_ssize_t" title="Py_ssize_t"><span class="n"><span class="pre">Py_ssize_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">stop</span></span>, <a class="reference internal" href="intro.html#c.Py_ssize_t" title="Py_ssize_t"><span class="n"><span class="pre">Py_ssize_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">step</span></span>, <a class="reference internal" href="intro.html#c.Py_ssize_t" title="Py_ssize_t"><span class="n"><span class="pre">Py_ssize_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">slicelength</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PySlice_GetIndicesEx" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Usable replacement for <a class="reference internal" href="#c.PySlice_GetIndices" title="PySlice_GetIndices"><code class="xref c c-func docutils literal notranslate"><span class="pre">PySlice_GetIndices()</span></code></a>.  Retrieve the start,
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Usable replacement for <a class="reference internal" href="#c.PySlice_GetIndices" title="PySlice_GetIndices"><code class="xref c c-func docutils literal notranslate"><span class="pre">PySlice_GetIndices()</span></code></a>.  Retrieve the start,
 stop, and step indices from the slice object <em>slice</em> assuming a sequence of
 length <em>length</em>, and store the length of the slice in <em>slicelength</em>.  Out
 of bounds indices are clipped in a manner consistent with the handling of
@@ -285,7 +285,7 @@ between <code class="docutils literal notranslate"><span class="pre">0x03060000<
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PySlice_Unpack">
 <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PySlice_Unpack</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">slice</span></span>, <a class="reference internal" href="intro.html#c.Py_ssize_t" title="Py_ssize_t"><span class="n"><span class="pre">Py_ssize_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">start</span></span>, <a class="reference internal" href="intro.html#c.Py_ssize_t" title="Py_ssize_t"><span class="n"><span class="pre">Py_ssize_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">stop</span></span>, <a class="reference internal" href="intro.html#c.Py_ssize_t" title="Py_ssize_t"><span class="n"><span class="pre">Py_ssize_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">step</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PySlice_Unpack" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.7.</em><p>Extract the start, stop and step data members from a slice object as
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.7.</em><p>Extract the start, stop and step data members from a slice object as
 C integers.  Silently reduce values larger than <code class="docutils literal notranslate"><span class="pre">PY_SSIZE_T_MAX</span></code> to
 <code class="docutils literal notranslate"><span class="pre">PY_SSIZE_T_MAX</span></code>, silently boost the start and stop values less than
 <code class="docutils literal notranslate"><span class="pre">PY_SSIZE_T_MIN</span></code> to <code class="docutils literal notranslate"><span class="pre">PY_SSIZE_T_MIN</span></code>, and silently boost the step
@@ -299,7 +299,7 @@ values less than <code class="docutils literal notranslate"><span class="pre">-P
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PySlice_AdjustIndices">
 <a class="reference internal" href="intro.html#c.Py_ssize_t" title="Py_ssize_t"><span class="n"><span class="pre">Py_ssize_t</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PySlice_AdjustIndices</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="intro.html#c.Py_ssize_t" title="Py_ssize_t"><span class="n"><span class="pre">Py_ssize_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">length</span></span>, <a class="reference internal" href="intro.html#c.Py_ssize_t" title="Py_ssize_t"><span class="n"><span class="pre">Py_ssize_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">start</span></span>, <a class="reference internal" href="intro.html#c.Py_ssize_t" title="Py_ssize_t"><span class="n"><span class="pre">Py_ssize_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">stop</span></span>, <a class="reference internal" href="intro.html#c.Py_ssize_t" title="Py_ssize_t"><span class="n"><span class="pre">Py_ssize_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">step</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PySlice_AdjustIndices" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.7.</em><p>Adjust start/end slice indices assuming a sequence of the specified length.
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.7.</em><p>Adjust start/end slice indices assuming a sequence of the specified length.
 Out of bounds indices are clipped in a manner consistent with the handling
 of normal slices.</p>
 <p>Return the length of the slice.  Always successful.  Doesn’t call Python
@@ -314,7 +314,7 @@ code.</p>
 <dl class="c var">
 <dt class="sig sig-object c" id="c.PyEllipsis_Type">
 <a class="reference internal" href="type.html#c.PyTypeObject" title="PyTypeObject"><span class="n"><span class="pre">PyTypeObject</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyEllipsis_Type</span></span></span><a class="headerlink" href="#c.PyEllipsis_Type" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>The type of Python <a class="reference internal" href="../library/constants.html#Ellipsis" title="Ellipsis"><code class="xref py py-const docutils literal notranslate"><span class="pre">Ellipsis</span></code></a> object.  Same as <a class="reference internal" href="../library/types.html#types.EllipsisType" title="types.EllipsisType"><code class="xref py py-class docutils literal notranslate"><span class="pre">types.EllipsisType</span></code></a>
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>The type of Python <a class="reference internal" href="../library/constants.html#Ellipsis" title="Ellipsis"><code class="xref py py-const docutils literal notranslate"><span class="pre">Ellipsis</span></code></a> object.  Same as <a class="reference internal" href="../library/types.html#types.EllipsisType" title="types.EllipsisType"><code class="xref py py-class docutils literal notranslate"><span class="pre">types.EllipsisType</span></code></a>
 in the Python layer.</p>
 </dd></dl>
 
@@ -339,7 +339,7 @@ in the Python layer.</p>
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#">Slice Objects</a><ul>
 <li><a class="reference internal" href="#ellipsis-object">Ellipsis Object</a></li>
@@ -349,14 +349,14 @@ in the Python layer.</p>
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="descriptor.html"
-                          title="previous chapter">Descriptor Objects</a></p>
+                          title="poprzedni rozdział">Descriptor Objects</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="memoryview.html"
-                          title="next chapter">MemoryView objects</a></p>
+                          title="następny rozdział">MemoryView objects</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -370,7 +370,7 @@ in the Python layer.</p>
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -406,7 +406,7 @@ in the Python layer.</p>
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Reference Manual</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Podręcznik</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="concrete.html" >Concrete Objects Layer</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Slice Objects</a></li>
                 <li class="right">
@@ -455,7 +455,7 @@ in the Python layer.</p>
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

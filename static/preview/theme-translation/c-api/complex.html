@@ -4,19 +4,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="Complex Number Objects" />
+<meta property="og:title" content="Obiekt Liczby Zespolonej" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://docs.python.org/3/c-api/complex.html" />
 <meta property="og:site_name" content="Python documentation" />
-<meta property="og:description" content="Complex Numbers as C Structures: The API also provides functions for working with complex numbers, using the Py_complex representation. Note that the functions which accept these structures as para..." />
+<meta property="og:description" content="Liczby zespolone jako struktury w C: The API also provides functions for working with complex numbers, using the Py_complex representation. Note that the functions which accept these structures as ..." />
 <meta property="og:image" content="_static/og-image.png" />
 <meta property="og:image:alt" content="Python documentation" />
-<meta name="description" content="Complex Numbers as C Structures: The API also provides functions for working with complex numbers, using the Py_complex representation. Note that the functions which accept these structures as para..." />
+<meta name="description" content="Liczby zespolone jako struktury w C: The API also provides functions for working with complex numbers, using the Py_complex representation. Note that the functions which accept these structures as ..." />
 <meta name="theme-color" content="#3776ab">
 <meta property="og:image:width" content="200">
 <meta property="og:image:height" content="200">
 
-    <title>Complex Number Objects &#8212; Python 3.15.0a0 - dokumentacja</title><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obiekt Liczby Zespolonej &#8212; Python 3.15.0a0 - dokumentacja</title><meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=234b1a7c" />
@@ -31,11 +31,11 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="Bytes Objects" href="bytes.html" />
     <link rel="prev" title="Floating-Point Objects" href="float.html" />
@@ -98,24 +98,24 @@
     </select>
 </label>
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
-<li><a class="reference internal" href="#">Complex Number Objects</a><ul>
-<li><a class="reference internal" href="#complex-numbers-as-c-structures">Complex Numbers as C Structures</a></li>
+<li><a class="reference internal" href="#">Obiekt Liczby Zespolonej</a><ul>
+<li><a class="reference internal" href="#complex-numbers-as-c-structures">Liczby zespolone jako struktury w C</a></li>
 </ul>
 </li>
 </ul>
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="float.html"
-                          title="previous chapter">Floating-Point Objects</a></p>
+                          title="poprzedni rozdział">Floating-Point Objects</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="bytes.html"
-                          title="next chapter">Bytes Objects</a></p>
+                          title="następny rozdział">Bytes Objects</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -162,9 +162,9 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Reference Manual</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Podręcznik</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="concrete.html" accesskey="U">Concrete Objects Layer</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">Complex Number Objects</a></li>
+        <li class="nav-item nav-item-this"><a href="">Obiekt Liczby Zespolonej</a></li>
                 <li class="right">
                     
 
@@ -195,7 +195,7 @@
           <div class="body" role="main">
             
   <section id="complex-number-objects">
-<span id="complexobjects"></span><h1>Complex Number Objects<a class="headerlink" href="#complex-number-objects" title="Link to this heading">¶</a></h1>
+<span id="complexobjects"></span><h1>Obiekt Liczby Zespolonej<a class="headerlink" href="#complex-number-objects" title="Link to this heading">¶</a></h1>
 <dl class="c type" id="index-0">
 <dt class="sig sig-object c" id="c.PyComplexObject">
 <span class="k"><span class="pre">type</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyComplexObject</span></span></span><a class="headerlink" href="#c.PyComplexObject" title="Link to this definition">¶</a><br /></dt>
@@ -217,7 +217,7 @@ representation.</p>
 <dl class="c var">
 <dt class="sig sig-object c" id="c.PyComplex_Type">
 <a class="reference internal" href="type.html#c.PyTypeObject" title="PyTypeObject"><span class="n"><span class="pre">PyTypeObject</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyComplex_Type</span></span></span><a class="headerlink" href="#c.PyComplex_Type" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>This instance of <a class="reference internal" href="type.html#c.PyTypeObject" title="PyTypeObject"><code class="xref c c-type docutils literal notranslate"><span class="pre">PyTypeObject</span></code></a> represents the Python complex number
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>This instance of <a class="reference internal" href="type.html#c.PyTypeObject" title="PyTypeObject"><code class="xref c c-type docutils literal notranslate"><span class="pre">PyTypeObject</span></code></a> represents the Python complex number
 type. It is the same object as <a class="reference internal" href="../library/functions.html#complex" title="complex"><code class="xref py py-class docutils literal notranslate"><span class="pre">complex</span></code></a> in the Python layer.</p>
 </dd></dl>
 
@@ -238,14 +238,14 @@ type. It is the same object as <a class="reference internal" href="../library/fu
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyComplex_FromDoubles">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyComplex_FromDoubles</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n"><span class="pre">real</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n"><span class="pre">imag</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyComplex_FromDoubles" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Return a new <a class="reference internal" href="#c.PyComplexObject" title="PyComplexObject"><code class="xref c c-type docutils literal notranslate"><span class="pre">PyComplexObject</span></code></a> object from <em>real</em> and <em>imag</em>.
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Return a new <a class="reference internal" href="#c.PyComplexObject" title="PyComplexObject"><code class="xref c c-type docutils literal notranslate"><span class="pre">PyComplexObject</span></code></a> object from <em>real</em> and <em>imag</em>.
 Return <code class="docutils literal notranslate"><span class="pre">NULL</span></code> with an exception set on error.</p>
 </dd></dl>
 
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyComplex_RealAsDouble">
 <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyComplex_RealAsDouble</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">op</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyComplex_RealAsDouble" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Return the real part of <em>op</em> as a C <span class="c-expr sig sig-inline c"><span class="kt">double</span></span>.</p>
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Return the real part of <em>op</em> as a C <span class="c-expr sig sig-inline c"><span class="kt">double</span></span>.</p>
 <p>If <em>op</em> is not a Python complex number object but has a
 <a class="reference internal" href="../reference/datamodel.html#object.__complex__" title="object.__complex__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">__complex__()</span></code></a> method, this method will first be called to
 convert <em>op</em> to a Python complex number object.  If <code class="xref py py-meth docutils literal notranslate"><span class="pre">__complex__()</span></code> is
@@ -261,7 +261,7 @@ should call <a class="reference internal" href="exceptions.html#c.PyErr_Occurred
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyComplex_ImagAsDouble">
 <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyComplex_ImagAsDouble</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">op</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyComplex_ImagAsDouble" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Return the imaginary part of <em>op</em> as a C <span class="c-expr sig sig-inline c"><span class="kt">double</span></span>.</p>
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Return the imaginary part of <em>op</em> as a C <span class="c-expr sig sig-inline c"><span class="kt">double</span></span>.</p>
 <p>If <em>op</em> is not a Python complex number object but has a
 <a class="reference internal" href="../reference/datamodel.html#object.__complex__" title="object.__complex__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">__complex__()</span></code></a> method, this method will first be called to
 convert <em>op</em> to a Python complex number object.  If <code class="xref py py-meth docutils literal notranslate"><span class="pre">__complex__()</span></code> is
@@ -298,7 +298,7 @@ number object.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyComplex_FromCComplex">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyComplex_FromCComplex</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.Py_complex" title="Py_complex"><span class="n"><span class="pre">Py_complex</span></span></a><span class="w"> </span><span class="n"><span class="pre">v</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyComplex_FromCComplex" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><p>Create a new Python complex number object from a C <a class="reference internal" href="#c.Py_complex" title="Py_complex"><code class="xref c c-type docutils literal notranslate"><span class="pre">Py_complex</span></code></a> value.
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><p>Create a new Python complex number object from a C <a class="reference internal" href="#c.Py_complex" title="Py_complex"><code class="xref c c-type docutils literal notranslate"><span class="pre">Py_complex</span></code></a> value.
 Return <code class="docutils literal notranslate"><span class="pre">NULL</span></code> with an exception set on error.</p>
 </dd></dl>
 
@@ -320,7 +320,7 @@ should call <a class="reference internal" href="exceptions.html#c.PyErr_Occurred
 </dd></dl>
 
 <section id="complex-numbers-as-c-structures">
-<h2>Complex Numbers as C Structures<a class="headerlink" href="#complex-numbers-as-c-structures" title="Link to this heading">¶</a></h2>
+<h2>Liczby zespolone jako struktury w C<a class="headerlink" href="#complex-numbers-as-c-structures" title="Link to this heading">¶</a></h2>
 <p>The API also provides functions for working with complex numbers, using the
 <a class="reference internal" href="#c.Py_complex" title="Py_complex"><code class="xref c c-type docutils literal notranslate"><span class="pre">Py_complex</span></code></a> representation.  Note that the functions which accept
 these structures as parameters and return them as results do so <em>by value</em>
@@ -332,8 +332,7 @@ the <a class="reference external" href="number">Number Protocol</a> API or use n
 <dl class="c function">
 <dt class="sig sig-object c" id="c._Py_c_sum">
 <a class="reference internal" href="#c.Py_complex" title="Py_complex"><span class="n"><span class="pre">Py_complex</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">_Py_c_sum</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.Py_complex" title="Py_complex"><span class="n"><span class="pre">Py_complex</span></span></a><span class="w"> </span><span class="n"><span class="pre">left</span></span>, <a class="reference internal" href="#c.Py_complex" title="Py_complex"><span class="n"><span class="pre">Py_complex</span></span></a><span class="w"> </span><span class="n"><span class="pre">right</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c._Py_c_sum" title="Link to this definition">¶</a><br /></dt>
-<dd><p>Return the sum of two complex numbers, using the C <a class="reference internal" href="#c.Py_complex" title="Py_complex"><code class="xref c c-type docutils literal notranslate"><span class="pre">Py_complex</span></code></a>
-representation.</p>
+<dd><p>Zwraca sumę dwóch liczb zespolonych wykorzystując strukturę <a class="reference internal" href="#c.Py_complex" title="Py_complex"><code class="xref c c-type docutils literal notranslate"><span class="pre">Py_complex</span></code></a> jako reprezentację.</p>
 <div class="deprecated">
 <p><span class="versionmodified deprecated">Niezalecane od wersji 3.15.</span></p>
 </div>
@@ -342,8 +341,7 @@ representation.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c._Py_c_diff">
 <a class="reference internal" href="#c.Py_complex" title="Py_complex"><span class="n"><span class="pre">Py_complex</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">_Py_c_diff</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.Py_complex" title="Py_complex"><span class="n"><span class="pre">Py_complex</span></span></a><span class="w"> </span><span class="n"><span class="pre">left</span></span>, <a class="reference internal" href="#c.Py_complex" title="Py_complex"><span class="n"><span class="pre">Py_complex</span></span></a><span class="w"> </span><span class="n"><span class="pre">right</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c._Py_c_diff" title="Link to this definition">¶</a><br /></dt>
-<dd><p>Return the difference between two complex numbers, using the C
-<a class="reference internal" href="#c.Py_complex" title="Py_complex"><code class="xref c c-type docutils literal notranslate"><span class="pre">Py_complex</span></code></a> representation.</p>
+<dd><p>Zwraca różnicę dwóch liczb zespolonych wykorzystując strukturę <a class="reference internal" href="#c.Py_complex" title="Py_complex"><code class="xref c c-type docutils literal notranslate"><span class="pre">Py_complex</span></code></a> jako reprezentację.</p>
 <div class="deprecated">
 <p><span class="versionmodified deprecated">Niezalecane od wersji 3.15.</span></p>
 </div>
@@ -362,8 +360,7 @@ representation.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c._Py_c_prod">
 <a class="reference internal" href="#c.Py_complex" title="Py_complex"><span class="n"><span class="pre">Py_complex</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">_Py_c_prod</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.Py_complex" title="Py_complex"><span class="n"><span class="pre">Py_complex</span></span></a><span class="w"> </span><span class="n"><span class="pre">left</span></span>, <a class="reference internal" href="#c.Py_complex" title="Py_complex"><span class="n"><span class="pre">Py_complex</span></span></a><span class="w"> </span><span class="n"><span class="pre">right</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c._Py_c_prod" title="Link to this definition">¶</a><br /></dt>
-<dd><p>Return the product of two complex numbers, using the C <a class="reference internal" href="#c.Py_complex" title="Py_complex"><code class="xref c c-type docutils literal notranslate"><span class="pre">Py_complex</span></code></a>
-representation.</p>
+<dd><p>Zwraca iloczyn dwóch liczb zespolonych wykorzystując strukturę <a class="reference internal" href="#c.Py_complex" title="Py_complex"><code class="xref c c-type docutils literal notranslate"><span class="pre">Py_complex</span></code></a> jako reprezentację.</p>
 <div class="deprecated">
 <p><span class="versionmodified deprecated">Niezalecane od wersji 3.15.</span></p>
 </div>
@@ -372,8 +369,7 @@ representation.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c._Py_c_quot">
 <a class="reference internal" href="#c.Py_complex" title="Py_complex"><span class="n"><span class="pre">Py_complex</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">_Py_c_quot</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.Py_complex" title="Py_complex"><span class="n"><span class="pre">Py_complex</span></span></a><span class="w"> </span><span class="n"><span class="pre">dividend</span></span>, <a class="reference internal" href="#c.Py_complex" title="Py_complex"><span class="n"><span class="pre">Py_complex</span></span></a><span class="w"> </span><span class="n"><span class="pre">divisor</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c._Py_c_quot" title="Link to this definition">¶</a><br /></dt>
-<dd><p>Return the quotient of two complex numbers, using the C <a class="reference internal" href="#c.Py_complex" title="Py_complex"><code class="xref c c-type docutils literal notranslate"><span class="pre">Py_complex</span></code></a>
-representation.</p>
+<dd><p>Zwraca iloraz dwóch liczb zespolonych wykorzystując strukturę <a class="reference internal" href="#c.Py_complex" title="Py_complex"><code class="xref c c-type docutils literal notranslate"><span class="pre">Py_complex</span></code></a> jako reprezentację.</p>
 <p>If <em>divisor</em> is null, this method returns zero and sets
 <code class="xref c c-data docutils literal notranslate"><span class="pre">errno</span></code> to <code class="xref c c-macro docutils literal notranslate"><span class="pre">EDOM</span></code>.</p>
 <div class="deprecated">
@@ -415,24 +411,24 @@ this method returns zero and sets <code class="xref c c-data docutils literal no
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
-<li><a class="reference internal" href="#">Complex Number Objects</a><ul>
-<li><a class="reference internal" href="#complex-numbers-as-c-structures">Complex Numbers as C Structures</a></li>
+<li><a class="reference internal" href="#">Obiekt Liczby Zespolonej</a><ul>
+<li><a class="reference internal" href="#complex-numbers-as-c-structures">Liczby zespolone jako struktury w C</a></li>
 </ul>
 </li>
 </ul>
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="float.html"
-                          title="previous chapter">Floating-Point Objects</a></p>
+                          title="poprzedni rozdział">Floating-Point Objects</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="bytes.html"
-                          title="next chapter">Bytes Objects</a></p>
+                          title="następny rozdział">Bytes Objects</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -446,7 +442,7 @@ this method returns zero and sets <code class="xref c c-data docutils literal no
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -482,9 +478,9 @@ this method returns zero and sets <code class="xref c c-data docutils literal no
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Reference Manual</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Podręcznik</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="concrete.html" >Concrete Objects Layer</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">Complex Number Objects</a></li>
+        <li class="nav-item nav-item-this"><a href="">Obiekt Liczby Zespolonej</a></li>
                 <li class="right">
                     
 
@@ -531,7 +527,7 @@ this method returns zero and sets <code class="xref c c-data docutils literal no
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

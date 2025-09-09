@@ -31,13 +31,13 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
-    <link rel="next" title="Exception Handling" href="exceptions.html" />
+    <link rel="next" title="Obsługa sytuacji wyjątkowych" href="exceptions.html" />
     <link rel="prev" title="The Very High Level Layer" href="veryhigh.html" />
     
       
@@ -98,14 +98,14 @@
     </select>
 </label>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="veryhigh.html"
-                          title="previous chapter">The Very High Level Layer</a></p>
+                          title="poprzedni rozdział">The Very High Level Layer</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="exceptions.html"
-                          title="next chapter">Exception Handling</a></p>
+                          title="następny rozdział">Obsługa sytuacji wyjątkowych</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -133,7 +133,7 @@
           <a href="../py-modindex.html" title="Indeks modułów Pythona"
              >moduły</a> |</li>
         <li class="right" >
-          <a href="exceptions.html" title="Exception Handling"
+          <a href="exceptions.html" title="Obsługa sytuacji wyjątkowych"
              accesskey="N">dalej</a> |</li>
         <li class="right" >
           <a href="veryhigh.html" title="The Very High Level Layer"
@@ -152,7 +152,7 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Python/C API Reference Manual</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Python/C API Podręcznik</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Reference Counting</a></li>
                 <li class="right">
                     
@@ -190,7 +190,7 @@ of Python objects.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.Py_REFCNT">
 <a class="reference internal" href="intro.html#c.Py_ssize_t" title="Py_ssize_t"><span class="n"><span class="pre">Py_ssize_t</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Py_REFCNT</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">o</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.Py_REFCNT" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.14.</em><p>Get the reference count of the Python object <em>o</em>.</p>
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.14.</em><p>Get the reference count of the Python object <em>o</em>.</p>
 <p>Note that the returned value may not actually reflect how many
 references to the object are actually held.  For example, some
 objects are <a class="reference internal" href="../glossary.html#term-immortal"><span class="xref std std-term">immortal</span></a> and have a very high refcount that does not
@@ -259,13 +259,13 @@ in which case this has no effect.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.Py_NewRef">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">Py_NewRef</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">o</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.Py_NewRef" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.10.</em><p>Create a new <a class="reference internal" href="../glossary.html#term-strong-reference"><span class="xref std std-term">strong reference</span></a> to an object:
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.10.</em><p>Create a new <a class="reference internal" href="../glossary.html#term-strong-reference"><span class="xref std std-term">strong reference</span></a> to an object:
 call <a class="reference internal" href="#c.Py_INCREF" title="Py_INCREF"><code class="xref c c-func docutils literal notranslate"><span class="pre">Py_INCREF()</span></code></a> on <em>o</em> and return the object <em>o</em>.</p>
 <p>When the <a class="reference internal" href="../glossary.html#term-strong-reference"><span class="xref std std-term">strong reference</span></a> is no longer needed, <a class="reference internal" href="#c.Py_DECREF" title="Py_DECREF"><code class="xref c c-func docutils literal notranslate"><span class="pre">Py_DECREF()</span></code></a>
 should be called on it to release the reference.</p>
 <p>The object <em>o</em> must not be <code class="docutils literal notranslate"><span class="pre">NULL</span></code>; use <a class="reference internal" href="#c.Py_XNewRef" title="Py_XNewRef"><code class="xref c c-func docutils literal notranslate"><span class="pre">Py_XNewRef()</span></code></a> if <em>o</em> can be
 <code class="docutils literal notranslate"><span class="pre">NULL</span></code>.</p>
-<p>For example:</p>
+<p>Dla przykładu:</p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">Py_INCREF</span><span class="p">(</span><span class="n">obj</span><span class="p">);</span>
 <span class="n">self</span><span class="o">-&gt;</span><span class="n">attr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">obj</span><span class="p">;</span>
 </pre></div>
@@ -283,7 +283,7 @@ should be called on it to release the reference.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.Py_XNewRef">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">Py_XNewRef</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">o</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.Py_XNewRef" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.10.</em><p>Similar to <a class="reference internal" href="#c.Py_NewRef" title="Py_NewRef"><code class="xref c c-func docutils literal notranslate"><span class="pre">Py_NewRef()</span></code></a>, but the object <em>o</em> can be NULL.</p>
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.10.</em><p>Similar to <a class="reference internal" href="#c.Py_NewRef" title="Py_NewRef"><code class="xref c c-func docutils literal notranslate"><span class="pre">Py_NewRef()</span></code></a>, but the object <em>o</em> can be NULL.</p>
 <p>If the object <em>o</em> is <code class="docutils literal notranslate"><span class="pre">NULL</span></code>, the function just returns <code class="docutils literal notranslate"><span class="pre">NULL</span></code>.</p>
 <div class="versionadded">
 <p><span class="versionmodified added"> Dodane w wersji 3.10.</span></p>
@@ -352,7 +352,7 @@ effects, these are no longer duplicated.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.Py_IncRef">
 <span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Py_IncRef</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">o</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.Py_IncRef" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Indicate taking a new <a class="reference internal" href="../glossary.html#term-strong-reference"><span class="xref std std-term">strong reference</span></a> to object <em>o</em>.
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Indicate taking a new <a class="reference internal" href="../glossary.html#term-strong-reference"><span class="xref std std-term">strong reference</span></a> to object <em>o</em>.
 A function version of <a class="reference internal" href="#c.Py_XINCREF" title="Py_XINCREF"><code class="xref c c-func docutils literal notranslate"><span class="pre">Py_XINCREF()</span></code></a>.
 It can be used for runtime dynamic embedding of Python.</p>
 </dd></dl>
@@ -360,7 +360,7 @@ It can be used for runtime dynamic embedding of Python.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.Py_DecRef">
 <span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Py_DecRef</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">o</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.Py_DecRef" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Release a <a class="reference internal" href="../glossary.html#term-strong-reference"><span class="xref std std-term">strong reference</span></a> to object <em>o</em>.
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Release a <a class="reference internal" href="../glossary.html#term-strong-reference"><span class="xref std std-term">strong reference</span></a> to object <em>o</em>.
 A function version of <a class="reference internal" href="#c.Py_XDECREF" title="Py_XDECREF"><code class="xref c c-func docutils literal notranslate"><span class="pre">Py_XDECREF()</span></code></a>.
 It can be used for runtime dynamic embedding of Python.</p>
 </dd></dl>
@@ -416,14 +416,14 @@ effects, these are no longer duplicated.</p>
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="veryhigh.html"
-                          title="previous chapter">The Very High Level Layer</a></p>
+                          title="poprzedni rozdział">The Very High Level Layer</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="exceptions.html"
-                          title="next chapter">Exception Handling</a></p>
+                          title="następny rozdział">Obsługa sytuacji wyjątkowych</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -437,7 +437,7 @@ effects, these are no longer duplicated.</p>
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -454,7 +454,7 @@ effects, these are no longer duplicated.</p>
           <a href="../py-modindex.html" title="Indeks modułów Pythona"
              >moduły</a> |</li>
         <li class="right" >
-          <a href="exceptions.html" title="Exception Handling"
+          <a href="exceptions.html" title="Obsługa sytuacji wyjątkowych"
              >dalej</a> |</li>
         <li class="right" >
           <a href="veryhigh.html" title="The Very High Level Layer"
@@ -473,7 +473,7 @@ effects, these are no longer duplicated.</p>
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Reference Manual</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Podręcznik</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Reference Counting</a></li>
                 <li class="right">
                     
@@ -521,7 +521,7 @@ effects, these are no longer duplicated.</p>
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

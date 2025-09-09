@@ -31,11 +31,11 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="8. Compound statements" href="compound_stmts.html" />
     <link rel="prev" title="6. Expressions" href="expressions.html" />
@@ -98,7 +98,7 @@
     </select>
 </label>
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#">7. Simple statements</a><ul>
 <li><a class="reference internal" href="#expression-statements">7.1. Expression statements</a></li>
@@ -109,7 +109,7 @@
 </li>
 <li><a class="reference internal" href="#the-assert-statement">7.3. The <code class="xref std std-keyword docutils literal notranslate"><span class="pre">assert</span></code> statement</a></li>
 <li><a class="reference internal" href="#the-pass-statement">7.4. The <code class="xref std std-keyword docutils literal notranslate"><span class="pre">pass</span></code> statement</a></li>
-<li><a class="reference internal" href="#the-del-statement">7.5. The <code class="xref std std-keyword docutils literal notranslate"><span class="pre">del</span></code> statement</a></li>
+<li><a class="reference internal" href="#the-del-statement">7.5. Instrukcja <code class="xref std std-keyword docutils literal notranslate"><span class="pre">del</span></code></a></li>
 <li><a class="reference internal" href="#the-return-statement">7.6. The <code class="xref std std-keyword docutils literal notranslate"><span class="pre">return</span></code> statement</a></li>
 <li><a class="reference internal" href="#the-yield-statement">7.7. The <code class="xref std std-keyword docutils literal notranslate"><span class="pre">yield</span></code> statement</a></li>
 <li><a class="reference internal" href="#the-raise-statement">7.8. The <code class="xref std std-keyword docutils literal notranslate"><span class="pre">raise</span></code> statement</a></li>
@@ -128,14 +128,14 @@
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="expressions.html"
-                          title="previous chapter"><span class="section-number">6. </span>Expressions</a></p>
+                          title="poprzedni rozdział"><span class="section-number">6. </span>Expressions</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="compound_stmts.html"
-                          title="next chapter"><span class="section-number">8. </span>Compound statements</a></p>
+                          title="następny rozdział"><span class="section-number">8. </span>Compound statements</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -182,7 +182,7 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">The Python Language Reference</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Dokumentacja języka Python</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><span class="section-number">7. </span>Simple statements</a></li>
                 <li class="right">
                     
@@ -369,7 +369,7 @@ from the length of the assigned sequence, thus changing the length of the
 target sequence, if the target sequence allows it.</p></li>
 </ul>
 <div class="impl-detail compound">
-<p><strong>CPython implementation detail:</strong> In the current implementation, the syntax for targets is taken to be the same
+<p><strong>Szczegół implementacyjny CPythona:</strong> In the current implementation, the syntax for targets is taken to be the same
 as for expressions, and invalid syntax is rejected during the code generation
 phase, causing less detailed error messages.</p>
 </div>
@@ -517,7 +517,7 @@ code needs to be executed, for example:</p>
 </div>
 </section>
 <section id="the-del-statement">
-<span id="del"></span><h2><span class="section-number">7.5. </span>The <code class="xref std std-keyword docutils literal notranslate"><span class="pre">del</span></code> statement<a class="headerlink" href="#the-del-statement" title="Link to this heading">¶</a></h2>
+<span id="del"></span><h2><span class="section-number">7.5. </span>Instrukcja <code class="xref std std-keyword docutils literal notranslate"><span class="pre">del</span></code><a class="headerlink" href="#the-del-statement" title="Link to this heading">¶</a></h2>
 <pre class="highlight" id="index-21">
 <strong id="grammar-token-python-grammar-del_stmt">del_stmt</strong>: <span class="sx">&quot;del&quot;</span> <a class="reference internal" href="#grammar-token-python-grammar-target_list"><code class="xref docutils literal notranslate"><span class="pre">target_list</span></code></a>
 </pre>
@@ -670,7 +670,7 @@ the <code class="docutils literal notranslate"><span class="pre">from</span></co
 <span class="gr">RuntimeError</span>: <span class="n">Something bad happened</span>
 </pre></div>
 </div>
-<p>Additional information on exceptions can be found in section <a class="reference internal" href="executionmodel.html#exceptions"><span class="std std-ref">Exceptions</span></a>,
+<p>Additional information on exceptions can be found in section <a class="reference internal" href="executionmodel.html#exceptions"><span class="std std-ref">Wyjątki</span></a>,
 and information about handling exceptions is in section <a class="reference internal" href="compound_stmts.html#try"><span class="std std-ref">The try statement</span></a>.</p>
 <div class="versionchanged">
 <p><span class="versionmodified changed">Zmienione w wersji 3.3: </span><a class="reference internal" href="../library/constants.html#None" title="None"><code class="xref py py-const docutils literal notranslate"><span class="pre">None</span></code></a> is now permitted as <code class="docutils literal notranslate"><span class="pre">Y</span></code> in <code class="docutils literal notranslate"><span class="pre">raise</span> <span class="pre">X</span> <span class="pre">from</span> <span class="pre">Y</span></code>.</p>
@@ -745,8 +745,7 @@ initializing the module, which includes execution of the module’s code.</p>
 <p>If the requested module is retrieved successfully, it will be made
 available in the local namespace in one of three ways:</p>
 <ul class="simple" id="index-35">
-<li><p>If the module name is followed by <code class="xref std std-keyword docutils literal notranslate"><span class="pre">as</span></code>, then the name
-following <code class="xref std std-keyword docutils literal notranslate"><span class="pre">as</span></code> is bound directly to the imported module.</p></li>
+<li><p>Jeżeli po nazwie modułu następuje <code class="xref std std-keyword docutils literal notranslate"><span class="pre">as</span></code>, to nazwa następująca po <code class="xref std std-keyword docutils literal notranslate"><span class="pre">as</span></code> jest powiązana bezpośrednio z importowanym modułem.</p></li>
 <li><p>If no other name is specified, and the module being imported is a top
 level module, the module’s name is bound in the local namespace as a
 reference to the imported module</p></li>
@@ -771,7 +770,7 @@ otherwise using the attribute name</p></li>
 </ol>
 </li>
 </ol>
-<p>Examples:</p>
+<p>Przykłady:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">foo</span>                 <span class="c1"># foo imported and bound locally</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">foo.bar.baz</span>         <span class="c1"># foo, foo.bar, and foo.bar.baz imported, foo bound locally</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">foo.bar.baz</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">fbb</span>  <span class="c1"># foo, foo.bar, and foo.bar.baz imported, foo.bar.baz bound as fbb</span>
@@ -782,7 +781,7 @@ otherwise using the attribute name</p></li>
 <p id="index-37">If the list of identifiers is replaced by a star (<code class="docutils literal notranslate"><span class="pre">'*'</span></code>), all public
 names defined in the module are bound in the local namespace for the scope
 where the <a class="reference internal" href="#import"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">import</span></code></a> statement occurs.</p>
-<p id="index-38">The <em>public names</em> defined by a module are determined by checking the module’s
+<p id="module.__all__"><span id="index-38"></span>The <em>public names</em> defined by a module are determined by checking the module’s
 namespace for a variable named <code class="docutils literal notranslate"><span class="pre">__all__</span></code>; if defined, it must be a sequence
 of strings which are names defined or imported by that module.  The names
 given in <code class="docutils literal notranslate"><span class="pre">__all__</span></code> are all considered public and are required to exist.  If
@@ -983,7 +982,7 @@ generic classes and functions.</p>
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#">7. Simple statements</a><ul>
 <li><a class="reference internal" href="#expression-statements">7.1. Expression statements</a></li>
@@ -994,7 +993,7 @@ generic classes and functions.</p>
 </li>
 <li><a class="reference internal" href="#the-assert-statement">7.3. The <code class="xref std std-keyword docutils literal notranslate"><span class="pre">assert</span></code> statement</a></li>
 <li><a class="reference internal" href="#the-pass-statement">7.4. The <code class="xref std std-keyword docutils literal notranslate"><span class="pre">pass</span></code> statement</a></li>
-<li><a class="reference internal" href="#the-del-statement">7.5. The <code class="xref std std-keyword docutils literal notranslate"><span class="pre">del</span></code> statement</a></li>
+<li><a class="reference internal" href="#the-del-statement">7.5. Instrukcja <code class="xref std std-keyword docutils literal notranslate"><span class="pre">del</span></code></a></li>
 <li><a class="reference internal" href="#the-return-statement">7.6. The <code class="xref std std-keyword docutils literal notranslate"><span class="pre">return</span></code> statement</a></li>
 <li><a class="reference internal" href="#the-yield-statement">7.7. The <code class="xref std std-keyword docutils literal notranslate"><span class="pre">yield</span></code> statement</a></li>
 <li><a class="reference internal" href="#the-raise-statement">7.8. The <code class="xref std std-keyword docutils literal notranslate"><span class="pre">raise</span></code> statement</a></li>
@@ -1013,14 +1012,14 @@ generic classes and functions.</p>
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="expressions.html"
-                          title="previous chapter"><span class="section-number">6. </span>Expressions</a></p>
+                          title="poprzedni rozdział"><span class="section-number">6. </span>Expressions</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="compound_stmts.html"
-                          title="next chapter"><span class="section-number">8. </span>Compound statements</a></p>
+                          title="następny rozdział"><span class="section-number">8. </span>Compound statements</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -1034,7 +1033,7 @@ generic classes and functions.</p>
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -1070,7 +1069,7 @@ generic classes and functions.</p>
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Language Reference</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Dokumentacja języka Python</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><span class="section-number">7. </span>Simple statements</a></li>
                 <li class="right">
                     
@@ -1118,7 +1117,7 @@ generic classes and functions.</p>
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

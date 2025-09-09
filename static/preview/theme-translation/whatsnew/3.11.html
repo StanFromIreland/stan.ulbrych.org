@@ -4,19 +4,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="What’s New In Python 3.11" />
+<meta property="og:title" content="Co nowego w Pythonie 3.11" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://docs.python.org/3/whatsnew/3.11.html" />
 <meta property="og:site_name" content="Python documentation" />
-<meta property="og:description" content="Editor, Pablo Galindo Salgado,. This article explains the new features in Python 3.11, compared to 3.10. Python 3.11 was released on October 24, 2022. For full details, see the changelog. Summary –..." />
+<meta property="og:description" content="redakcja, Pablo Galindo Salgado,. This article explains the new features in Python 3.11, compared to 3.10. Python 3.11 was released on October 24, 2022. For full details, see the changelog. Podsumo..." />
 <meta property="og:image" content="_static/og-image.png" />
 <meta property="og:image:alt" content="Python documentation" />
-<meta name="description" content="Editor, Pablo Galindo Salgado,. This article explains the new features in Python 3.11, compared to 3.10. Python 3.11 was released on October 24, 2022. For full details, see the changelog. Summary –..." />
+<meta name="description" content="redakcja, Pablo Galindo Salgado,. This article explains the new features in Python 3.11, compared to 3.10. Python 3.11 was released on October 24, 2022. For full details, see the changelog. Podsumo..." />
 <meta name="theme-color" content="#3776ab">
 <meta property="og:image:width" content="200">
 <meta property="og:image:height" content="200">
 
-    <title>What’s New In Python 3.11 &#8212; Python 3.15.0a0 - dokumentacja</title><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Co nowego w Pythonie 3.11 &#8212; Python 3.15.0a0 - dokumentacja</title><meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=234b1a7c" />
@@ -31,13 +31,13 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
-    <link rel="next" title="What’s New In Python 3.10" href="3.10.html" />
+    <link rel="next" title="Co nowego w Pythonie 3.10" href="3.10.html" />
     <link rel="prev" title="What’s New In Python 3.12" href="3.12.html" />
     
       
@@ -98,12 +98,12 @@
     </select>
 </label>
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
-<li><a class="reference internal" href="#">What’s New In Python 3.11</a><ul>
-<li><a class="reference internal" href="#summary-release-highlights">Summary – Release highlights</a></li>
-<li><a class="reference internal" href="#new-features">New Features</a><ul>
-<li><a class="reference internal" href="#pep-657-fine-grained-error-locations-in-tracebacks">PEP 657: Fine-grained error locations in tracebacks</a></li>
+<li><a class="reference internal" href="#">Co nowego w Pythonie 3.11</a><ul>
+<li><a class="reference internal" href="#summary-release-highlights">Podsumowanie – najważniejsze nowości</a></li>
+<li><a class="reference internal" href="#new-features">Nowe funkcjonalności</a><ul>
+<li><a class="reference internal" href="#pep-657-fine-grained-error-locations-in-tracebacks">PEP 657: Szczegółowe lokalizacje błędów w tracebackach</a></li>
 <li><a class="reference internal" href="#pep-654-exception-groups-and-except">PEP 654: Exception Groups and <code class="docutils literal notranslate"><span class="pre">except*</span></code></a></li>
 <li><a class="reference internal" href="#pep-678-exceptions-can-be-enriched-with-notes">PEP 678: Exceptions can be enriched with notes</a></li>
 <li><a class="reference internal" href="#windows-py-exe-launcher-improvements">Windows <code class="docutils literal notranslate"><span class="pre">py.exe</span></code> launcher improvements</a></li>
@@ -121,7 +121,7 @@
 <li><a class="reference internal" href="#other-language-changes">Other Language Changes</a></li>
 <li><a class="reference internal" href="#other-cpython-implementation-changes">Other CPython Implementation Changes</a></li>
 <li><a class="reference internal" href="#new-modules">New Modules</a></li>
-<li><a class="reference internal" href="#improved-modules">Improved Modules</a><ul>
+<li><a class="reference internal" href="#improved-modules">Ulepszone moduły</a><ul>
 <li><a class="reference internal" href="#asyncio">asyncio</a></li>
 <li><a class="reference internal" href="#contextlib">contextlib</a></li>
 <li><a class="reference internal" href="#dataclasses">dataclasses</a></li>
@@ -144,7 +144,7 @@
 <li><a class="reference internal" href="#shutil">shutil</a></li>
 <li><a class="reference internal" href="#socket">socket</a></li>
 <li><a class="reference internal" href="#sqlite3">sqlite3</a></li>
-<li><a class="reference internal" href="#string">string</a></li>
+<li><a class="reference internal" href="#string">ciąg znaków</a></li>
 <li><a class="reference internal" href="#sys">sys</a></li>
 <li><a class="reference internal" href="#sysconfig">sysconfig</a></li>
 <li><a class="reference internal" href="#tempfile">tempfile</a></li>
@@ -191,7 +191,7 @@
 </li>
 <li><a class="reference internal" href="#deprecated">Deprecated</a><ul>
 <li><a class="reference internal" href="#language-builtins">Language/Builtins</a></li>
-<li><a class="reference internal" href="#modules">Modules</a></li>
+<li><a class="reference internal" href="#modules">Moduły</a></li>
 <li><a class="reference internal" href="#standard-library">Standard Library</a></li>
 </ul>
 </li>
@@ -199,8 +199,8 @@
 <li><a class="reference internal" href="#removed">Removed</a></li>
 <li><a class="reference internal" href="#porting-to-python-3-11">Porting to Python 3.11</a></li>
 <li><a class="reference internal" href="#build-changes">Build Changes</a></li>
-<li><a class="reference internal" href="#c-api-changes">C API Changes</a><ul>
-<li><a class="reference internal" href="#whatsnew311-c-api-new-features">New Features</a></li>
+<li><a class="reference internal" href="#c-api-changes">Zmiany w C API</a><ul>
+<li><a class="reference internal" href="#whatsnew311-c-api-new-features">Nowe funkcjonalności</a></li>
 <li><a class="reference internal" href="#whatsnew311-c-api-porting">Porting to Python 3.11</a></li>
 <li><a class="reference internal" href="#whatsnew311-c-api-deprecated">Deprecated</a></li>
 <li><a class="reference internal" href="#whatsnew311-c-api-pending-removal">Pending Removal in Python 3.12</a></li>
@@ -221,14 +221,14 @@
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="3.12.html"
-                          title="previous chapter">What’s New In Python 3.12</a></p>
+                          title="poprzedni rozdział">What’s New In Python 3.12</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="3.10.html"
-                          title="next chapter">What’s New In Python 3.10</a></p>
+                          title="następny rozdział">Co nowego w Pythonie 3.10</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -256,7 +256,7 @@
           <a href="../py-modindex.html" title="Indeks modułów Pythona"
              >moduły</a> |</li>
         <li class="right" >
-          <a href="3.10.html" title="What’s New In Python 3.10"
+          <a href="3.10.html" title="Co nowego w Pythonie 3.10"
              accesskey="N">dalej</a> |</li>
         <li class="right" >
           <a href="3.12.html" title="What’s New In Python 3.12"
@@ -275,8 +275,8 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">What’s New in Python</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">What’s New In Python 3.11</a></li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Co nowego w Pythonie</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Co nowego w Pythonie 3.11</a></li>
                 <li class="right">
                     
 
@@ -307,9 +307,9 @@
           <div class="body" role="main">
             
   <section id="what-s-new-in-python-3-11">
-<h1>What’s New In Python 3.11<a class="headerlink" href="#what-s-new-in-python-3-11" title="Link to this heading">¶</a></h1>
+<h1>Co nowego w Pythonie 3.11<a class="headerlink" href="#what-s-new-in-python-3-11" title="Link to this heading">¶</a></h1>
 <dl class="field-list simple">
-<dt class="field-odd">Editor<span class="colon">:</span></dt>
+<dt class="field-odd">redakcja<span class="colon">:</span></dt>
 <dd class="field-odd"><p>Pablo Galindo Salgado</p>
 </dd>
 </dl>
@@ -317,32 +317,28 @@
 Python 3.11 was released on October 24, 2022.
 For full details, see the <a class="reference internal" href="changelog.html#changelog"><span class="std std-ref">changelog</span></a>.</p>
 <section id="summary-release-highlights">
-<span id="whatsnew311-summary"></span><h2>Summary – Release highlights<a class="headerlink" href="#summary-release-highlights" title="Link to this heading">¶</a></h2>
+<span id="whatsnew311-summary"></span><h2>Podsumowanie – najważniejsze nowości<a class="headerlink" href="#summary-release-highlights" title="Link to this heading">¶</a></h2>
 <ul class="simple">
-<li><p>Python 3.11 is between 10-60% faster than Python 3.10.
-On average, we measured a 1.25x speedup on the standard benchmark suite.
-See <a class="reference internal" href="#whatsnew311-faster-cpython"><span class="std std-ref">Faster CPython</span></a> for details.</p></li>
+<li><p>Python 3.11 jest 10-60% szybszy niż Python 3.10. Przeciętnie obserwujemy przyspieszenie na poziomie 1,25 na standardowym benchmarku. Szczegóły w <a class="reference internal" href="#whatsnew311-faster-cpython"><span class="std std-ref">Faster CPython</span></a>.</p></li>
 </ul>
-<p>New syntax features:</p>
+<p>Nowe cechy składni:</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#whatsnew311-pep654"><span class="std std-ref">PEP 654: Exception Groups and except*</span></a></p></li>
 </ul>
-<p>New built-in features:</p>
+<p>Nowe wbudowane funkcje:</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#whatsnew311-pep678"><span class="std std-ref">PEP 678: Exceptions can be enriched with notes</span></a></p></li>
 </ul>
-<p>New standard library modules:</p>
+<p>Nowe moduły biblioteki standardowej:</p>
 <ul class="simple">
-<li><p><span class="target" id="index-0"></span><a class="pep reference external" href="https://peps.python.org/pep-0680/"><strong>PEP 680</strong></a>: <a class="reference internal" href="../library/tomllib.html#module-tomllib" title="tomllib: Parse TOML files."><code class="xref py py-mod docutils literal notranslate"><span class="pre">tomllib</span></code></a> —
-Support for parsing <a class="reference external" href="https://toml.io/">TOML</a> in the Standard Library</p></li>
+<li><p><span class="target" id="index-48"></span><a class="pep reference external" href="https://peps.python.org/pep-0680/"><strong>PEP 680</strong></a>: <a class="reference internal" href="../library/tomllib.html#module-tomllib" title="tomllib: Parse TOML files."><code class="xref py py-mod docutils literal notranslate"><span class="pre">tomllib</span></code></a> — wsparcie dla parsowania <a class="reference external" href="https://toml.io/">TOML</a> w bibliotece standardowej</p></li>
 </ul>
-<p>Interpreter improvements:</p>
+<p>Udoskonalenia interpretera:</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#whatsnew311-pep657"><span class="std std-ref">PEP 657: Fine-grained error locations in tracebacks</span></a></p></li>
-<li><p>New <a class="reference internal" href="../using/cmdline.html#cmdoption-P"><code class="xref std std-option docutils literal notranslate"><span class="pre">-P</span></code></a> command line option and <span class="target" id="index-1"></span><a class="reference internal" href="../using/cmdline.html#envvar-PYTHONSAFEPATH"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">PYTHONSAFEPATH</span></code></a> environment
-variable to <a class="reference internal" href="#whatsnew311-pythonsafepath"><span class="std std-ref">disable automatically prepending potentially unsafe paths</span></a> to <a class="reference internal" href="../library/sys.html#sys.path" title="sys.path"><code class="xref py py-data docutils literal notranslate"><span class="pre">sys.path</span></code></a></p></li>
+<li><p><a class="reference internal" href="#whatsnew311-pep657"><span class="std std-ref">PEP 657: Szczegółowe lokalizacje błędów w tracebackach</span></a></p></li>
+<li><p>Nowa opcja linii komend <a class="reference internal" href="../using/cmdline.html#cmdoption-P"><code class="xref std std-option docutils literal notranslate"><span class="pre">-P</span></code></a> oraz zmienna środowiskowa <span class="target" id="index-49"></span><a class="reference internal" href="../using/cmdline.html#envvar-PYTHONSAFEPATH"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">PYTHONSAFEPATH</span></code></a> do <a class="reference internal" href="#whatsnew311-pythonsafepath"><span class="std std-ref">wyłączenia automatycznego dołączania potencjalnie niebezpiecznych ścieżek</span></a> do <a class="reference internal" href="../library/sys.html#sys.path" title="sys.path"><code class="xref py py-data docutils literal notranslate"><span class="pre">sys.path</span></code></a></p></li>
 </ul>
-<p>New typing features:</p>
+<p>Nowe cechy typowania:</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#whatsnew311-pep646"><span class="std std-ref">PEP 646: Variadic generics</span></a></p></li>
 <li><p><a class="reference internal" href="#whatsnew311-pep655"><span class="std std-ref">PEP 655: Marking individual TypedDict items as required or not-required</span></a></p></li>
@@ -350,22 +346,18 @@ variable to <a class="reference internal" href="#whatsnew311-pythonsafepath"><sp
 <li><p><a class="reference internal" href="#whatsnew311-pep675"><span class="std std-ref">PEP 675: Arbitrary literal string type</span></a></p></li>
 <li><p><a class="reference internal" href="#whatsnew311-pep681"><span class="std std-ref">PEP 681: Data class transforms</span></a></p></li>
 </ul>
-<p>Important deprecations, removals and restrictions:</p>
+<p>Ważne dezaprobaty, usunięcia i ograniczenia:</p>
 <ul class="simple">
-<li><p><span class="target" id="index-2"></span><a class="pep reference external" href="https://peps.python.org/pep-0594/"><strong>PEP 594</strong></a>:
-<a class="reference internal" href="#whatsnew311-pep594"><span class="std std-ref">Many legacy standard library modules have been deprecated</span></a> and will be removed in Python 3.13</p></li>
-<li><p><span class="target" id="index-3"></span><a class="pep reference external" href="https://peps.python.org/pep-0624/"><strong>PEP 624</strong></a>:
-<a class="reference internal" href="#whatsnew311-pep624"><span class="std std-ref">Py_UNICODE encoder APIs have been removed</span></a></p></li>
-<li><p><span class="target" id="index-4"></span><a class="pep reference external" href="https://peps.python.org/pep-0670/"><strong>PEP 670</strong></a>:
-<a class="reference internal" href="#whatsnew311-pep670"><span class="std std-ref">Macros converted to static inline functions</span></a></p></li>
+<li><p><span class="target" id="index-50"></span><a class="pep reference external" href="https://peps.python.org/pep-0594/"><strong>PEP 594</strong></a>: <a class="reference internal" href="#whatsnew311-pep594"><span class="std std-ref">Wiele starszych modułów biblioteki standardowej zostało zdezaprobowane</span></a> i zostanie usunięte w Pythonie 3.13</p></li>
+<li><p><span class="target" id="index-51"></span><a class="pep reference external" href="https://peps.python.org/pep-0624/"><strong>PEP 624</strong></a>: <a class="reference internal" href="#whatsnew311-pep624"><span class="std std-ref">Usunięto API encodera Py_UNICODE</span></a></p></li>
+<li><p><span class="target" id="index-52"></span><a class="pep reference external" href="https://peps.python.org/pep-0670/"><strong>PEP 670</strong></a>: <a class="reference internal" href="#whatsnew311-pep670"><span class="std std-ref">Makra przekonwertowane na statycznie funkcje inline</span></a></p></li>
 </ul>
 </section>
 <section id="new-features">
-<span id="whatsnew311-features"></span><h2>New Features<a class="headerlink" href="#new-features" title="Link to this heading">¶</a></h2>
+<span id="whatsnew311-features"></span><h2>Nowe funkcjonalności<a class="headerlink" href="#new-features" title="Link to this heading">¶</a></h2>
 <section id="pep-657-fine-grained-error-locations-in-tracebacks">
-<span id="whatsnew311-pep657"></span><h3>PEP 657: Fine-grained error locations in tracebacks<a class="headerlink" href="#pep-657-fine-grained-error-locations-in-tracebacks" title="Link to this heading">¶</a></h3>
-<p>When printing tracebacks, the interpreter will now point to the exact expression
-that caused the error, instead of just the line. For example:</p>
+<span id="whatsnew311-pep657"></span><h3>PEP 657: Szczegółowe lokalizacje błędów w tracebackach<a class="headerlink" href="#pep-657-fine-grained-error-locations-in-tracebacks" title="Link to this heading">¶</a></h3>
+<p>Podczas drukowania tracebacków, interpreter będzie teraz wskazywał na dokładne wyrażenie, które spowodowało błąd, zamiast tylko na linię. Na przykład:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
   <span class="n">File</span> <span class="s2">&quot;distance.py&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">11</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">manhattan_distance</span><span class="p">(</span><span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="p">))</span>
@@ -376,9 +368,7 @@ that caused the error, instead of just the line. For example:</p>
 <span class="ne">AttributeError</span><span class="p">:</span> <span class="s1">&#39;NoneType&#39;</span> <span class="nb">object</span> <span class="n">has</span> <span class="n">no</span> <span class="n">attribute</span> <span class="s1">&#39;x&#39;</span>
 </pre></div>
 </div>
-<p>Previous versions of the interpreter would point to just the line, making it
-ambiguous which object was <code class="docutils literal notranslate"><span class="pre">None</span></code>. These enhanced errors can also be helpful
-when dealing with deeply nested <a class="reference internal" href="../library/stdtypes.html#dict" title="dict"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a> objects and multiple function calls:</p>
+<p>Poprzednie wersje interpretera wskazywałyby tylko na linię, czyniąc niejednoznacznym, który obiekt był <code class="docutils literal notranslate"><span class="pre">None</span></code>. Te ulepszone błędy mogą być również pomocne, gdy mamy do czynienia z głęboko zagnieżdżonymi obiektami <a class="reference internal" href="../library/stdtypes.html#dict" title="dict"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a> i wieloma wywołaniami funkcji:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
   <span class="n">File</span> <span class="s2">&quot;query.py&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">37</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
     <span class="n">magic_arithmetic</span><span class="p">(</span><span class="s1">&#39;foo&#39;</span><span class="p">)</span>
@@ -394,7 +384,7 @@ when dealing with deeply nested <a class="reference internal" href="../library/s
 <span class="ne">TypeError</span><span class="p">:</span> <span class="s1">&#39;NoneType&#39;</span> <span class="nb">object</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">subscriptable</span>
 </pre></div>
 </div>
-<p>As well as complex arithmetic expressions:</p>
+<p>Jak również ze złożonymi wyrażeniami arytmetycznymi:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
   <span class="n">File</span> <span class="s2">&quot;calculation.py&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">54</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
     <span class="n">result</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span> <span class="o">/</span> <span class="n">y</span> <span class="o">/</span> <span class="n">z</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">a</span> <span class="o">/</span> <span class="n">b</span> <span class="o">/</span> <span class="n">c</span><span class="p">)</span>
@@ -587,7 +577,7 @@ decorate a class, metaclass, or a function that is itself a decorator.
 The presence of <code class="docutils literal notranslate"><span class="pre">&#64;dataclass_transform()</span></code> tells a static type checker that the
 decorated object performs runtime „magic” that transforms a class,
 giving it <a class="reference internal" href="../library/dataclasses.html#dataclasses.dataclass" title="dataclasses.dataclass"><code class="xref py py-func docutils literal notranslate"><span class="pre">dataclass</span></code></a>-like behaviors.</p>
-<p>For example:</p>
+<p>Dla przykładu:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># The create_model decorator is defined by a library.</span>
 <span class="nd">@typing</span><span class="o">.</span><span class="n">dataclass_transform</span><span class="p">()</span>
 <span class="k">def</span><span class="w"> </span><span class="nf">create_model</span><span class="p">(</span><span class="bp">cls</span><span class="p">:</span> <span class="n">Type</span><span class="p">[</span><span class="n">T</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">Type</span><span class="p">[</span><span class="n">T</span><span class="p">]:</span>
@@ -734,7 +724,7 @@ See <span class="target" id="index-25"></span><a class="pep reference external" 
 </ul>
 </section>
 <section id="improved-modules">
-<span id="whatsnew311-improved-modules"></span><h2>Improved Modules<a class="headerlink" href="#improved-modules" title="Link to this heading">¶</a></h2>
+<span id="whatsnew311-improved-modules"></span><h2>Ulepszone moduły<a class="headerlink" href="#improved-modules" title="Link to this heading">¶</a></h2>
 <section id="asyncio">
 <span id="whatsnew311-asyncio"></span><h3>asyncio<a class="headerlink" href="#asyncio" title="Link to this heading">¶</a></h3>
 <ul class="simple">
@@ -1096,7 +1086,7 @@ serializing and deserializing databases.
 </ul>
 </section>
 <section id="string">
-<span id="whatsnew311-string"></span><h3>string<a class="headerlink" href="#string" title="Link to this heading">¶</a></h3>
+<span id="whatsnew311-string"></span><h3>ciąg znaków<a class="headerlink" href="#string" title="Link to this heading">¶</a></h3>
 <ul class="simple">
 <li><p>Add <a class="reference internal" href="../library/string.html#string.Template.get_identifiers" title="string.Template.get_identifiers"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_identifiers()</span></code></a>
 and <a class="reference internal" href="../library/string.html#string.Template.is_valid" title="string.Template.is_valid"><code class="xref py py-meth docutils literal notranslate"><span class="pre">is_valid()</span></code></a> to <a class="reference internal" href="../library/string.html#string.Template" title="string.Template"><code class="xref py py-class docutils literal notranslate"><span class="pre">string.Template</span></code></a>,
@@ -1321,7 +1311,7 @@ by a value smaller than <code class="docutils literal notranslate"><span class="
 <li><p><a class="reference internal" href="../library/functions.html#sum" title="sum"><code class="xref py py-func docutils literal notranslate"><span class="pre">sum()</span></code></a> is now nearly 30% faster for integers smaller than <code class="docutils literal notranslate"><span class="pre">2**30</span></code>.
 (Contributed by Stefan Behnel in <a class="reference external" href="https://github.com/python/cpython/issues/68264">gh-68264</a>.)</p></li>
 <li><p>Resizing lists is streamlined for the common case,
-speeding up <code class="xref py py-meth docutils literal notranslate"><span class="pre">list.append()</span></code> by ≈15%
+speeding up <a class="reference internal" href="../library/stdtypes.html#list.append" title="list.append"><code class="xref py py-meth docutils literal notranslate"><span class="pre">list.append()</span></code></a> by ≈15%
 and simple <a class="reference internal" href="../glossary.html#term-list-comprehension"><span class="xref std std-term">list comprehension</span></a>s by up to 20-30%
 (Contributed by Dennis Sweeney in <a class="reference external" href="https://github.com/python/cpython/issues/91165">gh-91165</a>.)</p></li>
 <li><p>Dictionaries don’t store hash values when all keys are Unicode objects,
@@ -1653,7 +1643,7 @@ for internal tracing, debugging and optimization checks.</p></li>
 <thead>
 <tr class="row-odd"><th class="head"><p>Replaced Opcode(s)</p></th>
 <th class="head"><p>New Opcode(s)</p></th>
-<th class="head"><p>Notes</p></th>
+<th class="head"><p>Notatki</p></th>
 </tr>
 </thead>
 <tbody>
@@ -1788,7 +1778,7 @@ a <a class="reference internal" href="../library/exceptions.html#DeprecationWarn
 </ul>
 </section>
 <section id="modules">
-<span id="whatsnew311-deprecated-modules"></span><h3>Modules<a class="headerlink" href="#modules" title="Link to this heading">¶</a></h3>
+<span id="whatsnew311-deprecated-modules"></span><h3>Moduły<a class="headerlink" href="#modules" title="Link to this heading">¶</a></h3>
 <ul id="whatsnew311-pep594">
 <li><p><span class="target" id="index-32"></span><a class="pep reference external" href="https://peps.python.org/pep-0594/"><strong>PEP 594</strong></a> led to the deprecations of the following modules
 slated for removal in Python 3.13:</p>
@@ -2255,9 +2245,9 @@ but this option may be removed at some point in the future.
 </ul>
 </section>
 <section id="c-api-changes">
-<span id="whatsnew311-c-api"></span><h2>C API Changes<a class="headerlink" href="#c-api-changes" title="Link to this heading">¶</a></h2>
+<span id="whatsnew311-c-api"></span><h2>Zmiany w C API<a class="headerlink" href="#c-api-changes" title="Link to this heading">¶</a></h2>
 <section id="whatsnew311-c-api-new-features">
-<span id="id5"></span><h3>New Features<a class="headerlink" href="#whatsnew311-c-api-new-features" title="Link to this heading">¶</a></h3>
+<span id="id5"></span><h3>Nowe funkcjonalności<a class="headerlink" href="#whatsnew311-c-api-new-features" title="Link to this heading">¶</a></h3>
 <ul>
 <li><p>Add a new <a class="reference internal" href="../c-api/type.html#c.PyType_GetName" title="PyType_GetName"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyType_GetName()</span></code></a> function to get type’s short name.
 (Contributed by Hai Shi in <a class="reference external" href="https://bugs.python.org/issue?&#64;action=redirect&amp;bpo=42035">bpo-42035</a>.)</p></li>
@@ -2751,12 +2741,12 @@ In Python 3.14, the default will switch to <code class="docutils literal notrans
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
-<li><a class="reference internal" href="#">What’s New In Python 3.11</a><ul>
-<li><a class="reference internal" href="#summary-release-highlights">Summary – Release highlights</a></li>
-<li><a class="reference internal" href="#new-features">New Features</a><ul>
-<li><a class="reference internal" href="#pep-657-fine-grained-error-locations-in-tracebacks">PEP 657: Fine-grained error locations in tracebacks</a></li>
+<li><a class="reference internal" href="#">Co nowego w Pythonie 3.11</a><ul>
+<li><a class="reference internal" href="#summary-release-highlights">Podsumowanie – najważniejsze nowości</a></li>
+<li><a class="reference internal" href="#new-features">Nowe funkcjonalności</a><ul>
+<li><a class="reference internal" href="#pep-657-fine-grained-error-locations-in-tracebacks">PEP 657: Szczegółowe lokalizacje błędów w tracebackach</a></li>
 <li><a class="reference internal" href="#pep-654-exception-groups-and-except">PEP 654: Exception Groups and <code class="docutils literal notranslate"><span class="pre">except*</span></code></a></li>
 <li><a class="reference internal" href="#pep-678-exceptions-can-be-enriched-with-notes">PEP 678: Exceptions can be enriched with notes</a></li>
 <li><a class="reference internal" href="#windows-py-exe-launcher-improvements">Windows <code class="docutils literal notranslate"><span class="pre">py.exe</span></code> launcher improvements</a></li>
@@ -2774,7 +2764,7 @@ In Python 3.14, the default will switch to <code class="docutils literal notrans
 <li><a class="reference internal" href="#other-language-changes">Other Language Changes</a></li>
 <li><a class="reference internal" href="#other-cpython-implementation-changes">Other CPython Implementation Changes</a></li>
 <li><a class="reference internal" href="#new-modules">New Modules</a></li>
-<li><a class="reference internal" href="#improved-modules">Improved Modules</a><ul>
+<li><a class="reference internal" href="#improved-modules">Ulepszone moduły</a><ul>
 <li><a class="reference internal" href="#asyncio">asyncio</a></li>
 <li><a class="reference internal" href="#contextlib">contextlib</a></li>
 <li><a class="reference internal" href="#dataclasses">dataclasses</a></li>
@@ -2797,7 +2787,7 @@ In Python 3.14, the default will switch to <code class="docutils literal notrans
 <li><a class="reference internal" href="#shutil">shutil</a></li>
 <li><a class="reference internal" href="#socket">socket</a></li>
 <li><a class="reference internal" href="#sqlite3">sqlite3</a></li>
-<li><a class="reference internal" href="#string">string</a></li>
+<li><a class="reference internal" href="#string">ciąg znaków</a></li>
 <li><a class="reference internal" href="#sys">sys</a></li>
 <li><a class="reference internal" href="#sysconfig">sysconfig</a></li>
 <li><a class="reference internal" href="#tempfile">tempfile</a></li>
@@ -2844,7 +2834,7 @@ In Python 3.14, the default will switch to <code class="docutils literal notrans
 </li>
 <li><a class="reference internal" href="#deprecated">Deprecated</a><ul>
 <li><a class="reference internal" href="#language-builtins">Language/Builtins</a></li>
-<li><a class="reference internal" href="#modules">Modules</a></li>
+<li><a class="reference internal" href="#modules">Moduły</a></li>
 <li><a class="reference internal" href="#standard-library">Standard Library</a></li>
 </ul>
 </li>
@@ -2852,8 +2842,8 @@ In Python 3.14, the default will switch to <code class="docutils literal notrans
 <li><a class="reference internal" href="#removed">Removed</a></li>
 <li><a class="reference internal" href="#porting-to-python-3-11">Porting to Python 3.11</a></li>
 <li><a class="reference internal" href="#build-changes">Build Changes</a></li>
-<li><a class="reference internal" href="#c-api-changes">C API Changes</a><ul>
-<li><a class="reference internal" href="#whatsnew311-c-api-new-features">New Features</a></li>
+<li><a class="reference internal" href="#c-api-changes">Zmiany w C API</a><ul>
+<li><a class="reference internal" href="#whatsnew311-c-api-new-features">Nowe funkcjonalności</a></li>
 <li><a class="reference internal" href="#whatsnew311-c-api-porting">Porting to Python 3.11</a></li>
 <li><a class="reference internal" href="#whatsnew311-c-api-deprecated">Deprecated</a></li>
 <li><a class="reference internal" href="#whatsnew311-c-api-pending-removal">Pending Removal in Python 3.12</a></li>
@@ -2874,14 +2864,14 @@ In Python 3.14, the default will switch to <code class="docutils literal notrans
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="3.12.html"
-                          title="previous chapter">What’s New In Python 3.12</a></p>
+                          title="poprzedni rozdział">What’s New In Python 3.12</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="3.10.html"
-                          title="next chapter">What’s New In Python 3.10</a></p>
+                          title="następny rozdział">Co nowego w Pythonie 3.10</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -2895,7 +2885,7 @@ In Python 3.14, the default will switch to <code class="docutils literal notrans
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -2912,7 +2902,7 @@ In Python 3.14, the default will switch to <code class="docutils literal notrans
           <a href="../py-modindex.html" title="Indeks modułów Pythona"
              >moduły</a> |</li>
         <li class="right" >
-          <a href="3.10.html" title="What’s New In Python 3.10"
+          <a href="3.10.html" title="Co nowego w Pythonie 3.10"
              >dalej</a> |</li>
         <li class="right" >
           <a href="3.12.html" title="What’s New In Python 3.12"
@@ -2931,8 +2921,8 @@ In Python 3.14, the default will switch to <code class="docutils literal notrans
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >What’s New in Python</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">What’s New In Python 3.11</a></li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Co nowego w Pythonie</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Co nowego w Pythonie 3.11</a></li>
                 <li class="right">
                     
 
@@ -2979,7 +2969,7 @@ In Python 3.14, the default will switch to <code class="docutils literal notrans
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

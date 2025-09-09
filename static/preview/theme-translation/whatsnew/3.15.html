@@ -31,14 +31,14 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="What’s new in Python 3.14" href="3.14.html" />
-    <link rel="prev" title="What’s New in Python" href="index.html" />
+    <link rel="prev" title="Co nowego w Pythonie" href="index.html" />
     
       
       <link rel="canonical" href="https://docs.python.org/3/whatsnew/3.15.html">
@@ -98,7 +98,7 @@
     </select>
 </label>
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#">What’s new in Python 3.15</a><ul>
 <li><a class="reference internal" href="#summary-release-highlights">Summary — release highlights</a></li>
@@ -117,11 +117,13 @@
 <li><a class="reference internal" href="#http-cookies">http.cookies</a></li>
 <li><a class="reference internal" href="#locale">locale</a></li>
 <li><a class="reference internal" href="#math">math</a></li>
+<li><a class="reference internal" href="#mmap">mmap</a></li>
 <li><a class="reference internal" href="#os-path">os.path</a></li>
 <li><a class="reference internal" href="#resource">resource</a></li>
 <li><a class="reference internal" href="#shelve">shelve</a></li>
 <li><a class="reference internal" href="#sqlite3">sqlite3</a></li>
 <li><a class="reference internal" href="#ssl">ssl</a></li>
+<li><a class="reference internal" href="#sys">sys</a></li>
 <li><a class="reference internal" href="#tarfile">tarfile</a></li>
 <li><a class="reference internal" href="#types">types</a></li>
 <li><a class="reference internal" href="#unittest">unittest</a></li>
@@ -165,14 +167,14 @@
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="index.html"
-                          title="previous chapter">What’s New in Python</a></p>
+                          title="poprzedni rozdział">Co nowego w Pythonie</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="3.14.html"
-                          title="next chapter">What’s new in Python 3.14</a></p>
+                          title="następny rozdział">What’s new in Python 3.14</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -203,7 +205,7 @@
           <a href="3.14.html" title="What’s new in Python 3.14"
              accesskey="N">dalej</a> |</li>
         <li class="right" >
-          <a href="index.html" title="What’s New in Python"
+          <a href="index.html" title="Co nowego w Pythonie"
              accesskey="P">wstecz</a> |</li>
 
           <li><img src="../_static/py.svg" alt="Python logo" style="vertical-align: middle; margin-top: -1px"></li>
@@ -219,7 +221,7 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">What’s New in Python</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Co nowego w Pythonie</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">What’s new in Python 3.15</a></li>
                 <li class="right">
                     
@@ -272,8 +274,8 @@ so it’s worth checking back even after reading earlier versions.</p>
 <h2>New features<a class="headerlink" href="#new-features" title="Link to this heading">¶</a></h2>
 <section id="high-frequency-statistical-sampling-profiler">
 <span id="whatsnew315-sampling-profiler"></span><h3>High frequency statistical sampling profiler<a class="headerlink" href="#high-frequency-statistical-sampling-profiler" title="Link to this heading">¶</a></h3>
-<p>A new statistical sampling profiler has been added to the <a class="reference internal" href="../library/profile.html#module-profile" title="profile: Python source profiler."><code class="xref py py-mod docutils literal notranslate"><span class="pre">profile</span></code></a> module as
-<a class="reference internal" href="../library/profile.html#module-profile.sample" title="profile.sample: Python statistical profiler."><code class="xref py py-mod docutils literal notranslate"><span class="pre">profile.sample</span></code></a>. This profiler enables low-overhead performance analysis of
+<p>A new statistical sampling profiler has been added to the new <code class="xref py py-mod docutils literal notranslate"><span class="pre">profiling</span></code> module as
+<code class="xref py py-mod docutils literal notranslate"><span class="pre">profiling.sampling</span></code>. This profiler enables low-overhead performance analysis of
 running Python processes without requiring code modification or process restart.</p>
 <p>Unlike deterministic profilers (<a class="reference internal" href="../library/profile.html#module-cProfile" title="cProfile"><code class="xref py py-mod docutils literal notranslate"><span class="pre">cProfile</span></code></a> and <a class="reference internal" href="../library/profile.html#module-profile" title="profile: Python source profiler."><code class="xref py py-mod docutils literal notranslate"><span class="pre">profile</span></code></a>) that instrument
 every function call, the sampling profiler periodically captures stack traces from
@@ -291,19 +293,19 @@ affecting its performance</p></li>
 <li><p><strong>Thread-aware profiling</strong>: Option to profile all threads or just the main thread</p></li>
 </ul>
 <p>Profile process 1234 for 10 seconds with default settings:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">profile</span><span class="o">.</span><span class="n">sample</span> <span class="mi">1234</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">profiling</span><span class="o">.</span><span class="n">sampling</span> <span class="mi">1234</span>
 </pre></div>
 </div>
 <p>Profile with custom interval and duration, save to file:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">profile</span><span class="o">.</span><span class="n">sample</span> <span class="o">-</span><span class="n">i</span> <span class="mi">50</span> <span class="o">-</span><span class="n">d</span> <span class="mi">30</span> <span class="o">-</span><span class="n">o</span> <span class="n">profile</span><span class="o">.</span><span class="n">stats</span> <span class="mi">1234</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">profiling</span><span class="o">.</span><span class="n">sampling</span> <span class="o">-</span><span class="n">i</span> <span class="mi">50</span> <span class="o">-</span><span class="n">d</span> <span class="mi">30</span> <span class="o">-</span><span class="n">o</span> <span class="n">profile</span><span class="o">.</span><span class="n">stats</span> <span class="mi">1234</span>
 </pre></div>
 </div>
 <p>Generate collapsed stacks for flamegraph:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">profile</span><span class="o">.</span><span class="n">sample</span> <span class="o">--</span><span class="n">collapsed</span> <span class="mi">1234</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">profiling</span><span class="o">.</span><span class="n">sampling</span> <span class="o">--</span><span class="n">collapsed</span> <span class="mi">1234</span>
 </pre></div>
 </div>
 <p>Profile all threads and sort by total time:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">profile</span><span class="o">.</span><span class="n">sample</span> <span class="o">-</span><span class="n">a</span> <span class="o">--</span><span class="n">sort</span><span class="o">-</span><span class="n">tottime</span> <span class="mi">1234</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">profiling</span><span class="o">.</span><span class="n">sampling</span> <span class="o">-</span><span class="n">a</span> <span class="o">--</span><span class="n">sort</span><span class="o">-</span><span class="n">tottime</span> <span class="mi">1234</span>
 </pre></div>
 </div>
 <p>The profiler generates statistical estimates of where time is spent:</p>
@@ -535,6 +537,15 @@ but included in the language code.
 (Contributed by Bénédikt Tran in <a class="reference external" href="https://github.com/python/cpython/issues/135853">gh-135853</a>.)</p></li>
 </ul>
 </section>
+<section id="mmap">
+<h3>mmap<a class="headerlink" href="#mmap" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="../library/mmap.html#mmap.mmap" title="mmap.mmap"><code class="xref py py-class docutils literal notranslate"><span class="pre">mmap.mmap</span></code></a> now has a <em>trackfd</em> parameter on Windows;
+if it is <code class="docutils literal notranslate"><span class="pre">False</span></code>, the file handle corresponding to <em>fileno</em> will
+not be duplicated.
+(Contributed by Serhiy Storchaka in <a class="reference external" href="https://github.com/python/cpython/issues/78502">gh-78502</a>.)</p></li>
+</ul>
+</section>
 <section id="os-path">
 <h3>os.path<a class="headerlink" href="#os-path" title="Link to this heading">¶</a></h3>
 <ul class="simple">
@@ -575,7 +586,7 @@ space previously occupied by deleted entries.
 <li><p>Prompts, error messages, and help text are now colored.
 This is enabled by default, see <a class="reference internal" href="../using/cmdline.html#using-on-controlling-color"><span class="std std-ref">Controlling color</span></a> for
 details.
-(Contributed by Stan Ulbrych and Łukasz Langa in <a class="reference external" href="https://github.com/python/cpython/issues/133461">gh-133461</a>)</p></li>
+(Contributed by Stan Ulbrych and Łukasz Langa in <a class="reference external" href="https://github.com/python/cpython/issues/133461">gh-133461</a>.)</p></li>
 </ul>
 </div></blockquote>
 </li>
@@ -604,7 +615,7 @@ This call requires OpenSSL 3.2 or later.</p></li>
 agreement groups compatible with the minimum and maximum TLS versions
 currently set in the context. This call requires OpenSSL 3.5 or later.</p></li>
 </ul>
-<p>(Contributed by Ron Frederick in <a class="reference external" href="https://github.com/python/cpython/issues/136306">gh-136306</a>)</p>
+<p>(Contributed by Ron Frederick in <a class="reference external" href="https://github.com/python/cpython/issues/136306">gh-136306</a>.)</p>
 </div></blockquote>
 </li>
 <li><p>Added a new method <a class="reference internal" href="../library/ssl.html#ssl.SSLContext.set_ciphersuites" title="ssl.SSLContext.set_ciphersuites"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ssl.SSLContext.set_ciphersuites()</span></code></a> for setting TLS 1.3
@@ -613,6 +624,32 @@ continue to be used. Both calls can be made on the same context and the
 selected cipher suite will depend on the TLS version negotiated when a
 connection is made.
 (Contributed by Ron Frederick in <a class="reference external" href="https://github.com/python/cpython/issues/137197">gh-137197</a>.)</p></li>
+<li><p>Added new methods for managing signature algorithms:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="../library/ssl.html#ssl.get_sigalgs" title="ssl.get_sigalgs"><code class="xref py py-func docutils literal notranslate"><span class="pre">ssl.get_sigalgs()</span></code></a> returns a list of all available TLS signature
+algorithms. This call requires OpenSSL 3.4 or later.</p></li>
+<li><p><a class="reference internal" href="../library/ssl.html#ssl.SSLContext.set_client_sigalgs" title="ssl.SSLContext.set_client_sigalgs"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ssl.SSLContext.set_client_sigalgs()</span></code></a> sets the signature algorithms
+allowed for certificate-based client authentication.</p></li>
+<li><p><a class="reference internal" href="../library/ssl.html#ssl.SSLContext.set_server_sigalgs" title="ssl.SSLContext.set_server_sigalgs"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ssl.SSLContext.set_server_sigalgs()</span></code></a> sets the signature algorithms
+allowed for the server to complete the TLS handshake.</p></li>
+<li><p><a class="reference internal" href="../library/ssl.html#ssl.SSLSocket.client_sigalg" title="ssl.SSLSocket.client_sigalg"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ssl.SSLSocket.client_sigalg()</span></code></a> returns the signature algorithm
+selected for client authentication on the current connection. This call
+requires OpenSSL 3.5 or later.</p></li>
+<li><p><a class="reference internal" href="../library/ssl.html#ssl.SSLSocket.server_sigalg" title="ssl.SSLSocket.server_sigalg"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ssl.SSLSocket.server_sigalg()</span></code></a> returns the signature algorithm
+selected for the server to complete the TLS handshake on the current
+connection. This call requires OpenSSL 3.5 or later.</p></li>
+</ul>
+<blockquote>
+<div><p>(Contributed by Ron Frederick in <a class="reference external" href="https://github.com/python/cpython/issues/138252">gh-138252</a>.)</p>
+</div></blockquote>
+</li>
+</ul>
+</section>
+<section id="sys">
+<h3>sys<a class="headerlink" href="#sys" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Add <a class="reference internal" href="../library/sys.html#sys.abi_info" title="sys.abi_info"><code class="xref py py-data docutils literal notranslate"><span class="pre">sys.abi_info</span></code></a> namespace to improve access to ABI information.
+(Contributed by Klaus Zimmermann in <a class="reference external" href="https://github.com/python/cpython/issues/137476">gh-137476</a>.)</p></li>
 </ul>
 </section>
 <section id="tarfile">
@@ -635,6 +672,10 @@ no longer extract rejected members when
 <a class="reference internal" href="../library/tarfile.html#tarfile.TarFile.errorlevel" title="tarfile.TarFile.errorlevel"><code class="xref py py-func docutils literal notranslate"><span class="pre">errorlevel()</span></code></a> is zero.
 (Contributed by Matt Prodani and Petr Viktorin in <a class="reference external" href="https://github.com/python/cpython/issues/112887">gh-112887</a>
 and <span class="target" id="index-7"></span><a class="cve reference external" href="https://www.cve.org/CVERecord?id=CVE-2025-4435"><strong>CVE 2025-4435</strong></a>.)</p></li>
+<li><p><a class="reference internal" href="../library/tarfile.html#tarfile.TarFile.extract" title="tarfile.TarFile.extract"><code class="xref py py-func docutils literal notranslate"><span class="pre">extract()</span></code></a> and <a class="reference internal" href="../library/tarfile.html#tarfile.TarFile.extractall" title="tarfile.TarFile.extractall"><code class="xref py py-func docutils literal notranslate"><span class="pre">extractall()</span></code></a>
+now replace slashes by backslashes in symlink targets on Windows to prevent
+creation of corrupted links.
+(Contributed by Christoph Walcher in <a class="reference external" href="https://github.com/python/cpython/issues/57911">gh-57911</a>.)</p></li>
 </ul>
 </section>
 <section id="types">
@@ -823,7 +864,11 @@ functions as replacements for <a class="reference internal" href="../c-api/sys.h
 (Contributed by Serhiy Storchaka in <a class="reference external" href="https://github.com/python/cpython/issues/108512">gh-108512</a>.)</p></li>
 <li><p>Add <a class="reference internal" href="../c-api/unicode.html#c.PyUnstable_Unicode_GET_CACHED_HASH" title="PyUnstable_Unicode_GET_CACHED_HASH"><code class="xref c c-type docutils literal notranslate"><span class="pre">PyUnstable_Unicode_GET_CACHED_HASH</span></code></a> to get the cached hash of
 a string. See the documentation for caveats.
-(Contributed by Petr Viktorin in <a class="reference external" href="https://github.com/python/cpython/issues/131510">gh-131510</a>)</p></li>
+(Contributed by Petr Viktorin in <a class="reference external" href="https://github.com/python/cpython/issues/131510">gh-131510</a>.)</p></li>
+<li><p>Add API for checking an extension module’s ABI compatibility:
+<a class="reference internal" href="../c-api/module.html#c.Py_mod_abi" title="Py_mod_abi"><code class="xref c c-data docutils literal notranslate"><span class="pre">Py_mod_abi</span></code></a>, <a class="reference internal" href="../c-api/stable.html#c.PyABIInfo_Check" title="PyABIInfo_Check"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyABIInfo_Check()</span></code></a>, <a class="reference internal" href="../c-api/stable.html#c.PyABIInfo_VAR" title="PyABIInfo_VAR"><code class="xref c c-macro docutils literal notranslate"><span class="pre">PyABIInfo_VAR</span></code></a>
+and <a class="reference internal" href="../c-api/module.html#c.Py_mod_abi" title="Py_mod_abi"><code class="xref c c-data docutils literal notranslate"><span class="pre">Py_mod_abi</span></code></a>.
+(Contributed by Petr Viktorin in <a class="reference external" href="https://github.com/python/cpython/issues/137210">gh-137210</a>.)</p></li>
 </ul>
 </section>
 <section id="id3">
@@ -849,6 +894,8 @@ Passing a negative integer value that corresponded to its old value
 (such as <code class="docutils literal notranslate"><span class="pre">-1</span></code> or <code class="docutils literal notranslate"><span class="pre">-3</span></code>, depending on platform) to
 <a class="reference internal" href="../library/resource.html#resource.setrlimit" title="resource.setrlimit"><code class="xref py py-func docutils literal notranslate"><span class="pre">resource.setrlimit()</span></code></a> and <a class="reference internal" href="../library/resource.html#resource.prlimit" title="resource.prlimit"><code class="xref py py-func docutils literal notranslate"><span class="pre">resource.prlimit()</span></code></a> is now deprecated.
 (Contributed by Serhiy Storchaka in <a class="reference external" href="https://github.com/python/cpython/issues/137044">gh-137044</a>.)</p></li>
+<li><p><a class="reference internal" href="../library/mmap.html#mmap.mmap.resize" title="mmap.mmap.resize"><code class="xref py py-meth docutils literal notranslate"><span class="pre">resize()</span></code></a> has been removed on platforms that don’t support the
+underlying syscall, instead of raising a <a class="reference internal" href="../library/exceptions.html#SystemError" title="SystemError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">SystemError</span></code></a>.</p></li>
 </ul>
 </section>
 <section id="deprecated-c-apis">
@@ -887,7 +934,7 @@ Use <a class="reference internal" href="../c-api/codec.html#c.PyCodec_Encode" ti
 Use <a class="reference internal" href="../c-api/codec.html#c.PyCodec_Encode" title="PyCodec_Encode"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyCodec_Encode()</span></code></a> instead; Note that some codecs (for example, „base64”)
 may return a type other than <a class="reference internal" href="../library/stdtypes.html#bytes" title="bytes"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a>, such as <a class="reference internal" href="../library/stdtypes.html#str" title="str"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>.</p></li>
 </ul>
-<p>(Contributed by Stan Ulbrych in <a class="reference external" href="https://github.com/python/cpython/issues/133612">gh-133612</a>)</p>
+<p>(Contributed by Stan Ulbrych in <a class="reference external" href="https://github.com/python/cpython/issues/133612">gh-133612</a>.)</p>
 </li>
 <li><p><code class="xref c c-func docutils literal notranslate"><span class="pre">PyImport_ImportModuleNoBlock()</span></code>: deprecated alias
 of <a class="reference internal" href="../c-api/import.html#c.PyImport_ImportModule" title="PyImport_ImportModule"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyImport_ImportModule()</span></code></a>.
@@ -939,7 +986,7 @@ use <a class="reference internal" href="../c-api/init_config.html#c.PyConfig_Get
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#">What’s new in Python 3.15</a><ul>
 <li><a class="reference internal" href="#summary-release-highlights">Summary — release highlights</a></li>
@@ -958,11 +1005,13 @@ use <a class="reference internal" href="../c-api/init_config.html#c.PyConfig_Get
 <li><a class="reference internal" href="#http-cookies">http.cookies</a></li>
 <li><a class="reference internal" href="#locale">locale</a></li>
 <li><a class="reference internal" href="#math">math</a></li>
+<li><a class="reference internal" href="#mmap">mmap</a></li>
 <li><a class="reference internal" href="#os-path">os.path</a></li>
 <li><a class="reference internal" href="#resource">resource</a></li>
 <li><a class="reference internal" href="#shelve">shelve</a></li>
 <li><a class="reference internal" href="#sqlite3">sqlite3</a></li>
 <li><a class="reference internal" href="#ssl">ssl</a></li>
+<li><a class="reference internal" href="#sys">sys</a></li>
 <li><a class="reference internal" href="#tarfile">tarfile</a></li>
 <li><a class="reference internal" href="#types">types</a></li>
 <li><a class="reference internal" href="#unittest">unittest</a></li>
@@ -1006,14 +1055,14 @@ use <a class="reference internal" href="../c-api/init_config.html#c.PyConfig_Get
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="index.html"
-                          title="previous chapter">What’s New in Python</a></p>
+                          title="poprzedni rozdział">Co nowego w Pythonie</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="3.14.html"
-                          title="next chapter">What’s new in Python 3.14</a></p>
+                          title="następny rozdział">What’s new in Python 3.14</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -1027,7 +1076,7 @@ use <a class="reference internal" href="../c-api/init_config.html#c.PyConfig_Get
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -1047,7 +1096,7 @@ use <a class="reference internal" href="../c-api/init_config.html#c.PyConfig_Get
           <a href="3.14.html" title="What’s new in Python 3.14"
              >dalej</a> |</li>
         <li class="right" >
-          <a href="index.html" title="What’s New in Python"
+          <a href="index.html" title="Co nowego w Pythonie"
              >wstecz</a> |</li>
 
           <li><img src="../_static/py.svg" alt="Python logo" style="vertical-align: middle; margin-top: -1px"></li>
@@ -1063,7 +1112,7 @@ use <a class="reference internal" href="../c-api/init_config.html#c.PyConfig_Get
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >What’s New in Python</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Co nowego w Pythonie</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">What’s new in Python 3.15</a></li>
                 <li class="right">
                     
@@ -1111,7 +1160,7 @@ use <a class="reference internal" href="../c-api/init_config.html#c.PyConfig_Get
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

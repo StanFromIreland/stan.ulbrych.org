@@ -31,11 +31,11 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="subprocess — Subprocess management" href="subprocess.html" />
     <link rel="prev" title="concurrent.futures — Launching parallel tasks" href="concurrent.futures.html" />
@@ -98,11 +98,11 @@
     </select>
 </label>
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">concurrent.interpreters</span></code> — Multiple interpreters in the same process</a><ul>
 <li><a class="reference internal" href="#key-details">Key details</a></li>
-<li><a class="reference internal" href="#introduction">Introduction</a><ul>
+<li><a class="reference internal" href="#introduction">Wprowadzenie</a><ul>
 <li><a class="reference internal" href="#multiple-interpreters-and-isolation">Multiple Interpreters and Isolation</a></li>
 <li><a class="reference internal" href="#running-in-an-interpreter">Running in an Interpreter</a></li>
 <li><a class="reference internal" href="#concurrency-and-parallelism">Concurrency and Parallelism</a></li>
@@ -112,7 +112,7 @@
 </li>
 <li><a class="reference internal" href="#reference">Reference</a><ul>
 <li><a class="reference internal" href="#interpreter-objects">Interpreter objects</a></li>
-<li><a class="reference internal" href="#exceptions">Exceptions</a></li>
+<li><a class="reference internal" href="#exceptions">Wyjątki</a></li>
 <li><a class="reference internal" href="#communicating-between-interpreters">Communicating Between Interpreters</a></li>
 </ul>
 </li>
@@ -123,14 +123,14 @@
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="concurrent.futures.html"
-                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">concurrent.futures</span></code> — Launching parallel tasks</a></p>
+                          title="poprzedni rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">concurrent.futures</span></code> — Launching parallel tasks</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="subprocess.html"
-                          title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">subprocess</span></code> — Subprocess management</a></p>
+                          title="następny rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">subprocess</span></code> — Subprocess management</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -177,7 +177,7 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="concurrency.html" accesskey="U">Concurrent Execution</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">concurrent.interpreters</span></code> — Multiple interpreters in the same process</a></li>
                 <li class="right">
@@ -241,7 +241,7 @@ Actual concurrency is available separately through
 <p><span class="target" id="index-2"></span><a class="pep reference external" href="https://peps.python.org/pep-0684/"><strong>PEP 684</strong></a></p>
 </div>
 <div class="availability docutils container">
-<p><a class="reference internal" href="intro.html#availability"><span class="std std-ref">Availability</span></a>: not WASI.</p>
+<p><a class="reference internal" href="intro.html#availability"><span class="std std-ref">Dostępność</span></a>: not WASI.</p>
 <p>This module does not work or is not available on WebAssembly. See
 <a class="reference internal" href="intro.html#wasm-availability"><span class="std std-ref">WebAssembly platforms</span></a> for more information.</p>
 </div>
@@ -256,7 +256,7 @@ to keep in mind about using multiple interpreters:</p>
 </ul>
 </section>
 <section id="introduction">
-<span id="interpreters-intro"></span><h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">¶</a></h2>
+<span id="interpreters-intro"></span><h2>Wprowadzenie<a class="headerlink" href="#introduction" title="Link to this heading">¶</a></h2>
 <p>An „interpreter” is effectively the execution context of the Python
 runtime.  It contains all of the state the runtime needs to execute
 a program.  This includes things like the import state and builtins.
@@ -475,7 +475,7 @@ interpreter (in the current thread).</p>
 
 </section>
 <section id="exceptions">
-<h3>Exceptions<a class="headerlink" href="#exceptions" title="Link to this heading">¶</a></h3>
+<h3>Wyjątki<a class="headerlink" href="#exceptions" title="Link to this heading">¶</a></h3>
 <dl class="py exception">
 <dt class="sig sig-object py" id="concurrent.interpreters.InterpreterError">
 <em class="property"><span class="k"><span class="pre">exception</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">concurrent.interpreters.</span></span><span class="sig-name descname"><span class="pre">InterpreterError</span></span><a class="headerlink" href="#concurrent.interpreters.InterpreterError" title="Link to this definition">¶</a></dt>
@@ -596,11 +596,11 @@ is full.</p>
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">concurrent.interpreters</span></code> — Multiple interpreters in the same process</a><ul>
 <li><a class="reference internal" href="#key-details">Key details</a></li>
-<li><a class="reference internal" href="#introduction">Introduction</a><ul>
+<li><a class="reference internal" href="#introduction">Wprowadzenie</a><ul>
 <li><a class="reference internal" href="#multiple-interpreters-and-isolation">Multiple Interpreters and Isolation</a></li>
 <li><a class="reference internal" href="#running-in-an-interpreter">Running in an Interpreter</a></li>
 <li><a class="reference internal" href="#concurrency-and-parallelism">Concurrency and Parallelism</a></li>
@@ -610,7 +610,7 @@ is full.</p>
 </li>
 <li><a class="reference internal" href="#reference">Reference</a><ul>
 <li><a class="reference internal" href="#interpreter-objects">Interpreter objects</a></li>
-<li><a class="reference internal" href="#exceptions">Exceptions</a></li>
+<li><a class="reference internal" href="#exceptions">Wyjątki</a></li>
 <li><a class="reference internal" href="#communicating-between-interpreters">Communicating Between Interpreters</a></li>
 </ul>
 </li>
@@ -621,14 +621,14 @@ is full.</p>
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="concurrent.futures.html"
-                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">concurrent.futures</span></code> — Launching parallel tasks</a></p>
+                          title="poprzedni rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">concurrent.futures</span></code> — Launching parallel tasks</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="subprocess.html"
-                          title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">subprocess</span></code> — Subprocess management</a></p>
+                          title="następny rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">subprocess</span></code> — Subprocess management</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -642,7 +642,7 @@ is full.</p>
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -678,7 +678,7 @@ is full.</p>
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="concurrency.html" >Concurrent Execution</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">concurrent.interpreters</span></code> — Multiple interpreters in the same process</a></li>
                 <li class="right">
@@ -727,7 +727,7 @@ is full.</p>
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

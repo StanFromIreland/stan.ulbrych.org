@@ -31,11 +31,11 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="tracemalloc — Trace memory allocations" href="tracemalloc.html" />
     <link rel="prev" title="timeit — Measure execution time of small code snippets" href="timeit.html" />
@@ -98,30 +98,30 @@
     </select>
 </label>
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">trace</span></code> — Trace or track Python statement execution</a><ul>
-<li><a class="reference internal" href="#command-line-usage">Command-Line Usage</a><ul>
+<li><a class="reference internal" href="#command-line-usage">Використання командного рядка</a><ul>
 <li><a class="reference internal" href="#main-options">Main options</a></li>
 <li><a class="reference internal" href="#modifiers">Modifiers</a></li>
 <li><a class="reference internal" href="#filters">Filters</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#programmatic-interface">Programmatic Interface</a></li>
+<li><a class="reference internal" href="#programmatic-interface">Програмний інтерфейс</a></li>
 </ul>
 </li>
 </ul>
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="timeit.html"
-                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">timeit</span></code> — Measure execution time of small code snippets</a></p>
+                          title="poprzedni rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">timeit</span></code> — Measure execution time of small code snippets</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="tracemalloc.html"
-                          title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">tracemalloc</span></code> — Trace memory allocations</a></p>
+                          title="następny rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">tracemalloc</span></code> — Trace memory allocations</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -168,8 +168,8 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
-          <li class="nav-item nav-item-2"><a href="debug.html" accesskey="U">Debugging and Profiling</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="debug.html" accesskey="U">Debugowanie i profilowanie</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">trace</span></code> — Trace or track Python statement execution</a></li>
                 <li class="right">
                     
@@ -217,7 +217,7 @@ output along with advanced features such as branch coverage.</p>
 </dl>
 </div>
 <section id="command-line-usage">
-<span id="trace-cli"></span><h2>Command-Line Usage<a class="headerlink" href="#command-line-usage" title="Link to this heading">¶</a></h2>
+<span id="trace-cli"></span><h2>Використання командного рядка<a class="headerlink" href="#command-line-usage" title="Link to this heading">¶</a></h2>
 <p>The <a class="reference internal" href="#module-trace" title="trace: Trace or track Python statement execution."><code class="xref py py-mod docutils literal notranslate"><span class="pre">trace</span></code></a> module can be invoked from the command line.  It can be as
 simple as</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">trace</span> <span class="o">--</span><span class="n">count</span> <span class="o">-</span><span class="n">C</span> <span class="o">.</span> <span class="n">somefile</span><span class="o">.</span><span class="n">py</span> <span class="o">...</span>
@@ -349,7 +349,7 @@ The argument can be a list of directories separated by <a class="reference inter
 </section>
 </section>
 <section id="programmatic-interface">
-<span id="trace-api"></span><h2>Programmatic Interface<a class="headerlink" href="#programmatic-interface" title="Link to this heading">¶</a></h2>
+<span id="trace-api"></span><h2>Програмний інтерфейс<a class="headerlink" href="#programmatic-interface" title="Link to this heading">¶</a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="trace.Trace">
 <em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">trace.</span></span><span class="sig-name descname"><span class="pre">Trace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">count</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trace</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">countfuncs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">countcallers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignoremods</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignoredirs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">infile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outfile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timing</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#trace.Trace" title="Link to this definition">¶</a></dt>
@@ -457,30 +457,30 @@ raise a <a class="reference internal" href="exceptions.html#FileNotFoundError" t
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">trace</span></code> — Trace or track Python statement execution</a><ul>
-<li><a class="reference internal" href="#command-line-usage">Command-Line Usage</a><ul>
+<li><a class="reference internal" href="#command-line-usage">Використання командного рядка</a><ul>
 <li><a class="reference internal" href="#main-options">Main options</a></li>
 <li><a class="reference internal" href="#modifiers">Modifiers</a></li>
 <li><a class="reference internal" href="#filters">Filters</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#programmatic-interface">Programmatic Interface</a></li>
+<li><a class="reference internal" href="#programmatic-interface">Програмний інтерфейс</a></li>
 </ul>
 </li>
 </ul>
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="timeit.html"
-                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">timeit</span></code> — Measure execution time of small code snippets</a></p>
+                          title="poprzedni rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">timeit</span></code> — Measure execution time of small code snippets</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="tracemalloc.html"
-                          title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">tracemalloc</span></code> — Trace memory allocations</a></p>
+                          title="następny rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">tracemalloc</span></code> — Trace memory allocations</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -494,7 +494,7 @@ raise a <a class="reference internal" href="exceptions.html#FileNotFoundError" t
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -530,8 +530,8 @@ raise a <a class="reference internal" href="exceptions.html#FileNotFoundError" t
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
-          <li class="nav-item nav-item-2"><a href="debug.html" >Debugging and Profiling</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="debug.html" >Debugowanie i profilowanie</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">trace</span></code> — Trace or track Python statement execution</a></li>
                 <li class="right">
                     
@@ -579,7 +579,7 @@ raise a <a class="reference internal" href="exceptions.html#FileNotFoundError" t
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

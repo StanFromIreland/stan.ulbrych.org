@@ -4,19 +4,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="heapq — Heap queue algorithm" />
+<meta property="og:title" content="heapq — Algorytm kolejki kopcowej" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://docs.python.org/3/library/heapq.html" />
 <meta property="og:site_name" content="Python documentation" />
-<meta property="og:description" content="Source code: Lib/heapq.py This module provides an implementation of the heap queue algorithm, also known as the priority queue algorithm. Min-heaps are binary trees for which every parent node has ..." />
+<meta property="og:description" content="Kod źródłowy: Lib/heapq.py Ten moduł zawiera implementację algorytmu kolejki kopcowej, znanego również jako algorytm kolejki priorytetowej. Min-kopce to drzewa binarne, w których każdy węzeł nadrzę..." />
 <meta property="og:image" content="_static/og-image.png" />
 <meta property="og:image:alt" content="Python documentation" />
-<meta name="description" content="Source code: Lib/heapq.py This module provides an implementation of the heap queue algorithm, also known as the priority queue algorithm. Min-heaps are binary trees for which every parent node has ..." />
+<meta name="description" content="Kod źródłowy: Lib/heapq.py Ten moduł zawiera implementację algorytmu kolejki kopcowej, znanego również jako algorytm kolejki priorytetowej. Min-kopce to drzewa binarne, w których każdy węzeł nadrzę..." />
 <meta name="theme-color" content="#3776ab">
 <meta property="og:image:width" content="200">
 <meta property="og:image:height" content="200">
 
-    <title>heapq — Heap queue algorithm &#8212; Python 3.15.0a0 - dokumentacja</title><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>heapq — Algorytm kolejki kopcowej &#8212; Python 3.15.0a0 - dokumentacja</title><meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=234b1a7c" />
@@ -31,11 +31,11 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="bisect — Array bisection algorithm" href="bisect.html" />
     <link rel="prev" title="collections.abc — Abstract Base Classes for Containers" href="collections.abc.html" />
@@ -98,27 +98,27 @@
     </select>
 </label>
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">heapq</span></code> — Heap queue algorithm</a><ul>
-<li><a class="reference internal" href="#basic-examples">Basic Examples</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">heapq</span></code> — Algorytm kolejki kopcowej</a><ul>
+<li><a class="reference internal" href="#basic-examples">Podstawowe przykłady</a></li>
 <li><a class="reference internal" href="#other-applications">Other Applications</a></li>
 <li><a class="reference internal" href="#priority-queue-implementation-notes">Priority Queue Implementation Notes</a></li>
-<li><a class="reference internal" href="#theory">Theory</a></li>
+<li><a class="reference internal" href="#theory">Teoria</a></li>
 </ul>
 </li>
 </ul>
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="collections.abc.html"
-                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">collections.abc</span></code> — Abstract Base Classes for Containers</a></p>
+                          title="poprzedni rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">collections.abc</span></code> — Abstract Base Classes for Containers</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="bisect.html"
-                          title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">bisect</span></code> — Array bisection algorithm</a></p>
+                          title="następny rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">bisect</span></code> — Array bisection algorithm</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -165,9 +165,9 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
-          <li class="nav-item nav-item-2"><a href="datatypes.html" accesskey="U">Data Types</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">heapq</span></code> — Heap queue algorithm</a></li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="datatypes.html" accesskey="U">Typy danych</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">heapq</span></code> — Algorytm kolejki kopcowej</a></li>
                 <li class="right">
                     
 
@@ -198,19 +198,12 @@
           <div class="body" role="main">
             
   <section id="module-heapq">
-<span id="heapq-heap-queue-algorithm"></span><h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">heapq</span></code> — Heap queue algorithm<a class="headerlink" href="#module-heapq" title="Link to this heading">¶</a></h1>
-<p><strong>Source code:</strong> <a class="extlink-source reference external" href="https://github.com/python/cpython/tree/main/Lib/heapq.py">Lib/heapq.py</a></p>
+<span id="heapq-heap-queue-algorithm"></span><h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">heapq</span></code> — Algorytm kolejki kopcowej<a class="headerlink" href="#module-heapq" title="Link to this heading">¶</a></h1>
+<p><strong>Kod źródłowy:</strong> <a class="extlink-source reference external" href="https://github.com/python/cpython/tree/main/Lib/heapq.py">Lib/heapq.py</a></p>
 <hr class="docutils" />
-<p>This module provides an implementation of the heap queue algorithm, also known
-as the priority queue algorithm.</p>
-<p>Min-heaps are binary trees for which every parent node has a value less than
-or equal to any of its children.
-We refer to this condition as the heap invariant.</p>
-<p>For min-heaps, this implementation uses lists for which
-<code class="docutils literal notranslate"><span class="pre">heap[k]</span> <span class="pre">&lt;=</span> <span class="pre">heap[2*k+1]</span></code> and <code class="docutils literal notranslate"><span class="pre">heap[k]</span> <span class="pre">&lt;=</span> <span class="pre">heap[2*k+2]</span></code> for all <em>k</em> for which
-the compared elements exist.  Elements are counted from zero.  The interesting
-property of a min-heap is that its smallest element is always the root,
-<code class="docutils literal notranslate"><span class="pre">heap[0]</span></code>.</p>
+<p>Ten moduł zawiera implementację algorytmu kolejki kopcowej, znanego również jako algorytm kolejki priorytetowej.</p>
+<p>Min-kopce to drzewa binarne, w których każdy węzeł nadrzędny ma wartość mniejszą lub równą dowolnemu z jego dzieci. Warunek ten nazywamy niezmiennikiem kopca.</p>
+<p>Dla min-kopców, ta implementacja używa list, w których <code class="docutils literal notranslate"><span class="pre">kopiec[k]</span> <span class="pre">&lt;=</span> <span class="pre">kopiec[2*k+1]</span></code> i <code class="docutils literal notranslate"><span class="pre">kopiec[k]</span> <span class="pre">&lt;=</span> <span class="pre">kopiec[2*k+2]</span></code> dla wszystkich <em>k</em> dla których istnieją porównywane elementy.  Elementy są indeksowane od zera.  Interesującą właściwość min-kopców jest to, że ich najmniejszy element jest zawsze korzeniem, <code class="docutils literal notranslate"><span class="pre">kopiec[0]</span></code>.</p>
 <p>Max-heaps satisfy the reverse invariant: every parent node has a value
 <em>greater</em> than any of its children.  These are implemented as lists for which
 <code class="docutils literal notranslate"><span class="pre">maxheap[2*k+1]</span> <span class="pre">&lt;=</span> <span class="pre">maxheap[k]</span></code> and <code class="docutils literal notranslate"><span class="pre">maxheap[2*k+2]</span> <span class="pre">&lt;=</span> <span class="pre">maxheap[k]</span></code> for all
@@ -345,7 +338,7 @@ over the sorted values.</p>
 <p>Similar to <code class="docutils literal notranslate"><span class="pre">sorted(itertools.chain(*iterables))</span></code> but returns an iterable, does
 not pull the data into memory all at once, and assumes that each of the input
 streams is already sorted (smallest to largest).</p>
-<p>Has two optional arguments which must be specified as keyword arguments.</p>
+<p>Posiada dwa opcjonalne argumenty, które muszą być określone jako argument nazwany.</p>
 <p><em>key</em> specifies a <a class="reference internal" href="../glossary.html#term-key-function"><span class="xref std std-term">key function</span></a> of one argument that is used to
 extract a comparison key from each input element.  The default value is
 <code class="docutils literal notranslate"><span class="pre">None</span></code> (compare the elements directly).</p>
@@ -383,7 +376,7 @@ values, it is more efficient to use the <a class="reference internal" href="func
 functions.  If repeated usage of these functions is required, consider turning
 the iterable into an actual heap.</p>
 <section id="basic-examples">
-<h2>Basic Examples<a class="headerlink" href="#basic-examples" title="Link to this heading">¶</a></h2>
+<h2>Podstawowe przykłady<a class="headerlink" href="#basic-examples" title="Link to this heading">¶</a></h2>
 <p>A <a class="reference external" href="https://en.wikipedia.org/wiki/Heapsort">heapsort</a> can be implemented by
 pushing all values onto a heap and then popping off the smallest values one at a
 time:</p>
@@ -511,7 +504,7 @@ entry as removed and add a new entry with the revised priority:</p>
 </div>
 </section>
 <section id="theory">
-<h2>Theory<a class="headerlink" href="#theory" title="Link to this heading">¶</a></h2>
+<h2>Teoria<a class="headerlink" href="#theory" title="Link to this heading">¶</a></h2>
 <p>Heaps are arrays for which <code class="docutils literal notranslate"><span class="pre">a[k]</span> <span class="pre">&lt;=</span> <span class="pre">a[2*k+1]</span></code> and <code class="docutils literal notranslate"><span class="pre">a[k]</span> <span class="pre">&lt;=</span> <span class="pre">a[2*k+2]</span></code> for all
 <em>k</em>, counting elements from 0.  For the sake of comparison, non-existing
 elements are considered to be infinite.  The interesting property of a heap is
@@ -566,7 +559,7 @@ heap completely vanishes, you switch heaps and start a new run.  Clever and
 quite effective!</p>
 <p>In a word, heaps are useful memory structures to know.  I use them in a few
 applications, and I think it is good to keep a «heap» module around. :-)</p>
-<p class="rubric">Footnotes</p>
+<p class="rubric">Przypisy</p>
 <aside class="footnote-list brackets">
 <aside class="footnote brackets" id="id2" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
@@ -592,27 +585,27 @@ always been a Great Art! :-)</p>
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">heapq</span></code> — Heap queue algorithm</a><ul>
-<li><a class="reference internal" href="#basic-examples">Basic Examples</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">heapq</span></code> — Algorytm kolejki kopcowej</a><ul>
+<li><a class="reference internal" href="#basic-examples">Podstawowe przykłady</a></li>
 <li><a class="reference internal" href="#other-applications">Other Applications</a></li>
 <li><a class="reference internal" href="#priority-queue-implementation-notes">Priority Queue Implementation Notes</a></li>
-<li><a class="reference internal" href="#theory">Theory</a></li>
+<li><a class="reference internal" href="#theory">Teoria</a></li>
 </ul>
 </li>
 </ul>
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="collections.abc.html"
-                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">collections.abc</span></code> — Abstract Base Classes for Containers</a></p>
+                          title="poprzedni rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">collections.abc</span></code> — Abstract Base Classes for Containers</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="bisect.html"
-                          title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">bisect</span></code> — Array bisection algorithm</a></p>
+                          title="następny rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">bisect</span></code> — Array bisection algorithm</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -626,7 +619,7 @@ always been a Great Art! :-)</p>
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -662,9 +655,9 @@ always been a Great Art! :-)</p>
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
-          <li class="nav-item nav-item-2"><a href="datatypes.html" >Data Types</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">heapq</span></code> — Heap queue algorithm</a></li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="datatypes.html" >Typy danych</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">heapq</span></code> — Algorytm kolejki kopcowej</a></li>
                 <li class="right">
                     
 
@@ -711,7 +704,7 @@ always been a Great Art! :-)</p>
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

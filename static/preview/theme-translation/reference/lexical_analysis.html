@@ -31,14 +31,14 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="3. Data model" href="datamodel.html" />
-    <link rel="prev" title="1. Introduction" href="introduction.html" />
+    <link rel="prev" title="1. Wprowadzenie" href="introduction.html" />
     
       
       <link rel="canonical" href="https://docs.python.org/3/reference/lexical_analysis.html">
@@ -98,7 +98,7 @@
     </select>
 </label>
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#">2. Lexical analysis</a><ul>
 <li><a class="reference internal" href="#line-structure">2.1. Line structure</a><ul>
@@ -148,22 +148,21 @@
 <li><a class="reference internal" href="#imaginary-literals">2.6.3. Imaginary literals</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#operators">2.7. Operators</a></li>
-<li><a class="reference internal" href="#delimiters">2.8. Delimiters</a></li>
+<li><a class="reference internal" href="#operators-and-delimiters">2.7. Operators and delimiters</a></li>
 </ul>
 </li>
 </ul>
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="introduction.html"
-                          title="previous chapter"><span class="section-number">1. </span>Introduction</a></p>
+                          title="poprzedni rozdział"><span class="section-number">1. </span>Wprowadzenie</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="datamodel.html"
-                          title="next chapter"><span class="section-number">3. </span>Data model</a></p>
+                          title="następny rozdział"><span class="section-number">3. </span>Data model</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -194,7 +193,7 @@
           <a href="datamodel.html" title="3. Data model"
              accesskey="N">dalej</a> |</li>
         <li class="right" >
-          <a href="introduction.html" title="1. Introduction"
+          <a href="introduction.html" title="1. Wprowadzenie"
              accesskey="P">wstecz</a> |</li>
 
           <li><img src="../_static/py.svg" alt="Python logo" style="vertical-align: middle; margin-top: -1px"></li>
@@ -210,7 +209,7 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">The Python Language Reference</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Dokumentacja języka Python</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><span class="section-number">2. </span>Lexical analysis</a></li>
                 <li class="right">
                     
@@ -687,10 +686,10 @@ to indicate that an ending quote ends the literal.</p>
 <strong id="grammar-token-python-grammar-STRING">STRING</strong>:          [<a class="reference internal" href="#grammar-token-python-grammar-stringprefix"><code class="xref docutils literal notranslate"><span class="pre">stringprefix</span></code></a>] (<a class="reference internal" href="#grammar-token-python-grammar-stringcontent"><code class="xref docutils literal notranslate"><span class="pre">stringcontent</span></code></a>)
 <strong id="grammar-token-python-grammar-stringprefix">stringprefix</strong>:    &lt;(<span class="sx">&quot;r&quot;</span> | <span class="sx">&quot;u&quot;</span> | <span class="sx">&quot;b&quot;</span> | <span class="sx">&quot;br&quot;</span> | <span class="sx">&quot;rb&quot;</span>), case-insensitive&gt;
 <strong id="grammar-token-python-grammar-stringcontent">stringcontent</strong>:
-   | <span class="sx">&quot;'&quot;</span> ( !<span class="sx">&quot;'&quot;</span> <a class="reference internal" href="#grammar-token-python-grammar-stringitem"><code class="xref docutils literal notranslate"><span class="pre">stringitem</span></code></a>)* <span class="sx">&quot;'&quot;</span>
-   | <span class="sx">'&quot;'</span> ( !<span class="sx">'&quot;'</span> <a class="reference internal" href="#grammar-token-python-grammar-stringitem"><code class="xref docutils literal notranslate"><span class="pre">stringitem</span></code></a>)* <span class="sx">'&quot;'</span>
    | <span class="sx">&quot;'''&quot;</span> ( !<span class="sx">&quot;'''&quot;</span> <a class="reference internal" href="#grammar-token-python-grammar-longstringitem"><code class="xref docutils literal notranslate"><span class="pre">longstringitem</span></code></a>)* <span class="sx">&quot;'''&quot;</span>
    | <span class="sx">'&quot;&quot;&quot;'</span> ( !<span class="sx">'&quot;&quot;&quot;'</span> <a class="reference internal" href="#grammar-token-python-grammar-longstringitem"><code class="xref docutils literal notranslate"><span class="pre">longstringitem</span></code></a>)* <span class="sx">'&quot;&quot;&quot;'</span>
+   | <span class="sx">&quot;'&quot;</span> ( !<span class="sx">&quot;'&quot;</span> <a class="reference internal" href="#grammar-token-python-grammar-stringitem"><code class="xref docutils literal notranslate"><span class="pre">stringitem</span></code></a>)* <span class="sx">&quot;'&quot;</span>
+   | <span class="sx">'&quot;'</span> ( !<span class="sx">'&quot;'</span> <a class="reference internal" href="#grammar-token-python-grammar-stringitem"><code class="xref docutils literal notranslate"><span class="pre">stringitem</span></code></a>)* <span class="sx">'&quot;'</span>
 <strong id="grammar-token-python-grammar-stringitem">stringitem</strong>:      <a class="reference internal" href="#grammar-token-python-grammar-stringchar"><code class="xref docutils literal notranslate"><span class="pre">stringchar</span></code></a> | <a class="reference internal" href="#grammar-token-python-grammar-stringescapeseq"><code class="xref docutils literal notranslate"><span class="pre">stringescapeseq</span></code></a>
 <strong id="grammar-token-python-grammar-stringchar">stringchar</strong>:      &lt;any <a class="reference internal" href="#grammar-token-python-grammar-source_character"><code class="xref docutils literal notranslate"><span class="pre">source_character</span></code></a>, except backslash and newline&gt;
 <strong id="grammar-token-python-grammar-longstringitem">longstringitem</strong>:  <a class="reference internal" href="#grammar-token-python-grammar-stringitem"><code class="xref docutils literal notranslate"><span class="pre">stringitem</span></code></a> | newline
@@ -708,7 +707,7 @@ Standard C.  The recognized escape sequences are:</p>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Escape Sequence</p></th>
-<th class="head"><p>Meaning</p></th>
+<th class="head"><p>Znaczenie</p></th>
 </tr>
 </thead>
 <tbody>
@@ -1277,44 +1276,49 @@ That means you can use <code class="docutils literal notranslate"><span class="p
 </pre>
 </section>
 </section>
-<section id="operators">
-<span id="id15"></span><h2><span class="section-number">2.7. </span>Operators<a class="headerlink" href="#operators" title="Link to this heading">¶</a></h2>
-<p id="index-30">The following tokens are operators:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>+       -       *       **      /       //      %      @
-&lt;&lt;      &gt;&gt;      &amp;       |       ^       ~       :=
-&lt;       &gt;       &lt;=      &gt;=      ==      !=
-</pre></div>
+<section id="operators-and-delimiters">
+<span id="lexical-ellipsis"></span><span id="operators"></span><span id="delimiters"></span><h2><span class="section-number">2.7. </span>Operators and delimiters<a class="headerlink" href="#operators-and-delimiters" title="Link to this heading">¶</a></h2>
+<p id="index-30">The following grammar defines <em class="dfn">operator</em> and <em class="dfn">delimiter</em> tokens,
+that is, the generic <a class="reference internal" href="../library/token.html#token.OP" title="token.OP"><code class="xref py py-data docutils literal notranslate"><span class="pre">OP</span></code></a> token type.
+A <a class="reference internal" href="../library/token.html#token-operators-delimiters"><span class="std std-ref">list of these tokens and their names</span></a>
+is also available in the <code class="xref py py-mod docutils literal notranslate"><span class="pre">token</span></code> module documentation.</p>
+<pre class="highlight">
+<strong id="grammar-token-python-grammar-OP">OP</strong>:
+   | assignment_operator
+   | bitwise_operator
+   | comparison_operator
+   | enclosing_delimiter
+   | other_delimiter
+   | arithmetic_operator
+   | <span class="sx">&quot;...&quot;</span>
+   | other_op
+
+<strong id="grammar-token-python-grammar-assignment_operator">assignment_operator</strong>:   <span class="sx">&quot;+=&quot;</span> | <span class="sx">&quot;-=&quot;</span> | <span class="sx">&quot;*=&quot;</span> | <span class="sx">&quot;**=&quot;</span> | <span class="sx">&quot;/=&quot;</span>  | <span class="sx">&quot;//=&quot;</span> | <span class="sx">&quot;%=&quot;</span> |
+                       <span class="sx">&quot;&amp;=&quot;</span> | <span class="sx">&quot;|=&quot;</span> | <span class="sx">&quot;^=&quot;</span> | <span class="sx">&quot;&lt;&lt;=&quot;</span> | <span class="sx">&quot;&gt;&gt;=&quot;</span> | <span class="sx">&quot;&#64;=&quot;</span>  | <span class="sx">&quot;:=&quot;</span>
+<strong id="grammar-token-python-grammar-bitwise_operator">bitwise_operator</strong>:      <span class="sx">&quot;&amp;&quot;</span>  | <span class="sx">&quot;|&quot;</span>  | <span class="sx">&quot;^&quot;</span>  | <span class="sx">&quot;~&quot;</span>   | <span class="sx">&quot;&lt;&lt;&quot;</span>  | <span class="sx">&quot;&gt;&gt;&quot;</span>
+<strong id="grammar-token-python-grammar-comparison_operator">comparison_operator</strong>:   <span class="sx">&quot;&lt;=&quot;</span> | <span class="sx">&quot;&gt;=&quot;</span> | <span class="sx">&quot;&lt;&quot;</span>  | <span class="sx">&quot;&gt;&quot;</span>   | <span class="sx">&quot;==&quot;</span>  | <span class="sx">&quot;!=&quot;</span>
+<strong id="grammar-token-python-grammar-enclosing_delimiter">enclosing_delimiter</strong>:   <span class="sx">&quot;(&quot;</span>  | <span class="sx">&quot;)&quot;</span>  | <span class="sx">&quot;[&quot;</span>  | <span class="sx">&quot;]&quot;</span>   | <span class="sx">&quot;{&quot;</span>   | <span class="sx">&quot;}&quot;</span>
+<strong id="grammar-token-python-grammar-other_delimiter">other_delimiter</strong>:       <span class="sx">&quot;,&quot;</span>  | <span class="sx">&quot;:&quot;</span>  | <span class="sx">&quot;!&quot;</span>  | <span class="sx">&quot;;&quot;</span>   | <span class="sx">&quot;=&quot;</span>   | <span class="sx">&quot;-&gt;&quot;</span>
+<strong id="grammar-token-python-grammar-arithmetic_operator">arithmetic_operator</strong>:   <span class="sx">&quot;+&quot;</span>  | <span class="sx">&quot;-&quot;</span>  | <span class="sx">&quot;**&quot;</span> | <span class="sx">&quot;*&quot;</span>   | <span class="sx">&quot;//&quot;</span>  | <span class="sx">&quot;/&quot;</span>   | <span class="sx">&quot;%&quot;</span>
+<strong id="grammar-token-python-grammar-other_op">other_op</strong>:              <span class="sx">&quot;.&quot;</span>  | <span class="sx">&quot;&#64;&quot;</span>
+</pre>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>Generally, <em>operators</em> are used to combine <a class="reference internal" href="expressions.html#expressions"><span class="std std-ref">expressions</span></a>,
+while <em>delimiters</em> serve other purposes.
+However, there is no clear, formal distinction between the two categories.</p>
+<p>Some tokens can serve as either operators or delimiters, depending on usage.
+For example, <code class="docutils literal notranslate"><span class="pre">*</span></code> is both the multiplication operator and a delimiter used
+for sequence unpacking, and <code class="docutils literal notranslate"><span class="pre">&#64;</span></code> is both the matrix multiplication and
+a delimiter that introduces decorators.</p>
+<p>For some tokens, the distinction is unclear.
+For example, some people consider <code class="docutils literal notranslate"><span class="pre">.</span></code>, <code class="docutils literal notranslate"><span class="pre">(</span></code>, and <code class="docutils literal notranslate"><span class="pre">)</span></code> to be delimiters, while others
+see the <a class="reference internal" href="../library/functions.html#getattr" title="getattr"><code class="xref py py-func docutils literal notranslate"><span class="pre">getattr()</span></code></a> operator and the function call operator(s).</p>
+<p>Some of Python’s operators, like <code class="docutils literal notranslate"><span class="pre">and</span></code>, <code class="docutils literal notranslate"><span class="pre">or</span></code>, and <code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">in</span></code>, use
+<a class="reference internal" href="#keywords"><span class="std std-ref">keyword</span></a> tokens rather than „symbols” (operator tokens).</p>
 </div>
-</section>
-<section id="delimiters">
-<span id="id16"></span><h2><span class="section-number">2.8. </span>Delimiters<a class="headerlink" href="#delimiters" title="Link to this heading">¶</a></h2>
-<p id="index-31">The following tokens serve as delimiters in the grammar:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(       )       [       ]       {       }
-,       :       !       .       ;       @       =
-</pre></div>
-</div>
-<p>The period can also occur in floating-point and imaginary literals.</p>
-<p id="lexical-ellipsis">A sequence of three periods has a special meaning as an
-<a class="reference internal" href="../library/constants.html#Ellipsis" title="Ellipsis"><code class="xref py py-data docutils literal notranslate"><span class="pre">Ellipsis</span></code></a> literal:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>...
-</pre></div>
-</div>
-<p>The following <em>augmented assignment operators</em> serve
-lexically as delimiters, but also perform an operation:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>-&gt;      +=      -=      *=      /=      //=     %=
-@=      &amp;=      |=      ^=      &gt;&gt;=     &lt;&lt;=     **=
-</pre></div>
-</div>
-<p>The following printing ASCII characters have special meaning as part of other
-tokens or are otherwise significant to the lexical analyzer:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&#39;       &quot;       #       \
-</pre></div>
-</div>
-<p>The following printing ASCII characters are not used in Python.  Their
-occurrence outside string literals and comments is an unconditional error:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$       ?       `
-</pre></div>
-</div>
+<p>A sequence of three consecutive periods (<code class="docutils literal notranslate"><span class="pre">...</span></code>) has a special
+meaning as an <a class="reference internal" href="../library/constants.html#Ellipsis" title="Ellipsis"><code class="xref py py-data docutils literal notranslate"><span class="pre">Ellipsis</span></code></a> literal.</p>
 </section>
 </section>
 
@@ -1326,7 +1330,7 @@ occurrence outside string literals and comments is an unconditional error:</p>
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#">2. Lexical analysis</a><ul>
 <li><a class="reference internal" href="#line-structure">2.1. Line structure</a><ul>
@@ -1376,22 +1380,21 @@ occurrence outside string literals and comments is an unconditional error:</p>
 <li><a class="reference internal" href="#imaginary-literals">2.6.3. Imaginary literals</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#operators">2.7. Operators</a></li>
-<li><a class="reference internal" href="#delimiters">2.8. Delimiters</a></li>
+<li><a class="reference internal" href="#operators-and-delimiters">2.7. Operators and delimiters</a></li>
 </ul>
 </li>
 </ul>
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="introduction.html"
-                          title="previous chapter"><span class="section-number">1. </span>Introduction</a></p>
+                          title="poprzedni rozdział"><span class="section-number">1. </span>Wprowadzenie</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="datamodel.html"
-                          title="next chapter"><span class="section-number">3. </span>Data model</a></p>
+                          title="następny rozdział"><span class="section-number">3. </span>Data model</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -1405,7 +1408,7 @@ occurrence outside string literals and comments is an unconditional error:</p>
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -1425,7 +1428,7 @@ occurrence outside string literals and comments is an unconditional error:</p>
           <a href="datamodel.html" title="3. Data model"
              >dalej</a> |</li>
         <li class="right" >
-          <a href="introduction.html" title="1. Introduction"
+          <a href="introduction.html" title="1. Wprowadzenie"
              >wstecz</a> |</li>
 
           <li><img src="../_static/py.svg" alt="Python logo" style="vertical-align: middle; margin-top: -1px"></li>
@@ -1441,7 +1444,7 @@ occurrence outside string literals and comments is an unconditional error:</p>
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Language Reference</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Dokumentacja języka Python</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><span class="section-number">2. </span>Lexical analysis</a></li>
                 <li class="right">
                     
@@ -1489,7 +1492,7 @@ occurrence outside string literals and comments is an unconditional error:</p>
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

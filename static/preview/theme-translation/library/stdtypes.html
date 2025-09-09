@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="Built-in Types" />
+<meta property="og:title" content="Wbudowane typy" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://docs.python.org/3/library/stdtypes.html" />
 <meta property="og:site_name" content="Python documentation" />
@@ -16,7 +16,7 @@
 <meta property="og:image:width" content="200">
 <meta property="og:image:height" content="200">
 
-    <title>Built-in Types &#8212; Python 3.15.0a0 - dokumentacja</title><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wbudowane typy &#8212; Python 3.15.0a0 - dokumentacja</title><meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=234b1a7c" />
@@ -31,14 +31,14 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="Built-in Exceptions" href="exceptions.html" />
-    <link rel="prev" title="Built-in Constants" href="constants.html" />
+    <link rel="prev" title="Wbudowane stałe" href="constants.html" />
     
       
       <link rel="canonical" href="https://docs.python.org/3/library/stdtypes.html">
@@ -98,9 +98,9 @@
     </select>
 </label>
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
-<li><a class="reference internal" href="#">Built-in Types</a><ul>
+<li><a class="reference internal" href="#">Wbudowane typy</a><ul>
 <li><a class="reference internal" href="#truth-value-testing">Truth Value Testing</a></li>
 <li><a class="reference internal" href="#boolean-operations-and-or-not">Boolean Operations — <code class="xref std std-keyword docutils literal notranslate"><span class="pre">and</span></code>, <code class="xref std std-keyword docutils literal notranslate"><span class="pre">or</span></code>, <code class="xref std std-keyword docutils literal notranslate"><span class="pre">not</span></code></a></li>
 <li><a class="reference internal" href="#comparisons">Comparisons</a></li>
@@ -121,14 +121,14 @@
 <li><a class="reference internal" href="#common-sequence-operations">Common Sequence Operations</a></li>
 <li><a class="reference internal" href="#immutable-sequence-types">Immutable Sequence Types</a></li>
 <li><a class="reference internal" href="#mutable-sequence-types">Mutable Sequence Types</a></li>
-<li><a class="reference internal" href="#lists">Lists</a></li>
+<li><a class="reference internal" href="#lists">Listy</a></li>
 <li><a class="reference internal" href="#tuples">Tuples</a></li>
 <li><a class="reference internal" href="#ranges">Ranges</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#text-and-binary-sequence-type-methods-summary">Text and Binary Sequence Type Methods Summary</a></li>
 <li><a class="reference internal" href="#text-sequence-type-str">Text Sequence Type — <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a><ul>
-<li><a class="reference internal" href="#string-methods">String Methods</a></li>
+<li><a class="reference internal" href="#string-methods">Metody ciągów</a></li>
 <li><a class="reference internal" href="#formatted-string-literals-f-strings">Formatted String Literals (f-strings)</a></li>
 <li><a class="reference internal" href="#printf-style-string-formatting"><code class="docutils literal notranslate"><span class="pre">printf</span></code>-style String Formatting</a></li>
 </ul>
@@ -157,9 +157,9 @@
 </ul>
 </li>
 <li><a class="reference internal" href="#other-built-in-types">Other Built-in Types</a><ul>
-<li><a class="reference internal" href="#modules">Modules</a></li>
+<li><a class="reference internal" href="#modules">Moduły</a></li>
 <li><a class="reference internal" href="#classes-and-class-instances">Classes and Class Instances</a></li>
-<li><a class="reference internal" href="#functions">Functions</a></li>
+<li><a class="reference internal" href="#functions">Zadania</a></li>
 <li><a class="reference internal" href="#methods">Methods</a></li>
 <li><a class="reference internal" href="#code-objects">Code Objects</a></li>
 <li><a class="reference internal" href="#type-objects">Type Objects</a></li>
@@ -182,14 +182,14 @@
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="constants.html"
-                          title="previous chapter">Built-in Constants</a></p>
+                          title="poprzedni rozdział">Wbudowane stałe</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="exceptions.html"
-                          title="next chapter">Built-in Exceptions</a></p>
+                          title="następny rozdział">Built-in Exceptions</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -220,7 +220,7 @@
           <a href="exceptions.html" title="Built-in Exceptions"
              accesskey="N">dalej</a> |</li>
         <li class="right" >
-          <a href="constants.html" title="Built-in Constants"
+          <a href="constants.html" title="Wbudowane stałe"
              accesskey="P">wstecz</a> |</li>
 
           <li><img src="../_static/py.svg" alt="Python logo" style="vertical-align: middle; margin-top: -1px"></li>
@@ -236,8 +236,8 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">The Python Standard Library</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">Built-in Types</a></li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Biblioteka standardowa Pythona</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Wbudowane typy</a></li>
                 <li class="right">
                     
 
@@ -268,7 +268,7 @@
           <div class="body" role="main">
             
   <section id="built-in-types">
-<span id="bltin-types"></span><h1>Built-in Types<a class="headerlink" href="#built-in-types" title="Link to this heading">¶</a></h1>
+<span id="bltin-types"></span><h1>Wbudowane typy<a class="headerlink" href="#built-in-types" title="Link to this heading">¶</a></h1>
 <p>The following sections describe the standard types that are built into the
 interpreter.</p>
 <p id="index-0">The principal built-in types are numerics, sequences, mappings, classes,
@@ -309,7 +309,7 @@ one of their operands.)</p>
 <thead>
 <tr class="row-odd"><th class="head"><p>Operation</p></th>
 <th class="head"><p>Result</p></th>
-<th class="head"><p>Notes</p></th>
+<th class="head"><p>Notatki</p></th>
 </tr>
 </thead>
 <tbody>
@@ -330,7 +330,7 @@ else <code class="docutils literal notranslate"><span class="pre">False</span></
 </tr>
 </tbody>
 </table>
-<p id="index-6">Notes:</p>
+<p id="index-6">Uwagi:</p>
 <ol class="arabic simple">
 <li><p>This is a short-circuit operator, so it only evaluates the second
 argument if the first one is false.</p></li>
@@ -351,7 +351,7 @@ evaluated at all when <code class="docutils literal notranslate"><span class="pr
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Operation</p></th>
-<th class="head"><p>Meaning</p></th>
+<th class="head"><p>Znaczenie</p></th>
 </tr>
 </thead>
 <tbody>
@@ -441,7 +441,7 @@ the operations, see <a class="reference internal" href="../reference/expressions
 <thead>
 <tr class="row-odd"><th class="head"><p>Operation</p></th>
 <th class="head"><p>Result</p></th>
-<th class="head"><p>Notes</p></th>
+<th class="head"><p>Notatki</p></th>
 <th class="head"><p>Full documentation</p></th>
 </tr>
 </thead>
@@ -533,7 +533,7 @@ the operations, see <a class="reference internal" href="../reference/expressions
 </tr>
 </tbody>
 </table>
-<p id="index-14">Notes:</p>
+<p id="index-14">Uwagi:</p>
 <ol class="arabic">
 <li><p>Also referred to as integer division.  For operands of type <a class="reference internal" href="functions.html#int" title="int"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>,
 the result has type <a class="reference internal" href="functions.html#int" title="int"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>.  For operands of type <a class="reference internal" href="functions.html#float" title="float"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>,
@@ -599,7 +599,7 @@ same priority as the other unary numeric operations (<code class="docutils liter
 <thead>
 <tr class="row-odd"><th class="head"><p>Operation</p></th>
 <th class="head"><p>Result</p></th>
-<th class="head"><p>Notes</p></th>
+<th class="head"><p>Notatki</p></th>
 </tr>
 </thead>
 <tbody>
@@ -632,7 +632,7 @@ same priority as the other unary numeric operations (<code class="docutils liter
 </tr>
 </tbody>
 </table>
-<p>Notes:</p>
+<p>Uwagi:</p>
 <ol class="arabic simple">
 <li><p>Negative shift counts are illegal and cause a <a class="reference internal" href="exceptions.html#ValueError" title="ValueError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">ValueError</span></code></a> to be raised.</p></li>
 <li><p>A left shift by <em>n</em> bits is equivalent to multiplication by <code class="docutils literal notranslate"><span class="pre">pow(2,</span> <span class="pre">n)</span></code>.</p></li>
@@ -664,7 +664,7 @@ unique positive integer <code class="docutils literal notranslate"><span class="
 Equivalently, when <code class="docutils literal notranslate"><span class="pre">abs(x)</span></code> is small enough to have a correctly
 rounded logarithm, then <code class="docutils literal notranslate"><span class="pre">k</span> <span class="pre">=</span> <span class="pre">1</span> <span class="pre">+</span> <span class="pre">int(log(abs(x),</span> <span class="pre">2))</span></code>.
 If <code class="docutils literal notranslate"><span class="pre">x</span></code> is zero, then <code class="docutils literal notranslate"><span class="pre">x.bit_length()</span></code> returns <code class="docutils literal notranslate"><span class="pre">0</span></code>.</p>
-<p>Equivalent to:</p>
+<p>Odpowiednik:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">bit_length</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="n">s</span> <span class="o">=</span> <span class="nb">bin</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>       <span class="c1"># binary representation:  bin(-37) --&gt; &#39;-0b100101&#39;</span>
     <span class="n">s</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">lstrip</span><span class="p">(</span><span class="s1">&#39;-0b&#39;</span><span class="p">)</span> <span class="c1"># remove leading zeros and minus sign</span>
@@ -691,7 +691,7 @@ Example:</p>
 <span class="go">3</span>
 </pre></div>
 </div>
-<p>Equivalent to:</p>
+<p>Odpowiednik:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">bit_count</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="k">return</span> <span class="nb">bin</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s2">&quot;1&quot;</span><span class="p">)</span>
 </pre></div>
@@ -736,7 +736,7 @@ single byte object:</p>
 </div>
 <p>However, when using the default arguments, don’t try
 to convert a value greater than 255 or you’ll get an <a class="reference internal" href="exceptions.html#OverflowError" title="OverflowError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">OverflowError</span></code></a>.</p>
-<p>Equivalent to:</p>
+<p>Odpowiednik:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">to_bytes</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">length</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">byteorder</span><span class="o">=</span><span class="s1">&#39;big&#39;</span><span class="p">,</span> <span class="n">signed</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">byteorder</span> <span class="o">==</span> <span class="s1">&#39;little&#39;</span><span class="p">:</span>
         <span class="n">order</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="n">length</span><span class="p">)</span>
@@ -782,7 +782,7 @@ the end of the byte array.  To request the native byte order of the host
 system, use <a class="reference internal" href="sys.html#sys.byteorder" title="sys.byteorder"><code class="xref py py-data docutils literal notranslate"><span class="pre">sys.byteorder</span></code></a> as the byte order value.</p>
 <p>The <em>signed</em> argument indicates whether two’s complement is used to
 represent the integer.</p>
-<p>Equivalent to:</p>
+<p>Odpowiednik:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">from_bytes</span><span class="p">(</span><span class="nb">bytes</span><span class="p">,</span> <span class="n">byteorder</span><span class="o">=</span><span class="s1">&#39;big&#39;</span><span class="p">,</span> <span class="n">signed</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">byteorder</span> <span class="o">==</span> <span class="s1">&#39;little&#39;</span><span class="p">:</span>
         <span class="n">little_ordered</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">bytes</span><span class="p">)</span>
@@ -962,7 +962,7 @@ given by reduction modulo <code class="docutils literal notranslate"><span class
 made available to Python as the <a class="reference internal" href="sys.html#sys.hash_info.modulus" title="sys.hash_info.modulus"><code class="xref py py-attr docutils literal notranslate"><span class="pre">modulus</span></code></a> attribute of
 <a class="reference internal" href="sys.html#sys.hash_info" title="sys.hash_info"><code class="xref py py-data docutils literal notranslate"><span class="pre">sys.hash_info</span></code></a>.</p>
 <div class="impl-detail compound">
-<p><strong>CPython implementation detail:</strong> Currently, the prime used is <code class="docutils literal notranslate"><span class="pre">P</span> <span class="pre">=</span> <span class="pre">2**31</span> <span class="pre">-</span> <span class="pre">1</span></code> on machines with 32-bit C
+<p><strong>Szczegół implementacyjny CPythona:</strong> Currently, the prime used is <code class="docutils literal notranslate"><span class="pre">P</span> <span class="pre">=</span> <span class="pre">2**31</span> <span class="pre">-</span> <span class="pre">1</span></code> on machines with 32-bit C
 longs and <code class="docutils literal notranslate"><span class="pre">P</span> <span class="pre">=</span> <span class="pre">2**61</span> <span class="pre">-</span> <span class="pre">1</span></code> on machines with 64-bit C longs.</p>
 </div>
 <p>Here are the rules in detail:</p>
@@ -1144,7 +1144,7 @@ operations have the same priority as the corresponding numeric operations. <a cl
 <thead>
 <tr class="row-odd"><th class="head"><p>Operation</p></th>
 <th class="head"><p>Result</p></th>
-<th class="head"><p>Notes</p></th>
+<th class="head"><p>Notatki</p></th>
 </tr>
 </thead>
 <tbody>
@@ -1171,7 +1171,7 @@ itself <em>n</em> times</p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">s[i]</span></code></p></td>
 <td><p><em>i</em>th item of <em>s</em>, origin 0</p></td>
-<td><p>(3)(9)</p></td>
+<td><p>(3)(8)</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">s[i:j]</span></code></p></td>
 <td><p>slice of <em>s</em> from <em>i</em> to <em>j</em></p></td>
@@ -1194,17 +1194,6 @@ with step <em>k</em></p></td>
 <td><p>largest item of <em>s</em></p></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">s.index(x[,</span> <span class="pre">i[,</span> <span class="pre">j]])</span></code></p></td>
-<td><p>index of the first occurrence
-of <em>x</em> in <em>s</em> (at or after
-index <em>i</em> and before index <em>j</em>)</p></td>
-<td><p>(8)</p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">s.count(x)</span></code></p></td>
-<td><p>total number of occurrences of
-<em>x</em> in <em>s</em></p></td>
-<td></td>
-</tr>
 </tbody>
 </table>
 <p>Sequences of the same type also support comparisons.  In particular, tuples
@@ -1217,7 +1206,7 @@ index.  That index will continue to march forward (or backward) even if the
 underlying sequence is mutated.  The iterator terminates only when an
 <a class="reference internal" href="exceptions.html#IndexError" title="IndexError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">IndexError</span></code></a> or a <a class="reference internal" href="exceptions.html#StopIteration" title="StopIteration"><code class="xref py py-exc docutils literal notranslate"><span class="pre">StopIteration</span></code></a> is encountered (or when the index
 drops below zero).</p>
-<p>Notes:</p>
+<p>Uwagi:</p>
 <ol class="arabic">
 <li><p>While the <code class="docutils literal notranslate"><span class="pre">in</span></code> and <code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">in</span></code> operations are used only for simple
 containment testing in the general case, some specialised sequences
@@ -1253,7 +1242,7 @@ You can create a list of different lists this way:</p>
 </pre></div>
 </div>
 <p>Further explanation is available in the FAQ entry
-<a class="reference internal" href="../faq/programming.html#faq-multidimensional-list"><span class="std std-ref">How do I create a multidimensional list?</span></a>.</p>
+<a class="reference internal" href="../faq/programming.html#faq-multidimensional-list"><span class="std std-ref">Jak stworzyć listę wielowymiarową?</span></a>.</p>
 </li>
 <li><p>If <em>i</em> or <em>j</em> is negative, the index is relative to the end of sequence <em>s</em>:
 <code class="docutils literal notranslate"><span class="pre">len(s)</span> <span class="pre">+</span> <span class="pre">i</span></code> or <code class="docutils literal notranslate"><span class="pre">len(s)</span> <span class="pre">+</span> <span class="pre">j</span></code> is substituted.  But note that <code class="docutils literal notranslate"><span class="pre">-0</span></code> is
@@ -1291,14 +1280,31 @@ objects are mutable and have an efficient overallocation mechanism</p></li>
 <li><p>Some sequence types (such as <a class="reference internal" href="#range" title="range"><code class="xref py py-class docutils literal notranslate"><span class="pre">range</span></code></a>) only support item sequences
 that follow specific patterns, and hence don’t support sequence
 concatenation or repetition.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">index</span></code> raises <a class="reference internal" href="exceptions.html#ValueError" title="ValueError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">ValueError</span></code></a> when <em>x</em> is not found in <em>s</em>.
-Not all implementations support passing the additional arguments <em>i</em> and <em>j</em>.
-These arguments allow efficient searching of subsections of the sequence. Passing
-the extra arguments is roughly equivalent to using <code class="docutils literal notranslate"><span class="pre">s[i:j].index(x)</span></code>, only
-without copying any data and with the returned index being relative to
-the start of the sequence rather than the start of the slice.</p></li>
 <li><p>An <a class="reference internal" href="exceptions.html#IndexError" title="IndexError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">IndexError</span></code></a> is raised if <em>i</em> is outside the sequence range.</p></li>
 </ol>
+<p class="rubric">Sequence Methods</p>
+<p>Sequence types also support the following methods:</p>
+<dl class="py method" id="list.count">
+<span id="range.count"></span><span id="tuple.count"></span><dt class="sig sig-object py" id="sequence.count">
+<span class="sig-prename descclassname"><span class="pre">sequence.</span></span><span class="sig-name descname"><span class="pre">count</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="positional-only-separator o"><abbr title="Positional-only parameter separator (PEP 570)"><span class="pre">/</span></abbr></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sequence.count" title="Link to this definition">¶</a></dt>
+<dd><p>Return the total number of occurrences of <em>value</em> in <em>sequence</em>.</p>
+</dd></dl>
+
+<dl class="py method" id="list.index">
+<span id="range.index"></span><span id="tuple.index"></span><dt class="sig sig-object py" id="sequence.index">
+<span class="sig-prename descclassname"><span class="pre">sequence.</span></span><span class="sig-name descname"><span class="pre">index</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">value[,</span> <span class="pre">start[,</span> <span class="pre">stop]</span></em><span class="sig-paren">)</span><a class="headerlink" href="#sequence.index" title="Link to this definition">¶</a></dt>
+<dd><p>Return the index of the first occurrence of <em>value</em> in <em>sequence</em>.</p>
+<p>Raises <a class="reference internal" href="exceptions.html#ValueError" title="ValueError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">ValueError</span></code></a> if <em>value</em> is not found in <em>sequence</em>.</p>
+<p>The <em>start</em> or <em>stop</em> arguments allow for efficient searching
+of subsections of the sequence, beginning at <em>start</em> and ending at <em>stop</em>.
+This is roughly equivalent to <code class="docutils literal notranslate"><span class="pre">start</span> <span class="pre">+</span> <span class="pre">sequence[start:stop].index(value)</span></code>,
+only without copying any data.</p>
+<div class="admonition caution">
+<p class="admonition-title">Ostrzeżenie</p>
+<p>Not all sequence types support passing the <em>start</em> and <em>stop</em> arguments.</p>
+</div>
+</dd></dl>
+
 </section>
 <section id="immutable-sequence-types">
 <span id="typesseq-immutable"></span><h3>Immutable Sequence Types<a class="headerlink" href="#immutable-sequence-types" title="Link to this heading">¶</a></h3>
@@ -1324,7 +1330,7 @@ accepts integers that meet the value restriction <code class="docutils literal n
 <thead>
 <tr class="row-odd"><th class="head"><p>Operation</p></th>
 <th class="head"><p>Result</p></th>
-<th class="head"><p>Notes</p></th>
+<th class="head"><p>Notatki</p></th>
 </tr>
 </thead>
 <tbody>
@@ -1359,85 +1365,103 @@ are replaced by those of <em>t</em></p></td>
 <code class="docutils literal notranslate"><span class="pre">s[i:j:k]</span></code> from the list</p></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">s.append(x)</span></code></p></td>
-<td><p>appends <em>x</em> to the end of the
-sequence (same as
-<code class="docutils literal notranslate"><span class="pre">s[len(s):len(s)]</span> <span class="pre">=</span> <span class="pre">[x]</span></code>)</p></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">s.clear()</span></code></p></td>
-<td><p>removes all items from <em>s</em>
-(same as <code class="docutils literal notranslate"><span class="pre">del</span> <span class="pre">s[:]</span></code>)</p></td>
-<td><p>(5)</p></td>
-</tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">s.copy()</span></code></p></td>
-<td><p>creates a shallow copy of <em>s</em>
-(same as <code class="docutils literal notranslate"><span class="pre">s[:]</span></code>)</p></td>
-<td><p>(5)</p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">s.extend(t)</span></code> or
-<code class="docutils literal notranslate"><span class="pre">s</span> <span class="pre">+=</span> <span class="pre">t</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">s</span> <span class="pre">+=</span> <span class="pre">t</span></code></p></td>
 <td><p>extends <em>s</em> with the
 contents of <em>t</em> (for the
 most part the same as
 <code class="docutils literal notranslate"><span class="pre">s[len(s):len(s)]</span> <span class="pre">=</span> <span class="pre">t</span></code>)</p></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">s</span> <span class="pre">*=</span> <span class="pre">n</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">s</span> <span class="pre">*=</span> <span class="pre">n</span></code></p></td>
 <td><p>updates <em>s</em> with its contents
 repeated <em>n</em> times</p></td>
-<td><p>(6)</p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">s.insert(i,</span> <span class="pre">x)</span></code></p></td>
-<td><p>inserts <em>x</em> into <em>s</em> at the
-index given by <em>i</em>
-(same as <code class="docutils literal notranslate"><span class="pre">s[i:i]</span> <span class="pre">=</span> <span class="pre">[x]</span></code>)</p></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">s.pop()</span></code> or <code class="docutils literal notranslate"><span class="pre">s.pop(i)</span></code></p></td>
-<td><p>retrieves the item at <em>i</em> and
-also removes it from <em>s</em></p></td>
 <td><p>(2)</p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">s.remove(x)</span></code></p></td>
-<td><p>removes the first item from
-<em>s</em> where <code class="docutils literal notranslate"><span class="pre">s[i]</span></code> is equal to
-<em>x</em></p></td>
-<td><p>(3)</p></td>
-</tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">s.reverse()</span></code></p></td>
-<td><p>reverses the items of <em>s</em> in
-place</p></td>
-<td><p>(4)</p></td>
 </tr>
 </tbody>
 </table>
-<p>Notes:</p>
-<ol class="arabic">
+<p>Uwagi:</p>
+<ol class="arabic simple">
 <li><p>If <em>k</em> is not equal to <code class="docutils literal notranslate"><span class="pre">1</span></code>, <em>t</em> must have the same length as the slice it is replacing.</p></li>
-<li><p>The optional argument <em>i</em> defaults to <code class="docutils literal notranslate"><span class="pre">-1</span></code>, so that by default the last
-item is removed and returned.</p></li>
-<li><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">remove()</span></code> raises <a class="reference internal" href="exceptions.html#ValueError" title="ValueError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">ValueError</span></code></a> when <em>x</em> is not found in <em>s</em>.</p></li>
-<li><p>The <code class="xref py py-meth docutils literal notranslate"><span class="pre">reverse()</span></code> method modifies the sequence in place for economy of
-space when reversing a large sequence.  To remind users that it operates by
-side effect, it does not return the reversed sequence.</p></li>
-<li><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">clear()</span></code> and <code class="xref py py-meth docutils literal notranslate"><span class="pre">copy()</span></code> are included for consistency with the
-interfaces of mutable containers that don’t support slicing operations
-(such as <a class="reference internal" href="#dict" title="dict"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a> and <a class="reference internal" href="#set" title="set"><code class="xref py py-class docutils literal notranslate"><span class="pre">set</span></code></a>). <code class="xref py py-meth docutils literal notranslate"><span class="pre">copy()</span></code> is not part of the
-<a class="reference internal" href="collections.abc.html#collections.abc.MutableSequence" title="collections.abc.MutableSequence"><code class="xref py py-class docutils literal notranslate"><span class="pre">collections.abc.MutableSequence</span></code></a> ABC, but most concrete
-mutable sequence classes provide it.</p>
-<div class="versionadded">
-<p><span class="versionmodified added"> Dodane w wersji 3.3: </span><code class="xref py py-meth docutils literal notranslate"><span class="pre">clear()</span></code> and <code class="xref py py-meth docutils literal notranslate"><span class="pre">copy()</span></code> methods.</p>
-</div>
-</li>
 <li><p>The value <em>n</em> is an integer, or an object implementing
 <a class="reference internal" href="../reference/datamodel.html#object.__index__" title="object.__index__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">__index__()</span></code></a>.  Zero and negative values of <em>n</em> clear
 the sequence.  Items in the sequence are not copied; they are referenced
 multiple times, as explained for <code class="docutils literal notranslate"><span class="pre">s</span> <span class="pre">*</span> <span class="pre">n</span></code> under <a class="reference internal" href="#typesseq-common"><span class="std std-ref">Common Sequence Operations</span></a>.</p></li>
 </ol>
+<p class="rubric">Mutable Sequence Methods</p>
+<p>Mutable sequence types also support the following methods:</p>
+<dl class="py method" id="bytearray.append">
+<span id="list.append"></span><dt class="sig sig-object py" id="sequence.append">
+<span class="sig-prename descclassname"><span class="pre">sequence.</span></span><span class="sig-name descname"><span class="pre">append</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="positional-only-separator o"><abbr title="Positional-only parameter separator (PEP 570)"><span class="pre">/</span></abbr></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sequence.append" title="Link to this definition">¶</a></dt>
+<dd><p>Append <em>value</em> to the end of the sequence
+This is equivalent to writing <code class="docutils literal notranslate"><span class="pre">seq[len(seq):len(seq)]</span> <span class="pre">=</span> <span class="pre">[value]</span></code>.</p>
+</dd></dl>
+
+<dl class="py method" id="bytearray.clear">
+<span id="list.clear"></span><dt class="sig sig-object py" id="sequence.clear">
+<span class="sig-prename descclassname"><span class="pre">sequence.</span></span><span class="sig-name descname"><span class="pre">clear</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sequence.clear" title="Link to this definition">¶</a></dt>
+<dd><div class="versionadded">
+<p><span class="versionmodified added"> Dodane w wersji 3.3.</span></p>
+</div>
+<p>Remove all items from <em>sequence</em>.
+This is equivalent to writing <code class="docutils literal notranslate"><span class="pre">del</span> <span class="pre">sequence[:]</span></code>.</p>
+</dd></dl>
+
+<dl class="py method" id="bytearray.copy">
+<span id="list.copy"></span><dt class="sig sig-object py" id="sequence.copy">
+<span class="sig-prename descclassname"><span class="pre">sequence.</span></span><span class="sig-name descname"><span class="pre">copy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sequence.copy" title="Link to this definition">¶</a></dt>
+<dd><div class="versionadded">
+<p><span class="versionmodified added"> Dodane w wersji 3.3.</span></p>
+</div>
+<p>Create a shallow copy of <em>sequence</em>.
+This is equivalent to writing <code class="docutils literal notranslate"><span class="pre">sequence[:]</span></code>.</p>
+<div class="admonition hint">
+<p class="admonition-title">Podpowiedź</p>
+<p>The <code class="xref py py-meth docutils literal notranslate"><span class="pre">copy()</span></code> method is not part of the
+<a class="reference internal" href="collections.abc.html#collections.abc.MutableSequence" title="collections.abc.MutableSequence"><code class="xref py py-class docutils literal notranslate"><span class="pre">MutableSequence</span></code></a> <a class="reference internal" href="abc.html#abc.ABC" title="abc.ABC"><code class="xref py py-class docutils literal notranslate"><span class="pre">ABC</span></code></a>,
+but most concrete mutable sequence types provide it.</p>
+</div>
+</dd></dl>
+
+<dl class="py method" id="bytearray.extend">
+<span id="list.extend"></span><dt class="sig sig-object py" id="sequence.extend">
+<span class="sig-prename descclassname"><span class="pre">sequence.</span></span><span class="sig-name descname"><span class="pre">extend</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span></em>, <em class="sig-param"><span class="positional-only-separator o"><abbr title="Positional-only parameter separator (PEP 570)"><span class="pre">/</span></abbr></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sequence.extend" title="Link to this definition">¶</a></dt>
+<dd><p>Extend <em>sequence</em> with the contents of <em>iterable</em>.
+For the most part, this is the same as writing
+<code class="docutils literal notranslate"><span class="pre">seq[len(seq):len(seq)]</span> <span class="pre">=</span> <span class="pre">iterable</span></code>.</p>
+</dd></dl>
+
+<dl class="py method" id="bytearray.insert">
+<span id="list.insert"></span><dt class="sig sig-object py" id="sequence.insert">
+<span class="sig-prename descclassname"><span class="pre">sequence.</span></span><span class="sig-name descname"><span class="pre">insert</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="positional-only-separator o"><abbr title="Positional-only parameter separator (PEP 570)"><span class="pre">/</span></abbr></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sequence.insert" title="Link to this definition">¶</a></dt>
+<dd><p>Insert <em>value</em> into <em>sequence</em> at the given <em>index</em>.
+This is equivalent to writing <code class="docutils literal notranslate"><span class="pre">sequence[index:index]</span> <span class="pre">=</span> <span class="pre">[value]</span></code>.</p>
+</dd></dl>
+
+<dl class="py method" id="bytearray.pop">
+<span id="list.pop"></span><dt class="sig sig-object py" id="sequence.pop">
+<span class="sig-prename descclassname"><span class="pre">sequence.</span></span><span class="sig-name descname"><span class="pre">pop</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-1</span></span></em>, <em class="sig-param"><span class="positional-only-separator o"><abbr title="Positional-only parameter separator (PEP 570)"><span class="pre">/</span></abbr></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sequence.pop" title="Link to this definition">¶</a></dt>
+<dd><p>Retrieve the item at <em>index</em> and also removes it from <em>sequence</em>.
+By default, the last item in <em>sequence</em> is removed and returned.</p>
+</dd></dl>
+
+<dl class="py method" id="bytearray.remove">
+<span id="list.remove"></span><dt class="sig sig-object py" id="sequence.remove">
+<span class="sig-prename descclassname"><span class="pre">sequence.</span></span><span class="sig-name descname"><span class="pre">remove</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="positional-only-separator o"><abbr title="Positional-only parameter separator (PEP 570)"><span class="pre">/</span></abbr></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sequence.remove" title="Link to this definition">¶</a></dt>
+<dd><p>Remove the first item from <em>sequence</em> where <code class="docutils literal notranslate"><span class="pre">sequence[i]</span> <span class="pre">==</span> <span class="pre">value</span></code>.</p>
+<p>Raises <a class="reference internal" href="exceptions.html#ValueError" title="ValueError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">ValueError</span></code></a> if <em>value</em> is not found in <em>sequence</em>.</p>
+</dd></dl>
+
+<dl class="py method" id="bytearray.reverse">
+<span id="list.reverse"></span><dt class="sig sig-object py" id="sequence.reverse">
+<span class="sig-prename descclassname"><span class="pre">sequence.</span></span><span class="sig-name descname"><span class="pre">reverse</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sequence.reverse" title="Link to this definition">¶</a></dt>
+<dd><p>Reverse the items of <em>sequence</em> in place.
+This method maintains economy of space when reversing a large sequence.
+To remind users that it operates by side-effect, it returns <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
+</dd></dl>
+
 </section>
 <section id="lists">
-<span id="typesseq-list"></span><h3>Lists<a class="headerlink" href="#lists" title="Link to this heading">¶</a></h3>
+<span id="typesseq-list"></span><h3>Listy<a class="headerlink" href="#lists" title="Link to this heading">¶</a></h3>
 <p id="index-25">Lists are mutable sequences, typically used to store collections of
 homogeneous items (where the precise degree of similarity will vary by
 application).</p>
@@ -1480,8 +1504,7 @@ means that list items are sorted directly without calculating a separate
 key value.</p>
 <p>The <a class="reference internal" href="functools.html#functools.cmp_to_key" title="functools.cmp_to_key"><code class="xref py py-func docutils literal notranslate"><span class="pre">functools.cmp_to_key()</span></code></a> utility is available to convert a 2.x
 style <em>cmp</em> function to a <em>key</em> function.</p>
-<p><em>reverse</em> is a boolean value.  If set to <code class="docutils literal notranslate"><span class="pre">True</span></code>, then the list elements
-are sorted as if each comparison were reversed.</p>
+<p><em>reverse</em> jest wartością logiczną.  Jeśli jest ustawiona na <code class="docutils literal notranslate"><span class="pre">True</span></code>, elementy listy są sortowane tak, jakby każde porównanie było odwrócone.</p>
 <p>This method modifies the sequence in place for economy of space when
 sorting a large sequence.  To remind users that it operates by side
 effect, it does not return the sorted sequence (use <a class="reference internal" href="functions.html#sorted" title="sorted"><code class="xref py py-func docutils literal notranslate"><span class="pre">sorted()</span></code></a> to
@@ -1490,9 +1513,9 @@ explicitly request a new sorted list instance).</p>
 guarantees not to change the relative order of elements that compare equal
 — this is helpful for sorting in multiple passes (for example, sort by
 department, then by salary grade).</p>
-<p>For sorting examples and a brief sorting tutorial, see <a class="reference internal" href="../howto/sorting.html#sortinghowto"><span class="std std-ref">Sorting Techniques</span></a>.</p>
+<p>Przykłady sortowania i krótki samouczek sortowania można znaleźć na stronie <a class="reference internal" href="../howto/sorting.html#sortinghowto"><span class="std std-ref">Sorting Techniques</span></a>.</p>
 <div class="impl-detail compound">
-<p><strong>CPython implementation detail:</strong> While a list is being sorted, the effect of attempting to mutate, or even
+<p><strong>Szczegół implementacyjny CPythona:</strong> While a list is being sorted, the effect of attempting to mutate, or even
 inspect, the list is undefined.  The C implementation of Python makes the
 list appear empty for the duration, and raises <a class="reference internal" href="exceptions.html#ValueError" title="ValueError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">ValueError</span></code></a> if it can
 detect that the list has been mutated during a sort.</p>
@@ -1512,12 +1535,12 @@ homogeneous data is needed (such as allowing storage in a <a class="reference in
 <dl class="py class">
 <dt class="sig sig-object py" id="tuple">
 <em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">tuple</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="positional-only-separator o"><abbr title="Positional-only parameter separator (PEP 570)"><span class="pre">/</span></abbr></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tuple" title="Link to this definition">¶</a></dt>
-<dd><p>Tuples may be constructed in a number of ways:</p>
+<dd><p>Krotki mogą być konstruowane na kilka sposobów:</p>
 <ul class="simple">
-<li><p>Using a pair of parentheses to denote the empty tuple: <code class="docutils literal notranslate"><span class="pre">()</span></code></p></li>
-<li><p>Using a trailing comma for a singleton tuple: <code class="docutils literal notranslate"><span class="pre">a,</span></code> or <code class="docutils literal notranslate"><span class="pre">(a,)</span></code></p></li>
+<li><p>Przy użyciu pary nawiasów, by oznaczyć pustą krotkę: <code class="docutils literal notranslate"><span class="pre">()</span></code></p></li>
+<li><p>Przy użyciu przecinka, by oznaczyć jednoelementową krotkę: <code class="docutils literal notranslate"><span class="pre">a,</span></code> lub <code class="docutils literal notranslate"><span class="pre">(a,)</span></code></p></li>
 <li><p>Separating items with commas: <code class="docutils literal notranslate"><span class="pre">a,</span> <span class="pre">b,</span> <span class="pre">c</span></code> or <code class="docutils literal notranslate"><span class="pre">(a,</span> <span class="pre">b,</span> <span class="pre">c)</span></code></p></li>
-<li><p>Using the <a class="reference internal" href="#tuple" title="tuple"><code class="xref py py-func docutils literal notranslate"><span class="pre">tuple()</span></code></a> built-in: <code class="docutils literal notranslate"><span class="pre">tuple()</span></code> or <code class="docutils literal notranslate"><span class="pre">tuple(iterable)</span></code></p></li>
+<li><p>Przy użyciu wbudowanej funkcji <a class="reference internal" href="#tuple" title="tuple"><code class="xref py py-func docutils literal notranslate"><span class="pre">tuple()</span></code></a>: <code class="docutils literal notranslate"><span class="pre">tuple()</span></code> lub <code class="docutils literal notranslate"><span class="pre">tuple(iterable)</span></code></p></li>
 </ul>
 <p>The constructor builds a tuple whose items are the same and in the same
 order as <em>iterable</em>’s items.  <em>iterable</em> may be either a sequence, a
@@ -1886,13 +1909,13 @@ Python).  For example:</p>
 </pre></div>
 </div>
 <p>For more information on the <code class="docutils literal notranslate"><span class="pre">str</span></code> class and its methods, see
-<a class="reference internal" href="#textseq"><span class="std std-ref">Text Sequence Type — str</span></a> and the <a class="reference internal" href="#string-methods"><span class="std std-ref">String Methods</span></a> section below.  To output
+<a class="reference internal" href="#textseq"><span class="std std-ref">Text Sequence Type — str</span></a> and the <a class="reference internal" href="#string-methods"><span class="std std-ref">Metody ciągów</span></a> section below.  To output
 formatted strings, see the <a class="reference internal" href="../reference/lexical_analysis.html#f-strings"><span class="std std-ref">f-strings</span></a> and <a class="reference internal" href="string.html#formatstrings"><span class="std std-ref">Format String Syntax</span></a>
-sections.  In addition, see the <a class="reference internal" href="text.html#stringservices"><span class="std std-ref">Text Processing Services</span></a> section.</p>
+sections.  In addition, see the <a class="reference internal" href="text.html#stringservices"><span class="std std-ref">Usługi przetwarzania tekstu</span></a> section.</p>
 </dd></dl>
 
 <section id="string-methods">
-<span id="index-32"></span><span id="id5"></span><h3>String Methods<a class="headerlink" href="#string-methods" title="Link to this heading">¶</a></h3>
+<span id="index-32"></span><span id="id5"></span><h3>Metody ciągów<a class="headerlink" href="#string-methods" title="Link to this heading">¶</a></h3>
 <p id="index-33">Strings implement all of the <a class="reference internal" href="#typesseq-common"><span class="std std-ref">common</span></a> sequence
 operations, along with the additional methods described below.</p>
 <p>Strings also support two styles of string formatting, one providing a large
@@ -1901,7 +1924,7 @@ degree of flexibility and customization (see <a class="reference internal" href=
 <code class="docutils literal notranslate"><span class="pre">printf</span></code> style formatting that handles a narrower range of types and is
 slightly harder to use correctly, but is often faster for the cases it can
 handle (<a class="reference internal" href="#old-string-formatting"><span class="std std-ref">printf-style String Formatting</span></a>).</p>
-<p>The <a class="reference internal" href="text.html#textservices"><span class="std std-ref">Text Processing Services</span></a> section of the standard library covers a number of
+<p>The <a class="reference internal" href="text.html#textservices"><span class="std std-ref">Usługi przetwarzania tekstu</span></a> section of the standard library covers a number of
 other modules that provide various text related utilities (including regular
 expression support in the <a class="reference internal" href="re.html#module-re" title="re: Regular expression operations."><code class="xref py py-mod docutils literal notranslate"><span class="pre">re</span></code></a> module).</p>
 <dl class="py method">
@@ -2475,7 +2498,7 @@ deemed to delimit empty strings (for example, <code class="docutils literal notr
 as a single delimiter (to split with multiple delimiters, use
 <a class="reference internal" href="re.html#re.split" title="re.split"><code class="xref py py-func docutils literal notranslate"><span class="pre">re.split()</span></code></a>). Splitting an empty string with a specified separator
 returns <code class="docutils literal notranslate"><span class="pre">['']</span></code>.</p>
-<p>For example:</p>
+<p>Dla przykładu:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="s1">&#39;1,2,3&#39;</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
 <span class="go">[&#39;1&#39;, &#39;2&#39;, &#39;3&#39;]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="s1">&#39;1,2,3&#39;</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">maxsplit</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -2492,7 +2515,7 @@ and the result will contain no empty strings at the start or end if the
 string has leading or trailing whitespace.  Consequently, splitting an empty
 string or a string consisting of just whitespace with a <code class="docutils literal notranslate"><span class="pre">None</span></code> separator
 returns <code class="docutils literal notranslate"><span class="pre">[]</span></code>.</p>
-<p>For example:</p>
+<p>Dla przykładu:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="s1">&#39;1 2 3&#39;</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
 <span class="go">[&#39;1&#39;, &#39;2&#39;, &#39;3&#39;]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="s1">&#39;1 2 3&#39;</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">maxsplit</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -2503,7 +2526,7 @@ returns <code class="docutils literal notranslate"><span class="pre">[]</span></
 </div>
 <p>If <em>sep</em> is not specified or is <code class="docutils literal notranslate"><span class="pre">None</span></code> and  <em>maxsplit</em> is <code class="docutils literal notranslate"><span class="pre">0</span></code>, only
 leading runs of consecutive whitespace are considered.</p>
-<p>For example:</p>
+<p>Dla przykładu:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
 <span class="go">[]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="s2">&quot;   &quot;</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
@@ -2525,7 +2548,7 @@ boundaries are a superset of <a class="reference internal" href="../glossary.htm
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Representation</p></th>
-<th class="head"><p>Description</p></th>
+<th class="head"><p>Opis</p></th>
 </tr>
 </thead>
 <tbody>
@@ -2567,7 +2590,7 @@ boundaries are a superset of <a class="reference internal" href="../glossary.htm
 <div class="versionchanged">
 <p><span class="versionmodified changed">Zmienione w wersji 3.2: </span><code class="docutils literal notranslate"><span class="pre">\v</span></code> and <code class="docutils literal notranslate"><span class="pre">\f</span></code> added to list of line boundaries.</p>
 </div>
-<p>For example:</p>
+<p>Dla przykładu:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="s1">&#39;ab c</span><span class="se">\n\n</span><span class="s1">de fg</span><span class="se">\r</span><span class="s1">kl</span><span class="se">\r\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">splitlines</span><span class="p">()</span>
 <span class="go">[&#39;ab c&#39;, &#39;&#39;, &#39;de fg&#39;, &#39;kl&#39;]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="s1">&#39;ab c</span><span class="se">\n\n</span><span class="s1">de fg</span><span class="se">\r</span><span class="s1">kl</span><span class="se">\r\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">splitlines</span><span class="p">(</span><span class="n">keepends</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -2640,7 +2663,7 @@ vice versa. Note that it is not necessarily true that
 <span class="sig-prename descclassname"><span class="pre">str.</span></span><span class="sig-name descname"><span class="pre">title</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#str.title" title="Link to this definition">¶</a></dt>
 <dd><p>Return a titlecased version of the string where words start with an uppercase
 character and the remaining characters are lowercase.</p>
-<p>For example:</p>
+<p>Dla przykładu:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="s1">&#39;Hello world&#39;</span><span class="o">.</span><span class="n">title</span><span class="p">()</span>
 <span class="go">&#39;Hello World&#39;</span>
 </pre></div>
@@ -2706,7 +2729,7 @@ make a string of length <em>width</em>. A leading sign prefix (<code class="docu
 is handled by inserting the padding <em>after</em> the sign character rather
 than before. The original string is returned if <em>width</em> is less than
 or equal to <code class="docutils literal notranslate"><span class="pre">len(s)</span></code>.</p>
-<p>For example:</p>
+<p>Dla przykładu:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="s2">&quot;42&quot;</span><span class="o">.</span><span class="n">zfill</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 <span class="go">&#39;00042&#39;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="s2">&quot;-42&quot;</span><span class="o">.</span><span class="n">zfill</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
@@ -2781,7 +2804,7 @@ followed by any of the valid formats, which are:</p>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Conversion</p></th>
-<th class="head"><p>Meaning</p></th>
+<th class="head"><p>Znaczenie</p></th>
 </tr>
 </thead>
 <tbody>
@@ -2796,7 +2819,7 @@ followed by any of the valid formats, which are:</p>
 </tr>
 </tbody>
 </table>
-<p>For example:</p>
+<p>Na przykład:</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">fractions</span><span class="w"> </span><span class="kn">import</span> <span class="n">Fraction</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">Fraction</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="si">!s}</span><span class="s1">&#39;</span>
 <span class="go">&#39;1/3&#39;</span>
@@ -2896,7 +2919,7 @@ sequential parameter list).</p>
 <table class="docutils align-default" id="index-38">
 <thead>
 <tr class="row-odd"><th class="head"><p>Flag</p></th>
-<th class="head"><p>Meaning</p></th>
+<th class="head"><p>Znaczenie</p></th>
 </tr>
 </thead>
 <tbody>
@@ -2927,8 +2950,8 @@ is not necessary for Python – so e.g. <code class="docutils literal notranslat
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Conversion</p></th>
-<th class="head"><p>Meaning</p></th>
-<th class="head"><p>Notes</p></th>
+<th class="head"><p>Znaczenie</p></th>
+<th class="head"><p>Notatki</p></th>
 </tr>
 </thead>
 <tbody>
@@ -3011,7 +3034,7 @@ character in the result.</p></td>
 </tr>
 </tbody>
 </table>
-<p>Notes:</p>
+<p>Uwagi:</p>
 <ol class="arabic">
 <li><p>The alternate form causes a leading octal specifier (<code class="docutils literal notranslate"><span class="pre">'0o'</span></code>) to be
 inserted before the first digit.</p></li>
@@ -3028,7 +3051,7 @@ trailing zeroes are not removed as they would otherwise be.</p>
 decimal point and defaults to 6.</p>
 </li>
 <li><p>If precision is <code class="docutils literal notranslate"><span class="pre">N</span></code>, the output is truncated to <code class="docutils literal notranslate"><span class="pre">N</span></code> characters.</p></li>
-<li><p>See <span class="target" id="index-39"></span><a class="pep reference external" href="https://peps.python.org/pep-0237/"><strong>PEP 237</strong></a>.</p></li>
+<li><p>Zob. <span class="target" id="index-73"></span><a class="pep reference external" href="https://peps.python.org/pep-0237/"><strong>PEP 237</strong></a>.</p></li>
 </ol>
 <p>Since Python strings have an explicit length, <code class="docutils literal notranslate"><span class="pre">%s</span></code> conversions do not assume
 that <code class="docutils literal notranslate"><span class="pre">'\0'</span></code> is the end of the string.</p>
@@ -3240,7 +3263,7 @@ will be set to null bytes.</p>
 <span class="gp">... </span>        <span class="n">ba</span> <span class="o">+=</span> <span class="sa">b</span><span class="s1">&#39;</span><span class="se">\0</span><span class="s1">&#39;</span> <span class="o">*</span> <span class="p">(</span><span class="n">size</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">ba</span><span class="p">))</span>
 </pre></div>
 </div>
-<p>Examples:</p>
+<p>Przykłady:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">shrink</span> <span class="o">=</span> <span class="nb">bytearray</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;abc&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">shrink</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="n">shrink</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">shrink</span><span class="p">))</span>
@@ -3734,7 +3757,7 @@ multibyte sequence as a single delimiter. Splitting an empty sequence with
 a specified separator returns <code class="docutils literal notranslate"><span class="pre">[b'']</span></code> or <code class="docutils literal notranslate"><span class="pre">[bytearray(b'')]</span></code> depending
 on the type of object being split.  The <em>sep</em> argument may be any
 <a class="reference internal" href="../glossary.html#term-bytes-like-object"><span class="xref std std-term">bytes-like object</span></a>.</p>
-<p>For example:</p>
+<p>Dla przykładu:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="sa">b</span><span class="s1">&#39;1,2,3&#39;</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
 <span class="go">[b&#39;1&#39;, b&#39;2&#39;, b&#39;3&#39;]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="sa">b</span><span class="s1">&#39;1,2,3&#39;</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">maxsplit</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -3751,7 +3774,7 @@ separator, and the result will contain no empty strings at the start or
 end if the sequence has leading or trailing whitespace.  Consequently,
 splitting an empty sequence or a sequence consisting solely of ASCII
 whitespace without a specified separator returns <code class="docutils literal notranslate"><span class="pre">[]</span></code>.</p>
-<p>For example:</p>
+<p>Dla przykładu:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="sa">b</span><span class="s1">&#39;1 2 3&#39;</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
 <span class="go">[b&#39;1&#39;, b&#39;2&#39;, b&#39;3&#39;]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="sa">b</span><span class="s1">&#39;1 2 3&#39;</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">maxsplit</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -3848,7 +3871,7 @@ or ASCII decimal digits and the sequence is not empty, <code class="docutils lit
 Alphabetic ASCII characters are those byte values in the sequence
 <code class="docutils literal notranslate"><span class="pre">b'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'</span></code>. ASCII decimal
 digits are those byte values in the sequence <code class="docutils literal notranslate"><span class="pre">b'0123456789'</span></code>.</p>
-<p>For example:</p>
+<p>Dla przykładu:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="sa">b</span><span class="s1">&#39;ABCabc1&#39;</span><span class="o">.</span><span class="n">isalnum</span><span class="p">()</span>
 <span class="go">True</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="sa">b</span><span class="s1">&#39;ABC abc1&#39;</span><span class="o">.</span><span class="n">isalnum</span><span class="p">()</span>
@@ -3866,7 +3889,7 @@ digits are those byte values in the sequence <code class="docutils literal notra
 and the sequence is not empty, <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise.  Alphabetic ASCII
 characters are those byte values in the sequence
 <code class="docutils literal notranslate"><span class="pre">b'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'</span></code>.</p>
-<p>For example:</p>
+<p>Dla przykładu:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="sa">b</span><span class="s1">&#39;ABCabc&#39;</span><span class="o">.</span><span class="n">isalpha</span><span class="p">()</span>
 <span class="go">True</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="sa">b</span><span class="s1">&#39;ABCabc1&#39;</span><span class="o">.</span><span class="n">isalpha</span><span class="p">()</span>
@@ -3896,7 +3919,7 @@ ASCII bytes are in the range 0-0x7F.</p>
 <dd><p>Return <code class="docutils literal notranslate"><span class="pre">True</span></code> if all bytes in the sequence are ASCII decimal digits
 and the sequence is not empty, <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise. ASCII decimal digits are
 those byte values in the sequence <code class="docutils literal notranslate"><span class="pre">b'0123456789'</span></code>.</p>
-<p>For example:</p>
+<p>Dla przykładu:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="sa">b</span><span class="s1">&#39;1234&#39;</span><span class="o">.</span><span class="n">isdigit</span><span class="p">()</span>
 <span class="go">True</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="sa">b</span><span class="s1">&#39;1.23&#39;</span><span class="o">.</span><span class="n">isdigit</span><span class="p">()</span>
@@ -3912,7 +3935,7 @@ those byte values in the sequence <code class="docutils literal notranslate"><sp
 <span class="sig-prename descclassname"><span class="pre">bytearray.</span></span><span class="sig-name descname"><span class="pre">islower</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bytearray.islower" title="Link to this definition">¶</a></dt>
 <dd><p>Return <code class="docutils literal notranslate"><span class="pre">True</span></code> if there is at least one lowercase ASCII character
 in the sequence and no uppercase ASCII characters, <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise.</p>
-<p>For example:</p>
+<p>Dla przykładu:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="sa">b</span><span class="s1">&#39;hello world&#39;</span><span class="o">.</span><span class="n">islower</span><span class="p">()</span>
 <span class="go">True</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="sa">b</span><span class="s1">&#39;Hello world&#39;</span><span class="o">.</span><span class="n">islower</span><span class="p">()</span>
@@ -3943,7 +3966,7 @@ carriage return, vertical tab, form feed).</p>
 <dd><p>Return <code class="docutils literal notranslate"><span class="pre">True</span></code> if the sequence is ASCII titlecase and the sequence is not
 empty, <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise. See <a class="reference internal" href="#bytes.title" title="bytes.title"><code class="xref py py-meth docutils literal notranslate"><span class="pre">bytes.title()</span></code></a> for more details on the
 definition of „titlecase”.</p>
-<p>For example:</p>
+<p>Dla przykładu:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="sa">b</span><span class="s1">&#39;Hello World&#39;</span><span class="o">.</span><span class="n">istitle</span><span class="p">()</span>
 <span class="go">True</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="sa">b</span><span class="s1">&#39;Hello world&#39;</span><span class="o">.</span><span class="n">istitle</span><span class="p">()</span>
@@ -3959,7 +3982,7 @@ definition of „titlecase”.</p>
 <span class="sig-prename descclassname"><span class="pre">bytearray.</span></span><span class="sig-name descname"><span class="pre">isupper</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bytearray.isupper" title="Link to this definition">¶</a></dt>
 <dd><p>Return <code class="docutils literal notranslate"><span class="pre">True</span></code> if there is at least one uppercase alphabetic ASCII character
 in the sequence and no lowercase ASCII characters, <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise.</p>
-<p>For example:</p>
+<p>Dla przykładu:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="sa">b</span><span class="s1">&#39;HELLO WORLD&#39;</span><span class="o">.</span><span class="n">isupper</span><span class="p">()</span>
 <span class="go">True</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="sa">b</span><span class="s1">&#39;Hello world&#39;</span><span class="o">.</span><span class="n">isupper</span><span class="p">()</span>
@@ -3978,7 +4001,7 @@ are those byte values in the sequence <code class="docutils literal notranslate"
 <span class="sig-prename descclassname"><span class="pre">bytearray.</span></span><span class="sig-name descname"><span class="pre">lower</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bytearray.lower" title="Link to this definition">¶</a></dt>
 <dd><p>Return a copy of the sequence with all the uppercase ASCII characters
 converted to their corresponding lowercase counterpart.</p>
-<p>For example:</p>
+<p>Dla przykładu:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="sa">b</span><span class="s1">&#39;Hello World&#39;</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
 <span class="go">b&#39;hello world&#39;</span>
 </pre></div>
@@ -4002,7 +4025,7 @@ always produces a new object, even if no changes were made.</p>
 line boundaries. This method uses the <a class="reference internal" href="../glossary.html#term-universal-newlines"><span class="xref std std-term">universal newlines</span></a> approach
 to splitting lines. Line breaks are not included in the resulting list
 unless <em>keepends</em> is given and true.</p>
-<p>For example:</p>
+<p>Dla przykładu:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="sa">b</span><span class="s1">&#39;ab c</span><span class="se">\n\n</span><span class="s1">de fg</span><span class="se">\r</span><span class="s1">kl</span><span class="se">\r\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">splitlines</span><span class="p">()</span>
 <span class="go">[b&#39;ab c&#39;, b&#39;&#39;, b&#39;de fg&#39;, b&#39;kl&#39;]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="sa">b</span><span class="s1">&#39;ab c</span><span class="se">\n\n</span><span class="s1">de fg</span><span class="se">\r</span><span class="s1">kl</span><span class="se">\r\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">splitlines</span><span class="p">(</span><span class="n">keepends</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -4027,7 +4050,7 @@ break does not result in an extra line:</p>
 <span class="sig-prename descclassname"><span class="pre">bytearray.</span></span><span class="sig-name descname"><span class="pre">swapcase</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bytearray.swapcase" title="Link to this definition">¶</a></dt>
 <dd><p>Return a copy of the sequence with all the lowercase ASCII characters
 converted to their corresponding uppercase counterpart and vice-versa.</p>
-<p>For example:</p>
+<p>Dla przykładu:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="sa">b</span><span class="s1">&#39;Hello World&#39;</span><span class="o">.</span><span class="n">swapcase</span><span class="p">()</span>
 <span class="go">b&#39;hELLO wORLD&#39;</span>
 </pre></div>
@@ -4054,7 +4077,7 @@ always produces a new object, even if no changes were made.</p>
 <dd><p>Return a titlecased version of the binary sequence where words start with
 an uppercase ASCII character and the remaining characters are lowercase.
 Uncased byte values are left unmodified.</p>
-<p>For example:</p>
+<p>Dla przykładu:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="sa">b</span><span class="s1">&#39;Hello world&#39;</span><span class="o">.</span><span class="n">title</span><span class="p">()</span>
 <span class="go">b&#39;Hello World&#39;</span>
 </pre></div>
@@ -4097,7 +4120,7 @@ always produces a new object, even if no changes were made.</p>
 <span class="sig-prename descclassname"><span class="pre">bytearray.</span></span><span class="sig-name descname"><span class="pre">upper</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bytearray.upper" title="Link to this definition">¶</a></dt>
 <dd><p>Return a copy of the sequence with all the lowercase ASCII characters
 converted to their corresponding uppercase counterpart.</p>
-<p>For example:</p>
+<p>Dla przykładu:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="sa">b</span><span class="s1">&#39;Hello World&#39;</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
 <span class="go">b&#39;HELLO WORLD&#39;</span>
 </pre></div>
@@ -4122,7 +4145,7 @@ make a sequence of length <em>width</em>. A leading sign prefix (<code class="do
 <code class="docutils literal notranslate"><span class="pre">b'-'</span></code>) is handled by inserting the padding <em>after</em> the sign character
 rather than before. For <a class="reference internal" href="#bytes" title="bytes"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a> objects, the original sequence is
 returned if <em>width</em> is less than or equal to <code class="docutils literal notranslate"><span class="pre">len(seq)</span></code>.</p>
-<p>For example:</p>
+<p>Dla przykładu:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="sa">b</span><span class="s2">&quot;42&quot;</span><span class="o">.</span><span class="n">zfill</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 <span class="go">b&#39;00042&#39;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="sa">b</span><span class="s2">&quot;-42&quot;</span><span class="o">.</span><span class="n">zfill</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
@@ -4189,7 +4212,7 @@ sequential parameter list).</p>
 <table class="docutils align-default" id="index-48">
 <thead>
 <tr class="row-odd"><th class="head"><p>Flag</p></th>
-<th class="head"><p>Meaning</p></th>
+<th class="head"><p>Znaczenie</p></th>
 </tr>
 </thead>
 <tbody>
@@ -4220,8 +4243,8 @@ is not necessary for Python – so e.g. <code class="docutils literal notranslat
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Conversion</p></th>
-<th class="head"><p>Meaning</p></th>
-<th class="head"><p>Notes</p></th>
+<th class="head"><p>Znaczenie</p></th>
+<th class="head"><p>Notatki</p></th>
 </tr>
 </thead>
 <tbody>
@@ -4310,7 +4333,7 @@ character in the result.</p></td>
 </tr>
 </tbody>
 </table>
-<p>Notes:</p>
+<p>Uwagi:</p>
 <ol class="arabic">
 <li><p>The alternate form causes a leading octal specifier (<code class="docutils literal notranslate"><span class="pre">'0o'</span></code>) to be
 inserted before the first digit.</p></li>
@@ -4329,7 +4352,7 @@ decimal point and defaults to 6.</p>
 <li><p>If precision is <code class="docutils literal notranslate"><span class="pre">N</span></code>, the output is truncated to <code class="docutils literal notranslate"><span class="pre">N</span></code> characters.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">b'%s'</span></code> is deprecated, but will not be removed during the 3.x series.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">b'%r'</span></code> is deprecated, but will not be removed during the 3.x series.</p></li>
-<li><p>See <span class="target" id="index-49"></span><a class="pep reference external" href="https://peps.python.org/pep-0237/"><strong>PEP 237</strong></a>.</p></li>
+<li><p>Zob. <span class="target" id="index-74"></span><a class="pep reference external" href="https://peps.python.org/pep-0237/"><strong>PEP 237</strong></a>.</p></li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Informacja</p>
@@ -5238,13 +5261,13 @@ mapping types should support too):</p>
 <span class="sig-name descname"><span class="pre">d[key]</span></span></dt>
 <dd><p>Return the item of <em>d</em> with key <em>key</em>.  Raises a <a class="reference internal" href="exceptions.html#KeyError" title="KeyError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">KeyError</span></code></a> if <em>key</em> is
 not in the map.</p>
-<p id="index-54">If a subclass of dict defines a method <code class="xref py py-meth docutils literal notranslate"><span class="pre">__missing__()</span></code> and <em>key</em>
+<p id="index-54">If a subclass of dict defines a method <a class="reference internal" href="../reference/datamodel.html#object.__missing__" title="object.__missing__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">__missing__()</span></code></a> and <em>key</em>
 is not present, the <code class="docutils literal notranslate"><span class="pre">d[key]</span></code> operation calls that method with the key <em>key</em>
 as argument.  The <code class="docutils literal notranslate"><span class="pre">d[key]</span></code> operation then returns or raises whatever is
 returned or raised by the <code class="docutils literal notranslate"><span class="pre">__missing__(key)</span></code> call.
-No other operations or methods invoke <code class="xref py py-meth docutils literal notranslate"><span class="pre">__missing__()</span></code>. If
-<code class="xref py py-meth docutils literal notranslate"><span class="pre">__missing__()</span></code> is not defined, <a class="reference internal" href="exceptions.html#KeyError" title="KeyError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">KeyError</span></code></a> is raised.
-<code class="xref py py-meth docutils literal notranslate"><span class="pre">__missing__()</span></code> must be a method; it cannot be an instance variable:</p>
+No other operations or methods invoke <a class="reference internal" href="../reference/datamodel.html#object.__missing__" title="object.__missing__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">__missing__()</span></code></a>. If
+<a class="reference internal" href="../reference/datamodel.html#object.__missing__" title="object.__missing__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">__missing__()</span></code></a> is not defined, <a class="reference internal" href="exceptions.html#KeyError" title="KeyError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">KeyError</span></code></a> is raised.
+<a class="reference internal" href="../reference/datamodel.html#object.__missing__" title="object.__missing__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">__missing__()</span></code></a> must be a method; it cannot be an instance variable:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">class</span><span class="w"> </span><span class="nc">Counter</span><span class="p">(</span><span class="nb">dict</span><span class="p">):</span>
 <span class="gp">... </span>    <span class="k">def</span><span class="w"> </span><span class="fm">__missing__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
 <span class="gp">... </span>        <span class="k">return</span> <span class="mi">0</span>
@@ -5258,7 +5281,8 @@ No other operations or methods invoke <code class="xref py py-meth docutils lite
 </pre></div>
 </div>
 <p>The example above shows part of the implementation of
-<a class="reference internal" href="collections.html#collections.Counter" title="collections.Counter"><code class="xref py py-class docutils literal notranslate"><span class="pre">collections.Counter</span></code></a>.  A different <code class="docutils literal notranslate"><span class="pre">__missing__</span></code> method is used
+<a class="reference internal" href="collections.html#collections.Counter" title="collections.Counter"><code class="xref py py-class docutils literal notranslate"><span class="pre">collections.Counter</span></code></a>.
+A different <code class="xref py py-meth docutils literal notranslate"><span class="pre">__missing__()</span></code> method is used
 by <a class="reference internal" href="collections.html#collections.defaultdict" title="collections.defaultdict"><code class="xref py py-class docutils literal notranslate"><span class="pre">collections.defaultdict</span></code></a>.</p>
 </dd></dl>
 
@@ -6018,7 +6042,7 @@ of <a class="reference internal" href="types.html#types.UnionType" title="types.
 <p>The interpreter supports several other kinds of objects. Most of these support
 only one or two operations.</p>
 <section id="modules">
-<span id="typesmodules"></span><h3>Modules<a class="headerlink" href="#modules" title="Link to this heading">¶</a></h3>
+<span id="typesmodules"></span><h3>Moduły<a class="headerlink" href="#modules" title="Link to this heading">¶</a></h3>
 <p>The only special operation on a module is attribute access: <code class="docutils literal notranslate"><span class="pre">m.name</span></code>, where
 <em>m</em> is a module and <em>name</em> accesses a name defined in <em>m</em>’s symbol table.
 Module attributes can be assigned to.  (Note that the <a class="reference internal" href="../reference/simple_stmts.html#import"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">import</span></code></a>
@@ -6041,7 +6065,7 @@ not recommended.</p>
 <p>See <a class="reference internal" href="../reference/datamodel.html#objects"><span class="std std-ref">Objects, values and types</span></a> and <a class="reference internal" href="../reference/compound_stmts.html#class"><span class="std std-ref">Class definitions</span></a> for these.</p>
 </section>
 <section id="functions">
-<span id="typesfunctions"></span><h3>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h3>
+<span id="typesfunctions"></span><h3>Zadania<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h3>
 <p>Function objects are created by function definitions.  The only operation on a
 function object is to call it: <code class="docutils literal notranslate"><span class="pre">func(argument-list)</span></code>.</p>
 <p>There are really two flavors of function objects: built-in functions and
@@ -6051,9 +6075,10 @@ but the implementation is different, hence the different object types.</p>
 </section>
 <section id="methods">
 <span id="typesmethods"></span><h3>Methods<a class="headerlink" href="#methods" title="Link to this heading">¶</a></h3>
-<p id="index-62">Methods are functions that are called using the attribute notation. There are
-two flavors: <a class="reference internal" href="../reference/datamodel.html#builtin-methods"><span class="std std-ref">built-in methods</span></a> (such as <code class="xref py py-meth docutils literal notranslate"><span class="pre">append()</span></code>
-on lists) and <a class="reference internal" href="../reference/datamodel.html#instance-methods"><span class="std std-ref">class instance method</span></a>.
+<p id="index-62">Methods are functions that are called using the attribute notation.
+There are two flavors: <a class="reference internal" href="../reference/datamodel.html#builtin-methods"><span class="std std-ref">built-in methods</span></a>
+(such as <a class="reference internal" href="#list.append" title="list.append"><code class="xref py py-meth docutils literal notranslate"><span class="pre">append()</span></code></a> on lists)
+and <a class="reference internal" href="../reference/datamodel.html#instance-methods"><span class="std std-ref">class instance method</span></a>.
 Built-in methods are described with the types that support them.</p>
 <p>If you access a method (a function defined in a class namespace) through an
 instance, you get a special object: a <em class="dfn">bound method</em> (also called
@@ -6119,11 +6144,27 @@ supports no special operations.  There is exactly one null object, named
 </section>
 <section id="the-ellipsis-object">
 <span id="bltin-ellipsis-object"></span><span id="index-67"></span><h3>The Ellipsis Object<a class="headerlink" href="#the-ellipsis-object" title="Link to this heading">¶</a></h3>
-<p>This object is commonly used by slicing (see <a class="reference internal" href="../reference/expressions.html#slicings"><span class="std std-ref">Slicings</span></a>).  It supports no
-special operations.  There is exactly one ellipsis object, named
+<p>This object is commonly used used to indicate that something is omitted.
+It supports no special operations.  There is exactly one ellipsis object, named
 <a class="reference internal" href="constants.html#Ellipsis" title="Ellipsis"><code class="xref py py-const docutils literal notranslate"><span class="pre">Ellipsis</span></code></a> (a built-in name).  <code class="docutils literal notranslate"><span class="pre">type(Ellipsis)()</span></code> produces the
 <a class="reference internal" href="constants.html#Ellipsis" title="Ellipsis"><code class="xref py py-const docutils literal notranslate"><span class="pre">Ellipsis</span></code></a> singleton.</p>
 <p>It is written as <code class="docutils literal notranslate"><span class="pre">Ellipsis</span></code> or <code class="docutils literal notranslate"><span class="pre">...</span></code>.</p>
+<p>In typical use, <code class="docutils literal notranslate"><span class="pre">...</span></code> as the <code class="docutils literal notranslate"><span class="pre">Ellipsis</span></code> object appears in a few different
+places, for instance:</p>
+<ul class="simple">
+<li><p>In type annotations, such as <a class="reference internal" href="typing.html#annotating-callables"><span class="std std-ref">callable arguments</span></a>
+or <a class="reference internal" href="typing.html#annotating-tuples"><span class="std std-ref">tuple elements</span></a>.</p></li>
+<li><p>As the body of a function instead of a <a class="reference internal" href="../tutorial/controlflow.html#tut-pass"><span class="std std-ref">pass statement</span></a>.</p></li>
+<li><p>In third-party libraries, such as <a class="reference external" href="https://numpy.org/doc/stable/user/basics.indexing.html#slicing-and-striding">Numpy’s slicing and striding</a>.</p></li>
+</ul>
+<p>Python also uses three dots in ways that are not <code class="docutils literal notranslate"><span class="pre">Ellipsis</span></code> objects, for instance:</p>
+<ul class="simple">
+<li><p>Doctest’s <a class="reference internal" href="doctest.html#doctest.ELLIPSIS" title="doctest.ELLIPSIS"><code class="xref py py-const docutils literal notranslate"><span class="pre">ELLIPSIS</span></code></a>, as a pattern for missing content.</p></li>
+<li><p>The default Python prompt of the <a class="reference internal" href="../glossary.html#term-interactive"><span class="xref std std-term">interactive</span></a> shell when partial input is incomplete.</p></li>
+</ul>
+<p>Lastly, the Python documentation often uses three dots in conventional English
+usage to mean omitted content, even in code examples that also use them as the
+<code class="docutils literal notranslate"><span class="pre">Ellipsis</span></code>.</p>
 </section>
 <section id="the-notimplemented-object">
 <span id="bltin-notimplemented-object"></span><h3>The NotImplemented Object<a class="headerlink" href="#the-notimplemented-object" title="Link to this heading">¶</a></h3>
@@ -6316,7 +6357,7 @@ to precompile <code class="docutils literal notranslate"><span class="pre">.py</
 reasonable for most applications. If your application requires a different
 limit, set it from your main entry point using Python version agnostic code as
 these APIs were added in security patch releases in versions before 3.12.</p>
-<p>Example:</p>
+<p>Przykład:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">sys</span><span class="p">,</span> <span class="s2">&quot;set_int_max_str_digits&quot;</span><span class="p">):</span>
 <span class="gp">... </span>    <span class="n">upper_bound</span> <span class="o">=</span> <span class="mi">68000</span>
@@ -6329,7 +6370,7 @@ these APIs were added in security patch releases in versions before 3.12.</p>
 </pre></div>
 </div>
 <p>If you need to disable it entirely, set it to <code class="docutils literal notranslate"><span class="pre">0</span></code>.</p>
-<p class="rubric">Footnotes</p>
+<p class="rubric">Przypisy</p>
 <aside class="footnote-list brackets">
 <aside class="footnote brackets" id="id12" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
@@ -6370,9 +6411,9 @@ element is the tuple to be formatted.</p>
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
-<li><a class="reference internal" href="#">Built-in Types</a><ul>
+<li><a class="reference internal" href="#">Wbudowane typy</a><ul>
 <li><a class="reference internal" href="#truth-value-testing">Truth Value Testing</a></li>
 <li><a class="reference internal" href="#boolean-operations-and-or-not">Boolean Operations — <code class="xref std std-keyword docutils literal notranslate"><span class="pre">and</span></code>, <code class="xref std std-keyword docutils literal notranslate"><span class="pre">or</span></code>, <code class="xref std std-keyword docutils literal notranslate"><span class="pre">not</span></code></a></li>
 <li><a class="reference internal" href="#comparisons">Comparisons</a></li>
@@ -6393,14 +6434,14 @@ element is the tuple to be formatted.</p>
 <li><a class="reference internal" href="#common-sequence-operations">Common Sequence Operations</a></li>
 <li><a class="reference internal" href="#immutable-sequence-types">Immutable Sequence Types</a></li>
 <li><a class="reference internal" href="#mutable-sequence-types">Mutable Sequence Types</a></li>
-<li><a class="reference internal" href="#lists">Lists</a></li>
+<li><a class="reference internal" href="#lists">Listy</a></li>
 <li><a class="reference internal" href="#tuples">Tuples</a></li>
 <li><a class="reference internal" href="#ranges">Ranges</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#text-and-binary-sequence-type-methods-summary">Text and Binary Sequence Type Methods Summary</a></li>
 <li><a class="reference internal" href="#text-sequence-type-str">Text Sequence Type — <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a><ul>
-<li><a class="reference internal" href="#string-methods">String Methods</a></li>
+<li><a class="reference internal" href="#string-methods">Metody ciągów</a></li>
 <li><a class="reference internal" href="#formatted-string-literals-f-strings">Formatted String Literals (f-strings)</a></li>
 <li><a class="reference internal" href="#printf-style-string-formatting"><code class="docutils literal notranslate"><span class="pre">printf</span></code>-style String Formatting</a></li>
 </ul>
@@ -6429,9 +6470,9 @@ element is the tuple to be formatted.</p>
 </ul>
 </li>
 <li><a class="reference internal" href="#other-built-in-types">Other Built-in Types</a><ul>
-<li><a class="reference internal" href="#modules">Modules</a></li>
+<li><a class="reference internal" href="#modules">Moduły</a></li>
 <li><a class="reference internal" href="#classes-and-class-instances">Classes and Class Instances</a></li>
-<li><a class="reference internal" href="#functions">Functions</a></li>
+<li><a class="reference internal" href="#functions">Zadania</a></li>
 <li><a class="reference internal" href="#methods">Methods</a></li>
 <li><a class="reference internal" href="#code-objects">Code Objects</a></li>
 <li><a class="reference internal" href="#type-objects">Type Objects</a></li>
@@ -6454,14 +6495,14 @@ element is the tuple to be formatted.</p>
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="constants.html"
-                          title="previous chapter">Built-in Constants</a></p>
+                          title="poprzedni rozdział">Wbudowane stałe</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="exceptions.html"
-                          title="next chapter">Built-in Exceptions</a></p>
+                          title="następny rozdział">Built-in Exceptions</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -6475,7 +6516,7 @@ element is the tuple to be formatted.</p>
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -6495,7 +6536,7 @@ element is the tuple to be formatted.</p>
           <a href="exceptions.html" title="Built-in Exceptions"
              >dalej</a> |</li>
         <li class="right" >
-          <a href="constants.html" title="Built-in Constants"
+          <a href="constants.html" title="Wbudowane stałe"
              >wstecz</a> |</li>
 
           <li><img src="../_static/py.svg" alt="Python logo" style="vertical-align: middle; margin-top: -1px"></li>
@@ -6511,8 +6552,8 @@ element is the tuple to be formatted.</p>
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">Built-in Types</a></li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Wbudowane typy</a></li>
                 <li class="right">
                     
 
@@ -6559,7 +6600,7 @@ element is the tuple to be formatted.</p>
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

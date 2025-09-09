@@ -8,10 +8,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://docs.python.org/3/library/ssl.html" />
 <meta property="og:site_name" content="Python documentation" />
-<meta property="og:description" content="Source code: Lib/ssl.py This module provides access to Transport Layer Security (often known as „Secure Sockets Layer”) encryption and peer authentication facilities for network sockets, both clien..." />
+<meta property="og:description" content="Kod źródłowy: Lib/ssl.py This module provides access to Transport Layer Security (often known as „Secure Sockets Layer”) encryption and peer authentication facilities for network sockets, both clie..." />
 <meta property="og:image" content="_static/og-image.png" />
 <meta property="og:image:alt" content="Python documentation" />
-<meta name="description" content="Source code: Lib/ssl.py This module provides access to Transport Layer Security (often known as „Secure Sockets Layer”) encryption and peer authentication facilities for network sockets, both clien..." />
+<meta name="description" content="Kod źródłowy: Lib/ssl.py This module provides access to Transport Layer Security (often known as „Secure Sockets Layer”) encryption and peer authentication facilities for network sockets, both clie..." />
 <meta name="theme-color" content="#3776ab">
 <meta property="og:image:width" content="200">
 <meta property="og:image:height" content="200">
@@ -31,11 +31,11 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="select — Waiting for I/O completion" href="select.html" />
     <link rel="prev" title="socket — Low-level networking interface" href="socket.html" />
@@ -98,16 +98,17 @@
     </select>
 </label>
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">ssl</span></code> — TLS/SSL wrapper for socket objects</a><ul>
 <li><a class="reference internal" href="#functions-constants-and-exceptions">Functions, Constants, and Exceptions</a><ul>
 <li><a class="reference internal" href="#socket-creation">Socket creation</a></li>
 <li><a class="reference internal" href="#context-creation">Context creation</a></li>
-<li><a class="reference internal" href="#exceptions">Exceptions</a></li>
+<li><a class="reference internal" href="#signature-algorithms">Signature algorithms</a></li>
+<li><a class="reference internal" href="#exceptions">Wyjątki</a></li>
 <li><a class="reference internal" href="#random-generation">Random generation</a></li>
 <li><a class="reference internal" href="#certificate-handling">Certificate handling</a></li>
-<li><a class="reference internal" href="#constants">Constants</a></li>
+<li><a class="reference internal" href="#constants">Stały</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#ssl-sockets">SSL Sockets</a></li>
@@ -119,7 +120,7 @@
 <li><a class="reference internal" href="#self-signed-certificates">Self-signed certificates</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#examples">Examples</a><ul>
+<li><a class="reference internal" href="#examples">Przykłady</a><ul>
 <li><a class="reference internal" href="#testing-for-ssl-support">Testing for SSL support</a></li>
 <li><a class="reference internal" href="#client-side-operation">Client-side operation</a></li>
 <li><a class="reference internal" href="#server-side-operation">Server-side operation</a></li>
@@ -146,14 +147,14 @@
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="socket.html"
-                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">socket</span></code> — Low-level networking interface</a></p>
+                          title="poprzedni rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">socket</span></code> — Low-level networking interface</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="select.html"
-                          title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">select</span></code> — Waiting for I/O completion</a></p>
+                          title="następny rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">select</span></code> — Waiting for I/O completion</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -200,7 +201,7 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="ipc.html" accesskey="U">Networking and Interprocess Communication</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">ssl</span></code> — TLS/SSL wrapper for socket objects</a></li>
                 <li class="right">
@@ -234,7 +235,7 @@
             
   <section id="module-ssl">
 <span id="ssl-tls-ssl-wrapper-for-socket-objects"></span><h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">ssl</span></code> — TLS/SSL wrapper for socket objects<a class="headerlink" href="#module-ssl" title="Link to this heading">¶</a></h1>
-<p><strong>Source code:</strong> <a class="extlink-source reference external" href="https://github.com/python/cpython/tree/main/Lib/ssl.py">Lib/ssl.py</a></p>
+<p><strong>Kod źródłowy:</strong> <a class="extlink-source reference external" href="https://github.com/python/cpython/tree/main/Lib/ssl.py">Lib/ssl.py</a></p>
 <span id="index-0"></span><hr class="docutils" id="index-1" />
 <p>This module provides access to Transport Layer Security (often known as „Secure
 Sockets Layer”) encryption and peer authentication facilities for network
@@ -255,7 +256,7 @@ may lead to a false sense of security, as the default settings of the
 ssl module are not necessarily appropriate for your application.</p>
 </div>
 <div class="availability docutils container">
-<p><a class="reference internal" href="intro.html#availability"><span class="std std-ref">Availability</span></a>: not WASI.</p>
+<p><a class="reference internal" href="intro.html#availability"><span class="std std-ref">Dostępność</span></a>: not WASI.</p>
 <p>This module does not work or is not available on WebAssembly. See
 <a class="reference internal" href="intro.html#wasm-availability"><span class="std std-ref">WebAssembly platforms</span></a> for more information.</p>
 </div>
@@ -336,7 +337,7 @@ settings.</p>
 purposes.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="ssl.create_default_context">
-<span class="sig-prename descclassname"><span class="pre">ssl.</span></span><span class="sig-name descname"><span class="pre">create_default_context</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">purpose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Purpose.SERVER_AUTH</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cafile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">capath</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cadata</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ssl.create_default_context" title="Link to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">ssl.</span></span><span class="sig-name descname"><span class="pre">create_default_context</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">purpose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Purpose.SERVER_AUTH</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">cafile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">capath</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cadata</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ssl.create_default_context" title="Link to this definition">¶</a></dt>
 <dd><p>Return a new <a class="reference internal" href="#ssl.SSLContext" title="ssl.SSLContext"><code class="xref py py-class docutils literal notranslate"><span class="pre">SSLContext</span></code></a> object with default settings for
 the given <em>purpose</em>.  The settings are chosen by the <a class="reference internal" href="#module-ssl" title="ssl: TLS/SSL wrapper for socket objects"><code class="xref py py-mod docutils literal notranslate"><span class="pre">ssl</span></code></a> module,
 and usually represent a higher security level than when calling the
@@ -420,8 +421,29 @@ this is not recommended, you can do so using:</p>
 </dd></dl>
 
 </section>
+<section id="signature-algorithms">
+<h3>Signature algorithms<a class="headerlink" href="#signature-algorithms" title="Link to this heading">¶</a></h3>
+<dl class="py function">
+<dt class="sig sig-object py" id="ssl.get_sigalgs">
+<span class="sig-prename descclassname"><span class="pre">ssl.</span></span><span class="sig-name descname"><span class="pre">get_sigalgs</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ssl.get_sigalgs" title="Link to this definition">¶</a></dt>
+<dd><p>Return a list of available TLS signature algorithm names used
+by servers to complete the TLS handshake or clients requesting
+certificate-based authentication. For example:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ssl</span><span class="o">.</span><span class="n">get_sigalgs</span><span class="p">()</span>
+<span class="go">[&#39;ecdsa_secp256r1_sha256&#39;, &#39;ecdsa_secp384r1_sha384&#39;, ...]</span>
+</pre></div>
+</div>
+<p>These names can be used when building string values to pass to the
+<a class="reference internal" href="#ssl.SSLContext.set_client_sigalgs" title="ssl.SSLContext.set_client_sigalgs"><code class="xref py py-meth docutils literal notranslate"><span class="pre">SSLContext.set_client_sigalgs()</span></code></a> and
+<a class="reference internal" href="#ssl.SSLContext.set_server_sigalgs" title="ssl.SSLContext.set_server_sigalgs"><code class="xref py py-meth docutils literal notranslate"><span class="pre">SSLContext.set_server_sigalgs()</span></code></a> methods.</p>
+<div class="versionadded">
+<p><span class="versionmodified added"> Dodane w wersji 3.15.0a0 (unreleased).</span></p>
+</div>
+</dd></dl>
+
+</section>
 <section id="exceptions">
-<h3>Exceptions<a class="headerlink" href="#exceptions" title="Link to this heading">¶</a></h3>
+<h3>Wyjątki<a class="headerlink" href="#exceptions" title="Link to this heading">¶</a></h3>
 <dl class="py exception">
 <dt class="sig sig-object py" id="ssl.SSLError">
 <em class="property"><span class="k"><span class="pre">exception</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ssl.</span></span><span class="sig-name descname"><span class="pre">SSLError</span></span><a class="headerlink" href="#ssl.SSLError" title="Link to this definition">¶</a></dt>
@@ -549,7 +571,7 @@ failed.</p>
 <h3>Random generation<a class="headerlink" href="#random-generation" title="Link to this heading">¶</a></h3>
 <dl class="py function">
 <dt class="sig sig-object py" id="ssl.RAND_bytes">
-<span class="sig-prename descclassname"><span class="pre">ssl.</span></span><span class="sig-name descname"><span class="pre">RAND_bytes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ssl.RAND_bytes" title="Link to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">ssl.</span></span><span class="sig-name descname"><span class="pre">RAND_bytes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num</span></span></em>, <em class="sig-param"><span class="positional-only-separator o"><abbr title="Positional-only parameter separator (PEP 570)"><span class="pre">/</span></abbr></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ssl.RAND_bytes" title="Link to this definition">¶</a></dt>
 <dd><p>Return <em>num</em> cryptographically strong pseudo-random bytes. Raises an
 <a class="reference internal" href="#ssl.SSLError" title="ssl.SSLError"><code class="xref py py-class docutils literal notranslate"><span class="pre">SSLError</span></code></a> if the PRNG has not been seeded with enough data or if the
 operation is not supported by the current RAND method. <a class="reference internal" href="#ssl.RAND_status" title="ssl.RAND_status"><code class="xref py py-func docutils literal notranslate"><span class="pre">RAND_status()</span></code></a>
@@ -575,7 +597,7 @@ the pseudo-random number generator.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="ssl.RAND_add">
-<span class="sig-prename descclassname"><span class="pre">ssl.</span></span><span class="sig-name descname"><span class="pre">RAND_add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bytes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entropy</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ssl.RAND_add" title="Link to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">ssl.</span></span><span class="sig-name descname"><span class="pre">RAND_add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bytes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entropy</span></span></em>, <em class="sig-param"><span class="positional-only-separator o"><abbr title="Positional-only parameter separator (PEP 570)"><span class="pre">/</span></abbr></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ssl.RAND_add" title="Link to this definition">¶</a></dt>
 <dd><p>Mix the given <em>bytes</em> into the SSL pseudo-random number generator.  The
 parameter <em>entropy</em> (a float) is a lower bound on the entropy contained in
 string (so you can always use <code class="docutils literal notranslate"><span class="pre">0.0</span></code>).  See <span class="target" id="index-7"></span><a class="rfc reference external" href="https://datatracker.ietf.org/doc/html/rfc1750.html"><strong>RFC 1750</strong></a> for more
@@ -641,14 +663,14 @@ if the validation attempt fails.  A timeout can be specified with the
 
 <dl class="py function">
 <dt class="sig sig-object py" id="ssl.DER_cert_to_PEM_cert">
-<span class="sig-prename descclassname"><span class="pre">ssl.</span></span><span class="sig-name descname"><span class="pre">DER_cert_to_PEM_cert</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">DER_cert_bytes</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ssl.DER_cert_to_PEM_cert" title="Link to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">ssl.</span></span><span class="sig-name descname"><span class="pre">DER_cert_to_PEM_cert</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">der_cert_bytes</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ssl.DER_cert_to_PEM_cert" title="Link to this definition">¶</a></dt>
 <dd><p>Given a certificate as a DER-encoded blob of bytes, returns a PEM-encoded
 string version of the same certificate.</p>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="ssl.PEM_cert_to_DER_cert">
-<span class="sig-prename descclassname"><span class="pre">ssl.</span></span><span class="sig-name descname"><span class="pre">PEM_cert_to_DER_cert</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">PEM_cert_string</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ssl.PEM_cert_to_DER_cert" title="Link to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">ssl.</span></span><span class="sig-name descname"><span class="pre">PEM_cert_to_DER_cert</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pem_cert_string</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ssl.PEM_cert_to_DER_cert" title="Link to this definition">¶</a></dt>
 <dd><p>Given a certificate as an ASCII PEM string, returns a DER-encoded sequence of
 bytes for that same certificate.</p>
 </dd></dl>
@@ -685,14 +707,14 @@ The encoding_type specifies the encoding of cert_bytes. It is either
 PKCS#7 ASN.1 data. Trust specifies the purpose of the certificate as a set
 of OIDS or exactly <code class="docutils literal notranslate"><span class="pre">True</span></code> if the certificate is trustworthy for all
 purposes.</p>
-<p>Example:</p>
+<p>Przykład:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ssl</span><span class="o">.</span><span class="n">enum_certificates</span><span class="p">(</span><span class="s2">&quot;CA&quot;</span><span class="p">)</span>
 <span class="go">[(b&#39;data...&#39;, &#39;x509_asn&#39;, {&#39;1.3.6.1.5.5.7.3.1&#39;, &#39;1.3.6.1.5.5.7.3.2&#39;}),</span>
 <span class="go"> (b&#39;data...&#39;, &#39;x509_asn&#39;, True)]</span>
 </pre></div>
 </div>
 <div class="availability docutils container">
-<p><a class="reference internal" href="intro.html#availability"><span class="std std-ref">Availability</span></a>: Windows.</p>
+<p><a class="reference internal" href="intro.html#availability"><span class="std std-ref">Dostępność</span></a>: Windows.</p>
 </div>
 <div class="versionadded">
 <p><span class="versionmodified added"> Dodane w wersji 3.4.</span></p>
@@ -710,7 +732,7 @@ The encoding_type specifies the encoding of cert_bytes. It is either
 <code class="xref py py-const docutils literal notranslate"><span class="pre">x509_asn</span></code> for X.509 ASN.1 data or <code class="xref py py-const docutils literal notranslate"><span class="pre">pkcs_7_asn</span></code> for
 PKCS#7 ASN.1 data.</p>
 <div class="availability docutils container">
-<p><a class="reference internal" href="intro.html#availability"><span class="std std-ref">Availability</span></a>: Windows.</p>
+<p><a class="reference internal" href="intro.html#availability"><span class="std std-ref">Dostępność</span></a>: Windows.</p>
 </div>
 <div class="versionadded">
 <p><span class="versionmodified added"> Dodane w wersji 3.4.</span></p>
@@ -719,7 +741,7 @@ PKCS#7 ASN.1 data.</p>
 
 </section>
 <section id="constants">
-<h3>Constants<a class="headerlink" href="#constants" title="Link to this heading">¶</a></h3>
+<h3>Stały<a class="headerlink" href="#constants" title="Link to this heading">¶</a></h3>
 <blockquote>
 <div><p>All constants are now <a class="reference internal" href="enum.html#enum.IntEnum" title="enum.IntEnum"><code class="xref py py-class docutils literal notranslate"><span class="pre">enum.IntEnum</span></code></a> or <a class="reference internal" href="enum.html#enum.IntFlag" title="enum.IntFlag"><code class="xref py py-class docutils literal notranslate"><span class="pre">enum.IntFlag</span></code></a> collections.</p>
 <div class="versionadded">
@@ -1574,16 +1596,16 @@ bytes.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="ssl.SSLSocket.write">
-<span class="sig-prename descclassname"><span class="pre">SSLSocket.</span></span><span class="sig-name descname"><span class="pre">write</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">buf</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ssl.SSLSocket.write" title="Link to this definition">¶</a></dt>
-<dd><p>Write <em>buf</em> to the SSL socket and return the number of bytes written. The
-<em>buf</em> argument must be an object supporting the buffer interface.</p>
+<span class="sig-prename descclassname"><span class="pre">SSLSocket.</span></span><span class="sig-name descname"><span class="pre">write</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ssl.SSLSocket.write" title="Link to this definition">¶</a></dt>
+<dd><p>Write <em>data</em> to the SSL socket and return the number of bytes written. The
+<em>data</em> argument must be an object supporting the buffer interface.</p>
 <p>Raise <a class="reference internal" href="#ssl.SSLWantReadError" title="ssl.SSLWantReadError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">SSLWantReadError</span></code></a> or <a class="reference internal" href="#ssl.SSLWantWriteError" title="ssl.SSLWantWriteError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">SSLWantWriteError</span></code></a> if the socket is
 <a class="reference internal" href="#ssl-nonblocking"><span class="std std-ref">non-blocking</span></a> and the write would block.</p>
 <p>As at any time a re-negotiation is possible, a call to <a class="reference internal" href="#ssl.SSLSocket.write" title="ssl.SSLSocket.write"><code class="xref py py-meth docutils literal notranslate"><span class="pre">write()</span></code></a> can
 also cause read operations.</p>
 <div class="versionchanged">
 <p><span class="versionmodified changed">Zmienione w wersji 3.5: </span>The socket timeout is no longer reset each time bytes are received or sent.
-The socket timeout is now the maximum total duration to write <em>buf</em>.</p>
+The socket timeout is now the maximum total duration to write <em>data</em>.</p>
 </div>
 <div class="deprecated">
 <p><span class="versionmodified deprecated">Niezalecane od wersji 3.6: </span>Use <code class="xref py py-meth docutils literal notranslate"><span class="pre">send()</span></code> instead of <a class="reference internal" href="#ssl.SSLSocket.write" title="ssl.SSLSocket.write"><code class="xref py py-meth docutils literal notranslate"><span class="pre">write()</span></code></a>.</p>
@@ -1603,8 +1625,10 @@ methods.</p>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="ssl.SSLSocket.do_handshake">
-<span class="sig-prename descclassname"><span class="pre">SSLSocket.</span></span><span class="sig-name descname"><span class="pre">do_handshake</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ssl.SSLSocket.do_handshake" title="Link to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">SSLSocket.</span></span><span class="sig-name descname"><span class="pre">do_handshake</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">block</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ssl.SSLSocket.do_handshake" title="Link to this definition">¶</a></dt>
 <dd><p>Perform the SSL setup handshake.</p>
+<p>If <em>block</em> is true and the timeout obtained by <a class="reference internal" href="socket.html#socket.socket.gettimeout" title="socket.socket.gettimeout"><code class="xref py py-meth docutils literal notranslate"><span class="pre">gettimeout()</span></code></a>
+is zero, the socket is set in blocking mode until the handshake is performed.</p>
 <div class="versionchanged">
 <p><span class="versionmodified changed">Zmienione w wersji 3.4: </span>The handshake method also performs <code class="xref py py-func docutils literal notranslate"><span class="pre">match_hostname()</span></code> when the
 <a class="reference internal" href="#ssl.SSLContext.check_hostname" title="ssl.SSLContext.check_hostname"><code class="xref py py-attr docutils literal notranslate"><span class="pre">check_hostname</span></code></a> attribute of the socket’s
@@ -1737,6 +1761,28 @@ socket.</p>
 <span class="sig-prename descclassname"><span class="pre">SSLSocket.</span></span><span class="sig-name descname"><span class="pre">group</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ssl.SSLSocket.group" title="Link to this definition">¶</a></dt>
 <dd><p>Return the group used for doing key agreement on this connection. If no
 connection has been established, returns <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
+<div class="versionadded">
+<p><span class="versionmodified added"> Dodane w wersji 3.15.0a0 (unreleased).</span></p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ssl.SSLSocket.client_sigalg">
+<span class="sig-prename descclassname"><span class="pre">SSLSocket.</span></span><span class="sig-name descname"><span class="pre">client_sigalg</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ssl.SSLSocket.client_sigalg" title="Link to this definition">¶</a></dt>
+<dd><p>Return the signature algorithm used for performing certificate-based client
+authentication on this connection, or <code class="docutils literal notranslate"><span class="pre">None</span></code> if no connection has been
+established or client authentication didn’t occur.</p>
+<div class="versionadded">
+<p><span class="versionmodified added"> Dodane w wersji 3.15.0a0 (unreleased).</span></p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ssl.SSLSocket.server_sigalg">
+<span class="sig-prename descclassname"><span class="pre">SSLSocket.</span></span><span class="sig-name descname"><span class="pre">server_sigalg</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ssl.SSLSocket.server_sigalg" title="Link to this definition">¶</a></dt>
+<dd><p>Return the signature algorithm used by the server to complete the TLS
+handshake on this connection, or <code class="docutils literal notranslate"><span class="pre">None</span></code> if no connection has been
+established or the cipher suite has no signature.</p>
 <div class="versionadded">
 <p><span class="versionmodified added"> Dodane w wersji 3.15.0a0 (unreleased).</span></p>
 </div>
@@ -1938,56 +1984,56 @@ to which versions in a server (along the top):</p>
 <td><p><strong>TLSv1.2</strong></p></td>
 </tr>
 <tr class="row-even"><td><p><em>SSLv2</em></p></td>
-<td><p>yes</p></td>
-<td><p>no</p></td>
+<td><p>tak</p></td>
+<td><p>nie</p></td>
 <td><p>no <a class="footnote-reference brackets" href="#id7" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p></td>
-<td><p>no</p></td>
-<td><p>no</p></td>
-<td><p>no</p></td>
+<td><p>nie</p></td>
+<td><p>nie</p></td>
+<td><p>nie</p></td>
 </tr>
 <tr class="row-odd"><td><p><em>SSLv3</em></p></td>
-<td><p>no</p></td>
-<td><p>yes</p></td>
+<td><p>nie</p></td>
+<td><p>tak</p></td>
 <td><p>no <a class="footnote-reference brackets" href="#id8" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a></p></td>
-<td><p>no</p></td>
-<td><p>no</p></td>
-<td><p>no</p></td>
+<td><p>nie</p></td>
+<td><p>nie</p></td>
+<td><p>nie</p></td>
 </tr>
 <tr class="row-even"><td><p><em>TLS</em> (<em>SSLv23</em>) <a class="footnote-reference brackets" href="#id9" id="id4" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a></p></td>
 <td><p>no <a class="footnote-reference brackets" href="#id7" id="id5" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p></td>
 <td><p>no <a class="footnote-reference brackets" href="#id8" id="id6" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a></p></td>
-<td><p>yes</p></td>
-<td><p>yes</p></td>
-<td><p>yes</p></td>
-<td><p>yes</p></td>
+<td><p>tak</p></td>
+<td><p>tak</p></td>
+<td><p>tak</p></td>
+<td><p>tak</p></td>
 </tr>
 <tr class="row-odd"><td><p><em>TLSv1</em></p></td>
-<td><p>no</p></td>
-<td><p>no</p></td>
-<td><p>yes</p></td>
-<td><p>yes</p></td>
-<td><p>no</p></td>
-<td><p>no</p></td>
+<td><p>nie</p></td>
+<td><p>nie</p></td>
+<td><p>tak</p></td>
+<td><p>tak</p></td>
+<td><p>nie</p></td>
+<td><p>nie</p></td>
 </tr>
 <tr class="row-even"><td><p><em>TLSv1.1</em></p></td>
-<td><p>no</p></td>
-<td><p>no</p></td>
-<td><p>yes</p></td>
-<td><p>no</p></td>
-<td><p>yes</p></td>
-<td><p>no</p></td>
+<td><p>nie</p></td>
+<td><p>nie</p></td>
+<td><p>tak</p></td>
+<td><p>nie</p></td>
+<td><p>tak</p></td>
+<td><p>nie</p></td>
 </tr>
 <tr class="row-odd"><td><p><em>TLSv1.2</em></p></td>
-<td><p>no</p></td>
-<td><p>no</p></td>
-<td><p>yes</p></td>
-<td><p>no</p></td>
-<td><p>no</p></td>
-<td><p>yes</p></td>
+<td><p>nie</p></td>
+<td><p>nie</p></td>
+<td><p>tak</p></td>
+<td><p>nie</p></td>
+<td><p>nie</p></td>
+<td><p>tak</p></td>
 </tr>
 </tbody>
 </table>
-<p class="rubric">Footnotes</p>
+<p class="rubric">Przypisy</p>
 <aside class="footnote-list brackets">
 <aside class="footnote brackets" id="id7" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
@@ -2162,7 +2208,7 @@ been used at least once.</p>
 <span class="sig-prename descclassname"><span class="pre">SSLContext.</span></span><span class="sig-name descname"><span class="pre">get_ciphers</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ssl.SSLContext.get_ciphers" title="Link to this definition">¶</a></dt>
 <dd><p>Get a list of enabled ciphers. The list is in order of cipher priority.
 See <a class="reference internal" href="#ssl.SSLContext.set_ciphers" title="ssl.SSLContext.set_ciphers"><code class="xref py py-meth docutils literal notranslate"><span class="pre">SSLContext.set_ciphers()</span></code></a>.</p>
-<p>Example:</p>
+<p>Przykład:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ctx</span> <span class="o">=</span> <span class="n">ssl</span><span class="o">.</span><span class="n">SSLContext</span><span class="p">(</span><span class="n">ssl</span><span class="o">.</span><span class="n">PROTOCOL_SSLv23</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">ctx</span><span class="o">.</span><span class="n">set_ciphers</span><span class="p">(</span><span class="s1">&#39;ECDHE+AESGCM:!ECDSA&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">ctx</span><span class="o">.</span><span class="n">get_ciphers</span><span class="p">()</span>
@@ -2232,7 +2278,7 @@ configured properly.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="ssl.SSLContext.set_ciphers">
-<span class="sig-prename descclassname"><span class="pre">SSLContext.</span></span><span class="sig-name descname"><span class="pre">set_ciphers</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ciphers</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ssl.SSLContext.set_ciphers" title="Link to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">SSLContext.</span></span><span class="sig-name descname"><span class="pre">set_ciphers</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ciphers</span></span></em>, <em class="sig-param"><span class="positional-only-separator o"><abbr title="Positional-only parameter separator (PEP 570)"><span class="pre">/</span></abbr></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ssl.SSLContext.set_ciphers" title="Link to this definition">¶</a></dt>
 <dd><p>Set the allowed ciphers for sockets created with this context when
 connecting using TLS 1.2 and earlier.  The <em>ciphers</em> argument should
 be a string in the <a class="reference external" href="https://docs.openssl.org/master/man1/ciphers/">OpenSSL cipher list format</a>.
@@ -2249,7 +2295,7 @@ return details about the negotiated cipher.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="ssl.SSLContext.set_ciphersuites">
-<span class="sig-prename descclassname"><span class="pre">SSLContext.</span></span><span class="sig-name descname"><span class="pre">set_ciphersuites</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ciphersuites</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ssl.SSLContext.set_ciphersuites" title="Link to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">SSLContext.</span></span><span class="sig-name descname"><span class="pre">set_ciphersuites</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ciphersuites</span></span></em>, <em class="sig-param"><span class="positional-only-separator o"><abbr title="Positional-only parameter separator (PEP 570)"><span class="pre">/</span></abbr></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ssl.SSLContext.set_ciphersuites" title="Link to this definition">¶</a></dt>
 <dd><p>Set the allowed ciphers for sockets created with this context when
 connecting using TLS 1.3.  The <em>ciphersuites</em> argument should be a
 colon-separate string of TLS 1.3 cipher names.  If no cipher can be
@@ -2267,7 +2313,7 @@ return details about the negotiated cipher.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="ssl.SSLContext.set_groups">
-<span class="sig-prename descclassname"><span class="pre">SSLContext.</span></span><span class="sig-name descname"><span class="pre">set_groups</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">groups</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ssl.SSLContext.set_groups" title="Link to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">SSLContext.</span></span><span class="sig-name descname"><span class="pre">set_groups</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">groups</span></span></em>, <em class="sig-param"><span class="positional-only-separator o"><abbr title="Positional-only parameter separator (PEP 570)"><span class="pre">/</span></abbr></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ssl.SSLContext.set_groups" title="Link to this definition">¶</a></dt>
 <dd><p>Set the groups allowed for key agreement for sockets created with this
 context.  It should be a string in the <a class="reference external" href="https://docs.openssl.org/master/man3/SSL_CTX_set1_groups_list/">OpenSSL group list format</a>.</p>
 <div class="admonition note">
@@ -2281,8 +2327,41 @@ return the group used for key agreement on that connection.</p>
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="ssl.SSLContext.set_client_sigalgs">
+<span class="sig-prename descclassname"><span class="pre">SSLContext.</span></span><span class="sig-name descname"><span class="pre">set_client_sigalgs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sigalgs</span></span></em>, <em class="sig-param"><span class="positional-only-separator o"><abbr title="Positional-only parameter separator (PEP 570)"><span class="pre">/</span></abbr></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ssl.SSLContext.set_client_sigalgs" title="Link to this definition">¶</a></dt>
+<dd><p>Set the signature algorithms allowed for certificate-based client
+authentication. It should be a string in the <a class="reference external" href="https://docs.openssl.org/master/man3/SSL_CTX_set1_client_sigalgs_list/">OpenSSL client sigalgs
+list format</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>When connected, the <a class="reference internal" href="#ssl.SSLSocket.client_sigalg" title="ssl.SSLSocket.client_sigalg"><code class="xref py py-meth docutils literal notranslate"><span class="pre">SSLSocket.client_sigalg()</span></code></a> method of SSL
+sockets will return the signature algorithm used for performing
+certificate-based client authentication on that connection.</p>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified added"> Dodane w wersji 3.15.0a0 (unreleased).</span></p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ssl.SSLContext.set_server_sigalgs">
+<span class="sig-prename descclassname"><span class="pre">SSLContext.</span></span><span class="sig-name descname"><span class="pre">set_server_sigalgs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sigalgs</span></span></em>, <em class="sig-param"><span class="positional-only-separator o"><abbr title="Positional-only parameter separator (PEP 570)"><span class="pre">/</span></abbr></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ssl.SSLContext.set_server_sigalgs" title="Link to this definition">¶</a></dt>
+<dd><p>Set the signature algorithms allowed for the server to complete the TLS
+handshake. It should be a string in the <a class="reference external" href="https://docs.openssl.org/master/man3/SSL_CTX_set1_sigalgs_list/">OpenSSL sigalgs list format</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Informacja</p>
+<p>When connected, the <a class="reference internal" href="#ssl.SSLSocket.server_sigalg" title="ssl.SSLSocket.server_sigalg"><code class="xref py py-meth docutils literal notranslate"><span class="pre">SSLSocket.server_sigalg()</span></code></a> method of SSL
+sockets will return the signature algorithm used by the server to
+complete the TLS handshake on that connection.</p>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified added"> Dodane w wersji 3.15.0a0 (unreleased).</span></p>
+</div>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="ssl.SSLContext.set_alpn_protocols">
-<span class="sig-prename descclassname"><span class="pre">SSLContext.</span></span><span class="sig-name descname"><span class="pre">set_alpn_protocols</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">protocols</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ssl.SSLContext.set_alpn_protocols" title="Link to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">SSLContext.</span></span><span class="sig-name descname"><span class="pre">set_alpn_protocols</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">alpn_protocols</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ssl.SSLContext.set_alpn_protocols" title="Link to this definition">¶</a></dt>
 <dd><p>Specify which protocols the socket should advertise during the SSL/TLS
 handshake. It should be a list of ASCII strings, like <code class="docutils literal notranslate"><span class="pre">['http/1.1',</span>
 <span class="pre">'spdy/2']</span></code>, ordered by preference. The selection of a protocol will happen
@@ -2298,7 +2377,7 @@ return the agreed-upon protocol.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="ssl.SSLContext.set_npn_protocols">
-<span class="sig-prename descclassname"><span class="pre">SSLContext.</span></span><span class="sig-name descname"><span class="pre">set_npn_protocols</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">protocols</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ssl.SSLContext.set_npn_protocols" title="Link to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">SSLContext.</span></span><span class="sig-name descname"><span class="pre">set_npn_protocols</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">npn_protocols</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ssl.SSLContext.set_npn_protocols" title="Link to this definition">¶</a></dt>
 <dd><p>Specify which protocols the socket should advertise during the SSL/TLS
 handshake. It should be a list of strings, like <code class="docutils literal notranslate"><span class="pre">['http/1.1',</span> <span class="pre">'spdy/2']</span></code>,
 ordered by preference. The selection of a protocol will happen during the
@@ -2359,7 +2438,7 @@ had OPENSSL_NO_TLSEXT defined when it was built.</p>
 </div>
 </dd></dl>
 
-<dl class="py attribute">
+<dl class="py method">
 <dt class="sig sig-object py" id="ssl.SSLContext.set_servername_callback">
 <span class="sig-prename descclassname"><span class="pre">SSLContext.</span></span><span class="sig-name descname"><span class="pre">set_servername_callback</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">server_name_callback</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ssl.SSLContext.set_servername_callback" title="Link to this definition">¶</a></dt>
 <dd><p>This is a legacy API retained for backwards compatibility. When possible,
@@ -2377,7 +2456,7 @@ alert message to the client.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="ssl.SSLContext.load_dh_params">
-<span class="sig-prename descclassname"><span class="pre">SSLContext.</span></span><span class="sig-name descname"><span class="pre">load_dh_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dhfile</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ssl.SSLContext.load_dh_params" title="Link to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">SSLContext.</span></span><span class="sig-name descname"><span class="pre">load_dh_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dhfile</span></span></em>, <em class="sig-param"><span class="positional-only-separator o"><abbr title="Positional-only parameter separator (PEP 570)"><span class="pre">/</span></abbr></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ssl.SSLContext.load_dh_params" title="Link to this definition">¶</a></dt>
 <dd><p>Load the key generation parameters for Diffie-Hellman (DH) key exchange.
 Using DH key exchange improves forward secrecy at the expense of
 computational resources (both on the server and on the client).
@@ -2392,7 +2471,7 @@ parameters in PEM format.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="ssl.SSLContext.set_ecdh_curve">
-<span class="sig-prename descclassname"><span class="pre">SSLContext.</span></span><span class="sig-name descname"><span class="pre">set_ecdh_curve</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">curve_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ssl.SSLContext.set_ecdh_curve" title="Link to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">SSLContext.</span></span><span class="sig-name descname"><span class="pre">set_ecdh_curve</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">curve_name</span></span></em>, <em class="sig-param"><span class="positional-only-separator o"><abbr title="Positional-only parameter separator (PEP 570)"><span class="pre">/</span></abbr></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ssl.SSLContext.set_ecdh_curve" title="Link to this definition">¶</a></dt>
 <dd><p>Set the curve name for Elliptic Curve-based Diffie-Hellman (ECDH) key
 exchange.  ECDH is significantly faster than regular DH while arguably
 as secure.  The <em>curve_name</em> parameter should be a string describing
@@ -2531,7 +2610,7 @@ hostname checking automatically sets <a class="reference internal" href="#ssl.SS
 <a class="reference internal" href="#ssl.CERT_NONE" title="ssl.CERT_NONE"><code class="xref py py-data docutils literal notranslate"><span class="pre">CERT_NONE</span></code></a> as long as hostname checking is enabled. The
 <a class="reference internal" href="#ssl.PROTOCOL_TLS_CLIENT" title="ssl.PROTOCOL_TLS_CLIENT"><code class="xref py py-data docutils literal notranslate"><span class="pre">PROTOCOL_TLS_CLIENT</span></code></a> protocol enables hostname checking by default.
 With other protocols, hostname checking must be enabled explicitly.</p>
-<p>Example:</p>
+<p>Przykład:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">socket</span><span class="o">,</span><span class="w"> </span><span class="nn">ssl</span>
 
 <span class="n">context</span> <span class="o">=</span> <span class="n">ssl</span><span class="o">.</span><span class="n">SSLContext</span><span class="p">(</span><span class="n">ssl</span><span class="o">.</span><span class="n">PROTOCOL_TLSv1_2</span><span class="p">)</span>
@@ -2932,7 +3011,7 @@ root certificates.</p>
 </section>
 </section>
 <section id="examples">
-<h2>Examples<a class="headerlink" href="#examples" title="Link to this heading">¶</a></h2>
+<h2>Przykłady<a class="headerlink" href="#examples" title="Link to this heading">¶</a></h2>
 <section id="testing-for-ssl-support">
 <h3>Testing for SSL support<a class="headerlink" href="#testing-for-ssl-support" title="Link to this heading">¶</a></h3>
 <p>To test for the presence of SSL support in a Python installation, user code
@@ -3276,14 +3355,14 @@ position.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="ssl.MemoryBIO.read">
-<span class="sig-name descname"><span class="pre">read</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ssl.MemoryBIO.read" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">read</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-1</span></span></em>, <em class="sig-param"><span class="positional-only-separator o"><abbr title="Positional-only parameter separator (PEP 570)"><span class="pre">/</span></abbr></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ssl.MemoryBIO.read" title="Link to this definition">¶</a></dt>
 <dd><p>Read up to <em>n</em> bytes from the memory buffer. If <em>n</em> is not specified or
 negative, all bytes are returned.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="ssl.MemoryBIO.write">
-<span class="sig-name descname"><span class="pre">write</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">buf</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ssl.MemoryBIO.write" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">write</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">buf</span></span></em>, <em class="sig-param"><span class="positional-only-separator o"><abbr title="Positional-only parameter separator (PEP 570)"><span class="pre">/</span></abbr></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ssl.MemoryBIO.write" title="Link to this definition">¶</a></dt>
 <dd><p>Write the bytes from <em>buf</em> to the memory BIO. The <em>buf</em> argument must be an
 object supporting the buffer protocol.</p>
 <p>The return value is the number of bytes written, which is always equal to
@@ -3453,7 +3532,7 @@ handshake.  A server can request a certificate at any time.  Clients
 process certificate requests while they send or receive application data
 from the server.</p></li>
 <li><p>TLS 1.3 features like early data, deferred TLS client cert request,
-signature algorithm configuration, and rekeying are not supported yet.</p></li>
+and rekeying are not supported yet.</p></li>
 </ul>
 <div class="admonition seealso">
 <p class="admonition-title">Zobacz także</p>
@@ -3491,16 +3570,17 @@ signature algorithm configuration, and rekeying are not supported yet.</p></li>
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">ssl</span></code> — TLS/SSL wrapper for socket objects</a><ul>
 <li><a class="reference internal" href="#functions-constants-and-exceptions">Functions, Constants, and Exceptions</a><ul>
 <li><a class="reference internal" href="#socket-creation">Socket creation</a></li>
 <li><a class="reference internal" href="#context-creation">Context creation</a></li>
-<li><a class="reference internal" href="#exceptions">Exceptions</a></li>
+<li><a class="reference internal" href="#signature-algorithms">Signature algorithms</a></li>
+<li><a class="reference internal" href="#exceptions">Wyjątki</a></li>
 <li><a class="reference internal" href="#random-generation">Random generation</a></li>
 <li><a class="reference internal" href="#certificate-handling">Certificate handling</a></li>
-<li><a class="reference internal" href="#constants">Constants</a></li>
+<li><a class="reference internal" href="#constants">Stały</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#ssl-sockets">SSL Sockets</a></li>
@@ -3512,7 +3592,7 @@ signature algorithm configuration, and rekeying are not supported yet.</p></li>
 <li><a class="reference internal" href="#self-signed-certificates">Self-signed certificates</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#examples">Examples</a><ul>
+<li><a class="reference internal" href="#examples">Przykłady</a><ul>
 <li><a class="reference internal" href="#testing-for-ssl-support">Testing for SSL support</a></li>
 <li><a class="reference internal" href="#client-side-operation">Client-side operation</a></li>
 <li><a class="reference internal" href="#server-side-operation">Server-side operation</a></li>
@@ -3539,14 +3619,14 @@ signature algorithm configuration, and rekeying are not supported yet.</p></li>
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="socket.html"
-                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">socket</span></code> — Low-level networking interface</a></p>
+                          title="poprzedni rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">socket</span></code> — Low-level networking interface</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="select.html"
-                          title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">select</span></code> — Waiting for I/O completion</a></p>
+                          title="następny rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">select</span></code> — Waiting for I/O completion</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -3560,7 +3640,7 @@ signature algorithm configuration, and rekeying are not supported yet.</p></li>
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -3596,7 +3676,7 @@ signature algorithm configuration, and rekeying are not supported yet.</p></li>
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="ipc.html" >Networking and Interprocess Communication</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">ssl</span></code> — TLS/SSL wrapper for socket objects</a></li>
                 <li class="right">
@@ -3645,7 +3725,7 @@ signature algorithm configuration, and rekeying are not supported yet.</p></li>
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

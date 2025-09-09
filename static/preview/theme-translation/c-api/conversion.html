@@ -31,14 +31,14 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="PyHash API" href="hash.html" />
-    <link rel="prev" title="Parsing arguments and building values" href="arg.html" />
+    <link rel="prev" title="Pobieranie kolejnych rzeczy podanych na wejściu i konstruowanie wartości." href="arg.html" />
     
       
       <link rel="canonical" href="https://docs.python.org/3/c-api/conversion.html">
@@ -98,14 +98,14 @@
     </select>
 </label>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="arg.html"
-                          title="previous chapter">Parsing arguments and building values</a></p>
+                          title="poprzedni rozdział">Pobieranie kolejnych rzeczy podanych na wejściu i konstruowanie wartości.</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="hash.html"
-                          title="next chapter">PyHash API</a></p>
+                          title="następny rozdział">PyHash API</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -136,7 +136,7 @@
           <a href="hash.html" title="PyHash API"
              accesskey="N">dalej</a> |</li>
         <li class="right" >
-          <a href="arg.html" title="Parsing arguments and building values"
+          <a href="arg.html" title="Pobieranie kolejnych rzeczy podanych na wejściu i konstruowanie wartości."
              accesskey="P">wstecz</a> |</li>
 
           <li><img src="../_static/py.svg" alt="Python logo" style="vertical-align: middle; margin-top: -1px"></li>
@@ -152,8 +152,8 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Reference Manual</a> &#187;</li>
-          <li class="nav-item nav-item-2"><a href="utilities.html" accesskey="U">Utilities</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Podręcznik</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="utilities.html" accesskey="U">Utilitas</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">String conversion and formatting</a></li>
                 <li class="right">
                     
@@ -190,14 +190,14 @@
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyOS_snprintf">
 <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyOS_snprintf</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">str</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n"><span class="pre">size</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">format</span></span>, <span class="p"><span class="pre">...</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyOS_snprintf" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Output not more than <em>size</em> bytes to <em>str</em> according to the format string
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Output not more than <em>size</em> bytes to <em>str</em> according to the format string
 <em>format</em> and the extra arguments. See the Unix man page <em class="manpage"><a class="manpage reference external" href="https://manpages.debian.org/snprintf(3)">snprintf(3)</a></em>.</p>
 </dd></dl>
 
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyOS_vsnprintf">
 <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyOS_vsnprintf</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">str</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n"><span class="pre">size</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">format</span></span>, <span class="n"><span class="pre">va_list</span></span><span class="w"> </span><span class="n"><span class="pre">va</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyOS_vsnprintf" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Output not more than <em>size</em> bytes to <em>str</em> according to the format string
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Output not more than <em>size</em> bytes to <em>str</em> according to the format string
 <em>format</em> and the variable argument list <em>va</em>. Unix man page
 <em class="manpage"><a class="manpage reference external" href="https://manpages.debian.org/vsnprintf(3)">vsnprintf(3)</a></em>.</p>
 </dd></dl>
@@ -227,7 +227,7 @@ depends on the underlying platform.</p></li>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyOS_strtoul">
 <span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyOS_strtoul</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">str</span></span>, <span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">ptr</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n"><span class="pre">base</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyOS_strtoul" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Convert the initial part of the string in <code class="docutils literal notranslate"><span class="pre">str</span></code> to an <span class="c-expr sig sig-inline c"><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span></span> value according to the given <code class="docutils literal notranslate"><span class="pre">base</span></code>, which must be between <code class="docutils literal notranslate"><span class="pre">2</span></code> and
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Convert the initial part of the string in <code class="docutils literal notranslate"><span class="pre">str</span></code> to an <span class="c-expr sig sig-inline c"><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span></span> value according to the given <code class="docutils literal notranslate"><span class="pre">base</span></code>, which must be between <code class="docutils literal notranslate"><span class="pre">2</span></code> and
 <code class="docutils literal notranslate"><span class="pre">36</span></code> inclusive, or be the special value <code class="docutils literal notranslate"><span class="pre">0</span></code>.</p>
 <p>Leading white space and case of characters are ignored.  If <code class="docutils literal notranslate"><span class="pre">base</span></code> is zero
 it looks for a leading <code class="docutils literal notranslate"><span class="pre">0b</span></code>, <code class="docutils literal notranslate"><span class="pre">0o</span></code> or <code class="docutils literal notranslate"><span class="pre">0x</span></code> to tell which base.  If
@@ -247,7 +247,7 @@ is returned.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyOS_strtol">
 <span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyOS_strtol</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">str</span></span>, <span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">ptr</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n"><span class="pre">base</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyOS_strtol" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Convert the initial part of the string in <code class="docutils literal notranslate"><span class="pre">str</span></code> to an <span class="c-expr sig sig-inline c"><span class="kt">long</span></span> value
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Convert the initial part of the string in <code class="docutils literal notranslate"><span class="pre">str</span></code> to an <span class="c-expr sig sig-inline c"><span class="kt">long</span></span> value
 according to the given <code class="docutils literal notranslate"><span class="pre">base</span></code>, which must be between <code class="docutils literal notranslate"><span class="pre">2</span></code> and <code class="docutils literal notranslate"><span class="pre">36</span></code>
 inclusive, or be the special value <code class="docutils literal notranslate"><span class="pre">0</span></code>.</p>
 <p>Same as <a class="reference internal" href="#c.PyOS_strtoul" title="PyOS_strtoul"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyOS_strtoul()</span></code></a>, but return a <span class="c-expr sig sig-inline c"><span class="kt">long</span></span> value instead
@@ -261,7 +261,7 @@ and <code class="xref c c-macro docutils literal notranslate"><span class="pre">
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyOS_string_to_double">
 <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyOS_string_to_double</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">s</span></span>, <span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">endptr</span></span>, <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">overflow_exception</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyOS_string_to_double" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Convert a string <code class="docutils literal notranslate"><span class="pre">s</span></code> to a <span class="c-expr sig sig-inline c"><span class="kt">double</span></span>, raising a Python
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Convert a string <code class="docutils literal notranslate"><span class="pre">s</span></code> to a <span class="c-expr sig sig-inline c"><span class="kt">double</span></span>, raising a Python
 exception on failure.  The set of accepted strings corresponds to
 the set of strings accepted by Python’s <a class="reference internal" href="../library/functions.html#float" title="float"><code class="xref py py-func docutils literal notranslate"><span class="pre">float()</span></code></a> constructor,
 except that <code class="docutils literal notranslate"><span class="pre">s</span></code> must not have leading or trailing whitespace.
@@ -293,7 +293,7 @@ return <code class="docutils literal notranslate"><span class="pre">-1.0</span><
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyOS_double_to_string">
 <span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyOS_double_to_string</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n"><span class="pre">val</span></span>, <span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="n"><span class="pre">format_code</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n"><span class="pre">precision</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n"><span class="pre">flags</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">ptype</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyOS_double_to_string" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Convert a <span class="c-expr sig sig-inline c"><span class="kt">double</span></span> <em>val</em> to a string using supplied
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Convert a <span class="c-expr sig sig-inline c"><span class="kt">double</span></span> <em>val</em> to a string using supplied
 <em>format_code</em>, <em>precision</em>, and <em>flags</em>.</p>
 <p><em>format_code</em> must be one of <code class="docutils literal notranslate"><span class="pre">'e'</span></code>, <code class="docutils literal notranslate"><span class="pre">'E'</span></code>, <code class="docutils literal notranslate"><span class="pre">'f'</span></code>, <code class="docutils literal notranslate"><span class="pre">'F'</span></code>,
 <code class="docutils literal notranslate"><span class="pre">'g'</span></code>, <code class="docutils literal notranslate"><span class="pre">'G'</span></code> or <code class="docutils literal notranslate"><span class="pre">'r'</span></code>.  For <code class="docutils literal notranslate"><span class="pre">'r'</span></code>, the supplied <em>precision</em>
@@ -345,14 +345,14 @@ identically to <code class="xref c c-func docutils literal notranslate"><span cl
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="arg.html"
-                          title="previous chapter">Parsing arguments and building values</a></p>
+                          title="poprzedni rozdział">Pobieranie kolejnych rzeczy podanych na wejściu i konstruowanie wartości.</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="hash.html"
-                          title="next chapter">PyHash API</a></p>
+                          title="następny rozdział">PyHash API</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -366,7 +366,7 @@ identically to <code class="xref c c-func docutils literal notranslate"><span cl
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -386,7 +386,7 @@ identically to <code class="xref c c-func docutils literal notranslate"><span cl
           <a href="hash.html" title="PyHash API"
              >dalej</a> |</li>
         <li class="right" >
-          <a href="arg.html" title="Parsing arguments and building values"
+          <a href="arg.html" title="Pobieranie kolejnych rzeczy podanych na wejściu i konstruowanie wartości."
              >wstecz</a> |</li>
 
           <li><img src="../_static/py.svg" alt="Python logo" style="vertical-align: middle; margin-top: -1px"></li>
@@ -402,8 +402,8 @@ identically to <code class="xref c c-func docutils literal notranslate"><span cl
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Reference Manual</a> &#187;</li>
-          <li class="nav-item nav-item-2"><a href="utilities.html" >Utilities</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Podręcznik</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="utilities.html" >Utilitas</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">String conversion and formatting</a></li>
                 <li class="right">
                     
@@ -451,7 +451,7 @@ identically to <code class="xref c c-func docutils literal notranslate"><span cl
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

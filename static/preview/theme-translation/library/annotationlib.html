@@ -8,10 +8,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://docs.python.org/3/library/annotationlib.html" />
 <meta property="og:site_name" content="Python documentation" />
-<meta property="og:description" content="Source code: Lib/annotationlib.py The annotationlib module provides tools for introspecting annotations on modules, classes, and functions. Annotations are lazily evaluated and often contain forwar..." />
+<meta property="og:description" content="Kod źródłowy: Lib/annotationlib.py The annotationlib module provides tools for introspecting annotations on modules, classes, and functions. Annotations are lazily evaluated and often contain forwa..." />
 <meta property="og:image" content="_static/og-image.png" />
 <meta property="og:image:alt" content="Python documentation" />
-<meta name="description" content="Source code: Lib/annotationlib.py The annotationlib module provides tools for introspecting annotations on modules, classes, and functions. Annotations are lazily evaluated and often contain forwar..." />
+<meta name="description" content="Kod źródłowy: Lib/annotationlib.py The annotationlib module provides tools for introspecting annotations on modules, classes, and functions. Annotations are lazily evaluated and often contain forwa..." />
 <meta name="theme-color" content="#3776ab">
 <meta property="og:image:width" content="200">
 <meta property="og:image:height" content="200">
@@ -31,11 +31,11 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="site — Site-specific configuration hook" href="site.html" />
     <link rel="prev" title="inspect — Inspect live objects" href="inspect.html" />
@@ -98,32 +98,33 @@
     </select>
 </label>
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">annotationlib</span></code> — Functionality for introspecting annotations</a><ul>
 <li><a class="reference internal" href="#annotation-semantics">Annotation semantics</a></li>
-<li><a class="reference internal" href="#classes">Classes</a></li>
-<li><a class="reference internal" href="#functions">Functions</a></li>
+<li><a class="reference internal" href="#classes">Klasy</a></li>
+<li><a class="reference internal" href="#functions">Zadania</a></li>
 <li><a class="reference internal" href="#recipes">Recipes</a><ul>
 <li><a class="reference internal" href="#using-annotations-in-a-metaclass">Using annotations in a metaclass</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#limitations-of-the-string-format">Limitations of the <code class="docutils literal notranslate"><span class="pre">STRING</span></code> format</a></li>
 <li><a class="reference internal" href="#limitations-of-the-forwardref-format">Limitations of the <code class="docutils literal notranslate"><span class="pre">FORWARDREF</span></code> format</a></li>
+<li><a class="reference internal" href="#security-implications-of-introspecting-annotations">Security implications of introspecting annotations</a></li>
 </ul>
 </li>
 </ul>
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="inspect.html"
-                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">inspect</span></code> — Inspect live objects</a></p>
+                          title="poprzedni rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">inspect</span></code> — Inspect live objects</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="site.html"
-                          title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">site</span></code> — Site-specific configuration hook</a></p>
+                          title="następny rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">site</span></code> — Site-specific configuration hook</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -170,7 +171,7 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="python.html" accesskey="U">Python Runtime Services</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">annotationlib</span></code> — Functionality for introspecting annotations</a></li>
                 <li class="right">
@@ -204,7 +205,10 @@
             
   <section id="module-annotationlib">
 <span id="annotationlib-functionality-for-introspecting-annotations"></span><h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">annotationlib</span></code> — Functionality for introspecting annotations<a class="headerlink" href="#module-annotationlib" title="Link to this heading">¶</a></h1>
-<p><strong>Source code:</strong> <a class="extlink-source reference external" href="https://github.com/python/cpython/tree/main/Lib/annotationlib.py">Lib/annotationlib.py</a></p>
+<div class="versionadded">
+<p><span class="versionmodified added"> Dodane w wersji 3.14.</span></p>
+</div>
+<p><strong>Kod źródłowy:</strong> <a class="extlink-source reference external" href="https://github.com/python/cpython/tree/main/Lib/annotationlib.py">Lib/annotationlib.py</a></p>
 <hr class="docutils" />
 <p>The <code class="xref py py-mod docutils literal notranslate"><span class="pre">annotationlib</span></code> module provides tools for introspecting
 <a class="reference internal" href="../glossary.html#term-annotation"><span class="xref std std-term">annotations</span></a> on modules, classes, and functions.</p>
@@ -234,6 +238,11 @@ that is used to evaluate annotations, such as <a class="reference internal" href
 and <a class="reference internal" href="#annotationlib.call_annotate_function" title="annotationlib.call_annotate_function"><code class="xref py py-func docutils literal notranslate"><span class="pre">call_annotate_function()</span></code></a>, as well as the
 <a class="reference internal" href="#annotationlib.call_evaluate_function" title="annotationlib.call_evaluate_function"><code class="xref py py-func docutils literal notranslate"><span class="pre">call_evaluate_function()</span></code></a> function for working with
 <a class="reference internal" href="../glossary.html#term-evaluate-function"><span class="xref std std-term">evaluate functions</span></a>.</p>
+<div class="admonition caution">
+<p class="admonition-title">Ostrzeżenie</p>
+<p>Most functionality in this module can execute arbitrary code; see
+<a class="reference internal" href="#annotationlib-security"><span class="std std-ref">the security section</span></a> for more information.</p>
+</div>
 <div class="admonition seealso">
 <p class="admonition-title">Zobacz także</p>
 <p><span class="target" id="index-0"></span><a class="pep reference external" href="https://peps.python.org/pep-0649/"><strong>PEP 649</strong></a> proposed the current model for how annotations work in Python.</p>
@@ -297,7 +306,7 @@ in Python 3.14. Stringified annotations are still used if
 eventually be removed.</p>
 </section>
 <section id="classes">
-<h2>Classes<a class="headerlink" href="#classes" title="Link to this heading">¶</a></h2>
+<h2>Klasy<a class="headerlink" href="#classes" title="Link to this heading">¶</a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="annotationlib.Format">
 <em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">annotationlib.</span></span><span class="sig-name descname"><span class="pre">Format</span></span><a class="headerlink" href="#annotationlib.Format" title="Link to this definition">¶</a></dt>
@@ -409,7 +418,7 @@ empty globals and locals dictionaries are used.</p>
 
 </section>
 <section id="functions">
-<h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
+<h2>Zadania<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
 <dl class="py function">
 <dt class="sig sig-object py" id="annotationlib.annotations_to_string">
 <span class="sig-prename descclassname"><span class="pre">annotationlib.</span></span><span class="sig-name descname"><span class="pre">annotations_to_string</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">annotations</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#annotationlib.annotations_to_string" title="Link to this definition">¶</a></dt>
@@ -786,6 +795,22 @@ evaluated using the <a class="reference internal" href="#annotationlib.Format.FO
 </pre></div>
 </div>
 </section>
+<section id="security-implications-of-introspecting-annotations">
+<span id="annotationlib-security"></span><h2>Security implications of introspecting annotations<a class="headerlink" href="#security-implications-of-introspecting-annotations" title="Link to this heading">¶</a></h2>
+<p>Much of the functionality in this module involves executing code related to annotations,
+which can then do arbitrary things. For example,
+<a class="reference internal" href="#annotationlib.get_annotations" title="annotationlib.get_annotations"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_annotations()</span></code></a> may call an arbitrary <a class="reference internal" href="../glossary.html#term-annotate-function"><span class="xref std std-term">annotate function</span></a>, and
+<a class="reference internal" href="#annotationlib.ForwardRef.evaluate" title="annotationlib.ForwardRef.evaluate"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ForwardRef.evaluate()</span></code></a> may call <a class="reference internal" href="functions.html#eval" title="eval"><code class="xref py py-func docutils literal notranslate"><span class="pre">eval()</span></code></a> on an arbitrary string. Code contained
+in an annotation might make arbitrary system calls, enter an infinite loop, or perform any
+other operation. This is also true for any access of the <a class="reference internal" href="../reference/datamodel.html#object.__annotations__" title="object.__annotations__"><code class="xref py py-attr docutils literal notranslate"><span class="pre">__annotations__</span></code></a> attribute,
+and for various functions in the <a class="reference internal" href="typing.html#module-typing" title="typing: Support for type hints (see :pep:`484`)."><code class="xref py py-mod docutils literal notranslate"><span class="pre">typing</span></code></a> module that work with annotations, such as
+<a class="reference internal" href="typing.html#typing.get_type_hints" title="typing.get_type_hints"><code class="xref py py-func docutils literal notranslate"><span class="pre">typing.get_type_hints()</span></code></a>.</p>
+<p>Any security issue arising from this also applies immediately after importing
+code that may contain untrusted annotations: importing code can always cause arbitrary operations
+to be performed. However, it is unsafe to accept strings or other input from an untrusted source and
+pass them to any of the APIs for introspecting annotations, for example by editing an
+<code class="docutils literal notranslate"><span class="pre">__annotations__</span></code> dictionary or directly creating a <a class="reference internal" href="#annotationlib.ForwardRef" title="annotationlib.ForwardRef"><code class="xref py py-class docutils literal notranslate"><span class="pre">ForwardRef</span></code></a> object.</p>
+</section>
 </section>
 
 
@@ -796,32 +821,33 @@ evaluated using the <a class="reference internal" href="#annotationlib.Format.FO
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">annotationlib</span></code> — Functionality for introspecting annotations</a><ul>
 <li><a class="reference internal" href="#annotation-semantics">Annotation semantics</a></li>
-<li><a class="reference internal" href="#classes">Classes</a></li>
-<li><a class="reference internal" href="#functions">Functions</a></li>
+<li><a class="reference internal" href="#classes">Klasy</a></li>
+<li><a class="reference internal" href="#functions">Zadania</a></li>
 <li><a class="reference internal" href="#recipes">Recipes</a><ul>
 <li><a class="reference internal" href="#using-annotations-in-a-metaclass">Using annotations in a metaclass</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#limitations-of-the-string-format">Limitations of the <code class="docutils literal notranslate"><span class="pre">STRING</span></code> format</a></li>
 <li><a class="reference internal" href="#limitations-of-the-forwardref-format">Limitations of the <code class="docutils literal notranslate"><span class="pre">FORWARDREF</span></code> format</a></li>
+<li><a class="reference internal" href="#security-implications-of-introspecting-annotations">Security implications of introspecting annotations</a></li>
 </ul>
 </li>
 </ul>
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="inspect.html"
-                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">inspect</span></code> — Inspect live objects</a></p>
+                          title="poprzedni rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">inspect</span></code> — Inspect live objects</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="site.html"
-                          title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">site</span></code> — Site-specific configuration hook</a></p>
+                          title="następny rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">site</span></code> — Site-specific configuration hook</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -835,7 +861,7 @@ evaluated using the <a class="reference internal" href="#annotationlib.Format.FO
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -871,7 +897,7 @@ evaluated using the <a class="reference internal" href="#annotationlib.Format.FO
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="python.html" >Python Runtime Services</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">annotationlib</span></code> — Functionality for introspecting annotations</a></li>
                 <li class="right">
@@ -920,7 +946,7 @@ evaluated using the <a class="reference internal" href="#annotationlib.Format.FO
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

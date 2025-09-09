@@ -31,11 +31,11 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="warnings — Warning control" href="warnings.html" />
     <link rel="prev" title="builtins — Built-in objects" href="builtins.html" />
@@ -98,7 +98,7 @@
     </select>
 </label>
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">__main__</span></code> — Top-level code environment</a><ul>
 <li><a class="reference internal" href="#name-main"><code class="docutils literal notranslate"><span class="pre">__name__</span> <span class="pre">==</span> <span class="pre">'__main__'</span></code></a><ul>
@@ -118,14 +118,14 @@
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="builtins.html"
-                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">builtins</span></code> — Built-in objects</a></p>
+                          title="poprzedni rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">builtins</span></code> — Built-in objects</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="warnings.html"
-                          title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">warnings</span></code> — Warning control</a></p>
+                          title="następny rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">warnings</span></code> — Warning control</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -172,7 +172,7 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="python.html" accesskey="U">Python Runtime Services</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">__main__</span></code> — Top-level code environment</a></li>
                 <li class="right">
@@ -216,7 +216,7 @@ checked using the <code class="docutils literal notranslate"><span class="pre">_
 <p>Both of these mechanisms are related to Python modules; how users interact with
 them and how they interact with each other.  They are explained in detail
 below.  If you’re new to Python modules, see the tutorial section
-<a class="reference internal" href="../tutorial/modules.html#tut-modules"><span class="std std-ref">Modules</span></a> for an introduction.</p>
+<a class="reference internal" href="../tutorial/modules.html#tut-modules"><span class="std std-ref">Moduły</span></a> for an introduction.</p>
 <section id="name-main">
 <span id="name-equals-main"></span><h2><code class="docutils literal notranslate"><span class="pre">__name__</span> <span class="pre">==</span> <span class="pre">'__main__'</span></code><a class="headerlink" href="#name-main" title="Link to this heading">¶</a></h2>
 <p>When a Python module or package is imported, <code class="docutils literal notranslate"><span class="pre">__name__</span></code> is set to the
@@ -298,7 +298,7 @@ an import statement:</p>
 <div class="admonition seealso">
 <p class="admonition-title">Zobacz także</p>
 <p>For a more detailed look at how <code class="docutils literal notranslate"><span class="pre">__name__</span></code> is set in all situations, see
-the tutorial section <a class="reference internal" href="../tutorial/modules.html#tut-modules"><span class="std std-ref">Modules</span></a>.</p>
+the tutorial section <a class="reference internal" href="../tutorial/modules.html#tut-modules"><span class="std std-ref">Moduły</span></a>.</p>
 </div>
 </section>
 <section id="idiomatic-usage">
@@ -378,7 +378,7 @@ install Python packages with modern tools.</p>
 </section>
 <section id="main-py-in-python-packages">
 <h2><code class="docutils literal notranslate"><span class="pre">__main__.py</span></code> in Python Packages<a class="headerlink" href="#main-py-in-python-packages" title="Link to this heading">¶</a></h2>
-<p>If you are not familiar with Python packages, see section <a class="reference internal" href="../tutorial/modules.html#tut-packages"><span class="std std-ref">Packages</span></a>
+<p>If you are not familiar with Python packages, see section <a class="reference internal" href="../tutorial/modules.html#tut-packages"><span class="std std-ref">Pakiety</span></a>
 of the tutorial.  Most commonly, the <code class="docutils literal notranslate"><span class="pre">__main__.py</span></code> file is used to provide
 a command-line interface for a package. Consider the following hypothetical
 package, „bandclass”:</p>
@@ -408,8 +408,8 @@ students:</p>
 </div>
 <p>Note that <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">.student</span> <span class="pre">import</span> <span class="pre">search_students</span></code> is an example of a relative
 import.  This import style can be used when referencing modules within a
-package.  For more details, see <a class="reference internal" href="../tutorial/modules.html#intra-package-references"><span class="std std-ref">Intra-package References</span></a> in the
-<a class="reference internal" href="../tutorial/modules.html#tut-modules"><span class="std std-ref">Modules</span></a> section of the tutorial.</p>
+package.  For more details, see <a class="reference internal" href="../tutorial/modules.html#intra-package-references"><span class="std std-ref">Referencje wewnątrz-pakietowe</span></a> in the
+<a class="reference internal" href="../tutorial/modules.html#tut-modules"><span class="std std-ref">Moduły</span></a> section of the tutorial.</p>
 <section id="id1">
 <h3>Idiomatic Usage<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h3>
 <p>The content of <code class="docutils literal notranslate"><span class="pre">__main__.py</span></code> typically isn’t fenced with an
@@ -533,7 +533,7 @@ defined in the REPL becomes part of the <code class="docutils literal notranslat
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">__main__</span></code> — Top-level code environment</a><ul>
 <li><a class="reference internal" href="#name-main"><code class="docutils literal notranslate"><span class="pre">__name__</span> <span class="pre">==</span> <span class="pre">'__main__'</span></code></a><ul>
@@ -553,14 +553,14 @@ defined in the REPL becomes part of the <code class="docutils literal notranslat
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="builtins.html"
-                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">builtins</span></code> — Built-in objects</a></p>
+                          title="poprzedni rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">builtins</span></code> — Built-in objects</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="warnings.html"
-                          title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">warnings</span></code> — Warning control</a></p>
+                          title="następny rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">warnings</span></code> — Warning control</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -574,7 +574,7 @@ defined in the REPL becomes part of the <code class="docutils literal notranslat
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -610,7 +610,7 @@ defined in the REPL becomes part of the <code class="docutils literal notranslat
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="python.html" >Python Runtime Services</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">__main__</span></code> — Top-level code environment</a></li>
                 <li class="right">
@@ -659,7 +659,7 @@ defined in the REPL becomes part of the <code class="docutils literal notranslat
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

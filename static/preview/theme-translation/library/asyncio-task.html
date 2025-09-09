@@ -31,11 +31,11 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="Streams" href="asyncio-stream.html" />
     <link rel="prev" title="Runners" href="asyncio-runner.html" />
@@ -98,7 +98,7 @@
     </select>
 </label>
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#">Coroutines and Tasks</a><ul>
 <li><a class="reference internal" href="#coroutines">Coroutines</a></li>
@@ -125,14 +125,14 @@
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="asyncio-runner.html"
-                          title="previous chapter">Runners</a></p>
+                          title="poprzedni rozdział">Runners</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="asyncio-stream.html"
-                          title="next chapter">Streams</a></p>
+                          title="następny rozdział">Streams</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -179,7 +179,7 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="ipc.html" >Networking and Interprocess Communication</a> &#187;</li>
           <li class="nav-item nav-item-3"><a href="asyncio.html" accesskey="U"><code class="xref py py-mod docutils literal notranslate"><span class="pre">asyncio</span></code> — Asynchronous I/O</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Coroutines and Tasks</a></li>
@@ -237,7 +237,7 @@ and Tasks.</p>
 </nav>
 <section id="coroutines">
 <span id="coroutine"></span><h2><a class="toc-backref" href="#id2" role="doc-backlink">Coroutines</a><a class="headerlink" href="#coroutines" title="Link to this heading">¶</a></h2>
-<p><strong>Source code:</strong> <a class="extlink-source reference external" href="https://github.com/python/cpython/tree/main/Lib/asyncio/coroutines.py">Lib/asyncio/coroutines.py</a></p>
+<p><strong>Kod źródłowy:</strong> <a class="extlink-source reference external" href="https://github.com/python/cpython/tree/main/Lib/asyncio/coroutines.py">Lib/asyncio/coroutines.py</a></p>
 <hr class="docutils" />
 <p><a class="reference internal" href="../glossary.html#term-coroutine"><span class="xref std std-term">Coroutines</span></a> declared with the async/await syntax is the
 preferred way of writing asyncio applications.  For example, the following
@@ -434,7 +434,7 @@ is <a class="reference internal" href="asyncio-eventloop.html#asyncio.loop.run_i
 </section>
 <section id="creating-tasks">
 <h2><a class="toc-backref" href="#id4" role="doc-backlink">Creating Tasks</a><a class="headerlink" href="#creating-tasks" title="Link to this heading">¶</a></h2>
-<p><strong>Source code:</strong> <a class="extlink-source reference external" href="https://github.com/python/cpython/tree/main/Lib/asyncio/tasks.py">Lib/asyncio/tasks.py</a></p>
+<p><strong>Kod źródłowy:</strong> <a class="extlink-source reference external" href="https://github.com/python/cpython/tree/main/Lib/asyncio/tasks.py">Lib/asyncio/tasks.py</a></p>
 <hr class="docutils" />
 <dl class="py function">
 <dt class="sig sig-object py" id="asyncio.create_task">
@@ -549,7 +549,7 @@ we will close the given <code class="docutils literal notranslate"><span class="
 
 </dd></dl>
 
-<p>Example:</p>
+<p>Przykład:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
     <span class="k">async</span> <span class="k">with</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">TaskGroup</span><span class="p">()</span> <span class="k">as</span> <span class="n">tg</span><span class="p">:</span>
         <span class="n">task1</span> <span class="o">=</span> <span class="n">tg</span><span class="o">.</span><span class="n">create_task</span><span class="p">(</span><span class="n">some_coro</span><span class="p">(</span><span class="o">...</span><span class="p">))</span>
@@ -729,7 +729,7 @@ if a task (or a subtask, a task scheduled by a task)
 raises an exception, <em>TaskGroup</em> will, while <em>gather</em> will not,
 cancel the remaining scheduled tasks).</p>
 </div>
-<p id="asyncio-example-gather">Example:</p>
+<p id="asyncio-example-gather">Przykład:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">asyncio</span>
 
 <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">factorial</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">number</span><span class="p">):</span>
@@ -899,7 +899,7 @@ be applied; this can be useful if the delay is unknown when
 the context manager is created.</p>
 <p>In either case, the context manager can be rescheduled after
 creation using <a class="reference internal" href="#asyncio.Timeout.reschedule" title="asyncio.Timeout.reschedule"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Timeout.reschedule()</span></code></a>.</p>
-<p>Example:</p>
+<p>Przykład:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
     <span class="k">async</span> <span class="k">with</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">timeout</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
         <span class="k">await</span> <span class="n">long_running_task</span><span class="p">()</span>
@@ -965,7 +965,7 @@ deadline is not set.</p>
 </div></blockquote>
 </dd></dl>
 
-<p>Example:</p>
+<p>Przykład:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="c1"># We do not know the timeout when starting, so we pass ``None``.</span>
@@ -993,7 +993,7 @@ deadline is not set.</p>
 <span class="sig-prename descclassname"><span class="pre">asyncio.</span></span><span class="sig-name descname"><span class="pre">timeout_at</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">when</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#asyncio.timeout_at" title="Link to this definition">¶</a></dt>
 <dd><p>Similar to <a class="reference internal" href="#asyncio.timeout" title="asyncio.timeout"><code class="xref py py-func docutils literal notranslate"><span class="pre">asyncio.timeout()</span></code></a>, except <em>when</em> is the absolute time
 to stop waiting, or <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
-<p>Example:</p>
+<p>Przykład:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
     <span class="n">loop</span> <span class="o">=</span> <span class="n">get_running_loop</span><span class="p">()</span>
     <span class="n">deadline</span> <span class="o">=</span> <span class="n">loop</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">+</span> <span class="mi">20</span>
@@ -1028,7 +1028,7 @@ wrap it in <a class="reference internal" href="#asyncio.shield" title="asyncio.s
 so the total wait time may exceed the <em>timeout</em>. If an exception
 happens during cancellation, it is propagated.</p>
 <p>If the wait is cancelled, the future <em>aw</em> is also cancelled.</p>
-<p id="asyncio-example-waitfor">Example:</p>
+<p id="asyncio-example-waitfor">Przykład:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">eternity</span><span class="p">():</span>
     <span class="c1"># Sleep for one hour</span>
     <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">3600</span><span class="p">)</span>
@@ -1085,8 +1085,8 @@ returned in the second set.</p>
 be one of the following constants:</p>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head"><p>Constant</p></th>
-<th class="head"><p>Description</p></th>
+<tr class="row-odd"><th class="head"><p>Stała</p></th>
+<th class="head"><p>Opis</p></th>
 </tr>
 </thead>
 <tbody>
@@ -1715,7 +1715,7 @@ used by end-user code.  See <a class="reference internal" href="#asyncio.Task.un
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#">Coroutines and Tasks</a><ul>
 <li><a class="reference internal" href="#coroutines">Coroutines</a></li>
@@ -1742,14 +1742,14 @@ used by end-user code.  See <a class="reference internal" href="#asyncio.Task.un
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="asyncio-runner.html"
-                          title="previous chapter">Runners</a></p>
+                          title="poprzedni rozdział">Runners</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="asyncio-stream.html"
-                          title="next chapter">Streams</a></p>
+                          title="następny rozdział">Streams</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -1763,7 +1763,7 @@ used by end-user code.  See <a class="reference internal" href="#asyncio.Task.un
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -1799,7 +1799,7 @@ used by end-user code.  See <a class="reference internal" href="#asyncio.Task.un
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="ipc.html" >Networking and Interprocess Communication</a> &#187;</li>
           <li class="nav-item nav-item-3"><a href="asyncio.html" ><code class="xref py py-mod docutils literal notranslate"><span class="pre">asyncio</span></code> — Asynchronous I/O</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Coroutines and Tasks</a></li>
@@ -1849,7 +1849,7 @@ used by end-user code.  See <a class="reference internal" href="#asyncio.Task.un
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

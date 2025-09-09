@@ -8,10 +8,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://docs.python.org/3/library/hashlib.html" />
 <meta property="og:site_name" content="Python documentation" />
-<meta property="og:description" content="Source code: Lib/hashlib.py This module implements a common interface to many different hash algorithms. Included are the FIPS secure hash algorithms SHA224, SHA256, SHA384, SHA512, (defined in the..." />
+<meta property="og:description" content="Kod źródłowy: Lib/hashlib.py This module implements a common interface to many different hash algorithms. Included are the FIPS secure hash algorithms SHA224, SHA256, SHA384, SHA512, (defined in th..." />
 <meta property="og:image" content="_static/og-image.png" />
 <meta property="og:image:alt" content="Python documentation" />
-<meta name="description" content="Source code: Lib/hashlib.py This module implements a common interface to many different hash algorithms. Included are the FIPS secure hash algorithms SHA224, SHA256, SHA384, SHA512, (defined in the..." />
+<meta name="description" content="Kod źródłowy: Lib/hashlib.py This module implements a common interface to many different hash algorithms. Included are the FIPS secure hash algorithms SHA224, SHA256, SHA384, SHA512, (defined in th..." />
 <meta name="theme-color" content="#3776ab">
 <meta property="og:image:width" content="200">
 <meta property="og:image:height" content="200">
@@ -31,11 +31,11 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="hmac — Keyed-Hashing for Message Authentication" href="hmac.html" />
     <link rel="prev" title="Cryptographic Services" href="crypto.html" />
@@ -98,11 +98,11 @@
     </select>
 </label>
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">hashlib</span></code> — Secure hashes and message digests</a><ul>
 <li><a class="reference internal" href="#hash-algorithms">Hash algorithms</a></li>
-<li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#usage">Użytek</a></li>
 <li><a class="reference internal" href="#constructors">Constructors</a></li>
 <li><a class="reference internal" href="#attributes">Attributes</a></li>
 <li><a class="reference internal" href="#hash-objects">Hash Objects</a></li>
@@ -111,8 +111,8 @@
 <li><a class="reference internal" href="#key-derivation">Key derivation</a></li>
 <li><a class="reference internal" href="#blake2">BLAKE2</a><ul>
 <li><a class="reference internal" href="#creating-hash-objects">Creating hash objects</a></li>
-<li><a class="reference internal" href="#constants">Constants</a></li>
-<li><a class="reference internal" href="#examples">Examples</a><ul>
+<li><a class="reference internal" href="#constants">Stały</a></li>
+<li><a class="reference internal" href="#examples">Przykłady</a><ul>
 <li><a class="reference internal" href="#simple-hashing">Simple hashing</a></li>
 <li><a class="reference internal" href="#using-different-digest-sizes">Using different digest sizes</a></li>
 <li><a class="reference internal" href="#keyed-hashing">Keyed hashing</a></li>
@@ -130,14 +130,14 @@
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="crypto.html"
-                          title="previous chapter">Cryptographic Services</a></p>
+                          title="poprzedni rozdział">Cryptographic Services</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="hmac.html"
-                          title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">hmac</span></code> — Keyed-Hashing for Message Authentication</a></p>
+                          title="następny rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">hmac</span></code> — Keyed-Hashing for Message Authentication</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -184,7 +184,7 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="crypto.html" accesskey="U">Cryptographic Services</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">hashlib</span></code> — Secure hashes and message digests</a></li>
                 <li class="right">
@@ -218,7 +218,7 @@
             
   <section id="module-hashlib">
 <span id="hashlib-secure-hashes-and-message-digests"></span><h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">hashlib</span></code> — Secure hashes and message digests<a class="headerlink" href="#module-hashlib" title="Link to this heading">¶</a></h1>
-<p><strong>Source code:</strong> <a class="extlink-source reference external" href="https://github.com/python/cpython/tree/main/Lib/hashlib.py">Lib/hashlib.py</a></p>
+<p><strong>Kod źródłowy:</strong> <a class="extlink-source reference external" href="https://github.com/python/cpython/tree/main/Lib/hashlib.py">Lib/hashlib.py</a></p>
 <span class="target" id="index-0"></span><hr class="docutils" />
 <p>This module implements a common interface to many different hash algorithms.
 Included are the FIPS secure hash algorithms SHA224, SHA256, SHA384, SHA512,
@@ -288,7 +288,7 @@ backwards compatibility.</p>
 </div>
 </section>
 <section id="usage">
-<h2>Usage<a class="headerlink" href="#usage" title="Link to this heading">¶</a></h2>
+<h2>Użytek<a class="headerlink" href="#usage" title="Link to this heading">¶</a></h2>
 <p>To obtain the digest of the byte string <code class="docutils literal notranslate"><span class="pre">b&quot;Nobody</span> <span class="pre">inspects</span> <span class="pre">the</span> <span class="pre">spammish</span>
 <span class="pre">repetition&quot;</span></code>:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">hashlib</span>
@@ -528,7 +528,7 @@ in an unknown state after this function returns or raises. It is up to
 the caller to close <em>fileobj</em>.</p>
 <p><em>digest</em> must either be a hash algorithm name as a <em>str</em>, a hash
 constructor, or a callable that returns a hash object.</p>
-<p>Example:</p>
+<p>Przykład:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">io</span><span class="o">,</span><span class="w"> </span><span class="nn">hashlib</span><span class="o">,</span><span class="w"> </span><span class="nn">hmac</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;library/hashlib.rst&quot;</span><span class="p">,</span> <span class="s2">&quot;rb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
 <span class="gp">... </span>    <span class="n">digest</span> <span class="o">=</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">file_digest</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="s2">&quot;sha256&quot;</span><span class="p">)</span>
@@ -713,7 +713,7 @@ one (<code class="docutils literal notranslate"><span class="pre">False</span></
 hashing.</p>
 </section>
 <section id="constants">
-<h3>Constants<a class="headerlink" href="#constants" title="Link to this heading">¶</a></h3>
+<h3>Stały<a class="headerlink" href="#constants" title="Link to this heading">¶</a></h3>
 <dl class="py data">
 <dt class="sig sig-object py" id="hashlib.blake2b.SALT_SIZE">
 <span class="sig-prename descclassname"><span class="pre">blake2b.</span></span><span class="sig-name descname"><span class="pre">SALT_SIZE</span></span><a class="headerlink" href="#hashlib.blake2b.SALT_SIZE" title="Link to this definition">¶</a></dt>
@@ -760,7 +760,7 @@ hashing.</p>
 <p>Maximum digest size that the hash function can output.</p>
 </section>
 <section id="examples">
-<h3>Examples<a class="headerlink" href="#examples" title="Link to this heading">¶</a></h3>
+<h3>Przykłady<a class="headerlink" href="#examples" title="Link to this heading">¶</a></h3>
 <section id="simple-hashing">
 <h4>Simple hashing<a class="headerlink" href="#simple-hashing" title="Link to this heading">¶</a></h4>
 <p>To calculate hash of some data, you should first construct a hash object by
@@ -1075,11 +1075,11 @@ and what that means regarding their use.</p>
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">hashlib</span></code> — Secure hashes and message digests</a><ul>
 <li><a class="reference internal" href="#hash-algorithms">Hash algorithms</a></li>
-<li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#usage">Użytek</a></li>
 <li><a class="reference internal" href="#constructors">Constructors</a></li>
 <li><a class="reference internal" href="#attributes">Attributes</a></li>
 <li><a class="reference internal" href="#hash-objects">Hash Objects</a></li>
@@ -1088,8 +1088,8 @@ and what that means regarding their use.</p>
 <li><a class="reference internal" href="#key-derivation">Key derivation</a></li>
 <li><a class="reference internal" href="#blake2">BLAKE2</a><ul>
 <li><a class="reference internal" href="#creating-hash-objects">Creating hash objects</a></li>
-<li><a class="reference internal" href="#constants">Constants</a></li>
-<li><a class="reference internal" href="#examples">Examples</a><ul>
+<li><a class="reference internal" href="#constants">Stały</a></li>
+<li><a class="reference internal" href="#examples">Przykłady</a><ul>
 <li><a class="reference internal" href="#simple-hashing">Simple hashing</a></li>
 <li><a class="reference internal" href="#using-different-digest-sizes">Using different digest sizes</a></li>
 <li><a class="reference internal" href="#keyed-hashing">Keyed hashing</a></li>
@@ -1107,14 +1107,14 @@ and what that means regarding their use.</p>
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="crypto.html"
-                          title="previous chapter">Cryptographic Services</a></p>
+                          title="poprzedni rozdział">Cryptographic Services</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="hmac.html"
-                          title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">hmac</span></code> — Keyed-Hashing for Message Authentication</a></p>
+                          title="następny rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">hmac</span></code> — Keyed-Hashing for Message Authentication</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -1128,7 +1128,7 @@ and what that means regarding their use.</p>
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -1164,7 +1164,7 @@ and what that means regarding their use.</p>
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="crypto.html" >Cryptographic Services</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">hashlib</span></code> — Secure hashes and message digests</a></li>
                 <li class="right">
@@ -1213,7 +1213,7 @@ and what that means regarding their use.</p>
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

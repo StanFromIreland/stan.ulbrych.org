@@ -31,11 +31,11 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="Descriptor Objects" href="descriptor.html" />
     <link rel="prev" title="Module Objects" href="module.html" />
@@ -98,14 +98,14 @@
     </select>
 </label>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="module.html"
-                          title="previous chapter">Module Objects</a></p>
+                          title="poprzedni rozdział">Module Objects</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="descriptor.html"
-                          title="next chapter">Descriptor Objects</a></p>
+                          title="następny rozdział">Descriptor Objects</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -152,7 +152,7 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Reference Manual</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Podręcznik</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="concrete.html" accesskey="U">Concrete Objects Layer</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Iterator Objects</a></li>
                 <li class="right">
@@ -194,7 +194,7 @@ sentinel value is returned.</p>
 <dl class="c var">
 <dt class="sig sig-object c" id="c.PySeqIter_Type">
 <a class="reference internal" href="type.html#c.PyTypeObject" title="PyTypeObject"><span class="n"><span class="pre">PyTypeObject</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PySeqIter_Type</span></span></span><a class="headerlink" href="#c.PySeqIter_Type" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Type object for iterator objects returned by <a class="reference internal" href="#c.PySeqIter_New" title="PySeqIter_New"><code class="xref c c-func docutils literal notranslate"><span class="pre">PySeqIter_New()</span></code></a> and the
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Type object for iterator objects returned by <a class="reference internal" href="#c.PySeqIter_New" title="PySeqIter_New"><code class="xref c c-func docutils literal notranslate"><span class="pre">PySeqIter_New()</span></code></a> and the
 one-argument form of the <a class="reference internal" href="../library/functions.html#iter" title="iter"><code class="xref py py-func docutils literal notranslate"><span class="pre">iter()</span></code></a> built-in function for built-in sequence
 types.</p>
 </dd></dl>
@@ -209,7 +209,7 @@ always succeeds.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PySeqIter_New">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PySeqIter_New</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">seq</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PySeqIter_New" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Return an iterator that works with a general sequence object, <em>seq</em>.  The
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Return an iterator that works with a general sequence object, <em>seq</em>.  The
 iteration ends when the sequence raises <a class="reference internal" href="../library/exceptions.html#IndexError" title="IndexError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">IndexError</span></code></a> for the subscripting
 operation.</p>
 </dd></dl>
@@ -217,7 +217,7 @@ operation.</p>
 <dl class="c var">
 <dt class="sig sig-object c" id="c.PyCallIter_Type">
 <a class="reference internal" href="type.html#c.PyTypeObject" title="PyTypeObject"><span class="n"><span class="pre">PyTypeObject</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyCallIter_Type</span></span></span><a class="headerlink" href="#c.PyCallIter_Type" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Type object for iterator objects returned by <a class="reference internal" href="#c.PyCallIter_New" title="PyCallIter_New"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyCallIter_New()</span></code></a> and the
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Type object for iterator objects returned by <a class="reference internal" href="#c.PyCallIter_New" title="PyCallIter_New"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyCallIter_New()</span></code></a> and the
 two-argument form of the <a class="reference internal" href="../library/functions.html#iter" title="iter"><code class="xref py py-func docutils literal notranslate"><span class="pre">iter()</span></code></a> built-in function.</p>
 </dd></dl>
 
@@ -231,7 +231,7 @@ function always succeeds.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyCallIter_New">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyCallIter_New</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">callable</span></span>, <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">sentinel</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyCallIter_New" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Return a new iterator.  The first parameter, <em>callable</em>, can be any Python
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Return a new iterator.  The first parameter, <em>callable</em>, can be any Python
 callable object that can be called with no parameters; each call to it should
 return the next item in the iteration.  When <em>callable</em> returns a value equal to
 <em>sentinel</em>, the iteration will be terminated.</p>
@@ -247,14 +247,14 @@ return the next item in the iteration.  When <em>callable</em> returns a value e
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="module.html"
-                          title="previous chapter">Module Objects</a></p>
+                          title="poprzedni rozdział">Module Objects</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="descriptor.html"
-                          title="next chapter">Descriptor Objects</a></p>
+                          title="następny rozdział">Descriptor Objects</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -268,7 +268,7 @@ return the next item in the iteration.  When <em>callable</em> returns a value e
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -304,7 +304,7 @@ return the next item in the iteration.  When <em>callable</em> returns a value e
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Reference Manual</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Podręcznik</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="concrete.html" >Concrete Objects Layer</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Iterator Objects</a></li>
                 <li class="right">
@@ -353,7 +353,7 @@ return the next item in the iteration.  When <em>callable</em> returns a value e
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

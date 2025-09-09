@@ -31,11 +31,11 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="5. The import system" href="import.html" />
     <link rel="prev" title="3. Data model" href="datamodel.html" />
@@ -98,7 +98,7 @@
     </select>
 </label>
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#">4. Execution model</a><ul>
 <li><a class="reference internal" href="#structure-of-a-program">4.1. Structure of a program</a></li>
@@ -111,21 +111,21 @@
 <li><a class="reference internal" href="#interaction-with-dynamic-features">4.2.6. Interaction with dynamic features</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#exceptions">4.3. Exceptions</a></li>
+<li><a class="reference internal" href="#exceptions">4.3. Wyjątki</a></li>
 </ul>
 </li>
 </ul>
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="datamodel.html"
-                          title="previous chapter"><span class="section-number">3. </span>Data model</a></p>
+                          title="poprzedni rozdział"><span class="section-number">3. </span>Data model</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="import.html"
-                          title="next chapter"><span class="section-number">5. </span>The import system</a></p>
+                          title="następny rozdział"><span class="section-number">5. </span>The import system</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -172,7 +172,7 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">The Python Language Reference</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Dokumentacja języka Python</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><span class="section-number">4. </span>Execution model</a></li>
                 <li class="right">
                     
@@ -392,7 +392,7 @@ This means that they are not evaluated when the type alias or type variable is
 created, or when the object carrying annotations is created. Instead, they
 are only evaluated when necessary, for example when the <code class="docutils literal notranslate"><span class="pre">__value__</span></code>
 attribute on a type alias is accessed.</p>
-<p>Example:</p>
+<p>Przykład:</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span> <span class="n">Alias</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">0</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">Alias</span><span class="o">.</span><span class="n">__value__</span>
 <span class="gt">Traceback (most recent call last):</span>
@@ -429,7 +429,7 @@ as if they were used in the immediately enclosing scope.</p>
 <section id="builtins-and-restricted-execution">
 <span id="restrict-exec"></span><h3><span class="section-number">4.2.5. </span>Builtins and restricted execution<a class="headerlink" href="#builtins-and-restricted-execution" title="Link to this heading">¶</a></h3>
 <div class="impl-detail compound" id="index-15">
-<p><strong>CPython implementation detail:</strong> Users should not touch <code class="docutils literal notranslate"><span class="pre">__builtins__</span></code>; it is strictly an implementation
+<p><strong>Szczegół implementacyjny CPythona:</strong> Users should not touch <code class="docutils literal notranslate"><span class="pre">__builtins__</span></code>; it is strictly an implementation
 detail.  Users wanting to override values in the builtins namespace should
 <a class="reference internal" href="simple_stmts.html#import"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">import</span></code></a> the <a class="reference internal" href="../library/builtins.html#module-builtins" title="builtins: The module that provides the built-in namespace."><code class="xref py py-mod docutils literal notranslate"><span class="pre">builtins</span></code></a> module and modify its
 attributes appropriately.</p>
@@ -462,7 +462,7 @@ namespace.  If only one namespace is specified, it is used for both.</p>
 </section>
 </section>
 <section id="exceptions">
-<span id="id4"></span><h2><span class="section-number">4.3. </span>Exceptions<a class="headerlink" href="#exceptions" title="Link to this heading">¶</a></h2>
+<span id="id4"></span><h2><span class="section-number">4.3. </span>Wyjątki<a class="headerlink" href="#exceptions" title="Link to this heading">¶</a></h2>
 <p id="index-17"><span id="index-16"></span>Exceptions are a means of breaking out of the normal flow of control of a code
 block in order to handle errors or other exceptional conditions.  An exception
 is <em>raised</em> at the point where the error is detected; it may be <em>handled</em> by the
@@ -495,7 +495,7 @@ relied on by code which will run under multiple versions of the interpreter.</p>
 </div>
 <p>See also the description of the <a class="reference internal" href="compound_stmts.html#try"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">try</span></code></a> statement in section <a class="reference internal" href="compound_stmts.html#try"><span class="std std-ref">The try statement</span></a>
 and <a class="reference internal" href="simple_stmts.html#raise"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">raise</span></code></a> statement in section <a class="reference internal" href="simple_stmts.html#raise"><span class="std std-ref">The raise statement</span></a>.</p>
-<p class="rubric">Footnotes</p>
+<p class="rubric">Przypisy</p>
 <aside class="footnote-list brackets">
 <aside class="footnote brackets" id="id5" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">1</a><span class="fn-bracket">]</span></span>
@@ -514,7 +514,7 @@ is not available at the time the module is compiled.</p>
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#">4. Execution model</a><ul>
 <li><a class="reference internal" href="#structure-of-a-program">4.1. Structure of a program</a></li>
@@ -527,21 +527,21 @@ is not available at the time the module is compiled.</p>
 <li><a class="reference internal" href="#interaction-with-dynamic-features">4.2.6. Interaction with dynamic features</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#exceptions">4.3. Exceptions</a></li>
+<li><a class="reference internal" href="#exceptions">4.3. Wyjątki</a></li>
 </ul>
 </li>
 </ul>
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="datamodel.html"
-                          title="previous chapter"><span class="section-number">3. </span>Data model</a></p>
+                          title="poprzedni rozdział"><span class="section-number">3. </span>Data model</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="import.html"
-                          title="next chapter"><span class="section-number">5. </span>The import system</a></p>
+                          title="następny rozdział"><span class="section-number">5. </span>The import system</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -555,7 +555,7 @@ is not available at the time the module is compiled.</p>
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -591,7 +591,7 @@ is not available at the time the module is compiled.</p>
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Language Reference</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Dokumentacja języka Python</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><span class="section-number">4. </span>Execution model</a></li>
                 <li class="right">
                     
@@ -639,7 +639,7 @@ is not available at the time the module is compiled.</p>
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

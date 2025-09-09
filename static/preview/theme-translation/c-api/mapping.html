@@ -31,11 +31,11 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="Iterator Protocol" href="iter.html" />
     <link rel="prev" title="Sequence Protocol" href="sequence.html" />
@@ -98,14 +98,14 @@
     </select>
 </label>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="sequence.html"
-                          title="previous chapter">Sequence Protocol</a></p>
+                          title="poprzedni rozdział">Sequence Protocol</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="iter.html"
-                          title="next chapter">Iterator Protocol</a></p>
+                          title="następny rozdział">Iterator Protocol</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -152,8 +152,8 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Reference Manual</a> &#187;</li>
-          <li class="nav-item nav-item-2"><a href="abstract.html" accesskey="U">Abstract Objects Layer</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Podręcznik</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="abstract.html" accesskey="U">Warstwa obiektów abstrakcyjnych</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Mapping Protocol</a></li>
                 <li class="right">
                     
@@ -191,7 +191,7 @@
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyMapping_Check">
 <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyMapping_Check</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">o</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyMapping_Check" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Return <code class="docutils literal notranslate"><span class="pre">1</span></code> if the object provides the mapping protocol or supports slicing,
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Return <code class="docutils literal notranslate"><span class="pre">1</span></code> if the object provides the mapping protocol or supports slicing,
 and <code class="docutils literal notranslate"><span class="pre">0</span></code> otherwise.  Note that it returns <code class="docutils literal notranslate"><span class="pre">1</span></code> for Python classes with
 a <a class="reference internal" href="../reference/datamodel.html#object.__getitem__" title="object.__getitem__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">__getitem__()</span></code></a> method, since in general it is impossible to
 determine what type of keys the class supports. This function always succeeds.</p>
@@ -202,14 +202,14 @@ determine what type of keys the class supports. This function always succeeds.</
 <a class="reference internal" href="intro.html#c.Py_ssize_t" title="Py_ssize_t"><span class="n"><span class="pre">Py_ssize_t</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyMapping_Size</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">o</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyMapping_Size" title="Link to this definition">¶</a><br /></dt>
 <dt class="sig sig-object c" id="c.PyMapping_Length">
 <a class="reference internal" href="intro.html#c.Py_ssize_t" title="Py_ssize_t"><span class="n"><span class="pre">Py_ssize_t</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyMapping_Length</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">o</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyMapping_Length" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p id="index-0">Returns the number of keys in object <em>o</em> on success, and <code class="docutils literal notranslate"><span class="pre">-1</span></code> on failure.
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p id="index-0">Returns the number of keys in object <em>o</em> on success, and <code class="docutils literal notranslate"><span class="pre">-1</span></code> on failure.
 This is equivalent to the Python expression <code class="docutils literal notranslate"><span class="pre">len(o)</span></code>.</p>
 </dd></dl>
 
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyMapping_GetItemString">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyMapping_GetItemString</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">o</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">key</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyMapping_GetItemString" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>This is the same as <a class="reference internal" href="object.html#c.PyObject_GetItem" title="PyObject_GetItem"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyObject_GetItem()</span></code></a>, but <em>key</em> is
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>This is the same as <a class="reference internal" href="object.html#c.PyObject_GetItem" title="PyObject_GetItem"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyObject_GetItem()</span></code></a>, but <em>key</em> is
 specified as a <span class="c-expr sig sig-inline c"><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="p">*</span></span> UTF-8 encoded bytes string,
 rather than a <span class="c-expr sig sig-inline c"><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n">PyObject</span></a><span class="p">*</span></span>.</p>
 </dd></dl>
@@ -217,7 +217,7 @@ rather than a <span class="c-expr sig sig-inline c"><a class="reference internal
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyMapping_GetOptionalItem">
 <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyMapping_GetOptionalItem</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">obj</span></span>, <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">key</span></span>, <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">result</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyMapping_GetOptionalItem" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.13.</em><p>Variant of <a class="reference internal" href="object.html#c.PyObject_GetItem" title="PyObject_GetItem"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyObject_GetItem()</span></code></a> which doesn’t raise
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.13.</em><p>Variant of <a class="reference internal" href="object.html#c.PyObject_GetItem" title="PyObject_GetItem"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyObject_GetItem()</span></code></a> which doesn’t raise
 <a class="reference internal" href="../library/exceptions.html#KeyError" title="KeyError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">KeyError</span></code></a> if the key is not found.</p>
 <p>If the key is found, return <code class="docutils literal notranslate"><span class="pre">1</span></code> and set <em>*result</em> to a new
 <a class="reference internal" href="../glossary.html#term-strong-reference"><span class="xref std std-term">strong reference</span></a> to the corresponding value.
@@ -233,7 +233,7 @@ set <em>*result</em> to <code class="docutils literal notranslate"><span class="
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyMapping_GetOptionalItemString">
 <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyMapping_GetOptionalItemString</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">obj</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">key</span></span>, <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">result</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyMapping_GetOptionalItemString" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.13.</em><p>This is the same as <a class="reference internal" href="#c.PyMapping_GetOptionalItem" title="PyMapping_GetOptionalItem"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyMapping_GetOptionalItem()</span></code></a>, but <em>key</em> is
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.13.</em><p>This is the same as <a class="reference internal" href="#c.PyMapping_GetOptionalItem" title="PyMapping_GetOptionalItem"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyMapping_GetOptionalItem()</span></code></a>, but <em>key</em> is
 specified as a <span class="c-expr sig sig-inline c"><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="p">*</span></span> UTF-8 encoded bytes string,
 rather than a <span class="c-expr sig sig-inline c"><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n">PyObject</span></a><span class="p">*</span></span>.</p>
 <div class="versionadded">
@@ -244,7 +244,7 @@ rather than a <span class="c-expr sig sig-inline c"><a class="reference internal
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyMapping_SetItemString">
 <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyMapping_SetItemString</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">o</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">key</span></span>, <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">v</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyMapping_SetItemString" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>This is the same as <a class="reference internal" href="object.html#c.PyObject_SetItem" title="PyObject_SetItem"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyObject_SetItem()</span></code></a>, but <em>key</em> is
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>This is the same as <a class="reference internal" href="object.html#c.PyObject_SetItem" title="PyObject_SetItem"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyObject_SetItem()</span></code></a>, but <em>key</em> is
 specified as a <span class="c-expr sig sig-inline c"><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="p">*</span></span> UTF-8 encoded bytes string,
 rather than a <span class="c-expr sig sig-inline c"><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n">PyObject</span></a><span class="p">*</span></span>.</p>
 </dd></dl>
@@ -266,7 +266,7 @@ rather than a <span class="c-expr sig sig-inline c"><a class="reference internal
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyMapping_HasKeyWithError">
 <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyMapping_HasKeyWithError</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">o</span></span>, <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">key</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyMapping_HasKeyWithError" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.13.</em><p>Return <code class="docutils literal notranslate"><span class="pre">1</span></code> if the mapping object has the key <em>key</em> and <code class="docutils literal notranslate"><span class="pre">0</span></code> otherwise.
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.13.</em><p>Return <code class="docutils literal notranslate"><span class="pre">1</span></code> if the mapping object has the key <em>key</em> and <code class="docutils literal notranslate"><span class="pre">0</span></code> otherwise.
 This is equivalent to the Python expression <code class="docutils literal notranslate"><span class="pre">key</span> <span class="pre">in</span> <span class="pre">o</span></code>.
 On failure, return <code class="docutils literal notranslate"><span class="pre">-1</span></code>.</p>
 <div class="versionadded">
@@ -277,7 +277,7 @@ On failure, return <code class="docutils literal notranslate"><span class="pre">
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyMapping_HasKeyStringWithError">
 <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyMapping_HasKeyStringWithError</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">o</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">key</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyMapping_HasKeyStringWithError" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.13.</em><p>This is the same as <a class="reference internal" href="#c.PyMapping_HasKeyWithError" title="PyMapping_HasKeyWithError"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyMapping_HasKeyWithError()</span></code></a>, but <em>key</em> is
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.13.</em><p>This is the same as <a class="reference internal" href="#c.PyMapping_HasKeyWithError" title="PyMapping_HasKeyWithError"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyMapping_HasKeyWithError()</span></code></a>, but <em>key</em> is
 specified as a <span class="c-expr sig sig-inline c"><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="p">*</span></span> UTF-8 encoded bytes string,
 rather than a <span class="c-expr sig sig-inline c"><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n">PyObject</span></a><span class="p">*</span></span>.</p>
 <div class="versionadded">
@@ -288,7 +288,7 @@ rather than a <span class="c-expr sig sig-inline c"><a class="reference internal
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyMapping_HasKey">
 <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyMapping_HasKey</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">o</span></span>, <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">key</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyMapping_HasKey" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Return <code class="docutils literal notranslate"><span class="pre">1</span></code> if the mapping object has the key <em>key</em> and <code class="docutils literal notranslate"><span class="pre">0</span></code> otherwise.
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Return <code class="docutils literal notranslate"><span class="pre">1</span></code> if the mapping object has the key <em>key</em> and <code class="docutils literal notranslate"><span class="pre">0</span></code> otherwise.
 This is equivalent to the Python expression <code class="docutils literal notranslate"><span class="pre">key</span> <span class="pre">in</span> <span class="pre">o</span></code>.
 This function always succeeds.</p>
 <div class="admonition note">
@@ -303,7 +303,7 @@ For proper error handling, use <a class="reference internal" href="#c.PyMapping_
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyMapping_HasKeyString">
 <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyMapping_HasKeyString</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">o</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">key</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyMapping_HasKeyString" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>This is the same as <a class="reference internal" href="#c.PyMapping_HasKey" title="PyMapping_HasKey"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyMapping_HasKey()</span></code></a>, but <em>key</em> is
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>This is the same as <a class="reference internal" href="#c.PyMapping_HasKey" title="PyMapping_HasKey"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyMapping_HasKey()</span></code></a>, but <em>key</em> is
 specified as a <span class="c-expr sig sig-inline c"><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="p">*</span></span> UTF-8 encoded bytes string,
 rather than a <span class="c-expr sig sig-inline c"><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n">PyObject</span></a><span class="p">*</span></span>.</p>
 <div class="admonition note">
@@ -320,7 +320,7 @@ For proper error handling, use <a class="reference internal" href="#c.PyMapping_
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyMapping_Keys">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyMapping_Keys</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">o</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyMapping_Keys" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>On success, return a list of the keys in object <em>o</em>.  On failure, return
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>On success, return a list of the keys in object <em>o</em>.  On failure, return
 <code class="docutils literal notranslate"><span class="pre">NULL</span></code>.</p>
 <div class="versionchanged">
 <p><span class="versionmodified changed">Zmienione w wersji 3.7: </span>Previously, the function returned a list or a tuple.</p>
@@ -330,7 +330,7 @@ For proper error handling, use <a class="reference internal" href="#c.PyMapping_
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyMapping_Values">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyMapping_Values</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">o</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyMapping_Values" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>On success, return a list of the values in object <em>o</em>.  On failure, return
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>On success, return a list of the values in object <em>o</em>.  On failure, return
 <code class="docutils literal notranslate"><span class="pre">NULL</span></code>.</p>
 <div class="versionchanged">
 <p><span class="versionmodified changed">Zmienione w wersji 3.7: </span>Previously, the function returned a list or a tuple.</p>
@@ -340,7 +340,7 @@ For proper error handling, use <a class="reference internal" href="#c.PyMapping_
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyMapping_Items">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyMapping_Items</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">o</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyMapping_Items" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>On success, return a list of the items in object <em>o</em>, where each item is a
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>On success, return a list of the items in object <em>o</em>, where each item is a
 tuple containing a key-value pair.  On failure, return <code class="docutils literal notranslate"><span class="pre">NULL</span></code>.</p>
 <div class="versionchanged">
 <p><span class="versionmodified changed">Zmienione w wersji 3.7: </span>Previously, the function returned a list or a tuple.</p>
@@ -357,14 +357,14 @@ tuple containing a key-value pair.  On failure, return <code class="docutils lit
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="sequence.html"
-                          title="previous chapter">Sequence Protocol</a></p>
+                          title="poprzedni rozdział">Sequence Protocol</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="iter.html"
-                          title="next chapter">Iterator Protocol</a></p>
+                          title="następny rozdział">Iterator Protocol</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -378,7 +378,7 @@ tuple containing a key-value pair.  On failure, return <code class="docutils lit
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -414,8 +414,8 @@ tuple containing a key-value pair.  On failure, return <code class="docutils lit
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Reference Manual</a> &#187;</li>
-          <li class="nav-item nav-item-2"><a href="abstract.html" >Abstract Objects Layer</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Podręcznik</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="abstract.html" >Warstwa obiektów abstrakcyjnych</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Mapping Protocol</a></li>
                 <li class="right">
                     
@@ -463,7 +463,7 @@ tuple containing a key-value pair.  On failure, return <code class="docutils lit
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

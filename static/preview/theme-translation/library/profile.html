@@ -31,11 +31,11 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="timeit — Measure execution time of small code snippets" href="timeit.html" />
     <link rel="prev" title="pdb — The Python Debugger" href="pdb.html" />
@@ -98,14 +98,14 @@
     </select>
 </label>
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#">The Python Profilers</a><ul>
 <li><a class="reference internal" href="#introduction-to-the-profilers">Introduction to the profilers</a></li>
 <li><a class="reference internal" href="#what-is-statistical-profiling">What Is Statistical Profiling?</a></li>
 <li><a class="reference internal" href="#instant-user-s-manual">Instant User’s Manual</a></li>
 <li><a class="reference internal" href="#statistical-profiler-command-line-interface">Statistical Profiler Command Line Interface</a></li>
-<li><a class="reference internal" href="#module-profile.sample"><code class="xref py py-mod docutils literal notranslate"><span class="pre">profile.sample</span></code> Module Reference</a></li>
+<li><a class="reference internal" href="#module-profiling.sampling"><code class="xref py py-mod docutils literal notranslate"><span class="pre">profiling.sampling</span></code> Module Reference</a></li>
 <li><a class="reference internal" href="#deterministic-profiler-command-line-interface">Deterministic Profiler Command Line Interface</a></li>
 <li><a class="reference internal" href="#module-cProfile"><code class="xref py py-mod docutils literal notranslate"><span class="pre">profile</span></code> and <code class="xref py py-mod docutils literal notranslate"><span class="pre">cProfile</span></code> Module Reference</a></li>
 <li><a class="reference internal" href="#the-stats-class">The <code class="xref py py-class docutils literal notranslate"><span class="pre">Stats</span></code> Class</a></li>
@@ -119,14 +119,14 @@
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="pdb.html"
-                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pdb</span></code> — The Python Debugger</a></p>
+                          title="poprzedni rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pdb</span></code> — The Python Debugger</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="timeit.html"
-                          title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">timeit</span></code> — Measure execution time of small code snippets</a></p>
+                          title="następny rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">timeit</span></code> — Measure execution time of small code snippets</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -173,8 +173,8 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
-          <li class="nav-item nav-item-2"><a href="debug.html" accesskey="U">Debugging and Profiling</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="debug.html" accesskey="U">Debugowanie i profilowanie</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">The Python Profilers</a></li>
                 <li class="right">
                     
@@ -218,7 +218,7 @@ can be formatted into reports via the <a class="reference internal" href="#modul
 <p>The Python standard library provides three different profiling implementations:</p>
 <p><strong>Statistical Profiler:</strong></p>
 <ol class="arabic simple">
-<li><p><a class="reference internal" href="#module-profile.sample" title="profile.sample: Python statistical profiler."><code class="xref py py-mod docutils literal notranslate"><span class="pre">profile.sample</span></code></a> provides statistical profiling of running Python processes
+<li><p><code class="xref py py-mod docutils literal notranslate"><span class="pre">profiling.sampling</span></code> provides statistical profiling of running Python processes
 using periodic stack sampling. It can attach to any running Python process without
 requiring code modification or restart, making it ideal for production debugging.</p></li>
 </ol>
@@ -247,7 +247,7 @@ Python one.</p>
 <thead>
 <tr class="row-odd"><th class="head"><p>Feature</p></th>
 <th class="head"><p>Statistical
-(<code class="docutils literal notranslate"><span class="pre">profile.sample</span></code>)</p></th>
+(<code class="docutils literal notranslate"><span class="pre">profiling.sampling</span></code>)</p></th>
 <th class="head"><p>Deterministic
 (<code class="docutils literal notranslate"><span class="pre">cProfile</span></code>)</p></th>
 <th class="head"><p>Deterministic
@@ -289,7 +289,7 @@ Python one.</p>
 </table>
 <div class="admonition note">
 <p class="admonition-title">Informacja</p>
-<p>The statistical profiler (<a class="reference internal" href="#module-profile.sample" title="profile.sample: Python statistical profiler."><code class="xref py py-mod docutils literal notranslate"><span class="pre">profile.sample</span></code></a>) is recommended for most production
+<p>The statistical profiler (<code class="xref py py-mod docutils literal notranslate"><span class="pre">profiling.sampling</span></code>) is recommended for most production
 use cases due to its extremely low overhead and ability to profile running processes
 without modification. It can attach to any Python process and collect performance
 data with minimal impact on execution speed, making it ideal for debugging
@@ -339,11 +339,11 @@ provides a very brief overview, and allows a user to rapidly perform profiling
 on an existing application.</p>
 <p><strong>Statistical Profiling (Recommended for Production):</strong></p>
 <p>To profile an existing running process:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">profile</span><span class="o">.</span><span class="n">sample</span> <span class="mi">1234</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">profiling</span><span class="o">.</span><span class="n">sampling</span> <span class="mi">1234</span>
 </pre></div>
 </div>
 <p>To profile with custom settings:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">profile</span><span class="o">.</span><span class="n">sample</span> <span class="o">-</span><span class="n">i</span> <span class="mi">50</span> <span class="o">-</span><span class="n">d</span> <span class="mi">30</span> <span class="mi">1234</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">profiling</span><span class="o">.</span><span class="n">sampling</span> <span class="o">-</span><span class="n">i</span> <span class="mi">50</span> <span class="o">-</span><span class="n">d</span> <span class="mi">30</span> <span class="mi">1234</span>
 </pre></div>
 </div>
 <p><strong>Deterministic Profiling (Development/Testing):</strong></p>
@@ -409,132 +409,132 @@ them in various ways.</p>
 </section>
 <section id="statistical-profiler-command-line-interface">
 <span id="sampling-profiler-cli"></span><h2>Statistical Profiler Command Line Interface<a class="headerlink" href="#statistical-profiler-command-line-interface" title="Link to this heading">¶</a></h2>
-<p>The <a class="reference internal" href="#module-profile.sample" title="profile.sample: Python statistical profiler."><code class="xref py py-mod docutils literal notranslate"><span class="pre">profile.sample</span></code></a> module can be invoked as a script to profile running processes:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">profile</span><span class="o">.</span><span class="n">sample</span> <span class="p">[</span><span class="n">options</span><span class="p">]</span> <span class="n">PID</span>
+<p>The <code class="xref py py-mod docutils literal notranslate"><span class="pre">profiling.sampling</span></code> module can be invoked as a script to profile running processes:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">profiling</span><span class="o">.</span><span class="n">sampling</span> <span class="p">[</span><span class="n">options</span><span class="p">]</span> <span class="n">PID</span>
 </pre></div>
 </div>
 <p><strong>Basic Usage Examples:</strong></p>
 <p>Profile process 1234 for 10 seconds with default settings:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">profile</span><span class="o">.</span><span class="n">sample</span> <span class="mi">1234</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">profiling</span><span class="o">.</span><span class="n">sampling</span> <span class="mi">1234</span>
 </pre></div>
 </div>
 <p>Profile with custom interval and duration, save to file:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">profile</span><span class="o">.</span><span class="n">sample</span> <span class="o">-</span><span class="n">i</span> <span class="mi">50</span> <span class="o">-</span><span class="n">d</span> <span class="mi">30</span> <span class="o">-</span><span class="n">o</span> <span class="n">profile</span><span class="o">.</span><span class="n">stats</span> <span class="mi">1234</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">profiling</span><span class="o">.</span><span class="n">sampling</span> <span class="o">-</span><span class="n">i</span> <span class="mi">50</span> <span class="o">-</span><span class="n">d</span> <span class="mi">30</span> <span class="o">-</span><span class="n">o</span> <span class="n">profile</span><span class="o">.</span><span class="n">stats</span> <span class="mi">1234</span>
 </pre></div>
 </div>
 <p>Generate collapsed stacks to use with tools like <a class="reference external" href="https://github.com/brendangregg/FlameGraph">flamegraph.pl</a>:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">profile</span><span class="o">.</span><span class="n">sample</span> <span class="o">--</span><span class="n">collapsed</span> <span class="mi">1234</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">profiling</span><span class="o">.</span><span class="n">sampling</span> <span class="o">--</span><span class="n">collapsed</span> <span class="mi">1234</span>
 </pre></div>
 </div>
 <p>Profile all threads, sort by total time:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">profile</span><span class="o">.</span><span class="n">sample</span> <span class="o">-</span><span class="n">a</span> <span class="o">--</span><span class="n">sort</span><span class="o">-</span><span class="n">tottime</span> <span class="mi">1234</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">profiling</span><span class="o">.</span><span class="n">sampling</span> <span class="o">-</span><span class="n">a</span> <span class="o">--</span><span class="n">sort</span><span class="o">-</span><span class="n">tottime</span> <span class="mi">1234</span>
 </pre></div>
 </div>
 <p>Profile with real-time sampling statistics:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">profile</span><span class="o">.</span><span class="n">sample</span> <span class="o">--</span><span class="n">realtime</span><span class="o">-</span><span class="n">stats</span> <span class="mi">1234</span>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">profiling</span><span class="o">.</span><span class="n">sampling</span> <span class="o">--</span><span class="n">realtime</span><span class="o">-</span><span class="n">stats</span> <span class="mi">1234</span>
 </pre></div>
 </div>
 <p><strong>Command Line Options:</strong></p>
 <dl class="std option">
-<dt class="sig sig-object std" id="cmdoption-profile.sample-arg-PID">
-<span class="sig-name descname"><span class="pre">PID</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-profile.sample-arg-PID" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-profiling.sampling-arg-PID">
+<span class="sig-name descname"><span class="pre">PID</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-profiling.sampling-arg-PID" title="Link to this definition">¶</a></dt>
 <dd><p>Process ID of the Python process to profile (required)</p>
 </dd></dl>
 
 <dl class="std option">
-<dt class="sig sig-object std" id="cmdoption-profile.sample-i">
-<span id="cmdoption-profile.sample-interval"></span><span class="sig-name descname"><span class="pre">-i</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--interval</span></span><span class="sig-prename descclassname"> <span class="pre">INTERVAL</span></span><a class="headerlink" href="#cmdoption-profile.sample-i" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-profiling.sampling-i">
+<span id="cmdoption-profiling.sampling-interval"></span><span class="sig-name descname"><span class="pre">-i</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--interval</span></span><span class="sig-prename descclassname"> <span class="pre">INTERVAL</span></span><a class="headerlink" href="#cmdoption-profiling.sampling-i" title="Link to this definition">¶</a></dt>
 <dd><p>Sampling interval in microseconds (default: 100)</p>
 </dd></dl>
 
 <dl class="std option">
-<dt class="sig sig-object std" id="cmdoption-profile.sample-d">
-<span id="cmdoption-profile.sample-duration"></span><span class="sig-name descname"><span class="pre">-d</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--duration</span></span><span class="sig-prename descclassname"> <span class="pre">DURATION</span></span><a class="headerlink" href="#cmdoption-profile.sample-d" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-profiling.sampling-d">
+<span id="cmdoption-profiling.sampling-duration"></span><span class="sig-name descname"><span class="pre">-d</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--duration</span></span><span class="sig-prename descclassname"> <span class="pre">DURATION</span></span><a class="headerlink" href="#cmdoption-profiling.sampling-d" title="Link to this definition">¶</a></dt>
 <dd><p>Sampling duration in seconds (default: 10)</p>
 </dd></dl>
 
 <dl class="std option">
-<dt class="sig sig-object std" id="cmdoption-profile.sample-a">
-<span id="cmdoption-profile.sample-all-threads"></span><span class="sig-name descname"><span class="pre">-a</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--all-threads</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-profile.sample-a" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-profiling.sampling-a">
+<span id="cmdoption-profiling.sampling-all-threads"></span><span class="sig-name descname"><span class="pre">-a</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--all-threads</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-profiling.sampling-a" title="Link to this definition">¶</a></dt>
 <dd><p>Sample all threads in the process instead of just the main thread</p>
 </dd></dl>
 
 <dl class="std option">
-<dt class="sig sig-object std" id="cmdoption-profile.sample-realtime-stats">
-<span class="sig-name descname"><span class="pre">--realtime-stats</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-profile.sample-realtime-stats" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-profiling.sampling-realtime-stats">
+<span class="sig-name descname"><span class="pre">--realtime-stats</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-profiling.sampling-realtime-stats" title="Link to this definition">¶</a></dt>
 <dd><p>Print real-time sampling statistics during profiling</p>
 </dd></dl>
 
 <dl class="std option">
-<dt class="sig sig-object std" id="cmdoption-profile.sample-pstats">
-<span class="sig-name descname"><span class="pre">--pstats</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-profile.sample-pstats" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-profiling.sampling-pstats">
+<span class="sig-name descname"><span class="pre">--pstats</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-profiling.sampling-pstats" title="Link to this definition">¶</a></dt>
 <dd><p>Generate pstats output (default)</p>
 </dd></dl>
 
 <dl class="std option">
-<dt class="sig sig-object std" id="cmdoption-profile.sample-collapsed">
-<span class="sig-name descname"><span class="pre">--collapsed</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-profile.sample-collapsed" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-profiling.sampling-collapsed">
+<span class="sig-name descname"><span class="pre">--collapsed</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-profiling.sampling-collapsed" title="Link to this definition">¶</a></dt>
 <dd><p>Generate collapsed stack traces for flamegraphs</p>
 </dd></dl>
 
 <dl class="std option">
-<dt class="sig sig-object std" id="cmdoption-profile.sample-o">
-<span id="cmdoption-profile.sample-outfile"></span><span class="sig-name descname"><span class="pre">-o</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--outfile</span></span><span class="sig-prename descclassname"> <span class="pre">OUTFILE</span></span><a class="headerlink" href="#cmdoption-profile.sample-o" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-profiling.sampling-o">
+<span id="cmdoption-profiling.sampling-outfile"></span><span class="sig-name descname"><span class="pre">-o</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--outfile</span></span><span class="sig-prename descclassname"> <span class="pre">OUTFILE</span></span><a class="headerlink" href="#cmdoption-profiling.sampling-o" title="Link to this definition">¶</a></dt>
 <dd><p>Save output to a file</p>
 </dd></dl>
 
 <p><strong>Sorting Options (pstats format only):</strong></p>
 <dl class="std option">
-<dt class="sig sig-object std" id="cmdoption-profile.sample-sort-nsamples">
-<span class="sig-name descname"><span class="pre">--sort-nsamples</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-profile.sample-sort-nsamples" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-profiling.sampling-sort-nsamples">
+<span class="sig-name descname"><span class="pre">--sort-nsamples</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-profiling.sampling-sort-nsamples" title="Link to this definition">¶</a></dt>
 <dd><p>Sort by number of direct samples</p>
 </dd></dl>
 
 <dl class="std option">
-<dt class="sig sig-object std" id="cmdoption-profile.sample-sort-tottime">
-<span class="sig-name descname"><span class="pre">--sort-tottime</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-profile.sample-sort-tottime" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-profiling.sampling-sort-tottime">
+<span class="sig-name descname"><span class="pre">--sort-tottime</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-profiling.sampling-sort-tottime" title="Link to this definition">¶</a></dt>
 <dd><p>Sort by total time</p>
 </dd></dl>
 
 <dl class="std option">
-<dt class="sig sig-object std" id="cmdoption-profile.sample-sort-cumtime">
-<span class="sig-name descname"><span class="pre">--sort-cumtime</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-profile.sample-sort-cumtime" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-profiling.sampling-sort-cumtime">
+<span class="sig-name descname"><span class="pre">--sort-cumtime</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-profiling.sampling-sort-cumtime" title="Link to this definition">¶</a></dt>
 <dd><p>Sort by cumulative time (default)</p>
 </dd></dl>
 
 <dl class="std option">
-<dt class="sig sig-object std" id="cmdoption-profile.sample-sort-sample-pct">
-<span class="sig-name descname"><span class="pre">--sort-sample-pct</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-profile.sample-sort-sample-pct" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-profiling.sampling-sort-sample-pct">
+<span class="sig-name descname"><span class="pre">--sort-sample-pct</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-profiling.sampling-sort-sample-pct" title="Link to this definition">¶</a></dt>
 <dd><p>Sort by sample percentage</p>
 </dd></dl>
 
 <dl class="std option">
-<dt class="sig sig-object std" id="cmdoption-profile.sample-sort-cumul-pct">
-<span class="sig-name descname"><span class="pre">--sort-cumul-pct</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-profile.sample-sort-cumul-pct" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-profiling.sampling-sort-cumul-pct">
+<span class="sig-name descname"><span class="pre">--sort-cumul-pct</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-profiling.sampling-sort-cumul-pct" title="Link to this definition">¶</a></dt>
 <dd><p>Sort by cumulative sample percentage</p>
 </dd></dl>
 
 <dl class="std option">
-<dt class="sig sig-object std" id="cmdoption-profile.sample-sort-nsamples-cumul">
-<span class="sig-name descname"><span class="pre">--sort-nsamples-cumul</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-profile.sample-sort-nsamples-cumul" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-profiling.sampling-sort-nsamples-cumul">
+<span class="sig-name descname"><span class="pre">--sort-nsamples-cumul</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-profiling.sampling-sort-nsamples-cumul" title="Link to this definition">¶</a></dt>
 <dd><p>Sort by cumulative samples</p>
 </dd></dl>
 
 <dl class="std option">
-<dt class="sig sig-object std" id="cmdoption-profile.sample-sort-name">
-<span class="sig-name descname"><span class="pre">--sort-name</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-profile.sample-sort-name" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-profiling.sampling-sort-name">
+<span class="sig-name descname"><span class="pre">--sort-name</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-profiling.sampling-sort-name" title="Link to this definition">¶</a></dt>
 <dd><p>Sort by function name</p>
 </dd></dl>
 
 <dl class="std option">
-<dt class="sig sig-object std" id="cmdoption-profile.sample-l">
-<span id="cmdoption-profile.sample-limit"></span><span class="sig-name descname"><span class="pre">-l</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--limit</span></span><span class="sig-prename descclassname"> <span class="pre">LIMIT</span></span><a class="headerlink" href="#cmdoption-profile.sample-l" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-profiling.sampling-l">
+<span id="cmdoption-profiling.sampling-limit"></span><span class="sig-name descname"><span class="pre">-l</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--limit</span></span><span class="sig-prename descclassname"> <span class="pre">LIMIT</span></span><a class="headerlink" href="#cmdoption-profiling.sampling-l" title="Link to this definition">¶</a></dt>
 <dd><p>Limit the number of rows in the output (default: 15)</p>
 </dd></dl>
 
 <dl class="std option">
-<dt class="sig sig-object std" id="cmdoption-profile.sample-no-summary">
-<span class="sig-name descname"><span class="pre">--no-summary</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-profile.sample-no-summary" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object std" id="cmdoption-profiling.sampling-no-summary">
+<span class="sig-name descname"><span class="pre">--no-summary</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-profiling.sampling-no-summary" title="Link to this definition">¶</a></dt>
 <dd><p>Disable the summary section in the output</p>
 </dd></dl>
 
@@ -556,17 +556,17 @@ them in various ways.</p>
 <li><p><strong>filename:lineno(function)</strong>: Location and name of the function</p></li>
 </ul>
 </section>
-<section id="module-profile.sample">
-<span id="profile-sample-module-reference"></span><span id="profile-cli"></span><h2><a class="reference internal" href="#module-profile.sample" title="profile.sample: Python statistical profiler."><code class="xref py py-mod docutils literal notranslate"><span class="pre">profile.sample</span></code></a> Module Reference<a class="headerlink" href="#module-profile.sample" title="Link to this heading">¶</a></h2>
-<p>This section documents the programmatic interface for the <a class="reference internal" href="#module-profile.sample" title="profile.sample: Python statistical profiler."><code class="xref py py-mod docutils literal notranslate"><span class="pre">profile.sample</span></code></a> module.
+<section id="module-profiling.sampling">
+<span id="profiling-sampling-module-reference"></span><span id="profile-cli"></span><h2><code class="xref py py-mod docutils literal notranslate"><span class="pre">profiling.sampling</span></code> Module Reference<a class="headerlink" href="#module-profiling.sampling" title="Link to this heading">¶</a></h2>
+<p>This section documents the programmatic interface for the <code class="xref py py-mod docutils literal notranslate"><span class="pre">profiling.sampling</span></code> module.
 For command-line usage, see <a class="reference internal" href="#sampling-profiler-cli"><span class="std std-ref">Statistical Profiler Command Line Interface</span></a>. For conceptual information
 about statistical profiling, see <a class="reference internal" href="#statistical-profiling"><span class="std std-ref">What Is Statistical Profiling?</span></a></p>
 <dl class="py function">
-<dt class="sig sig-object py" id="profile.sample.sample">
-<span class="sig-prename descclassname"><span class="pre">profile.sample.</span></span><span class="sig-name descname"><span class="pre">sample</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pid</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sample_interval_usec</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration_sec</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">all_threads</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_summary</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'pstats'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">realtime_stats</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#profile.sample.sample" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="profiling.sampling.sample">
+<span class="sig-prename descclassname"><span class="pre">profiling.sampling.</span></span><span class="sig-name descname"><span class="pre">sample</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pid</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sample_interval_usec</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration_sec</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">all_threads</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_summary</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'pstats'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">realtime_stats</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#profiling.sampling.sample" title="Link to this definition">¶</a></dt>
 <dd><p>Sample a Python process and generate profiling data.</p>
 <p>This is the main entry point for statistical profiling. It creates a
-<a class="reference internal" href="#profile.sample.SampleProfiler" title="profile.sample.SampleProfiler"><code class="xref py py-class docutils literal notranslate"><span class="pre">SampleProfiler</span></code></a>, collects stack traces from the target process, and
+<a class="reference internal" href="#profiling.sampling.SampleProfiler" title="profiling.sampling.SampleProfiler"><code class="xref py py-class docutils literal notranslate"><span class="pre">SampleProfiler</span></code></a>, collects stack traces from the target process, and
 outputs the results in the specified format.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parametry<span class="colon">:</span></dt>
@@ -589,21 +589,21 @@ outputs the results in the specified format.</p>
 </dl>
 <p>Examples:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Basic usage - profile process 1234 for 10 seconds</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">profile.sample</span>
-<span class="n">profile</span><span class="o">.</span><span class="n">sample</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">1234</span><span class="p">)</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">profiling.sampling</span>
+<span class="n">profiling</span><span class="o">.</span><span class="n">sampling</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">1234</span><span class="p">)</span>
 
 <span class="c1"># Profile with custom settings</span>
-<span class="n">profile</span><span class="o">.</span><span class="n">sample</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">1234</span><span class="p">,</span> <span class="n">duration_sec</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">sample_interval_usec</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">all_threads</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">profiling</span><span class="o">.</span><span class="n">sampling</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">1234</span><span class="p">,</span> <span class="n">duration_sec</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">sample_interval_usec</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">all_threads</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
 <span class="c1"># Generate collapsed stack traces for flamegraph.pl</span>
-<span class="n">profile</span><span class="o">.</span><span class="n">sample</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">1234</span><span class="p">,</span> <span class="n">output_format</span><span class="o">=</span><span class="s1">&#39;collapsed&#39;</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s1">&#39;profile.collapsed&#39;</span><span class="p">)</span>
+<span class="n">profiling</span><span class="o">.</span><span class="n">sampling</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">1234</span><span class="p">,</span> <span class="n">output_format</span><span class="o">=</span><span class="s1">&#39;collapsed&#39;</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s1">&#39;profile.collapsed&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </dd></dl>
 
 <dl class="py class">
-<dt class="sig sig-object py" id="profile.sample.SampleProfiler">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">profile.sample.</span></span><span class="sig-name descname"><span class="pre">SampleProfiler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sample_interval_usec</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">all_threads</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#profile.sample.SampleProfiler" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="profiling.sampling.SampleProfiler">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">profiling.sampling.</span></span><span class="sig-name descname"><span class="pre">SampleProfiler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sample_interval_usec</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">all_threads</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#profiling.sampling.SampleProfiler" title="Link to this definition">¶</a></dt>
 <dd><p>Low-level API for the statistical profiler.</p>
 <p>This profiler uses periodic stack sampling to collect performance data
 from running Python processes with minimal overhead. It can attach to
@@ -618,8 +618,8 @@ any Python process by PID and collect stack traces at regular intervals.</p>
 </dd>
 </dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="profile.sample.SampleProfiler.sample">
-<span class="sig-name descname"><span class="pre">sample</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">collector</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration_sec</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#profile.sample.SampleProfiler.sample" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="profiling.sampling.SampleProfiler.sample">
+<span class="sig-name descname"><span class="pre">sample</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">collector</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration_sec</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#profiling.sampling.SampleProfiler.sample" title="Link to this definition">¶</a></dt>
 <dd><p>Sample the target process for the specified duration.</p>
 <p>Collects stack traces from the target process at regular intervals
 and passes them to the provided collector for processing.</p>
@@ -953,7 +953,7 @@ long as the abbreviation is unambiguous.</p>
 <thead>
 <tr class="row-odd"><th class="head"><p>Valid String Arg</p></th>
 <th class="head"><p>Valid enum Arg</p></th>
-<th class="head"><p>Meaning</p></th>
+<th class="head"><p>Znaczenie</p></th>
 </tr>
 </thead>
 <tbody>
@@ -1125,7 +1125,7 @@ Added the following function: get_stats_profile.</p>
 call</em>, <em>function return</em>, and <em>exception</em> events are monitored, and precise
 timings are made for the intervals between these events (during which time the
 user’s code is executing).  In contrast, <em class="dfn">statistical profiling</em> (which is
-provided by the <a class="reference internal" href="#module-profile.sample" title="profile.sample: Python statistical profiler."><code class="xref py py-mod docutils literal notranslate"><span class="pre">profile.sample</span></code></a> module) periodically samples the effective instruction pointer, and
+provided by the <code class="xref py py-mod docutils literal notranslate"><span class="pre">profiling.sampling</span></code> module) periodically samples the effective instruction pointer, and
 deduces where time is being spent.  The latter technique traditionally involves
 less overhead (as the code does not need to be instrumented), but provides only
 relative indications of where time is being spent.</p>
@@ -1266,14 +1266,14 @@ precise measurements of process or wall-clock time. For example, see
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#">The Python Profilers</a><ul>
 <li><a class="reference internal" href="#introduction-to-the-profilers">Introduction to the profilers</a></li>
 <li><a class="reference internal" href="#what-is-statistical-profiling">What Is Statistical Profiling?</a></li>
 <li><a class="reference internal" href="#instant-user-s-manual">Instant User’s Manual</a></li>
 <li><a class="reference internal" href="#statistical-profiler-command-line-interface">Statistical Profiler Command Line Interface</a></li>
-<li><a class="reference internal" href="#module-profile.sample"><code class="xref py py-mod docutils literal notranslate"><span class="pre">profile.sample</span></code> Module Reference</a></li>
+<li><a class="reference internal" href="#module-profiling.sampling"><code class="xref py py-mod docutils literal notranslate"><span class="pre">profiling.sampling</span></code> Module Reference</a></li>
 <li><a class="reference internal" href="#deterministic-profiler-command-line-interface">Deterministic Profiler Command Line Interface</a></li>
 <li><a class="reference internal" href="#module-cProfile"><code class="xref py py-mod docutils literal notranslate"><span class="pre">profile</span></code> and <code class="xref py py-mod docutils literal notranslate"><span class="pre">cProfile</span></code> Module Reference</a></li>
 <li><a class="reference internal" href="#the-stats-class">The <code class="xref py py-class docutils literal notranslate"><span class="pre">Stats</span></code> Class</a></li>
@@ -1287,14 +1287,14 @@ precise measurements of process or wall-clock time. For example, see
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="pdb.html"
-                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pdb</span></code> — The Python Debugger</a></p>
+                          title="poprzedni rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pdb</span></code> — The Python Debugger</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="timeit.html"
-                          title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">timeit</span></code> — Measure execution time of small code snippets</a></p>
+                          title="następny rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">timeit</span></code> — Measure execution time of small code snippets</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -1308,7 +1308,7 @@ precise measurements of process or wall-clock time. For example, see
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -1344,8 +1344,8 @@ precise measurements of process or wall-clock time. For example, see
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
-          <li class="nav-item nav-item-2"><a href="debug.html" >Debugging and Profiling</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="debug.html" >Debugowanie i profilowanie</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">The Python Profilers</a></li>
                 <li class="right">
                     
@@ -1393,7 +1393,7 @@ precise measurements of process or wall-clock time. For example, see
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

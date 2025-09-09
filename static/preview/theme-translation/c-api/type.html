@@ -31,11 +31,11 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="The None Object" href="none.html" />
     <link rel="prev" title="Concrete Objects Layer" href="concrete.html" />
@@ -98,7 +98,7 @@
     </select>
 </label>
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#">Type Objects</a><ul>
 <li><a class="reference internal" href="#creating-heap-allocated-types">Creating Heap-Allocated Types</a></li>
@@ -108,14 +108,14 @@
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="concrete.html"
-                          title="previous chapter">Concrete Objects Layer</a></p>
+                          title="poprzedni rozdział">Concrete Objects Layer</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="none.html"
-                          title="next chapter">The <code class="docutils literal notranslate"><span class="pre">None</span></code> Object</a></p>
+                          title="następny rozdział">The <code class="docutils literal notranslate"><span class="pre">None</span></code> Object</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -162,7 +162,7 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Reference Manual</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Podręcznik</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="concrete.html" accesskey="U">Concrete Objects Layer</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Type Objects</a></li>
                 <li class="right">
@@ -199,13 +199,13 @@
 <dl class="c type" id="index-0">
 <dt class="sig sig-object c" id="c.PyTypeObject">
 <span class="k"><span class="pre">type</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyTypeObject</span></span></span><a class="headerlink" href="#c.PyTypeObject" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Limited API</span></a> (as an opaque struct).</em><p>The C structure of the objects used to describe built-in types.</p>
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">ograniczonego API</span></a> (jako nieprzezroczysta struktura).</em><p>The C structure of the objects used to describe built-in types.</p>
 </dd></dl>
 
 <dl class="c var">
 <dt class="sig sig-object c" id="c.PyType_Type">
 <a class="reference internal" href="#c.PyTypeObject" title="PyTypeObject"><span class="n"><span class="pre">PyTypeObject</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyType_Type</span></span></span><a class="headerlink" href="#c.PyType_Type" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>This is the type object for type objects; it is the same object as
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>This is the type object for type objects; it is the same object as
 <a class="reference internal" href="../library/functions.html#type" title="type"><code class="xref py py-class docutils literal notranslate"><span class="pre">type</span></code></a> in the Python layer.</p>
 </dd></dl>
 
@@ -228,13 +228,13 @@ always succeeds.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyType_ClearCache">
 <span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyType_ClearCache</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyType_ClearCache" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Clear the internal lookup cache. Return the current version tag.</p>
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Clear the internal lookup cache. Return the current version tag.</p>
 </dd></dl>
 
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyType_GetFlags">
 <span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyType_GetFlags</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.PyTypeObject" title="PyTypeObject"><span class="n"><span class="pre">PyTypeObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">type</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyType_GetFlags" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Return the <a class="reference internal" href="typeobj.html#c.PyTypeObject.tp_flags" title="PyTypeObject.tp_flags"><code class="xref c c-member docutils literal notranslate"><span class="pre">tp_flags</span></code></a> member of <em>type</em>. This function is primarily
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Return the <a class="reference internal" href="typeobj.html#c.PyTypeObject.tp_flags" title="PyTypeObject.tp_flags"><code class="xref c c-member docutils literal notranslate"><span class="pre">tp_flags</span></code></a> member of <em>type</em>. This function is primarily
 meant for use with <code class="docutils literal notranslate"><span class="pre">Py_LIMITED_API</span></code>; the individual flag bits are
 guaranteed to be stable across Python releases, but access to
 <a class="reference internal" href="typeobj.html#c.PyTypeObject.tp_flags" title="PyTypeObject.tp_flags"><code class="xref c c-member docutils literal notranslate"><span class="pre">tp_flags</span></code></a> itself is not part of the <a class="reference internal" href="stable.html#limited-c-api"><span class="std std-ref">limited API</span></a>.</p>
@@ -267,7 +267,7 @@ directly or indirectly, when setting up their own types.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyType_Modified">
 <span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyType_Modified</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.PyTypeObject" title="PyTypeObject"><span class="n"><span class="pre">PyTypeObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">type</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyType_Modified" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Invalidate the internal lookup cache for the type and all of its
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Invalidate the internal lookup cache for the type and all of its
 subtypes.  This function must be called after any manual
 modification of the attributes or base classes of the type.</p>
 </dd></dl>
@@ -345,7 +345,7 @@ tests the type flag <a class="reference internal" href="typeobj.html#c.Py_TPFLAG
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyType_IsSubtype">
 <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyType_IsSubtype</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.PyTypeObject" title="PyTypeObject"><span class="n"><span class="pre">PyTypeObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">a</span></span>, <a class="reference internal" href="#c.PyTypeObject" title="PyTypeObject"><span class="n"><span class="pre">PyTypeObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">b</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyType_IsSubtype" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Return true if <em>a</em> is a subtype of <em>b</em>.</p>
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Return true if <em>a</em> is a subtype of <em>b</em>.</p>
 <p>This function only checks for actual subtypes, which means that
 <a class="reference internal" href="../reference/datamodel.html#type.__subclasscheck__" title="type.__subclasscheck__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">__subclasscheck__()</span></code></a> is not called on <em>b</em>.  Call
 <a class="reference internal" href="object.html#c.PyObject_IsSubclass" title="PyObject_IsSubclass"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyObject_IsSubclass()</span></code></a> to do the same check that <a class="reference internal" href="../library/functions.html#issubclass" title="issubclass"><code class="xref py py-func docutils literal notranslate"><span class="pre">issubclass()</span></code></a>
@@ -355,7 +355,7 @@ would do.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyType_GenericAlloc">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyType_GenericAlloc</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.PyTypeObject" title="PyTypeObject"><span class="n"><span class="pre">PyTypeObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">type</span></span>, <a class="reference internal" href="intro.html#c.Py_ssize_t" title="Py_ssize_t"><span class="n"><span class="pre">Py_ssize_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">nitems</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyType_GenericAlloc" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Generic handler for the <a class="reference internal" href="typeobj.html#c.PyTypeObject.tp_alloc" title="PyTypeObject.tp_alloc"><code class="xref c c-member docutils literal notranslate"><span class="pre">tp_alloc</span></code></a> slot of a type
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Generic handler for the <a class="reference internal" href="typeobj.html#c.PyTypeObject.tp_alloc" title="PyTypeObject.tp_alloc"><code class="xref c c-member docutils literal notranslate"><span class="pre">tp_alloc</span></code></a> slot of a type
 object.  Uses Python’s default memory allocation mechanism to allocate memory
 for a new instance, zeros the memory, then initializes the memory as if by
 calling <a class="reference internal" href="allocation.html#c.PyObject_Init" title="PyObject_Init"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyObject_Init()</span></code></a> or <a class="reference internal" href="allocation.html#c.PyObject_InitVar" title="PyObject_InitVar"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyObject_InitVar()</span></code></a>.</p>
@@ -375,7 +375,7 @@ before initialization) and should be paired with <a class="reference internal" h
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyType_GenericNew">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyType_GenericNew</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.PyTypeObject" title="PyTypeObject"><span class="n"><span class="pre">PyTypeObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">type</span></span>, <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span>, <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">kwds</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyType_GenericNew" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Generic handler for the <a class="reference internal" href="typeobj.html#c.PyTypeObject.tp_new" title="PyTypeObject.tp_new"><code class="xref c c-member docutils literal notranslate"><span class="pre">tp_new</span></code></a> slot of a type
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Generic handler for the <a class="reference internal" href="typeobj.html#c.PyTypeObject.tp_new" title="PyTypeObject.tp_new"><code class="xref c c-member docutils literal notranslate"><span class="pre">tp_new</span></code></a> slot of a type
 object.  Creates a new instance using the type’s
 <a class="reference internal" href="typeobj.html#c.PyTypeObject.tp_alloc" title="PyTypeObject.tp_alloc"><code class="xref c c-member docutils literal notranslate"><span class="pre">tp_alloc</span></code></a> slot and returns the resulting object.</p>
 </dd></dl>
@@ -383,7 +383,7 @@ object.  Creates a new instance using the type’s
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyType_Ready">
 <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyType_Ready</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.PyTypeObject" title="PyTypeObject"><span class="n"><span class="pre">PyTypeObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">type</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyType_Ready" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Finalize a type object.  This should be called on all type objects to finish
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Finalize a type object.  This should be called on all type objects to finish
 their initialization.  This function is responsible for adding inherited slots
 from a type’s base class.  Return <code class="docutils literal notranslate"><span class="pre">0</span></code> on success, or return <code class="docutils literal notranslate"><span class="pre">-1</span></code> and sets an
 exception on error.</p>
@@ -402,7 +402,7 @@ GC protocol itself by at least implementing the
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyType_GetName">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyType_GetName</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.PyTypeObject" title="PyTypeObject"><span class="n"><span class="pre">PyTypeObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">type</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyType_GetName" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.11.</em><p>Return the type’s name. Equivalent to getting the type’s
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.11.</em><p>Return the type’s name. Equivalent to getting the type’s
 <a class="reference internal" href="../reference/datamodel.html#type.__name__" title="type.__name__"><code class="xref py py-attr docutils literal notranslate"><span class="pre">__name__</span></code></a> attribute.</p>
 <div class="versionadded">
 <p><span class="versionmodified added"> Dodane w wersji 3.11.</span></p>
@@ -412,7 +412,7 @@ GC protocol itself by at least implementing the
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyType_GetQualName">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyType_GetQualName</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.PyTypeObject" title="PyTypeObject"><span class="n"><span class="pre">PyTypeObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">type</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyType_GetQualName" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.11.</em><p>Return the type’s qualified name. Equivalent to getting the
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.11.</em><p>Return the type’s qualified name. Equivalent to getting the
 type’s <a class="reference internal" href="../reference/datamodel.html#type.__qualname__" title="type.__qualname__"><code class="xref py py-attr docutils literal notranslate"><span class="pre">__qualname__</span></code></a> attribute.</p>
 <div class="versionadded">
 <p><span class="versionmodified added"> Dodane w wersji 3.11.</span></p>
@@ -422,7 +422,7 @@ type’s <a class="reference internal" href="../reference/datamodel.html#type.__
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyType_GetFullyQualifiedName">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyType_GetFullyQualifiedName</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.PyTypeObject" title="PyTypeObject"><span class="n"><span class="pre">PyTypeObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">type</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyType_GetFullyQualifiedName" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.13.</em><p>Return the type’s fully qualified name. Equivalent to
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.13.</em><p>Return the type’s fully qualified name. Equivalent to
 <code class="docutils literal notranslate"><span class="pre">f&quot;{type.__module__}.{type.__qualname__}&quot;</span></code>, or <a class="reference internal" href="../reference/datamodel.html#type.__qualname__" title="type.__qualname__"><code class="xref py py-attr docutils literal notranslate"><span class="pre">type.__qualname__</span></code></a>
 if <a class="reference internal" href="../reference/datamodel.html#type.__module__" title="type.__module__"><code class="xref py py-attr docutils literal notranslate"><span class="pre">type.__module__</span></code></a> is not a string or is equal to <code class="docutils literal notranslate"><span class="pre">&quot;builtins&quot;</span></code>.</p>
 <div class="versionadded">
@@ -433,7 +433,7 @@ if <a class="reference internal" href="../reference/datamodel.html#type.__module
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyType_GetModuleName">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyType_GetModuleName</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.PyTypeObject" title="PyTypeObject"><span class="n"><span class="pre">PyTypeObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">type</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyType_GetModuleName" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.13.</em><p>Return the type’s module name. Equivalent to getting the
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.13.</em><p>Return the type’s module name. Equivalent to getting the
 <a class="reference internal" href="../reference/datamodel.html#type.__module__" title="type.__module__"><code class="xref py py-attr docutils literal notranslate"><span class="pre">type.__module__</span></code></a> attribute.</p>
 <div class="versionadded">
 <p><span class="versionmodified added"> Dodane w wersji 3.13.</span></p>
@@ -443,7 +443,7 @@ if <a class="reference internal" href="../reference/datamodel.html#type.__module
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyType_GetSlot">
 <span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyType_GetSlot</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.PyTypeObject" title="PyTypeObject"><span class="n"><span class="pre">PyTypeObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">type</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n"><span class="pre">slot</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyType_GetSlot" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.4.</em><p>Return the function pointer stored in the given slot. If the
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.4.</em><p>Return the function pointer stored in the given slot. If the
 result is <code class="docutils literal notranslate"><span class="pre">NULL</span></code>, this indicates that either the slot is <code class="docutils literal notranslate"><span class="pre">NULL</span></code>,
 or that the function was called with invalid parameters.
 Callers will typically cast the result pointer into the appropriate
@@ -461,7 +461,7 @@ Previously, it was limited to <a class="reference internal" href="typeobj.html#h
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyType_GetModule">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyType_GetModule</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.PyTypeObject" title="PyTypeObject"><span class="n"><span class="pre">PyTypeObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">type</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyType_GetModule" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.10.</em><p>Return the module object associated with the given type when the type was
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.10.</em><p>Return the module object associated with the given type when the type was
 created using <a class="reference internal" href="#c.PyType_FromModuleAndSpec" title="PyType_FromModuleAndSpec"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyType_FromModuleAndSpec()</span></code></a>.</p>
 <p>If no module is associated with the given type, sets <a class="reference internal" href="../library/exceptions.html#TypeError" title="TypeError"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypeError</span></code></a>
 and returns <code class="docutils literal notranslate"><span class="pre">NULL</span></code>.</p>
@@ -481,7 +481,7 @@ be used.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyType_GetModuleState">
 <span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyType_GetModuleState</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.PyTypeObject" title="PyTypeObject"><span class="n"><span class="pre">PyTypeObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">type</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyType_GetModuleState" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.10.</em><p>Return the state of the module object associated with the given type.
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.10.</em><p>Return the state of the module object associated with the given type.
 This is a shortcut for calling <a class="reference internal" href="module.html#c.PyModule_GetState" title="PyModule_GetState"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyModule_GetState()</span></code></a> on the result
 of <a class="reference internal" href="#c.PyType_GetModule" title="PyType_GetModule"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyType_GetModule()</span></code></a>.</p>
 <p>If no module is associated with the given type, sets <a class="reference internal" href="../library/exceptions.html#TypeError" title="TypeError"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypeError</span></code></a>
@@ -496,7 +496,7 @@ returns <code class="docutils literal notranslate"><span class="pre">NULL</span>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyType_GetModuleByDef">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyType_GetModuleByDef</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.PyTypeObject" title="PyTypeObject"><span class="n"><span class="pre">PyTypeObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">type</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="module.html#c.PyModuleDef" title="PyModuleDef"><span class="n"><span class="pre">PyModuleDef</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">def</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyType_GetModuleByDef" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_borrowed_ref">Return value: Borrowed reference.</em><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.13.</em><p>Find the first superclass whose module was created from
+<dd><em class="refcount return_borrowed_ref">Wartość zwracana: pożyczona referencja.</em><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.13.</em><p>Find the first superclass whose module was created from
 the given <a class="reference internal" href="module.html#c.PyModuleDef" title="PyModuleDef"><code class="xref c c-type docutils literal notranslate"><span class="pre">PyModuleDef</span></code></a> <em>def</em>, and return that module.</p>
 <p>If no module is found, raises a <a class="reference internal" href="../library/exceptions.html#TypeError" title="TypeError"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypeError</span></code></a> and returns <code class="docutils literal notranslate"><span class="pre">NULL</span></code>.</p>
 <p>This function is intended to be used together with
@@ -515,7 +515,7 @@ Do not release it with <a class="reference internal" href="refcounting.html#c.Py
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyType_GetBaseByToken">
 <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyType_GetBaseByToken</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.PyTypeObject" title="PyTypeObject"><span class="n"><span class="pre">PyTypeObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">type</span></span>, <span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">token</span></span>, <a class="reference internal" href="#c.PyTypeObject" title="PyTypeObject"><span class="n"><span class="pre">PyTypeObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">result</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyType_GetBaseByToken" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.14.</em><p>Find the first superclass in <em>type</em>’s <a class="reference internal" href="../glossary.html#term-method-resolution-order"><span class="xref std std-term">method resolution order</span></a> whose
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.14.</em><p>Find the first superclass in <em>type</em>’s <a class="reference internal" href="../glossary.html#term-method-resolution-order"><span class="xref std std-term">method resolution order</span></a> whose
 <a class="reference internal" href="#c.Py_tp_token" title="Py_tp_token"><code class="xref c c-macro docutils literal notranslate"><span class="pre">Py_tp_token</span></code></a> token is equal to the given one.</p>
 <ul class="simple">
 <li><p>If found, set <em>*result</em> to a new <a class="reference internal" href="../glossary.html#term-strong-reference"><span class="xref std std-term">strong reference</span></a>
@@ -536,7 +536,7 @@ Use this if you need only the return value.</p>
 <dt class="sig sig-object c" id="c.PyUnstable_Type_AssignVersionTag">
 <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyUnstable_Type_AssignVersionTag</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.PyTypeObject" title="PyTypeObject"><span class="n"><span class="pre">PyTypeObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">type</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyUnstable_Type_AssignVersionTag" title="Link to this definition">¶</a><br /></dt>
 <dd><div class="unstable-c-api warning admonition">
-<em>This is <a class="reference internal" href="stable.html#unstable-c-api"><span class="std std-ref">Unstable API</span></a>. It may change without warning in minor releases.</em></div>
+<em>To jest <a class="reference internal" href="stable.html#unstable-c-api"><span class="std std-ref">niestabilne API</span></a>. Może ulec zmianie bez ostrzeżenia w wydaniach minor.</em></div>
 <p>Attempt to assign a version tag to the given type.</p>
 <p>Returns 1 if the type already had a valid version tag or a new one was
 assigned, or 0 if a new tag could not be assigned.</p>
@@ -552,7 +552,7 @@ assigned, or 0 if a new tag could not be assigned.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyType_FromMetaclass">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyType_FromMetaclass</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.PyTypeObject" title="PyTypeObject"><span class="n"><span class="pre">PyTypeObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">metaclass</span></span>, <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">module</span></span>, <a class="reference internal" href="#c.PyType_Spec" title="PyType_Spec"><span class="n"><span class="pre">PyType_Spec</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">spec</span></span>, <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">bases</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyType_FromMetaclass" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.12.</em><p>Create and return a <a class="reference internal" href="typeobj.html#heap-types"><span class="std std-ref">heap type</span></a> from the <em>spec</em>
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.12.</em><p>Create and return a <a class="reference internal" href="typeobj.html#heap-types"><span class="std std-ref">heap type</span></a> from the <em>spec</em>
 (see <a class="reference internal" href="typeobj.html#c.Py_TPFLAGS_HEAPTYPE" title="Py_TPFLAGS_HEAPTYPE"><code class="xref c c-macro docutils literal notranslate"><span class="pre">Py_TPFLAGS_HEAPTYPE</span></code></a>).</p>
 <p>The metaclass <em>metaclass</em> is used to construct the resulting type object.
 When <em>metaclass</em> is <code class="docutils literal notranslate"><span class="pre">NULL</span></code>, the metaclass is derived from <em>bases</em>
@@ -592,7 +592,7 @@ Specifically:</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyType_FromModuleAndSpec">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyType_FromModuleAndSpec</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">module</span></span>, <a class="reference internal" href="#c.PyType_Spec" title="PyType_Spec"><span class="n"><span class="pre">PyType_Spec</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">spec</span></span>, <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">bases</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyType_FromModuleAndSpec" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.10.</em><p>Equivalent to <code class="docutils literal notranslate"><span class="pre">PyType_FromMetaclass(NULL,</span> <span class="pre">module,</span> <span class="pre">spec,</span> <span class="pre">bases)</span></code>.</p>
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.10.</em><p>Equivalent to <code class="docutils literal notranslate"><span class="pre">PyType_FromMetaclass(NULL,</span> <span class="pre">module,</span> <span class="pre">spec,</span> <span class="pre">bases)</span></code>.</p>
 <div class="versionadded">
 <p><span class="versionmodified added"> Dodane w wersji 3.9.</span></p>
 </div>
@@ -617,7 +617,7 @@ Creating classes whose metaclass overrides
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyType_FromSpecWithBases">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyType_FromSpecWithBases</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.PyType_Spec" title="PyType_Spec"><span class="n"><span class="pre">PyType_Spec</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">spec</span></span>, <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">bases</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyType_FromSpecWithBases" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.3.</em><p>Equivalent to <code class="docutils literal notranslate"><span class="pre">PyType_FromMetaclass(NULL,</span> <span class="pre">NULL,</span> <span class="pre">spec,</span> <span class="pre">bases)</span></code>.</p>
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.3.</em><p>Equivalent to <code class="docutils literal notranslate"><span class="pre">PyType_FromMetaclass(NULL,</span> <span class="pre">NULL,</span> <span class="pre">spec,</span> <span class="pre">bases)</span></code>.</p>
 <div class="versionadded">
 <p><span class="versionmodified added"> Dodane w wersji 3.3.</span></p>
 </div>
@@ -638,7 +638,7 @@ Creating classes whose metaclass overrides
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyType_FromSpec">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyType_FromSpec</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.PyType_Spec" title="PyType_Spec"><span class="n"><span class="pre">PyType_Spec</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">spec</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyType_FromSpec" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Equivalent to <code class="docutils literal notranslate"><span class="pre">PyType_FromMetaclass(NULL,</span> <span class="pre">NULL,</span> <span class="pre">spec,</span> <span class="pre">NULL)</span></code>.</p>
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Equivalent to <code class="docutils literal notranslate"><span class="pre">PyType_FromMetaclass(NULL,</span> <span class="pre">NULL,</span> <span class="pre">spec,</span> <span class="pre">NULL)</span></code>.</p>
 <div class="versionchanged">
 <p><span class="versionmodified changed">Zmienione w wersji 3.12: </span>The function now finds and uses a metaclass corresponding to the
 base classes provided in <em>Py_tp_base[s]</em> slots.
@@ -657,7 +657,7 @@ Creating classes whose metaclass overrides
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyType_Freeze">
 <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyType_Freeze</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.PyTypeObject" title="PyTypeObject"><span class="n"><span class="pre">PyTypeObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">type</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyType_Freeze" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.14.</em><p>Make a type immutable: set the <a class="reference internal" href="typeobj.html#c.Py_TPFLAGS_IMMUTABLETYPE" title="Py_TPFLAGS_IMMUTABLETYPE"><code class="xref c c-macro docutils literal notranslate"><span class="pre">Py_TPFLAGS_IMMUTABLETYPE</span></code></a> flag.</p>
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.14.</em><p>Make a type immutable: set the <a class="reference internal" href="typeobj.html#c.Py_TPFLAGS_IMMUTABLETYPE" title="Py_TPFLAGS_IMMUTABLETYPE"><code class="xref c c-macro docutils literal notranslate"><span class="pre">Py_TPFLAGS_IMMUTABLETYPE</span></code></a> flag.</p>
 <p>All base classes of <em>type</em> must be immutable.</p>
 <p>On success, return <code class="docutils literal notranslate"><span class="pre">0</span></code>.
 On error, set an exception and return <code class="docutils literal notranslate"><span class="pre">-1</span></code>.</p>
@@ -676,7 +676,7 @@ instances must not be created before the type is made immutable.</p>
 <span id='c.PyType_Spec.PyType_Spec.slots'></span><dl class="c type">
 <dt class="sig sig-object c" id="c.PyType_Spec">
 <span class="k"><span class="pre">type</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyType_Spec</span></span></span><a class="headerlink" href="#c.PyType_Spec" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> (including all members).</em><p>Structure defining a type’s behavior.</p>
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> (w tym wszystkie składniki).</em><p>Structure defining a type’s behavior.</p>
 <dl class="c member">
 <dt class="sig sig-object c" id="c.PyType_Spec.name">
 <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">name</span></span></span><a class="headerlink" href="#c.PyType_Spec.name" title="Link to this definition">¶</a><br /></dt>
@@ -749,7 +749,7 @@ Terminated by the special slot value <code class="docutils literal notranslate">
 <span id='c.PyType_Slot.PyType_Slot.pfunc'></span><dl class="c type">
 <dt class="sig sig-object c" id="c.PyType_Slot">
 <span class="k"><span class="pre">type</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyType_Slot</span></span></span><a class="headerlink" href="#c.PyType_Slot" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> (including all members).</em><p>Structure defining optional functionality of a type, containing a slot ID
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> (w tym wszystkie składniki).</em><p>Structure defining optional functionality of a type, containing a slot ID
 and a value pointer.</p>
 <dl class="c member">
 <dt class="sig sig-object c" id="c.PyType_Slot.slot">
@@ -878,7 +878,7 @@ Expands to <code class="docutils literal notranslate"><span class="pre">NULL</sp
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#">Type Objects</a><ul>
 <li><a class="reference internal" href="#creating-heap-allocated-types">Creating Heap-Allocated Types</a></li>
@@ -888,14 +888,14 @@ Expands to <code class="docutils literal notranslate"><span class="pre">NULL</sp
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="concrete.html"
-                          title="previous chapter">Concrete Objects Layer</a></p>
+                          title="poprzedni rozdział">Concrete Objects Layer</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="none.html"
-                          title="next chapter">The <code class="docutils literal notranslate"><span class="pre">None</span></code> Object</a></p>
+                          title="następny rozdział">The <code class="docutils literal notranslate"><span class="pre">None</span></code> Object</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -909,7 +909,7 @@ Expands to <code class="docutils literal notranslate"><span class="pre">NULL</sp
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -945,7 +945,7 @@ Expands to <code class="docutils literal notranslate"><span class="pre">NULL</sp
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Reference Manual</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Podręcznik</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="concrete.html" >Concrete Objects Layer</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Type Objects</a></li>
                 <li class="right">
@@ -994,7 +994,7 @@ Expands to <code class="docutils literal notranslate"><span class="pre">NULL</sp
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

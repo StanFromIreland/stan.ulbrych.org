@@ -4,19 +4,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="Introduction" />
+<meta property="og:title" content="Wprowadzenie" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://docs.python.org/3/c-api/intro.html" />
 <meta property="og:site_name" content="Python documentation" />
-<meta property="og:description" content="The Application Programmer’s Interface to Python gives C and C++ programmers access to the Python interpreter at a variety of levels. The API is equally usable from C++, but for brevity it is gener..." />
+<meta property="og:description" content="Interfejs programowania aplikacji w Pythonie daje programistom języków C i C++ dostęp do programu interpretującego polecenia języka pytonowskiego na wielu poziomach. Sprzęg (API) jest równo użytecz..." />
 <meta property="og:image" content="_static/og-image.png" />
 <meta property="og:image:alt" content="Python documentation" />
-<meta name="description" content="The Application Programmer’s Interface to Python gives C and C++ programmers access to the Python interpreter at a variety of levels. The API is equally usable from C++, but for brevity it is gener..." />
+<meta name="description" content="Interfejs programowania aplikacji w Pythonie daje programistom języków C i C++ dostęp do programu interpretującego polecenia języka pytonowskiego na wielu poziomach. Sprzęg (API) jest równo użytecz..." />
 <meta name="theme-color" content="#3776ab">
 <meta property="og:image:width" content="200">
 <meta property="og:image:height" content="200">
 
-    <title>Introduction &#8212; Python 3.15.0a0 - dokumentacja</title><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wprowadzenie &#8212; Python 3.15.0a0 - dokumentacja</title><meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=234b1a7c" />
@@ -31,14 +31,14 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
-    <link rel="next" title="C API Stability" href="stable.html" />
-    <link rel="prev" title="Python/C API Reference Manual" href="index.html" />
+    <link rel="next" title="C API and ABI Stability" href="stable.html" />
+    <link rel="prev" title="Python/C API Podręcznik" href="index.html" />
     
       
       <link rel="canonical" href="https://docs.python.org/3/c-api/intro.html">
@@ -98,39 +98,39 @@
     </select>
 </label>
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
-<li><a class="reference internal" href="#">Introduction</a><ul>
+<li><a class="reference internal" href="#">Wprowadzenie</a><ul>
 <li><a class="reference internal" href="#language-version-compatibility">Language version compatibility</a></li>
-<li><a class="reference internal" href="#coding-standards">Coding standards</a></li>
-<li><a class="reference internal" href="#include-files">Include Files</a></li>
+<li><a class="reference internal" href="#coding-standards">Standardy kodowania</a></li>
+<li><a class="reference internal" href="#include-files">Pliki Włączania - z ang. Include</a></li>
 <li><a class="reference internal" href="#useful-macros">Useful macros</a></li>
-<li><a class="reference internal" href="#objects-types-and-reference-counts">Objects, Types and Reference Counts</a><ul>
-<li><a class="reference internal" href="#reference-counts">Reference Counts</a><ul>
-<li><a class="reference internal" href="#reference-count-details">Reference Count Details</a></li>
+<li><a class="reference internal" href="#objects-types-and-reference-counts">Przedmioty, ich Rodzaje i Liczby Odwołań</a><ul>
+<li><a class="reference internal" href="#reference-counts">Liczby odniesień</a><ul>
+<li><a class="reference internal" href="#reference-count-details">Szczegóły Liczby Odniesień</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#types">Types</a></li>
+<li><a class="reference internal" href="#types">Typy</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#exceptions">Exceptions</a></li>
-<li><a class="reference internal" href="#embedding-python">Embedding Python</a></li>
-<li><a class="reference internal" href="#debugging-builds">Debugging Builds</a></li>
-<li><a class="reference internal" href="#recommended-third-party-tools">Recommended third party tools</a></li>
+<li><a class="reference internal" href="#exceptions">Wyjątki</a></li>
+<li><a class="reference internal" href="#embedding-python">Załączanie programu interpretującego język pytonowski</a></li>
+<li><a class="reference internal" href="#debugging-builds">Odpluskwiające Budowy</a></li>
+<li><a class="reference internal" href="#recommended-third-party-tools">Rekomendowane zewnętrzne narzędzia.</a></li>
 </ul>
 </li>
 </ul>
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="index.html"
-                          title="previous chapter">Python/C API Reference Manual</a></p>
+                          title="poprzedni rozdział">Python/C API Podręcznik</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="stable.html"
-                          title="next chapter">C API Stability</a></p>
+                          title="następny rozdział">C API and ABI Stability</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -158,10 +158,10 @@
           <a href="../py-modindex.html" title="Indeks modułów Pythona"
              >moduły</a> |</li>
         <li class="right" >
-          <a href="stable.html" title="C API Stability"
+          <a href="stable.html" title="C API and ABI Stability"
              accesskey="N">dalej</a> |</li>
         <li class="right" >
-          <a href="index.html" title="Python/C API Reference Manual"
+          <a href="index.html" title="Python/C API Podręcznik"
              accesskey="P">wstecz</a> |</li>
 
           <li><img src="../_static/py.svg" alt="Python logo" style="vertical-align: middle; margin-top: -1px"></li>
@@ -177,8 +177,8 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Python/C API Reference Manual</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">Introduction</a></li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Python/C API Podręcznik</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Wprowadzenie</a></li>
                 <li class="right">
                     
 
@@ -209,26 +209,10 @@
           <div class="body" role="main">
             
   <section id="introduction">
-<span id="api-intro"></span><h1>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">¶</a></h1>
-<p>The Application Programmer’s Interface to Python gives C and C++ programmers
-access to the Python interpreter at a variety of levels.  The API is equally
-usable from C++, but for brevity it is generally referred to as the Python/C
-API.  There are two fundamentally different reasons for using the Python/C API.
-The first reason is to write <em>extension modules</em> for specific purposes; these
-are C modules that extend the Python interpreter.  This is probably the most
-common use.  The second reason is to use Python as a component in a larger
-application; this technique is generally referred to as <em class="dfn">embedding</em> Python
-in an application.</p>
-<p>Writing an extension module is a relatively well-understood process, where a
-„cookbook” approach works well.  There are several tools that automate the
-process to some extent.  While people have embedded Python in other
-applications since its early existence, the process of embedding Python is
-less straightforward than writing an extension.</p>
-<p>Many API functions are useful independent of whether you’re embedding  or
-extending Python; moreover, most applications that embed Python  will need to
-provide a custom extension as well, so it’s probably a  good idea to become
-familiar with writing an extension before  attempting to embed Python in a real
-application.</p>
+<span id="api-intro"></span><h1>Wprowadzenie<a class="headerlink" href="#introduction" title="Link to this heading">¶</a></h1>
+<p>Interfejs programowania aplikacji w Pythonie daje programistom języków C i C++ dostęp do programu interpretującego polecenia języka pytonowskiego na wielu poziomach. Sprzęg (API) jest równo użyteczny z poziomu C++ ale dla porządku jest zwykle określany mianem sprzęgu pomiędzy językami pytonowskim a C (z ang. - Python/C API). Istnieją dwie zasadniczo różne przyczyny dla użycia interfejsu między językami Python i C. Pierwszą przyczyną jest pisanie <em>modułów rozszerzających</em> dla szczególnych powodów; są to moduły języka C, które rozszerzają interpreter Pythona. To jest zwykle najczęstsze użycie. Drugą przyczyną jest użycie Pythona jako komponentu większego programu; ta technika jest zwykle określana mianem załączania - z ang. - <em class="dfn">embedding</em> w aplikacji.</p>
+<p>Napisanie moduł rozszerzeń jest stosunkowo dobrze zrozumiałym procesem, w którym dobrze sprawdza się podejście „książki kucharskiej”.  Istnieje kilka narzędzi, które w pewnym stopniu automatyzują ten proces.  Ludzie wbudowali Pythona w innych aplikacja od początku jego istnienia, proces wbudowania Pythona jest mniej prosty niż pisanie rozszerzenia.</p>
+<p>Wiele zadań sprzęgu (API) jest użytecznych niezależnie od tego czy załączasz, czy też rozszerzasz program interpretujący język pytonowski; co więcej, większość aplikacji które załącza program interpretujący polecenia jezyka pytonowskiego potrzebuje także szczególnych rozszerzeń, więc prawdopodobnie jest dobrym pomysłem zaznajomienie się z pisaniem rozszerzenia przed próbą załączenia języka pytonowskiego w prawdziwej aplikacji.</p>
 <section id="language-version-compatibility">
 <h2>Language version compatibility<a class="headerlink" href="#language-version-compatibility" title="Link to this heading">¶</a></h2>
 <p>Python’s C API is compatible with C11 and C++11 versions of C and C++.</p>
@@ -237,36 +221,23 @@ C/C++ versions.
 You do <em>not</em> need to enable your compiler’s „c11 mode”.</p>
 </section>
 <section id="coding-standards">
-<h2>Coding standards<a class="headerlink" href="#coding-standards" title="Link to this heading">¶</a></h2>
-<p>If you’re writing C code for inclusion in CPython, you <strong>must</strong> follow the
-guidelines and standards defined in <span class="target" id="index-0"></span><a class="pep reference external" href="https://peps.python.org/pep-0007/"><strong>PEP 7</strong></a>.  These guidelines apply
-regardless of the version of Python you are contributing to.  Following these
-conventions is not necessary for your own third party extension modules,
-unless you eventually expect to contribute them to Python.</p>
+<h2>Standardy kodowania<a class="headerlink" href="#coding-standards" title="Link to this heading">¶</a></h2>
+<p>Jeśli piszesz C do umieszczenia w CPythonie <strong>musisz</strong> przestrzegać wytycznych standardów zdefiniowanych w <span class="target" id="index-30"></span><a class="pep reference external" href="https://peps.python.org/pep-0007/"><strong>PEP 7</strong></a>.  Wytyczne te obowiązują niezależnie od tego, do której wersji Pythona wnosisz swój wkład.  Przestrzeganie tych konwencji nie jest konieczne dla własnych rozszerzeń, chyba że ostatecznie spodziewasz się wnieść je do Python.</p>
 </section>
 <section id="include-files">
-<span id="api-includes"></span><h2>Include Files<a class="headerlink" href="#include-files" title="Link to this heading">¶</a></h2>
-<p>All function, type and macro definitions needed to use the Python/C API are
-included in your code by the following line:</p>
+<span id="api-includes"></span><h2>Pliki Włączania - z ang. Include<a class="headerlink" href="#include-files" title="Link to this heading">¶</a></h2>
+<p>Wszystkie zadania, definicje typu i makropoleceń konieczne do użycia sprzęgu między językami pytonowskim i C są włączane do źródeł w kodzie użytkownika przez następującą linijkę:</p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#define PY_SSIZE_T_CLEAN</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Python.h&gt;</span>
 </pre></div>
 </div>
-<p>This implies inclusion of the following standard headers: <code class="docutils literal notranslate"><span class="pre">&lt;stdio.h&gt;</span></code>,
-<code class="docutils literal notranslate"><span class="pre">&lt;string.h&gt;</span></code>, <code class="docutils literal notranslate"><span class="pre">&lt;errno.h&gt;</span></code>, <code class="docutils literal notranslate"><span class="pre">&lt;limits.h&gt;</span></code>, <code class="docutils literal notranslate"><span class="pre">&lt;assert.h&gt;</span></code> and <code class="docutils literal notranslate"><span class="pre">&lt;stdlib.h&gt;</span></code>
-(if available).</p>
+<p>Oznacza to włączenie następujących standardowych nagłówek: <code class="docutils literal notranslate"><span class="pre">&lt;stdio.h&gt;</span></code>, <code class="docutils literal notranslate"><span class="pre">&lt;string.h&gt;</span></code>, <code class="docutils literal notranslate"><span class="pre">&lt;errno.h&gt;</span></code>, <code class="docutils literal notranslate"><span class="pre">&lt;limits.h&gt;</span></code>, <code class="docutils literal notranslate"><span class="pre">&lt;assert.h&gt;</span></code> i <code class="docutils literal notranslate"><span class="pre">&lt;stdlib.h&gt;</span></code> (jeśli są dostępne).</p>
 <div class="admonition note">
 <p class="admonition-title">Informacja</p>
-<p>Since Python may define some pre-processor definitions which affect the standard
-headers on some systems, you <em>must</em> include <code class="file docutils literal notranslate"><span class="pre">Python.h</span></code> before any standard
-headers are included.</p>
-<p>It is recommended to always define <code class="docutils literal notranslate"><span class="pre">PY_SSIZE_T_CLEAN</span></code> before including
-<code class="docutils literal notranslate"><span class="pre">Python.h</span></code>.  See <a class="reference internal" href="arg.html#arg-parsing"><span class="std std-ref">Parsing arguments and building values</span></a> for a description of this macro.</p>
+<p>Jako że Python może definiować pewne definicje preprocesora, które wpływają na pliki nagłówkowe na niektórych systemach, <em>musisz</em> załączyć plik <code class="file docutils literal notranslate"><span class="pre">Python.h</span></code> przed jakimikolwiek standardowymi nagłówkami.</p>
+<p>Zaleca się, aby zawsze definiować <code class="docutils literal notranslate"><span class="pre">PY_SSIZE_T_CLEAN</span></code> przed włączeniem <code class="docutils literal notranslate"><span class="pre">Python.h</span></code>.  Zobacz <a class="reference internal" href="arg.html#arg-parsing"><span class="std std-ref">Pobieranie kolejnych rzeczy podanych na wejściu i konstruowanie wartości.</span></a> dla opisu tego makro.</p>
 </div>
-<p>All user visible names defined by Python.h (except those defined by the included
-standard headers) have one of the prefixes <code class="docutils literal notranslate"><span class="pre">Py</span></code> or <code class="docutils literal notranslate"><span class="pre">_Py</span></code>.  Names beginning
-with <code class="docutils literal notranslate"><span class="pre">_Py</span></code> are for internal use by the Python implementation and should not be
-used by extension writers. Structure member names do not have a reserved prefix.</p>
+<p>Wszystkie widoczne dla użytkownika nazwy określone w Python.h ( z wyjątkiem tych określonych przez załączone standardowe pliki nagłówkowe ) mają jeden z przedrostków <code class="docutils literal notranslate"><span class="pre">Py</span></code> lub <code class="docutils literal notranslate"><span class="pre">_Py</span></code>. Nazwy rozpoczynające się od <code class="docutils literal notranslate"><span class="pre">_Py</span></code> służą do wewnętrznego użytku przez urzeczywistnienie programu interpretującego języka pytonowskiego i nie powinno być używane przez piszących rozszerzenia. Nazwy członków struktury nie mają zarezerwowanych przedrostków.</p>
 <div class="admonition note">
 <p class="admonition-title">Informacja</p>
 <p>User code should never define names that begin with <code class="docutils literal notranslate"><span class="pre">Py</span></code> or <code class="docutils literal notranslate"><span class="pre">_Py</span></code>. This
@@ -342,7 +313,7 @@ macro is defined), the <a class="reference internal" href="#c.Py_ALWAYS_INLINE" 
 <span class="sig-name descname"><span class="n"><span class="pre">Py_DEPRECATED</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">version</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.Py_DEPRECATED" title="Link to this definition">¶</a><br /></dt>
 <dd><p>Use this for deprecated declarations.  The macro must be placed before the
 symbol name.</p>
-<p>Example:</p>
+<p>Przykład:</p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">Py_DEPRECATED</span><span class="p">(</span><span class="mf">3.8</span><span class="p">)</span><span class="w"> </span><span class="n">PyAPI_FUNC</span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="n">Py_OldFunction</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
 </pre></div>
 </div>
@@ -449,7 +420,7 @@ warnings. Example: <code class="docutils literal notranslate"><span class="pre">
 If Python is built without docstrings, the value will be empty.</p>
 <p>Use <a class="reference internal" href="#c.PyDoc_STRVAR" title="PyDoc_STRVAR"><code class="xref c c-macro docutils literal notranslate"><span class="pre">PyDoc_STRVAR</span></code></a> for docstrings to support building
 Python without docstrings, as specified in <span class="target" id="index-1"></span><a class="pep reference external" href="https://peps.python.org/pep-0007/"><strong>PEP 7</strong></a>.</p>
-<p>Example:</p>
+<p>Przykład:</p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">PyDoc_STRVAR</span><span class="p">(</span><span class="n">pop_doc</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Remove and return the rightmost element.&quot;</span><span class="p">);</span>
 
 <span class="k">static</span><span class="w"> </span><span class="n">PyMethodDef</span><span class="w"> </span><span class="n">deque_methods</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
@@ -468,7 +439,7 @@ Python without docstrings, as specified in <span class="target" id="index-1"></s
 if docstrings are disabled.</p>
 <p>Use <a class="reference internal" href="#c.PyDoc_STR" title="PyDoc_STR"><code class="xref c c-macro docutils literal notranslate"><span class="pre">PyDoc_STR</span></code></a> in specifying docstrings to support
 building Python without docstrings, as specified in <span class="target" id="index-2"></span><a class="pep reference external" href="https://peps.python.org/pep-0007/"><strong>PEP 7</strong></a>.</p>
-<p>Example:</p>
+<p>Przykład:</p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="n">PyMethodDef</span><span class="w"> </span><span class="n">pysqlite_row_methods</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="p">{</span><span class="s">&quot;keys&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="n">PyCFunction</span><span class="p">)</span><span class="n">pysqlite_row_keys</span><span class="p">,</span><span class="w"> </span><span class="n">METH_NOARGS</span><span class="p">,</span>
 <span class="w">        </span><span class="n">PyDoc_STR</span><span class="p">(</span><span class="s">&quot;Returns the keys of the row.&quot;</span><span class="p">)},</span>
@@ -480,7 +451,7 @@ building Python without docstrings, as specified in <span class="target" id="ind
 
 </section>
 <section id="objects-types-and-reference-counts">
-<span id="api-objects"></span><h2>Objects, Types and Reference Counts<a class="headerlink" href="#objects-types-and-reference-counts" title="Link to this heading">¶</a></h2>
+<span id="api-objects"></span><h2>Przedmioty, ich Rodzaje i Liczby Odwołań<a class="headerlink" href="#objects-types-and-reference-counts" title="Link to this heading">¶</a></h2>
 <p id="index-3">Most Python/C API functions have one or more arguments as well as a return value
 of type <span class="c-expr sig sig-inline c"><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n">PyObject</span></a><span class="p">*</span></span>.  This type is a pointer to an opaque data type
 representing an arbitrary Python object.  Since all Python object types are
@@ -491,14 +462,9 @@ heap: you never declare an automatic or static variable of type
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><code class="xref c c-type docutils literal notranslate"><span class="pre">PyObject</span></code></a>, only pointer variables of type <span class="c-expr sig sig-inline c"><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n">PyObject</span></a><span class="p">*</span></span> can  be
 declared.  The sole exception are the type objects; since these must never be
 deallocated, they are typically static <a class="reference internal" href="type.html#c.PyTypeObject" title="PyTypeObject"><code class="xref c c-type docutils literal notranslate"><span class="pre">PyTypeObject</span></code></a> objects.</p>
-<p>All Python objects (even Python integers) have a <em class="dfn">type</em> and a
-<em class="dfn">reference count</em>.  An object’s type determines what kind of object it is
-(e.g., an integer, a list, or a user-defined function; there are many more as
-explained in <a class="reference internal" href="../reference/datamodel.html#types"><span class="std std-ref">The standard type hierarchy</span></a>).  For each of the well-known types there is a macro
-to check whether an object is of that type; for instance, <code class="docutils literal notranslate"><span class="pre">PyList_Check(a)</span></code> is
-true if (and only if) the object pointed to by <em>a</em> is a Python list.</p>
+<p>Wszystkie przedmioty języka pytonowskiego (nawet liczby całkowite języka pytonowskiego) mają <em class="dfn">rodzaj</em> i <em class="dfn">liczbę odniesień</em>. Typ przedmiotu określa jakiego rodzaju przedmiot to jest (np. liczba całkowita, lista, lub zadanie zdefiniowane przez użytkownika; jest wiele więcej jak wyjaśniono w <a class="reference internal" href="../reference/datamodel.html#types"><span class="std std-ref">The standard type hierarchy</span></a>). Dla każdego z dobrze-znanych rodzajów istnieje makropolecenie sprawdzające czy przedmiot jest tego rodzaju; na przykład, <code class="docutils literal notranslate"><span class="pre">PyList_Check(a)</span></code> jest prawdziwe wtedy (i tylko wtedy) gdy przedmiot na który wskazuje <em>a</em> jest lista z języka pytonowskiego.</p>
 <section id="reference-counts">
-<span id="api-refcounts"></span><h3>Reference Counts<a class="headerlink" href="#reference-counts" title="Link to this heading">¶</a></h3>
+<span id="api-refcounts"></span><h3>Liczby odniesień<a class="headerlink" href="#reference-counts" title="Link to this heading">¶</a></h3>
 <p>The reference count is important because today’s computers have a  finite
 (and often severely limited) memory size; it counts how many different
 places there are that have a <a class="reference internal" href="../glossary.html#term-strong-reference"><span class="xref std std-term">strong reference</span></a> to an object.
@@ -555,7 +521,7 @@ These operations always create a new <a class="reference internal" href="../glos
 This leaves the caller with the responsibility to call <a class="reference internal" href="refcounting.html#c.Py_DECREF" title="Py_DECREF"><code class="xref c c-func docutils literal notranslate"><span class="pre">Py_DECREF()</span></code></a> when
 they are done with the result; this soon becomes second nature.</p>
 <section id="reference-count-details">
-<span id="api-refcountdetails"></span><h4>Reference Count Details<a class="headerlink" href="#reference-count-details" title="Link to this heading">¶</a></h4>
+<span id="api-refcountdetails"></span><h4>Szczegóły Liczby Odniesień<a class="headerlink" href="#reference-count-details" title="Link to this heading">¶</a></h4>
 <p>The reference count behavior of functions in the Python/C API is best  explained
 in terms of <em>ownership of references</em>.  Ownership pertains to references, never
 to objects (objects are not owned: they are always shared).  „Owning a
@@ -568,11 +534,7 @@ caller). When a function passes ownership of a reference on to its caller, the
 caller is said to receive a <em>new</em> reference.  When no ownership is transferred,
 the caller is said to <em>borrow</em> the reference. Nothing needs to be done for a
 <a class="reference internal" href="../glossary.html#term-borrowed-reference"><span class="xref std std-term">borrowed reference</span></a>.</p>
-<p>Conversely, when a calling function passes in a reference to an  object, there
-are two possibilities: the function <em>steals</em> a  reference to the object, or it
-does not.  <em>Stealing a reference</em> means that when you pass a reference to a
-function, that function assumes that it now owns that reference, and you are not
-responsible for it any longer.</p>
+<p>Idąc dalej, gdy wywołujące zadanie przekazuje odniesienie do przedmiotu, istnieją dwie możliwości: zadanie <em>kradnie</em> odniesienie do przedmiotu, lub nie kradnie go. <em>Kradnięcie odniesienia</em> oznacza, że gdy przekazujesz odniesienie do zadania, to zadanie przyjmuje, że teraz ono posiada odniesienie i nie jesteś za nie odpowiedzialny ani chwili dłużej.</p>
 <p id="index-5">Few functions steal references; the two notable exceptions are
 <a class="reference internal" href="list.html#c.PyList_SetItem" title="PyList_SetItem"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyList_SetItem()</span></code></a> and <a class="reference internal" href="tuple.html#c.PyTuple_SetItem" title="PyTuple_SetItem"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyTuple_SetItem()</span></code></a>, which  steal a reference
 to the item (but not to the tuple or list into which the item is put!).  These
@@ -710,7 +672,7 @@ using <a class="reference internal" href="sequence.html#c.PySequence_GetItem" ti
 </section>
 </section>
 <section id="types">
-<span id="api-types"></span><span id="index-9"></span><h3>Types<a class="headerlink" href="#types" title="Link to this heading">¶</a></h3>
+<span id="api-types"></span><span id="index-9"></span><h3>Typy<a class="headerlink" href="#types" title="Link to this heading">¶</a></h3>
 <p>There are few other data types that play a significant role in  the Python/C
 API; most are simple C types such as <span class="c-expr sig sig-inline c"><span class="kt">int</span></span>,  <span class="c-expr sig sig-inline c"><span class="kt">long</span></span>,
 <span class="c-expr sig sig-inline c"><span class="kt">double</span></span> and <span class="c-expr sig sig-inline c"><span class="kt">char</span><span class="p">*</span></span>.  A few structure types  are used to
@@ -721,7 +683,7 @@ use them.</p>
 <dl class="c type">
 <dt class="sig sig-object c" id="c.Py_ssize_t">
 <span class="k"><span class="pre">type</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Py_ssize_t</span></span></span><a class="headerlink" href="#c.Py_ssize_t" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>A signed integral type such that <code class="docutils literal notranslate"><span class="pre">sizeof(Py_ssize_t)</span> <span class="pre">==</span> <span class="pre">sizeof(size_t)</span></code>.
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>A signed integral type such that <code class="docutils literal notranslate"><span class="pre">sizeof(Py_ssize_t)</span> <span class="pre">==</span> <span class="pre">sizeof(size_t)</span></code>.
 C99 doesn’t define such a thing directly (size_t is an unsigned integral type).
 See <span class="target" id="index-10"></span><a class="pep reference external" href="https://peps.python.org/pep-0353/"><strong>PEP 353</strong></a> for details. <code class="docutils literal notranslate"><span class="pre">PY_SSIZE_T_MAX</span></code> is the largest positive value
 of type <a class="reference internal" href="#c.Py_ssize_t" title="Py_ssize_t"><code class="xref c c-type docutils literal notranslate"><span class="pre">Py_ssize_t</span></code></a>.</p>
@@ -730,12 +692,8 @@ of type <a class="reference internal" href="#c.Py_ssize_t" title="Py_ssize_t"><c
 </section>
 </section>
 <section id="exceptions">
-<span id="api-exceptions"></span><h2>Exceptions<a class="headerlink" href="#exceptions" title="Link to this heading">¶</a></h2>
-<p>The Python programmer only needs to deal with exceptions if specific  error
-handling is required; unhandled exceptions are automatically  propagated to the
-caller, then to the caller’s caller, and so on, until they reach the top-level
-interpreter, where they are reported to the  user accompanied by a stack
-traceback.</p>
+<span id="api-exceptions"></span><h2>Wyjątki<a class="headerlink" href="#exceptions" title="Link to this heading">¶</a></h2>
+<p>Programujący komputer w języku pytonowskim musi sobie zaprzątać głowę tylko sytuacjami wyjątkowymi tylko jeśli szczególna obsługa błędów jest konieczna; Nieobsłużone wyjątki są automatycznie przesyłane do zadania wywołującego, potem do zadania które wywołało tamto zadanie, i tak dalej, dopóki nie natrafi na program interpretujący najwyższego poziomu, gdzie są przekazywane użytkownikowi wraz z wypisem kolejnych wywołań odłożonych na stercie.</p>
 <p id="index-11">For C programmers, however, error checking always has to be explicit.  All
 functions in the Python/C API can raise exceptions, unless an explicit claim is
 made otherwise in a function’s documentation.  In general, when a function
@@ -764,22 +722,8 @@ the last exception being handled by a Python  <a class="reference internal" href
 an exception is being passed on between C functions until it reaches the Python
 bytecode interpreter’s  main loop, which takes care of transferring it to
 <code class="docutils literal notranslate"><span class="pre">sys.exc_info()</span></code> and friends.</p>
-<p id="index-13">Note that starting with Python 1.5, the preferred, thread-safe way to access the
-exception state from Python code is to call the function <a class="reference internal" href="../library/sys.html#sys.exc_info" title="sys.exc_info"><code class="xref py py-func docutils literal notranslate"><span class="pre">sys.exc_info()</span></code></a>,
-which returns the per-thread exception state for Python code.  Also, the
-semantics of both ways to access the exception state have changed so that a
-function which catches an exception will save and restore its thread’s exception
-state so as to preserve the exception state of its caller.  This prevents common
-bugs in exception handling code caused by an innocent-looking function
-overwriting the exception being handled; it also reduces the often unwanted
-lifetime extension for objects that are referenced by the stack frames in the
-traceback.</p>
-<p>As a general principle, a function that calls another function to  perform some
-task should check whether the called function raised an  exception, and if so,
-pass the exception state on to its caller.  It  should discard any object
-references that it owns, and return an  error indicator, but it should <em>not</em> set
-another exception — that would overwrite the exception that was just raised,
-and lose important information about the exact cause of the error.</p>
+<p id="index-13">Zauważ że poczynając od języka pytonowskiego w wersji 1.5 preferowaną, bezpiecznym dla wątków sposobem na dostęp do stanu wyjątku z poziomu kodu napisanego w języku pytonowskim jest wezwanie zadania <a class="reference internal" href="../library/sys.html#sys.exc_info" title="sys.exc_info"><code class="xref py py-func docutils literal notranslate"><span class="pre">sys.exc_info()</span></code></a>, które zwraca określony-dla-wątku stan wyjątku dla kodu napisanego w języku pytonowskim. Poza tym składnia obu sposobów na dostęp do stanu sytuacji wyjątkowej zmieniła się tak, że zadanie które złapie wyjątek zachowa i przywróci swój stan wyjątku tak, aby zachować stan wyjątku wywołujacego zadanie. To działanie zapobiega typowym błędom w obsłudze sytuacji wyjątkowych powodowanych przez niewinnie-wyglądające zadania nadpisujące sytuacje wyjątkowe które aktualnie są obsługiwane; to także redukuje często niechciane wydłużanie czasu życia przedmiotów do których odnosi się ramka stosu w wypisie śladu wywołań.</p>
+<p>Jako nadrzędną zasadę, przyjmuje się że zadanie które wywołuje inne zadanie do wykonania pewnych operacji powinno sprawdzić czy wywołane zadanie zgłosiło wyjątek, a jeśli tak, to przekazać stan wyjątku do wywołującego. Powinno też odrzucić jakiekolwiek odniesienia do przedmiotów, które posiada, i zwrócić sygnalizator błędu, ale nie powinno ustawiać innego wyjątku — który nadpisywałby wyjątek, który właśnie został zgłoszony i tracić istotne informacje o dokładnym powodzie błędu.</p>
 <p id="index-14">A simple example of detecting exceptions and passing them on is shown in the
 <code class="xref c c-func docutils literal notranslate"><span class="pre">sum_sequence()</span></code> example above.  It so happens that this example doesn’t
 need to clean up any owned references when it detects an error.  The following
@@ -793,7 +737,7 @@ Python, we show the equivalent Python code:</p>
 <span class="w">    </span><span class="n">dict</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">item</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span>
 </pre></div>
 </div>
-<p id="index-15">Here is the corresponding C code, in all its glory:</p>
+<p id="index-15">Tu następuje odpowiadający kod w języku C, w całej pełni okazałości:</p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span>
 <span class="nf">incr_item</span><span class="p">(</span><span class="n">PyObject</span><span class="w"> </span><span class="o">*</span><span class="n">dict</span><span class="p">,</span><span class="w"> </span><span class="n">PyObject</span><span class="w"> </span><span class="o">*</span><span class="n">key</span><span class="p">)</span>
 <span class="p">{</span>
@@ -849,11 +793,8 @@ return value is initialized to <code class="docutils literal notranslate"><span 
 the final call made is successful.</p>
 </section>
 <section id="embedding-python">
-<span id="api-embedding"></span><h2>Embedding Python<a class="headerlink" href="#embedding-python" title="Link to this heading">¶</a></h2>
-<p>The one important task that only embedders (as opposed to extension writers) of
-the Python interpreter have to worry about is the initialization, and possibly
-the finalization, of the Python interpreter.  Most functionality of the
-interpreter can only be used after the interpreter has been initialized.</p>
+<span id="api-embedding"></span><h2>Załączanie programu interpretującego język pytonowski<a class="headerlink" href="#embedding-python" title="Link to this heading">¶</a></h2>
+<p>Jedno istotne zadanie, o które załączający (w przeciwieństwie do piszących rozszerzenia) program interpretujący język pytonowski muszą się martwić jest zainicjowanie i prawdopodobne zakończenie programu interpretującego polecenia języka pytonowskiego. Większość użyteczności programu interpretującego polecenia języka pytonowskiego może tylko być użyta po jego zainicjowaniu.</p>
 <p id="index-18">The basic initialization function is <a class="reference internal" href="init.html#c.Py_Initialize" title="Py_Initialize"><code class="xref c c-func docutils literal notranslate"><span class="pre">Py_Initialize()</span></code></a>. This initializes
 the table of loaded modules, and creates the fundamental modules
 <a class="reference internal" href="../library/builtins.html#module-builtins" title="builtins: The module that provides the built-in namespace."><code class="xref py py-mod docutils literal notranslate"><span class="pre">builtins</span></code></a>, <a class="reference internal" href="../library/__main__.html#module-__main__" title="__main__: The environment where top-level code is run. Covers command-line interfaces, import-time behavior, and ``__name__ == '__main__'``."><code class="xref py py-mod docutils literal notranslate"><span class="pre">__main__</span></code></a>, and <a class="reference internal" href="../library/sys.html#module-sys" title="sys: Access system-specific parameters and functions."><code class="xref py py-mod docutils literal notranslate"><span class="pre">sys</span></code></a>.  It also
@@ -870,13 +811,7 @@ relative to the Python interpreter executable.  In particular, it looks for a
 directory named <code class="file docutils literal notranslate"><span class="pre">lib/python</span><em><span class="pre">X.Y</span></em></code> relative to the parent directory
 where the executable named <code class="file docutils literal notranslate"><span class="pre">python</span></code> is found on the shell command search
 path (the environment variable <span class="target" id="index-19"></span><code class="xref std std-envvar docutils literal notranslate"><span class="pre">PATH</span></code>).</p>
-<p>For instance, if the Python executable is found in
-<code class="file docutils literal notranslate"><span class="pre">/usr/local/bin/python</span></code>, it will assume that the libraries are in
-<code class="file docutils literal notranslate"><span class="pre">/usr/local/lib/python</span><em><span class="pre">X.Y</span></em></code>.  (In fact, this particular path is also
-the „fallback” location, used when no executable file named <code class="file docutils literal notranslate"><span class="pre">python</span></code> is
-found along <span class="target" id="index-20"></span><code class="xref std std-envvar docutils literal notranslate"><span class="pre">PATH</span></code>.)  The user can override this behavior by setting the
-environment variable <span class="target" id="index-21"></span><a class="reference internal" href="../using/cmdline.html#envvar-PYTHONHOME"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">PYTHONHOME</span></code></a>, or insert additional directories in
-front of the standard path by setting <span class="target" id="index-22"></span><a class="reference internal" href="../using/cmdline.html#envvar-PYTHONPATH"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">PYTHONPATH</span></code></a>.</p>
+<p>Na przykład, jeśli plik wykonywalny programu interpretującego polecenia języka pytonowskiego znajduje się w katalogu <code class="file docutils literal notranslate"><span class="pre">/usr/local/bin/python</span></code>, będzie zakładał, że biblioteki są w katalogu <code class="file docutils literal notranslate"><span class="pre">/usr/local/lib/python</span><em><span class="pre">X.Y</span></em></code> (Faktycznie, ta szczególna ścieżka jest także „ratunkowym” położeniem, używanym gdy żaden plik wykonywalny nazwany <code class="file docutils literal notranslate"><span class="pre">python</span></code> nie znajdzie się w katalogach znajdujących się w zmiennej środowiskowej <span class="target" id="index-31"></span><code class="xref std std-envvar docutils literal notranslate"><span class="pre">PATH</span></code>.) Użytkownik może podmienić to zachowanie przez ustawienie zmiennej środowiskowej <span class="target" id="index-32"></span><a class="reference internal" href="../using/cmdline.html#envvar-PYTHONHOME"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">PYTHONHOME</span></code></a>, lub wstawić dodatkowe katalogi przed sztandarową ścieżką przez ustawienie zmiennej środowiskowej <span class="target" id="index-33"></span><a class="reference internal" href="../using/cmdline.html#envvar-PYTHONPATH"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">PYTHONPATH</span></code></a>.</p>
 <p>The embedding application can steer the search by setting
 <a class="reference internal" href="init_config.html#c.PyConfig.program_name" title="PyConfig.program_name"><code class="xref c c-member docutils literal notranslate"><span class="pre">PyConfig.program_name</span></code></a> <em>before</em> calling
 <a class="reference internal" href="init.html#c.Py_InitializeFromConfig" title="Py_InitializeFromConfig"><code class="xref c c-func docutils literal notranslate"><span class="pre">Py_InitializeFromConfig()</span></code></a>. Note that
@@ -893,10 +828,8 @@ does <em>not</em> free all memory allocated by the Python interpreter, e.g. memo
 allocated by extension modules currently cannot be released.</p>
 </section>
 <section id="debugging-builds">
-<span id="api-debugging"></span><h2>Debugging Builds<a class="headerlink" href="#debugging-builds" title="Link to this heading">¶</a></h2>
-<p>Python can be built with several macros to enable extra checks of the
-interpreter and extension modules.  These checks tend to add a large amount of
-overhead to the runtime so they are not enabled by default.</p>
+<span id="api-debugging"></span><h2>Odpluskwiające Budowy<a class="headerlink" href="#debugging-builds" title="Link to this heading">¶</a></h2>
+<p>Program interpretujący język pytonowski może być zbudowany z kilkoma makropoleceniami do załączenia dodatkowych sprawdzeń programu interpretującego polecenia języka pytonowskiego i modułów rozszerzających. Te sprawdzenia mają zwyczaj dodawać duży narzut czasu wykonania poleceń programu więc nie są załączane domyślnie.</p>
 <p>A full list of the various types of debugging builds is in the file
 <code class="file docutils literal notranslate"><span class="pre">Misc/SpecialBuilds.txt</span></code> in the Python source distribution. Builds are
 available that support tracing of reference counts, debugging the memory
@@ -923,11 +856,10 @@ When defined, a circular doubly linked list of active objects is maintained by a
 fields to every <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><code class="xref c c-type docutils literal notranslate"><span class="pre">PyObject</span></code></a>.  Total allocations are tracked as well.  Upon
 exit, all existing references are printed.  (In interactive mode this happens
 after every statement run by the interpreter.)</p>
-<p>Please refer to <code class="file docutils literal notranslate"><span class="pre">Misc/SpecialBuilds.txt</span></code> in the Python source distribution
-for more detailed information.</p>
+<p>Odwołaj się do <code class="file docutils literal notranslate"><span class="pre">Misc/SpecialBuilds.txt</span></code> w źródłowym pakiecie języka pytonowskiego po więcej szczegółów.</p>
 </section>
 <section id="recommended-third-party-tools">
-<span id="c-api-tools"></span><h2>Recommended third party tools<a class="headerlink" href="#recommended-third-party-tools" title="Link to this heading">¶</a></h2>
+<span id="c-api-tools"></span><h2>Rekomendowane zewnętrzne narzędzia.<a class="headerlink" href="#recommended-third-party-tools" title="Link to this heading">¶</a></h2>
 <p>The following third party tools offer both simpler and more sophisticated
 approaches to creating C, C++ and Rust extensions for Python:</p>
 <ul class="simple">
@@ -953,10 +885,8 @@ outdated.</p>
 <div class="admonition seealso">
 <p class="admonition-title">Zobacz także</p>
 <dl class="simple">
-<dt><a class="reference external" href="https://packaging.python.org/guides/packaging-binary-extensions/">Python Packaging User Guide: Binary Extensions</a></dt><dd><p>The Python Packaging User Guide not only covers several available
-tools that simplify the creation of binary extensions, but also
-discusses the various reasons why creating an extension module may be
-desirable in the first place.</p>
+<dt>Pakiety Pythona Podręcznik Użytkownika: Rozszerzenia Binarne
+&lt;<a class="reference external" href="https://packaging.python.org/guides/packaging-binary-extensions/">https://packaging.python.org/guides/packaging-binary-extensions/</a></dt><dd><p>Przewodnik Użytkownika Python Packaging nie tylko obejmuje kilka dostępnych narzędzi, które upraszczają tworzenie rozszerzeń binarnych, ale także omawia różne powody, dla których tworzenie modułu rozszerzeń może być pożądane w pierwszej kolejności.</p>
 </dd>
 </dl>
 </div>
@@ -971,39 +901,39 @@ desirable in the first place.</p>
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
-<li><a class="reference internal" href="#">Introduction</a><ul>
+<li><a class="reference internal" href="#">Wprowadzenie</a><ul>
 <li><a class="reference internal" href="#language-version-compatibility">Language version compatibility</a></li>
-<li><a class="reference internal" href="#coding-standards">Coding standards</a></li>
-<li><a class="reference internal" href="#include-files">Include Files</a></li>
+<li><a class="reference internal" href="#coding-standards">Standardy kodowania</a></li>
+<li><a class="reference internal" href="#include-files">Pliki Włączania - z ang. Include</a></li>
 <li><a class="reference internal" href="#useful-macros">Useful macros</a></li>
-<li><a class="reference internal" href="#objects-types-and-reference-counts">Objects, Types and Reference Counts</a><ul>
-<li><a class="reference internal" href="#reference-counts">Reference Counts</a><ul>
-<li><a class="reference internal" href="#reference-count-details">Reference Count Details</a></li>
+<li><a class="reference internal" href="#objects-types-and-reference-counts">Przedmioty, ich Rodzaje i Liczby Odwołań</a><ul>
+<li><a class="reference internal" href="#reference-counts">Liczby odniesień</a><ul>
+<li><a class="reference internal" href="#reference-count-details">Szczegóły Liczby Odniesień</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#types">Types</a></li>
+<li><a class="reference internal" href="#types">Typy</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#exceptions">Exceptions</a></li>
-<li><a class="reference internal" href="#embedding-python">Embedding Python</a></li>
-<li><a class="reference internal" href="#debugging-builds">Debugging Builds</a></li>
-<li><a class="reference internal" href="#recommended-third-party-tools">Recommended third party tools</a></li>
+<li><a class="reference internal" href="#exceptions">Wyjątki</a></li>
+<li><a class="reference internal" href="#embedding-python">Załączanie programu interpretującego język pytonowski</a></li>
+<li><a class="reference internal" href="#debugging-builds">Odpluskwiające Budowy</a></li>
+<li><a class="reference internal" href="#recommended-third-party-tools">Rekomendowane zewnętrzne narzędzia.</a></li>
 </ul>
 </li>
 </ul>
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="index.html"
-                          title="previous chapter">Python/C API Reference Manual</a></p>
+                          title="poprzedni rozdział">Python/C API Podręcznik</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="stable.html"
-                          title="next chapter">C API Stability</a></p>
+                          title="następny rozdział">C API and ABI Stability</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -1017,7 +947,7 @@ desirable in the first place.</p>
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -1034,10 +964,10 @@ desirable in the first place.</p>
           <a href="../py-modindex.html" title="Indeks modułów Pythona"
              >moduły</a> |</li>
         <li class="right" >
-          <a href="stable.html" title="C API Stability"
+          <a href="stable.html" title="C API and ABI Stability"
              >dalej</a> |</li>
         <li class="right" >
-          <a href="index.html" title="Python/C API Reference Manual"
+          <a href="index.html" title="Python/C API Podręcznik"
              >wstecz</a> |</li>
 
           <li><img src="../_static/py.svg" alt="Python logo" style="vertical-align: middle; margin-top: -1px"></li>
@@ -1053,8 +983,8 @@ desirable in the first place.</p>
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Reference Manual</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">Introduction</a></li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Podręcznik</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Wprowadzenie</a></li>
                 <li class="right">
                     
 
@@ -1101,7 +1031,7 @@ desirable in the first place.</p>
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

@@ -4,19 +4,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="Data Types" />
+<meta property="og:title" content="Typy danych" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://docs.python.org/3/library/datatypes.html" />
 <meta property="og:site_name" content="Python documentation" />
-<meta property="og:description" content="The modules described in this chapter provide a variety of specialized data types such as dates and times, fixed-type arrays, heap queues, double-ended queues, and enumerations. Python also provide..." />
+<meta property="og:description" content="Moduły opisane w tym rozdziale zapewniają różny typy danych takie jak: daty i czas, macierze o stałym rozmiarze, kopce, listy dwukierunkowe i enumeratory. Python posiada również wbudowane typy dany..." />
 <meta property="og:image" content="_static/og-image.png" />
 <meta property="og:image:alt" content="Python documentation" />
-<meta name="description" content="The modules described in this chapter provide a variety of specialized data types such as dates and times, fixed-type arrays, heap queues, double-ended queues, and enumerations. Python also provide..." />
+<meta name="description" content="Moduły opisane w tym rozdziale zapewniają różny typy danych takie jak: daty i czas, macierze o stałym rozmiarze, kopce, listy dwukierunkowe i enumeratory. Python posiada również wbudowane typy dany..." />
 <meta name="theme-color" content="#3776ab">
 <meta property="og:image:width" content="200">
 <meta property="og:image:height" content="200">
 
-    <title>Data Types &#8212; Python 3.15.0a0 - dokumentacja</title><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typy danych &#8212; Python 3.15.0a0 - dokumentacja</title><meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=234b1a7c" />
@@ -31,11 +31,11 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="datetime — Basic date and time types" href="datetime.html" />
     <link rel="prev" title="codecs — Codec registry and base classes" href="codecs.html" />
@@ -98,14 +98,14 @@
     </select>
 </label>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="codecs.html"
-                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">codecs</span></code> — Codec registry and base classes</a></p>
+                          title="poprzedni rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">codecs</span></code> — Codec registry and base classes</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="datetime.html"
-                          title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">datetime</span></code> — Basic date and time types</a></p>
+                          title="następny rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">datetime</span></code> — Basic date and time types</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -152,8 +152,8 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">The Python Standard Library</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">Data Types</a></li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Biblioteka standardowa Pythona</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Typy danych</a></li>
                 <li class="right">
                     
 
@@ -184,21 +184,15 @@
           <div class="body" role="main">
             
   <section id="data-types">
-<span id="datatypes"></span><h1>Data Types<a class="headerlink" href="#data-types" title="Link to this heading">¶</a></h1>
-<p>The modules described in this chapter provide a variety of specialized data
-types such as dates and times, fixed-type arrays, heap queues, double-ended
-queues, and enumerations.</p>
-<p>Python also provides some built-in data types, in particular,
-<a class="reference internal" href="stdtypes.html#dict" title="dict"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a>, <a class="reference internal" href="stdtypes.html#list" title="list"><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></a>, <a class="reference internal" href="stdtypes.html#set" title="set"><code class="xref py py-class docutils literal notranslate"><span class="pre">set</span></code></a> and <a class="reference internal" href="stdtypes.html#frozenset" title="frozenset"><code class="xref py py-class docutils literal notranslate"><span class="pre">frozenset</span></code></a>, and
-<a class="reference internal" href="stdtypes.html#tuple" title="tuple"><code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></a>.  The <a class="reference internal" href="stdtypes.html#str" title="str"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a> class is used to hold
-Unicode strings, and the <a class="reference internal" href="stdtypes.html#bytes" title="bytes"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a> and <a class="reference internal" href="stdtypes.html#bytearray" title="bytearray"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytearray</span></code></a> classes are used
-to hold binary data.</p>
-<p>The following modules are documented in this chapter:</p>
+<span id="datatypes"></span><h1>Typy danych<a class="headerlink" href="#data-types" title="Link to this heading">¶</a></h1>
+<p>Moduły opisane w tym rozdziale zapewniają różny typy danych takie jak: daty i czas, macierze o stałym rozmiarze, kopce, listy dwukierunkowe i enumeratory.</p>
+<p>Python posiada również wbudowane typy danych,  w szczególności <a class="reference internal" href="stdtypes.html#dict" title="dict"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a>, <a class="reference internal" href="stdtypes.html#list" title="list"><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></a>, <a class="reference internal" href="stdtypes.html#set" title="set"><code class="xref py py-class docutils literal notranslate"><span class="pre">set</span></code></a> i <a class="reference internal" href="stdtypes.html#frozenset" title="frozenset"><code class="xref py py-class docutils literal notranslate"><span class="pre">frozenset</span></code></a>, i <a class="reference internal" href="stdtypes.html#tuple" title="tuple"><code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></a>. Klasa <a class="reference internal" href="stdtypes.html#str" title="str"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a> jest używana do trzymania ciągu znaków unicode, zaś klasy <a class="reference internal" href="stdtypes.html#bytes" title="bytes"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a> i <a class="reference internal" href="stdtypes.html#bytearray" title="bytearray"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytearray</span></code></a> są używane do trzymania danych w formacie binarnym.</p>
+<p>Poszczególne moduły są opisane w rodziale:</p>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="datetime.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">datetime</span></code> — Basic date and time types</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="datetime.html#aware-and-naive-objects">Aware and Naive Objects</a></li>
-<li class="toctree-l2"><a class="reference internal" href="datetime.html#constants">Constants</a></li>
+<li class="toctree-l2"><a class="reference internal" href="datetime.html#constants">Stały</a></li>
 <li class="toctree-l2"><a class="reference internal" href="datetime.html#available-types">Available Types</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="datetime.html#common-properties">Common Properties</a></li>
 <li class="toctree-l3"><a class="reference internal" href="datetime.html#determining-if-an-object-is-aware-or-naive">Determining if an Object is Aware or Naive</a></li>
@@ -245,7 +239,7 @@ to hold binary data.</p>
 <li class="toctree-l3"><a class="reference internal" href="zoneinfo.html#pickle-serialization">Pickle serialization</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="zoneinfo.html#functions">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="zoneinfo.html#functions">Zadania</a></li>
 <li class="toctree-l2"><a class="reference internal" href="zoneinfo.html#globals">Globals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="zoneinfo.html#exceptions-and-warnings">Exceptions and warnings</a></li>
 </ul>
@@ -255,27 +249,27 @@ to hold binary data.</p>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="collections.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">collections</span></code> — Container datatypes</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="collections.html#chainmap-objects"><code class="xref py py-class docutils literal notranslate"><span class="pre">ChainMap</span></code> objects</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="collections.html#chainmap-objects"><code class="xref py py-class docutils literal notranslate"><span class="pre">ChainMap</span></code> przedmioty</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="collections.html#chainmap-examples-and-recipes"><code class="xref py py-class docutils literal notranslate"><span class="pre">ChainMap</span></code> Examples and Recipes</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="collections.html#counter-objects"><code class="xref py py-class docutils literal notranslate"><span class="pre">Counter</span></code> objects</a></li>
-<li class="toctree-l2"><a class="reference internal" href="collections.html#deque-objects"><code class="xref py py-class docutils literal notranslate"><span class="pre">deque</span></code> objects</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="collections.html#deque-recipes"><code class="xref py py-class docutils literal notranslate"><span class="pre">deque</span></code> Recipes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collections.html#counter-objects"><code class="xref py py-class docutils literal notranslate"><span class="pre">Counter</span></code> przedmioty</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collections.html#deque-objects"><code class="xref py py-class docutils literal notranslate"><span class="pre">deque</span></code> przedmioty</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="collections.html#deque-recipes"><code class="xref py py-class docutils literal notranslate"><span class="pre">deque</span></code> Przepisy</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="collections.html#defaultdict-objects"><code class="xref py py-class docutils literal notranslate"><span class="pre">defaultdict</span></code> objects</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="collections.html#defaultdict-examples"><code class="xref py py-class docutils literal notranslate"><span class="pre">defaultdict</span></code> Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collections.html#defaultdict-objects"><code class="xref py py-class docutils literal notranslate"><span class="pre">defaultdict</span></code> przedmioty</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="collections.html#defaultdict-examples"><code class="xref py py-class docutils literal notranslate"><span class="pre">defaultdict</span></code> Przykłady</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="collections.html#namedtuple-factory-function-for-tuples-with-named-fields"><code class="xref py py-func docutils literal notranslate"><span class="pre">namedtuple()</span></code> Factory Function for Tuples with Named Fields</a></li>
-<li class="toctree-l2"><a class="reference internal" href="collections.html#ordereddict-objects"><code class="xref py py-class docutils literal notranslate"><span class="pre">OrderedDict</span></code> objects</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="collections.html#ordereddict-objects"><code class="xref py py-class docutils literal notranslate"><span class="pre">OrderedDict</span></code> przedmioty</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="collections.html#ordereddict-examples-and-recipes"><code class="xref py py-class docutils literal notranslate"><span class="pre">OrderedDict</span></code> Examples and Recipes</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="collections.html#userdict-objects"><code class="xref py py-class docutils literal notranslate"><span class="pre">UserDict</span></code> objects</a></li>
-<li class="toctree-l2"><a class="reference internal" href="collections.html#userlist-objects"><code class="xref py py-class docutils literal notranslate"><span class="pre">UserList</span></code> objects</a></li>
-<li class="toctree-l2"><a class="reference internal" href="collections.html#userstring-objects"><code class="xref py py-class docutils literal notranslate"><span class="pre">UserString</span></code> objects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collections.html#userdict-objects"><code class="xref py py-class docutils literal notranslate"><span class="pre">UserDict</span></code> przedmioty</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collections.html#userlist-objects"><code class="xref py py-class docutils literal notranslate"><span class="pre">UserList</span></code> przedmioty</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collections.html#userstring-objects"><code class="xref py py-class docutils literal notranslate"><span class="pre">UserString</span></code> przedmioty</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="collections.abc.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">collections.abc</span></code> — Abstract Base Classes for Containers</a><ul>
@@ -284,23 +278,23 @@ to hold binary data.</p>
 <li class="toctree-l2"><a class="reference internal" href="collections.abc.html#examples-and-recipes">Examples and Recipes</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="heapq.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">heapq</span></code> — Heap queue algorithm</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="heapq.html#basic-examples">Basic Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="heapq.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">heapq</span></code> — Algorytm kolejki kopcowej</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="heapq.html#basic-examples">Podstawowe przykłady</a></li>
 <li class="toctree-l2"><a class="reference internal" href="heapq.html#other-applications">Other Applications</a></li>
 <li class="toctree-l2"><a class="reference internal" href="heapq.html#priority-queue-implementation-notes">Priority Queue Implementation Notes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="heapq.html#theory">Theory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heapq.html#theory">Teoria</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="bisect.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">bisect</span></code> — Array bisection algorithm</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="bisect.html#performance-notes">Performance Notes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bisect.html#searching-sorted-lists">Searching Sorted Lists</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bisect.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bisect.html#examples">Przykłady</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="array.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">array</span></code> — Efficient arrays of numeric values</a></li>
 <li class="toctree-l1"><a class="reference internal" href="weakref.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">weakref</span></code> — Weak references</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="weakref.html#weak-reference-objects">Weak Reference Objects</a></li>
-<li class="toctree-l2"><a class="reference internal" href="weakref.html#example">Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="weakref.html#example">Przykład</a></li>
 <li class="toctree-l2"><a class="reference internal" href="weakref.html#finalizer-objects">Finalizer Objects</a></li>
 <li class="toctree-l2"><a class="reference internal" href="weakref.html#comparing-finalizers-with-del-methods">Comparing finalizers with <code class="xref py py-meth docutils literal notranslate"><span class="pre">__del__()</span></code> methods</a></li>
 </ul>
@@ -314,9 +308,9 @@ to hold binary data.</p>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="copy.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">copy</span></code> — Shallow and deep copy operations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pprint.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pprint</span></code> — Data pretty printer</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="pprint.html#functions">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pprint.html#functions">Zadania</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pprint.html#prettyprinter-objects">PrettyPrinter Objects</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pprint.html#example">Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pprint.html#example">Przykład</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="reprlib.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">reprlib</span></code> — Alternate <code class="xref py py-func docutils literal notranslate"><span class="pre">repr()</span></code> implementation</a><ul>
@@ -326,17 +320,17 @@ to hold binary data.</p>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="enum.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">enum</span></code> — Support for enumerations</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="enum.html#module-contents">Module Contents</a></li>
-<li class="toctree-l2"><a class="reference internal" href="enum.html#data-types">Data Types</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="enum.html#data-types">Typy danych</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="enum.html#supported-dunder-names">Supported <code class="docutils literal notranslate"><span class="pre">__dunder__</span></code> names</a></li>
 <li class="toctree-l3"><a class="reference internal" href="enum.html#supported-sunder-names">Supported <code class="docutils literal notranslate"><span class="pre">_sunder_</span></code> names</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="enum.html#utilities-and-decorators">Utilities and Decorators</a></li>
-<li class="toctree-l2"><a class="reference internal" href="enum.html#notes">Notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enum.html#notes">Notatki</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="graphlib.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">graphlib</span></code> — Functionality to operate with graph-like structures</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="graphlib.html#exceptions">Exceptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="graphlib.html#exceptions">Wyjątki</a></li>
 </ul>
 </li>
 </ul>
@@ -351,14 +345,14 @@ to hold binary data.</p>
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="codecs.html"
-                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">codecs</span></code> — Codec registry and base classes</a></p>
+                          title="poprzedni rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">codecs</span></code> — Codec registry and base classes</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="datetime.html"
-                          title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">datetime</span></code> — Basic date and time types</a></p>
+                          title="następny rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">datetime</span></code> — Basic date and time types</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -372,7 +366,7 @@ to hold binary data.</p>
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -408,8 +402,8 @@ to hold binary data.</p>
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">Data Types</a></li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Typy danych</a></li>
                 <li class="right">
                     
 
@@ -456,7 +450,7 @@ to hold binary data.</p>
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

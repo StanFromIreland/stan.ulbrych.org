@@ -8,10 +8,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://docs.python.org/3/library/turtle.html" />
 <meta property="og:site_name" content="Python documentation" />
-<meta property="og:description" content="Source code: Lib/turtle.py Introduction: Turtle graphics is an implementation of the popular geometric drawing tools introduced in Logo, developed by Wally Feurzeig, Seymour Papert and Cynthia Solo..." />
+<meta property="og:description" content="Kod źródłowy: Lib/turtle.py Wprowadzenie: Grafika żółwia jest implementacją popularnych narzędzi do rysowania geometrycznego wprowadzonych w Logo, opracowanych przez Wally’ego Feurzeiga, Seymoura P..." />
 <meta property="og:image" content="_static/og-image.png" />
 <meta property="og:image:alt" content="Python documentation" />
-<meta name="description" content="Source code: Lib/turtle.py Introduction: Turtle graphics is an implementation of the popular geometric drawing tools introduced in Logo, developed by Wally Feurzeig, Seymour Papert and Cynthia Solo..." />
+<meta name="description" content="Kod źródłowy: Lib/turtle.py Wprowadzenie: Grafika żółwia jest implementacją popularnych narzędzi do rysowania geometrycznego wprowadzonych w Logo, opracowanych przez Wally’ego Feurzeiga, Seymoura P..." />
 <meta name="theme-color" content="#3776ab">
 <meta property="og:image:width" content="200">
 <meta property="og:image:height" content="200">
@@ -31,14 +31,14 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="Development Tools" href="development.html" />
-    <link rel="prev" title="IDLE — Python editor and shell" href="idle.html" />
+    <link rel="prev" title="IDLE — Python edytor i powłoka" href="idle.html" />
     
       
       <link rel="canonical" href="https://docs.python.org/3/library/turtle.html">
@@ -98,66 +98,66 @@
     </select>
 </label>
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">turtle</span></code> — Turtle graphics</a><ul>
-<li><a class="reference internal" href="#introduction">Introduction</a></li>
-<li><a class="reference internal" href="#get-started">Get started</a></li>
+<li><a class="reference internal" href="#introduction">Wprowadzenie</a></li>
+<li><a class="reference internal" href="#get-started">Rozpocznij</a></li>
 <li><a class="reference internal" href="#tutorial">Tutorial</a><ul>
-<li><a class="reference internal" href="#starting-a-turtle-environment">Starting a turtle environment</a></li>
-<li><a class="reference internal" href="#basic-drawing">Basic drawing</a><ul>
-<li><a class="reference internal" href="#pen-control">Pen control</a></li>
-<li><a class="reference internal" href="#the-turtle-s-position">The turtle’s position</a></li>
+<li><a class="reference internal" href="#starting-a-turtle-environment">Uruchamianie środowiska żółwia</a></li>
+<li><a class="reference internal" href="#basic-drawing">Podstawowe rysowanie</a><ul>
+<li><a class="reference internal" href="#pen-control">Kontrola pióra</a></li>
+<li><a class="reference internal" href="#the-turtle-s-position">Pozycja żółwia</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#making-algorithmic-patterns">Making algorithmic patterns</a></li>
+<li><a class="reference internal" href="#making-algorithmic-patterns">Tworzenie wzorców algorytmicznych</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#how-to">How to…</a><ul>
-<li><a class="reference internal" href="#get-started-as-quickly-as-possible">Get started as quickly as possible</a></li>
+<li><a class="reference internal" href="#how-to">Jak…</a><ul>
+<li><a class="reference internal" href="#get-started-as-quickly-as-possible">Zacząć najszybciej jak to możliwe</a></li>
 <li><a class="reference internal" href="#automatically-begin-and-end-filling">Automatically begin and end filling</a></li>
-<li><a class="reference internal" href="#use-the-turtle-module-namespace">Use the <code class="docutils literal notranslate"><span class="pre">turtle</span></code> module namespace</a></li>
-<li><a class="reference internal" href="#use-turtle-graphics-in-a-script">Use turtle graphics in a script</a></li>
-<li><a class="reference internal" href="#use-object-oriented-turtle-graphics">Use object-oriented turtle graphics</a></li>
+<li><a class="reference internal" href="#use-the-turtle-module-namespace">Użyć przestrzeni nazw modułu <code class="docutils literal notranslate"><span class="pre">turtle</span></code></a></li>
+<li><a class="reference internal" href="#use-turtle-graphics-in-a-script">Użyć grafiki żółwia w skrypcie</a></li>
+<li><a class="reference internal" href="#use-object-oriented-turtle-graphics">Użyć obiektowej grafiki żółwia</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#turtle-graphics-reference">Turtle graphics reference</a><ul>
-<li><a class="reference internal" href="#turtle-methods">Turtle methods</a></li>
-<li><a class="reference internal" href="#methods-of-turtlescreen-screen">Methods of TurtleScreen/Screen</a></li>
+<li><a class="reference internal" href="#turtle-graphics-reference">Dokumentacja grafiki żółwia</a><ul>
+<li><a class="reference internal" href="#turtle-methods">Metody żółwia</a></li>
+<li><a class="reference internal" href="#methods-of-turtlescreen-screen">Metody TurtleScreen/Screen</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#methods-of-rawturtle-turtle-and-corresponding-functions">Methods of RawTurtle/Turtle and corresponding functions</a><ul>
-<li><a class="reference internal" href="#turtle-motion">Turtle motion</a></li>
-<li><a class="reference internal" href="#tell-turtle-s-state">Tell Turtle’s state</a></li>
-<li><a class="reference internal" href="#settings-for-measurement">Settings for measurement</a></li>
-<li><a class="reference internal" href="#id1">Pen control</a><ul>
-<li><a class="reference internal" href="#drawing-state">Drawing state</a></li>
-<li><a class="reference internal" href="#color-control">Color control</a></li>
-<li><a class="reference internal" href="#filling">Filling</a></li>
-<li><a class="reference internal" href="#more-drawing-control">More drawing control</a></li>
+<li><a class="reference internal" href="#methods-of-rawturtle-turtle-and-corresponding-functions">Metody RawTurtle/Turtle i odpowiadające im funkcje</a><ul>
+<li><a class="reference internal" href="#turtle-motion">Ruch żółwia</a></li>
+<li><a class="reference internal" href="#tell-turtle-s-state">Pobieranie stanu żółwia</a></li>
+<li><a class="reference internal" href="#settings-for-measurement">Ustawienia pomiarowe</a></li>
+<li><a class="reference internal" href="#id1">Kontrola pióra</a><ul>
+<li><a class="reference internal" href="#drawing-state">Stan rysowania</a></li>
+<li><a class="reference internal" href="#color-control">Kontrola koloru</a></li>
+<li><a class="reference internal" href="#filling">Wypełnienie</a></li>
+<li><a class="reference internal" href="#more-drawing-control">Więcej kontroli rysowania</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#turtle-state">Turtle state</a><ul>
-<li><a class="reference internal" href="#visibility">Visibility</a></li>
-<li><a class="reference internal" href="#appearance">Appearance</a></li>
+<li><a class="reference internal" href="#turtle-state">Stan żółwia</a><ul>
+<li><a class="reference internal" href="#visibility">Widoczność</a></li>
+<li><a class="reference internal" href="#appearance">Wygląd</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#using-events">Using events</a></li>
-<li><a class="reference internal" href="#special-turtle-methods">Special Turtle methods</a></li>
+<li><a class="reference internal" href="#using-events">Korzystanie ze zdarzeń</a></li>
+<li><a class="reference internal" href="#special-turtle-methods">Specjalne metody żółwi</a></li>
 <li><a class="reference internal" href="#compound-shapes">Compound shapes</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#methods-of-turtlescreen-screen-and-corresponding-functions">Methods of TurtleScreen/Screen and corresponding functions</a><ul>
-<li><a class="reference internal" href="#window-control">Window control</a></li>
-<li><a class="reference internal" href="#animation-control">Animation control</a></li>
-<li><a class="reference internal" href="#using-screen-events">Using screen events</a></li>
-<li><a class="reference internal" href="#input-methods">Input methods</a></li>
-<li><a class="reference internal" href="#settings-and-special-methods">Settings and special methods</a></li>
+<li><a class="reference internal" href="#window-control">Kontrola okna</a></li>
+<li><a class="reference internal" href="#animation-control">Kontrola animacji</a></li>
+<li><a class="reference internal" href="#using-screen-events">Korzystanie ze zdarzeń ekranowych</a></li>
+<li><a class="reference internal" href="#input-methods">Metody wprowadzania danych</a></li>
+<li><a class="reference internal" href="#settings-and-special-methods">Ustawienia i metody specjalne</a></li>
 <li><a class="reference internal" href="#methods-specific-to-screen-not-inherited-from-turtlescreen">Methods specific to Screen, not inherited from TurtleScreen</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#public-classes">Public classes</a></li>
-<li><a class="reference internal" href="#explanation">Explanation</a></li>
+<li><a class="reference internal" href="#explanation">Wytłumaczenie</a></li>
 <li><a class="reference internal" href="#help-and-configuration">Help and configuration</a><ul>
 <li><a class="reference internal" href="#how-to-use-help">How to use help</a></li>
 <li><a class="reference internal" href="#translation-of-docstrings-into-different-languages">Translation of docstrings into different languages</a></li>
@@ -173,14 +173,14 @@
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="idle.html"
-                          title="previous chapter">IDLE — Python editor and shell</a></p>
+                          title="poprzedni rozdział">IDLE — Python edytor i powłoka</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="development.html"
-                          title="next chapter">Development Tools</a></p>
+                          title="następny rozdział">Development Tools</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -211,7 +211,7 @@
           <a href="development.html" title="Development Tools"
              accesskey="N">dalej</a> |</li>
         <li class="right" >
-          <a href="idle.html" title="IDLE — Python editor and shell"
+          <a href="idle.html" title="IDLE — Python edytor i powłoka"
              accesskey="P">wstecz</a> |</li>
 
           <li><img src="../_static/py.svg" alt="Python logo" style="vertical-align: middle; margin-top: -1px"></li>
@@ -227,7 +227,7 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="tk.html" accesskey="U">Graphical user interfaces with Tk</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">turtle</span></code> — Turtle graphics</a></li>
                 <li class="right">
@@ -261,102 +261,78 @@
             
   <section id="module-turtle">
 <span id="turtle-turtle-graphics"></span><h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">turtle</span></code> — Turtle graphics<a class="headerlink" href="#module-turtle" title="Link to this heading">¶</a></h1>
-<p><strong>Source code:</strong> <a class="extlink-source reference external" href="https://github.com/python/cpython/tree/main/Lib/turtle.py">Lib/turtle.py</a></p>
+<p><strong>Kod źródłowy:</strong> <a class="extlink-source reference external" href="https://github.com/python/cpython/tree/main/Lib/turtle.py">Lib/turtle.py</a></p>
 <hr class="docutils" />
 <section id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">¶</a></h2>
-<p>Turtle graphics is an implementation of <a class="reference external" href="https://en.wikipedia.org/wiki/Turtle_(robot)">the popular geometric drawing tools
-introduced in Logo</a>, developed by Wally Feurzeig, Seymour Papert and Cynthia Solomon
-in 1967.</p>
+<h2>Wprowadzenie<a class="headerlink" href="#introduction" title="Link to this heading">¶</a></h2>
+<p>Grafika żółwia jest implementacją <a class="reference external" href="https://pl.wikipedia.org/wiki/Logo_(j%C4%99zyk_programowania)">popularnych narzędzi do rysowania geometrycznego wprowadzonych w Logo</a>, opracowanych przez Wally’ego Feurzeiga, Seymoura Paperta i Cynthię Solomon w 1967 roku.</p>
 </section>
 <section id="get-started">
-<h2>Get started<a class="headerlink" href="#get-started" title="Link to this heading">¶</a></h2>
-<p>Imagine a robotic turtle starting at (0, 0) in the x-y plane.  After an <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">turtle</span></code>, give it the
-command <code class="docutils literal notranslate"><span class="pre">turtle.forward(15)</span></code>, and it moves (on-screen!) 15 pixels in the
-direction it is facing, drawing a line as it moves.  Give it the command
-<code class="docutils literal notranslate"><span class="pre">turtle.right(25)</span></code>, and it rotates in-place 25 degrees clockwise.</p>
+<h2>Rozpocznij<a class="headerlink" href="#get-started" title="Link to this heading">¶</a></h2>
+<p>Wyobraźmy sobie żółwia-robota rozpoczynającego ruch w punkcie (0, 0) na płaszczyźnie x-y. Po <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">turtle</span></code>, wydaj polecenie <code class="docutils literal notranslate"><span class="pre">turtle.forward(15)</span></code>, a przesunie się (na ekranie!) o 15 pikseli w kierunku, w którym jest zwrócony, rysując linię podczas ruchu. Wydaj polecenie <code class="docutils literal notranslate"><span class="pre">turtle.right(25)</span></code>, a obróci się w miejscu o 25 stopni zgodnie z ruchem wskazówek zegara.</p>
 <aside class="sidebar">
 <p class="sidebar-title">Turtle star</p>
-<p>Turtle can draw intricate shapes using programs that repeat simple
-moves.</p>
+<p>Żółw może rysować skomplikowane kształty za pomocą programów, które powtarzają proste ruchy.</p>
 <img alt="../_images/turtle-star.png" class="align-center" src="../_images/turtle-star.png" />
 </aside>
-<p>In Python, turtle graphics provides a representation of a physical „turtle”
-(a little robot with a pen) that draws on a sheet of paper on the floor.</p>
-<p>It’s an effective and well-proven way for learners to encounter
-programming concepts and interaction with software, as it provides instant,
-visible feedback. It also provides convenient access to graphical output
-in general.</p>
-<p>Turtle drawing was originally created as an educational tool, to be used by
-teachers in the classroom. For the programmer who needs to produce some
-graphical output it can be a way to do that without the overhead of
-introducing more complex or external libraries into their work.</p>
+<p>W Pythonie grafika żółwia zawiera reprezentację fizycznego „żółwia” (małego robota z piórem), który rysuje na kartce papieru na podłodze.</p>
+<p>Jest to skuteczny i sprawdzony sposób na poznanie koncepcji programowania i interakcji z oprogramowaniem, ponieważ zapewnia natychmiastową, widoczną informację zwrotną. Zapewnia również wygodny dostęp do graficznych danych wyjściowych.</p>
+<p>Grafika żółwia została pierwotnie stworzona jako narzędzie edukacyjne, do wykorzystania przez nauczycieli w klasach. Dla programistów, którzy muszą tworzyć pewne graficzne dane wyjściowe, może to być sposób na zrobienie ich bez konieczności wprowadzania bardziej złożonych lub zewnętrznych bibliotek do ich pracy.</p>
 </section>
 <section id="tutorial">
 <span id="turtle-tutorial"></span><h2>Tutorial<a class="headerlink" href="#tutorial" title="Link to this heading">¶</a></h2>
-<p>New users should start here. In this tutorial we’ll explore some of the
-basics of turtle drawing.</p>
+<p>Nowi użytkownicy powinni zacząć tutaj. W tym tutorialu poznamy niektóre z podstaw rysowania żółwi.</p>
 <section id="starting-a-turtle-environment">
-<h3>Starting a turtle environment<a class="headerlink" href="#starting-a-turtle-environment" title="Link to this heading">¶</a></h3>
-<p>In a Python shell, import all the objects of the <code class="docutils literal notranslate"><span class="pre">turtle</span></code> module:</p>
+<h3>Uruchamianie środowiska żółwia<a class="headerlink" href="#starting-a-turtle-environment" title="Link to this heading">¶</a></h3>
+<p>W powłoce Pythona zaimportuj wszystkie obiekty z modułu <code class="docutils literal notranslate"><span class="pre">turtle</span></code>:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">turtle</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 </pre></div>
 </div>
-<p>If you run into a <code class="docutils literal notranslate"><span class="pre">No</span> <span class="pre">module</span> <span class="pre">named</span> <span class="pre">'_tkinter'</span></code> error, you’ll have to
-install the <a class="reference internal" href="tkinter.html#module-tkinter" title="tkinter: Interface to Tcl/Tk for graphical user interfaces"><code class="xref py py-mod docutils literal notranslate"><span class="pre">Tk</span> <span class="pre">interface</span> <span class="pre">package</span></code></a> on your system.</p>
+<p>Jeśli napotkasz błąd <code class="docutils literal notranslate"><span class="pre">No</span> <span class="pre">module</span> <span class="pre">named</span> <span class="pre">'_tkinter'</span></code>, będziesz musiał zainstalować <a class="reference internal" href="tkinter.html#module-tkinter" title="tkinter: Interface to Tcl/Tk for graphical user interfaces"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pakiet</span> <span class="pre">interfejsu</span> <span class="pre">Tk</span></code></a> w swoim systemie.</p>
 </section>
 <section id="basic-drawing">
-<h3>Basic drawing<a class="headerlink" href="#basic-drawing" title="Link to this heading">¶</a></h3>
-<p>Send the turtle forward 100 steps:</p>
+<h3>Podstawowe rysowanie<a class="headerlink" href="#basic-drawing" title="Link to this heading">¶</a></h3>
+<p>Wyślij żółwia do przodu o 100 kroków:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>You should see (most likely, in a new window on your display) a line
-drawn by the turtle, heading East. Change the direction of the turtle,
-so that it turns 120 degrees left (anti-clockwise):</p>
+<p>Powinieneś zobaczyć (najprawdopodobniej w nowym oknie na ekranie) linię narysowaną przez żółwia w kierunku wschodnim. Zmień kierunek żółwia, tak aby obrócił się o 120 stopni w lewo (przeciwnie do ruchu wskazówek zegara):</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">left</span><span class="p">(</span><span class="mi">120</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Let’s continue by drawing a triangle:</p>
+<p>Kontynuujmy, rysując trójkąt:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
 <span class="n">left</span><span class="p">(</span><span class="mi">120</span><span class="p">)</span>
 <span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Notice how the turtle, represented by an arrow, points in different
-directions as you steer it.</p>
-<p>Experiment with those commands, and also with <code class="docutils literal notranslate"><span class="pre">backward()</span></code> and
-<code class="docutils literal notranslate"><span class="pre">right()</span></code>.</p>
+<p>Zwróć uwagę, jak żółw, reprezentowany przez strzałkę, kieruje się w różnych kierunkach.</p>
+<p>Eksperymentuj z tymi poleceniami, a także z <code class="docutils literal notranslate"><span class="pre">backward()</span></code> i <code class="docutils literal notranslate"><span class="pre">right()</span></code>.</p>
 <section id="pen-control">
-<h4>Pen control<a class="headerlink" href="#pen-control" title="Link to this heading">¶</a></h4>
-<p>Try changing the color - for example, <code class="docutils literal notranslate"><span class="pre">color('blue')</span></code> - and
-width of the line - for example, <code class="docutils literal notranslate"><span class="pre">width(3)</span></code> - and then drawing again.</p>
-<p>You can also move the turtle around without drawing, by lifting up the pen:
-<code class="docutils literal notranslate"><span class="pre">up()</span></code> before moving. To start drawing again, use <code class="docutils literal notranslate"><span class="pre">down()</span></code>.</p>
+<h4>Kontrola pióra<a class="headerlink" href="#pen-control" title="Link to this heading">¶</a></h4>
+<p>Spróbuj zmienić kolor – na przykład <code class="docutils literal notranslate"><span class="pre">color('blue')</span></code> – i szerokość linii – na przykład <code class="docutils literal notranslate"><span class="pre">width(3)</span></code> – a następnie narysuj ponownie.</p>
+<p>Żółwia można także przesuwać bez rysowania, podnosząc pióro: <code class="docutils literal notranslate"><span class="pre">up()</span></code> przed wykonaniem ruchu. Aby ponownie rozpocząć rysowanie, użyj <code class="docutils literal notranslate"><span class="pre">down()</span></code>.</p>
 </section>
 <section id="the-turtle-s-position">
-<h4>The turtle’s position<a class="headerlink" href="#the-turtle-s-position" title="Link to this heading">¶</a></h4>
-<p>Send your turtle back to its starting-point (useful if it has disappeared
-off-screen):</p>
+<h4>Pozycja żółwia<a class="headerlink" href="#the-turtle-s-position" title="Link to this heading">¶</a></h4>
+<p>Wyślij żółwia z powrotem do punktu początkowego (przydatne, jeśli zniknął poza ekranem):</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">home</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>The home position is at the center of the turtle’s screen. If you ever need to
-know them, get the turtle’s x-y coordinates with:</p>
+<p>Pozycja wyjściowa znajduje się na środku ekranu żółwia. Jeśli kiedykolwiek będziesz chciał(a) je poznać, uzyskaj współrzędne x-y żółwia za pomocą:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">pos</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>Home is at <code class="docutils literal notranslate"><span class="pre">(0,</span> <span class="pre">0)</span></code>.</p>
-<p>And after a while, it will probably help to clear the window so we can start
-anew:</p>
+<p>Pozycja wyjściowa znajduje się pod <code class="docutils literal notranslate"><span class="pre">(0,</span> <span class="pre">0)</span></code>.</p>
+<p>A po pewnym czasie prawdopodobnie przyda się wyczyścić okno, abyśmy mogli zacząć od nowa:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">clearscreen</span><span class="p">()</span>
 </pre></div>
 </div>
 </section>
 </section>
 <section id="making-algorithmic-patterns">
-<h3>Making algorithmic patterns<a class="headerlink" href="#making-algorithmic-patterns" title="Link to this heading">¶</a></h3>
-<p>Using loops, it’s possible to build up geometric patterns:</p>
+<h3>Tworzenie wzorców algorytmicznych<a class="headerlink" href="#making-algorithmic-patterns" title="Link to this heading">¶</a></h3>
+<p>Za pomocą pętli można tworzyć geometryczne wzory:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">steps</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">):</span>
         <span class="n">color</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
@@ -364,19 +340,17 @@ anew:</p>
         <span class="n">right</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>- which of course, are limited only by the imagination!</p>
-<p>Let’s draw the star shape at the top of this page. We want red lines,
-filled in with yellow:</p>
+<p>– które oczywiście ogranicza tylko wyobraźnia!</p>
+<p>Narysujmy kształt gwiazdy z góry tej strony. Potrzebujemy czerwonych linii, wypełnionych kolorem żółtym:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">color</span><span class="p">(</span><span class="s1">&#39;red&#39;</span><span class="p">)</span>
 <span class="n">fillcolor</span><span class="p">(</span><span class="s1">&#39;yellow&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Just as <code class="docutils literal notranslate"><span class="pre">up()</span></code> and <code class="docutils literal notranslate"><span class="pre">down()</span></code> determine whether lines will be drawn,
-filling can be turned on and off:</p>
+<p>Podobnie jak <code class="docutils literal notranslate"><span class="pre">up()</span></code> i <code class="docutils literal notranslate"><span class="pre">down()</span></code> określają, czy linie będą rysowane, wypełnianie można włączać i wyłączać:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">begin_fill</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>Next we’ll create a loop:</p>
+<p>Następnie utworzymy pętlę:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
     <span class="n">forward</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
     <span class="n">left</span><span class="p">(</span><span class="mi">170</span><span class="p">)</span>
@@ -384,36 +358,24 @@ filling can be turned on and off:</p>
         <span class="k">break</span>
 </pre></div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">abs(pos())</span> <span class="pre">&lt;</span> <span class="pre">1</span></code> is a good way to know when the turtle is back at its
-home position.</p>
-<p>Finally, complete the filling:</p>
+<p><code class="docutils literal notranslate"><span class="pre">abs(pos())</span> <span class="pre">&lt;</span> <span class="pre">1</span></code> to dobry sposób, aby dowiedzieć się, kiedy żółw powróci do pozycji wyjściowej.</p>
+<p>Na koniec uzupełnij wypełnienie:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">end_fill</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>(Note that filling only actually takes place when you give the
-<code class="docutils literal notranslate"><span class="pre">end_fill()</span></code> command.)</p>
+<p>(Należy pamiętać, że wypełnianie odbywa się tylko po wydaniu polecenia <code class="docutils literal notranslate"><span class="pre">end_fill()</span></code>.)</p>
 </section>
 </section>
 <section id="how-to">
-<span id="turtle-how-to"></span><h2>How to…<a class="headerlink" href="#how-to" title="Link to this heading">¶</a></h2>
-<p>This section covers some typical turtle use-cases and approaches.</p>
+<span id="turtle-how-to"></span><h2>Jak…<a class="headerlink" href="#how-to" title="Link to this heading">¶</a></h2>
+<p>Ta sekcja omawia niektóre typowe przypadki użycia i koncepcje.</p>
 <section id="get-started-as-quickly-as-possible">
-<h3>Get started as quickly as possible<a class="headerlink" href="#get-started-as-quickly-as-possible" title="Link to this heading">¶</a></h3>
-<p>One of the joys of turtle graphics is the immediate, visual feedback that’s
-available from simple commands - it’s an excellent way to introduce children
-to programming ideas, with a minimum of overhead (not just children, of
-course).</p>
-<p>The turtle module makes this possible by exposing all its basic functionality
-as functions, available with <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">turtle</span> <span class="pre">import</span> <span class="pre">*</span></code>. The <a class="reference internal" href="#turtle-tutorial"><span class="std std-ref">turtle
-graphics tutorial</span></a> covers this approach.</p>
-<p>It’s worth noting that many of the turtle commands also have even more terse
-equivalents, such as <code class="docutils literal notranslate"><span class="pre">fd()</span></code> for <a class="reference internal" href="#turtle.forward" title="turtle.forward"><code class="xref py py-func docutils literal notranslate"><span class="pre">forward()</span></code></a>. These are especially
-useful when working with learners for whom typing is not a skill.</p>
+<h3>Zacząć najszybciej jak to możliwe<a class="headerlink" href="#get-started-as-quickly-as-possible" title="Link to this heading">¶</a></h3>
+<p>Jedną z zalet grafiki żółwia jest natychmiastowa, wizualna informacja zwrotna dostępna po wykonaniu prostych poleceń – jest to doskonały sposób na wprowadzenie dzieci w idee programowania przy minimalnym nakładzie pracy (oczywiście nie tylko dzieci).</p>
+<p>Żółw moduł umożliwia to, udostępniając wszystkie swoje podstawowe funkcjonalności jako funkcje dostępne przez <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">turtle</span> <span class="pre">import</span> <span class="pre">*</span></code>. <a class="reference internal" href="#turtle-tutorial"><span class="std std-ref">Tutorial grafiki żółwia</span></a> wykorzystuje to podejście.</p>
+<p>Warto zauważyć, że wiele poleceń żółwia ma bardziej zwięzłe odpowiedniki, takie jak <code class="docutils literal notranslate"><span class="pre">fd()</span></code> dla <a class="reference internal" href="#turtle.forward" title="turtle.forward"><code class="xref py py-func docutils literal notranslate"><span class="pre">forward()</span></code></a>. Są one szczególnie przydatne podczas pracy z uczniami, dla których pisanie na klawiaturze jest jeszcze wyzwaniem.</p>
 <blockquote id="note">
-<div><p>You’ll need to have the <a class="reference internal" href="tkinter.html#module-tkinter" title="tkinter: Interface to Tcl/Tk for graphical user interfaces"><code class="xref py py-mod docutils literal notranslate"><span class="pre">Tk</span> <span class="pre">interface</span> <span class="pre">package</span></code></a> installed on
-your system for turtle graphics to work. Be warned that this is not
-always straightforward, so check this in advance if you’re planning to
-use turtle graphics with a learner.</p>
+<div><p>Aby grafika żółwia działała, w systemie musi być zainstalowany <a class="reference internal" href="tkinter.html#module-tkinter" title="tkinter: Interface to Tcl/Tk for graphical user interfaces"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pakiet</span> <span class="pre">interfejsu</span> <span class="pre">Tk</span></code></a>. Ostrzegamy, że nie zawsze jest to proste, więc sprawdź to z wyprzedzeniem, jeśli planujesz używać grafiki żółwia z uczniem.</p>
 </div></blockquote>
 </section>
 <section id="automatically-begin-and-end-filling">
@@ -441,21 +403,13 @@ end fill. Here is an example:</p>
 </div>
 </section>
 <section id="use-the-turtle-module-namespace">
-<h3>Use the <code class="docutils literal notranslate"><span class="pre">turtle</span></code> module namespace<a class="headerlink" href="#use-the-turtle-module-namespace" title="Link to this heading">¶</a></h3>
-<p>Using <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">turtle</span> <span class="pre">import</span> <span class="pre">*</span></code> is convenient - but be warned that it imports a
-rather large collection of objects, and if you’re doing anything but turtle
-graphics you run the risk of a name conflict (this becomes even more an issue
-if you’re using turtle graphics in a script where other modules might be
-imported).</p>
-<p>The solution is to use <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">turtle</span></code> - <code class="docutils literal notranslate"><span class="pre">fd()</span></code> becomes
-<code class="docutils literal notranslate"><span class="pre">turtle.fd()</span></code>, <code class="docutils literal notranslate"><span class="pre">width()</span></code> becomes <code class="docutils literal notranslate"><span class="pre">turtle.width()</span></code> and so on. (If typing
-„turtle” over and over again becomes tedious, use for example <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">turtle</span>
-<span class="pre">as</span> <span class="pre">t</span></code> instead.)</p>
+<h3>Użyć przestrzeni nazw modułu <code class="docutils literal notranslate"><span class="pre">turtle</span></code><a class="headerlink" href="#use-the-turtle-module-namespace" title="Link to this heading">¶</a></h3>
+<p>Korzystanie z <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">turtle</span> <span class="pre">import</span> <span class="pre">*</span></code> jest wygodne – ale należy pamiętać, że importuje dość dużą kolekcję obiektów, a jeśli robisz cokolwiek innego niż grafika żółwia, ryzykujesz konflikt nazw (staje się to jeszcze większym problemem, jeśli używasz grafiki żółwia w skrypcie, w którym mogą być importowane inne moduły).</p>
+<p>Rozwiązaniem jest użycie <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">turtle</span></code> – <code class="docutils literal notranslate"><span class="pre">fd()</span></code> staje się <code class="docutils literal notranslate"><span class="pre">turtle.fd()</span></code>, <code class="docutils literal notranslate"><span class="pre">width()</span></code> staje się <code class="docutils literal notranslate"><span class="pre">turtle.width()</span></code> i tak dalej. (Jeśli wpisywanie „turtle” w kółko staje się uciążliwe, użyj na przykład <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">turtle</span> <span class="pre">as</span> <span class="pre">t</span></code>.)</p>
 </section>
 <section id="use-turtle-graphics-in-a-script">
-<h3>Use turtle graphics in a script<a class="headerlink" href="#use-turtle-graphics-in-a-script" title="Link to this heading">¶</a></h3>
-<p>It’s recommended to use the <code class="docutils literal notranslate"><span class="pre">turtle</span></code> module namespace as described
-immediately above, for example:</p>
+<h3>Użyć grafiki żółwia w skrypcie<a class="headerlink" href="#use-turtle-graphics-in-a-script" title="Link to this heading">¶</a></h3>
+<p>Zaleca się korzystanie z przestrzeni nazw modułu <code class="docutils literal notranslate"><span class="pre">turtle</span></code>, jak opisano bezpośrednio powyżej, na przykład:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">turtle</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">t</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">random</span><span class="w"> </span><span class="kn">import</span> <span class="n">random</span>
 
@@ -466,29 +420,21 @@ immediately above, for example:</p>
     <span class="n">t</span><span class="o">.</span><span class="n">fd</span><span class="p">(</span><span class="n">steps</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Another step is also required though - as soon as the script ends, Python
-will also close the turtle’s window. Add:</p>
+<p>Wymagany jest jednak jeszcze jeden krok – gdy tylko skrypt się zakończy, Python zamknie również okno żółwia. Dodaj:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">t</span><span class="o">.</span><span class="n">mainloop</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>to the end of the script. The script will now wait to be dismissed and
-will not exit until it is terminated, for example by closing the turtle
-graphics window.</p>
+<p>na końcu skryptu. Skrypt będzie teraz czekał na zwolnienie i nie wyjdzie, dopóki nie zostanie zakończony, na przykład przez zamknięcie okna graficznego żółwia.</p>
 </section>
 <section id="use-object-oriented-turtle-graphics">
-<h3>Use object-oriented turtle graphics<a class="headerlink" href="#use-object-oriented-turtle-graphics" title="Link to this heading">¶</a></h3>
+<h3>Użyć obiektowej grafiki żółwia<a class="headerlink" href="#use-object-oriented-turtle-graphics" title="Link to this heading">¶</a></h3>
 <div class="admonition seealso">
 <p class="admonition-title">Zobacz także</p>
-<p><a class="reference internal" href="#turtle-explanation"><span class="std std-ref">Explanation of the object-oriented interface</span></a></p>
+<p><a class="reference internal" href="#turtle-explanation"><span class="std std-ref">Wyjaśnienie interfejsu obiektowego</span></a></p>
 </div>
-<p>Other than for very basic introductory purposes, or for trying things out
-as quickly as possible, it’s more usual and much more powerful to use the
-object-oriented approach to turtle graphics. For example, this allows
-multiple turtles on screen at once.</p>
-<p>In this approach, the various turtle commands are methods of objects (mostly of
-<code class="docutils literal notranslate"><span class="pre">Turtle</span></code> objects). You <em>can</em> use the object-oriented approach in the shell,
-but it would be more typical in a Python script.</p>
-<p>The example above then becomes:</p>
+<p>Poza bardzo podstawowymi celami wprowadzającymi lub do wypróbowania rzeczy tak szybko, jak to możliwe, bardziej typowe i znacznie bardziej wydajne jest użycie podejścia obiektowego do grafiki żółwia. Pozwala to na przykład na jednoczesne wyświetlanie wielu żółwi na ekranie.</p>
+<p>W tym podejściu różne komendy żółwia są metodami obiektów (głównie obiektów <code class="docutils literal notranslate"><span class="pre">Turtle</span></code>). <em>Można</em> używać podejścia obiektowego w powłoce, ale byłoby to bardziej typowe w pythonowym skrypcie.</p>
+<p>Przykład powyżej staje się wtedy:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">turtle</span><span class="w"> </span><span class="kn">import</span> <span class="n">Turtle</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">random</span><span class="w"> </span><span class="kn">import</span> <span class="n">random</span>
 
@@ -502,29 +448,25 @@ but it would be more typical in a Python script.</p>
 <span class="n">t</span><span class="o">.</span><span class="n">screen</span><span class="o">.</span><span class="n">mainloop</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>Note the last line. <code class="docutils literal notranslate"><span class="pre">t.screen</span></code> is an instance of the <a class="reference internal" href="#turtle.Screen" title="turtle.Screen"><code class="xref py py-class docutils literal notranslate"><span class="pre">Screen</span></code></a>
-that a Turtle instance exists on; it’s created automatically along with
-the turtle.</p>
-<p>The turtle’s screen can be customised, for example:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">t</span><span class="o">.</span><span class="n">screen</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Object-oriented turtle demo&#39;</span><span class="p">)</span>
+<p>Zwróć uwagę na ostatnią linię. <code class="docutils literal notranslate"><span class="pre">t.screen</span></code> to instancja <a class="reference internal" href="#turtle.Screen" title="turtle.Screen"><code class="xref py py-class docutils literal notranslate"><span class="pre">Screen</span></code></a>, na której istnieje instancja Turtle; jest ona tworzona automatycznie wraz z żółwiem.</p>
+<p>Ekran żółwia można dostosować, na przykład:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">t</span><span class="o">.</span><span class="n">screen</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Demo żółwia zorientowanego obiektowo&#39;</span><span class="p">)</span>
 <span class="n">t</span><span class="o">.</span><span class="n">screen</span><span class="o">.</span><span class="n">bgcolor</span><span class="p">(</span><span class="s2">&quot;orange&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
 </section>
 <section id="turtle-graphics-reference">
-<h2>Turtle graphics reference<a class="headerlink" href="#turtle-graphics-reference" title="Link to this heading">¶</a></h2>
+<h2>Dokumentacja grafiki żółwia<a class="headerlink" href="#turtle-graphics-reference" title="Link to this heading">¶</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Informacja</p>
-<p>In the following documentation the argument list for functions is given.
-Methods, of course, have the additional first argument <em>self</em> which is
-omitted here.</p>
+<p>W poniższej dokumentacji podano listę argumentów dla funkcji. Metody, oczywiście, mają dodatkowy pierwszy argument <em>self</em>, który jest tutaj pominięty.</p>
 </div>
 <section id="turtle-methods">
-<h3>Turtle methods<a class="headerlink" href="#turtle-methods" title="Link to this heading">¶</a></h3>
+<h3>Metody żółwia<a class="headerlink" href="#turtle-methods" title="Link to this heading">¶</a></h3>
 <dl>
-<dt>Turtle motion</dt><dd><dl>
-<dt>Move and draw</dt><dd><div class="line-block">
+<dt>Ruch żółwia</dt><dd><dl>
+<dt>Przesuwanie i rysowanie</dt><dd><div class="line-block">
 <div class="line"><a class="reference internal" href="#turtle.forward" title="turtle.forward"><code class="xref py py-func docutils literal notranslate"><span class="pre">forward()</span></code></a> | <a class="reference internal" href="#turtle.fd" title="turtle.fd"><code class="xref py py-func docutils literal notranslate"><span class="pre">fd()</span></code></a></div>
 <div class="line"><a class="reference internal" href="#turtle.backward" title="turtle.backward"><code class="xref py py-func docutils literal notranslate"><span class="pre">backward()</span></code></a> | <a class="reference internal" href="#turtle.bk" title="turtle.bk"><code class="xref py py-func docutils literal notranslate"><span class="pre">bk()</span></code></a> | <a class="reference internal" href="#turtle.back" title="turtle.back"><code class="xref py py-func docutils literal notranslate"><span class="pre">back()</span></code></a></div>
 <div class="line"><a class="reference internal" href="#turtle.right" title="turtle.right"><code class="xref py py-func docutils literal notranslate"><span class="pre">right()</span></code></a> | <a class="reference internal" href="#turtle.rt" title="turtle.rt"><code class="xref py py-func docutils literal notranslate"><span class="pre">rt()</span></code></a></div>
@@ -544,7 +486,7 @@ omitted here.</p>
 <div class="line"><a class="reference internal" href="#turtle.speed" title="turtle.speed"><code class="xref py py-func docutils literal notranslate"><span class="pre">speed()</span></code></a></div>
 </div>
 </dd>
-<dt>Tell Turtle’s state</dt><dd><div class="line-block">
+<dt>Pobieranie stanu żółwia</dt><dd><div class="line-block">
 <div class="line"><a class="reference internal" href="#turtle.position" title="turtle.position"><code class="xref py py-func docutils literal notranslate"><span class="pre">position()</span></code></a> | <a class="reference internal" href="#turtle.pos" title="turtle.pos"><code class="xref py py-func docutils literal notranslate"><span class="pre">pos()</span></code></a></div>
 <div class="line"><a class="reference internal" href="#turtle.towards" title="turtle.towards"><code class="xref py py-func docutils literal notranslate"><span class="pre">towards()</span></code></a></div>
 <div class="line"><a class="reference internal" href="#turtle.xcor" title="turtle.xcor"><code class="xref py py-func docutils literal notranslate"><span class="pre">xcor()</span></code></a></div>
@@ -553,15 +495,15 @@ omitted here.</p>
 <div class="line"><a class="reference internal" href="#turtle.distance" title="turtle.distance"><code class="xref py py-func docutils literal notranslate"><span class="pre">distance()</span></code></a></div>
 </div>
 </dd>
-<dt>Setting and measurement</dt><dd><div class="line-block">
+<dt>Ustawienia i pomiary</dt><dd><div class="line-block">
 <div class="line"><a class="reference internal" href="#turtle.degrees" title="turtle.degrees"><code class="xref py py-func docutils literal notranslate"><span class="pre">degrees()</span></code></a></div>
 <div class="line"><a class="reference internal" href="#turtle.radians" title="turtle.radians"><code class="xref py py-func docutils literal notranslate"><span class="pre">radians()</span></code></a></div>
 </div>
 </dd>
 </dl>
 </dd>
-<dt>Pen control</dt><dd><dl>
-<dt>Drawing state</dt><dd><div class="line-block">
+<dt>Kontrola pióra</dt><dd><dl>
+<dt>Stan rysowania</dt><dd><div class="line-block">
 <div class="line"><a class="reference internal" href="#turtle.pendown" title="turtle.pendown"><code class="xref py py-func docutils literal notranslate"><span class="pre">pendown()</span></code></a> | <a class="reference internal" href="#turtle.pd" title="turtle.pd"><code class="xref py py-func docutils literal notranslate"><span class="pre">pd()</span></code></a> | <a class="reference internal" href="#turtle.down" title="turtle.down"><code class="xref py py-func docutils literal notranslate"><span class="pre">down()</span></code></a></div>
 <div class="line"><a class="reference internal" href="#turtle.penup" title="turtle.penup"><code class="xref py py-func docutils literal notranslate"><span class="pre">penup()</span></code></a> | <a class="reference internal" href="#turtle.pu" title="turtle.pu"><code class="xref py py-func docutils literal notranslate"><span class="pre">pu()</span></code></a> | <a class="reference internal" href="#turtle.up" title="turtle.up"><code class="xref py py-func docutils literal notranslate"><span class="pre">up()</span></code></a></div>
 <div class="line"><a class="reference internal" href="#turtle.pensize" title="turtle.pensize"><code class="xref py py-func docutils literal notranslate"><span class="pre">pensize()</span></code></a> | <a class="reference internal" href="#turtle.width" title="turtle.width"><code class="xref py py-func docutils literal notranslate"><span class="pre">width()</span></code></a></div>
@@ -569,20 +511,20 @@ omitted here.</p>
 <div class="line"><a class="reference internal" href="#turtle.isdown" title="turtle.isdown"><code class="xref py py-func docutils literal notranslate"><span class="pre">isdown()</span></code></a></div>
 </div>
 </dd>
-<dt>Color control</dt><dd><div class="line-block">
+<dt>Kontrola koloru</dt><dd><div class="line-block">
 <div class="line"><a class="reference internal" href="#turtle.color" title="turtle.color"><code class="xref py py-func docutils literal notranslate"><span class="pre">color()</span></code></a></div>
 <div class="line"><a class="reference internal" href="#turtle.pencolor" title="turtle.pencolor"><code class="xref py py-func docutils literal notranslate"><span class="pre">pencolor()</span></code></a></div>
 <div class="line"><a class="reference internal" href="#turtle.fillcolor" title="turtle.fillcolor"><code class="xref py py-func docutils literal notranslate"><span class="pre">fillcolor()</span></code></a></div>
 </div>
 </dd>
-<dt>Filling</dt><dd><div class="line-block">
+<dt>Wypełnienie</dt><dd><div class="line-block">
 <div class="line"><a class="reference internal" href="#turtle.filling" title="turtle.filling"><code class="xref py py-func docutils literal notranslate"><span class="pre">filling()</span></code></a></div>
 <div class="line"><a class="reference internal" href="#turtle.fill" title="turtle.fill"><code class="xref py py-func docutils literal notranslate"><span class="pre">fill()</span></code></a></div>
 <div class="line"><a class="reference internal" href="#turtle.begin_fill" title="turtle.begin_fill"><code class="xref py py-func docutils literal notranslate"><span class="pre">begin_fill()</span></code></a></div>
 <div class="line"><a class="reference internal" href="#turtle.end_fill" title="turtle.end_fill"><code class="xref py py-func docutils literal notranslate"><span class="pre">end_fill()</span></code></a></div>
 </div>
 </dd>
-<dt>More drawing control</dt><dd><div class="line-block">
+<dt>Więcej kontroli rysowania</dt><dd><div class="line-block">
 <div class="line"><a class="reference internal" href="#turtle.reset" title="turtle.reset"><code class="xref py py-func docutils literal notranslate"><span class="pre">reset()</span></code></a></div>
 <div class="line"><a class="reference internal" href="#turtle.clear" title="turtle.clear"><code class="xref py py-func docutils literal notranslate"><span class="pre">clear()</span></code></a></div>
 <div class="line"><a class="reference internal" href="#turtle.write" title="turtle.write"><code class="xref py py-func docutils literal notranslate"><span class="pre">write()</span></code></a></div>
@@ -590,14 +532,14 @@ omitted here.</p>
 </dd>
 </dl>
 </dd>
-<dt>Turtle state</dt><dd><dl>
-<dt>Visibility</dt><dd><div class="line-block">
+<dt>Stan żółwia</dt><dd><dl>
+<dt>Widoczność</dt><dd><div class="line-block">
 <div class="line"><a class="reference internal" href="#turtle.showturtle" title="turtle.showturtle"><code class="xref py py-func docutils literal notranslate"><span class="pre">showturtle()</span></code></a> | <a class="reference internal" href="#turtle.st" title="turtle.st"><code class="xref py py-func docutils literal notranslate"><span class="pre">st()</span></code></a></div>
 <div class="line"><a class="reference internal" href="#turtle.hideturtle" title="turtle.hideturtle"><code class="xref py py-func docutils literal notranslate"><span class="pre">hideturtle()</span></code></a> | <a class="reference internal" href="#turtle.ht" title="turtle.ht"><code class="xref py py-func docutils literal notranslate"><span class="pre">ht()</span></code></a></div>
 <div class="line"><a class="reference internal" href="#turtle.isvisible" title="turtle.isvisible"><code class="xref py py-func docutils literal notranslate"><span class="pre">isvisible()</span></code></a></div>
 </div>
 </dd>
-<dt>Appearance</dt><dd><div class="line-block">
+<dt>Wygląd</dt><dd><div class="line-block">
 <div class="line"><a class="reference internal" href="#turtle.shape" title="turtle.shape"><code class="xref py py-func docutils literal notranslate"><span class="pre">shape()</span></code></a></div>
 <div class="line"><a class="reference internal" href="#turtle.resizemode" title="turtle.resizemode"><code class="xref py py-func docutils literal notranslate"><span class="pre">resizemode()</span></code></a></div>
 <div class="line"><a class="reference internal" href="#turtle.shapesize" title="turtle.shapesize"><code class="xref py py-func docutils literal notranslate"><span class="pre">shapesize()</span></code></a> | <a class="reference internal" href="#turtle.turtlesize" title="turtle.turtlesize"><code class="xref py py-func docutils literal notranslate"><span class="pre">turtlesize()</span></code></a></div>
@@ -610,13 +552,13 @@ omitted here.</p>
 </dd>
 </dl>
 </dd>
-<dt>Using events</dt><dd><div class="line-block">
+<dt>Korzystanie ze zdarzeń</dt><dd><div class="line-block">
 <div class="line"><a class="reference internal" href="#turtle.onclick" title="turtle.onclick"><code class="xref py py-func docutils literal notranslate"><span class="pre">onclick()</span></code></a></div>
 <div class="line"><a class="reference internal" href="#turtle.onrelease" title="turtle.onrelease"><code class="xref py py-func docutils literal notranslate"><span class="pre">onrelease()</span></code></a></div>
 <div class="line"><a class="reference internal" href="#turtle.ondrag" title="turtle.ondrag"><code class="xref py py-func docutils literal notranslate"><span class="pre">ondrag()</span></code></a></div>
 </div>
 </dd>
-<dt>Special Turtle methods</dt><dd><div class="line-block">
+<dt>Specjalne metody żółwi</dt><dd><div class="line-block">
 <div class="line"><a class="reference internal" href="#turtle.poly" title="turtle.poly"><code class="xref py py-func docutils literal notranslate"><span class="pre">poly()</span></code></a></div>
 <div class="line"><a class="reference internal" href="#turtle.begin_poly" title="turtle.begin_poly"><code class="xref py py-func docutils literal notranslate"><span class="pre">begin_poly()</span></code></a></div>
 <div class="line"><a class="reference internal" href="#turtle.end_poly" title="turtle.end_poly"><code class="xref py py-func docutils literal notranslate"><span class="pre">end_poly()</span></code></a></div>
@@ -631,9 +573,9 @@ omitted here.</p>
 </dl>
 </section>
 <section id="methods-of-turtlescreen-screen">
-<h3>Methods of TurtleScreen/Screen<a class="headerlink" href="#methods-of-turtlescreen-screen" title="Link to this heading">¶</a></h3>
+<h3>Metody TurtleScreen/Screen<a class="headerlink" href="#methods-of-turtlescreen-screen" title="Link to this heading">¶</a></h3>
 <dl>
-<dt>Window control</dt><dd><div class="line-block">
+<dt>Kontrola okna</dt><dd><div class="line-block">
 <div class="line"><a class="reference internal" href="#turtle.bgcolor" title="turtle.bgcolor"><code class="xref py py-func docutils literal notranslate"><span class="pre">bgcolor()</span></code></a></div>
 <div class="line"><a class="reference internal" href="#turtle.bgpic" title="turtle.bgpic"><code class="xref py py-func docutils literal notranslate"><span class="pre">bgpic()</span></code></a></div>
 <div class="line"><a class="reference internal" href="#turtle.clearscreen" title="turtle.clearscreen"><code class="xref py py-func docutils literal notranslate"><span class="pre">clearscreen()</span></code></a></div>
@@ -642,14 +584,14 @@ omitted here.</p>
 <div class="line"><a class="reference internal" href="#turtle.setworldcoordinates" title="turtle.setworldcoordinates"><code class="xref py py-func docutils literal notranslate"><span class="pre">setworldcoordinates()</span></code></a></div>
 </div>
 </dd>
-<dt>Animation control</dt><dd><div class="line-block">
+<dt>Kontrola animacji</dt><dd><div class="line-block">
 <div class="line"><a class="reference internal" href="#turtle.no_animation" title="turtle.no_animation"><code class="xref py py-func docutils literal notranslate"><span class="pre">no_animation()</span></code></a></div>
 <div class="line"><a class="reference internal" href="#turtle.delay" title="turtle.delay"><code class="xref py py-func docutils literal notranslate"><span class="pre">delay()</span></code></a></div>
 <div class="line"><a class="reference internal" href="#turtle.tracer" title="turtle.tracer"><code class="xref py py-func docutils literal notranslate"><span class="pre">tracer()</span></code></a></div>
 <div class="line"><a class="reference internal" href="#turtle.update" title="turtle.update"><code class="xref py py-func docutils literal notranslate"><span class="pre">update()</span></code></a></div>
 </div>
 </dd>
-<dt>Using screen events</dt><dd><div class="line-block">
+<dt>Korzystanie ze zdarzeń ekranowych</dt><dd><div class="line-block">
 <div class="line"><a class="reference internal" href="#turtle.listen" title="turtle.listen"><code class="xref py py-func docutils literal notranslate"><span class="pre">listen()</span></code></a></div>
 <div class="line"><a class="reference internal" href="#turtle.onkey" title="turtle.onkey"><code class="xref py py-func docutils literal notranslate"><span class="pre">onkey()</span></code></a> | <a class="reference internal" href="#turtle.onkeyrelease" title="turtle.onkeyrelease"><code class="xref py py-func docutils literal notranslate"><span class="pre">onkeyrelease()</span></code></a></div>
 <div class="line"><a class="reference internal" href="#turtle.onkeypress" title="turtle.onkeypress"><code class="xref py py-func docutils literal notranslate"><span class="pre">onkeypress()</span></code></a></div>
@@ -658,7 +600,7 @@ omitted here.</p>
 <div class="line"><a class="reference internal" href="#turtle.mainloop" title="turtle.mainloop"><code class="xref py py-func docutils literal notranslate"><span class="pre">mainloop()</span></code></a> | <a class="reference internal" href="#turtle.done" title="turtle.done"><code class="xref py py-func docutils literal notranslate"><span class="pre">done()</span></code></a></div>
 </div>
 </dd>
-<dt>Settings and special methods</dt><dd><div class="line-block">
+<dt>Ustawienia i metody specjalne</dt><dd><div class="line-block">
 <div class="line"><a class="reference internal" href="#turtle.mode" title="turtle.mode"><code class="xref py py-func docutils literal notranslate"><span class="pre">mode()</span></code></a></div>
 <div class="line"><a class="reference internal" href="#turtle.colormode" title="turtle.colormode"><code class="xref py py-func docutils literal notranslate"><span class="pre">colormode()</span></code></a></div>
 <div class="line"><a class="reference internal" href="#turtle.getcanvas" title="turtle.getcanvas"><code class="xref py py-func docutils literal notranslate"><span class="pre">getcanvas()</span></code></a></div>
@@ -669,12 +611,12 @@ omitted here.</p>
 <div class="line"><a class="reference internal" href="#turtle.window_width" title="turtle.window_width"><code class="xref py py-func docutils literal notranslate"><span class="pre">window_width()</span></code></a></div>
 </div>
 </dd>
-<dt>Input methods</dt><dd><div class="line-block">
+<dt>Metody wprowadzania danych</dt><dd><div class="line-block">
 <div class="line"><a class="reference internal" href="#turtle.textinput" title="turtle.textinput"><code class="xref py py-func docutils literal notranslate"><span class="pre">textinput()</span></code></a></div>
 <div class="line"><a class="reference internal" href="#turtle.numinput" title="turtle.numinput"><code class="xref py py-func docutils literal notranslate"><span class="pre">numinput()</span></code></a></div>
 </div>
 </dd>
-<dt>Methods specific to Screen</dt><dd><div class="line-block">
+<dt>Metody specyficzne dla klasy Screen</dt><dd><div class="line-block">
 <div class="line"><a class="reference internal" href="#turtle.bye" title="turtle.bye"><code class="xref py py-func docutils literal notranslate"><span class="pre">bye()</span></code></a></div>
 <div class="line"><a class="reference internal" href="#turtle.exitonclick" title="turtle.exitonclick"><code class="xref py py-func docutils literal notranslate"><span class="pre">exitonclick()</span></code></a></div>
 <div class="line"><a class="reference internal" href="#turtle.save" title="turtle.save"><code class="xref py py-func docutils literal notranslate"><span class="pre">save()</span></code></a></div>
@@ -686,11 +628,10 @@ omitted here.</p>
 </section>
 </section>
 <section id="methods-of-rawturtle-turtle-and-corresponding-functions">
-<h2>Methods of RawTurtle/Turtle and corresponding functions<a class="headerlink" href="#methods-of-rawturtle-turtle-and-corresponding-functions" title="Link to this heading">¶</a></h2>
-<p>Most of the examples in this section refer to a Turtle instance called
-<code class="docutils literal notranslate"><span class="pre">turtle</span></code>.</p>
+<h2>Metody RawTurtle/Turtle i odpowiadające im funkcje<a class="headerlink" href="#methods-of-rawturtle-turtle-and-corresponding-functions" title="Link to this heading">¶</a></h2>
+<p>Większość przykładów w tej sekcji odnosi się do instancji klasy Turtle o nazwie <code class="docutils literal notranslate"><span class="pre">turtle</span></code>.</p>
 <section id="turtle-motion">
-<h3>Turtle motion<a class="headerlink" href="#turtle-motion" title="Link to this heading">¶</a></h3>
+<h3>Ruch żółwia<a class="headerlink" href="#turtle-motion" title="Link to this heading">¶</a></h3>
 <dl class="py function">
 <dt class="sig sig-object py" id="turtle.forward">
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">distance</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#turtle.forward" title="Link to this definition">¶</a></dt>
@@ -698,11 +639,10 @@ omitted here.</p>
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">fd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">distance</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#turtle.fd" title="Link to this definition">¶</a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parametry<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>distance</strong> – a number (integer or float)</p>
+<dd class="field-odd"><p><strong>distance</strong> – liczba (całkowita lub zmiennoprzecinkowa)</p>
 </dd>
 </dl>
-<p>Move the turtle forward by the specified <em>distance</em>, in the direction the
-turtle is headed.</p>
+<p>Przesuwa żółwia do przodu o określony <em>dystans</em>, w kierunku, w którym żółw jest skierowany.</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">position</span><span class="p">()</span>
 <span class="go">(0.00,0.00)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>
@@ -724,11 +664,10 @@ turtle is headed.</p>
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">backward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">distance</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#turtle.backward" title="Link to this definition">¶</a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parametry<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>distance</strong> – a number</p>
+<dd class="field-odd"><p><strong>distance</strong> – liczba</p>
 </dd>
 </dl>
-<p>Move the turtle backward by <em>distance</em>, opposite to the direction the
-turtle is headed.  Do not change the turtle’s heading.</p>
+<p>Przesuwa żółwia do tyłu o <em>dystans</em>, w kierunku przeciwnym do kierunku, w którym żółw jest skierowany. Nie zmienia kierunku żółwia.</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">position</span><span class="p">()</span>
 <span class="go">(0.00,0.00)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">backward</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
@@ -745,12 +684,10 @@ turtle is headed.  Do not change the turtle’s heading.</p>
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">rt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#turtle.rt" title="Link to this definition">¶</a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parametry<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>angle</strong> – a number (integer or float)</p>
+<dd class="field-odd"><p><strong>angle</strong> – liczba (całkowita lub zmiennoprzecinkowa)</p>
 </dd>
 </dl>
-<p>Turn turtle right by <em>angle</em> units.  (Units are by default degrees, but
-can be set via the <a class="reference internal" href="#turtle.degrees" title="turtle.degrees"><code class="xref py py-func docutils literal notranslate"><span class="pre">degrees()</span></code></a> and <a class="reference internal" href="#turtle.radians" title="turtle.radians"><code class="xref py py-func docutils literal notranslate"><span class="pre">radians()</span></code></a> functions.)  Angle
-orientation depends on the turtle mode, see <a class="reference internal" href="#turtle.mode" title="turtle.mode"><code class="xref py py-func docutils literal notranslate"><span class="pre">mode()</span></code></a>.</p>
+<p>Obraca żółwia w prawo o jednostki <em>kąta</em>.  (Jednostki to domyślnie stopnie, ale można je ustawić za pomocą funkcji <a class="reference internal" href="#turtle.degrees" title="turtle.degrees"><code class="xref py py-func docutils literal notranslate"><span class="pre">degrees()</span></code></a> i <a class="reference internal" href="#turtle.radians" title="turtle.radians"><code class="xref py py-func docutils literal notranslate"><span class="pre">radians()</span></code></a>.) Orientacja kąta zależy od trybu żółwia, patrz <a class="reference internal" href="#turtle.mode" title="turtle.mode"><code class="xref py py-func docutils literal notranslate"><span class="pre">mode()</span></code></a>.</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">heading</span><span class="p">()</span>
 <span class="go">22.0</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">45</span><span class="p">)</span>
@@ -767,12 +704,10 @@ orientation depends on the turtle mode, see <a class="reference internal" href="
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">lt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#turtle.lt" title="Link to this definition">¶</a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parametry<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>angle</strong> – a number (integer or float)</p>
+<dd class="field-odd"><p><strong>angle</strong> – liczba (całkowita lub zmiennoprzecinkowa)</p>
 </dd>
 </dl>
-<p>Turn turtle left by <em>angle</em> units.  (Units are by default degrees, but
-can be set via the <a class="reference internal" href="#turtle.degrees" title="turtle.degrees"><code class="xref py py-func docutils literal notranslate"><span class="pre">degrees()</span></code></a> and <a class="reference internal" href="#turtle.radians" title="turtle.radians"><code class="xref py py-func docutils literal notranslate"><span class="pre">radians()</span></code></a> functions.)  Angle
-orientation depends on the turtle mode, see <a class="reference internal" href="#turtle.mode" title="turtle.mode"><code class="xref py py-func docutils literal notranslate"><span class="pre">mode()</span></code></a>.</p>
+<p>Obraca żółwia w lewo o jednostki <em>kąta</em>.  (Jednostki to domyślnie stopnie, ale można je ustawić za pomocą funkcji <a class="reference internal" href="#turtle.degrees" title="turtle.degrees"><code class="xref py py-func docutils literal notranslate"><span class="pre">degrees()</span></code></a> i <a class="reference internal" href="#turtle.radians" title="turtle.radians"><code class="xref py py-func docutils literal notranslate"><span class="pre">radians()</span></code></a>.) Orientacja kąta zależy od trybu żółwia, patrz <a class="reference internal" href="#turtle.mode" title="turtle.mode"><code class="xref py py-func docutils literal notranslate"><span class="pre">mode()</span></code></a>.</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">heading</span><span class="p">()</span>
 <span class="go">22.0</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">45</span><span class="p">)</span>
@@ -792,15 +727,13 @@ orientation depends on the turtle mode, see <a class="reference internal" href="
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parametry<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>x</strong> – a number or a pair/vector of numbers</p></li>
-<li><p><strong>y</strong> – a number or <code class="docutils literal notranslate"><span class="pre">None</span></code></p></li>
+<li><p><strong>x</strong> – liczba lub para/wektor liczb</p></li>
+<li><p><strong>y</strong> – liczba lub <code class="docutils literal notranslate"><span class="pre">None</span></code></p></li>
 </ul>
 </dd>
 </dl>
-<p>If <em>y</em> is <code class="docutils literal notranslate"><span class="pre">None</span></code>, <em>x</em> must be a pair of coordinates or a <a class="reference internal" href="#turtle.Vec2D" title="turtle.Vec2D"><code class="xref py py-class docutils literal notranslate"><span class="pre">Vec2D</span></code></a>
-(e.g. as returned by <a class="reference internal" href="#turtle.pos" title="turtle.pos"><code class="xref py py-func docutils literal notranslate"><span class="pre">pos()</span></code></a>).</p>
-<p>Move turtle to an absolute position.  If the pen is down, draw line.  Do
-not change the turtle’s orientation.</p>
+<p>Jeśli <em>y</em> to <code class="docutils literal notranslate"><span class="pre">None</span></code>, <em>x</em> musi być parą współrzędnych lub obiektem <a class="reference internal" href="#turtle.Vec2D" title="turtle.Vec2D"><code class="xref py py-class docutils literal notranslate"><span class="pre">Vec2D</span></code></a> (np. zwróconym przez <a class="reference internal" href="#turtle.pos" title="turtle.pos"><code class="xref py py-func docutils literal notranslate"><span class="pre">pos()</span></code></a>).</p>
+<p>Przesuwa żółwia do pozycji bezwzględnej. Jeśli pióro jest opuszczone, rysuje linię. Nie zmienia orientacji żółwia.</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">tp</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">pos</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">tp</span>
 <span class="go">(0.00,0.00)</span>
@@ -823,18 +756,13 @@ not change the turtle’s orientation.</p>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parametry<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>x</strong> – a number or <code class="docutils literal notranslate"><span class="pre">None</span></code></p></li>
-<li><p><strong>y</strong> – a number or <code class="docutils literal notranslate"><span class="pre">None</span></code></p></li>
-<li><p><strong>fill_gap</strong> – a boolean</p></li>
+<li><p><strong>x</strong> – liczba lub <code class="docutils literal notranslate"><span class="pre">None</span></code></p></li>
+<li><p><strong>y</strong> – liczba lub <code class="docutils literal notranslate"><span class="pre">None</span></code></p></li>
+<li><p><strong>fill_gap</strong> – wartość logiczna</p></li>
 </ul>
 </dd>
 </dl>
-<p>Move turtle to an absolute position. Unlike goto(x, y), a line will not
-be drawn. The turtle’s orientation does not change. If currently
-filling, the polygon(s) teleported from will be filled after leaving,
-and filling will begin again after teleporting. This can be disabled
-with fill_gap=True, which makes the imaginary line traveled during
-teleporting act as a fill barrier like in goto(x, y).</p>
+<p>Przesuwa żółwia do pozycji bezwzględnej. W przeciwieństwie do goto(x, y), linia nie zostanie narysowana. Orientacja żółwia nie zmienia się. Jeśli aktualnie wypełniany(-e) jest(/są) wielokąt(y), z którego(-ych) teleportowano żółwia, zostanie(-ną) on(e) wypełniony(-ne) po wyjściu, a wypełnianie rozpocznie się ponownie po teleportacji. Można to wyłączyć za pomocą fill_gap=True, co sprawia, że wyimaginowana linia przebyta podczas teleportacji działa jako bariera wypełnienia, jak w goto(x, y).</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">tp</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">pos</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">tp</span>
 <span class="go">(0.00,0.00)</span>
@@ -859,11 +787,10 @@ teleporting act as a fill barrier like in goto(x, y).</p>
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">setx</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#turtle.setx" title="Link to this definition">¶</a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parametry<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>x</strong> – a number (integer or float)</p>
+<dd class="field-odd"><p><strong>x</strong> – liczba (całkowita lub zmiennoprzecinkowa)</p>
 </dd>
 </dl>
-<p>Set the turtle’s first coordinate to <em>x</em>, leave second coordinate
-unchanged.</p>
+<p>Ustawia pierwszą współrzędną żółwia na <em>x</em>, drugą pozostawiając bez zmian.</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">position</span><span class="p">()</span>
 <span class="go">(0.00,240.00)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">setx</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
@@ -878,10 +805,10 @@ unchanged.</p>
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">sety</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#turtle.sety" title="Link to this definition">¶</a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parametry<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>y</strong> – a number (integer or float)</p>
+<dd class="field-odd"><p><strong>y</strong> – liczba (całkowita lub zmiennoprzecinkowa)</p>
 </dd>
 </dl>
-<p>Set the turtle’s second coordinate to <em>y</em>, leave first coordinate unchanged.</p>
+<p>Ustawia drugą współrzędną żółwia na <em>y</em>, pozostawiąc pierwszą współrzędną bez zmian.</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">position</span><span class="p">()</span>
 <span class="go">(0.00,40.00)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">sety</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">)</span>
@@ -898,29 +825,28 @@ unchanged.</p>
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">seth</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">to_angle</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#turtle.seth" title="Link to this definition">¶</a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parametry<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>to_angle</strong> – a number (integer or float)</p>
+<dd class="field-odd"><p><strong>to_angle</strong> – liczba (całkowita lub zmiennoprzecinkowa)</p>
 </dd>
 </dl>
-<p>Set the orientation of the turtle to <em>to_angle</em>.  Here are some common
-directions in degrees:</p>
+<p>Ustawia orientację żółwia na <em>to_angle</em>.  Oto kilka często używanych kierunków w stopniach:</p>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head"><p>standard mode</p></th>
-<th class="head"><p>logo mode</p></th>
+<tr class="row-odd"><th class="head"><p>tryb standardowy</p></th>
+<th class="head"><p>tryb logo</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>0 - east</p></td>
-<td><p>0 - north</p></td>
+<tr class="row-even"><td><p>0 – wschód</p></td>
+<td><p>0 – północ</p></td>
 </tr>
-<tr class="row-odd"><td><p>90 - north</p></td>
-<td><p>90 - east</p></td>
+<tr class="row-odd"><td><p>90 – północ</p></td>
+<td><p>90 – wschód</p></td>
 </tr>
-<tr class="row-even"><td><p>180 - west</p></td>
-<td><p>180 - south</p></td>
+<tr class="row-even"><td><p>180 – zachód</p></td>
+<td><p>180 – południe</p></td>
 </tr>
-<tr class="row-odd"><td><p>270 - south</p></td>
-<td><p>270 - west</p></td>
+<tr class="row-odd"><td><p>270 – południe</p></td>
+<td><p>270 – zachód</p></td>
 </tr>
 </tbody>
 </table>
@@ -934,8 +860,7 @@ directions in degrees:</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="turtle.home">
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">home</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turtle.home" title="Link to this definition">¶</a></dt>
-<dd><p>Move turtle to the origin – coordinates (0,0) – and set its heading to
-its start-orientation (which depends on the mode, see <a class="reference internal" href="#turtle.mode" title="turtle.mode"><code class="xref py py-func docutils literal notranslate"><span class="pre">mode()</span></code></a>).</p>
+<dd><p>Przesuwa żółwia do punktu początkowego – współrzędne (0,0) – i ustawia jego kurs na orientację początkową (która zależy od trybu, patrz <a class="reference internal" href="#turtle.mode" title="turtle.mode"><code class="xref py py-func docutils literal notranslate"><span class="pre">mode()</span></code></a>).</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">heading</span><span class="p">()</span>
 <span class="go">90.0</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">position</span><span class="p">()</span>
@@ -955,22 +880,14 @@ its start-orientation (which depends on the mode, see <a class="reference intern
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parametry<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>radius</strong> – a number</p></li>
-<li><p><strong>extent</strong> – a number (or <code class="docutils literal notranslate"><span class="pre">None</span></code>)</p></li>
-<li><p><strong>steps</strong> – an integer (or <code class="docutils literal notranslate"><span class="pre">None</span></code>)</p></li>
+<li><p><strong>radius</strong> – liczba</p></li>
+<li><p><strong>extent</strong> – liczba (lub <code class="docutils literal notranslate"><span class="pre">None</span></code>)</p></li>
+<li><p><strong>steps</strong> – liczba całkowita (lub <code class="docutils literal notranslate"><span class="pre">None</span></code>)</p></li>
 </ul>
 </dd>
 </dl>
-<p>Draw a circle with given <em>radius</em>.  The center is <em>radius</em> units left of
-the turtle; <em>extent</em> – an angle – determines which part of the circle
-is drawn.  If <em>extent</em> is not given, draw the entire circle.  If <em>extent</em>
-is not a full circle, one endpoint of the arc is the current pen
-position.  Draw the arc in counterclockwise direction if <em>radius</em> is
-positive, otherwise in clockwise direction.  Finally the direction of the
-turtle is changed by the amount of <em>extent</em>.</p>
-<p>As the circle is approximated by an inscribed regular polygon, <em>steps</em>
-determines the number of steps to use.  If not given, it will be
-calculated automatically.  May be used to draw regular polygons.</p>
+<p>Rysuje okrąg o podanym <em>promieniu</em>. Środek znajduje się w odległości <em>radius</em> na lewo od żółwia; <em>extent</em> – kąt – określa, która część okręgu zostanie narysowana. Jeśli <em>extent</em> nie jest podany, rysowany jest cały okrąg. Jeśli <em>extent</em> nie jest pełnym okręgiem, jednym z punktów końcowych łuku jest bieżąca pozycja pióra. Rysuje łuk w kierunku przeciwnym do ruchu wskazówek zegara, jeśli <em>radius</em> jest dodatni, w przeciwnym razie w kierunku zgodnym z ruchem wskazówek zegara. Kierunek żółwia jest zmieniany o wartość <em>extent</em>.</p>
+<p>Ponieważ okrąg jest przybliżany przez wpisany wielokąt foremny, <em>steps</em> określa liczbę kroków do użycia. Jeśli nie zostanie podana, zostanie obliczona automatycznie. Może być używana do rysowania wielokątów foremnych.</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">home</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">position</span><span class="p">()</span>
 <span class="go">(0.00,0.00)</span>
@@ -981,7 +898,7 @@ calculated automatically.  May be used to draw regular polygons.</p>
 <span class="go">(-0.00,0.00)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">heading</span><span class="p">()</span>
 <span class="go">0.0</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="mi">120</span><span class="p">,</span> <span class="mi">180</span><span class="p">)</span>  <span class="c1"># draw a semicircle</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="mi">120</span><span class="p">,</span> <span class="mi">180</span><span class="p">)</span>  <span class="c1"># narysuj półkole</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">position</span><span class="p">()</span>
 <span class="go">(0.00,240.00)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">heading</span><span class="p">()</span>
@@ -996,13 +913,12 @@ calculated automatically.  May be used to draw regular polygons.</p>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parametry<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>size</strong> – an integer &gt;= 1 (if given)</p></li>
-<li><p><strong>color</strong> – a colorstring or a numeric color tuple</p></li>
+<li><p><strong>size</strong> – liczba całkowita &gt;= 1 (jeśli podano)</p></li>
+<li><p><strong>color</strong> – colorstring lub numeryczna krotka koloru</p></li>
 </ul>
 </dd>
 </dl>
-<p>Draw a circular dot with diameter <em>size</em>, using <em>color</em>.  If <em>size</em> is
-not given, the maximum of pensize+4 and 2*pensize is used.</p>
+<p>Rysuje okrągłą kropkę o średnicy <em>size</em>, używając koloru <em>color</em>.  Jeśli nie podano <em>size</em>, używana jest maksymalna wartość z pensize+4 i 2*pensize.</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">home</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">dot</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">fd</span><span class="p">(</span><span class="mi">50</span><span class="p">);</span> <span class="n">turtle</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="s2">&quot;blue&quot;</span><span class="p">);</span> <span class="n">turtle</span><span class="o">.</span><span class="n">fd</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
@@ -1017,9 +933,7 @@ not given, the maximum of pensize+4 and 2*pensize is used.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="turtle.stamp">
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">stamp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turtle.stamp" title="Link to this definition">¶</a></dt>
-<dd><p>Stamp a copy of the turtle shape onto the canvas at the current turtle
-position.  Return a stamp_id for that stamp, which can be used to delete
-it by calling <code class="docutils literal notranslate"><span class="pre">clearstamp(stamp_id)</span></code>.</p>
+<dd><p>Stempluje kopię kształtu żółwia na płótnie w bieżącej pozycji żółwia. Zwraca stamp_id dla tego stempla, który może być użyty do usunięcia go przez wywołanie <code class="docutils literal notranslate"><span class="pre">clearstamp(stamp_id)</span></code>.</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="s2">&quot;blue&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">stamp_id</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">stamp</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">fd</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
@@ -1032,11 +946,10 @@ it by calling <code class="docutils literal notranslate"><span class="pre">clear
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">clearstamp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stampid</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#turtle.clearstamp" title="Link to this definition">¶</a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parametry<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>stampid</strong> – an integer, must be return value of previous
-<a class="reference internal" href="#turtle.stamp" title="turtle.stamp"><code class="xref py py-func docutils literal notranslate"><span class="pre">stamp()</span></code></a> call</p>
+<dd class="field-odd"><p><strong>stampid</strong> – liczba całkowita, musi być wartością zwróconą przez wywołanie poprzedniego <a class="reference internal" href="#turtle.stamp" title="turtle.stamp"><code class="xref py py-func docutils literal notranslate"><span class="pre">stamp()</span></code></a></p>
 </dd>
 </dl>
-<p>Delete stamp with given <em>stampid</em>.</p>
+<p>Usunięcie stempla z podanym <em>stampid</em>.</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">position</span><span class="p">()</span>
 <span class="go">(150.00,-0.00)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="s2">&quot;blue&quot;</span><span class="p">)</span>
@@ -1056,12 +969,10 @@ it by calling <code class="docutils literal notranslate"><span class="pre">clear
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">clearstamps</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#turtle.clearstamps" title="Link to this definition">¶</a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parametry<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>n</strong> – an integer (or <code class="docutils literal notranslate"><span class="pre">None</span></code>)</p>
+<dd class="field-odd"><p><strong>n</strong> – liczba całkowita (lub <code class="docutils literal notranslate"><span class="pre">None</span></code>)</p>
 </dd>
 </dl>
-<p>Delete all or first/last <em>n</em> of turtle’s stamps.  If <em>n</em> is <code class="docutils literal notranslate"><span class="pre">None</span></code>, delete
-all stamps, if <em>n</em> &gt; 0 delete first <em>n</em> stamps, else if <em>n</em> &lt; 0 delete
-last <em>n</em> stamps.</p>
+<p>Usuwa wszystkie lub pierwsze/ostatnie <em>n</em> stempli żółwia. Jeśli <em>n</em> to <code class="docutils literal notranslate"><span class="pre">None</span></code>, usuwa wszystkie stemple, jeśli <em>n</em> &gt; 0 usuwa pierwsze <em>n</em> stempli, inaczej jeśli <em>n</em> &lt; 0 usuwa ostatnie <em>n</em> stempli.</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">8</span><span class="p">):</span>
 <span class="gp">... </span>    <span class="n">unused_stamp_id</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">stamp</span><span class="p">()</span>
 <span class="gp">... </span>    <span class="n">turtle</span><span class="o">.</span><span class="n">fd</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
@@ -1075,8 +986,7 @@ last <em>n</em> stamps.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="turtle.undo">
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">undo</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turtle.undo" title="Link to this definition">¶</a></dt>
-<dd><p>Undo (repeatedly) the last turtle action(s).  Number of available
-undo actions is determined by the size of the undobuffer.</p>
+<dd><p>Cofa (wielokrotnie) ostatnią akcję (akcje) żółwia. Liczba dostępnych cofnięć zależy od rozmiaru bufora cofania.</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
 <span class="gp">... </span>    <span class="n">turtle</span><span class="o">.</span><span class="n">fd</span><span class="p">(</span><span class="mi">50</span><span class="p">);</span> <span class="n">turtle</span><span class="o">.</span><span class="n">lt</span><span class="p">(</span><span class="mi">80</span><span class="p">)</span>
 <span class="gp">...</span>
@@ -1091,13 +1001,11 @@ undo actions is determined by the size of the undobuffer.</p>
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">speed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">speed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#turtle.speed" title="Link to this definition">¶</a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parametry<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>speed</strong> – an integer in the range 0..10 or a speedstring (see below)</p>
+<dd class="field-odd"><p><strong>speed</strong> – liczba całkowita w zakresie 0..10 lub nazwa prędkości (patrz poniżej)</p>
 </dd>
 </dl>
-<p>Set the turtle’s speed to an integer value in the range 0..10.  If no
-argument is given, return current speed.</p>
-<p>If input is a number greater than 10 or smaller than 0.5, speed is set
-to 0.  Speedstrings are mapped to speedvalues as follows:</p>
+<p>Ustawia prędkość żółwia na wartość liczby całkowitej w zakresie 0..10. Jeśli nie podano argumentu, zwraca aktualną prędkość.</p>
+<p>Jeśli wartość wejściowa jest większa niż 10 lub mniejsza niż 0,5, prędkość jest ustawiana na 0. Nazwy prędkości są mapowane na wartości prędkości w następujący sposób:</p>
 <ul class="simple">
 <li><p>„fastest”:  0</p></li>
 <li><p>„fast”:  10</p></li>
@@ -1105,11 +1013,8 @@ to 0.  Speedstrings are mapped to speedvalues as follows:</p>
 <li><p>„slow”:  3</p></li>
 <li><p>„slowest”:  1</p></li>
 </ul>
-<p>Speeds from 1 to 10 enforce increasingly faster animation of line drawing
-and turtle turning.</p>
-<p>Attention: <em>speed</em> = 0 means that <em>no</em> animation takes
-place. forward/back makes turtle jump and likewise left/right make the
-turtle turn instantly.</p>
+<p>Prędkości od 1 do 10 wymuszają coraz szybszą animację rysowania linii i obracania żółwia.</p>
+<p>Uwaga: <em>speed</em> = 0 oznacza, że <em>żadna</em> animacja nie ma miejsca. forward/back sprawia, że żółw skacze i podobnie left/right sprawia, że żółw natychmiast się obraca.</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">speed</span><span class="p">()</span>
 <span class="go">3</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">speed</span><span class="p">(</span><span class="s1">&#39;normal&#39;</span><span class="p">)</span>
@@ -1124,13 +1029,13 @@ turtle turn instantly.</p>
 
 </section>
 <section id="tell-turtle-s-state">
-<h3>Tell Turtle’s state<a class="headerlink" href="#tell-turtle-s-state" title="Link to this heading">¶</a></h3>
+<h3>Pobieranie stanu żółwia<a class="headerlink" href="#tell-turtle-s-state" title="Link to this heading">¶</a></h3>
 <dl class="py function">
 <dt class="sig sig-object py" id="turtle.position">
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">position</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turtle.position" title="Link to this definition">¶</a></dt>
 <dt class="sig sig-object py" id="turtle.pos">
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">pos</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turtle.pos" title="Link to this definition">¶</a></dt>
-<dd><p>Return the turtle’s current location (x,y) (as a <a class="reference internal" href="#turtle.Vec2D" title="turtle.Vec2D"><code class="xref py py-class docutils literal notranslate"><span class="pre">Vec2D</span></code></a> vector).</p>
+<dd><p>Zwraca bieżącą lokalizację żółwia (x,y) (jako wektor <a class="reference internal" href="#turtle.Vec2D" title="turtle.Vec2D"><code class="xref py py-class docutils literal notranslate"><span class="pre">Vec2D</span></code></a>).</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">pos</span><span class="p">()</span>
 <span class="go">(440.00,-0.00)</span>
 </pre></div>
@@ -1143,14 +1048,12 @@ turtle turn instantly.</p>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parametry<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>x</strong> – a number or a pair/vector of numbers or a turtle instance</p></li>
-<li><p><strong>y</strong> – a number if <em>x</em> is a number, else <code class="docutils literal notranslate"><span class="pre">None</span></code></p></li>
+<li><p><strong>x</strong> – liczba lub para/wektor liczb lub instancja żółwia</p></li>
+<li><p><strong>y</strong> – liczba, jeśli <em>x</em> jest liczbą, w przeciwnym razie <code class="docutils literal notranslate"><span class="pre">None</span></code></p></li>
 </ul>
 </dd>
 </dl>
-<p>Return the angle between the line from turtle position to position specified
-by (x,y), the vector or the other turtle.  This depends on the turtle’s start
-orientation which depends on the mode - „standard”/”world” or „logo”.</p>
+<p>Zwraca kąt między linią od pozycji żółwia do pozycji określonej przez (x,y), wektor lub drugiego żółwia. Zależy to od orientacji początkowej żółwia, która zależy od trybu – „standard”/„world” lub „logo”.</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">goto</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">towards</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
 <span class="go">225.0</span>
@@ -1161,7 +1064,7 @@ orientation which depends on the mode - „standard”/”world” or „logo”
 <dl class="py function">
 <dt class="sig sig-object py" id="turtle.xcor">
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">xcor</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turtle.xcor" title="Link to this definition">¶</a></dt>
-<dd><p>Return the turtle’s x coordinate.</p>
+<dd><p>Zwraca współrzędną x żółwia.</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">home</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
@@ -1176,7 +1079,7 @@ orientation which depends on the mode - „standard”/”world” or „logo”
 <dl class="py function">
 <dt class="sig sig-object py" id="turtle.ycor">
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">ycor</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turtle.ycor" title="Link to this definition">¶</a></dt>
-<dd><p>Return the turtle’s y coordinate.</p>
+<dd><p>Zwraca współrzędną y żółwia.</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">home</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
@@ -1191,8 +1094,7 @@ orientation which depends on the mode - „standard”/”world” or „logo”
 <dl class="py function">
 <dt class="sig sig-object py" id="turtle.heading">
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">heading</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turtle.heading" title="Link to this definition">¶</a></dt>
-<dd><p>Return the turtle’s current heading (value depends on the turtle mode, see
-<a class="reference internal" href="#turtle.mode" title="turtle.mode"><code class="xref py py-func docutils literal notranslate"><span class="pre">mode()</span></code></a>).</p>
+<dd><p>Zwraca aktualny kierunek żółwia (wartość zależy od trybu żółwia, patrz <a class="reference internal" href="#turtle.mode" title="turtle.mode"><code class="xref py py-func docutils literal notranslate"><span class="pre">mode()</span></code></a>).</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">home</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">67</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">heading</span><span class="p">()</span>
@@ -1207,13 +1109,12 @@ orientation which depends on the mode - „standard”/”world” or „logo”
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parametry<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>x</strong> – a number or a pair/vector of numbers or a turtle instance</p></li>
-<li><p><strong>y</strong> – a number if <em>x</em> is a number, else <code class="docutils literal notranslate"><span class="pre">None</span></code></p></li>
+<li><p><strong>x</strong> – liczba lub para/wektor liczb lub instancja żółwia</p></li>
+<li><p><strong>y</strong> – liczba, jeśli <em>x</em> jest liczbą, w przeciwnym razie <code class="docutils literal notranslate"><span class="pre">None</span></code></p></li>
 </ul>
 </dd>
 </dl>
-<p>Return the distance from the turtle to (x,y), the given vector, or the given
-other turtle, in turtle step units.</p>
+<p>Zwraca odległość od żółwia do (x,y), podanego wektora lub podanego innego żółwia, w jednostkach kroku żółwia.</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">home</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span><span class="mi">40</span><span class="p">)</span>
 <span class="go">50.0</span>
@@ -1229,24 +1130,23 @@ other turtle, in turtle step units.</p>
 
 </section>
 <section id="settings-for-measurement">
-<h3>Settings for measurement<a class="headerlink" href="#settings-for-measurement" title="Link to this heading">¶</a></h3>
+<h3>Ustawienia pomiarowe<a class="headerlink" href="#settings-for-measurement" title="Link to this heading">¶</a></h3>
 <dl class="py function">
 <dt class="sig sig-object py" id="turtle.degrees">
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">degrees</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fullcircle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">360.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#turtle.degrees" title="Link to this definition">¶</a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parametry<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>fullcircle</strong> – a number</p>
+<dd class="field-odd"><p><strong>fullcircle</strong> – liczba</p>
 </dd>
 </dl>
-<p>Set angle measurement units, i.e. set number of „degrees” for a full circle.
-Default value is 360 degrees.</p>
+<p>Ustawia jednostki pomiaru kąta, tj. liczbę „stopni” dla pełnego okręgu. Domyślna wartość to 360 stopni.</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">home</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">heading</span><span class="p">()</span>
 <span class="go">90.0</span>
 
-<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Change angle measurement unit to grad (also known as gon,</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="c1"># grade, or gradian and equals 1/100-th of the right angle.)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Zmień jednostkę miary kąta na grad (inaczej gon</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># lub gradus; jest on równy 1/100 kąta prostego).</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">degrees</span><span class="p">(</span><span class="mf">400.0</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">heading</span><span class="p">()</span>
 <span class="go">100.0</span>
@@ -1260,8 +1160,7 @@ Default value is 360 degrees.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="turtle.radians">
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">radians</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turtle.radians" title="Link to this definition">¶</a></dt>
-<dd><p>Set the angle measurement units to radians.  Equivalent to
-<code class="docutils literal notranslate"><span class="pre">degrees(2*math.pi)</span></code>.</p>
+<dd><p>Ustawia jednostki miary kąta na radiany. Odpowiednik <code class="docutils literal notranslate"><span class="pre">degrees(2*math.pi)</span></code>.</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">home</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">heading</span><span class="p">()</span>
@@ -1275,9 +1174,9 @@ Default value is 360 degrees.</p>
 
 </section>
 <section id="id1">
-<h3>Pen control<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h3>
+<h3>Kontrola pióra<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h3>
 <section id="drawing-state">
-<h4>Drawing state<a class="headerlink" href="#drawing-state" title="Link to this heading">¶</a></h4>
+<h4>Stan rysowania<a class="headerlink" href="#drawing-state" title="Link to this heading">¶</a></h4>
 <dl class="py function">
 <dt class="sig sig-object py" id="turtle.pendown">
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">pendown</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turtle.pendown" title="Link to this definition">¶</a></dt>
@@ -1285,7 +1184,7 @@ Default value is 360 degrees.</p>
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">pd</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turtle.pd" title="Link to this definition">¶</a></dt>
 <dt class="sig sig-object py" id="turtle.down">
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">down</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turtle.down" title="Link to this definition">¶</a></dt>
-<dd><p>Pull the pen down – drawing when moving.</p>
+<dd><p>Opuszcza pióro w dół – rysowanie podczas ruchu.</p>
 </dd></dl>
 
 <dl class="py function">
@@ -1295,7 +1194,7 @@ Default value is 360 degrees.</p>
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">pu</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turtle.pu" title="Link to this definition">¶</a></dt>
 <dt class="sig sig-object py" id="turtle.up">
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">up</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turtle.up" title="Link to this definition">¶</a></dt>
-<dd><p>Pull the pen up – no drawing when moving.</p>
+<dd><p>Podnosi pióro do góry – nierysowanie podczas ruchu.</p>
 </dd></dl>
 
 <dl class="py function">
@@ -1305,15 +1204,13 @@ Default value is 360 degrees.</p>
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">width</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#turtle.width" title="Link to this definition">¶</a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parametry<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>width</strong> – a positive number</p>
+<dd class="field-odd"><p><strong>width</strong> – liczba dodatnia</p>
 </dd>
 </dl>
-<p>Set the line thickness to <em>width</em> or return it.  If resizemode is set to
-„auto” and turtleshape is a polygon, that polygon is drawn with the same line
-thickness.  If no argument is given, the current pensize is returned.</p>
+<p>Ustawia grubość linii na <em>width</em> lub zwraca ją. Jeśli resizemode jest ustawiony na „auto”, a turtleshape jest wielokątem, wielokąt ten jest rysowany z taką samą grubością linii. Jeśli nie podano argumentu, zwracany jest bieżący rozmiar pióra.</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">pensize</span><span class="p">()</span>
 <span class="go">1</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">pensize</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>   <span class="c1"># from here on lines of width 10 are drawn</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">pensize</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>   <span class="c1"># od tego momentu rysowane są linie o szerokości 10</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -1324,29 +1221,25 @@ thickness.  If no argument is given, the current pensize is returned.</p>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parametry<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>pen</strong> – a dictionary with some or all of the below listed keys</p></li>
-<li><p><strong>pendict</strong> – one or more keyword-arguments with the below listed keys as keywords</p></li>
+<li><p><strong>pen</strong> – słownik z niektórymi lub wszystkimi z poniższych kluczy</p></li>
+<li><p><strong>pendict</strong> – jedno lub więcej argumentów nazwanych z poniższymi kluczami jako nazwami</p></li>
 </ul>
 </dd>
 </dl>
-<p>Return or set the pen’s attributes in a „pen-dictionary” with the following
-key/value pairs:</p>
+<p>Zwraca lub ustawia atrybuty pióra w „pióro-słowniku” z następującymi parami klucz/wartość:</p>
 <ul class="simple">
 <li><p>„shown”: True/False</p></li>
 <li><p>„pendown”: True/False</p></li>
-<li><p>„pencolor”: color-string or color-tuple</p></li>
-<li><p>„fillcolor”: color-string or color-tuple</p></li>
-<li><p>„pensize”: positive number</p></li>
-<li><p>„speed”: number in range 0..10</p></li>
-<li><p>„resizemode”: „auto” or „user” or „noresize”</p></li>
-<li><p>„stretchfactor”: (positive number, positive number)</p></li>
-<li><p>„outline”: positive number</p></li>
-<li><p>„tilt”: number</p></li>
+<li><p>„pencolor”: nazwa koloru (color-string) lub kolor-krotka</p></li>
+<li><p>„fillcolor”: nazwa koloru (color-string) lub kolor-krotka</p></li>
+<li><p>„pensize”: liczba dodatnia</p></li>
+<li><p>„speed”: liczba z przedziału 0..10</p></li>
+<li><p>„resizemode”: „auto” lub „user” lub „noresize”</p></li>
+<li><p>„stretchfactor”: (liczba dodatnia, liczba dodatnia)</p></li>
+<li><p>„outline”: liczba dodatnia</p></li>
+<li><p>„tilt”: liczba</p></li>
 </ul>
-<p>This dictionary can be used as argument for a subsequent call to <a class="reference internal" href="#turtle.pen" title="turtle.pen"><code class="xref py py-func docutils literal notranslate"><span class="pre">pen()</span></code></a>
-to restore the former pen-state.  Moreover one or more of these attributes
-can be provided as keyword-arguments.  This can be used to set several pen
-attributes in one statement.</p>
+<p>Ten słownik może być użyty jako argument dla kolejnego wywołania <a class="reference internal" href="#turtle.pen" title="turtle.pen"><code class="xref py py-func docutils literal notranslate"><span class="pre">pen()</span></code></a> w celu przywrócenia poprzedniego stanu pióra. Co więcej, jeden lub więcej z tych atrybutów może być przekazany jako argument nazwany. Można to wykorzystać do ustawienia kilku atrybutów pióra w jednej instrukcji.</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">pen</span><span class="p">(</span><span class="n">fillcolor</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="n">pencolor</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="n">pensize</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">sorted</span><span class="p">(</span><span class="n">turtle</span><span class="o">.</span><span class="n">pen</span><span class="p">()</span><span class="o">.</span><span class="n">items</span><span class="p">())</span>
 <span class="go">[(&#39;fillcolor&#39;, &#39;black&#39;), (&#39;outline&#39;, 1), (&#39;pencolor&#39;, &#39;red&#39;),</span>
@@ -1368,7 +1261,7 @@ attributes in one statement.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="turtle.isdown">
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">isdown</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turtle.isdown" title="Link to this definition">¶</a></dt>
-<dd><p>Return <code class="docutils literal notranslate"><span class="pre">True</span></code> if pen is down, <code class="docutils literal notranslate"><span class="pre">False</span></code> if it’s up.</p>
+<dd><p>Zwraca <code class="docutils literal notranslate"><span class="pre">True</span></code> jeśli pióro jest opuszczone, <code class="docutils literal notranslate"><span class="pre">False</span></code> jeśli jest podniesione.</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">isdown</span><span class="p">()</span>
 <span class="go">False</span>
@@ -1381,30 +1274,23 @@ attributes in one statement.</p>
 
 </section>
 <section id="color-control">
-<h4>Color control<a class="headerlink" href="#color-control" title="Link to this heading">¶</a></h4>
+<h4>Kontrola koloru<a class="headerlink" href="#color-control" title="Link to this heading">¶</a></h4>
 <dl class="py function">
 <dt class="sig sig-object py" id="turtle.pencolor">
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">pencolor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#turtle.pencolor" title="Link to this definition">¶</a></dt>
-<dd><p>Return or set the pencolor.</p>
-<p>Four input formats are allowed:</p>
+<dd><p>Zwraca lub ustawia kolor pióra.</p>
+<p>Dozwolone są cztery formaty wejściowe:</p>
 <dl class="simple">
-<dt><code class="docutils literal notranslate"><span class="pre">pencolor()</span></code></dt><dd><p>Return the current pencolor as color specification string or
-as a tuple (see example).  May be used as input to another
-color/pencolor/fillcolor call.</p>
+<dt><code class="docutils literal notranslate"><span class="pre">pencolor()</span></code></dt><dd><p>Zwraca bieżący kolor pióra jako ciąg specyfikacji koloru lub jako krotkę (patrz przykład). Może być użyty jako dane wejściowe do innego wywołania color/pencolor/fillcolor.</p>
 </dd>
-<dt><code class="docutils literal notranslate"><span class="pre">pencolor(colorstring)</span></code></dt><dd><p>Set pencolor to <em>colorstring</em>, which is a Tk color specification string,
-such as <code class="docutils literal notranslate"><span class="pre">&quot;red&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;yellow&quot;</span></code>, or <code class="docutils literal notranslate"><span class="pre">&quot;#33cc8c&quot;</span></code>.</p>
+<dt><code class="docutils literal notranslate"><span class="pre">pencolor(colorstring)</span></code></dt><dd><p>Ustawia kolor pióra na <em>colorstring</em>, który jest ciągiem specyfikacji koloru Tk, takim jak <code class="docutils literal notranslate"><span class="pre">&quot;red&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;yellow&quot;</span></code>, lub <code class="docutils literal notranslate"><span class="pre">&quot;#33cc8c&quot;</span></code>.</p>
 </dd>
-<dt><code class="docutils literal notranslate"><span class="pre">pencolor((r,</span> <span class="pre">g,</span> <span class="pre">b))</span></code></dt><dd><p>Set pencolor to the RGB color represented by the tuple of <em>r</em>, <em>g</em>, and
-<em>b</em>.  Each of <em>r</em>, <em>g</em>, and <em>b</em> must be in the range 0..colormode, where
-colormode is either 1.0 or 255 (see <a class="reference internal" href="#turtle.colormode" title="turtle.colormode"><code class="xref py py-func docutils literal notranslate"><span class="pre">colormode()</span></code></a>).</p>
+<dt><code class="docutils literal notranslate"><span class="pre">pencolor((r,</span> <span class="pre">g,</span> <span class="pre">b))</span></code></dt><dd><p>Ustawia kolor pióra na kolor RGB reprezentowany przez krotkę <em>r</em>, <em>g</em> i <em>b</em>. Każda z <em>r</em>, <em>g</em> i <em>b</em> musi należeć do zakresu 0..colormode, gdzie colormode to 1.0 lub 255 (patrz <a class="reference internal" href="#turtle.colormode" title="turtle.colormode"><code class="xref py py-func docutils literal notranslate"><span class="pre">colormode()</span></code></a>).</p>
 </dd>
-<dt><code class="docutils literal notranslate"><span class="pre">pencolor(r,</span> <span class="pre">g,</span> <span class="pre">b)</span></code></dt><dd><p>Set pencolor to the RGB color represented by <em>r</em>, <em>g</em>, and <em>b</em>.  Each of
-<em>r</em>, <em>g</em>, and <em>b</em> must be in the range 0..colormode.</p>
+<dt><code class="docutils literal notranslate"><span class="pre">pencolor(r,</span> <span class="pre">g,</span> <span class="pre">b)</span></code></dt><dd><p>Ustawia kolor pióra na kolor RGB reprezentowany przez <em>r</em>, <em>g</em> i <em>b</em>.  Każda z <em>r</em>, <em>g</em> i <em>b</em> musi należeć do zakresu 0..colormode.</p>
 </dd>
 </dl>
-<p>If turtleshape is a polygon, the outline of that polygon is drawn with the
-newly set pencolor.</p>
+<p>Jeśli turtleshape jest wielokątem, kontur tego wielokąta jest rysowany przy użyciu nowo ustawionego koloru pióra.</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">colormode</span><span class="p">()</span>
 <span class="go">1.0</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">pencolor</span><span class="p">()</span>
@@ -1429,32 +1315,25 @@ newly set pencolor.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="turtle.fillcolor">
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">fillcolor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#turtle.fillcolor" title="Link to this definition">¶</a></dt>
-<dd><p>Return or set the fillcolor.</p>
-<p>Four input formats are allowed:</p>
+<dd><p>Zwraca lub ustawia kolor wypełnienia.</p>
+<p>Dozwolone są cztery formaty wejściowe:</p>
 <dl class="simple">
-<dt><code class="docutils literal notranslate"><span class="pre">fillcolor()</span></code></dt><dd><p>Return the current fillcolor as color specification string, possibly
-in tuple format (see example).  May be used as input to another
-color/pencolor/fillcolor call.</p>
+<dt><code class="docutils literal notranslate"><span class="pre">fillcolor()</span></code></dt><dd><p>Zwraca bieżący kolor wypełnienia jako ciąg specyfikacji koloru, ewentualnie w formacie krotki (patrz przykład). Może być użyty jako dane wejściowe do innego wywołania color/pencolor/fillcolor.</p>
 </dd>
-<dt><code class="docutils literal notranslate"><span class="pre">fillcolor(colorstring)</span></code></dt><dd><p>Set fillcolor to <em>colorstring</em>, which is a Tk color specification string,
-such as <code class="docutils literal notranslate"><span class="pre">&quot;red&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;yellow&quot;</span></code>, or <code class="docutils literal notranslate"><span class="pre">&quot;#33cc8c&quot;</span></code>.</p>
+<dt><code class="docutils literal notranslate"><span class="pre">fillcolor(colorstring)</span></code></dt><dd><p>Ustawia kolor wypełnienia na <em>colorstring</em>, który jest ciągiem specyfikacji koloru Tk, takim jak <code class="docutils literal notranslate"><span class="pre">&quot;red&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;yellow&quot;</span></code>, lub <code class="docutils literal notranslate"><span class="pre">&quot;#33cc8c&quot;</span></code>.</p>
 </dd>
-<dt><code class="docutils literal notranslate"><span class="pre">fillcolor((r,</span> <span class="pre">g,</span> <span class="pre">b))</span></code></dt><dd><p>Set fillcolor to the RGB color represented by the tuple of <em>r</em>, <em>g</em>, and
-<em>b</em>.  Each of <em>r</em>, <em>g</em>, and <em>b</em> must be in the range 0..colormode, where
-colormode is either 1.0 or 255 (see <a class="reference internal" href="#turtle.colormode" title="turtle.colormode"><code class="xref py py-func docutils literal notranslate"><span class="pre">colormode()</span></code></a>).</p>
+<dt><code class="docutils literal notranslate"><span class="pre">fillcolor((r,</span> <span class="pre">g,</span> <span class="pre">b))</span></code></dt><dd><p>Ustawia kolor wypełnienia na kolor RGB reprezentowany przez krotkę <em>r</em>, <em>g</em> i <em>b</em>.  Każdy z <em>r</em>, <em>g</em> i <em>b</em> musi należeć do zakresu 0..colormode, gdzie colormode to 1.0 lub 255 (patrz <a class="reference internal" href="#turtle.colormode" title="turtle.colormode"><code class="xref py py-func docutils literal notranslate"><span class="pre">colormode()</span></code></a>).</p>
 </dd>
-<dt><code class="docutils literal notranslate"><span class="pre">fillcolor(r,</span> <span class="pre">g,</span> <span class="pre">b)</span></code></dt><dd><p>Set fillcolor to the RGB color represented by <em>r</em>, <em>g</em>, and <em>b</em>.  Each of
-<em>r</em>, <em>g</em>, and <em>b</em> must be in the range 0..colormode.</p>
+<dt><code class="docutils literal notranslate"><span class="pre">fillcolor(r,</span> <span class="pre">g,</span> <span class="pre">b)</span></code></dt><dd><p>Ustawia kolor wypełnienia na kolor RGB reprezentowany przez <em>r</em>, <em>g</em> i <em>b</em>.  Każde z <em>r</em>, <em>g</em> i <em>b</em> musi należeć do zakresu 0..colormode.</p>
 </dd>
 </dl>
-<p>If turtleshape is a polygon, the interior of that polygon is drawn
-with the newly set fillcolor.</p>
+<p>Jeśli turtleshape jest wielokątem, wnętrze tego wielokąta jest rysowane z nowo ustawionym kolorem wypełnienia.</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">fillcolor</span><span class="p">(</span><span class="s2">&quot;violet&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">fillcolor</span><span class="p">()</span>
 <span class="go">&#39;violet&#39;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">pencolor</span><span class="p">()</span>
 <span class="go">(50.0, 193.0, 143.0)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">fillcolor</span><span class="p">((</span><span class="mi">50</span><span class="p">,</span> <span class="mi">193</span><span class="p">,</span> <span class="mi">143</span><span class="p">))</span>  <span class="c1"># Integers, not floats</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">fillcolor</span><span class="p">((</span><span class="mi">50</span><span class="p">,</span> <span class="mi">193</span><span class="p">,</span> <span class="mi">143</span><span class="p">))</span>  <span class="c1"># całkowite, nie zmiennoprzecinkowe</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">fillcolor</span><span class="p">()</span>
 <span class="go">(50.0, 193.0, 143.0)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">fillcolor</span><span class="p">(</span><span class="s1">&#39;#ffffff&#39;</span><span class="p">)</span>
@@ -1467,23 +1346,17 @@ with the newly set fillcolor.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="turtle.color">
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">color</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#turtle.color" title="Link to this definition">¶</a></dt>
-<dd><p>Return or set pencolor and fillcolor.</p>
-<p>Several input formats are allowed.  They use 0 to 3 arguments as
-follows:</p>
+<dd><p>Zwraca lub ustawia kolor pióra i wypełnienia.</p>
+<p>Dozwolonych jest kilka formatów wejściowych. Używają one od 0 do 3 argumentów w następujący sposób:</p>
 <dl class="simple">
-<dt><code class="docutils literal notranslate"><span class="pre">color()</span></code></dt><dd><p>Return the current pencolor and the current fillcolor as a pair of color
-specification strings or tuples as returned by <a class="reference internal" href="#turtle.pencolor" title="turtle.pencolor"><code class="xref py py-func docutils literal notranslate"><span class="pre">pencolor()</span></code></a> and
-<a class="reference internal" href="#turtle.fillcolor" title="turtle.fillcolor"><code class="xref py py-func docutils literal notranslate"><span class="pre">fillcolor()</span></code></a>.</p>
+<dt><code class="docutils literal notranslate"><span class="pre">color()</span></code></dt><dd><p>Zwraca bieżący kolor pióra i bieżący kolor wypełnienia jako parę ciągów specyfikacji kolorów lub krotek zwracanych przez <a class="reference internal" href="#turtle.pencolor" title="turtle.pencolor"><code class="xref py py-func docutils literal notranslate"><span class="pre">pencolor()</span></code></a> i <a class="reference internal" href="#turtle.fillcolor" title="turtle.fillcolor"><code class="xref py py-func docutils literal notranslate"><span class="pre">fillcolor()</span></code></a>.</p>
 </dd>
-<dt><code class="docutils literal notranslate"><span class="pre">color(colorstring)</span></code>, <code class="docutils literal notranslate"><span class="pre">color((r,g,b))</span></code>, <code class="docutils literal notranslate"><span class="pre">color(r,g,b)</span></code></dt><dd><p>Inputs as in <a class="reference internal" href="#turtle.pencolor" title="turtle.pencolor"><code class="xref py py-func docutils literal notranslate"><span class="pre">pencolor()</span></code></a>, set both, fillcolor and pencolor, to the
-given value.</p>
+<dt><code class="docutils literal notranslate"><span class="pre">color(colorstring)</span></code>, <code class="docutils literal notranslate"><span class="pre">color((r,g,b))</span></code>, <code class="docutils literal notranslate"><span class="pre">color(r,g,b)</span></code></dt><dd><p>Dane wejściowe jak w <a class="reference internal" href="#turtle.pencolor" title="turtle.pencolor"><code class="xref py py-func docutils literal notranslate"><span class="pre">pencolor()</span></code></a>, ustawiają zarówno kolor wypełnienia, jak i kolor pióra na podaną wartość.</p>
 </dd>
-<dt><code class="docutils literal notranslate"><span class="pre">color(colorstring1,</span> <span class="pre">colorstring2)</span></code>, <code class="docutils literal notranslate"><span class="pre">color((r1,g1,b1),</span> <span class="pre">(r2,g2,b2))</span></code></dt><dd><p>Equivalent to <code class="docutils literal notranslate"><span class="pre">pencolor(colorstring1)</span></code> and <code class="docutils literal notranslate"><span class="pre">fillcolor(colorstring2)</span></code>
-and analogously if the other input format is used.</p>
+<dt><code class="docutils literal notranslate"><span class="pre">color(colorstring1,</span> <span class="pre">colorstring2)</span></code>, <code class="docutils literal notranslate"><span class="pre">color((r1,g1,b1),</span> <span class="pre">(r2,g2,b2))</span></code></dt><dd><p>Odpowiednik dla <code class="docutils literal notranslate"><span class="pre">pencolor(colorstring1)</span></code> i <code class="docutils literal notranslate"><span class="pre">fillcolor(colorstring2)</span></code> oraz analogicznie, jeśli używany jest inny format wejścia.</p>
 </dd>
 </dl>
-<p>If turtleshape is a polygon, outline and interior of that polygon is drawn
-with the newly set colors.</p>
+<p>Jeśli turtleshape jest wielokątem, kontur i wnętrze tego wielokąta są rysowane z nowo ustawionymi kolorami.</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="s2">&quot;green&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">color</span><span class="p">()</span>
 <span class="go">(&#39;red&#39;, &#39;green&#39;)</span>
@@ -1494,14 +1367,14 @@ with the newly set colors.</p>
 </div>
 </dd></dl>
 
-<p>See also: Screen method <a class="reference internal" href="#turtle.colormode" title="turtle.colormode"><code class="xref py py-func docutils literal notranslate"><span class="pre">colormode()</span></code></a>.</p>
+<p>Zobacz także: Metoda klasy Screen <a class="reference internal" href="#turtle.colormode" title="turtle.colormode"><code class="xref py py-func docutils literal notranslate"><span class="pre">colormode()</span></code></a>.</p>
 </section>
 <section id="filling">
-<h4>Filling<a class="headerlink" href="#filling" title="Link to this heading">¶</a></h4>
+<h4>Wypełnienie<a class="headerlink" href="#filling" title="Link to this heading">¶</a></h4>
 <dl class="py function">
 <dt class="sig sig-object py" id="turtle.filling">
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">filling</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turtle.filling" title="Link to this definition">¶</a></dt>
-<dd><p>Return fillstate (<code class="docutils literal notranslate"><span class="pre">True</span></code> if filling, <code class="docutils literal notranslate"><span class="pre">False</span></code> else).</p>
+<dd><p>Zwraca fillstate (<code class="docutils literal notranslate"><span class="pre">True</span></code> jeśli wypełnienie, <code class="docutils literal notranslate"><span class="pre">False</span></code> w przeciwnym razie).</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">begin_fill</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">if</span> <span class="n">turtle</span><span class="o">.</span><span class="n">filling</span><span class="p">():</span>
 <span class="gp">... </span>   <span class="n">turtle</span><span class="o">.</span><span class="n">pensize</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
@@ -1536,17 +1409,14 @@ fill-block and <a class="reference internal" href="#turtle.end_fill" title="turt
 <dl class="py function">
 <dt class="sig sig-object py" id="turtle.begin_fill">
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">begin_fill</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turtle.begin_fill" title="Link to this definition">¶</a></dt>
-<dd><p>To be called just before drawing a shape to be filled.</p>
+<dd><p>Do wywołania tuż przed rysowaniem kształtu do wypełnienia.</p>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="turtle.end_fill">
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">end_fill</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turtle.end_fill" title="Link to this definition">¶</a></dt>
-<dd><p>Fill the shape drawn after the last call to <a class="reference internal" href="#turtle.begin_fill" title="turtle.begin_fill"><code class="xref py py-func docutils literal notranslate"><span class="pre">begin_fill()</span></code></a>.</p>
-<p>Whether or not overlap regions for self-intersecting polygons
-or multiple shapes are filled depends on the operating system graphics,
-type of overlap, and number of overlaps.  For example, the Turtle star
-above may be either all yellow or have some white regions.</p>
+<dd><p>Wypełnia kształt narysowany po ostatnim wywołaniu <a class="reference internal" href="#turtle.begin_fill" title="turtle.begin_fill"><code class="xref py py-func docutils literal notranslate"><span class="pre">begin_fill()</span></code></a>.</p>
+<p>To, czy obszary nakładania się przecinających się wielokątów lub wielu kształtów są wypełnione, zależy od grafiki systemu operacyjnego, typu nakładania się i liczby nakładających się obszarów.  Na przykład żółwiowa gwiazda na górze rozdziału może być cała żółta lub mieć kilka białych obszarów.</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="s2">&quot;red&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">begin_fill</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="mi">80</span><span class="p">)</span>
@@ -1557,12 +1427,11 @@ above may be either all yellow or have some white regions.</p>
 
 </section>
 <section id="more-drawing-control">
-<h4>More drawing control<a class="headerlink" href="#more-drawing-control" title="Link to this heading">¶</a></h4>
+<h4>Więcej kontroli rysowania<a class="headerlink" href="#more-drawing-control" title="Link to this heading">¶</a></h4>
 <dl class="py function">
 <dt class="sig sig-object py" id="turtle.reset">
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">reset</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turtle.reset" title="Link to this definition">¶</a></dt>
-<dd><p>Delete the turtle’s drawings from the screen, re-center the turtle and set
-variables to the default values.</p>
+<dd><p>Usuń rysunki żółwia z ekranu, ponownie wyśrodkuj żółwia i ustaw zmienne na wartości domyślne.</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">goto</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">22</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">position</span><span class="p">()</span>
@@ -1581,8 +1450,7 @@ variables to the default values.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="turtle.clear">
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">clear</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turtle.clear" title="Link to this definition">¶</a></dt>
-<dd><p>Delete the turtle’s drawings from the screen.  Do not move turtle.  State and
-position of the turtle as well as drawings of other turtles are not affected.</p>
+<dd><p>Usuwa rysunki żółwia z ekranu. Nie rusza żółwia. Stan i pozycja żółwia, a także rysunki innych żółwi, nie zostaną zmienione.</p>
 </dd></dl>
 
 <dl class="py function">
@@ -1591,17 +1459,14 @@ position of the turtle as well as drawings of other turtles are not affected.</p
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parametry<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>arg</strong> – object to be written to the TurtleScreen</p></li>
+<li><p><strong>arg</strong> – obiekt, który ma zostać zapisany na TurtleScreen</p></li>
 <li><p><strong>move</strong> – True/False</p></li>
-<li><p><strong>align</strong> – one of the strings „left”, „center” or right”</p></li>
-<li><p><strong>font</strong> – a triple (fontname, fontsize, fonttype)</p></li>
+<li><p><strong>align</strong> – jedna z wartości „left”, „center” lub „right”</p></li>
+<li><p><strong>font</strong> – trójka wartości (fontname, fontsize, fonttype)</p></li>
 </ul>
 </dd>
 </dl>
-<p>Write text - the string representation of <em>arg</em> - at the current turtle
-position according to <em>align</em> („left”, „center” or „right”) and with the given
-font.  If <em>move</em> is true, the pen is moved to the bottom-right corner of the
-text.  By default, <em>move</em> is <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+<p>Pisze tekst – reprezentację obiektu <em>arg</em> – w bieżącej pozycji żółwia zgodnie z <em>align</em> („left”, „center” lub „right”) i z podaną czcionką.  Jeśli <em>move</em> to <code class="docutils literal notranslate"><span class="pre">True</span></code>, pióro jest przesuwane do prawego dolnego rogu tekstu.  Domyślnie <em>move</em> ma wartość <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Home = &quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="n">align</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">write</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span> <span class="kc">True</span><span class="p">)</span>
 </pre></div>
@@ -1611,17 +1476,15 @@ text.  By default, <em>move</em> is <code class="docutils literal notranslate"><
 </section>
 </section>
 <section id="turtle-state">
-<h3>Turtle state<a class="headerlink" href="#turtle-state" title="Link to this heading">¶</a></h3>
+<h3>Stan żółwia<a class="headerlink" href="#turtle-state" title="Link to this heading">¶</a></h3>
 <section id="visibility">
-<h4>Visibility<a class="headerlink" href="#visibility" title="Link to this heading">¶</a></h4>
+<h4>Widoczność<a class="headerlink" href="#visibility" title="Link to this heading">¶</a></h4>
 <dl class="py function">
 <dt class="sig sig-object py" id="turtle.hideturtle">
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">hideturtle</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turtle.hideturtle" title="Link to this definition">¶</a></dt>
 <dt class="sig sig-object py" id="turtle.ht">
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">ht</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turtle.ht" title="Link to this definition">¶</a></dt>
-<dd><p>Make the turtle invisible.  It’s a good idea to do this while you’re in the
-middle of doing some complex drawing, because hiding the turtle speeds up the
-drawing observably.</p>
+<dd><p>Czyni żółwia niewidocznym. Dobrym pomysłem jest zrobienie tego w trakcie wykonywania złożonego rysunku, ponieważ ukrycie żółwia znacznie przyspiesza rysowanie.</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">hideturtle</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -1632,7 +1495,7 @@ drawing observably.</p>
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">showturtle</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turtle.showturtle" title="Link to this definition">¶</a></dt>
 <dt class="sig sig-object py" id="turtle.st">
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">st</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turtle.st" title="Link to this definition">¶</a></dt>
-<dd><p>Make the turtle visible.</p>
+<dd><p>Sprawia, że żółw jest widoczny.</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">showturtle</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -1641,7 +1504,7 @@ drawing observably.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="turtle.isvisible">
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">isvisible</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turtle.isvisible" title="Link to this definition">¶</a></dt>
-<dd><p>Return <code class="docutils literal notranslate"><span class="pre">True</span></code> if the Turtle is shown, <code class="docutils literal notranslate"><span class="pre">False</span></code> if it’s hidden.</p>
+<dd><p>Zwraca <code class="docutils literal notranslate"><span class="pre">True</span></code> jeśli żółw jest widoczny, <code class="docutils literal notranslate"><span class="pre">False</span></code> jeśli jest ukryty.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">hideturtle</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">isvisible</span><span class="p">()</span>
 <span class="go">False</span>
@@ -1654,20 +1517,16 @@ drawing observably.</p>
 
 </section>
 <section id="appearance">
-<h4>Appearance<a class="headerlink" href="#appearance" title="Link to this heading">¶</a></h4>
+<h4>Wygląd<a class="headerlink" href="#appearance" title="Link to this heading">¶</a></h4>
 <dl class="py function">
 <dt class="sig sig-object py" id="turtle.shape">
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">shape</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#turtle.shape" title="Link to this definition">¶</a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parametry<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>name</strong> – a string which is a valid shapename</p>
+<dd class="field-odd"><p><strong>name</strong> – ciąg znaków, który jest prawidłową nazwą kształtu</p>
 </dd>
 </dl>
-<p>Set turtle shape to shape with given <em>name</em> or, if name is not given, return
-name of current shape.  Shape with <em>name</em> must exist in the TurtleScreen’s
-shape dictionary.  Initially there are the following polygon shapes: „arrow”,
-„turtle”, „circle”, „square”, „triangle”, „classic”.  To learn about how to
-deal with shapes see Screen method <a class="reference internal" href="#turtle.register_shape" title="turtle.register_shape"><code class="xref py py-func docutils literal notranslate"><span class="pre">register_shape()</span></code></a>.</p>
+<p>Ustawia kształt żółwia na kształt o podanej nazwie <em>name</em> lub, jeśli nazwa nie została podana, zwraca nazwę bieżącego kształtu. Kształt o nazwie <em>name</em> musi istnieć w słowniku kształtów TurtleScreen. Początkowo dostępne są następujące kształty wielokątów: „arrow”, „turtle”, „circle”, „square”, „triangle”, „classic”. Aby dowiedzieć się, jak radzić sobie z kształtami, zobacz metodę Screen <a class="reference internal" href="#turtle.register_shape" title="turtle.register_shape"><code class="xref py py-func docutils literal notranslate"><span class="pre">register_shape()</span></code></a>.</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">shape</span><span class="p">()</span>
 <span class="go">&#39;classic&#39;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">turtle</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="s2">&quot;turtle&quot;</span><span class="p">)</span>
@@ -1682,14 +1541,12 @@ deal with shapes see Screen method <a class="reference internal" href="#turtle.r
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">resizemode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rmode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#turtle.resizemode" title="Link to this definition">¶</a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parametry<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>rmode</strong> – one of the strings „auto”, „user”, „noresize”</p>
+<dd class="field-odd"><p><strong>rmode</strong> – jeden z ciągów znaków „auto”, „user”, „noresize”</p>
 </dd>
 </dl>
-<p>Set resizemode to one of the values: „auto”, „user”, „noresize”.  If <em>rmode</em>
-is not given, return current resizemode.  Different resizemodes have the
-following effects:</p>
+<p>Ustawia tryb zmiany rozmiaru na jedną z wartości: „auto”, „user”, „noresize”. Jeśli nie podano <em>rmode</em>, zwraca bieżący tryb zmiany rozmiaru. Różne tryby zmiany rozmiaru mają następujące skutki:</p>
 <ul class="simple">
-<li><p>„auto”: adapts the appearance of the turtle corresponding to the value of pensize.</p></li>
+<li><p>„auto”: dostosowuje wygląd żółwia do wartości rozmiaru pióra.</p></li>
 <li><p>„user”: adapts the appearance of the turtle according to the values of
 stretchfactor and outlinewidth (outline), which are set by
 <a class="reference internal" href="#turtle.shapesize" title="turtle.shapesize"><code class="xref py py-func docutils literal notranslate"><span class="pre">shapesize()</span></code></a>.</p></li>
@@ -1766,7 +1623,7 @@ heading of the turtle are sheared.</p>
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">tilt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#turtle.tilt" title="Link to this definition">¶</a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parametry<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>angle</strong> – a number</p>
+<dd class="field-odd"><p><strong>angle</strong> – liczba</p>
 </dd>
 </dl>
 <p>Rotate the turtleshape by <em>angle</em> from its current tilt-angle, but do <em>not</em>
@@ -1855,7 +1712,7 @@ can be used to define a new shape or components of a compound shape.</p>
 </section>
 </section>
 <section id="using-events">
-<h3>Using events<a class="headerlink" href="#using-events" title="Link to this heading">¶</a></h3>
+<h3>Korzystanie ze zdarzeń<a class="headerlink" href="#using-events" title="Link to this heading">¶</a></h3>
 <dl class="py function">
 <dt class="sig sig-object py">
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">onclick</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fun</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">btn</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span></dt>
@@ -1938,7 +1795,7 @@ the screen thereby producing handdrawings (if pen is down).</p>
 
 </section>
 <section id="special-turtle-methods">
-<h3>Special Turtle methods<a class="headerlink" href="#special-turtle-methods" title="Link to this heading">¶</a></h3>
+<h3>Specjalne metody żółwi<a class="headerlink" href="#special-turtle-methods" title="Link to this heading">¶</a></h3>
 <dl class="py function">
 <dt class="sig sig-object py" id="turtle.poly">
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">poly</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turtle.poly" title="Link to this definition">¶</a></dt>
@@ -2063,7 +1920,7 @@ below:</p>
 <li><p>Create an empty Shape object of type „compound”.</p></li>
 <li><p>Add as many components to this object as desired, using the
 <a class="reference internal" href="#turtle.Shape.addcomponent" title="turtle.Shape.addcomponent"><code class="xref py py-meth docutils literal notranslate"><span class="pre">addcomponent()</span></code></a> method.</p>
-<p>For example:</p>
+<p>Na przykład:</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">Shape</span><span class="p">(</span><span class="s2">&quot;compound&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">poly1</span> <span class="o">=</span> <span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">),(</span><span class="mi">10</span><span class="p">,</span><span class="o">-</span><span class="mi">5</span><span class="p">),(</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">),(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="o">-</span><span class="mi">5</span><span class="p">))</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">addcomponent</span><span class="p">(</span><span class="n">poly1</span><span class="p">,</span> <span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="s2">&quot;blue&quot;</span><span class="p">)</span>
@@ -2092,7 +1949,7 @@ Shape class <em>only</em> when using compound shapes like shown above!</p>
 <p>Most of the examples in this section refer to a TurtleScreen instance called
 <code class="docutils literal notranslate"><span class="pre">screen</span></code>.</p>
 <section id="window-control">
-<h3>Window control<a class="headerlink" href="#window-control" title="Link to this heading">¶</a></h3>
+<h3>Kontrola okna<a class="headerlink" href="#window-control" title="Link to this heading">¶</a></h3>
 <dl class="py function">
 <dt class="sig sig-object py" id="turtle.bgcolor">
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">bgcolor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#turtle.bgcolor" title="Link to this definition">¶</a></dt>
@@ -2229,7 +2086,7 @@ distorted.</p>
 
 </section>
 <section id="animation-control">
-<h3>Animation control<a class="headerlink" href="#animation-control" title="Link to this heading">¶</a></h3>
+<h3>Kontrola animacji<a class="headerlink" href="#animation-control" title="Link to this heading">¶</a></h3>
 <dl class="py function">
 <dt class="sig sig-object py" id="turtle.no_animation">
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">no_animation</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#turtle.no_animation" title="Link to this definition">¶</a></dt>
@@ -2304,7 +2161,7 @@ stored value of n. Second argument sets delay value (see
 <p>See also the RawTurtle/Turtle method <a class="reference internal" href="#turtle.speed" title="turtle.speed"><code class="xref py py-func docutils literal notranslate"><span class="pre">speed()</span></code></a>.</p>
 </section>
 <section id="using-screen-events">
-<h3>Using screen events<a class="headerlink" href="#using-screen-events" title="Link to this heading">¶</a></h3>
+<h3>Korzystanie ze zdarzeń ekranowych<a class="headerlink" href="#using-screen-events" title="Link to this heading">¶</a></h3>
 <dl class="py function">
 <dt class="sig sig-object py" id="turtle.listen">
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">listen</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xdummy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ydummy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#turtle.listen" title="Link to this definition">¶</a></dt>
@@ -2435,15 +2292,15 @@ Must <em>not</em> be used if a script is run from within IDLE in -n mode
 
 </section>
 <section id="input-methods">
-<h3>Input methods<a class="headerlink" href="#input-methods" title="Link to this heading">¶</a></h3>
+<h3>Metody wprowadzania danych<a class="headerlink" href="#input-methods" title="Link to this heading">¶</a></h3>
 <dl class="py function">
 <dt class="sig sig-object py" id="turtle.textinput">
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">textinput</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">title</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prompt</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#turtle.textinput" title="Link to this definition">¶</a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parametry<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>title</strong> – string</p></li>
-<li><p><strong>prompt</strong> – string</p></li>
+<li><p><strong>title</strong> – ciąg znaków</p></li>
+<li><p><strong>prompt</strong> – ciąg znaków</p></li>
 </ul>
 </dd>
 </dl>
@@ -2462,8 +2319,8 @@ Return the string input. If the dialog is canceled, return <code class="docutils
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parametry<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>title</strong> – string</p></li>
-<li><p><strong>prompt</strong> – string</p></li>
+<li><p><strong>title</strong> – ciąg znaków</p></li>
+<li><p><strong>prompt</strong> – ciąg znaków</p></li>
 <li><p><strong>default</strong> – number (optional)</p></li>
 <li><p><strong>minval</strong> – number (optional)</p></li>
 <li><p><strong>maxval</strong> – number (optional)</p></li>
@@ -2485,7 +2342,7 @@ Return the number input. If the dialog is canceled,  return <code class="docutil
 
 </section>
 <section id="settings-and-special-methods">
-<h3>Settings and special methods<a class="headerlink" href="#settings-and-special-methods" title="Link to this heading">¶</a></h3>
+<h3>Ustawienia i metody specjalne<a class="headerlink" href="#settings-and-special-methods" title="Link to this heading">¶</a></h3>
 <dl class="py function">
 <dt class="sig sig-object py" id="turtle.mode">
 <span class="sig-prename descclassname"><span class="pre">turtle.</span></span><span class="sig-name descname"><span class="pre">mode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#turtle.mode" title="Link to this definition">¶</a></dt>
@@ -2835,7 +2692,7 @@ specification:</p>
 </ul>
 </dd>
 </dl>
-<p>Example:</p>
+<p>Przykład:</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">poly</span> <span class="o">=</span> <span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">),(</span><span class="mi">10</span><span class="p">,</span><span class="o">-</span><span class="mi">5</span><span class="p">),(</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">),(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="o">-</span><span class="mi">5</span><span class="p">))</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">Shape</span><span class="p">(</span><span class="s2">&quot;compound&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">addcomponent</span><span class="p">(</span><span class="n">poly</span><span class="p">,</span> <span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="s2">&quot;blue&quot;</span><span class="p">)</span>
@@ -2866,7 +2723,7 @@ from tuple, so a vector is a tuple!</p>
 
 </section>
 <section id="explanation">
-<span id="turtle-explanation"></span><h2>Explanation<a class="headerlink" href="#explanation" title="Link to this heading">¶</a></h2>
+<span id="turtle-explanation"></span><h2>Wytłumaczenie<a class="headerlink" href="#explanation" title="Link to this heading">¶</a></h2>
 <p>A turtle object draws on a screen object, and there a number of key classes in
 the turtle object-oriented interface that can be used to create them and relate
 them to each other.</p>
@@ -3086,8 +2943,8 @@ and use such files.</p></li>
 <p>The demo scripts are:</p>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Description</p></th>
+<tr class="row-odd"><th class="head"><p>Nazwa</p></th>
+<th class="head"><p>Opis</p></th>
 <th class="head"><p>Features</p></th>
 </tr>
 </thead>
@@ -3251,66 +3108,66 @@ strings and numbers respectively.</p></li>
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">turtle</span></code> — Turtle graphics</a><ul>
-<li><a class="reference internal" href="#introduction">Introduction</a></li>
-<li><a class="reference internal" href="#get-started">Get started</a></li>
+<li><a class="reference internal" href="#introduction">Wprowadzenie</a></li>
+<li><a class="reference internal" href="#get-started">Rozpocznij</a></li>
 <li><a class="reference internal" href="#tutorial">Tutorial</a><ul>
-<li><a class="reference internal" href="#starting-a-turtle-environment">Starting a turtle environment</a></li>
-<li><a class="reference internal" href="#basic-drawing">Basic drawing</a><ul>
-<li><a class="reference internal" href="#pen-control">Pen control</a></li>
-<li><a class="reference internal" href="#the-turtle-s-position">The turtle’s position</a></li>
+<li><a class="reference internal" href="#starting-a-turtle-environment">Uruchamianie środowiska żółwia</a></li>
+<li><a class="reference internal" href="#basic-drawing">Podstawowe rysowanie</a><ul>
+<li><a class="reference internal" href="#pen-control">Kontrola pióra</a></li>
+<li><a class="reference internal" href="#the-turtle-s-position">Pozycja żółwia</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#making-algorithmic-patterns">Making algorithmic patterns</a></li>
+<li><a class="reference internal" href="#making-algorithmic-patterns">Tworzenie wzorców algorytmicznych</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#how-to">How to…</a><ul>
-<li><a class="reference internal" href="#get-started-as-quickly-as-possible">Get started as quickly as possible</a></li>
+<li><a class="reference internal" href="#how-to">Jak…</a><ul>
+<li><a class="reference internal" href="#get-started-as-quickly-as-possible">Zacząć najszybciej jak to możliwe</a></li>
 <li><a class="reference internal" href="#automatically-begin-and-end-filling">Automatically begin and end filling</a></li>
-<li><a class="reference internal" href="#use-the-turtle-module-namespace">Use the <code class="docutils literal notranslate"><span class="pre">turtle</span></code> module namespace</a></li>
-<li><a class="reference internal" href="#use-turtle-graphics-in-a-script">Use turtle graphics in a script</a></li>
-<li><a class="reference internal" href="#use-object-oriented-turtle-graphics">Use object-oriented turtle graphics</a></li>
+<li><a class="reference internal" href="#use-the-turtle-module-namespace">Użyć przestrzeni nazw modułu <code class="docutils literal notranslate"><span class="pre">turtle</span></code></a></li>
+<li><a class="reference internal" href="#use-turtle-graphics-in-a-script">Użyć grafiki żółwia w skrypcie</a></li>
+<li><a class="reference internal" href="#use-object-oriented-turtle-graphics">Użyć obiektowej grafiki żółwia</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#turtle-graphics-reference">Turtle graphics reference</a><ul>
-<li><a class="reference internal" href="#turtle-methods">Turtle methods</a></li>
-<li><a class="reference internal" href="#methods-of-turtlescreen-screen">Methods of TurtleScreen/Screen</a></li>
+<li><a class="reference internal" href="#turtle-graphics-reference">Dokumentacja grafiki żółwia</a><ul>
+<li><a class="reference internal" href="#turtle-methods">Metody żółwia</a></li>
+<li><a class="reference internal" href="#methods-of-turtlescreen-screen">Metody TurtleScreen/Screen</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#methods-of-rawturtle-turtle-and-corresponding-functions">Methods of RawTurtle/Turtle and corresponding functions</a><ul>
-<li><a class="reference internal" href="#turtle-motion">Turtle motion</a></li>
-<li><a class="reference internal" href="#tell-turtle-s-state">Tell Turtle’s state</a></li>
-<li><a class="reference internal" href="#settings-for-measurement">Settings for measurement</a></li>
-<li><a class="reference internal" href="#id1">Pen control</a><ul>
-<li><a class="reference internal" href="#drawing-state">Drawing state</a></li>
-<li><a class="reference internal" href="#color-control">Color control</a></li>
-<li><a class="reference internal" href="#filling">Filling</a></li>
-<li><a class="reference internal" href="#more-drawing-control">More drawing control</a></li>
+<li><a class="reference internal" href="#methods-of-rawturtle-turtle-and-corresponding-functions">Metody RawTurtle/Turtle i odpowiadające im funkcje</a><ul>
+<li><a class="reference internal" href="#turtle-motion">Ruch żółwia</a></li>
+<li><a class="reference internal" href="#tell-turtle-s-state">Pobieranie stanu żółwia</a></li>
+<li><a class="reference internal" href="#settings-for-measurement">Ustawienia pomiarowe</a></li>
+<li><a class="reference internal" href="#id1">Kontrola pióra</a><ul>
+<li><a class="reference internal" href="#drawing-state">Stan rysowania</a></li>
+<li><a class="reference internal" href="#color-control">Kontrola koloru</a></li>
+<li><a class="reference internal" href="#filling">Wypełnienie</a></li>
+<li><a class="reference internal" href="#more-drawing-control">Więcej kontroli rysowania</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#turtle-state">Turtle state</a><ul>
-<li><a class="reference internal" href="#visibility">Visibility</a></li>
-<li><a class="reference internal" href="#appearance">Appearance</a></li>
+<li><a class="reference internal" href="#turtle-state">Stan żółwia</a><ul>
+<li><a class="reference internal" href="#visibility">Widoczność</a></li>
+<li><a class="reference internal" href="#appearance">Wygląd</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#using-events">Using events</a></li>
-<li><a class="reference internal" href="#special-turtle-methods">Special Turtle methods</a></li>
+<li><a class="reference internal" href="#using-events">Korzystanie ze zdarzeń</a></li>
+<li><a class="reference internal" href="#special-turtle-methods">Specjalne metody żółwi</a></li>
 <li><a class="reference internal" href="#compound-shapes">Compound shapes</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#methods-of-turtlescreen-screen-and-corresponding-functions">Methods of TurtleScreen/Screen and corresponding functions</a><ul>
-<li><a class="reference internal" href="#window-control">Window control</a></li>
-<li><a class="reference internal" href="#animation-control">Animation control</a></li>
-<li><a class="reference internal" href="#using-screen-events">Using screen events</a></li>
-<li><a class="reference internal" href="#input-methods">Input methods</a></li>
-<li><a class="reference internal" href="#settings-and-special-methods">Settings and special methods</a></li>
+<li><a class="reference internal" href="#window-control">Kontrola okna</a></li>
+<li><a class="reference internal" href="#animation-control">Kontrola animacji</a></li>
+<li><a class="reference internal" href="#using-screen-events">Korzystanie ze zdarzeń ekranowych</a></li>
+<li><a class="reference internal" href="#input-methods">Metody wprowadzania danych</a></li>
+<li><a class="reference internal" href="#settings-and-special-methods">Ustawienia i metody specjalne</a></li>
 <li><a class="reference internal" href="#methods-specific-to-screen-not-inherited-from-turtlescreen">Methods specific to Screen, not inherited from TurtleScreen</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#public-classes">Public classes</a></li>
-<li><a class="reference internal" href="#explanation">Explanation</a></li>
+<li><a class="reference internal" href="#explanation">Wytłumaczenie</a></li>
 <li><a class="reference internal" href="#help-and-configuration">Help and configuration</a><ul>
 <li><a class="reference internal" href="#how-to-use-help">How to use help</a></li>
 <li><a class="reference internal" href="#translation-of-docstrings-into-different-languages">Translation of docstrings into different languages</a></li>
@@ -3326,14 +3183,14 @@ strings and numbers respectively.</p></li>
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="idle.html"
-                          title="previous chapter">IDLE — Python editor and shell</a></p>
+                          title="poprzedni rozdział">IDLE — Python edytor i powłoka</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="development.html"
-                          title="next chapter">Development Tools</a></p>
+                          title="następny rozdział">Development Tools</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -3347,7 +3204,7 @@ strings and numbers respectively.</p></li>
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -3367,7 +3224,7 @@ strings and numbers respectively.</p></li>
           <a href="development.html" title="Development Tools"
              >dalej</a> |</li>
         <li class="right" >
-          <a href="idle.html" title="IDLE — Python editor and shell"
+          <a href="idle.html" title="IDLE — Python edytor i powłoka"
              >wstecz</a> |</li>
 
           <li><img src="../_static/py.svg" alt="Python logo" style="vertical-align: middle; margin-top: -1px"></li>
@@ -3383,7 +3240,7 @@ strings and numbers respectively.</p></li>
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="tk.html" >Graphical user interfaces with Tk</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">turtle</span></code> — Turtle graphics</a></li>
                 <li class="right">
@@ -3432,7 +3289,7 @@ strings and numbers respectively.</p></li>
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

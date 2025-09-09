@@ -31,11 +31,11 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="winsound — Sound-playing interface for Windows" href="winsound.html" />
     <link rel="prev" title="msvcrt — Useful routines from the MS VC++ runtime" href="msvcrt.html" />
@@ -98,11 +98,11 @@
     </select>
 </label>
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">winreg</span></code> — Windows registry access</a><ul>
-<li><a class="reference internal" href="#functions">Functions</a></li>
-<li><a class="reference internal" href="#constants">Constants</a><ul>
+<li><a class="reference internal" href="#functions">Zadania</a></li>
+<li><a class="reference internal" href="#constants">Stały</a><ul>
 <li><a class="reference internal" href="#hkey-constants">HKEY_* Constants</a></li>
 <li><a class="reference internal" href="#access-rights">Access Rights</a><ul>
 <li><a class="reference internal" href="#bit-specific">64-bit Specific</a></li>
@@ -118,14 +118,14 @@
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="msvcrt.html"
-                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">msvcrt</span></code> — Useful routines from the MS VC++ runtime</a></p>
+                          title="poprzedni rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">msvcrt</span></code> — Useful routines from the MS VC++ runtime</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="winsound.html"
-                          title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">winsound</span></code> — Sound-playing interface for Windows</a></p>
+                          title="następny rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">winsound</span></code> — Sound-playing interface for Windows</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -172,7 +172,7 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="windows.html" accesskey="U">MS Windows Specific Services</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">winreg</span></code> — Windows registry access</a></li>
                 <li class="right">
@@ -216,7 +216,7 @@ to explicitly close them.</p>
 <a class="reference internal" href="exceptions.html#WindowsError" title="WindowsError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">WindowsError</span></code></a>, which is now an alias of <a class="reference internal" href="exceptions.html#OSError" title="OSError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">OSError</span></code></a>.</p>
 </div>
 <section id="functions">
-<span id="id1"></span><h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
+<span id="id1"></span><h2>Zadania<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
 <p>This module offers the following functions:</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="winreg.CloseKey">
@@ -338,6 +338,22 @@ removed. If the method fails, an <a class="reference internal" href="exceptions.
 </dd></dl>
 
 <dl class="py function">
+<dt class="sig sig-object py" id="winreg.DeleteTree">
+<span class="sig-prename descclassname"><span class="pre">winreg.</span></span><span class="sig-name descname"><span class="pre">DeleteTree</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sub_key</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#winreg.DeleteTree" title="Link to this definition">¶</a></dt>
+<dd><p>Deletes the specified key and all its subkeys and values recursively.</p>
+<p><em>key</em> is an already open key, or one of the predefined
+<a class="reference internal" href="#hkey-constants"><span class="std std-ref">HKEY_* constants</span></a>.</p>
+<p><em>sub_key</em> is a string that names the subkey to delete. If <code class="docutils literal notranslate"><span class="pre">None</span></code>,
+deletes all subkeys and values of the specified key.</p>
+<p>This function deletes a key and all its descendants. If <em>sub_key</em> is
+<code class="docutils literal notranslate"><span class="pre">None</span></code>, all subkeys and values of the specified key are deleted.</p>
+<p class="audit-hook">Raises an <a class="reference internal" href="sys.html#auditing"><span class="std std-ref">auditing event</span></a> <code class="docutils literal notranslate"><span class="pre">winreg.DeleteTree</span></code> with arguments <code class="docutils literal notranslate"><span class="pre">key</span></code>, <code class="docutils literal notranslate"><span class="pre">sub_key</span></code>.</p>
+<div class="versionadded">
+<p><span class="versionmodified added"> Dodane w wersji 3.15.0a0 (unreleased).</span></p>
+</div>
+</dd></dl>
+
+<dl class="py function">
 <dt class="sig sig-object py" id="winreg.DeleteValue">
 <span class="sig-prename descclassname"><span class="pre">winreg.</span></span><span class="sig-name descname"><span class="pre">DeleteValue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#winreg.DeleteValue" title="Link to this definition">¶</a></dt>
 <dd><p>Removes a named value from a registry key.</p>
@@ -376,8 +392,8 @@ raised, indicating no more values.</p>
 <p>The result is a tuple of 3 items:</p>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head"><p>Index</p></th>
-<th class="head"><p>Meaning</p></th>
+<tr class="row-odd"><th class="head"><p>Indeks</p></th>
+<th class="head"><p>Znaczenie</p></th>
 </tr>
 </thead>
 <tbody>
@@ -487,8 +503,8 @@ Rights</span></a> for other allowed values.</p>
 <p>The result is a tuple of 3 items:</p>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head"><p>Index</p></th>
-<th class="head"><p>Meaning</p></th>
+<tr class="row-odd"><th class="head"><p>Indeks</p></th>
+<th class="head"><p>Znaczenie</p></th>
 </tr>
 </thead>
 <tbody>
@@ -537,8 +553,8 @@ an open registry key.</p>
 <p>The result is a tuple of 2 items:</p>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head"><p>Index</p></th>
-<th class="head"><p>Meaning</p></th>
+<tr class="row-odd"><th class="head"><p>Indeks</p></th>
+<th class="head"><p>Znaczenie</p></th>
 </tr>
 </thead>
 <tbody>
@@ -657,7 +673,7 @@ operating system.</p>
 
 </section>
 <section id="constants">
-<span id="id2"></span><h2>Constants<a class="headerlink" href="#constants" title="Link to this heading">¶</a></h2>
+<span id="id2"></span><h2>Stały<a class="headerlink" href="#constants" title="Link to this heading">¶</a></h2>
 <p>The following constants are defined for use in many <a class="reference internal" href="#module-winreg" title="winreg: Routines and objects for manipulating the Windows registry. (Windows)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">winreg</span></code></a> functions.</p>
 <section id="hkey-constants">
 <span id="id3"></span><h3>HKEY_* Constants<a class="headerlink" href="#hkey-constants" title="Link to this heading">¶</a></h3>
@@ -969,11 +985,11 @@ underlying Win32 handle to exist beyond the lifetime of the handle object.</p>
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">winreg</span></code> — Windows registry access</a><ul>
-<li><a class="reference internal" href="#functions">Functions</a></li>
-<li><a class="reference internal" href="#constants">Constants</a><ul>
+<li><a class="reference internal" href="#functions">Zadania</a></li>
+<li><a class="reference internal" href="#constants">Stały</a><ul>
 <li><a class="reference internal" href="#hkey-constants">HKEY_* Constants</a></li>
 <li><a class="reference internal" href="#access-rights">Access Rights</a><ul>
 <li><a class="reference internal" href="#bit-specific">64-bit Specific</a></li>
@@ -989,14 +1005,14 @@ underlying Win32 handle to exist beyond the lifetime of the handle object.</p>
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="msvcrt.html"
-                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">msvcrt</span></code> — Useful routines from the MS VC++ runtime</a></p>
+                          title="poprzedni rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">msvcrt</span></code> — Useful routines from the MS VC++ runtime</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="winsound.html"
-                          title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">winsound</span></code> — Sound-playing interface for Windows</a></p>
+                          title="następny rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">winsound</span></code> — Sound-playing interface for Windows</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -1010,7 +1026,7 @@ underlying Win32 handle to exist beyond the lifetime of the handle object.</p>
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -1046,7 +1062,7 @@ underlying Win32 handle to exist beyond the lifetime of the handle object.</p>
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="windows.html" >MS Windows Specific Services</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">winreg</span></code> — Windows registry access</a></li>
                 <li class="right">
@@ -1095,7 +1111,7 @@ underlying Win32 handle to exist beyond the lifetime of the handle object.</p>
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

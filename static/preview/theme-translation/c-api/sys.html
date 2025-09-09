@@ -31,14 +31,14 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="Importing Modules" href="import.html" />
-    <link rel="prev" title="Utilities" href="utilities.html" />
+    <link rel="prev" title="Utilitas" href="utilities.html" />
     
       
       <link rel="canonical" href="https://docs.python.org/3/c-api/sys.html">
@@ -98,7 +98,7 @@
     </select>
 </label>
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#">Operating System Utilities</a></li>
 <li><a class="reference internal" href="#system-functions">System Functions</a></li>
@@ -107,14 +107,14 @@
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="utilities.html"
-                          title="previous chapter">Utilities</a></p>
+                          title="poprzedni rozdział">Utilitas</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="import.html"
-                          title="next chapter">Importing Modules</a></p>
+                          title="następny rozdział">Importing Modules</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -145,7 +145,7 @@
           <a href="import.html" title="Importing Modules"
              accesskey="N">dalej</a> |</li>
         <li class="right" >
-          <a href="utilities.html" title="Utilities"
+          <a href="utilities.html" title="Utilitas"
              accesskey="P">wstecz</a> |</li>
 
           <li><img src="../_static/py.svg" alt="Python logo" style="vertical-align: middle; margin-top: -1px"></li>
@@ -161,8 +161,8 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Reference Manual</a> &#187;</li>
-          <li class="nav-item nav-item-2"><a href="utilities.html" accesskey="U">Utilities</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Podręcznik</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="utilities.html" accesskey="U">Utilitas</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Operating System Utilities</a></li>
                 <li class="right">
                     
@@ -198,7 +198,7 @@
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyOS_FSPath">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyOS_FSPath</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">path</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyOS_FSPath" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.6.</em><p>Return the file system representation for <em>path</em>. If the object is a
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.6.</em><p>Return the file system representation for <em>path</em>. If the object is a
 <a class="reference internal" href="../library/stdtypes.html#str" title="str"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference internal" href="../library/stdtypes.html#bytes" title="bytes"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a> object, then a new
 <a class="reference internal" href="../glossary.html#term-strong-reference"><span class="xref std std-term">strong reference</span></a> is returned.
 If the object implements the <a class="reference internal" href="../library/os.html#os.PathLike" title="os.PathLike"><code class="xref py py-class docutils literal notranslate"><span class="pre">os.PathLike</span></code></a> interface,
@@ -224,7 +224,7 @@ one of the strings <code class="docutils literal notranslate"><span class="pre">
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyOS_BeforeFork">
 <span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyOS_BeforeFork</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyOS_BeforeFork" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> on platforms with fork() since version 3.7.</em><p>Function to prepare some internal state before a process fork.  This
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> on platforms with fork() od wersji 3.7.</em><p>Function to prepare some internal state before a process fork.  This
 should be called before calling <code class="xref c c-func docutils literal notranslate"><span class="pre">fork()</span></code> or any similar function
 that clones the current process.
 Only available on systems where <code class="xref c c-func docutils literal notranslate"><span class="pre">fork()</span></code> is defined.</p>
@@ -243,7 +243,7 @@ true for <code class="docutils literal notranslate"><span class="pre">PyOS_Befor
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyOS_AfterFork_Parent">
 <span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyOS_AfterFork_Parent</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyOS_AfterFork_Parent" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> on platforms with fork() since version 3.7.</em><p>Function to update some internal state after a process fork.  This
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> on platforms with fork() od wersji 3.7.</em><p>Function to update some internal state after a process fork.  This
 should be called from the parent process after calling <code class="xref c c-func docutils literal notranslate"><span class="pre">fork()</span></code>
 or any similar function that clones the current process, regardless
 of whether process cloning was successful.
@@ -263,7 +263,7 @@ true for <code class="docutils literal notranslate"><span class="pre">PyOS_After
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyOS_AfterFork_Child">
 <span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyOS_AfterFork_Child</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyOS_AfterFork_Child" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> on platforms with fork() since version 3.7.</em><p>Function to update internal interpreter state after a process fork.
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> on platforms with fork() od wersji 3.7.</em><p>Function to update internal interpreter state after a process fork.
 This must be called from the child process after calling <code class="xref c c-func docutils literal notranslate"><span class="pre">fork()</span></code>,
 or any similar function that clones the current process, if there is
 any chance the process will call back into the Python interpreter.
@@ -289,7 +289,7 @@ to be called by <a class="reference internal" href="#c.PyOS_BeforeFork" title="P
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyOS_AfterFork">
 <span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyOS_AfterFork</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyOS_AfterFork" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> on platforms with fork().</em><p>Function to update some internal state after a process fork; this should be
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> on platforms with fork().</em><p>Function to update some internal state after a process fork; this should be
 called in the new process if the Python interpreter will continue to be used.
 If a new executable is loaded into the new process, this function does not need
 to be called.</p>
@@ -301,7 +301,7 @@ to be called.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyOS_CheckStack">
 <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyOS_CheckStack</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyOS_CheckStack" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> on platforms with USE_STACKCHECK since version 3.7.</em><p id="index-0">Return true when the interpreter runs out of stack space.  This is a reliable
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> on platforms with USE_STACKCHECK od wersji 3.7.</em><p id="index-0">Return true when the interpreter runs out of stack space.  This is a reliable
 check, but is only available when <code class="xref c c-macro docutils literal notranslate"><span class="pre">USE_STACKCHECK</span></code> is defined (currently
 on certain versions of Windows using the Microsoft Visual C++ compiler).
 <code class="xref c c-macro docutils literal notranslate"><span class="pre">USE_STACKCHECK</span></code> will be defined automatically; you should never
@@ -311,12 +311,12 @@ change the definition in your own code.</p>
 <dl class="c type">
 <dt class="sig sig-object c" id="c.PyOS_sighandler_t">
 <span class="k"><span class="pre">typedef</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyOS_sighandler_t</span></span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#c.PyOS_sighandler_t" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em></dd></dl>
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em></dd></dl>
 
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyOS_getsig">
 <a class="reference internal" href="#c.PyOS_sighandler_t" title="PyOS_sighandler_t"><span class="n"><span class="pre">PyOS_sighandler_t</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyOS_getsig</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n"><span class="pre">i</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyOS_getsig" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Return the current signal handler for signal <em>i</em>.  This is a thin wrapper around
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Return the current signal handler for signal <em>i</em>.  This is a thin wrapper around
 either <code class="xref c c-func docutils literal notranslate"><span class="pre">sigaction()</span></code> or <code class="xref c c-func docutils literal notranslate"><span class="pre">signal()</span></code>.  Do not call those functions
 directly!</p>
 </dd></dl>
@@ -324,7 +324,7 @@ directly!</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyOS_setsig">
 <a class="reference internal" href="#c.PyOS_sighandler_t" title="PyOS_sighandler_t"><span class="n"><span class="pre">PyOS_sighandler_t</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyOS_setsig</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n"><span class="pre">i</span></span>, <a class="reference internal" href="#c.PyOS_sighandler_t" title="PyOS_sighandler_t"><span class="n"><span class="pre">PyOS_sighandler_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">h</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyOS_setsig" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Set the signal handler for signal <em>i</em> to be <em>h</em>; return the old signal handler.
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Set the signal handler for signal <em>i</em> to be <em>h</em>; return the old signal handler.
 This is a thin wrapper around either <code class="xref c c-func docutils literal notranslate"><span class="pre">sigaction()</span></code> or <code class="xref c c-func docutils literal notranslate"><span class="pre">signal()</span></code>.  Do
 not call those functions directly!</p>
 </dd></dl>
@@ -332,7 +332,7 @@ not call those functions directly!</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.Py_DecodeLocale">
 <span class="n"><span class="pre">wchar_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">Py_DecodeLocale</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">arg</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">size</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.Py_DecodeLocale" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.7.</em><div class="admonition warning">
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.7.</em><div class="admonition warning">
 <p class="admonition-title">Ostrzeżenie</p>
 <p>This function should not be called directly: use the <a class="reference internal" href="init_config.html#c.PyConfig" title="PyConfig"><code class="xref c c-type docutils literal notranslate"><span class="pre">PyConfig</span></code></a>
 API with the <a class="reference internal" href="init_config.html#c.PyConfig_SetBytesString" title="PyConfig_SetBytesString"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyConfig_SetBytesString()</span></code></a> function which ensures
@@ -378,7 +378,7 @@ back to a byte string.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.Py_EncodeLocale">
 <span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">Py_EncodeLocale</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">wchar_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">text</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">error_pos</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.Py_EncodeLocale" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.7.</em><p>Encode a wide character string to the <a class="reference internal" href="../glossary.html#term-filesystem-encoding-and-error-handler"><span class="xref std std-term">filesystem encoding and error
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.7.</em><p>Encode a wide character string to the <a class="reference internal" href="../glossary.html#term-filesystem-encoding-and-error-handler"><span class="xref std std-term">filesystem encoding and error
 handler</span></a>. If the error handler is <a class="reference internal" href="../library/codecs.html#surrogateescape"><span class="std std-ref">surrogateescape error handler</span></a>, surrogate characters in the range U+DC80..U+DCFF are
 converted to bytes 0x80..0xFF.</p>
 <p>Return a pointer to a newly allocated byte string, use <a class="reference internal" href="memory.html#c.PyMem_Free" title="PyMem_Free"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyMem_Free()</span></code></a>
@@ -453,7 +453,7 @@ accessible to C code.  They all work with the current interpreter thread’s
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PySys_GetAttr">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PySys_GetAttr</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">name</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PySys_GetAttr" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.15.</em><p>Get the attribute <em>name</em> of the <a class="reference internal" href="../library/sys.html#module-sys" title="sys: Access system-specific parameters and functions."><code class="xref py py-mod docutils literal notranslate"><span class="pre">sys</span></code></a> module.
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.15.</em><p>Get the attribute <em>name</em> of the <a class="reference internal" href="../library/sys.html#module-sys" title="sys: Access system-specific parameters and functions."><code class="xref py py-mod docutils literal notranslate"><span class="pre">sys</span></code></a> module.
 Return a <a class="reference internal" href="../glossary.html#term-strong-reference"><span class="xref std std-term">strong reference</span></a>.
 Raise <a class="reference internal" href="../library/exceptions.html#RuntimeError" title="RuntimeError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">RuntimeError</span></code></a> and return <code class="docutils literal notranslate"><span class="pre">NULL</span></code> if it does not exist or
 if the <a class="reference internal" href="../library/sys.html#module-sys" title="sys: Access system-specific parameters and functions."><code class="xref py py-mod docutils literal notranslate"><span class="pre">sys</span></code></a> module cannot be found.</p>
@@ -467,7 +467,7 @@ if the <a class="reference internal" href="../library/sys.html#module-sys" title
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PySys_GetAttrString">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PySys_GetAttrString</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">name</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PySys_GetAttrString" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.15.</em><p>This is the same as <a class="reference internal" href="#c.PySys_GetAttr" title="PySys_GetAttr"><code class="xref c c-func docutils literal notranslate"><span class="pre">PySys_GetAttr()</span></code></a>, but <em>name</em> is
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.15.</em><p>This is the same as <a class="reference internal" href="#c.PySys_GetAttr" title="PySys_GetAttr"><code class="xref c c-func docutils literal notranslate"><span class="pre">PySys_GetAttr()</span></code></a>, but <em>name</em> is
 specified as a <span class="c-expr sig sig-inline c"><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="p">*</span></span> UTF-8 encoded bytes string,
 rather than a <span class="c-expr sig sig-inline c"><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n">PyObject</span></a><span class="p">*</span></span>.</p>
 <p>If the non-existing object should not be treated as a failure, you can use
@@ -480,7 +480,7 @@ rather than a <span class="c-expr sig sig-inline c"><a class="reference internal
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PySys_GetOptionalAttr">
 <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PySys_GetOptionalAttr</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">name</span></span>, <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">result</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PySys_GetOptionalAttr" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.15.</em><p>Variant of <a class="reference internal" href="#c.PySys_GetAttr" title="PySys_GetAttr"><code class="xref c c-func docutils literal notranslate"><span class="pre">PySys_GetAttr()</span></code></a> which doesn’t raise
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.15.</em><p>Variant of <a class="reference internal" href="#c.PySys_GetAttr" title="PySys_GetAttr"><code class="xref c c-func docutils literal notranslate"><span class="pre">PySys_GetAttr()</span></code></a> which doesn’t raise
 exception if the object does not exist.</p>
 <ul class="simple">
 <li><p>Set <em>*result</em> to a new <a class="reference internal" href="../glossary.html#term-strong-reference"><span class="xref std std-term">strong reference</span></a> to the object and
@@ -498,7 +498,7 @@ if an error occurred.</p></li>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PySys_GetOptionalAttrString">
 <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PySys_GetOptionalAttrString</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">name</span></span>, <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">result</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PySys_GetOptionalAttrString" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.15.</em><p>This is the same as <a class="reference internal" href="#c.PySys_GetOptionalAttr" title="PySys_GetOptionalAttr"><code class="xref c c-func docutils literal notranslate"><span class="pre">PySys_GetOptionalAttr()</span></code></a>, but <em>name</em> is
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.15.</em><p>This is the same as <a class="reference internal" href="#c.PySys_GetOptionalAttr" title="PySys_GetOptionalAttr"><code class="xref c c-func docutils literal notranslate"><span class="pre">PySys_GetOptionalAttr()</span></code></a>, but <em>name</em> is
 specified as a <span class="c-expr sig sig-inline c"><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="p">*</span></span> UTF-8 encoded bytes string,
 rather than a <span class="c-expr sig sig-inline c"><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n">PyObject</span></a><span class="p">*</span></span>.</p>
 <div class="versionadded">
@@ -509,7 +509,7 @@ rather than a <span class="c-expr sig sig-inline c"><a class="reference internal
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PySys_GetObject">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PySys_GetObject</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">name</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PySys_GetObject" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_borrowed_ref">Return value: Borrowed reference.</em><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Similar to <a class="reference internal" href="#c.PySys_GetAttrString" title="PySys_GetAttrString"><code class="xref c c-func docutils literal notranslate"><span class="pre">PySys_GetAttrString()</span></code></a>, but return a <a class="reference internal" href="../glossary.html#term-borrowed-reference"><span class="xref std std-term">borrowed
+<dd><em class="refcount return_borrowed_ref">Wartość zwracana: pożyczona referencja.</em><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Similar to <a class="reference internal" href="#c.PySys_GetAttrString" title="PySys_GetAttrString"><code class="xref c c-func docutils literal notranslate"><span class="pre">PySys_GetAttrString()</span></code></a>, but return a <a class="reference internal" href="../glossary.html#term-borrowed-reference"><span class="xref std std-term">borrowed
 reference</span></a> and return <code class="docutils literal notranslate"><span class="pre">NULL</span></code> <em>without</em> setting exception on failure.</p>
 <p>Preserves exception that was set before the call.</p>
 </dd></dl>
@@ -517,7 +517,7 @@ reference</span></a> and return <code class="docutils literal notranslate"><span
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PySys_SetObject">
 <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PySys_SetObject</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">name</span></span>, <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">v</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PySys_SetObject" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Set <em>name</em> in the <a class="reference internal" href="../library/sys.html#module-sys" title="sys: Access system-specific parameters and functions."><code class="xref py py-mod docutils literal notranslate"><span class="pre">sys</span></code></a> module to <em>v</em> unless <em>v</em> is <code class="docutils literal notranslate"><span class="pre">NULL</span></code>, in which
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Set <em>name</em> in the <a class="reference internal" href="../library/sys.html#module-sys" title="sys: Access system-specific parameters and functions."><code class="xref py py-mod docutils literal notranslate"><span class="pre">sys</span></code></a> module to <em>v</em> unless <em>v</em> is <code class="docutils literal notranslate"><span class="pre">NULL</span></code>, in which
 case <em>name</em> is deleted from the sys module. Returns <code class="docutils literal notranslate"><span class="pre">0</span></code> on success, <code class="docutils literal notranslate"><span class="pre">-1</span></code>
 on error.</p>
 </dd></dl>
@@ -525,7 +525,7 @@ on error.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PySys_ResetWarnOptions">
 <span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PySys_ResetWarnOptions</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#c.PySys_ResetWarnOptions" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Reset <a class="reference internal" href="../library/sys.html#sys.warnoptions" title="sys.warnoptions"><code class="xref py py-data docutils literal notranslate"><span class="pre">sys.warnoptions</span></code></a> to an empty list. This function may be
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Reset <a class="reference internal" href="../library/sys.html#sys.warnoptions" title="sys.warnoptions"><code class="xref py py-data docutils literal notranslate"><span class="pre">sys.warnoptions</span></code></a> to an empty list. This function may be
 called prior to <a class="reference internal" href="init.html#c.Py_Initialize" title="Py_Initialize"><code class="xref c c-func docutils literal notranslate"><span class="pre">Py_Initialize()</span></code></a>.</p>
 <div class="deprecated-removed">
 <p><span class="versionmodified removed">Deprecated since version 3.13, removed in version 3.15: </span>Clear <a class="reference internal" href="../library/sys.html#sys.warnoptions" title="sys.warnoptions"><code class="xref py py-data docutils literal notranslate"><span class="pre">sys.warnoptions</span></code></a> and <code class="xref py py-data docutils literal notranslate"><span class="pre">warnings.filters</span></code> instead.</p>
@@ -535,7 +535,7 @@ called prior to <a class="reference internal" href="init.html#c.Py_Initialize" t
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PySys_WriteStdout">
 <span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PySys_WriteStdout</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">format</span></span>, <span class="p"><span class="pre">...</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PySys_WriteStdout" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Write the output string described by <em>format</em> to <a class="reference internal" href="../library/sys.html#sys.stdout" title="sys.stdout"><code class="xref py py-data docutils literal notranslate"><span class="pre">sys.stdout</span></code></a>.  No
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Write the output string described by <em>format</em> to <a class="reference internal" href="../library/sys.html#sys.stdout" title="sys.stdout"><code class="xref py py-data docutils literal notranslate"><span class="pre">sys.stdout</span></code></a>.  No
 exceptions are raised, even if truncation occurs (see below).</p>
 <p><em>format</em> should limit the total size of the formatted output string to
 1000 bytes or less – after 1000 bytes, the output string is truncated.
@@ -551,14 +551,14 @@ is written to the real (C level) <em>stdout</em>.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PySys_WriteStderr">
 <span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PySys_WriteStderr</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">format</span></span>, <span class="p"><span class="pre">...</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PySys_WriteStderr" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>As <a class="reference internal" href="#c.PySys_WriteStdout" title="PySys_WriteStdout"><code class="xref c c-func docutils literal notranslate"><span class="pre">PySys_WriteStdout()</span></code></a>, but write to <a class="reference internal" href="../library/sys.html#sys.stderr" title="sys.stderr"><code class="xref py py-data docutils literal notranslate"><span class="pre">sys.stderr</span></code></a> or <em>stderr</em>
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>As <a class="reference internal" href="#c.PySys_WriteStdout" title="PySys_WriteStdout"><code class="xref c c-func docutils literal notranslate"><span class="pre">PySys_WriteStdout()</span></code></a>, but write to <a class="reference internal" href="../library/sys.html#sys.stderr" title="sys.stderr"><code class="xref py py-data docutils literal notranslate"><span class="pre">sys.stderr</span></code></a> or <em>stderr</em>
 instead.</p>
 </dd></dl>
 
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PySys_FormatStdout">
 <span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PySys_FormatStdout</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">format</span></span>, <span class="p"><span class="pre">...</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PySys_FormatStdout" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Function similar to PySys_WriteStdout() but format the message using
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Function similar to PySys_WriteStdout() but format the message using
 <a class="reference internal" href="unicode.html#c.PyUnicode_FromFormatV" title="PyUnicode_FromFormatV"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyUnicode_FromFormatV()</span></code></a> and don’t truncate the message to an
 arbitrary length.</p>
 <div class="versionadded">
@@ -569,7 +569,7 @@ arbitrary length.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PySys_FormatStderr">
 <span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PySys_FormatStderr</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">format</span></span>, <span class="p"><span class="pre">...</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PySys_FormatStderr" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>As <a class="reference internal" href="#c.PySys_FormatStdout" title="PySys_FormatStdout"><code class="xref c c-func docutils literal notranslate"><span class="pre">PySys_FormatStdout()</span></code></a>, but write to <a class="reference internal" href="../library/sys.html#sys.stderr" title="sys.stderr"><code class="xref py py-data docutils literal notranslate"><span class="pre">sys.stderr</span></code></a> or <em>stderr</em>
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>As <a class="reference internal" href="#c.PySys_FormatStdout" title="PySys_FormatStdout"><code class="xref c c-func docutils literal notranslate"><span class="pre">PySys_FormatStdout()</span></code></a>, but write to <a class="reference internal" href="../library/sys.html#sys.stderr" title="sys.stderr"><code class="xref py py-data docutils literal notranslate"><span class="pre">sys.stderr</span></code></a> or <em>stderr</em>
 instead.</p>
 <div class="versionadded">
 <p><span class="versionmodified added"> Dodane w wersji 3.2.</span></p>
@@ -579,7 +579,7 @@ instead.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PySys_GetXOptions">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PySys_GetXOptions</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#c.PySys_GetXOptions" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_borrowed_ref">Return value: Borrowed reference.</em><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.7.</em><p>Return the current dictionary of <a class="reference internal" href="../using/cmdline.html#cmdoption-X"><code class="xref std std-option docutils literal notranslate"><span class="pre">-X</span></code></a> options, similarly to
+<dd><em class="refcount return_borrowed_ref">Wartość zwracana: pożyczona referencja.</em><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.7.</em><p>Return the current dictionary of <a class="reference internal" href="../using/cmdline.html#cmdoption-X"><code class="xref std std-option docutils literal notranslate"><span class="pre">-X</span></code></a> options, similarly to
 <a class="reference internal" href="../library/sys.html#sys._xoptions" title="sys._xoptions"><code class="xref py py-data docutils literal notranslate"><span class="pre">sys._xoptions</span></code></a>.  On error, <code class="docutils literal notranslate"><span class="pre">NULL</span></code> is returned and an exception is
 set.</p>
 <div class="versionadded">
@@ -590,7 +590,7 @@ set.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PySys_Audit">
 <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PySys_Audit</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">event</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">format</span></span>, <span class="p"><span class="pre">...</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PySys_Audit" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.13.</em><p>Raise an auditing event with any active hooks. Return zero for success
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.13.</em><p>Raise an auditing event with any active hooks. Return zero for success
 and non-zero with an exception set on failure.</p>
 <p>The <em>event</em> string argument must not be <em>NULL</em>.</p>
 <p>If any hooks have been added, <em>format</em> and other arguments will be used
@@ -616,7 +616,7 @@ unavoidable deprecation warning was raised.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PySys_AuditTuple">
 <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PySys_AuditTuple</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">event</span></span>, <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PySys_AuditTuple" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.13.</em><p>Similar to <a class="reference internal" href="#c.PySys_Audit" title="PySys_Audit"><code class="xref c c-func docutils literal notranslate"><span class="pre">PySys_Audit()</span></code></a>, but pass arguments as a Python object.
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.13.</em><p>Similar to <a class="reference internal" href="#c.PySys_Audit" title="PySys_Audit"><code class="xref c c-func docutils literal notranslate"><span class="pre">PySys_Audit()</span></code></a>, but pass arguments as a Python object.
 <em>args</em> must be a <a class="reference internal" href="../library/stdtypes.html#tuple" title="tuple"><code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></a>. To pass no arguments, <em>args</em> can be <em>NULL</em>.</p>
 <div class="versionadded">
 <p><span class="versionmodified added"> Dodane w wersji 3.13.</span></p>
@@ -631,9 +631,7 @@ Return zero on success
 and non-zero on failure. If the runtime has been initialized, also set an
 error on failure. Hooks added through this API are called for all
 interpreters created by the runtime.</p>
-<p>The <em>userData</em> pointer is passed into the hook function. Since hook
-functions may be called from different runtimes, this pointer should not
-refer directly to Python state.</p>
+<p>Покажчик <em>userData</em> передається в функцію-перехоплювач. Оскільки функції підключення можуть викликатися з різних середовищ виконання, цей вказівник не повинен посилатися безпосередньо на стан Python.</p>
 <p>This function is safe to call before <a class="reference internal" href="init.html#c.Py_Initialize" title="Py_Initialize"><code class="xref c c-func docutils literal notranslate"><span class="pre">Py_Initialize()</span></code></a>. When called
 after runtime initialization, existing audit hooks are notified and may
 silently abort the operation by raising an error subclassed from
@@ -671,7 +669,7 @@ that their hook has been added unless they control all existing hooks.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.Py_FatalError">
 <span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Py_FatalError</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">message</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.Py_FatalError" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p id="index-3">Print a fatal error message and kill the process.  No cleanup is performed.
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p id="index-3">Print a fatal error message and kill the process.  No cleanup is performed.
 This function should only be invoked when a condition is detected that would
 make it dangerous to continue using the Python interpreter; e.g., when the
 object administration appears to be corrupted.  On Unix, the standard C library
@@ -688,7 +686,7 @@ automatically the name of the current function, unless the
 <dl class="c function">
 <dt class="sig sig-object c" id="c.Py_Exit">
 <span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Py_Exit</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n"><span class="pre">status</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.Py_Exit" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p id="index-4">Exit the current process.  This calls <a class="reference internal" href="init.html#c.Py_FinalizeEx" title="Py_FinalizeEx"><code class="xref c c-func docutils literal notranslate"><span class="pre">Py_FinalizeEx()</span></code></a> and then calls the
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p id="index-4">Exit the current process.  This calls <a class="reference internal" href="init.html#c.Py_FinalizeEx" title="Py_FinalizeEx"><code class="xref c c-func docutils literal notranslate"><span class="pre">Py_FinalizeEx()</span></code></a> and then calls the
 standard C library function <code class="docutils literal notranslate"><span class="pre">exit(status)</span></code>.  If <a class="reference internal" href="init.html#c.Py_FinalizeEx" title="Py_FinalizeEx"><code class="xref c c-func docutils literal notranslate"><span class="pre">Py_FinalizeEx()</span></code></a>
 indicates an error, the exit status is set to 120.</p>
 <div class="versionchanged">
@@ -699,7 +697,7 @@ indicates an error, the exit status is set to 120.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.Py_AtExit">
 <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Py_AtExit</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">func</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">)</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.Py_AtExit" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p id="index-5">Register a cleanup function to be called by <a class="reference internal" href="init.html#c.Py_FinalizeEx" title="Py_FinalizeEx"><code class="xref c c-func docutils literal notranslate"><span class="pre">Py_FinalizeEx()</span></code></a>.  The cleanup
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p id="index-5">Register a cleanup function to be called by <a class="reference internal" href="init.html#c.Py_FinalizeEx" title="Py_FinalizeEx"><code class="xref c c-func docutils literal notranslate"><span class="pre">Py_FinalizeEx()</span></code></a>.  The cleanup
 function will be called with no arguments and should return no value.  At most
 32 cleanup functions can be registered.  When the registration is successful,
 <a class="reference internal" href="#c.Py_AtExit" title="Py_AtExit"><code class="xref c c-func docutils literal notranslate"><span class="pre">Py_AtExit()</span></code></a> returns <code class="docutils literal notranslate"><span class="pre">0</span></code>; on failure, it returns <code class="docutils literal notranslate"><span class="pre">-1</span></code>.  The cleanup
@@ -722,7 +720,7 @@ the cleanup function, no Python APIs should be called by <em>func</em>.</p>
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#">Operating System Utilities</a></li>
 <li><a class="reference internal" href="#system-functions">System Functions</a></li>
@@ -731,14 +729,14 @@ the cleanup function, no Python APIs should be called by <em>func</em>.</p>
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="utilities.html"
-                          title="previous chapter">Utilities</a></p>
+                          title="poprzedni rozdział">Utilitas</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="import.html"
-                          title="next chapter">Importing Modules</a></p>
+                          title="następny rozdział">Importing Modules</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -752,7 +750,7 @@ the cleanup function, no Python APIs should be called by <em>func</em>.</p>
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -772,7 +770,7 @@ the cleanup function, no Python APIs should be called by <em>func</em>.</p>
           <a href="import.html" title="Importing Modules"
              >dalej</a> |</li>
         <li class="right" >
-          <a href="utilities.html" title="Utilities"
+          <a href="utilities.html" title="Utilitas"
              >wstecz</a> |</li>
 
           <li><img src="../_static/py.svg" alt="Python logo" style="vertical-align: middle; margin-top: -1px"></li>
@@ -788,8 +786,8 @@ the cleanup function, no Python APIs should be called by <em>func</em>.</p>
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Reference Manual</a> &#187;</li>
-          <li class="nav-item nav-item-2"><a href="utilities.html" >Utilities</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Podręcznik</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="utilities.html" >Utilitas</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Operating System Utilities</a></li>
                 <li class="right">
                     
@@ -837,7 +835,7 @@ the cleanup function, no Python APIs should be called by <em>func</em>.</p>
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

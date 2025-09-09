@@ -8,10 +8,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://docs.python.org/3/library/types.html" />
 <meta property="og:site_name" content="Python documentation" />
-<meta property="og:description" content="Source code: Lib/types.py This module defines utility functions to assist in dynamic creation of new types. It also defines names for some object types that are used by the standard Python interpre..." />
+<meta property="og:description" content="Kod źródłowy: Lib/types.py This module defines utility functions to assist in dynamic creation of new types. It also defines names for some object types that are used by the standard Python interpr..." />
 <meta property="og:image" content="_static/og-image.png" />
 <meta property="og:image:alt" content="Python documentation" />
-<meta name="description" content="Source code: Lib/types.py This module defines utility functions to assist in dynamic creation of new types. It also defines names for some object types that are used by the standard Python interpre..." />
+<meta name="description" content="Kod źródłowy: Lib/types.py This module defines utility functions to assist in dynamic creation of new types. It also defines names for some object types that are used by the standard Python interpr..." />
 <meta name="theme-color" content="#3776ab">
 <meta property="og:image:width" content="200">
 <meta property="og:image:height" content="200">
@@ -31,11 +31,11 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="copy — Shallow and deep copy operations" href="copy.html" />
     <link rel="prev" title="weakref — Weak references" href="weakref.html" />
@@ -98,7 +98,7 @@
     </select>
 </label>
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">types</span></code> — Dynamic type creation and names for built-in types</a><ul>
 <li><a class="reference internal" href="#dynamic-type-creation">Dynamic Type Creation</a></li>
@@ -111,14 +111,14 @@
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="weakref.html"
-                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">weakref</span></code> — Weak references</a></p>
+                          title="poprzedni rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">weakref</span></code> — Weak references</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="copy.html"
-                          title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">copy</span></code> — Shallow and deep copy operations</a></p>
+                          title="następny rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">copy</span></code> — Shallow and deep copy operations</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -165,8 +165,8 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
-          <li class="nav-item nav-item-2"><a href="datatypes.html" accesskey="U">Data Types</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="datatypes.html" accesskey="U">Typy danych</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">types</span></code> — Dynamic type creation and names for built-in types</a></li>
                 <li class="right">
                     
@@ -199,7 +199,7 @@
             
   <section id="module-types">
 <span id="types-dynamic-type-creation-and-names-for-built-in-types"></span><h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">types</span></code> — Dynamic type creation and names for built-in types<a class="headerlink" href="#module-types" title="Link to this heading">¶</a></h1>
-<p><strong>Source code:</strong> <a class="extlink-source reference external" href="https://github.com/python/cpython/tree/main/Lib/types.py">Lib/types.py</a></p>
+<p><strong>Kod źródłowy:</strong> <a class="extlink-source reference external" href="https://github.com/python/cpython/tree/main/Lib/types.py">Lib/types.py</a></p>
 <hr class="docutils" />
 <p>This module defines utility functions to assist in dynamic creation of
 new types.</p>
@@ -284,7 +284,7 @@ introspecting <a class="reference internal" href="typing.html#user-defined-gener
 function returns the value of <code class="docutils literal notranslate"><span class="pre">cls.__orig_bases__</span></code>.
 For classes without the <code class="docutils literal notranslate"><span class="pre">__orig_bases__</span></code> attribute,
 <a class="reference internal" href="../reference/datamodel.html#type.__bases__" title="type.__bases__"><code class="xref py py-attr docutils literal notranslate"><span class="pre">cls.__bases__</span></code></a> is returned.</p>
-<p>Examples:</p>
+<p>Przykłady:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">TypeVar</span><span class="p">,</span> <span class="n">Generic</span><span class="p">,</span> <span class="n">NamedTuple</span><span class="p">,</span> <span class="n">TypedDict</span>
 
 <span class="n">T</span> <span class="o">=</span> <span class="n">TypeVar</span><span class="p">(</span><span class="s2">&quot;T&quot;</span><span class="p">)</span>
@@ -588,7 +588,7 @@ as the <a class="reference internal" href="functions.html#property" title="prope
 each slot, an instance of <code class="xref py py-class docutils literal notranslate"><span class="pre">MemberDescriptorType</span></code> will be added as an attribute
 on the class. This allows the slot to appear in the class’s <a class="reference internal" href="../reference/datamodel.html#type.__dict__" title="type.__dict__"><code class="xref py py-attr docutils literal notranslate"><span class="pre">__dict__</span></code></a>.</p>
 <div class="impl-detail compound">
-<p><strong>CPython implementation detail:</strong> In other implementations of Python, this type may be identical to
+<p><strong>Szczegół implementacyjny CPythona:</strong> In other implementations of Python, this type may be identical to
 <code class="docutils literal notranslate"><span class="pre">GetSetDescriptorType</span></code>.</p>
 </div>
 </dd></dl>
@@ -795,7 +795,7 @@ of objects will be returned as is.</p>
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">types</span></code> — Dynamic type creation and names for built-in types</a><ul>
 <li><a class="reference internal" href="#dynamic-type-creation">Dynamic Type Creation</a></li>
@@ -808,14 +808,14 @@ of objects will be returned as is.</p>
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="weakref.html"
-                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">weakref</span></code> — Weak references</a></p>
+                          title="poprzedni rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">weakref</span></code> — Weak references</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="copy.html"
-                          title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">copy</span></code> — Shallow and deep copy operations</a></p>
+                          title="następny rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">copy</span></code> — Shallow and deep copy operations</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -829,7 +829,7 @@ of objects will be returned as is.</p>
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -865,8 +865,8 @@ of objects will be returned as is.</p>
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
-          <li class="nav-item nav-item-2"><a href="datatypes.html" >Data Types</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="datatypes.html" >Typy danych</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">types</span></code> — Dynamic type creation and names for built-in types</a></li>
                 <li class="right">
                     
@@ -914,7 +914,7 @@ of objects will be returned as is.</p>
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

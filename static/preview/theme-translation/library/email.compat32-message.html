@@ -31,11 +31,11 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="email.mime: Creating email and MIME objects from scratch" href="email.mime.html" />
     <link rel="prev" title="email: Examples" href="email.examples.html" />
@@ -98,14 +98,14 @@
     </select>
 </label>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="email.examples.html"
-                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">email</span></code>: Examples</a></p>
+                          title="poprzedni rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">email</span></code>: Examples</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="email.mime.html"
-                          title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">email.mime</span></code>: Creating email and MIME objects from scratch</a></p>
+                          title="następny rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">email.mime</span></code>: Creating email and MIME objects from scratch</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -152,7 +152,7 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="netdata.html" >Internet Data Handling</a> &#187;</li>
           <li class="nav-item nav-item-3"><a href="email.html" accesskey="U"><code class="xref py py-mod docutils literal notranslate"><span class="pre">email</span></code> — An email and MIME handling package</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">email.message.Message</span></code>: Representing an email message using the <code class="xref py py-data docutils literal notranslate"><span class="pre">compat32</span></code> API</a></li>
@@ -343,8 +343,7 @@ For example, <code class="docutils literal notranslate"><span class="pre">is_mul
 <dl class="py method">
 <dt class="sig sig-object py" id="email.message.Message.get_unixfrom">
 <span class="sig-name descname"><span class="pre">get_unixfrom</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#email.message.Message.get_unixfrom" title="Link to this definition">¶</a></dt>
-<dd><p>Return the message’s envelope header.  Defaults to <code class="docutils literal notranslate"><span class="pre">None</span></code> if the
-envelope header was never set.</p>
+<dd><p>Повернути заголовок конверта повідомлення. За замовчуванням <code class="docutils literal notranslate"><span class="pre">None</span></code>, якщо заголовок конверта ніколи не встановлювався.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -462,8 +461,7 @@ message, or were added to the message later.  Any header deleted and then
 re-added are always appended to the end of the header list.</p>
 <p>These semantic differences are intentional and are biased toward maximal
 convenience.</p>
-<p>Note that in all cases, any envelope header present in the message is not
-included in the mapping interface.</p>
+<p>Зауважте, що в усіх випадках будь-який заголовок конверта, присутній у повідомленні, не включається в інтерфейс зіставлення.</p>
 <p>In a model generated from bytes, any header values that (in contravention of
 the RFCs) contain non-ASCII bytes will, when retrieved through this
 interface, be represented as <a class="reference internal" href="email.header.html#email.header.Header" title="email.header.Header"><code class="xref py py-class docutils literal notranslate"><span class="pre">Header</span></code></a> objects with
@@ -471,7 +469,7 @@ a charset of <code class="docutils literal notranslate"><span class="pre">unknow
 <dl class="py method">
 <dt class="sig sig-object py" id="email.message.Message.__len__">
 <span class="sig-name descname"><span class="pre">__len__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#email.message.Message.__len__" title="Link to this definition">¶</a></dt>
-<dd><p>Return the total number of headers, including duplicates.</p>
+<dd><p>Повертає загальну кількість заголовків, включаючи дублікати.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -503,9 +501,7 @@ extant named headers.</p>
 <span class="sig-name descname"><span class="pre">__setitem__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">val</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#email.message.Message.__setitem__" title="Link to this definition">¶</a></dt>
 <dd><p>Add a header to the message with field name <em>name</em> and value <em>val</em>.  The
 field is appended to the end of the message’s existing fields.</p>
-<p>Note that this does <em>not</em> overwrite or delete any existing header with the same
-name.  If you want to ensure that the new header is the only one present in the
-message with field name <em>name</em>, delete the field first, e.g.:</p>
+<p>Зауважте, що це <em>не</em> перезаписує та не видаляє будь-який існуючий заголовок із такою ж назвою. Якщо ви хочете переконатися, що новий заголовок є єдиним у повідомленні з назвою поля <em>name</em>, спочатку видаліть це поле, наприклад:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">del</span> <span class="n">msg</span><span class="p">[</span><span class="s1">&#39;subject&#39;</span><span class="p">]</span>
 <span class="n">msg</span><span class="p">[</span><span class="s1">&#39;subject&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Python roolz!&#39;</span>
 </pre></div>
@@ -515,28 +511,25 @@ message with field name <em>name</em>, delete the field first, e.g.:</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="email.message.Message.__delitem__">
 <span class="sig-name descname"><span class="pre">__delitem__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#email.message.Message.__delitem__" title="Link to this definition">¶</a></dt>
-<dd><p>Delete all occurrences of the field with name <em>name</em> from the message’s
-headers.  No exception is raised if the named field isn’t present in the
-headers.</p>
+<dd><p>Видалити всі входження поля з назвою <em>ім’я</em> із заголовків повідомлення. Жодного винятку не створюється, якщо назване поле відсутнє в заголовках.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="email.message.Message.keys">
 <span class="sig-name descname"><span class="pre">keys</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#email.message.Message.keys" title="Link to this definition">¶</a></dt>
-<dd><p>Return a list of all the message’s header field names.</p>
+<dd><p>Повертає список імен усіх полів заголовка повідомлення.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="email.message.Message.values">
 <span class="sig-name descname"><span class="pre">values</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#email.message.Message.values" title="Link to this definition">¶</a></dt>
-<dd><p>Return a list of all the message’s field values.</p>
+<dd><p>Повертає список усіх значень полів повідомлення.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="email.message.Message.items">
 <span class="sig-name descname"><span class="pre">items</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#email.message.Message.items" title="Link to this definition">¶</a></dt>
-<dd><p>Return a list of 2-tuples containing all the message’s field headers and
-values.</p>
+<dd><p>Повертає список із двох кортежів, що містить усі заголовки та значення полів повідомлення.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -551,18 +544,13 @@ named header is missing (defaults to <code class="docutils literal notranslate">
 <dl class="py method">
 <dt class="sig sig-object py" id="email.message.Message.get_all">
 <span class="sig-name descname"><span class="pre">get_all</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">failobj</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#email.message.Message.get_all" title="Link to this definition">¶</a></dt>
-<dd><p>Return a list of all the values for the field named <em>name</em>. If there are
-no such named headers in the message, <em>failobj</em> is returned (defaults to
-<code class="docutils literal notranslate"><span class="pre">None</span></code>).</p>
+<dd><p>Повертає список усіх значень для поля з назвою <em>name</em>. Якщо в повідомленні немає таких іменованих заголовків, повертається <em>failobj</em> (за замовчуванням <code class="docutils literal notranslate"><span class="pre">None</span></code>).</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="email.message.Message.add_header">
 <span class="sig-name descname"><span class="pre">add_header</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_value</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">_params</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#email.message.Message.add_header" title="Link to this definition">¶</a></dt>
-<dd><p>Extended header setting.  This method is similar to <a class="reference internal" href="#email.message.Message.__setitem__" title="email.message.Message.__setitem__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">__setitem__()</span></code></a>
-except that additional header parameters can be provided as keyword
-arguments.  <em>_name</em> is the header field to add and <em>_value</em> is the
-<em>primary</em> value for the header.</p>
+<dd><p>Розширене налаштування заголовка. Цей метод подібний до <a class="reference internal" href="#email.message.Message.__setitem__" title="email.message.Message.__setitem__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">__setitem__()</span></code></a> за винятком того, що додаткові параметри заголовка можуть бути надані як аргументи ключового слова. <em>_name</em> — це поле заголовка, яке потрібно додати, а <em>_value</em> — це <em>основне</em> значення для заголовка.</p>
 <p>For each item in the keyword argument dictionary <em>_params</em>, the key is
 taken as the parameter name, with underscores converted to dashes (since
 dashes are illegal in Python identifiers).  Normally, the parameter will
@@ -576,11 +564,11 @@ and <code class="docutils literal notranslate"><span class="pre">VALUE</span></c
 a three tuple is not passed and the value contains non-ASCII characters,
 it is automatically encoded in <span class="target" id="index-3"></span><a class="rfc reference external" href="https://datatracker.ietf.org/doc/html/rfc2231.html"><strong>RFC 2231</strong></a> format using a <code class="docutils literal notranslate"><span class="pre">CHARSET</span></code>
 of <code class="docutils literal notranslate"><span class="pre">utf-8</span></code> and a <code class="docutils literal notranslate"><span class="pre">LANGUAGE</span></code> of <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
-<p>Here’s an example:</p>
+<p>Ось приклад:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">msg</span><span class="o">.</span><span class="n">add_header</span><span class="p">(</span><span class="s1">&#39;Content-Disposition&#39;</span><span class="p">,</span> <span class="s1">&#39;attachment&#39;</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s1">&#39;bud.gif&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>This will add a header that looks like</p>
+<p>Це додасть заголовок, який виглядає так:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">Content</span><span class="o">-</span><span class="n">Disposition</span><span class="p">:</span> <span class="n">attachment</span><span class="p">;</span> <span class="n">filename</span><span class="o">=</span><span class="s2">&quot;bud.gif&quot;</span>
 </pre></div>
 </div>
@@ -622,24 +610,19 @@ which case it would be <em class="mimetype">message/rfc822</em>.  If the
 <dl class="py method">
 <dt class="sig sig-object py" id="email.message.Message.get_content_maintype">
 <span class="sig-name descname"><span class="pre">get_content_maintype</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#email.message.Message.get_content_maintype" title="Link to this definition">¶</a></dt>
-<dd><p>Return the message’s main content type.  This is the <em class="mimetype">maintype</em>
-part of the string returned by <a class="reference internal" href="#email.message.Message.get_content_type" title="email.message.Message.get_content_type"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_content_type()</span></code></a>.</p>
+<dd><p>Повернути основний тип вмісту повідомлення. Це <em class="mimetype">maintype</em> частина рядка, яку повертає <a class="reference internal" href="#email.message.Message.get_content_type" title="email.message.Message.get_content_type"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_content_type()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="email.message.Message.get_content_subtype">
 <span class="sig-name descname"><span class="pre">get_content_subtype</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#email.message.Message.get_content_subtype" title="Link to this definition">¶</a></dt>
-<dd><p>Return the message’s sub-content type.  This is the <em class="mimetype">subtype</em>
-part of the string returned by <a class="reference internal" href="#email.message.Message.get_content_type" title="email.message.Message.get_content_type"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_content_type()</span></code></a>.</p>
+<dd><p>Повернути тип підвмісту повідомлення. Це <em class="mimetype">subtype</em> частина рядка, яку повертає <a class="reference internal" href="#email.message.Message.get_content_type" title="email.message.Message.get_content_type"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_content_type()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="email.message.Message.get_default_type">
 <span class="sig-name descname"><span class="pre">get_default_type</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#email.message.Message.get_default_type" title="Link to this definition">¶</a></dt>
-<dd><p>Return the default content type.  Most messages have a default content
-type of <em class="mimetype">text/plain</em>, except for messages that are subparts of
-<em class="mimetype">multipart/digest</em> containers.  Such subparts have a default
-content type of <em class="mimetype">message/rfc822</em>.</p>
+<dd><p>Повернути типовий тип вмісту. Більшість повідомлень мають стандартний тип вмісту <em class="mimetype">text/plain</em>, за винятком повідомлень, які є підчастинами контейнерів <em class="mimetype">multipart/digest</em>. Такі підчастини мають типовий тип вмісту <em class="mimetype">message/rfc822</em>.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -720,11 +703,9 @@ unless optional <em>requote</em> is <code class="docutils literal notranslate"><
 according to <span class="target" id="index-10"></span><a class="rfc reference external" href="https://datatracker.ietf.org/doc/html/rfc2231.html"><strong>RFC 2231</strong></a>. Optional <em>language</em> specifies the RFC 2231
 language, defaulting to the empty string.  Both <em>charset</em> and <em>language</em>
 should be strings.</p>
-<p>If <em>replace</em> is <code class="docutils literal notranslate"><span class="pre">False</span></code> (the default) the header is moved to the
-end of the list of headers.  If <em>replace</em> is <code class="docutils literal notranslate"><span class="pre">True</span></code>, the header
-will be updated in place.</p>
+<p>Якщо <em>replace</em> має значення <code class="docutils literal notranslate"><span class="pre">False</span></code> (за замовчуванням), заголовок переміщується в кінець списку заголовків. Якщо <em>replace</em> має значення <code class="docutils literal notranslate"><span class="pre">True</span></code>, заголовок буде оновлено на місці.</p>
 <div class="versionchanged">
-<p><span class="versionmodified changed">Zmienione w wersji 3.4: </span><code class="docutils literal notranslate"><span class="pre">replace</span></code> keyword was added.</p>
+<p><span class="versionmodified changed">Zmienione w wersji 3.4: </span>Додано ключове слово <code class="docutils literal notranslate"><span class="pre">replace</span></code>.</p>
 </div>
 </dd></dl>
 
@@ -759,31 +740,19 @@ replaced by the <code class="docutils literal notranslate"><span class="pre">mak
 <dl class="py method">
 <dt class="sig sig-object py" id="email.message.Message.get_filename">
 <span class="sig-name descname"><span class="pre">get_filename</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">failobj</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#email.message.Message.get_filename" title="Link to this definition">¶</a></dt>
-<dd><p>Return the value of the <code class="docutils literal notranslate"><span class="pre">filename</span></code> parameter of the
-<em class="mailheader">Content-Disposition</em> header of the message.  If the header
-does not have a <code class="docutils literal notranslate"><span class="pre">filename</span></code> parameter, this method falls back to looking
-for the <code class="docutils literal notranslate"><span class="pre">name</span></code> parameter on the <em class="mailheader">Content-Type</em> header.  If
-neither is found, or the header is missing, then <em>failobj</em> is returned.
-The returned string will always be unquoted as per
-<a class="reference internal" href="email.utils.html#email.utils.unquote" title="email.utils.unquote"><code class="xref py py-func docutils literal notranslate"><span class="pre">email.utils.unquote()</span></code></a>.</p>
+<dd><p>Повертає значення параметра <code class="docutils literal notranslate"><span class="pre">filename</span></code> заголовка <em class="mailheader">Content-Disposition</em> повідомлення. Якщо заголовок не має параметра <code class="docutils literal notranslate"><span class="pre">filename</span></code>, цей метод повертається до пошуку параметра <code class="docutils literal notranslate"><span class="pre">name</span></code> у заголовку <em class="mailheader">Content-Type</em>. Якщо нічого не знайдено або відсутній заголовок, повертається <em>failobj</em>. Повернений рядок завжди буде без лапок відповідно до <a class="reference internal" href="email.utils.html#email.utils.unquote" title="email.utils.unquote"><code class="xref py py-func docutils literal notranslate"><span class="pre">email.utils.unquote()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="email.message.Message.get_boundary">
 <span class="sig-name descname"><span class="pre">get_boundary</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">failobj</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#email.message.Message.get_boundary" title="Link to this definition">¶</a></dt>
-<dd><p>Return the value of the <code class="docutils literal notranslate"><span class="pre">boundary</span></code> parameter of the
-<em class="mailheader">Content-Type</em> header of the message, or <em>failobj</em> if either
-the header is missing, or has no <code class="docutils literal notranslate"><span class="pre">boundary</span></code> parameter.  The returned
-string will always be unquoted as per <a class="reference internal" href="email.utils.html#email.utils.unquote" title="email.utils.unquote"><code class="xref py py-func docutils literal notranslate"><span class="pre">email.utils.unquote()</span></code></a>.</p>
+<dd><p>Повертає значення параметра <code class="docutils literal notranslate"><span class="pre">boundary</span></code> заголовка <em class="mailheader">Content-Type</em> повідомлення або <em>failobj</em>, якщо заголовок відсутній або не має параметра <code class="docutils literal notranslate"><span class="pre">boundary</span></code>. Повернений рядок завжди буде без лапок відповідно до <a class="reference internal" href="email.utils.html#email.utils.unquote" title="email.utils.unquote"><code class="xref py py-func docutils literal notranslate"><span class="pre">email.utils.unquote()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="email.message.Message.set_boundary">
 <span class="sig-name descname"><span class="pre">set_boundary</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">boundary</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#email.message.Message.set_boundary" title="Link to this definition">¶</a></dt>
-<dd><p>Set the <code class="docutils literal notranslate"><span class="pre">boundary</span></code> parameter of the <em class="mailheader">Content-Type</em> header to
-<em>boundary</em>.  <a class="reference internal" href="#email.message.Message.set_boundary" title="email.message.Message.set_boundary"><code class="xref py py-meth docutils literal notranslate"><span class="pre">set_boundary()</span></code></a> will always quote <em>boundary</em> if
-necessary.  A <a class="reference internal" href="email.errors.html#email.errors.HeaderParseError" title="email.errors.HeaderParseError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">HeaderParseError</span></code></a> is raised if the
-message object has no <em class="mailheader">Content-Type</em> header.</p>
+<dd><p>Установіть для параметра <code class="docutils literal notranslate"><span class="pre">boundary</span></code> заголовка <em class="mailheader">Content-Type</em> значення <em>boundary</em>. <a class="reference internal" href="#email.message.Message.set_boundary" title="email.message.Message.set_boundary"><code class="xref py py-meth docutils literal notranslate"><span class="pre">set_boundary()</span></code></a> завжди братиме <em>boundary</em> у лапки, якщо необхідно. Помилка <a class="reference internal" href="email.errors.html#email.errors.HeaderParseError" title="email.errors.HeaderParseError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">HeaderParseError</span></code></a> виникає, якщо об’єкт повідомлення не має заголовка <em class="mailheader">Content-Type</em>.</p>
 <p>Note that using this method is subtly different than deleting the old
 <em class="mailheader">Content-Type</em> header and adding a new one with the new
 boundary via <a class="reference internal" href="#email.message.Message.add_header" title="email.message.Message.add_header"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_header()</span></code></a>, because <a class="reference internal" href="#email.message.Message.set_boundary" title="email.message.Message.set_boundary"><code class="xref py py-meth docutils literal notranslate"><span class="pre">set_boundary()</span></code></a> preserves
@@ -795,9 +764,7 @@ have been present in the original <em class="mailheader">Content-Type</em> heade
 <dl class="py method">
 <dt class="sig sig-object py" id="email.message.Message.get_content_charset">
 <span class="sig-name descname"><span class="pre">get_content_charset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">failobj</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#email.message.Message.get_content_charset" title="Link to this definition">¶</a></dt>
-<dd><p>Return the <code class="docutils literal notranslate"><span class="pre">charset</span></code> parameter of the <em class="mailheader">Content-Type</em> header,
-coerced to lower case.  If there is no <em class="mailheader">Content-Type</em> header, or if
-that header has no <code class="docutils literal notranslate"><span class="pre">charset</span></code> parameter, <em>failobj</em> is returned.</p>
+<dd><p>Повертає параметр <code class="docutils literal notranslate"><span class="pre">charset</span></code> заголовка <em class="mailheader">Content-Type</em> у нижньому регістрі. Якщо немає заголовка <em class="mailheader">Content-Type</em> або цей заголовок не має параметра <code class="docutils literal notranslate"><span class="pre">charset</span></code>, повертається <em>failobj</em>.</p>
 <p>Note that this method differs from <a class="reference internal" href="#email.message.Message.get_charset" title="email.message.Message.get_charset"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_charset()</span></code></a> which returns the
 <a class="reference internal" href="email.charset.html#email.charset.Charset" title="email.charset.Charset"><code class="xref py py-class docutils literal notranslate"><span class="pre">Charset</span></code></a> instance for the default encoding of the message body.</p>
 </dd></dl>
@@ -805,9 +772,7 @@ that header has no <code class="docutils literal notranslate"><span class="pre">
 <dl class="py method">
 <dt class="sig sig-object py" id="email.message.Message.get_charsets">
 <span class="sig-name descname"><span class="pre">get_charsets</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">failobj</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#email.message.Message.get_charsets" title="Link to this definition">¶</a></dt>
-<dd><p>Return a list containing the character set names in the message.  If the
-message is a <em class="mimetype">multipart</em>, then the list will contain one element
-for each subpart in the payload, otherwise, it will be a list of length 1.</p>
+<dd><p>Повернути список із назвами наборів символів у повідомленні. Якщо повідомлення є <em class="mimetype">multipart</em>, тоді список міститиме один елемент для кожної підчастини в корисному навантаженні, інакше це буде список довжиною 1.</p>
 <p>Each item in the list will be a string which is the value of the
 <code class="docutils literal notranslate"><span class="pre">charset</span></code> parameter in the <em class="mailheader">Content-Type</em> header for the
 represented subpart.  However, if the subpart has no
@@ -819,10 +784,7 @@ will be <em>failobj</em>.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="email.message.Message.get_content_disposition">
 <span class="sig-name descname"><span class="pre">get_content_disposition</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#email.message.Message.get_content_disposition" title="Link to this definition">¶</a></dt>
-<dd><p>Return the lowercased value (without parameters) of the message’s
-<em class="mailheader">Content-Disposition</em> header if it has one, or <code class="docutils literal notranslate"><span class="pre">None</span></code>.  The
-possible values for this method are <em>inline</em>, <em>attachment</em> or <code class="docutils literal notranslate"><span class="pre">None</span></code>
-if the message follows <span class="target" id="index-11"></span><a class="rfc reference external" href="https://datatracker.ietf.org/doc/html/rfc2183.html"><strong>RFC 2183</strong></a>.</p>
+<dd><p>Повертає значення в нижньому регістрі (без параметрів) заголовка повідомлення <em class="mailheader">Content-Disposition</em>, якщо воно є, або <code class="docutils literal notranslate"><span class="pre">None</span></code>. Можливі значення для цього методу: <em>inline</em>, <em>attachment</em> або <code class="docutils literal notranslate"><span class="pre">None</span></code>, якщо повідомлення слідує за <span class="target" id="index-13"></span><a class="rfc reference external" href="https://datatracker.ietf.org/doc/html/rfc2183.html"><strong>RFC 2183</strong></a>.</p>
 <div class="versionadded">
 <p><span class="versionmodified added"> Dodane w wersji 3.5.</span></p>
 </div>
@@ -831,12 +793,8 @@ if the message follows <span class="target" id="index-11"></span><a class="rfc r
 <dl class="py method">
 <dt class="sig sig-object py" id="email.message.Message.walk">
 <span class="sig-name descname"><span class="pre">walk</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#email.message.Message.walk" title="Link to this definition">¶</a></dt>
-<dd><p>The <a class="reference internal" href="#email.message.Message.walk" title="email.message.Message.walk"><code class="xref py py-meth docutils literal notranslate"><span class="pre">walk()</span></code></a> method is an all-purpose generator which can be used to
-iterate over all the parts and subparts of a message object tree, in
-depth-first traversal order.  You will typically use <a class="reference internal" href="#email.message.Message.walk" title="email.message.Message.walk"><code class="xref py py-meth docutils literal notranslate"><span class="pre">walk()</span></code></a> as the
-iterator in a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop; each iteration returns the next subpart.</p>
-<p>Here’s an example that prints the MIME type of every part of a multipart
-message structure:</p>
+<dd><p>Метод <a class="reference internal" href="#email.message.Message.walk" title="email.message.Message.walk"><code class="xref py py-meth docutils literal notranslate"><span class="pre">walk()</span></code></a> — це універсальний генератор, який можна використовувати для перебору всіх частин і підчастин дерева об’єктів повідомлення в порядку проходження спочатку в глибину. Ви зазвичай використовуєте <a class="reference internal" href="#email.message.Message.walk" title="email.message.Message.walk"><code class="xref py py-meth docutils literal notranslate"><span class="pre">walk()</span></code></a> як ітератор у циклі <code class="docutils literal notranslate"><span class="pre">for</span></code>; кожна ітерація повертає наступну підчастину.</p>
+<p>Ось приклад, який друкує тип MIME кожної частини структури повідомлення, що складається з кількох частин:</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">part</span> <span class="ow">in</span> <span class="n">msg</span><span class="o">.</span><span class="n">walk</span><span class="p">():</span>
 <span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="n">part</span><span class="o">.</span><span class="n">get_content_type</span><span class="p">())</span>
 <span class="go">multipart/report</span>
@@ -848,11 +806,7 @@ message structure:</p>
 <span class="go">text/plain</span>
 </pre></div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">walk</span></code> iterates over the subparts of any part where
-<a class="reference internal" href="#email.message.Message.is_multipart" title="email.message.Message.is_multipart"><code class="xref py py-meth docutils literal notranslate"><span class="pre">is_multipart()</span></code></a> returns <code class="docutils literal notranslate"><span class="pre">True</span></code>, even though
-<code class="docutils literal notranslate"><span class="pre">msg.get_content_maintype()</span> <span class="pre">==</span> <span class="pre">'multipart'</span></code> may return <code class="docutils literal notranslate"><span class="pre">False</span></code>.  We
-can see this in our example by making use of the <code class="docutils literal notranslate"><span class="pre">_structure</span></code> debug
-helper function:</p>
+<p><code class="docutils literal notranslate"><span class="pre">walk</span></code> повторює підчастини будь-якої частини, де <a class="reference internal" href="#email.message.Message.is_multipart" title="email.message.Message.is_multipart"><code class="xref py py-meth docutils literal notranslate"><span class="pre">is_multipart()</span></code></a> повертає <code class="docutils literal notranslate"><span class="pre">True</span></code>, навіть якщо <code class="docutils literal notranslate"><span class="pre">msg.get_content_maintype()</span> <span class="pre">==</span> <span class="pre">'multipart'</span></code> може повернути <code class="docutils literal notranslate"><span class="pre">False</span></code>. Ми можемо побачити це в нашому прикладі, використовуючи допоміжну функцію налагодження <code class="docutils literal notranslate"><span class="pre">_structure</span></code>:</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">part</span> <span class="ow">in</span> <span class="n">msg</span><span class="o">.</span><span class="n">walk</span><span class="p">():</span>
 <span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="n">part</span><span class="o">.</span><span class="n">get_content_maintype</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;multipart&#39;</span><span class="p">,</span>
 <span class="gp">... </span>          <span class="n">part</span><span class="o">.</span><span class="n">is_multipart</span><span class="p">())</span>
@@ -873,9 +827,7 @@ helper function:</p>
 <span class="go">        text/plain</span>
 </pre></div>
 </div>
-<p>Here the <code class="docutils literal notranslate"><span class="pre">message</span></code> parts are not <code class="docutils literal notranslate"><span class="pre">multiparts</span></code>, but they do contain
-subparts. <code class="docutils literal notranslate"><span class="pre">is_multipart()</span></code> returns <code class="docutils literal notranslate"><span class="pre">True</span></code> and <code class="docutils literal notranslate"><span class="pre">walk</span></code> descends
-into the subparts.</p>
+<p>Тут частини <code class="docutils literal notranslate"><span class="pre">message</span></code> не є <code class="docutils literal notranslate"><span class="pre">multiparts</span></code>, але вони містять підчастини. <code class="docutils literal notranslate"><span class="pre">is_multipart()</span></code> повертає <code class="docutils literal notranslate"><span class="pre">True</span></code> і <code class="docutils literal notranslate"><span class="pre">walk</span></code> спускається до підчастин.</p>
 </dd></dl>
 
 <p><a class="reference internal" href="#email.message.Message" title="email.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">Message</span></code></a> objects can also optionally contain two instance attributes,
@@ -883,23 +835,9 @@ which can be used when generating the plain text of a MIME message.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="email.message.Message.preamble">
 <span class="sig-name descname"><span class="pre">preamble</span></span><a class="headerlink" href="#email.message.Message.preamble" title="Link to this definition">¶</a></dt>
-<dd><p>The format of a MIME document allows for some text between the blank line
-following the headers, and the first multipart boundary string. Normally,
-this text is never visible in a MIME-aware mail reader because it falls
-outside the standard MIME armor.  However, when viewing the raw text of
-the message, or when viewing the message in a non-MIME aware reader, this
-text can become visible.</p>
-<p>The <em>preamble</em> attribute contains this leading extra-armor text for MIME
-documents.  When the <a class="reference internal" href="email.parser.html#email.parser.Parser" title="email.parser.Parser"><code class="xref py py-class docutils literal notranslate"><span class="pre">Parser</span></code></a> discovers some text
-after the headers but before the first boundary string, it assigns this
-text to the message’s <em>preamble</em> attribute.  When the
-<a class="reference internal" href="email.generator.html#email.generator.Generator" title="email.generator.Generator"><code class="xref py py-class docutils literal notranslate"><span class="pre">Generator</span></code></a> is writing out the plain text
-representation of a MIME message, and it finds the
-message has a <em>preamble</em> attribute, it will write this text in the area
-between the headers and the first boundary.  See <a class="reference internal" href="email.parser.html#module-email.parser" title="email.parser: Parse flat text email messages to produce a message object structure."><code class="xref py py-mod docutils literal notranslate"><span class="pre">email.parser</span></code></a> and
-<a class="reference internal" href="email.generator.html#module-email.generator" title="email.generator: Generate flat text email messages from a message structure."><code class="xref py py-mod docutils literal notranslate"><span class="pre">email.generator</span></code></a> for details.</p>
-<p>Note that if the message object has no preamble, the <em>preamble</em> attribute
-will be <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
+<dd><p>Формат документа MIME допускає деякий текст між порожнім рядком після заголовків і першим обмежувальним рядком із складених частин. Зазвичай цей текст ніколи не відображається в програмі читання пошти з підтримкою MIME, оскільки він виходить за межі стандартної броні MIME. Однак під час перегляду необробленого тексту повідомлення або під час перегляду повідомлення в програмі читання, яка не підтримує MIME, цей текст може стати видимим.</p>
+<p>Атрибут <em>преамбула</em> містить цей провідний додатковий текст для документів MIME. Коли <a class="reference internal" href="email.parser.html#email.parser.Parser" title="email.parser.Parser"><code class="xref py py-class docutils literal notranslate"><span class="pre">Parser</span></code></a> виявляє текст після заголовків, але перед першим обмежувальним рядком, він призначає цей текст атрибуту <em>преамбула</em> повідомлення. Коли <a class="reference internal" href="email.generator.html#email.generator.Generator" title="email.generator.Generator"><code class="xref py py-class docutils literal notranslate"><span class="pre">Generator</span></code></a> записує звичайне текстове представлення повідомлення MIME і виявляє, що повідомлення має атрибут <em>преамбула</em>, він записує цей текст у область між заголовками та перша межа. Перегляньте <a class="reference internal" href="email.parser.html#module-email.parser" title="email.parser: Parse flat text email messages to produce a message object structure."><code class="xref py py-mod docutils literal notranslate"><span class="pre">email.parser</span></code></a> і <a class="reference internal" href="email.generator.html#module-email.generator" title="email.generator: Generate flat text email messages from a message structure."><code class="xref py py-mod docutils literal notranslate"><span class="pre">email.generator</span></code></a> для деталей.</p>
+<p>Зауважте, що якщо об’єкт повідомлення не має преамбули, атрибут <em>preamble</em> матиме значення <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -916,9 +854,7 @@ file.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="email.message.Message.defects">
 <span class="sig-name descname"><span class="pre">defects</span></span><a class="headerlink" href="#email.message.Message.defects" title="Link to this definition">¶</a></dt>
-<dd><p>The <em>defects</em> attribute contains a list of all the problems found when
-parsing this message.  See <a class="reference internal" href="email.errors.html#module-email.errors" title="email.errors: The exception classes used by the email package."><code class="xref py py-mod docutils literal notranslate"><span class="pre">email.errors</span></code></a> for a detailed description
-of the possible parsing defects.</p>
+<dd><p>Атрибут <em>defects</em> містить список усіх проблем, виявлених під час аналізу цього повідомлення. Перегляньте <a class="reference internal" href="email.errors.html#module-email.errors" title="email.errors: The exception classes used by the email package."><code class="xref py py-mod docutils literal notranslate"><span class="pre">email.errors</span></code></a> для детального опису можливих дефектів аналізу.</p>
 </dd></dl>
 
 </dd></dl>
@@ -933,14 +869,14 @@ of the possible parsing defects.</p>
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="email.examples.html"
-                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">email</span></code>: Examples</a></p>
+                          title="poprzedni rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">email</span></code>: Examples</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="email.mime.html"
-                          title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">email.mime</span></code>: Creating email and MIME objects from scratch</a></p>
+                          title="następny rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">email.mime</span></code>: Creating email and MIME objects from scratch</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -954,7 +890,7 @@ of the possible parsing defects.</p>
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -990,7 +926,7 @@ of the possible parsing defects.</p>
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="netdata.html" >Internet Data Handling</a> &#187;</li>
           <li class="nav-item nav-item-3"><a href="email.html" ><code class="xref py py-mod docutils literal notranslate"><span class="pre">email</span></code> — An email and MIME handling package</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">email.message.Message</span></code>: Representing an email message using the <code class="xref py py-data docutils literal notranslate"><span class="pre">compat32</span></code> API</a></li>
@@ -1040,7 +976,7 @@ of the possible parsing defects.</p>
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

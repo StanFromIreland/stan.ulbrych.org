@@ -8,10 +8,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://docs.python.org/3/library/abc.html" />
 <meta property="og:site_name" content="Python documentation" />
-<meta property="og:description" content="Source code: Lib/abc.py This module provides the infrastructure for defining abstract base classes(ABCs) in Python, as outlined in PEP 3119; see the PEP for why this was added to Python. (See also ..." />
+<meta property="og:description" content="Kod źródłowy:. Lib/abc.py This module provides the infrastructure for defining abstract base classes(ABCs) in Python, as outlined in PEP 3119; see the PEP for why this was added to Python. (See als..." />
 <meta property="og:image" content="_static/og-image.png" />
 <meta property="og:image:alt" content="Python documentation" />
-<meta name="description" content="Source code: Lib/abc.py This module provides the infrastructure for defining abstract base classes(ABCs) in Python, as outlined in PEP 3119; see the PEP for why this was added to Python. (See also ..." />
+<meta name="description" content="Kod źródłowy:. Lib/abc.py This module provides the infrastructure for defining abstract base classes(ABCs) in Python, as outlined in PEP 3119; see the PEP for why this was added to Python. (See als..." />
 <meta name="theme-color" content="#3776ab">
 <meta property="og:image:width" content="200">
 <meta property="og:image:height" content="200">
@@ -31,11 +31,11 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="atexit — Exit handlers" href="atexit.html" />
     <link rel="prev" title="contextlib — Utilities for with-statement contexts" href="contextlib.html" />
@@ -98,14 +98,14 @@
     </select>
 </label>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="contextlib.html"
-                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">contextlib</span></code> — Utilities for <code class="xref std std-keyword docutils literal notranslate"><span class="pre">with</span></code>-statement contexts</a></p>
+                          title="poprzedni rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">contextlib</span></code> — Utilities for <code class="xref std std-keyword docutils literal notranslate"><span class="pre">with</span></code>-statement contexts</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="atexit.html"
-                          title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">atexit</span></code> — Exit handlers</a></p>
+                          title="następny rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">atexit</span></code> — Exit handlers</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -152,7 +152,7 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="python.html" accesskey="U">Python Runtime Services</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">abc</span></code> — Abstract Base Classes</a></li>
                 <li class="right">
@@ -186,7 +186,7 @@
             
   <section id="module-abc">
 <span id="abc-abstract-base-classes"></span><h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">abc</span></code> — Abstract Base Classes<a class="headerlink" href="#module-abc" title="Link to this heading">¶</a></h1>
-<p><strong>Source code:</strong> <a class="extlink-source reference external" href="https://github.com/python/cpython/tree/main/Lib/abc.py">Lib/abc.py</a></p>
+<p><strong>Kod źródłowy:</strong>. <a class="extlink-source reference external" href="https://github.com/python/cpython/tree/main/Lib/abc.py">Lib/abc.py</a></p>
 <hr class="docutils" />
 <p>This module provides the infrastructure for defining <a class="reference internal" href="../glossary.html#term-abstract-base-class"><span class="xref std std-term">abstract base
 classes</span></a> (ABCs) in Python, as outlined in <span class="target" id="index-0"></span><a class="pep reference external" href="https://peps.python.org/pep-3119/"><strong>PEP 3119</strong></a>;
@@ -230,21 +230,13 @@ keyword and using <code class="xref py py-class docutils literal notranslate"><s
 <dl class="py class">
 <dt class="sig sig-object py" id="abc.ABCMeta">
 <em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">abc.</span></span><span class="sig-name descname"><span class="pre">ABCMeta</span></span><a class="headerlink" href="#abc.ABCMeta" title="Link to this definition">¶</a></dt>
-<dd><p>Metaclass for defining Abstract Base Classes (ABCs).</p>
-<p>Use this metaclass to create an ABC.  An ABC can be subclassed directly, and
-then acts as a mix-in class.  You can also register unrelated concrete
-classes (even built-in classes) and unrelated ABCs as „virtual subclasses” –
-these and their descendants will be considered subclasses of the registering
-ABC by the built-in <a class="reference internal" href="functions.html#issubclass" title="issubclass"><code class="xref py py-func docutils literal notranslate"><span class="pre">issubclass()</span></code></a> function, but the registering ABC
-won’t show up in their MRO (Method Resolution Order) nor will method
-implementations defined by the registering ABC be callable (not even via
-<a class="reference internal" href="functions.html#super" title="super"><code class="xref py py-func docutils literal notranslate"><span class="pre">super()</span></code></a>). <a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p>
+<dd><p>Pośrednie uogólnienie dla definiowania abstrakcyjnych uogólnień podstawowych (w skr. z ang. - ABC - Abstract Base Class).</p>
+<p>Używaj tego uogólnienia pośredniego aby utworzyć abstrakcyjne uogólnienie podstawowe (w skr. z ang. ABC). ABC może być wykorzystane do tworzenia następnych uogólnień bezpośrednio, i wtedy działa jako uogólnienie domieszki. Możesz także zarejestrować niezwiązane uogólnienia konkretne (nawet wbudowane uogólnienia) i niezwiązane abstrakcyjne uogólnienia podstawowe jako „sztuczne podrzędne uogólnienia” – te uogólnienia i pochodne po nich będą uznawane za podrzędne uogólnienia rejestrowanego uogólnienia podstawowego abstrakcyjnego przez wbudowane zadanie <a class="reference internal" href="functions.html#issubclass" title="issubclass"><code class="xref py py-func docutils literal notranslate"><span class="pre">issubclass()</span></code></a>, ale rejestrowanie abstrakcyjnego uogólnienia bazowego nie pokaże się w ich sposobie rozwiązywania sposobów postępowania (w skr. MRO - z ang. - Method Resolution Order) ani też wypełnienia sposobów postępowania określone przez rejestrowanie abstrakcyjnych bazowych uogólnień nie będą wywoływalne (nawet nie przez użycie <a class="reference internal" href="functions.html#super" title="super"><code class="xref py py-func docutils literal notranslate"><span class="pre">super()</span></code></a>). <a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p>
 <p>Classes created with a metaclass of <code class="xref py py-class docutils literal notranslate"><span class="pre">ABCMeta</span></code> have the following method:</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="abc.ABCMeta.register">
 <span class="sig-name descname"><span class="pre">register</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">subclass</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#abc.ABCMeta.register" title="Link to this definition">¶</a></dt>
-<dd><p>Register <em>subclass</em> as a „virtual subclass” of this ABC. For
-example:</p>
+<dd><p>Zarejestruj <em>podrzędne uogólnienie</em> jako „wirtualne podrzędne uogólnienie” tego uogólnienia abstrakcyjnego podstawowego. Na przykład:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">abc</span><span class="w"> </span><span class="kn">import</span> <span class="n">ABC</span>
 
 <span class="k">class</span><span class="w"> </span><span class="nc">MyABC</span><span class="p">(</span><span class="n">ABC</span><span class="p">):</span>
@@ -265,11 +257,11 @@ example:</p>
 </div>
 </dd></dl>
 
-<p>You can also override this method in an abstract base class:</p>
+<p>Możesz także obejść ten sposób postępowania w abstrakcyjnym bazowym uogólnieniu:</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="abc.ABCMeta.__subclasshook__">
 <span class="sig-name descname"><span class="pre">__subclasshook__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">subclass</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#abc.ABCMeta.__subclasshook__" title="Link to this definition">¶</a></dt>
-<dd><p>(Must be defined as a class method.)</p>
+<dd><p>(Musi być określona jako sposób postępowania uogólnienia.)</p>
 <p>Check whether <em>subclass</em> is considered a subclass of this ABC.  This means
 that you can customize the behavior of <a class="reference internal" href="functions.html#issubclass" title="issubclass"><code class="xref py py-func docutils literal notranslate"><span class="pre">issubclass()</span></code></a> further without the
 need to call <a class="reference internal" href="#abc.ABCMeta.register" title="abc.ABCMeta.register"><code class="xref py py-meth docutils literal notranslate"><span class="pre">register()</span></code></a> on every class you want to consider a
@@ -283,7 +275,7 @@ this ABC, even if it would normally be one.  If it returns
 mechanism.</p>
 </dd></dl>
 
-<p>For a demonstration of these concepts, look at this example ABC definition:</p>
+<p>Dla demonstracji tych pomysłów, popatrz na tę przykładową definicję abstrakcyjnego uogólnienia podstawowego:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">Foo</span><span class="p">:</span>
     <span class="k">def</span><span class="w"> </span><span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>
         <span class="o">...</span>
@@ -332,7 +324,7 @@ available as a method of <code class="docutils literal notranslate"><span class=
 <dl class="py function">
 <dt class="sig sig-object py" id="abc.abstractmethod">
 <span class="sig-prename descclassname"><span class="pre">&#64;</span></span><span class="sig-prename descclassname"><span class="pre">abc.</span></span><span class="sig-name descname"><span class="pre">abstractmethod</span></span><a class="headerlink" href="#abc.abstractmethod" title="Link to this definition">¶</a></dt>
-<dd><p>A decorator indicating abstract methods.</p>
+<dd><p>Dekorator wskazujący abstrakcyjne sposoby postępowania.</p>
 <p>Using this decorator requires that the class’s metaclass is <a class="reference internal" href="#abc.ABCMeta" title="abc.ABCMeta"><code class="xref py py-class docutils literal notranslate"><span class="pre">ABCMeta</span></code></a>
 or is derived from it.  A class that has a metaclass derived from
 <code class="xref py py-class docutils literal notranslate"><span class="pre">ABCMeta</span></code> cannot be instantiated unless all of its abstract methods
@@ -394,12 +386,7 @@ example, Python’s built-in <a class="reference internal" href="functions.html#
 </div>
 <div class="admonition note">
 <p class="admonition-title">Informacja</p>
-<p>Unlike Java abstract methods, these abstract
-methods may have an implementation. This implementation can be
-called via the <a class="reference internal" href="functions.html#super" title="super"><code class="xref py py-func docutils literal notranslate"><span class="pre">super()</span></code></a> mechanism from the class that
-overrides it.  This could be useful as an end-point for a
-super-call in a framework that uses cooperative
-multiple-inheritance.</p>
+<p>W przeciwieństwie do abstrakcyjnych sposobów postępowania Javy, te abstrakcyjne sposoby postępowania mogą mieć swoje wypełnienie. To wypełnienie może być wzywane przez mechanizm odwołań do zadania <a class="reference internal" href="functions.html#super" title="super"><code class="xref py py-func docutils literal notranslate"><span class="pre">super()</span></code></a>, z uogólnienia które przesłania taki sposób postępowania. To może być użyteczne jako punkt końcowy super-wywołania w ramach udogodnienia które używa współpracującego wielokrotnego-dziedziczenia.</p>
 </div>
 </dd></dl>
 
@@ -460,8 +447,7 @@ method:</p>
 <a class="reference internal" href="functions.html#property.setter" title="property.setter"><code class="xref py py-meth docutils literal notranslate"><span class="pre">property.setter()</span></code></a> and <a class="reference internal" href="functions.html#property.deleter" title="property.deleter"><code class="xref py py-meth docutils literal notranslate"><span class="pre">property.deleter()</span></code></a> with
 <a class="reference internal" href="#abc.abstractmethod" title="abc.abstractmethod"><code class="xref py py-func docutils literal notranslate"><span class="pre">abstractmethod()</span></code></a>, making this decorator redundant.</p>
 </div>
-<p>A subclass of the built-in <a class="reference internal" href="functions.html#property" title="property"><code class="xref py py-func docutils literal notranslate"><span class="pre">property()</span></code></a>, indicating an abstract
-property.</p>
+<p>Podrzędne uogólnienie wbudowanego zadania <a class="reference internal" href="functions.html#property" title="property"><code class="xref py py-func docutils literal notranslate"><span class="pre">property()</span></code></a> wskazujące abstrakcyjną właściwość.</p>
 <p>This special case is deprecated, as the <a class="reference internal" href="functions.html#property" title="property"><code class="xref py py-func docutils literal notranslate"><span class="pre">property()</span></code></a> decorator
 is now correctly identified as abstract when applied to an abstract
 method:</p>
@@ -528,12 +514,11 @@ It does not update any subclasses.</p>
 </div>
 </dd></dl>
 
-<p class="rubric">Footnotes</p>
+<p class="rubric">Przypisy</p>
 <aside class="footnote-list brackets">
 <aside class="footnote brackets" id="id2" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
-<p>C++ programmers should note that Python’s virtual base class
-concept is not the same as C++»s.</p>
+<p>Programiści C++ powinni zauważyć, że koncepcja wirtualnego uogólnienia podstawowego z języka pytonowskiego nie jest tożsame z tym z C++»a.</p>
 </aside>
 </aside>
 </section>
@@ -546,14 +531,14 @@ concept is not the same as C++»s.</p>
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="contextlib.html"
-                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">contextlib</span></code> — Utilities for <code class="xref std std-keyword docutils literal notranslate"><span class="pre">with</span></code>-statement contexts</a></p>
+                          title="poprzedni rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">contextlib</span></code> — Utilities for <code class="xref std std-keyword docutils literal notranslate"><span class="pre">with</span></code>-statement contexts</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="atexit.html"
-                          title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">atexit</span></code> — Exit handlers</a></p>
+                          title="następny rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">atexit</span></code> — Exit handlers</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -567,7 +552,7 @@ concept is not the same as C++»s.</p>
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -603,7 +588,7 @@ concept is not the same as C++»s.</p>
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="python.html" >Python Runtime Services</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">abc</span></code> — Abstract Base Classes</a></li>
                 <li class="right">
@@ -652,7 +637,7 @@ concept is not the same as C++»s.</p>
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

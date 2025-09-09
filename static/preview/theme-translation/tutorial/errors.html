@@ -4,19 +4,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="8. Errors and Exceptions" />
+<meta property="og:title" content="8. Błędy i wyjątki" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://docs.python.org/3/tutorial/errors.html" />
 <meta property="og:site_name" content="Python documentation" />
-<meta property="og:description" content="Until now error messages haven’t been more than mentioned, but if you have tried out the examples you have probably seen some. There are (at least) two distinguishable kinds of errors: syntax error..." />
+<meta property="og:description" content="Do tej pory wiadomości o błędach były tylko wspomniane, ale jeśli próbowałaś(-łeś) przykładów to pewnie udało ci się na nie natknąć. Występują (przynajmniej) dwa charakterystyczne typy błędów: błęd..." />
 <meta property="og:image" content="_static/og-image.png" />
 <meta property="og:image:alt" content="Python documentation" />
-<meta name="description" content="Until now error messages haven’t been more than mentioned, but if you have tried out the examples you have probably seen some. There are (at least) two distinguishable kinds of errors: syntax error..." />
+<meta name="description" content="Do tej pory wiadomości o błędach były tylko wspomniane, ale jeśli próbowałaś(-łeś) przykładów to pewnie udało ci się na nie natknąć. Występują (przynajmniej) dwa charakterystyczne typy błędów: błęd..." />
 <meta name="theme-color" content="#3776ab">
 <meta property="og:image:width" content="200">
 <meta property="og:image:height" content="200">
 
-    <title>8. Errors and Exceptions &#8212; Python 3.15.0a0 - dokumentacja</title><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8. Błędy i wyjątki &#8212; Python 3.15.0a0 - dokumentacja</title><meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=234b1a7c" />
@@ -31,14 +31,14 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
-    <link rel="next" title="9. Classes" href="classes.html" />
-    <link rel="prev" title="7. Input and Output" href="inputoutput.html" />
+    <link rel="next" title="9. Klasy" href="classes.html" />
+    <link rel="prev" title="7. Wejście i wyjście" href="inputoutput.html" />
     
       
       <link rel="canonical" href="https://docs.python.org/3/tutorial/errors.html">
@@ -98,33 +98,33 @@
     </select>
 </label>
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
-<li><a class="reference internal" href="#">8. Errors and Exceptions</a><ul>
-<li><a class="reference internal" href="#syntax-errors">8.1. Syntax Errors</a></li>
-<li><a class="reference internal" href="#exceptions">8.2. Exceptions</a></li>
-<li><a class="reference internal" href="#handling-exceptions">8.3. Handling Exceptions</a></li>
-<li><a class="reference internal" href="#raising-exceptions">8.4. Raising Exceptions</a></li>
-<li><a class="reference internal" href="#exception-chaining">8.5. Exception Chaining</a></li>
-<li><a class="reference internal" href="#user-defined-exceptions">8.6. User-defined Exceptions</a></li>
-<li><a class="reference internal" href="#defining-clean-up-actions">8.7. Defining Clean-up Actions</a></li>
-<li><a class="reference internal" href="#predefined-clean-up-actions">8.8. Predefined Clean-up Actions</a></li>
-<li><a class="reference internal" href="#raising-and-handling-multiple-unrelated-exceptions">8.9. Raising and Handling Multiple Unrelated Exceptions</a></li>
-<li><a class="reference internal" href="#enriching-exceptions-with-notes">8.10. Enriching Exceptions with Notes</a></li>
+<li><a class="reference internal" href="#">8. Błędy i wyjątki</a><ul>
+<li><a class="reference internal" href="#syntax-errors">8.1. Błędy składni</a></li>
+<li><a class="reference internal" href="#exceptions">8.2. Wyjątki</a></li>
+<li><a class="reference internal" href="#handling-exceptions">8.3. Obsługa wyjątków</a></li>
+<li><a class="reference internal" href="#raising-exceptions">8.4. Rzucanie wyjątków</a></li>
+<li><a class="reference internal" href="#exception-chaining">8.5. Łańcuch wyjątków</a></li>
+<li><a class="reference internal" href="#user-defined-exceptions">8.6. Wyjątki zdefiniowane przez użytkownika</a></li>
+<li><a class="reference internal" href="#defining-clean-up-actions">8.7. Definiowanie działań porządkujących</a></li>
+<li><a class="reference internal" href="#predefined-clean-up-actions">8.8. Predefiniowane akcje porządkujące</a></li>
+<li><a class="reference internal" href="#raising-and-handling-multiple-unrelated-exceptions">8.9. Rzucanie i obsługa wielu niepowiązanych wyjątków</a></li>
+<li><a class="reference internal" href="#enriching-exceptions-with-notes">8.10. Wzbogacanie wyjątków o notatki</a></li>
 </ul>
 </li>
 </ul>
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="inputoutput.html"
-                          title="previous chapter"><span class="section-number">7. </span>Input and Output</a></p>
+                          title="poprzedni rozdział"><span class="section-number">7. </span>Wejście i wyjście</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="classes.html"
-                          title="next chapter"><span class="section-number">9. </span>Classes</a></p>
+                          title="następny rozdział"><span class="section-number">9. </span>Klasy</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -152,10 +152,10 @@
           <a href="../py-modindex.html" title="Indeks modułów Pythona"
              >moduły</a> |</li>
         <li class="right" >
-          <a href="classes.html" title="9. Classes"
+          <a href="classes.html" title="9. Klasy"
              accesskey="N">dalej</a> |</li>
         <li class="right" >
-          <a href="inputoutput.html" title="7. Input and Output"
+          <a href="inputoutput.html" title="7. Wejście i wyjście"
              accesskey="P">wstecz</a> |</li>
 
           <li><img src="../_static/py.svg" alt="Python logo" style="vertical-align: middle; margin-top: -1px"></li>
@@ -171,8 +171,8 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">The Python Tutorial</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href=""><span class="section-number">8. </span>Errors and Exceptions</a></li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Python Tutorial</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">8. </span>Błędy i wyjątki</a></li>
                 <li class="right">
                     
 
@@ -203,17 +203,14 @@
           <div class="body" role="main">
             
   <section id="errors-and-exceptions">
-<span id="tut-errors"></span><h1><span class="section-number">8. </span>Errors and Exceptions<a class="headerlink" href="#errors-and-exceptions" title="Link to this heading">¶</a></h1>
-<p>Until now error messages haven’t been more than mentioned, but if you have tried
-out the examples you have probably seen some.  There are (at least) two
-distinguishable kinds of errors: <em>syntax errors</em> and <em>exceptions</em>.</p>
+<span id="tut-errors"></span><h1><span class="section-number">8. </span>Błędy i wyjątki<a class="headerlink" href="#errors-and-exceptions" title="Link to this heading">¶</a></h1>
+<p>Do tej pory wiadomości o błędach były tylko wspomniane, ale jeśli próbowałaś(-łeś) przykładów to pewnie udało ci się na nie natknąć. Występują (przynajmniej) dwa charakterystyczne typy błędów: <em>błędy składni</em> (syntax errors) oraz <em>wyjątki</em> (exceptions).</p>
 <section id="syntax-errors">
-<span id="tut-syntaxerrors"></span><h2><span class="section-number">8.1. </span>Syntax Errors<a class="headerlink" href="#syntax-errors" title="Link to this heading">¶</a></h2>
-<p>Syntax errors, also known as parsing errors, are perhaps the most common kind of
-complaint you get while you are still learning Python:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">while</span> <span class="kc">True</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello world&#39;</span><span class="p">)</span>
+<span id="tut-syntaxerrors"></span><h2><span class="section-number">8.1. </span>Błędy składni<a class="headerlink" href="#syntax-errors" title="Link to this heading">¶</a></h2>
+<p>Błędy składni, znane również jako błędy parsowania, są prawdopodobnie najczęstszym rodzajem skarg, które pojawiają się podczas nauki Pythona:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">while</span> <span class="kc">True</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Witaj świecie&#39;</span><span class="p">)</span>
   File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>
-<span class="w">    </span><span class="k">while</span> <span class="kc">True</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello world&#39;</span><span class="p">)</span>
+<span class="w">    </span><span class="k">while</span> <span class="kc">True</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Witaj świecie&#39;</span><span class="p">)</span>
 <span class="w">               </span><span class="pm">^^^^^</span>
 <span class="gr">SyntaxError</span>: <span class="n">invalid syntax</span>
 </pre></div>
@@ -226,12 +223,8 @@ function <a class="reference internal" href="../library/functions.html#print" ti
 know where to look in case the input came from a file.</p>
 </section>
 <section id="exceptions">
-<span id="tut-exceptions"></span><h2><span class="section-number">8.2. </span>Exceptions<a class="headerlink" href="#exceptions" title="Link to this heading">¶</a></h2>
-<p>Even if a statement or expression is syntactically correct, it may cause an
-error when an attempt is made to execute it. Errors detected during execution
-are called <em>exceptions</em> and are not unconditionally fatal: you will soon learn
-how to handle them in Python programs.  Most exceptions are not handled by
-programs, however, and result in error messages as shown here:</p>
+<span id="tut-exceptions"></span><h2><span class="section-number">8.2. </span>Wyjątki<a class="headerlink" href="#exceptions" title="Link to this heading">¶</a></h2>
+<p>Nawet jeśli instrukcja lub wyrażenie jest poprawne składniowo, może ona wywołać błąd podczas próby jej wykonania. Błędy zauważone podczas wykonania programu są nazywane <em>wyjątkami</em> (exceptions) i nie zawsze są niedopuszczalne: już niedługo nauczysz w jaki sposób je obsługiwać. Większość wyjątków nie jest jednak obsługiwana przez program przez co wyświetlane są informacje o błędzie jak pokazano poniżej:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="mi">10</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">0</span><span class="p">)</span>
 <span class="gt">Traceback (most recent call last):</span>
   File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
@@ -252,64 +245,36 @@ programs, however, and result in error messages as shown here:</p>
 <span class="gr">TypeError</span>: <span class="n">can only concatenate str (not &quot;int&quot;) to str</span>
 </pre></div>
 </div>
-<p>The last line of the error message indicates what happened. Exceptions come in
-different types, and the type is printed as part of the message: the types in
-the example are <a class="reference internal" href="../library/exceptions.html#ZeroDivisionError" title="ZeroDivisionError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">ZeroDivisionError</span></code></a>, <a class="reference internal" href="../library/exceptions.html#NameError" title="NameError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">NameError</span></code></a> and <a class="reference internal" href="../library/exceptions.html#TypeError" title="TypeError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">TypeError</span></code></a>.
-The string printed as the exception type is the name of the built-in exception
-that occurred.  This is true for all built-in exceptions, but need not be true
-for user-defined exceptions (although it is a useful convention). Standard
-exception names are built-in identifiers (not reserved keywords).</p>
-<p>The rest of the line provides detail based on the type of exception and what
-caused it.</p>
-<p>The preceding part of the error message shows the context where the exception
-occurred, in the form of a stack traceback. In general it contains a stack
-traceback listing source lines; however, it will not display lines read from
-standard input.</p>
-<p><a class="reference internal" href="../library/exceptions.html#bltin-exceptions"><span class="std std-ref">Built-in Exceptions</span></a> lists the built-in exceptions and their meanings.</p>
+<p>Ostatni wiersz komunikatu o błędzie wskazuje, co się stało. Wyjątki występują w różnych typach, a typ jest drukowany jako część komunikatu: typy w przykładzie to <a class="reference internal" href="../library/exceptions.html#ZeroDivisionError" title="ZeroDivisionError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">ZeroDivisionError</span></code></a>, <a class="reference internal" href="../library/exceptions.html#NameError" title="NameError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">NameError</span></code></a> i <a class="reference internal" href="../library/exceptions.html#TypeError" title="TypeError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">TypeError</span></code></a>. Ciąg wydrukowany jako typ wyjątku jest nazwą wbudowanego wyjątku, który wystąpił.  Jest to prawdą dla wszystkich wbudowanych wyjątków, ale nie musi być prawdą dla wyjątków zdefiniowanych przez użytkownika (choć jest to przydatna konwencja). Standardowe nazwy wyjątków są wbudowanymi identyfikatorami (nie zarezerwowanymi słowami kluczowymi).</p>
+<p>Pozostała część linii dostarcza szczegółów na temat typu wyjątku oraz informacji, co go spowodowało.</p>
+<p>Wcześniejsza część komunikatu o błędzie pokazuje kontekst, w którym wystąpił wyjątek, w postaci śladu stosu. Ogólnie rzecz biorąc, zawiera on ślad stosu z listą linii źródłowych; jednak nie wyświetli linii odczytanych ze standardowego wejścia.</p>
+<p><a class="reference internal" href="../library/exceptions.html#bltin-exceptions"><span class="std std-ref">Built-in Exceptions</span></a> wymienia wbudowane wyjątki i ich znaczenie.</p>
 </section>
 <section id="handling-exceptions">
-<span id="tut-handling"></span><h2><span class="section-number">8.3. </span>Handling Exceptions<a class="headerlink" href="#handling-exceptions" title="Link to this heading">¶</a></h2>
-<p>It is possible to write programs that handle selected exceptions. Look at the
-following example, which asks the user for input until a valid integer has been
-entered, but allows the user to interrupt the program (using <kbd class="kbd docutils literal notranslate">Control</kbd>-<kbd class="kbd docutils literal notranslate">C</kbd> or
-whatever the operating system supports); note that a user-generated interruption
-is signalled by raising the <a class="reference internal" href="../library/exceptions.html#KeyboardInterrupt" title="KeyboardInterrupt"><code class="xref py py-exc docutils literal notranslate"><span class="pre">KeyboardInterrupt</span></code></a> exception.</p>
+<span id="tut-handling"></span><h2><span class="section-number">8.3. </span>Obsługa wyjątków<a class="headerlink" href="#handling-exceptions" title="Link to this heading">¶</a></h2>
+<p>Możliwe jest pisanie programów, które obsługują wybrane wyjątki. Spójrzmy na poniższy przykład, który prosi użytkownika o wprowadzenie danych, dopóki nie zostanie wprowadzona poprawna liczba całkowita, ale pozwala użytkownikowi na przerwanie programu (przy użyciu <kbd class="kbd docutils literal notranslate">Control</kbd>-<kbd class="kbd docutils literal notranslate">C</kbd> lub czegokolwiek innego obsługiwanego przez system operacyjny); zauważ, że przerwanie wygenerowane przez użytkownika jest sygnalizowane przez podniesienie wyjątku <a class="reference internal" href="../library/exceptions.html#KeyboardInterrupt" title="KeyboardInterrupt"><code class="xref py py-exc docutils literal notranslate"><span class="pre">KeyboardInterrupt</span></code></a>.</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
 <span class="gp">... </span>    <span class="k">try</span><span class="p">:</span>
-<span class="gp">... </span>        <span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Please enter a number: &quot;</span><span class="p">))</span>
+<span class="gp">... </span>        <span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Proszę podaj liczbę: &quot;</span><span class="p">))</span>
 <span class="gp">... </span>        <span class="k">break</span>
 <span class="gp">... </span>    <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
-<span class="gp">... </span>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Oops!  That was no valid number.  Try again...&quot;</span><span class="p">)</span>
+<span class="gp">... </span>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Ups! To nie była poprawna liczba. Spróbuj ponownie...&quot;</span><span class="p">)</span>
 <span class="gp">...</span>
 </pre></div>
 </div>
-<p>The <a class="reference internal" href="../reference/compound_stmts.html#try"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">try</span></code></a> statement works as follows.</p>
+<p>Instrukcja <a class="reference internal" href="../reference/compound_stmts.html#try"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">try</span></code></a> działa następująco.</p>
 <ul class="simple">
-<li><p>First, the <em>try clause</em> (the statement(s) between the <a class="reference internal" href="../reference/compound_stmts.html#try"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">try</span></code></a> and
-<a class="reference internal" href="../reference/compound_stmts.html#except"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">except</span></code></a> keywords) is executed.</p></li>
-<li><p>If no exception occurs, the <em>except clause</em> is skipped and execution of the
-<a class="reference internal" href="../reference/compound_stmts.html#try"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">try</span></code></a> statement is finished.</p></li>
-<li><p>If an exception occurs during execution of the <a class="reference internal" href="../reference/compound_stmts.html#try"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">try</span></code></a> clause, the rest of the
-clause is skipped.  Then, if its type matches the exception named after the
-<a class="reference internal" href="../reference/compound_stmts.html#except"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">except</span></code></a> keyword, the <em>except clause</em> is executed, and then execution
-continues after the try/except block.</p></li>
-<li><p>If an exception occurs which does not match the exception named in the <em>except
-clause</em>, it is passed on to outer <a class="reference internal" href="../reference/compound_stmts.html#try"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">try</span></code></a> statements; if no handler is
-found, it is an <em>unhandled exception</em> and execution stops with an error message.</p></li>
+<li><p>W pierwszej kolejności wykonywane są instrukcje pod klauzulą <em>try</em> - pomiędzy słowami kluczowymi <a class="reference internal" href="../reference/compound_stmts.html#try"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">try</span></code></a> i <a class="reference internal" href="../reference/compound_stmts.html#except"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">except</span></code></a>.</p></li>
+<li><p>Jeżeli nie wystąpi żaden wyjątek, klauzula <em>except</em> jest pomijana i zostaje zakończone wykonywanie instrukcji <a class="reference internal" href="../reference/compound_stmts.html#try"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">try</span></code></a>.</p></li>
+<li><p>Jeśli wyjątek wystąpi podczas wykonywania klauzuli <a class="reference internal" href="../reference/compound_stmts.html#try"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">try</span></code></a>, reszta klauzuli jest pomijana. Następnie, jeśli jego typ pasuje do wyjątku nazwanego po słowie kluczowym <a class="reference internal" href="../reference/compound_stmts.html#except"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">except</span></code></a>, wykonywana jest <em>klauzula except</em>, a następnie wykonanie jest kontynuowane po bloku try/except.</p></li>
+<li><p>Jeśli wystąpi wyjątek, który nie pasuje do wyjątku nazwanego w <em>klauzuli except</em>, jest on przekazywany do zewnętrznych instrukcji <a class="reference internal" href="../reference/compound_stmts.html#try"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">try</span></code></a>; jeśli nie zostanie znaleziona obsługa, jest to <em>nieobsłużony wyjątek</em> i wykonanie zatrzymuje się z komunikatem błędu.</p></li>
 </ul>
-<p>A <a class="reference internal" href="../reference/compound_stmts.html#try"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">try</span></code></a> statement may have more than one <em>except clause</em>, to specify
-handlers for different exceptions.  At most one handler will be executed.
-Handlers only handle exceptions that occur in the corresponding <em>try clause</em>,
-not in other handlers of the same <code class="xref std std-keyword docutils literal notranslate"><span class="pre">try</span></code> statement.  An <em>except clause</em>
-may name multiple exceptions as a parenthesized tuple, for example:</p>
+<p>Instrukcja <a class="reference internal" href="../reference/compound_stmts.html#try"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">try</span></code></a> może mieć więcej niż jedną <em>klauzulę except</em>, aby określić programy obsługi dla różnych wyjątków.  Wykonany zostanie co najwyżej jeden handler. Obsługiwane są tylko wyjątki, które występują w odpowiadających im <em>klauzulach try</em>, a nie w kodzie obsługi tej samej instrukcji <code class="xref std std-keyword docutils literal notranslate"><span class="pre">try</span></code>. <em>Klauzula except</em> może określać wiele wyjątków krotką w nawiasach, na przykład:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="o">...</span> <span class="k">except</span> <span class="p">(</span><span class="ne">RuntimeError</span><span class="p">,</span> <span class="ne">TypeError</span><span class="p">,</span> <span class="ne">NameError</span><span class="p">):</span>
 <span class="o">...</span>     <span class="k">pass</span>
 </pre></div>
 </div>
-<p>A class in an <a class="reference internal" href="../reference/compound_stmts.html#except"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">except</span></code></a> clause matches exceptions which are instances of the
-class itself or one of its derived classes (but not the other way around — an
-<em>except clause</em> listing a derived class does not match instances of its base classes).
-For example, the following code will print B, C, D in that order:</p>
+<p>Klasa w klauzuli <a class="reference internal" href="../reference/compound_stmts.html#except"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">except</span></code></a> obsługuje wyjątki, które są instancjami samej klasy lub jednej z jej klas pochodnych (ale nie na odwrót — <em>klauzula except</em> wymieniająca klasę pochodną nie obsłuży instancji jej klas bazowych). Na przykład, poniższy kod wypisze B, C, D w tej kolejności:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">B</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
     <span class="k">pass</span>
 
@@ -330,139 +295,103 @@ For example, the following code will print B, C, D in that order:</p>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;B&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Note that if the <em>except clauses</em> were reversed (with <code class="docutils literal notranslate"><span class="pre">except</span> <span class="pre">B</span></code> first), it
-would have printed B, B, B — the first matching <em>except clause</em> is triggered.</p>
-<p>When an exception occurs, it may have associated values, also known as the
-exception’s <em>arguments</em>. The presence and types of the arguments depend on the
-exception type.</p>
-<p>The <em>except clause</em> may specify a variable after the exception name.  The
-variable is bound to the exception instance which typically has an <code class="docutils literal notranslate"><span class="pre">args</span></code>
-attribute that stores the arguments. For convenience, builtin exception
-types define <a class="reference internal" href="../reference/datamodel.html#object.__str__" title="object.__str__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">__str__()</span></code></a> to print all the arguments without explicitly
-accessing <code class="docutils literal notranslate"><span class="pre">.args</span></code>.</p>
+<p>Zauważ, że jeśli <em>klauzule except</em> byłyby odwrócone (z <code class="docutils literal notranslate"><span class="pre">except</span> <span class="pre">B</span></code> na pierwszym miejscu), wypisane zostałoby B, B, B — uruchamiana jest pierwsza pasująca <em>klauzula except</em>.</p>
+<p>Gdy wystąpi wyjątek, może on mieć powiązane wartości, znane również jako <em>argumenty</em> wyjątku. Obecność i typy argumentów zależą od typu wyjątku.</p>
+<p><em>Klauzula except</em> może określać nazwę zmiennej po nazwie wyjątku. Zmienna jest powiązana z instancją wyjątku, która zazwyczaj posiada atrybut <code class="docutils literal notranslate"><span class="pre">args</span></code> przechowujący argumenty. Dla wygody, typy wyjątków wbudowanych definiują <a class="reference internal" href="../reference/datamodel.html#object.__str__" title="object.__str__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">__str__()</span></code></a> drukującą wszystkie argumenty bez odwoływania się do <code class="docutils literal notranslate"><span class="pre">.args</span></code>.</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">try</span><span class="p">:</span>
-<span class="gp">... </span>    <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;spam&#39;</span><span class="p">,</span> <span class="s1">&#39;eggs&#39;</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;konserwa&#39;</span><span class="p">,</span> <span class="s1">&#39;jajka&#39;</span><span class="p">)</span>
 <span class="gp">... </span><span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">inst</span><span class="p">:</span>
-<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">inst</span><span class="p">))</span>    <span class="c1"># the exception type</span>
-<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="n">inst</span><span class="o">.</span><span class="n">args</span><span class="p">)</span>     <span class="c1"># arguments stored in .args</span>
-<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="n">inst</span><span class="p">)</span>          <span class="c1"># __str__ allows args to be printed directly,</span>
-<span class="gp">... </span>                         <span class="c1"># but may be overridden in exception subclasses</span>
-<span class="gp">... </span>    <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">inst</span><span class="o">.</span><span class="n">args</span>     <span class="c1"># unpack args</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">inst</span><span class="p">))</span>    <span class="c1"># typ wyjątku</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="n">inst</span><span class="o">.</span><span class="n">args</span><span class="p">)</span>     <span class="c1"># argumenty przechowywane w .args</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="n">inst</span><span class="p">)</span>          <span class="c1"># metoda __str__ pozwala na wypisanie args bezpośrednio,</span>
+<span class="gp">... </span>                         <span class="c1"># ale jej definicja może być nadpisana w klasach dziedziczących</span>
+<span class="gp">... </span>    <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">inst</span><span class="o">.</span><span class="n">args</span>     <span class="c1"># rozpakowanie argumentów</span>
 <span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;x =&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
 <span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;y =&#39;</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 <span class="gp">...</span>
 <span class="go">&lt;class &#39;Exception&#39;&gt;</span>
-<span class="go">(&#39;spam&#39;, &#39;eggs&#39;)</span>
-<span class="go">(&#39;spam&#39;, &#39;eggs&#39;)</span>
-<span class="go">x = spam</span>
-<span class="go">y = eggs</span>
+<span class="go">(&#39;konserwa&#39;, &#39;jajka&#39;)</span>
+<span class="go">(&#39;konserwa&#39;, &#39;jajka&#39;)</span>
+<span class="go">x = konserwa</span>
+<span class="go">y = jajka</span>
 </pre></div>
 </div>
-<p>The exception’s <a class="reference internal" href="../reference/datamodel.html#object.__str__" title="object.__str__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">__str__()</span></code></a> output is printed as the last part («detail»)
-of the message for unhandled exceptions.</p>
-<p><a class="reference internal" href="../library/exceptions.html#BaseException" title="BaseException"><code class="xref py py-exc docutils literal notranslate"><span class="pre">BaseException</span></code></a> is the common base class of all exceptions. One of its
-subclasses, <a class="reference internal" href="../library/exceptions.html#Exception" title="Exception"><code class="xref py py-exc docutils literal notranslate"><span class="pre">Exception</span></code></a>, is the base class of all the non-fatal exceptions.
-Exceptions which are not subclasses of <a class="reference internal" href="../library/exceptions.html#Exception" title="Exception"><code class="xref py py-exc docutils literal notranslate"><span class="pre">Exception</span></code></a> are not typically
-handled, because they are used to indicate that the program should terminate.
-They include <a class="reference internal" href="../library/exceptions.html#SystemExit" title="SystemExit"><code class="xref py py-exc docutils literal notranslate"><span class="pre">SystemExit</span></code></a> which is raised by <a class="reference internal" href="../library/sys.html#sys.exit" title="sys.exit"><code class="xref py py-meth docutils literal notranslate"><span class="pre">sys.exit()</span></code></a> and
-<a class="reference internal" href="../library/exceptions.html#KeyboardInterrupt" title="KeyboardInterrupt"><code class="xref py py-exc docutils literal notranslate"><span class="pre">KeyboardInterrupt</span></code></a> which is raised when a user wishes to interrupt
-the program.</p>
-<p><a class="reference internal" href="../library/exceptions.html#Exception" title="Exception"><code class="xref py py-exc docutils literal notranslate"><span class="pre">Exception</span></code></a> can be used as a wildcard that catches (almost) everything.
-However, it is good practice to be as specific as possible with the types
-of exceptions that we intend to handle, and to allow any unexpected
-exceptions to propagate on.</p>
-<p>The most common pattern for handling <a class="reference internal" href="../library/exceptions.html#Exception" title="Exception"><code class="xref py py-exc docutils literal notranslate"><span class="pre">Exception</span></code></a> is to print or log
-the exception and then re-raise it (allowing a caller to handle the
-exception as well):</p>
+<p>Dane wyjściowe metody <a class="reference internal" href="../reference/datamodel.html#object.__str__" title="object.__str__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">__str__()</span></code></a> wyjątku są drukowane jako ostatnia część («szczegóły») komunikatu dla nieobsłużonych wyjątków.</p>
+<p><a class="reference internal" href="../library/exceptions.html#BaseException" title="BaseException"><code class="xref py py-exc docutils literal notranslate"><span class="pre">BaseException</span></code></a> jest wspólną klasą bazową wszystkich wyjątków. Jedna z jej podklas, <a class="reference internal" href="../library/exceptions.html#Exception" title="Exception"><code class="xref py py-exc docutils literal notranslate"><span class="pre">Exception</span></code></a>, jest klasą bazową wszystkich nie-fatalnych wyjątków. Wyjątki, które nie są podklasami <a class="reference internal" href="../library/exceptions.html#Exception" title="Exception"><code class="xref py py-exc docutils literal notranslate"><span class="pre">Exception</span></code></a> nie są zazwyczaj obsługiwane, ponieważ są używane do wskazania, że program powinien się zakończyć. Obejmują one <a class="reference internal" href="../library/exceptions.html#SystemExit" title="SystemExit"><code class="xref py py-exc docutils literal notranslate"><span class="pre">SystemExit</span></code></a>, który jest rzucany przez <a class="reference internal" href="../library/sys.html#sys.exit" title="sys.exit"><code class="xref py py-meth docutils literal notranslate"><span class="pre">sys.exit()</span></code></a> i <a class="reference internal" href="../library/exceptions.html#KeyboardInterrupt" title="KeyboardInterrupt"><code class="xref py py-exc docutils literal notranslate"><span class="pre">KeyboardInterrupt</span></code></a>, które są rzucane, gdy użytkownik chce przerwać program.</p>
+<p><a class="reference internal" href="../library/exceptions.html#Exception" title="Exception"><code class="xref py py-exc docutils literal notranslate"><span class="pre">Exception</span></code></a> może być używany jako symbol wieloznaczny, który przechwytuje (prawie) wszystko. Dobrą praktyką jest jednak jak najdokładniejsze określenie typów wyjątków, które zamierzamy obsługiwać, i umożliwienie propagacji wszelkim nieoczekiwanym wyjątkom.</p>
+<p>Najczęstszym wzorcem obsługi <a class="reference internal" href="../library/exceptions.html#Exception" title="Exception"><code class="xref py py-exc docutils literal notranslate"><span class="pre">Exception</span></code></a> jest drukowanie lub umieszczenie wyjątku w logach, a następnie ponowne rzucenie go (umożliwiając również obsługę wyjątku funkcji, w której znajduje się wywołanie):</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
 
 <span class="k">try</span><span class="p">:</span>
-    <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;myfile.txt&#39;</span><span class="p">)</span>
+    <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;moj_plik.txt&#39;</span><span class="p">)</span>
     <span class="n">s</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
     <span class="n">i</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>
 <span class="k">except</span> <span class="ne">OSError</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;OS error:&quot;</span><span class="p">,</span> <span class="n">err</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Błąd OS:&quot;</span><span class="p">,</span> <span class="n">err</span><span class="p">)</span>
 <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Could not convert data to an integer.&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Nie udało się przekonwertować danych na liczbę całkowitą.&quot;</span><span class="p">)</span>
 <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Unexpected </span><span class="si">{</span><span class="n">err</span><span class="si">=}</span><span class="s2">, </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">err</span><span class="p">)</span><span class="si">=}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Nieoczekiwany </span><span class="si">{</span><span class="n">err</span><span class="si">=}</span><span class="s2">, </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">err</span><span class="p">)</span><span class="si">=}</span><span class="s2">&quot;</span><span class="p">)</span>
     <span class="k">raise</span>
 </pre></div>
 </div>
-<p>The <a class="reference internal" href="../reference/compound_stmts.html#try"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">try</span></code></a> … <a class="reference internal" href="../reference/compound_stmts.html#except"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">except</span></code></a> statement has an optional <em>else
-clause</em>, which, when present, must follow all <em>except clauses</em>.  It is useful
-for code that must be executed if the <em>try clause</em> does not raise an exception.
-For example:</p>
+<p>Instrukcja <a class="reference internal" href="../reference/compound_stmts.html#try"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">try</span></code></a> … <a class="reference internal" href="../reference/compound_stmts.html#except"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">except</span></code></a> posiada opcjonalną <em>klauzulę else</em>, która, gdy jest obecna, musi następować po wszystkich <em>klauzulach except</em>. Jest to przydatne w przypadku kodu, który musi zostać wykonany, jeśli <em>klauzula try</em> nie rzuci wyjątku. Na przykład:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">arg</span> <span class="ow">in</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">:]:</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">arg</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
     <span class="k">except</span> <span class="ne">OSError</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;cannot open&#39;</span><span class="p">,</span> <span class="n">arg</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;nie mogę otworzyć&#39;</span><span class="p">,</span> <span class="n">arg</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">arg</span><span class="p">,</span> <span class="s1">&#39;has&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()),</span> <span class="s1">&#39;lines&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">arg</span><span class="p">,</span> <span class="s1">&#39;ma&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()),</span> <span class="s1">&#39;linii&#39;</span><span class="p">)</span>
         <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>The use of the <code class="xref std std-keyword docutils literal notranslate"><span class="pre">else</span></code> clause is better than adding additional code to
-the <a class="reference internal" href="../reference/compound_stmts.html#try"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">try</span></code></a> clause because it avoids accidentally catching an exception
-that wasn’t raised by the code being protected by the <code class="xref std std-keyword docutils literal notranslate"><span class="pre">try</span></code> …
-<code class="xref std std-keyword docutils literal notranslate"><span class="pre">except</span></code> statement.</p>
-<p>Exception handlers do not handle only exceptions that occur immediately in the
-<em>try clause</em>, but also those that occur inside functions that are called (even
-indirectly) in the <em>try clause</em>. For example:</p>
+<p>Użycie klauzuli <code class="xref std std-keyword docutils literal notranslate"><span class="pre">else</span></code> jest lepsze niż dodanie dodatkowego kodu do klauzuli <a class="reference internal" href="../reference/compound_stmts.html#try"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">try</span></code></a>, ponieważ pozwala uniknąć przypadkowego wychwycenia wyjątku, który nie został rzucony przez kod chroniony instrukcją <code class="xref std std-keyword docutils literal notranslate"><span class="pre">try</span></code>… <code class="xref std std-keyword docutils literal notranslate"><span class="pre">except</span></code>.</p>
+<p>Instrukcja <cite>try</cite> … <cite>catch</cite> nie obsługuje tylko wyjątków, które występują bezpośrednio w <em>klauzuli try</em>, ale także te, które występują wewnątrz funkcji, które są wywoływane (nawet pośrednio) w <em>klauzuli try</em>. Na przykład:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span><span class="w"> </span><span class="nf">this_fails</span><span class="p">():</span>
 <span class="gp">... </span>    <span class="n">x</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">0</span>
 <span class="gp">...</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">try</span><span class="p">:</span>
 <span class="gp">... </span>    <span class="n">this_fails</span><span class="p">()</span>
 <span class="gp">... </span><span class="k">except</span> <span class="ne">ZeroDivisionError</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span>
-<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Handling run-time error:&#39;</span><span class="p">,</span> <span class="n">err</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Błąd w czasie wykonania:&#39;</span><span class="p">,</span> <span class="n">err</span><span class="p">)</span>
 <span class="gp">...</span>
-<span class="go">Handling run-time error: division by zero</span>
+<span class="go">Błąd w czasie wykonania: division by zero</span>
 </pre></div>
 </div>
 </section>
 <section id="raising-exceptions">
-<span id="tut-raising"></span><h2><span class="section-number">8.4. </span>Raising Exceptions<a class="headerlink" href="#raising-exceptions" title="Link to this heading">¶</a></h2>
-<p>The <a class="reference internal" href="../reference/simple_stmts.html#raise"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">raise</span></code></a> statement allows the programmer to force a specified
-exception to occur. For example:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">raise</span> <span class="ne">NameError</span><span class="p">(</span><span class="s1">&#39;HiThere&#39;</span><span class="p">)</span>
+<span id="tut-raising"></span><h2><span class="section-number">8.4. </span>Rzucanie wyjątków<a class="headerlink" href="#raising-exceptions" title="Link to this heading">¶</a></h2>
+<p>Instrukcja <a class="reference internal" href="../reference/simple_stmts.html#raise"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">raise</span></code></a> pozwala programiście wymusić wystąpienie żądanego wyjątku. Na przykład:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">raise</span> <span class="ne">NameError</span><span class="p">(</span><span class="s1">&#39;CześćiCzołem&#39;</span><span class="p">)</span>
 <span class="gt">Traceback (most recent call last):</span>
   File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
-<span class="w">    </span><span class="k">raise</span> <span class="ne">NameError</span><span class="p">(</span><span class="s1">&#39;HiThere&#39;</span><span class="p">)</span>
-<span class="gr">NameError</span>: <span class="n">HiThere</span>
+<span class="w">    </span><span class="k">raise</span> <span class="ne">NameError</span><span class="p">(</span><span class="s1">&#39;CześćiCzołem&#39;</span><span class="p">)</span>
+<span class="gr">NameError</span>: <span class="n">CześćiCzołem</span>
 </pre></div>
 </div>
-<p>The sole argument to <a class="reference internal" href="../reference/simple_stmts.html#raise"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">raise</span></code></a> indicates the exception to be raised.
-This must be either an exception instance or an exception class (a class that
-derives from <a class="reference internal" href="../library/exceptions.html#BaseException" title="BaseException"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseException</span></code></a>, such as <a class="reference internal" href="../library/exceptions.html#Exception" title="Exception"><code class="xref py py-exc docutils literal notranslate"><span class="pre">Exception</span></code></a> or one of its
-subclasses).  If an exception class is passed, it will be implicitly
-instantiated by calling its constructor with no arguments:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">raise</span> <span class="ne">ValueError</span>  <span class="c1"># shorthand for &#39;raise ValueError()&#39;</span>
+<p>Jedyny argument do <a class="reference internal" href="../reference/simple_stmts.html#raise"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">raise</span></code></a> wskazuje wyjątek, który ma być rzucony. Musi to być albo instancja wyjątku, albo klasa wyjątku (klasa dziedzicząca z <a class="reference internal" href="../library/exceptions.html#BaseException" title="BaseException"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseException</span></code></a>, taka jak <a class="reference internal" href="../library/exceptions.html#Exception" title="Exception"><code class="xref py py-exc docutils literal notranslate"><span class="pre">Exception</span></code></a> lub jedna z jej podklas). Jeśli przekazana zostanie klasa wyjątku, zostanie ona niejawnie zainicjowana przez wywołanie jej konstruktora bez argumentów:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">raise</span> <span class="ne">ValueError</span>  <span class="c1"># skrót dla &#39;raise ValueError()&#39;</span>
 </pre></div>
 </div>
-<p>If you need to determine whether an exception was raised but don’t intend to
-handle it, a simpler form of the <a class="reference internal" href="../reference/simple_stmts.html#raise"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">raise</span></code></a> statement allows you to
-re-raise the exception:</p>
+<p>Jeśli chcesz rozpoznać, czy wyjątek został rzucony, ale nie zamierzasz go obsługiwać, prostsza forma instrukcji <a class="reference internal" href="../reference/simple_stmts.html#raise"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">raise</span></code></a> pozwala na ponowne rzucenie wyjątku:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">try</span><span class="p">:</span>
-<span class="gp">... </span>    <span class="k">raise</span> <span class="ne">NameError</span><span class="p">(</span><span class="s1">&#39;HiThere&#39;</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="k">raise</span> <span class="ne">NameError</span><span class="p">(</span><span class="s1">&#39;CześćiCzołem&#39;</span><span class="p">)</span>
 <span class="gp">... </span><span class="k">except</span> <span class="ne">NameError</span><span class="p">:</span>
-<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;An exception flew by!&#39;</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Przeleciał wyjątek!&#39;</span><span class="p">)</span>
 <span class="gp">... </span>    <span class="k">raise</span>
 <span class="gp">...</span>
-<span class="go">An exception flew by!</span>
+<span class="go">Przeleciał wyjątek!</span>
 <span class="gt">Traceback (most recent call last):</span>
   File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">2</span>, in <span class="n">&lt;module&gt;</span>
-<span class="w">    </span><span class="k">raise</span> <span class="ne">NameError</span><span class="p">(</span><span class="s1">&#39;HiThere&#39;</span><span class="p">)</span>
-<span class="gr">NameError</span>: <span class="n">HiThere</span>
+<span class="w">    </span><span class="k">raise</span> <span class="ne">NameError</span><span class="p">(</span><span class="s1">&#39;CześćiCzołem&#39;</span><span class="p">)</span>
+<span class="gr">NameError</span>: <span class="n">CześćiCzołem</span>
 </pre></div>
 </div>
 </section>
 <section id="exception-chaining">
-<span id="tut-exception-chaining"></span><h2><span class="section-number">8.5. </span>Exception Chaining<a class="headerlink" href="#exception-chaining" title="Link to this heading">¶</a></h2>
-<p>If an unhandled exception occurs inside an <a class="reference internal" href="../reference/compound_stmts.html#except"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">except</span></code></a> section, it will
-have the exception being handled attached to it and included in the error
-message:</p>
+<span id="tut-exception-chaining"></span><h2><span class="section-number">8.5. </span>Łańcuch wyjątków<a class="headerlink" href="#exception-chaining" title="Link to this heading">¶</a></h2>
+<p>Jeśli nieobsłużony wyjątek wystąpi wewnątrz sekcji <a class="reference internal" href="../reference/compound_stmts.html#except"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">except</span></code></a>, zostanie do niego dołączony obsługiwany wyjątek i uwzględniony w komunikacie o błędzie:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">try</span><span class="p">:</span>
 <span class="gp">... </span>    <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;database.sqlite&quot;</span><span class="p">)</span>
 <span class="gp">... </span><span class="k">except</span> <span class="ne">OSError</span><span class="p">:</span>
@@ -482,13 +411,12 @@ message:</p>
 <span class="gr">RuntimeError</span>: <span class="n">unable to handle error</span>
 </pre></div>
 </div>
-<p>To indicate that an exception is a direct consequence of another, the
-<a class="reference internal" href="../reference/simple_stmts.html#raise"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">raise</span></code></a> statement allows an optional <a class="reference internal" href="../reference/simple_stmts.html#raise"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">from</span></code></a> clause:</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># exc must be exception instance or None.</span>
+<p>Aby wskazać, że wyjątek jest bezpośrednią konsekwencją innego, instrukcja <a class="reference internal" href="../reference/simple_stmts.html#raise"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">raise</span></code></a> dopuszcza opcjonalną klauzulę <a class="reference internal" href="../reference/simple_stmts.html#raise"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">from</span></code></a>:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># exc musi być instancją klasy Exception albo mieć wartość None</span>
 <span class="k">raise</span> <span class="ne">RuntimeError</span> <span class="kn">from</span><span class="w"> </span><span class="nn">exc</span>
 </pre></div>
 </div>
-<p>This can be useful when you are transforming exceptions. For example:</p>
+<p>Może to być przydatne podczas przekształcania wyjątków. Na przykład:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span><span class="w"> </span><span class="nf">func</span><span class="p">():</span>
 <span class="gp">... </span>    <span class="k">raise</span> <span class="ne">ConnectionError</span>
 <span class="gp">...</span>
@@ -512,10 +440,9 @@ message:</p>
 <span class="gr">RuntimeError</span>: <span class="n">Failed to open database</span>
 </pre></div>
 </div>
-<p>It also allows disabling automatic exception chaining using the <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">None</span></code>
-idiom:</p>
+<p>Umożliwia również wyłączenie automatycznego łączenia wyjątków przy użyciu idiomu <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">None</span></code>:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">try</span><span class="p">:</span>
-<span class="gp">... </span>    <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;database.sqlite&#39;</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;bazadanych.sqlite&#39;</span><span class="p">)</span>
 <span class="gp">... </span><span class="k">except</span> <span class="ne">OSError</span><span class="p">:</span>
 <span class="gp">... </span>    <span class="k">raise</span> <span class="ne">RuntimeError</span> <span class="kn">from</span><span class="w"> </span><span class="kc">None</span>
 <span class="gp">...</span>
@@ -525,62 +452,40 @@ idiom:</p>
 <span class="gr">RuntimeError</span>
 </pre></div>
 </div>
-<p>For more information about chaining mechanics, see <a class="reference internal" href="../library/exceptions.html#bltin-exceptions"><span class="std std-ref">Built-in Exceptions</span></a>.</p>
+<p>Więcej informacji na temat mechaniki łączenia w łańcuchy można znaleźć w rozdziale <a class="reference internal" href="../library/exceptions.html#bltin-exceptions"><span class="std std-ref">Built-in Exceptions</span></a>.</p>
 </section>
 <section id="user-defined-exceptions">
-<span id="tut-userexceptions"></span><h2><span class="section-number">8.6. </span>User-defined Exceptions<a class="headerlink" href="#user-defined-exceptions" title="Link to this heading">¶</a></h2>
-<p>Programs may name their own exceptions by creating a new exception class (see
-<a class="reference internal" href="classes.html#tut-classes"><span class="std std-ref">Classes</span></a> for more about Python classes).  Exceptions should typically
-be derived from the <a class="reference internal" href="../library/exceptions.html#Exception" title="Exception"><code class="xref py py-exc docutils literal notranslate"><span class="pre">Exception</span></code></a> class, either directly or indirectly.</p>
-<p>Exception classes can be defined which do anything any other class can do, but
-are usually kept simple, often only offering a number of attributes that allow
-information about the error to be extracted by handlers for the exception.</p>
-<p>Most exceptions are defined with names that end in „Error”, similar to the
-naming of the standard exceptions.</p>
-<p>Many standard modules define their own exceptions to report errors that may
-occur in functions they define.</p>
+<span id="tut-userexceptions"></span><h2><span class="section-number">8.6. </span>Wyjątki zdefiniowane przez użytkownika<a class="headerlink" href="#user-defined-exceptions" title="Link to this heading">¶</a></h2>
+<p>Programy mogą nazywać własne wyjątki, tworząc nową klasę wyjątków (więcej informacji na temat klas Python można znaleźć w rozdziale <a class="reference internal" href="classes.html#tut-classes"><span class="std std-ref">Klasy</span></a>). Wyjątki powinny zazwyczaj dziedziczyć z klasy <a class="reference internal" href="../library/exceptions.html#Exception" title="Exception"><code class="xref py py-exc docutils literal notranslate"><span class="pre">Exception</span></code></a>, bezpośrednio lub pośrednio.</p>
+<p>Można zdefiniować klasy wyjątków, które robią wszystko, co może zrobić każda inna klasa, ale zwykle są one proste, często oferując tylko kilka atrybutów, które pozwalają na wyodrębnienie informacji o błędzie przez kod obsługi wyjątku.</p>
+<p>Większość wyjątków ma nazwy kończące się na „Error”, podobnie jak w przypadku standardowych wyjątków.</p>
+<p>Wiele standardowych modułów definiuje własne wyjątki w celu zgłaszania błędów, które mogą wystąpić w zdefiniowanych w nich funkcjach.</p>
 </section>
 <section id="defining-clean-up-actions">
-<span id="tut-cleanup"></span><h2><span class="section-number">8.7. </span>Defining Clean-up Actions<a class="headerlink" href="#defining-clean-up-actions" title="Link to this heading">¶</a></h2>
-<p>The <a class="reference internal" href="../reference/compound_stmts.html#try"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">try</span></code></a> statement has another optional clause which is intended to
-define clean-up actions that must be executed under all circumstances.  For
-example:</p>
+<span id="tut-cleanup"></span><h2><span class="section-number">8.7. </span>Definiowanie działań porządkujących<a class="headerlink" href="#defining-clean-up-actions" title="Link to this heading">¶</a></h2>
+<p>Instrukcja <a class="reference internal" href="../reference/compound_stmts.html#try"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">try</span></code></a> ma inną opcjonalną klauzulę, która jest przeznaczona do definiowania działań porządkujących, które muszą być wykonane w każdych okolicznościach. Na przykład:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">try</span><span class="p">:</span>
 <span class="gp">... </span>    <span class="k">raise</span> <span class="ne">KeyboardInterrupt</span>
 <span class="gp">... </span><span class="k">finally</span><span class="p">:</span>
-<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Goodbye, world!&#39;</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Do widzenia, świecie!&#39;</span><span class="p">)</span>
 <span class="gp">...</span>
-<span class="go">Goodbye, world!</span>
+<span class="go">Do widzenia, świecie!</span>
 <span class="gt">Traceback (most recent call last):</span>
   File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">2</span>, in <span class="n">&lt;module&gt;</span>
 <span class="w">    </span><span class="k">raise</span> <span class="ne">KeyboardInterrupt</span>
 <span class="nc">KeyboardInterrupt</span>
 </pre></div>
 </div>
-<p>If a <a class="reference internal" href="../reference/compound_stmts.html#finally"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">finally</span></code></a> clause is present, the <code class="xref std std-keyword docutils literal notranslate"><span class="pre">finally</span></code>
-clause will execute as the last task before the <a class="reference internal" href="../reference/compound_stmts.html#try"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">try</span></code></a>
-statement completes. The <code class="xref std std-keyword docutils literal notranslate"><span class="pre">finally</span></code> clause runs whether or
-not the <code class="xref std std-keyword docutils literal notranslate"><span class="pre">try</span></code> statement produces an exception. The following
-points discuss more complex cases when an exception occurs:</p>
+<p>Jeśli klauzula <a class="reference internal" href="../reference/compound_stmts.html#finally"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">finally</span></code></a> jest obecna, klauzula <code class="xref std std-keyword docutils literal notranslate"><span class="pre">finally</span></code> wykona się jako ostatnie zadanie przed zakończeniem instrukcji <a class="reference internal" href="../reference/compound_stmts.html#try"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">try</span></code></a>. Klauzula <code class="xref std std-keyword docutils literal notranslate"><span class="pre">finally</span></code> uruchomi się niezależnie od tego, czy instrukcja <code class="xref std std-keyword docutils literal notranslate"><span class="pre">try</span></code> spowoduje wyjątek. Poniższe punkty omawiają bardziej złożone przypadki wystąpienia wyjątku:</p>
 <ul class="simple">
-<li><p>If an exception occurs during execution of the <code class="xref std std-keyword docutils literal notranslate"><span class="pre">try</span></code>
-clause, the exception may be handled by an <a class="reference internal" href="../reference/compound_stmts.html#except"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">except</span></code></a>
-clause. If the exception is not handled by an <code class="xref std std-keyword docutils literal notranslate"><span class="pre">except</span></code>
-clause, the exception is re-raised after the <code class="xref std std-keyword docutils literal notranslate"><span class="pre">finally</span></code>
-clause has been executed.</p></li>
-<li><p>An exception could occur during execution of an <code class="xref std std-keyword docutils literal notranslate"><span class="pre">except</span></code>
-or <code class="xref std std-keyword docutils literal notranslate"><span class="pre">else</span></code> clause. Again, the exception is re-raised after
-the <code class="xref std std-keyword docutils literal notranslate"><span class="pre">finally</span></code> clause has been executed.</p></li>
+<li><p>Jeśli podczas wykonywania klauzuli <code class="xref std std-keyword docutils literal notranslate"><span class="pre">try</span></code> wystąpi wyjątek, może on zostać obsłużony przez klauzulę <a class="reference internal" href="../reference/compound_stmts.html#except"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">except</span></code></a>. Jeśli wyjątek nie zostanie obsłużony przez klauzulę <code class="xref std std-keyword docutils literal notranslate"><span class="pre">except</span></code>, zostanie on ponownie rzucony po wykonaniu klauzuli <code class="xref std std-keyword docutils literal notranslate"><span class="pre">finally</span></code>.</p></li>
+<li><p>Wyjątek może wystąpić podczas wykonywania klauzul <code class="xref std std-keyword docutils literal notranslate"><span class="pre">except</span></code> lub <code class="xref std std-keyword docutils literal notranslate"><span class="pre">else</span></code>. Ponownie, wyjątek jest ponownie rzucany po wykonaniu klauzuli <code class="xref std std-keyword docutils literal notranslate"><span class="pre">finally</span></code>.</p></li>
 <li><p>If the <code class="xref std std-keyword docutils literal notranslate"><span class="pre">finally</span></code> clause executes a <a class="reference internal" href="../reference/simple_stmts.html#break"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">break</span></code></a>,
 <a class="reference internal" href="../reference/simple_stmts.html#continue"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">continue</span></code></a> or <a class="reference internal" href="../reference/simple_stmts.html#return"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">return</span></code></a> statement, exceptions are not
 re-raised. This can be confusing and is therefore discouraged. From
 version 3.14 the compiler emits a <a class="reference internal" href="../library/exceptions.html#SyntaxWarning" title="SyntaxWarning"><code class="xref py py-exc docutils literal notranslate"><span class="pre">SyntaxWarning</span></code></a> for it
 (see <span class="target" id="index-0"></span><a class="pep reference external" href="https://peps.python.org/pep-0765/"><strong>PEP 765</strong></a>).</p></li>
-<li><p>If the <code class="xref std std-keyword docutils literal notranslate"><span class="pre">try</span></code> statement reaches a <a class="reference internal" href="../reference/simple_stmts.html#break"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">break</span></code></a>,
-<a class="reference internal" href="../reference/simple_stmts.html#continue"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">continue</span></code></a> or <a class="reference internal" href="../reference/simple_stmts.html#return"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">return</span></code></a> statement, the
-<code class="xref std std-keyword docutils literal notranslate"><span class="pre">finally</span></code> clause will execute just prior to the
-<code class="xref std std-keyword docutils literal notranslate"><span class="pre">break</span></code>, <code class="xref std std-keyword docutils literal notranslate"><span class="pre">continue</span></code> or <code class="xref std std-keyword docutils literal notranslate"><span class="pre">return</span></code>
-statement’s execution.</p></li>
+<li><p>Jeśli instrukcja <code class="xref std std-keyword docutils literal notranslate"><span class="pre">try</span></code> osiągnie instrukcję <a class="reference internal" href="../reference/simple_stmts.html#break"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">break</span></code></a>, <a class="reference internal" href="../reference/simple_stmts.html#continue"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">continue</span></code></a> lub <a class="reference internal" href="../reference/simple_stmts.html#return"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">return</span></code></a>, klauzula <code class="xref std std-keyword docutils literal notranslate"><span class="pre">finally</span></code> wykona się tuż przed wykonaniem instrukcji <code class="xref std std-keyword docutils literal notranslate"><span class="pre">break</span></code>, <code class="xref std std-keyword docutils literal notranslate"><span class="pre">continue</span></code> lub <code class="xref std std-keyword docutils literal notranslate"><span class="pre">return</span></code>.</p></li>
 <li><p>If a <code class="xref std std-keyword docutils literal notranslate"><span class="pre">finally</span></code> clause includes a <code class="xref std std-keyword docutils literal notranslate"><span class="pre">return</span></code>
 statement, the returned value will be the one from the
 <code class="xref std std-keyword docutils literal notranslate"><span class="pre">finally</span></code> clause’s <code class="xref std std-keyword docutils literal notranslate"><span class="pre">return</span></code> statement, not the
@@ -589,7 +494,7 @@ statement. This can be confusing and is therefore discouraged. From
 version 3.14 the compiler emits a <a class="reference internal" href="../library/exceptions.html#SyntaxWarning" title="SyntaxWarning"><code class="xref py py-exc docutils literal notranslate"><span class="pre">SyntaxWarning</span></code></a> for it
 (see <span class="target" id="index-1"></span><a class="pep reference external" href="https://peps.python.org/pep-0765/"><strong>PEP 765</strong></a>).</p></li>
 </ul>
-<p>For example:</p>
+<p>Na przykład:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span><span class="w"> </span><span class="nf">bool_return</span><span class="p">():</span>
 <span class="gp">... </span>    <span class="k">try</span><span class="p">:</span>
 <span class="gp">... </span>        <span class="k">return</span> <span class="kc">True</span>
@@ -600,25 +505,25 @@ version 3.14 the compiler emits a <a class="reference internal" href="../library
 <span class="go">False</span>
 </pre></div>
 </div>
-<p>A more complicated example:</p>
+<p>Bardziej skomplikowany przykład:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span><span class="w"> </span><span class="nf">divide</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
 <span class="gp">... </span>    <span class="k">try</span><span class="p">:</span>
 <span class="gp">... </span>        <span class="n">result</span> <span class="o">=</span> <span class="n">x</span> <span class="o">/</span> <span class="n">y</span>
 <span class="gp">... </span>    <span class="k">except</span> <span class="ne">ZeroDivisionError</span><span class="p">:</span>
-<span class="gp">... </span>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;division by zero!&quot;</span><span class="p">)</span>
+<span class="gp">... </span>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;dzielenie przez zero!&quot;</span><span class="p">)</span>
 <span class="gp">... </span>    <span class="k">else</span><span class="p">:</span>
-<span class="gp">... </span>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;result is&quot;</span><span class="p">,</span> <span class="n">result</span><span class="p">)</span>
+<span class="gp">... </span>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;wynik to&quot;</span><span class="p">,</span> <span class="n">result</span><span class="p">)</span>
 <span class="gp">... </span>    <span class="k">finally</span><span class="p">:</span>
-<span class="gp">... </span>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;executing finally clause&quot;</span><span class="p">)</span>
+<span class="gp">... </span>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;wykonywanie klauzuli finally&quot;</span><span class="p">)</span>
 <span class="gp">...</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">divide</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-<span class="go">result is 2.0</span>
-<span class="go">executing finally clause</span>
+<span class="go">wynik to 2.0</span>
+<span class="go">wykonywanie klauzuli finally</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">divide</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
-<span class="go">division by zero!</span>
-<span class="go">executing finally clause</span>
+<span class="go">dzielenie przez zero!</span>
+<span class="go">wykonywanie klauzuli finally</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">divide</span><span class="p">(</span><span class="s2">&quot;2&quot;</span><span class="p">,</span> <span class="s2">&quot;1&quot;</span><span class="p">)</span>
-<span class="go">executing finally clause</span>
+<span class="go">wykonywanie klauzuli finally</span>
 <span class="gt">Traceback (most recent call last):</span>
   File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
 <span class="w">    </span><span class="n">divide</span><span class="p">(</span><span class="s2">&quot;2&quot;</span><span class="p">,</span> <span class="s2">&quot;1&quot;</span><span class="p">)</span>
@@ -629,51 +534,31 @@ version 3.14 the compiler emits a <a class="reference internal" href="../library
 <span class="gr">TypeError</span>: <span class="n">unsupported operand type(s) for /: &#39;str&#39; and &#39;str&#39;</span>
 </pre></div>
 </div>
-<p>As you can see, the <a class="reference internal" href="../reference/compound_stmts.html#finally"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">finally</span></code></a> clause is executed in any event.  The
-<a class="reference internal" href="../library/exceptions.html#TypeError" title="TypeError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">TypeError</span></code></a> raised by dividing two strings is not handled by the
-<a class="reference internal" href="../reference/compound_stmts.html#except"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">except</span></code></a> clause and therefore re-raised after the <code class="xref std std-keyword docutils literal notranslate"><span class="pre">finally</span></code>
-clause has been executed.</p>
-<p>In real world applications, the <a class="reference internal" href="../reference/compound_stmts.html#finally"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">finally</span></code></a> clause is useful for
-releasing external resources (such as files or network connections), regardless
-of whether the use of the resource was successful.</p>
+<p>Jak widać, klauzula <a class="reference internal" href="../reference/compound_stmts.html#finally"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">finally</span></code></a> jest wykonywana w każdym przypadku. <a class="reference internal" href="../library/exceptions.html#TypeError" title="TypeError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">TypeError</span></code></a> rzucony przez dzielenie dwóch ciągów znaków nie jest obsłużony przez klauzulę <a class="reference internal" href="../reference/compound_stmts.html#except"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">except</span></code></a> i dlatego jest ponownie rzucony po wykonaniu klauzuli <code class="xref std std-keyword docutils literal notranslate"><span class="pre">finally</span></code>.</p>
+<p>W prawdziwych aplikacjach, klauzula <a class="reference internal" href="../reference/compound_stmts.html#finally"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">finally</span></code></a> jest przydatna do zwalniania zewnętrznych zasobów (takich jak pliki lub połączenia sieciowe), niezależnie od tego, czy użycie zasobu zakończyło się powodzeniem.</p>
 </section>
 <section id="predefined-clean-up-actions">
-<span id="tut-cleanup-with"></span><h2><span class="section-number">8.8. </span>Predefined Clean-up Actions<a class="headerlink" href="#predefined-clean-up-actions" title="Link to this heading">¶</a></h2>
-<p>Some objects define standard clean-up actions to be undertaken when the object
-is no longer needed, regardless of whether or not the operation using the object
-succeeded or failed. Look at the following example, which tries to open a file
-and print its contents to the screen.</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;myfile.txt&quot;</span><span class="p">):</span>
+<span id="tut-cleanup-with"></span><h2><span class="section-number">8.8. </span>Predefiniowane akcje porządkujące<a class="headerlink" href="#predefined-clean-up-actions" title="Link to this heading">¶</a></h2>
+<p>Niektóre obiekty definiują standardowe akcje porządkujące, które mają zostać podjęte, gdy obiekt nie jest już potrzebny, niezależnie od tego, czy operacja przy użyciu obiektu powiodła się, czy nie. Spójrz na poniższy przykład, który próbuje otworzyć plik i wydrukować jego zawartość na ekranie:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;moj_plik.txt&quot;</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">line</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>The problem with this code is that it leaves the file open for an indeterminate
-amount of time after this part of the code has finished executing.
-This is not an issue in simple scripts, but can be a problem for larger
-applications. The <a class="reference internal" href="../reference/compound_stmts.html#with"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">with</span></code></a> statement allows objects like files to be
-used in a way that ensures they are always cleaned up promptly and correctly.</p>
-<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;myfile.txt&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<p>Problem z tym kodem polega na tym, że pozostawia on plik otwarty przez nieokreślony czas po zakończeniu wykonywania tej części kodu. Nie jest to problemem w prostych skryptach, ale może być problemem dla większych aplikacjach. Instrukcja <a class="reference internal" href="../reference/compound_stmts.html#with"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">with</span></code></a> pozwala na używanie obiektów takich jak pliki w sposób, który zapewnia, że są one zawsze czyszczone szybko i poprawnie:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;moj_plik.txt&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">line</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>After the statement is executed, the file <em>f</em> is always closed, even if a
-problem was encountered while processing the lines. Objects which, like files,
-provide predefined clean-up actions will indicate this in their documentation.</p>
+<p>Po wykonaniu instrukcji, plik <em>f</em> jest zawsze zamykany, nawet jeśli napotkano problem podczas przetwarzania linii. Obiekty, które, podobnie jak pliki, zapewniają predefiniowane akcje czyszczenia, wskażą to w swojej dokumentacji.</p>
 </section>
 <section id="raising-and-handling-multiple-unrelated-exceptions">
-<span id="tut-exception-groups"></span><h2><span class="section-number">8.9. </span>Raising and Handling Multiple Unrelated Exceptions<a class="headerlink" href="#raising-and-handling-multiple-unrelated-exceptions" title="Link to this heading">¶</a></h2>
-<p>There are situations where it is necessary to report several exceptions that
-have occurred. This is often the case in concurrency frameworks, when several
-tasks may have failed in parallel, but there are also other use cases where
-it is desirable to continue execution and collect multiple errors rather than
-raise the first exception.</p>
-<p>The builtin <a class="reference internal" href="../library/exceptions.html#ExceptionGroup" title="ExceptionGroup"><code class="xref py py-exc docutils literal notranslate"><span class="pre">ExceptionGroup</span></code></a> wraps a list of exception instances so
-that they can be raised together. It is an exception itself, so it can be
-caught like any other exception.</p>
+<span id="tut-exception-groups"></span><h2><span class="section-number">8.9. </span>Rzucanie i obsługa wielu niepowiązanych wyjątków<a class="headerlink" href="#raising-and-handling-multiple-unrelated-exceptions" title="Link to this heading">¶</a></h2>
+<p>Istnieją sytuacje, w których konieczne jest zgłoszenie kilku wyjątków, które wystąpiły. Dzieje się tak często w przypadku frameworków współbieżności, gdy kilka zadań może zakończyć się niepowodzeniem równolegle, ale istnieją również inne przypadki użycia, w których pożądane jest kontynuowanie wykonywania i zbieranie wielu błędów zamiast rzucenia pierwszego wyjątku.</p>
+<p>Wbudowana <a class="reference internal" href="../library/exceptions.html#ExceptionGroup" title="ExceptionGroup"><code class="xref py py-exc docutils literal notranslate"><span class="pre">ExceptionGroup</span></code></a> zawiera listę instancji wyjątków, dzięki czemu mogą one być rzucone razem. Sama w sobie jest wyjątkiem, więc może być przechwycona jak każdy inny wyjątek:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span><span class="w"> </span><span class="nf">f</span><span class="p">():</span>
-<span class="gp">... </span>    <span class="n">excs</span> <span class="o">=</span> <span class="p">[</span><span class="ne">OSError</span><span class="p">(</span><span class="s1">&#39;error 1&#39;</span><span class="p">),</span> <span class="ne">SystemError</span><span class="p">(</span><span class="s1">&#39;error 2&#39;</span><span class="p">)]</span>
-<span class="gp">... </span>    <span class="k">raise</span> <span class="n">ExceptionGroup</span><span class="p">(</span><span class="s1">&#39;there were problems&#39;</span><span class="p">,</span> <span class="n">excs</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="n">excs</span> <span class="o">=</span> <span class="p">[</span><span class="ne">OSError</span><span class="p">(</span><span class="s1">&#39;błąd 1&#39;</span><span class="p">),</span> <span class="ne">SystemError</span><span class="p">(</span><span class="s1">&#39;błąd 2&#39;</span><span class="p">)]</span>
+<span class="gp">... </span>    <span class="k">raise</span> <span class="n">ExceptionGroup</span><span class="p">(</span><span class="s1">&#39;były problemy&#39;</span><span class="p">,</span> <span class="n">excs</span><span class="p">)</span>
 <span class="gp">...</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">f</span><span class="p">()</span>
 <span class="go">  + Exception Group Traceback (most recent call last):</span>
@@ -681,36 +566,31 @@ caught like any other exception.</p>
 <span class="go">  |     f()</span>
 <span class="go">  |     ~^^</span>
 <span class="go">  |   File &quot;&lt;stdin&gt;&quot;, line 3, in f</span>
-<span class="go">  |     raise ExceptionGroup(&#39;there were problems&#39;, excs)</span>
-<span class="go">  | ExceptionGroup: there were problems (2 sub-exceptions)</span>
+<span class="go">  |     raise ExceptionGroup(&#39;były problemy&#39;, excs)</span>
+<span class="go">  | ExceptionGroup: były problemy (2 sub-exceptions)</span>
 <span class="go">  +-+---------------- 1 ----------------</span>
-<span class="go">    | OSError: error 1</span>
+<span class="go">    | OSError: błąd 1</span>
 <span class="go">    +---------------- 2 ----------------</span>
-<span class="go">    | SystemError: error 2</span>
+<span class="go">    | SystemError: błąd 2</span>
 <span class="go">    +------------------------------------</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">try</span><span class="p">:</span>
 <span class="gp">... </span>    <span class="n">f</span><span class="p">()</span>
 <span class="gp">... </span><span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;caught </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="si">}</span><span class="s1">: e&#39;</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;złapany </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="si">}</span><span class="s1">: e&#39;</span><span class="p">)</span>
 <span class="gp">...</span>
-<span class="go">caught &lt;class &#39;ExceptionGroup&#39;&gt;: e</span>
+<span class="go">złapany &lt;class &#39;ExceptionGroup&#39;&gt;: e</span>
 <span class="gp">&gt;&gt;&gt;</span>
 </pre></div>
 </div>
-<p>By using <code class="docutils literal notranslate"><span class="pre">except*</span></code> instead of <code class="docutils literal notranslate"><span class="pre">except</span></code>, we can selectively
-handle only the exceptions in the group that match a certain
-type. In the following example, which shows a nested exception
-group, each <code class="docutils literal notranslate"><span class="pre">except*</span></code> clause extracts from the group exceptions
-of a certain type while letting all other exceptions propagate to
-other clauses and eventually to be reraised.</p>
+<p>Używając <code class="docutils literal notranslate"><span class="pre">except*</span></code> zamiast <code class="docutils literal notranslate"><span class="pre">except</span></code>, możemy selektywnie obsługiwać tylko te wyjątki w grupie, które pasują do określonego typu. W poniższym przykładzie, który pokazuje zagnieżdżoną grupę wyjątków, każda klauzula <code class="docutils literal notranslate"><span class="pre">except*</span></code> wyodrębnia z grupy wyjątki określonego typu, pozwalając wszystkim innym wyjątkom propagować się do innych klauzul i ostatecznie być ponownie zgłaszanymi.</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span><span class="w"> </span><span class="nf">f</span><span class="p">():</span>
 <span class="gp">... </span>    <span class="k">raise</span> <span class="n">ExceptionGroup</span><span class="p">(</span>
-<span class="gp">... </span>        <span class="s2">&quot;group1&quot;</span><span class="p">,</span>
+<span class="gp">... </span>        <span class="s2">&quot;grupa1&quot;</span><span class="p">,</span>
 <span class="gp">... </span>        <span class="p">[</span>
 <span class="gp">... </span>            <span class="ne">OSError</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span>
 <span class="gp">... </span>            <span class="ne">SystemError</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span>
 <span class="gp">... </span>            <span class="n">ExceptionGroup</span><span class="p">(</span>
-<span class="gp">... </span>                <span class="s2">&quot;group2&quot;</span><span class="p">,</span>
+<span class="gp">... </span>                <span class="s2">&quot;grupa2&quot;</span><span class="p">,</span>
 <span class="gp">... </span>                <span class="p">[</span>
 <span class="gp">... </span>                    <span class="ne">OSError</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span>
 <span class="gp">... </span>                    <span class="ne">RecursionError</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
@@ -722,12 +602,12 @@ other clauses and eventually to be reraised.</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">try</span><span class="p">:</span>
 <span class="gp">... </span>    <span class="n">f</span><span class="p">()</span>
 <span class="gp">... </span><span class="k">except</span><span class="o">*</span> <span class="ne">OSError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;There were OSErrors&quot;</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Były OSErrors&quot;</span><span class="p">)</span>
 <span class="gp">... </span><span class="k">except</span><span class="o">*</span> <span class="ne">SystemError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;There were SystemErrors&quot;</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Były SystemErrors&quot;</span><span class="p">)</span>
 <span class="gp">...</span>
-<span class="go">There were OSErrors</span>
-<span class="go">There were SystemErrors</span>
+<span class="go">Były OSErrors</span>
+<span class="go">Były SystemErrors</span>
 <span class="go">  + Exception Group Traceback (most recent call last):</span>
 <span class="go">  |   File &quot;&lt;stdin&gt;&quot;, line 2, in &lt;module&gt;</span>
 <span class="go">  |     f()</span>
@@ -736,19 +616,16 @@ other clauses and eventually to be reraised.</p>
 <span class="go">  |     raise ExceptionGroup(</span>
 <span class="go">  |     ...&lt;12 lines&gt;...</span>
 <span class="go">  |     )</span>
-<span class="go">  | ExceptionGroup: group1 (1 sub-exception)</span>
+<span class="go">  | ExceptionGroup: grupa1 (1 sub-exception)</span>
 <span class="go">  +-+---------------- 1 ----------------</span>
-<span class="go">    | ExceptionGroup: group2 (1 sub-exception)</span>
+<span class="go">    | ExceptionGroup: grupa2 (1 sub-exception)</span>
 <span class="go">    +-+---------------- 1 ----------------</span>
 <span class="go">      | RecursionError: 4</span>
 <span class="go">      +------------------------------------</span>
 <span class="gp">&gt;&gt;&gt;</span>
 </pre></div>
 </div>
-<p>Note that the exceptions nested in an exception group must be instances,
-not types. This is because in practice the exceptions would typically
-be ones that have already been raised and caught by the program, along
-the following pattern:</p>
+<p>Należy pamiętać, że wyjątki zagnieżdżone w grupie wyjątków muszą być instancjami, a nie typami. Wynika to z faktu, że w praktyce wyjątki są zazwyczaj tymi, które zostały już rzucone i przechwycone przez program, zgodnie z następującym wzorcem:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">excs</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="gp">... </span><span class="k">for</span> <span class="n">test</span> <span class="ow">in</span> <span class="n">tests</span><span class="p">:</span>
 <span class="gp">... </span>    <span class="k">try</span><span class="p">:</span>
@@ -757,81 +634,74 @@ the following pattern:</p>
 <span class="gp">... </span>        <span class="n">excs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
 <span class="gp">...</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">if</span> <span class="n">excs</span><span class="p">:</span>
-<span class="gp">... </span>   <span class="k">raise</span> <span class="n">ExceptionGroup</span><span class="p">(</span><span class="s2">&quot;Test Failures&quot;</span><span class="p">,</span> <span class="n">excs</span><span class="p">)</span>
+<span class="gp">... </span>   <span class="k">raise</span> <span class="n">ExceptionGroup</span><span class="p">(</span><span class="s2">&quot;Niepowodzenia testów&quot;</span><span class="p">,</span> <span class="n">excs</span><span class="p">)</span>
 <span class="gp">...</span>
 </pre></div>
 </div>
 </section>
 <section id="enriching-exceptions-with-notes">
-<span id="tut-exception-notes"></span><h2><span class="section-number">8.10. </span>Enriching Exceptions with Notes<a class="headerlink" href="#enriching-exceptions-with-notes" title="Link to this heading">¶</a></h2>
-<p>When an exception is created in order to be raised, it is usually initialized
-with information that describes the error that has occurred. There are cases
-where it is useful to add information after the exception was caught. For this
-purpose, exceptions have a method <code class="docutils literal notranslate"><span class="pre">add_note(note)</span></code> that accepts a string and
-adds it to the exception’s notes list. The standard traceback rendering
-includes all notes, in the order they were added, after the exception.</p>
+<span id="tut-exception-notes"></span><h2><span class="section-number">8.10. </span>Wzbogacanie wyjątków o notatki<a class="headerlink" href="#enriching-exceptions-with-notes" title="Link to this heading">¶</a></h2>
+<p>Gdy wyjątek jest tworzony w celu rzucenia, jest on zwykle inicjowany informacjami opisującymi błąd, który wystąpił. Istnieją przypadki, w których przydatne jest dodanie informacji po przechwyceniu wyjątku. W tym celu wyjątki mają metodę <code class="docutils literal notranslate"><span class="pre">add_note(note)</span></code>, która akceptuje ciąg znaków i dodaje go do listy notatek wyjątku. Standardowe renderowanie tracebacku zawiera wszystkie notatki, w kolejności, w jakiej zostały dodane, po wyjątku.</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">try</span><span class="p">:</span>
-<span class="gp">... </span>    <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s1">&#39;bad type&#39;</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s1">&#39;zły typ&#39;</span><span class="p">)</span>
 <span class="gp">... </span><span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-<span class="gp">... </span>    <span class="n">e</span><span class="o">.</span><span class="n">add_note</span><span class="p">(</span><span class="s1">&#39;Add some information&#39;</span><span class="p">)</span>
-<span class="gp">... </span>    <span class="n">e</span><span class="o">.</span><span class="n">add_note</span><span class="p">(</span><span class="s1">&#39;Add some more information&#39;</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="n">e</span><span class="o">.</span><span class="n">add_note</span><span class="p">(</span><span class="s1">&#39;Dodaj trochę informacji&#39;</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="n">e</span><span class="o">.</span><span class="n">add_note</span><span class="p">(</span><span class="s1">&#39;Dodaj jeszcze trochę informacji&#39;</span><span class="p">)</span>
 <span class="gp">... </span>    <span class="k">raise</span>
 <span class="gp">...</span>
 <span class="gt">Traceback (most recent call last):</span>
   File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">2</span>, in <span class="n">&lt;module&gt;</span>
-<span class="w">    </span><span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s1">&#39;bad type&#39;</span><span class="p">)</span>
-<span class="gr">TypeError</span>: <span class="n">bad type</span>
-<span class="x">Add some information</span>
-<span class="x">Add some more information</span>
+<span class="w">    </span><span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s1">&#39;zły typ&#39;</span><span class="p">)</span>
+<span class="gr">TypeError</span>: <span class="n">zły typ</span>
+<span class="x">Dodaj trochę informacji</span>
+<span class="x">Dodaj jeszcze trochę informacji</span>
 <span class="gp">&gt;&gt;&gt;</span>
 </pre></div>
 </div>
-<p>For example, when collecting exceptions into an exception group, we may want
-to add context information for the individual errors. In the following each
-exception in the group has a note indicating when this error has occurred.</p>
+<p>Na przykład zbierając wyjątki w grupę wyjątków, możemy chcieć dodać informacje kontekstowe dla poszczególnych błędów. Poniżej każdy wyjątek w grupie ma notatkę wskazującą, kiedy wystąpił.</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span><span class="w"> </span><span class="nf">f</span><span class="p">():</span>
-<span class="gp">... </span>    <span class="k">raise</span> <span class="ne">OSError</span><span class="p">(</span><span class="s1">&#39;operation failed&#39;</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="k">raise</span> <span class="ne">OSError</span><span class="p">(</span><span class="s1">&#39;operacja się nie udała&#39;</span><span class="p">)</span>
 <span class="gp">...</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">excs</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
 <span class="gp">... </span>    <span class="k">try</span><span class="p">:</span>
 <span class="gp">... </span>        <span class="n">f</span><span class="p">()</span>
 <span class="gp">... </span>    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-<span class="gp">... </span>        <span class="n">e</span><span class="o">.</span><span class="n">add_note</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Happened in Iteration </span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="gp">... </span>        <span class="n">e</span><span class="o">.</span><span class="n">add_note</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Zdarzyło się w iteracji </span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 <span class="gp">... </span>        <span class="n">excs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
 <span class="gp">...</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="k">raise</span> <span class="n">ExceptionGroup</span><span class="p">(</span><span class="s1">&#39;We have some problems&#39;</span><span class="p">,</span> <span class="n">excs</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">raise</span> <span class="n">ExceptionGroup</span><span class="p">(</span><span class="s1">&#39;Mamy jakieś problemy&#39;</span><span class="p">,</span> <span class="n">excs</span><span class="p">)</span>
 <span class="go">  + Exception Group Traceback (most recent call last):</span>
 <span class="go">  |   File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;</span>
-<span class="go">  |     raise ExceptionGroup(&#39;We have some problems&#39;, excs)</span>
-<span class="go">  | ExceptionGroup: We have some problems (3 sub-exceptions)</span>
+<span class="go">  |     raise ExceptionGroup(&#39;Mamy jakieś problemy&#39;, excs)</span>
+<span class="go">  | ExceptionGroup: Mamy jakieś problemy (3 sub-exceptions)</span>
 <span class="go">  +-+---------------- 1 ----------------</span>
 <span class="go">    | Traceback (most recent call last):</span>
 <span class="go">    |   File &quot;&lt;stdin&gt;&quot;, line 3, in &lt;module&gt;</span>
 <span class="go">    |     f()</span>
 <span class="go">    |     ~^^</span>
 <span class="go">    |   File &quot;&lt;stdin&gt;&quot;, line 2, in f</span>
-<span class="go">    |     raise OSError(&#39;operation failed&#39;)</span>
-<span class="go">    | OSError: operation failed</span>
-<span class="go">    | Happened in Iteration 1</span>
+<span class="go">    |     raise OSError(&#39;operacja się nie udała&#39;)</span>
+<span class="go">    | OSError: operacja się nie udała</span>
+<span class="go">    | Zdarzyło się w iteracji 1</span>
 <span class="go">    +---------------- 2 ----------------</span>
 <span class="go">    | Traceback (most recent call last):</span>
 <span class="go">    |   File &quot;&lt;stdin&gt;&quot;, line 3, in &lt;module&gt;</span>
 <span class="go">    |     f()</span>
 <span class="go">    |     ~^^</span>
 <span class="go">    |   File &quot;&lt;stdin&gt;&quot;, line 2, in f</span>
-<span class="go">    |     raise OSError(&#39;operation failed&#39;)</span>
-<span class="go">    | OSError: operation failed</span>
-<span class="go">    | Happened in Iteration 2</span>
+<span class="go">    |     raise OSError(&#39;operacja się nie udała&#39;)</span>
+<span class="go">    | OSError: operacja się nie udała</span>
+<span class="go">    | Zdarzyło się w iteracji 2</span>
 <span class="go">    +---------------- 3 ----------------</span>
 <span class="go">    | Traceback (most recent call last):</span>
 <span class="go">    |   File &quot;&lt;stdin&gt;&quot;, line 3, in &lt;module&gt;</span>
 <span class="go">    |     f()</span>
 <span class="go">    |     ~^^</span>
 <span class="go">    |   File &quot;&lt;stdin&gt;&quot;, line 2, in f</span>
-<span class="go">    |     raise OSError(&#39;operation failed&#39;)</span>
-<span class="go">    | OSError: operation failed</span>
-<span class="go">    | Happened in Iteration 3</span>
+<span class="go">    |     raise OSError(&#39;operacja się nie udała&#39;)</span>
+<span class="go">    | OSError: operacja się nie udała</span>
+<span class="go">    | Zdarzyło się w iteracji 3</span>
 <span class="go">    +------------------------------------</span>
 <span class="gp">&gt;&gt;&gt;</span>
 </pre></div>
@@ -847,33 +717,33 @@ exception in the group has a note indicating when this error has occurred.</p>
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
-<li><a class="reference internal" href="#">8. Errors and Exceptions</a><ul>
-<li><a class="reference internal" href="#syntax-errors">8.1. Syntax Errors</a></li>
-<li><a class="reference internal" href="#exceptions">8.2. Exceptions</a></li>
-<li><a class="reference internal" href="#handling-exceptions">8.3. Handling Exceptions</a></li>
-<li><a class="reference internal" href="#raising-exceptions">8.4. Raising Exceptions</a></li>
-<li><a class="reference internal" href="#exception-chaining">8.5. Exception Chaining</a></li>
-<li><a class="reference internal" href="#user-defined-exceptions">8.6. User-defined Exceptions</a></li>
-<li><a class="reference internal" href="#defining-clean-up-actions">8.7. Defining Clean-up Actions</a></li>
-<li><a class="reference internal" href="#predefined-clean-up-actions">8.8. Predefined Clean-up Actions</a></li>
-<li><a class="reference internal" href="#raising-and-handling-multiple-unrelated-exceptions">8.9. Raising and Handling Multiple Unrelated Exceptions</a></li>
-<li><a class="reference internal" href="#enriching-exceptions-with-notes">8.10. Enriching Exceptions with Notes</a></li>
+<li><a class="reference internal" href="#">8. Błędy i wyjątki</a><ul>
+<li><a class="reference internal" href="#syntax-errors">8.1. Błędy składni</a></li>
+<li><a class="reference internal" href="#exceptions">8.2. Wyjątki</a></li>
+<li><a class="reference internal" href="#handling-exceptions">8.3. Obsługa wyjątków</a></li>
+<li><a class="reference internal" href="#raising-exceptions">8.4. Rzucanie wyjątków</a></li>
+<li><a class="reference internal" href="#exception-chaining">8.5. Łańcuch wyjątków</a></li>
+<li><a class="reference internal" href="#user-defined-exceptions">8.6. Wyjątki zdefiniowane przez użytkownika</a></li>
+<li><a class="reference internal" href="#defining-clean-up-actions">8.7. Definiowanie działań porządkujących</a></li>
+<li><a class="reference internal" href="#predefined-clean-up-actions">8.8. Predefiniowane akcje porządkujące</a></li>
+<li><a class="reference internal" href="#raising-and-handling-multiple-unrelated-exceptions">8.9. Rzucanie i obsługa wielu niepowiązanych wyjątków</a></li>
+<li><a class="reference internal" href="#enriching-exceptions-with-notes">8.10. Wzbogacanie wyjątków o notatki</a></li>
 </ul>
 </li>
 </ul>
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="inputoutput.html"
-                          title="previous chapter"><span class="section-number">7. </span>Input and Output</a></p>
+                          title="poprzedni rozdział"><span class="section-number">7. </span>Wejście i wyjście</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="classes.html"
-                          title="next chapter"><span class="section-number">9. </span>Classes</a></p>
+                          title="następny rozdział"><span class="section-number">9. </span>Klasy</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -887,7 +757,7 @@ exception in the group has a note indicating when this error has occurred.</p>
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -904,10 +774,10 @@ exception in the group has a note indicating when this error has occurred.</p>
           <a href="../py-modindex.html" title="Indeks modułów Pythona"
              >moduły</a> |</li>
         <li class="right" >
-          <a href="classes.html" title="9. Classes"
+          <a href="classes.html" title="9. Klasy"
              >dalej</a> |</li>
         <li class="right" >
-          <a href="inputoutput.html" title="7. Input and Output"
+          <a href="inputoutput.html" title="7. Wejście i wyjście"
              >wstecz</a> |</li>
 
           <li><img src="../_static/py.svg" alt="Python logo" style="vertical-align: middle; margin-top: -1px"></li>
@@ -923,8 +793,8 @@ exception in the group has a note indicating when this error has occurred.</p>
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Tutorial</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href=""><span class="section-number">8. </span>Errors and Exceptions</a></li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Python Tutorial</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">8. </span>Błędy i wyjątki</a></li>
                 <li class="right">
                     
 
@@ -971,7 +841,7 @@ exception in the group has a note indicating when this error has occurred.</p>
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

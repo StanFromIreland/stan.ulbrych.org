@@ -8,10 +8,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://docs.python.org/3/library/http.client.html" />
 <meta property="og:site_name" content="Python documentation" />
-<meta property="og:description" content="Source code: Lib/http/client.py This module defines classes that implement the client side of the HTTP and HTTPS protocols. It is normally not used directly — the module urllib.request uses it to h..." />
+<meta property="og:description" content="Kod źródłowy: Lib/http/client.py This module defines classes that implement the client side of the HTTP and HTTPS protocols. It is normally not used directly — the module urllib.request uses it to ..." />
 <meta property="og:image" content="_static/og-image.png" />
 <meta property="og:image:alt" content="Python documentation" />
-<meta name="description" content="Source code: Lib/http/client.py This module defines classes that implement the client side of the HTTP and HTTPS protocols. It is normally not used directly — the module urllib.request uses it to h..." />
+<meta name="description" content="Kod źródłowy: Lib/http/client.py This module defines classes that implement the client side of the HTTP and HTTPS protocols. It is normally not used directly — the module urllib.request uses it to ..." />
 <meta name="theme-color" content="#3776ab">
 <meta property="og:image:width" content="200">
 <meta property="og:image:height" content="200">
@@ -31,11 +31,11 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="ftplib — FTP protocol client" href="ftplib.html" />
     <link rel="prev" title="http — HTTP modules" href="http.html" />
@@ -98,12 +98,12 @@
     </select>
 </label>
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">http.client</span></code> — HTTP protocol client</a><ul>
 <li><a class="reference internal" href="#httpconnection-objects">HTTPConnection Objects</a></li>
 <li><a class="reference internal" href="#httpresponse-objects">HTTPResponse Objects</a></li>
-<li><a class="reference internal" href="#examples">Examples</a></li>
+<li><a class="reference internal" href="#examples">Przykłady</a></li>
 <li><a class="reference internal" href="#httpmessage-objects">HTTPMessage Objects</a></li>
 </ul>
 </li>
@@ -111,14 +111,14 @@
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="http.html"
-                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">http</span></code> — HTTP modules</a></p>
+                          title="poprzedni rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">http</span></code> — HTTP modules</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="ftplib.html"
-                          title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">ftplib</span></code> — FTP protocol client</a></p>
+                          title="następny rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">ftplib</span></code> — FTP protocol client</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -165,7 +165,7 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="internet.html" accesskey="U">Internet Protocols and Support</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">http.client</span></code> — HTTP protocol client</a></li>
                 <li class="right">
@@ -199,7 +199,7 @@
             
   <section id="module-http.client">
 <span id="http-client-http-protocol-client"></span><h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">http.client</span></code> — HTTP protocol client<a class="headerlink" href="#module-http.client" title="Link to this heading">¶</a></h1>
-<p><strong>Source code:</strong> <a class="extlink-source reference external" href="https://github.com/python/cpython/tree/main/Lib/http/client.py">Lib/http/client.py</a></p>
+<p><strong>Kod źródłowy:</strong> <a class="extlink-source reference external" href="https://github.com/python/cpython/tree/main/Lib/http/client.py">Lib/http/client.py</a></p>
 <span id="index-0"></span><hr class="docutils" id="index-1" />
 <p>This module defines classes that implement the client side of the HTTP and
 HTTPS protocols.  It is normally not used directly — the module
@@ -215,7 +215,7 @@ is recommended for a higher-level HTTP client interface.</p>
 (through the <a class="reference internal" href="ssl.html#module-ssl" title="ssl: TLS/SSL wrapper for socket objects"><code class="xref py py-mod docutils literal notranslate"><span class="pre">ssl</span></code></a> module).</p>
 </div>
 <div class="availability docutils container">
-<p><a class="reference internal" href="intro.html#availability"><span class="std std-ref">Availability</span></a>: not WASI.</p>
+<p><a class="reference internal" href="intro.html#availability"><span class="std std-ref">Dostępność</span></a>: not WASI.</p>
 <p>This module does not work or is not available on WebAssembly. See
 <a class="reference internal" href="intro.html#wasm-availability"><span class="std std-ref">WebAssembly platforms</span></a> for more information.</p>
 </div>
@@ -817,7 +817,7 @@ will be printed to stdout as the response is read and parsed.</p>
 
 </section>
 <section id="examples">
-<h2>Examples<a class="headerlink" href="#examples" title="Link to this heading">¶</a></h2>
+<h2>Przykłady<a class="headerlink" href="#examples" title="Link to this heading">¶</a></h2>
 <p>Here is an example session that uses the <code class="docutils literal notranslate"><span class="pre">GET</span></code> method:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">http.client</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">conn</span> <span class="o">=</span> <span class="n">http</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">HTTPSConnection</span><span class="p">(</span><span class="s2">&quot;www.python.org&quot;</span><span class="p">)</span>
@@ -913,12 +913,12 @@ response.  It is implemented using the <a class="reference internal" href="email
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">http.client</span></code> — HTTP protocol client</a><ul>
 <li><a class="reference internal" href="#httpconnection-objects">HTTPConnection Objects</a></li>
 <li><a class="reference internal" href="#httpresponse-objects">HTTPResponse Objects</a></li>
-<li><a class="reference internal" href="#examples">Examples</a></li>
+<li><a class="reference internal" href="#examples">Przykłady</a></li>
 <li><a class="reference internal" href="#httpmessage-objects">HTTPMessage Objects</a></li>
 </ul>
 </li>
@@ -926,14 +926,14 @@ response.  It is implemented using the <a class="reference internal" href="email
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="http.html"
-                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">http</span></code> — HTTP modules</a></p>
+                          title="poprzedni rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">http</span></code> — HTTP modules</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="ftplib.html"
-                          title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">ftplib</span></code> — FTP protocol client</a></p>
+                          title="następny rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">ftplib</span></code> — FTP protocol client</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -947,7 +947,7 @@ response.  It is implemented using the <a class="reference internal" href="email
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -983,7 +983,7 @@ response.  It is implemented using the <a class="reference internal" href="email
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="internet.html" >Internet Protocols and Support</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">http.client</span></code> — HTTP protocol client</a></li>
                 <li class="right">
@@ -1032,7 +1032,7 @@ response.  It is implemented using the <a class="reference internal" href="email
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

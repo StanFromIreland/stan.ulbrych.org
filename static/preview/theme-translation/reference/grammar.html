@@ -4,19 +4,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="10. Full Grammar specification" />
+<meta property="og:title" content="10. Pełna specyfikacja gramatyki Pythona" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://docs.python.org/3/reference/grammar.html" />
 <meta property="og:site_name" content="Python documentation" />
-<meta property="og:description" content="This is the full Python grammar, derived directly from the grammar used to generate the CPython parser (see Grammar/python.gram). The version here omits details related to code generation and error..." />
+<meta property="og:description" content="Jest to pełna gramatyka Pythona, pochodząca bezpośrednio z tej używanej do generowania kodu parsera CPythona (zobacz: Grammar/python.gram). Wersja tutaj pomija szczegóły związane z generowaniem kod..." />
 <meta property="og:image" content="_static/og-image.png" />
 <meta property="og:image:alt" content="Python documentation" />
-<meta name="description" content="This is the full Python grammar, derived directly from the grammar used to generate the CPython parser (see Grammar/python.gram). The version here omits details related to code generation and error..." />
+<meta name="description" content="Jest to pełna gramatyka Pythona, pochodząca bezpośrednio z tej używanej do generowania kodu parsera CPythona (zobacz: Grammar/python.gram). Wersja tutaj pomija szczegóły związane z generowaniem kod..." />
 <meta name="theme-color" content="#3776ab">
 <meta property="og:image:width" content="200">
 <meta property="og:image:height" content="200">
 
-    <title>10. Full Grammar specification &#8212; Python 3.15.0a0 - dokumentacja</title><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10. Pełna specyfikacja gramatyki Pythona &#8212; Python 3.15.0a0 - dokumentacja</title><meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=234b1a7c" />
@@ -31,13 +31,13 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
-    <link rel="next" title="The Python Standard Library" href="../library/index.html" />
+    <link rel="next" title="Biblioteka standardowa Pythona" href="../library/index.html" />
     <link rel="prev" title="9. Top-level components" href="toplevel_components.html" />
     
       
@@ -98,14 +98,14 @@
     </select>
 </label>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="toplevel_components.html"
-                          title="previous chapter"><span class="section-number">9. </span>Top-level components</a></p>
+                          title="poprzedni rozdział"><span class="section-number">9. </span>Top-level components</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="../library/index.html"
-                          title="next chapter">The Python Standard Library</a></p>
+                          title="następny rozdział">Biblioteka standardowa Pythona</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -133,7 +133,7 @@
           <a href="../py-modindex.html" title="Indeks modułów Pythona"
              >moduły</a> |</li>
         <li class="right" >
-          <a href="../library/index.html" title="The Python Standard Library"
+          <a href="../library/index.html" title="Biblioteka standardowa Pythona"
              accesskey="N">dalej</a> |</li>
         <li class="right" >
           <a href="toplevel_components.html" title="9. Top-level components"
@@ -152,8 +152,8 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">The Python Language Reference</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href=""><span class="section-number">10. </span>Full Grammar specification</a></li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Dokumentacja języka Python</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">10. </span>Pełna specyfikacja gramatyki Pythona</a></li>
                 <li class="right">
                     
 
@@ -184,11 +184,8 @@
           <div class="body" role="main">
             
   <section id="full-grammar-specification">
-<span id="id1"></span><h1><span class="section-number">10. </span>Full Grammar specification<a class="headerlink" href="#full-grammar-specification" title="Link to this heading">¶</a></h1>
-<p>This is the full Python grammar, derived directly from the grammar
-used to generate the CPython parser (see <a class="extlink-source reference external" href="https://github.com/python/cpython/tree/main/Grammar/python.gram">Grammar/python.gram</a>).
-The version here omits details related to code generation and
-error recovery.</p>
+<span id="id1"></span><h1><span class="section-number">10. </span>Pełna specyfikacja gramatyki Pythona<a class="headerlink" href="#full-grammar-specification" title="Link to this heading">¶</a></h1>
+<p>Jest to pełna gramatyka Pythona, pochodząca bezpośrednio z tej używanej do generowania kodu parsera CPythona (zobacz: <a class="extlink-source reference external" href="https://github.com/python/cpython/tree/main/Grammar/python.gram">Grammar/python.gram</a>). Wersja tutaj pomija szczegóły związane z generowaniem kodu oraz obsługą błędów.</p>
 <p>The notation used here is the same as in the preceding docs,
 and is described in the <a class="reference internal" href="introduction.html#notation"><span class="std std-ref">notation</span></a> section,
 except for an extra complication:</p>
@@ -1151,14 +1148,14 @@ even if this fails to parse</p></li>
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="toplevel_components.html"
-                          title="previous chapter"><span class="section-number">9. </span>Top-level components</a></p>
+                          title="poprzedni rozdział"><span class="section-number">9. </span>Top-level components</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="../library/index.html"
-                          title="next chapter">The Python Standard Library</a></p>
+                          title="następny rozdział">Biblioteka standardowa Pythona</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -1172,7 +1169,7 @@ even if this fails to parse</p></li>
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -1189,7 +1186,7 @@ even if this fails to parse</p></li>
           <a href="../py-modindex.html" title="Indeks modułów Pythona"
              >moduły</a> |</li>
         <li class="right" >
-          <a href="../library/index.html" title="The Python Standard Library"
+          <a href="../library/index.html" title="Biblioteka standardowa Pythona"
              >dalej</a> |</li>
         <li class="right" >
           <a href="toplevel_components.html" title="9. Top-level components"
@@ -1208,8 +1205,8 @@ even if this fails to parse</p></li>
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Language Reference</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href=""><span class="section-number">10. </span>Full Grammar specification</a></li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Dokumentacja języka Python</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">10. </span>Pełna specyfikacja gramatyki Pythona</a></li>
                 <li class="right">
                     
 
@@ -1256,7 +1253,7 @@ even if this fails to parse</p></li>
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

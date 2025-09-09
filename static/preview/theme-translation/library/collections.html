@@ -8,10 +8,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://docs.python.org/3/library/collections.html" />
 <meta property="og:site_name" content="Python documentation" />
-<meta property="og:description" content="Source code: Lib/collections/__init__.py This module implements specialized container datatypes providing alternatives to Python’s general purpose built-in containers, dict, list, set, and tuple.,,..." />
+<meta property="og:description" content="Kod źródłowy: Lib/collections/__init__.py This module implements specialized container datatypes providing alternatives to Python’s general purpose built-in containers, dict, list, set, and tuple.,..." />
 <meta property="og:image" content="_static/og-image.png" />
 <meta property="og:image:alt" content="Python documentation" />
-<meta name="description" content="Source code: Lib/collections/__init__.py This module implements specialized container datatypes providing alternatives to Python’s general purpose built-in containers, dict, list, set, and tuple.,,..." />
+<meta name="description" content="Kod źródłowy: Lib/collections/__init__.py This module implements specialized container datatypes providing alternatives to Python’s general purpose built-in containers, dict, list, set, and tuple.,..." />
 <meta name="theme-color" content="#3776ab">
 <meta property="og:image:width" content="200">
 <meta property="og:image:height" content="200">
@@ -31,11 +31,11 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="collections.abc — Abstract Base Classes for Containers" href="collections.abc.html" />
     <link rel="prev" title="calendar — General calendar-related functions" href="calendar.html" />
@@ -98,44 +98,44 @@
     </select>
 </label>
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">collections</span></code> — Container datatypes</a><ul>
-<li><a class="reference internal" href="#chainmap-objects"><code class="xref py py-class docutils literal notranslate"><span class="pre">ChainMap</span></code> objects</a><ul>
+<li><a class="reference internal" href="#chainmap-objects"><code class="xref py py-class docutils literal notranslate"><span class="pre">ChainMap</span></code> przedmioty</a><ul>
 <li><a class="reference internal" href="#chainmap-examples-and-recipes"><code class="xref py py-class docutils literal notranslate"><span class="pre">ChainMap</span></code> Examples and Recipes</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#counter-objects"><code class="xref py py-class docutils literal notranslate"><span class="pre">Counter</span></code> objects</a></li>
-<li><a class="reference internal" href="#deque-objects"><code class="xref py py-class docutils literal notranslate"><span class="pre">deque</span></code> objects</a><ul>
-<li><a class="reference internal" href="#deque-recipes"><code class="xref py py-class docutils literal notranslate"><span class="pre">deque</span></code> Recipes</a></li>
+<li><a class="reference internal" href="#counter-objects"><code class="xref py py-class docutils literal notranslate"><span class="pre">Counter</span></code> przedmioty</a></li>
+<li><a class="reference internal" href="#deque-objects"><code class="xref py py-class docutils literal notranslate"><span class="pre">deque</span></code> przedmioty</a><ul>
+<li><a class="reference internal" href="#deque-recipes"><code class="xref py py-class docutils literal notranslate"><span class="pre">deque</span></code> Przepisy</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#defaultdict-objects"><code class="xref py py-class docutils literal notranslate"><span class="pre">defaultdict</span></code> objects</a><ul>
-<li><a class="reference internal" href="#defaultdict-examples"><code class="xref py py-class docutils literal notranslate"><span class="pre">defaultdict</span></code> Examples</a></li>
+<li><a class="reference internal" href="#defaultdict-objects"><code class="xref py py-class docutils literal notranslate"><span class="pre">defaultdict</span></code> przedmioty</a><ul>
+<li><a class="reference internal" href="#defaultdict-examples"><code class="xref py py-class docutils literal notranslate"><span class="pre">defaultdict</span></code> Przykłady</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#namedtuple-factory-function-for-tuples-with-named-fields"><code class="xref py py-func docutils literal notranslate"><span class="pre">namedtuple()</span></code> Factory Function for Tuples with Named Fields</a></li>
-<li><a class="reference internal" href="#ordereddict-objects"><code class="xref py py-class docutils literal notranslate"><span class="pre">OrderedDict</span></code> objects</a><ul>
+<li><a class="reference internal" href="#ordereddict-objects"><code class="xref py py-class docutils literal notranslate"><span class="pre">OrderedDict</span></code> przedmioty</a><ul>
 <li><a class="reference internal" href="#ordereddict-examples-and-recipes"><code class="xref py py-class docutils literal notranslate"><span class="pre">OrderedDict</span></code> Examples and Recipes</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#userdict-objects"><code class="xref py py-class docutils literal notranslate"><span class="pre">UserDict</span></code> objects</a></li>
-<li><a class="reference internal" href="#userlist-objects"><code class="xref py py-class docutils literal notranslate"><span class="pre">UserList</span></code> objects</a></li>
-<li><a class="reference internal" href="#userstring-objects"><code class="xref py py-class docutils literal notranslate"><span class="pre">UserString</span></code> objects</a></li>
+<li><a class="reference internal" href="#userdict-objects"><code class="xref py py-class docutils literal notranslate"><span class="pre">UserDict</span></code> przedmioty</a></li>
+<li><a class="reference internal" href="#userlist-objects"><code class="xref py py-class docutils literal notranslate"><span class="pre">UserList</span></code> przedmioty</a></li>
+<li><a class="reference internal" href="#userstring-objects"><code class="xref py py-class docutils literal notranslate"><span class="pre">UserString</span></code> przedmioty</a></li>
 </ul>
 </li>
 </ul>
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="calendar.html"
-                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">calendar</span></code> — General calendar-related functions</a></p>
+                          title="poprzedni rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">calendar</span></code> — General calendar-related functions</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="collections.abc.html"
-                          title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">collections.abc</span></code> — Abstract Base Classes for Containers</a></p>
+                          title="następny rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">collections.abc</span></code> — Abstract Base Classes for Containers</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -182,8 +182,8 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
-          <li class="nav-item nav-item-2"><a href="datatypes.html" accesskey="U">Data Types</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="datatypes.html" accesskey="U">Typy danych</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">collections</span></code> — Container datatypes</a></li>
                 <li class="right">
                     
@@ -216,7 +216,7 @@
             
   <section id="module-collections">
 <span id="collections-container-datatypes"></span><h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">collections</span></code> — Container datatypes<a class="headerlink" href="#module-collections" title="Link to this heading">¶</a></h1>
-<p><strong>Source code:</strong> <a class="extlink-source reference external" href="https://github.com/python/cpython/tree/main/Lib/collections/__init__.py">Lib/collections/__init__.py</a></p>
+<p><strong>Kod źródłowy:</strong> <a class="extlink-source reference external" href="https://github.com/python/cpython/tree/main/Lib/collections/__init__.py">Lib/collections/__init__.py</a></p>
 <hr class="docutils" />
 <p>This module implements specialized container datatypes providing alternatives to
 Python’s general purpose built-in containers, <a class="reference internal" href="stdtypes.html#dict" title="dict"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a>, <a class="reference internal" href="stdtypes.html#list" title="list"><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></a>,
@@ -253,7 +253,7 @@ Python’s general purpose built-in containers, <a class="reference internal" hr
 </tbody>
 </table>
 <section id="chainmap-objects">
-<h2><a class="reference internal" href="#collections.ChainMap" title="collections.ChainMap"><code class="xref py py-class docutils literal notranslate"><span class="pre">ChainMap</span></code></a> objects<a class="headerlink" href="#chainmap-objects" title="Link to this heading">¶</a></h2>
+<h2><a class="reference internal" href="#collections.ChainMap" title="collections.ChainMap"><code class="xref py py-class docutils literal notranslate"><span class="pre">ChainMap</span></code></a> przedmioty<a class="headerlink" href="#chainmap-objects" title="Link to this heading">¶</a></h2>
 <div class="versionadded">
 <p><span class="versionmodified added"> Dodane w wersji 3.3.</span></p>
 </div>
@@ -430,7 +430,7 @@ updates keys found deeper in the chain:</p>
 </section>
 </section>
 <section id="counter-objects">
-<h2><a class="reference internal" href="#collections.Counter" title="collections.Counter"><code class="xref py py-class docutils literal notranslate"><span class="pre">Counter</span></code></a> objects<a class="headerlink" href="#counter-objects" title="Link to this heading">¶</a></h2>
+<h2><a class="reference internal" href="#collections.Counter" title="collections.Counter"><code class="xref py py-class docutils literal notranslate"><span class="pre">Counter</span></code></a> przedmioty<a class="headerlink" href="#counter-objects" title="Link to this heading">¶</a></h2>
 <p>A counter tool is provided to support convenient and rapid tallies.
 For example:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Tally occurrences of words in a list</span>
@@ -671,7 +671,7 @@ elements, see <a class="reference internal" href="itertools.html#itertools.combi
 </div>
 </section>
 <section id="deque-objects">
-<h2><a class="reference internal" href="#collections.deque" title="collections.deque"><code class="xref py py-class docutils literal notranslate"><span class="pre">deque</span></code></a> objects<a class="headerlink" href="#deque-objects" title="Link to this heading">¶</a></h2>
+<h2><a class="reference internal" href="#collections.deque" title="collections.deque"><code class="xref py py-class docutils literal notranslate"><span class="pre">deque</span></code></a> przedmioty<a class="headerlink" href="#deque-objects" title="Link to this heading">¶</a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="collections.deque">
 <em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">collections.</span></span><span class="sig-name descname"><span class="pre">deque</span></span><span class="sig-paren">(</span><span class="optional">[</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span></em><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">maxlen</span></span></em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#collections.deque" title="Link to this definition">¶</a></dt>
@@ -825,7 +825,7 @@ the first element.  Indexed access is <em>O</em>(1) at both ends but slows to <e
 the middle.  For fast random access, use lists instead.</p>
 <p>Starting in version 3.5, deques support <code class="docutils literal notranslate"><span class="pre">__add__()</span></code>, <code class="docutils literal notranslate"><span class="pre">__mul__()</span></code>,
 and <code class="docutils literal notranslate"><span class="pre">__imul__()</span></code>.</p>
-<p>Example:</p>
+<p>Przykład:</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">deque</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">d</span> <span class="o">=</span> <span class="n">deque</span><span class="p">(</span><span class="s1">&#39;ghi&#39;</span><span class="p">)</span>                 <span class="c1"># make a new deque with three items</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">elem</span> <span class="ow">in</span> <span class="n">d</span><span class="p">:</span>                   <span class="c1"># iterate over the deque&#39;s elements</span>
@@ -879,7 +879,7 @@ and <code class="docutils literal notranslate"><span class="pre">__imul__()</spa
 </pre></div>
 </div>
 <section id="deque-recipes">
-<h3><a class="reference internal" href="#collections.deque" title="collections.deque"><code class="xref py py-class docutils literal notranslate"><span class="pre">deque</span></code></a> Recipes<a class="headerlink" href="#deque-recipes" title="Link to this heading">¶</a></h3>
+<h3><a class="reference internal" href="#collections.deque" title="collections.deque"><code class="xref py py-class docutils literal notranslate"><span class="pre">deque</span></code></a> Przepisy<a class="headerlink" href="#deque-recipes" title="Link to this heading">¶</a></h3>
 <p>This section shows various approaches to working with deques.</p>
 <p>Bounded length deques provide functionality similar to the <code class="docutils literal notranslate"><span class="pre">tail</span></code> filter
 in Unix:</p>
@@ -941,7 +941,7 @@ stack manipulations such as <code class="docutils literal notranslate"><span cla
 </section>
 </section>
 <section id="defaultdict-objects">
-<h2><a class="reference internal" href="#collections.defaultdict" title="collections.defaultdict"><code class="xref py py-class docutils literal notranslate"><span class="pre">defaultdict</span></code></a> objects<a class="headerlink" href="#defaultdict-objects" title="Link to this heading">¶</a></h2>
+<h2><a class="reference internal" href="#collections.defaultdict" title="collections.defaultdict"><code class="xref py py-class docutils literal notranslate"><span class="pre">defaultdict</span></code></a> przedmioty<a class="headerlink" href="#defaultdict-objects" title="Link to this heading">¶</a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="collections.defaultdict">
 <em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">collections.</span></span><span class="sig-name descname"><span class="pre">defaultdict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">default_factory=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">/</span></span></em><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">...</span></span></em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#collections.defaultdict" title="Link to this definition">¶</a></dt>
@@ -978,9 +978,9 @@ normal dictionaries, return <code class="docutils literal notranslate"><span cla
 <dl class="py attribute">
 <dt class="sig sig-object py" id="collections.defaultdict.default_factory">
 <span class="sig-name descname"><span class="pre">default_factory</span></span><a class="headerlink" href="#collections.defaultdict.default_factory" title="Link to this definition">¶</a></dt>
-<dd><p>This attribute is used by the <a class="reference internal" href="#collections.defaultdict.__missing__" title="collections.defaultdict.__missing__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">__missing__()</span></code></a> method; it is
-initialized from the first argument to the constructor, if present, or to
-<code class="docutils literal notranslate"><span class="pre">None</span></code>, if absent.</p>
+<dd><p>This attribute is used by the <a class="reference internal" href="#collections.defaultdict.__missing__" title="collections.defaultdict.__missing__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">__missing__()</span></code></a> method;
+it is initialized from the first argument to the constructor, if present,
+or to <code class="docutils literal notranslate"><span class="pre">None</span></code>, if absent.</p>
 </dd></dl>
 
 <div class="versionchanged">
@@ -990,7 +990,7 @@ initialized from the first argument to the constructor, if present, or to
 </dd></dl>
 
 <section id="defaultdict-examples">
-<h3><a class="reference internal" href="#collections.defaultdict" title="collections.defaultdict"><code class="xref py py-class docutils literal notranslate"><span class="pre">defaultdict</span></code></a> Examples<a class="headerlink" href="#defaultdict-examples" title="Link to this heading">¶</a></h3>
+<h3><a class="reference internal" href="#collections.defaultdict" title="collections.defaultdict"><code class="xref py py-class docutils literal notranslate"><span class="pre">defaultdict</span></code></a> Przykłady<a class="headerlink" href="#defaultdict-examples" title="Link to this heading">¶</a></h3>
 <p>Using <a class="reference internal" href="stdtypes.html#list" title="list"><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></a> as the <a class="reference internal" href="#collections.defaultdict.default_factory" title="collections.defaultdict.default_factory"><code class="xref py py-attr docutils literal notranslate"><span class="pre">default_factory</span></code></a>, it is easy to group a
 sequence of key-value pairs into a dictionary of lists:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="p">[(</span><span class="s1">&#39;yellow&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;yellow&#39;</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)]</span>
@@ -1004,10 +1004,10 @@ sequence of key-value pairs into a dictionary of lists:</p>
 </div>
 <p>When each key is encountered for the first time, it is not already in the
 mapping; so an entry is automatically created using the <a class="reference internal" href="#collections.defaultdict.default_factory" title="collections.defaultdict.default_factory"><code class="xref py py-attr docutils literal notranslate"><span class="pre">default_factory</span></code></a>
-function which returns an empty <a class="reference internal" href="stdtypes.html#list" title="list"><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></a>.  The <code class="xref py py-meth docutils literal notranslate"><span class="pre">list.append()</span></code>
+function which returns an empty <a class="reference internal" href="stdtypes.html#list" title="list"><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></a>.  The <a class="reference internal" href="stdtypes.html#list.append" title="list.append"><code class="xref py py-meth docutils literal notranslate"><span class="pre">list.append()</span></code></a>
 operation then attaches the value to the new list.  When keys are encountered
 again, the look-up proceeds normally (returning the list for that key) and the
-<code class="xref py py-meth docutils literal notranslate"><span class="pre">list.append()</span></code> operation adds another value to the list. This technique is
+<a class="reference internal" href="stdtypes.html#list.append" title="list.append"><code class="xref py py-meth docutils literal notranslate"><span class="pre">list.append()</span></code></a> operation adds another value to the list. This technique is
 simpler and faster than an equivalent technique using <a class="reference internal" href="stdtypes.html#dict.setdefault" title="dict.setdefault"><code class="xref py py-meth docutils literal notranslate"><span class="pre">dict.setdefault()</span></code></a>:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">d</span> <span class="o">=</span> <span class="p">{}</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">s</span><span class="p">:</span>
@@ -1237,7 +1237,7 @@ function:</p>
 </pre></div>
 </div>
 <p>To convert a dictionary to a named tuple, use the double-star-operator
-(as described in <a class="reference internal" href="../tutorial/controlflow.html#tut-unpacking-arguments"><span class="std std-ref">Unpacking Argument Lists</span></a>):</p>
+(as described in <a class="reference internal" href="../tutorial/controlflow.html#tut-unpacking-arguments"><span class="std std-ref">Rozpakowywanie listy argumentów</span></a>):</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">d</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="mi">11</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span> <span class="mi">22</span><span class="p">}</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">Point</span><span class="p">(</span><span class="o">**</span><span class="n">d</span><span class="p">)</span>
 <span class="go">Point(x=11, y=22)</span>
@@ -1300,7 +1300,7 @@ automatically adding generated special methods to user-defined classes.</p></li>
 </div>
 </section>
 <section id="ordereddict-objects">
-<h2><a class="reference internal" href="#collections.OrderedDict" title="collections.OrderedDict"><code class="xref py py-class docutils literal notranslate"><span class="pre">OrderedDict</span></code></a> objects<a class="headerlink" href="#ordereddict-objects" title="Link to this heading">¶</a></h2>
+<h2><a class="reference internal" href="#collections.OrderedDict" title="collections.OrderedDict"><code class="xref py py-class docutils literal notranslate"><span class="pre">OrderedDict</span></code></a> przedmioty<a class="headerlink" href="#ordereddict-objects" title="Link to this heading">¶</a></h2>
 <p>Ordered dictionaries are just like regular dictionaries but have some extra
 capabilities relating to ordering operations.  They have become less
 important now that the built-in <a class="reference internal" href="stdtypes.html#dict" title="dict"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a> class gained the ability
@@ -1478,7 +1478,7 @@ variants of <a class="reference internal" href="functools.html#functools.lru_cac
 </section>
 </section>
 <section id="userdict-objects">
-<h2><a class="reference internal" href="#collections.UserDict" title="collections.UserDict"><code class="xref py py-class docutils literal notranslate"><span class="pre">UserDict</span></code></a> objects<a class="headerlink" href="#userdict-objects" title="Link to this heading">¶</a></h2>
+<h2><a class="reference internal" href="#collections.UserDict" title="collections.UserDict"><code class="xref py py-class docutils literal notranslate"><span class="pre">UserDict</span></code></a> przedmioty<a class="headerlink" href="#userdict-objects" title="Link to this heading">¶</a></h2>
 <p>The class, <a class="reference internal" href="#collections.UserDict" title="collections.UserDict"><code class="xref py py-class docutils literal notranslate"><span class="pre">UserDict</span></code></a> acts as a wrapper around dictionary objects.
 The need for this class has been partially supplanted by the ability to
 subclass directly from <a class="reference internal" href="stdtypes.html#dict" title="dict"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a>; however, this class can be easier
@@ -1505,7 +1505,7 @@ class.</p>
 
 </section>
 <section id="userlist-objects">
-<h2><a class="reference internal" href="#collections.UserList" title="collections.UserList"><code class="xref py py-class docutils literal notranslate"><span class="pre">UserList</span></code></a> objects<a class="headerlink" href="#userlist-objects" title="Link to this heading">¶</a></h2>
+<h2><a class="reference internal" href="#collections.UserList" title="collections.UserList"><code class="xref py py-class docutils literal notranslate"><span class="pre">UserList</span></code></a> przedmioty<a class="headerlink" href="#userlist-objects" title="Link to this heading">¶</a></h2>
 <p>This class acts as a wrapper around list objects.  It is a useful base class
 for your own list-like classes which can inherit from them and override
 existing methods or add new ones.  In this way, one can add new behaviors to
@@ -1544,7 +1544,7 @@ consult the sources for information about the methods which need to be provided
 in that case.</p>
 </section>
 <section id="userstring-objects">
-<h2><a class="reference internal" href="#collections.UserString" title="collections.UserString"><code class="xref py py-class docutils literal notranslate"><span class="pre">UserString</span></code></a> objects<a class="headerlink" href="#userstring-objects" title="Link to this heading">¶</a></h2>
+<h2><a class="reference internal" href="#collections.UserString" title="collections.UserString"><code class="xref py py-class docutils literal notranslate"><span class="pre">UserString</span></code></a> przedmioty<a class="headerlink" href="#userstring-objects" title="Link to this heading">¶</a></h2>
 <p>The class, <a class="reference internal" href="#collections.UserString" title="collections.UserString"><code class="xref py py-class docutils literal notranslate"><span class="pre">UserString</span></code></a> acts as a wrapper around string objects.
 The need for this class has been partially supplanted by the ability to
 subclass directly from <a class="reference internal" href="stdtypes.html#str" title="str"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>; however, this class can be easier
@@ -1585,44 +1585,44 @@ be any object which can be converted into a string using the built-in
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">collections</span></code> — Container datatypes</a><ul>
-<li><a class="reference internal" href="#chainmap-objects"><code class="xref py py-class docutils literal notranslate"><span class="pre">ChainMap</span></code> objects</a><ul>
+<li><a class="reference internal" href="#chainmap-objects"><code class="xref py py-class docutils literal notranslate"><span class="pre">ChainMap</span></code> przedmioty</a><ul>
 <li><a class="reference internal" href="#chainmap-examples-and-recipes"><code class="xref py py-class docutils literal notranslate"><span class="pre">ChainMap</span></code> Examples and Recipes</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#counter-objects"><code class="xref py py-class docutils literal notranslate"><span class="pre">Counter</span></code> objects</a></li>
-<li><a class="reference internal" href="#deque-objects"><code class="xref py py-class docutils literal notranslate"><span class="pre">deque</span></code> objects</a><ul>
-<li><a class="reference internal" href="#deque-recipes"><code class="xref py py-class docutils literal notranslate"><span class="pre">deque</span></code> Recipes</a></li>
+<li><a class="reference internal" href="#counter-objects"><code class="xref py py-class docutils literal notranslate"><span class="pre">Counter</span></code> przedmioty</a></li>
+<li><a class="reference internal" href="#deque-objects"><code class="xref py py-class docutils literal notranslate"><span class="pre">deque</span></code> przedmioty</a><ul>
+<li><a class="reference internal" href="#deque-recipes"><code class="xref py py-class docutils literal notranslate"><span class="pre">deque</span></code> Przepisy</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#defaultdict-objects"><code class="xref py py-class docutils literal notranslate"><span class="pre">defaultdict</span></code> objects</a><ul>
-<li><a class="reference internal" href="#defaultdict-examples"><code class="xref py py-class docutils literal notranslate"><span class="pre">defaultdict</span></code> Examples</a></li>
+<li><a class="reference internal" href="#defaultdict-objects"><code class="xref py py-class docutils literal notranslate"><span class="pre">defaultdict</span></code> przedmioty</a><ul>
+<li><a class="reference internal" href="#defaultdict-examples"><code class="xref py py-class docutils literal notranslate"><span class="pre">defaultdict</span></code> Przykłady</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#namedtuple-factory-function-for-tuples-with-named-fields"><code class="xref py py-func docutils literal notranslate"><span class="pre">namedtuple()</span></code> Factory Function for Tuples with Named Fields</a></li>
-<li><a class="reference internal" href="#ordereddict-objects"><code class="xref py py-class docutils literal notranslate"><span class="pre">OrderedDict</span></code> objects</a><ul>
+<li><a class="reference internal" href="#ordereddict-objects"><code class="xref py py-class docutils literal notranslate"><span class="pre">OrderedDict</span></code> przedmioty</a><ul>
 <li><a class="reference internal" href="#ordereddict-examples-and-recipes"><code class="xref py py-class docutils literal notranslate"><span class="pre">OrderedDict</span></code> Examples and Recipes</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#userdict-objects"><code class="xref py py-class docutils literal notranslate"><span class="pre">UserDict</span></code> objects</a></li>
-<li><a class="reference internal" href="#userlist-objects"><code class="xref py py-class docutils literal notranslate"><span class="pre">UserList</span></code> objects</a></li>
-<li><a class="reference internal" href="#userstring-objects"><code class="xref py py-class docutils literal notranslate"><span class="pre">UserString</span></code> objects</a></li>
+<li><a class="reference internal" href="#userdict-objects"><code class="xref py py-class docutils literal notranslate"><span class="pre">UserDict</span></code> przedmioty</a></li>
+<li><a class="reference internal" href="#userlist-objects"><code class="xref py py-class docutils literal notranslate"><span class="pre">UserList</span></code> przedmioty</a></li>
+<li><a class="reference internal" href="#userstring-objects"><code class="xref py py-class docutils literal notranslate"><span class="pre">UserString</span></code> przedmioty</a></li>
 </ul>
 </li>
 </ul>
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="calendar.html"
-                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">calendar</span></code> — General calendar-related functions</a></p>
+                          title="poprzedni rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">calendar</span></code> — General calendar-related functions</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="collections.abc.html"
-                          title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">collections.abc</span></code> — Abstract Base Classes for Containers</a></p>
+                          title="następny rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">collections.abc</span></code> — Abstract Base Classes for Containers</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -1636,7 +1636,7 @@ be any object which can be converted into a string using the built-in
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -1672,8 +1672,8 @@ be any object which can be converted into a string using the built-in
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
-          <li class="nav-item nav-item-2"><a href="datatypes.html" >Data Types</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="datatypes.html" >Typy danych</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">collections</span></code> — Container datatypes</a></li>
                 <li class="right">
                     
@@ -1721,7 +1721,7 @@ be any object which can be converted into a string using the built-in
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

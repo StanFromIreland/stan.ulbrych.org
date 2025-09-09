@@ -8,10 +8,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://docs.python.org/3/whatsnew/3.12.html" />
 <meta property="og:site_name" content="Python documentation" />
-<meta property="og:description" content="Editor, Adam Turner,. This article explains the new features in Python 3.12, compared to 3.11. Python 3.12 was released on October 2, 2023. For full details, see the changelog. Summary – Release hi..." />
+<meta property="og:description" content="redakcja, Adam Turner,. This article explains the new features in Python 3.12, compared to 3.11. Python 3.12 was released on October 2, 2023. For full details, see the changelog. Podsumowanie – naj..." />
 <meta property="og:image" content="_static/og-image.png" />
 <meta property="og:image:alt" content="Python documentation" />
-<meta name="description" content="Editor, Adam Turner,. This article explains the new features in Python 3.12, compared to 3.11. Python 3.12 was released on October 2, 2023. For full details, see the changelog. Summary – Release hi..." />
+<meta name="description" content="redakcja, Adam Turner,. This article explains the new features in Python 3.12, compared to 3.11. Python 3.12 was released on October 2, 2023. For full details, see the changelog. Podsumowanie – naj..." />
 <meta name="theme-color" content="#3776ab">
 <meta property="og:image:width" content="200">
 <meta property="og:image:height" content="200">
@@ -31,14 +31,14 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
-    <link rel="next" title="What’s New In Python 3.11" href="3.11.html" />
-    <link rel="prev" title="What’s New In Python 3.13" href="3.13.html" />
+    <link rel="next" title="Co nowego w Pythonie 3.11" href="3.11.html" />
+    <link rel="prev" title="Nowości w Pythonie 3.13" href="3.13.html" />
     
       
       <link rel="canonical" href="https://docs.python.org/3/whatsnew/3.12.html">
@@ -98,11 +98,11 @@
     </select>
 </label>
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#">What’s New In Python 3.12</a><ul>
-<li><a class="reference internal" href="#summary-release-highlights">Summary – Release highlights</a></li>
-<li><a class="reference internal" href="#new-features">New Features</a><ul>
+<li><a class="reference internal" href="#summary-release-highlights">Podsumowanie – najważniejsze nowości</a></li>
+<li><a class="reference internal" href="#new-features">Nowe funkcjonalności</a><ul>
 <li><a class="reference internal" href="#pep-695-type-parameter-syntax">PEP 695: Type Parameter Syntax</a></li>
 <li><a class="reference internal" href="#pep-701-syntactic-formalization-of-f-strings">PEP 701: Syntactic formalization of f-strings</a></li>
 <li><a class="reference internal" href="#pep-684-a-per-interpreter-gil">PEP 684: A Per-Interpreter GIL</a></li>
@@ -119,7 +119,7 @@
 </li>
 <li><a class="reference internal" href="#other-language-changes">Other Language Changes</a></li>
 <li><a class="reference internal" href="#new-modules">New Modules</a></li>
-<li><a class="reference internal" href="#improved-modules">Improved Modules</a><ul>
+<li><a class="reference internal" href="#improved-modules">Ulepszone moduły</a><ul>
 <li><a class="reference internal" href="#array">array</a></li>
 <li><a class="reference internal" href="#asyncio">asyncio</a></li>
 <li><a class="reference internal" href="#calendar">calendar</a></li>
@@ -183,7 +183,7 @@
 <li><a class="reference internal" href="#webbrowser">webbrowser</a></li>
 <li><a class="reference internal" href="#xml-etree-elementtree">xml.etree.ElementTree</a></li>
 <li><a class="reference internal" href="#zipimport">zipimport</a></li>
-<li><a class="reference internal" href="#others">Others</a></li>
+<li><a class="reference internal" href="#others">Inne</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#porting-to-python-3-12">Porting to Python 3.12</a><ul>
@@ -191,8 +191,8 @@
 </ul>
 </li>
 <li><a class="reference internal" href="#build-changes">Build Changes</a></li>
-<li><a class="reference internal" href="#c-api-changes">C API Changes</a><ul>
-<li><a class="reference internal" href="#id4">New Features</a></li>
+<li><a class="reference internal" href="#c-api-changes">Zmiany w C API</a><ul>
+<li><a class="reference internal" href="#id4">Nowe funkcjonalności</a></li>
 <li><a class="reference internal" href="#id5">Porting to Python 3.12</a></li>
 <li><a class="reference internal" href="#id6">Deprecated</a><ul>
 <li><a class="reference internal" href="#id7">Pending removal in Python 3.14</a></li>
@@ -210,14 +210,14 @@
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="3.13.html"
-                          title="previous chapter">What’s New In Python 3.13</a></p>
+                          title="poprzedni rozdział">Nowości w Pythonie 3.13</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="3.11.html"
-                          title="next chapter">What’s New In Python 3.11</a></p>
+                          title="następny rozdział">Co nowego w Pythonie 3.11</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -245,10 +245,10 @@
           <a href="../py-modindex.html" title="Indeks modułów Pythona"
              >moduły</a> |</li>
         <li class="right" >
-          <a href="3.11.html" title="What’s New In Python 3.11"
+          <a href="3.11.html" title="Co nowego w Pythonie 3.11"
              accesskey="N">dalej</a> |</li>
         <li class="right" >
-          <a href="3.13.html" title="What’s New In Python 3.13"
+          <a href="3.13.html" title="Nowości w Pythonie 3.13"
              accesskey="P">wstecz</a> |</li>
 
           <li><img src="../_static/py.svg" alt="Python logo" style="vertical-align: middle; margin-top: -1px"></li>
@@ -264,7 +264,7 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">What’s New in Python</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Co nowego w Pythonie</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">What’s New In Python 3.12</a></li>
                 <li class="right">
                     
@@ -298,7 +298,7 @@
   <section id="what-s-new-in-python-3-12">
 <h1>What’s New In Python 3.12<a class="headerlink" href="#what-s-new-in-python-3-12" title="Link to this heading">¶</a></h1>
 <dl class="field-list simple">
-<dt class="field-odd">Editor<span class="colon">:</span></dt>
+<dt class="field-odd">redakcja<span class="colon">:</span></dt>
 <dd class="field-odd"><p>Adam Turner</p>
 </dd>
 </dl>
@@ -310,7 +310,7 @@ For full details, see the <a class="reference internal" href="changelog.html#cha
 <p><span class="target" id="index-0"></span><a class="pep reference external" href="https://peps.python.org/pep-0693/"><strong>PEP 693</strong></a> – Python 3.12 Release Schedule</p>
 </div>
 <section id="summary-release-highlights">
-<h2>Summary – Release highlights<a class="headerlink" href="#summary-release-highlights" title="Link to this heading">¶</a></h2>
+<h2>Podsumowanie – najważniejsze nowości<a class="headerlink" href="#summary-release-highlights" title="Link to this heading">¶</a></h2>
 <p>Python 3.12 is a stable release of the Python programming language,
 with a mix of changes to the language and the standard library.
 The library changes focus on cleaning up deprecated APIs, usability, and correctness.
@@ -332,7 +332,7 @@ refer to the PEP for a particular new feature;
 but note that PEPs usually are not kept up-to-date
 once a feature has been fully implemented.</p>
 <hr class="docutils" />
-<p>New syntax features:</p>
+<p>Nowe cechy składni:</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#whatsnew312-pep695"><span class="std std-ref">PEP 695</span></a>, type parameter syntax and the <a class="reference internal" href="../reference/simple_stmts.html#type"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">type</span></code></a> statement</p></li>
 </ul>
@@ -340,7 +340,7 @@ once a feature has been fully implemented.</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#whatsnew312-pep701"><span class="std std-ref">PEP 701</span></a>, <a class="reference internal" href="../glossary.html#term-f-string"><span class="xref std std-term">f-strings</span></a> in the grammar</p></li>
 </ul>
-<p>Interpreter improvements:</p>
+<p>Udoskonalenia interpretera:</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#whatsnew312-pep684"><span class="std std-ref">PEP 684</span></a>, a unique per-interpreter <a class="reference internal" href="../glossary.html#term-global-interpreter-lock"><span class="xref std std-term">GIL</span></a></p></li>
 <li><p><a class="reference internal" href="#whatsnew312-pep669"><span class="std std-ref">PEP 669</span></a>, low impact monitoring</p></li>
@@ -384,13 +384,13 @@ OpenSSL does not provide them.</p></li>
 <li><p><a class="reference internal" href="../howto/perf_profiling.html#perf-profiling"><span class="std std-ref">CPython support</span></a> for the Linux <code class="docutils literal notranslate"><span class="pre">perf</span></code> profiler</p></li>
 <li><p>Implement stack overflow protection on supported platforms</p></li>
 </ul>
-<p>New typing features:</p>
+<p>Nowe cechy typowania:</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#whatsnew312-pep692"><span class="std std-ref">PEP 692</span></a>, using <a class="reference internal" href="../library/typing.html#typing.TypedDict" title="typing.TypedDict"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypedDict</span></code></a> to
 annotate <a class="reference internal" href="../glossary.html#term-argument"><span class="xref std std-term">**kwargs</span></a></p></li>
 <li><p><a class="reference internal" href="#whatsnew312-pep698"><span class="std std-ref">PEP 698</span></a>, <a class="reference internal" href="../library/typing.html#typing.override" title="typing.override"><code class="xref py py-func docutils literal notranslate"><span class="pre">typing.override()</span></code></a> decorator</p></li>
 </ul>
-<p>Important deprecations, removals or restrictions:</p>
+<p>Ważne dezaprobaty, usunięcia lub ograniczenia:</p>
 <ul class="simple">
 <li><p><span class="target" id="index-1"></span><a class="pep reference external" href="https://peps.python.org/pep-0623/"><strong>PEP 623</strong></a>: Remove <code class="docutils literal notranslate"><span class="pre">wstr</span></code> from Unicode objects in Python’s C API,
 reducing the size of every <a class="reference internal" href="../library/stdtypes.html#str" title="str"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a> object by at least 8 bytes.</p></li>
@@ -412,7 +412,7 @@ removed, along with several <a class="reference internal" href="../library/unitt
 </ul>
 </section>
 <section id="new-features">
-<h2>New Features<a class="headerlink" href="#new-features" title="Link to this heading">¶</a></h2>
+<h2>Nowe funkcjonalności<a class="headerlink" href="#new-features" title="Link to this heading">¶</a></h2>
 <section id="pep-695-type-parameter-syntax">
 <span id="whatsnew312-pep695"></span><h3>PEP 695: Type Parameter Syntax<a class="headerlink" href="#pep-695-type-parameter-syntax" title="Link to this heading">¶</a></h3>
 <p>Generic classes and functions under <span class="target" id="index-4"></span><a class="pep reference external" href="https://peps.python.org/pep-0484/"><strong>PEP 484</strong></a> were declared using a verbose syntax
@@ -719,7 +719,7 @@ module. It indicates to type checkers that the method is intended to override
 a method in a superclass. This allows type checkers to catch mistakes where
 a method that is intended to override something in a base class
 does not in fact do so.</p>
-<p>Example:</p>
+<p>Przykład:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">override</span>
 
 <span class="k">class</span><span class="w"> </span><span class="nc">Base</span><span class="p">:</span>
@@ -819,7 +819,7 @@ in <a class="reference external" href="https://github.com/python/cpython/issues/
 </ul>
 </section>
 <section id="improved-modules">
-<h2>Improved Modules<a class="headerlink" href="#improved-modules" title="Link to this heading">¶</a></h2>
+<h2>Ulepszone moduły<a class="headerlink" href="#improved-modules" title="Link to this heading">¶</a></h2>
 <section id="array">
 <h3>array<a class="headerlink" href="#array" title="Link to this heading">¶</a></h3>
 <ul class="simple">
@@ -2414,7 +2414,7 @@ deprecated in Python 3.10: use the <code class="docutils literal notranslate"><s
 </ul>
 </section>
 <section id="others">
-<h3>Others<a class="headerlink" href="#others" title="Link to this heading">¶</a></h3>
+<h3>Inne<a class="headerlink" href="#others" title="Link to this heading">¶</a></h3>
 <ul class="simple">
 <li><p>Remove the <code class="docutils literal notranslate"><span class="pre">suspicious</span></code> rule from the documentation <code class="file docutils literal notranslate"><span class="pre">Makefile</span></code> and
 <code class="file docutils literal notranslate"><span class="pre">Doc/tools/rstlint.py</span></code>, both in favor of <a class="reference external" href="https://github.com/sphinx-contrib/sphinx-lint">sphinx-lint</a>.
@@ -2576,9 +2576,9 @@ optimization levels (0, 1, 2) at once.
 </ul>
 </section>
 <section id="c-api-changes">
-<h2>C API Changes<a class="headerlink" href="#c-api-changes" title="Link to this heading">¶</a></h2>
+<h2>Zmiany w C API<a class="headerlink" href="#c-api-changes" title="Link to this heading">¶</a></h2>
 <section id="id4">
-<h3>New Features<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
+<h3>Nowe funkcjonalności<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
 <ul id="whatsnew312-pep697">
 <li><p><span class="target" id="index-44"></span><a class="pep reference external" href="https://peps.python.org/pep-0697/"><strong>PEP 697</strong></a>: Introduce the <a class="reference internal" href="../c-api/stable.html#unstable-c-api"><span class="std std-ref">Unstable C API tier</span></a>,
 intended for low-level tools like debuggers and JIT compilers.
@@ -3176,11 +3176,11 @@ internals.
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#">What’s New In Python 3.12</a><ul>
-<li><a class="reference internal" href="#summary-release-highlights">Summary – Release highlights</a></li>
-<li><a class="reference internal" href="#new-features">New Features</a><ul>
+<li><a class="reference internal" href="#summary-release-highlights">Podsumowanie – najważniejsze nowości</a></li>
+<li><a class="reference internal" href="#new-features">Nowe funkcjonalności</a><ul>
 <li><a class="reference internal" href="#pep-695-type-parameter-syntax">PEP 695: Type Parameter Syntax</a></li>
 <li><a class="reference internal" href="#pep-701-syntactic-formalization-of-f-strings">PEP 701: Syntactic formalization of f-strings</a></li>
 <li><a class="reference internal" href="#pep-684-a-per-interpreter-gil">PEP 684: A Per-Interpreter GIL</a></li>
@@ -3197,7 +3197,7 @@ internals.
 </li>
 <li><a class="reference internal" href="#other-language-changes">Other Language Changes</a></li>
 <li><a class="reference internal" href="#new-modules">New Modules</a></li>
-<li><a class="reference internal" href="#improved-modules">Improved Modules</a><ul>
+<li><a class="reference internal" href="#improved-modules">Ulepszone moduły</a><ul>
 <li><a class="reference internal" href="#array">array</a></li>
 <li><a class="reference internal" href="#asyncio">asyncio</a></li>
 <li><a class="reference internal" href="#calendar">calendar</a></li>
@@ -3261,7 +3261,7 @@ internals.
 <li><a class="reference internal" href="#webbrowser">webbrowser</a></li>
 <li><a class="reference internal" href="#xml-etree-elementtree">xml.etree.ElementTree</a></li>
 <li><a class="reference internal" href="#zipimport">zipimport</a></li>
-<li><a class="reference internal" href="#others">Others</a></li>
+<li><a class="reference internal" href="#others">Inne</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#porting-to-python-3-12">Porting to Python 3.12</a><ul>
@@ -3269,8 +3269,8 @@ internals.
 </ul>
 </li>
 <li><a class="reference internal" href="#build-changes">Build Changes</a></li>
-<li><a class="reference internal" href="#c-api-changes">C API Changes</a><ul>
-<li><a class="reference internal" href="#id4">New Features</a></li>
+<li><a class="reference internal" href="#c-api-changes">Zmiany w C API</a><ul>
+<li><a class="reference internal" href="#id4">Nowe funkcjonalności</a></li>
 <li><a class="reference internal" href="#id5">Porting to Python 3.12</a></li>
 <li><a class="reference internal" href="#id6">Deprecated</a><ul>
 <li><a class="reference internal" href="#id7">Pending removal in Python 3.14</a></li>
@@ -3288,14 +3288,14 @@ internals.
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="3.13.html"
-                          title="previous chapter">What’s New In Python 3.13</a></p>
+                          title="poprzedni rozdział">Nowości w Pythonie 3.13</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="3.11.html"
-                          title="next chapter">What’s New In Python 3.11</a></p>
+                          title="następny rozdział">Co nowego w Pythonie 3.11</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -3309,7 +3309,7 @@ internals.
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -3326,10 +3326,10 @@ internals.
           <a href="../py-modindex.html" title="Indeks modułów Pythona"
              >moduły</a> |</li>
         <li class="right" >
-          <a href="3.11.html" title="What’s New In Python 3.11"
+          <a href="3.11.html" title="Co nowego w Pythonie 3.11"
              >dalej</a> |</li>
         <li class="right" >
-          <a href="3.13.html" title="What’s New In Python 3.13"
+          <a href="3.13.html" title="Nowości w Pythonie 3.13"
              >wstecz</a> |</li>
 
           <li><img src="../_static/py.svg" alt="Python logo" style="vertical-align: middle; margin-top: -1px"></li>
@@ -3345,7 +3345,7 @@ internals.
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >What’s New in Python</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Co nowego w Pythonie</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">What’s New In Python 3.12</a></li>
                 <li class="right">
                     
@@ -3393,7 +3393,7 @@ internals.
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

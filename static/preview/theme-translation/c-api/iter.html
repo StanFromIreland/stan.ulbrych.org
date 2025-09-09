@@ -31,11 +31,11 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="Buffer Protocol" href="buffer.html" />
     <link rel="prev" title="Mapping Protocol" href="mapping.html" />
@@ -98,14 +98,14 @@
     </select>
 </label>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="mapping.html"
-                          title="previous chapter">Mapping Protocol</a></p>
+                          title="poprzedni rozdział">Mapping Protocol</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="buffer.html"
-                          title="next chapter">Buffer Protocol</a></p>
+                          title="następny rozdział">Buffer Protocol</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -152,8 +152,8 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Reference Manual</a> &#187;</li>
-          <li class="nav-item nav-item-2"><a href="abstract.html" accesskey="U">Abstract Objects Layer</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Podręcznik</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="abstract.html" accesskey="U">Warstwa obiektów abstrakcyjnych</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Iterator Protocol</a></li>
                 <li class="right">
                     
@@ -190,7 +190,7 @@
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyIter_Check">
 <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyIter_Check</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">o</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyIter_Check" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.8.</em><p>Return non-zero if the object <em>o</em> can be safely passed to
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.8.</em><p>Return non-zero if the object <em>o</em> can be safely passed to
 <a class="reference internal" href="#c.PyIter_NextItem" title="PyIter_NextItem"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyIter_NextItem()</span></code></a> and <code class="docutils literal notranslate"><span class="pre">0</span></code> otherwise.
 This function always succeeds.</p>
 </dd></dl>
@@ -198,7 +198,7 @@ This function always succeeds.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyAIter_Check">
 <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyAIter_Check</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">o</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyAIter_Check" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.10.</em><p>Return non-zero if the object <em>o</em> provides the <code class="xref py py-class docutils literal notranslate"><span class="pre">AsyncIterator</span></code>
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.10.</em><p>Return non-zero if the object <em>o</em> provides the <code class="xref py py-class docutils literal notranslate"><span class="pre">AsyncIterator</span></code>
 protocol, and <code class="docutils literal notranslate"><span class="pre">0</span></code> otherwise.  This function always succeeds.</p>
 <div class="versionadded">
 <p><span class="versionmodified added"> Dodane w wersji 3.10.</span></p>
@@ -208,7 +208,7 @@ protocol, and <code class="docutils literal notranslate"><span class="pre">0</sp
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyIter_NextItem">
 <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyIter_NextItem</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">iter</span></span>, <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">item</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyIter_NextItem" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.14.</em><p>Return <code class="docutils literal notranslate"><span class="pre">1</span></code> and set <em>item</em> to a <a class="reference internal" href="../glossary.html#term-strong-reference"><span class="xref std std-term">strong reference</span></a> of the
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.14.</em><p>Return <code class="docutils literal notranslate"><span class="pre">1</span></code> and set <em>item</em> to a <a class="reference internal" href="../glossary.html#term-strong-reference"><span class="xref std std-term">strong reference</span></a> of the
 next value of the iterator <em>iter</em> on success.
 Return <code class="docutils literal notranslate"><span class="pre">0</span></code> and set <em>item</em> to <code class="docutils literal notranslate"><span class="pre">NULL</span></code> if there are no remaining values.
 Return <code class="docutils literal notranslate"><span class="pre">-1</span></code>, set <em>item</em> to <code class="docutils literal notranslate"><span class="pre">NULL</span></code> and set an exception on error.</p>
@@ -220,7 +220,7 @@ Return <code class="docutils literal notranslate"><span class="pre">-1</span></c
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyIter_Next">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyIter_Next</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">o</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyIter_Next" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>This is an older version of <code class="xref c c-func docutils literal notranslate"><span class="pre">PyIter_NextItem()</span></code>,
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>This is an older version of <code class="xref c c-func docutils literal notranslate"><span class="pre">PyIter_NextItem()</span></code>,
 which is retained for backwards compatibility.
 Prefer <a class="reference internal" href="#c.PyIter_NextItem" title="PyIter_NextItem"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyIter_NextItem()</span></code></a>.</p>
 <p>Return the next value from the iterator <em>o</em>.  The object must be an iterator
@@ -242,7 +242,7 @@ along the exception.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyIter_Send">
 <a class="reference internal" href="#c.PySendResult" title="PySendResult"><span class="n"><span class="pre">PySendResult</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PyIter_Send</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">iter</span></span>, <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">arg</span></span>, <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">presult</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyIter_Send" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.10.</em><p>Sends the <em>arg</em> value into the iterator <em>iter</em>. Returns:</p>
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.10.</em><p>Sends the <em>arg</em> value into the iterator <em>iter</em>. Returns:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">PYGEN_RETURN</span></code> if iterator returns. Return value is returned via <em>presult</em>.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">PYGEN_NEXT</span></code> if iterator yields. Yielded value is returned via <em>presult</em>.</p></li>
@@ -263,14 +263,14 @@ along the exception.</p>
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="mapping.html"
-                          title="previous chapter">Mapping Protocol</a></p>
+                          title="poprzedni rozdział">Mapping Protocol</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="buffer.html"
-                          title="next chapter">Buffer Protocol</a></p>
+                          title="następny rozdział">Buffer Protocol</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -284,7 +284,7 @@ along the exception.</p>
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -320,8 +320,8 @@ along the exception.</p>
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Reference Manual</a> &#187;</li>
-          <li class="nav-item nav-item-2"><a href="abstract.html" >Abstract Objects Layer</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Podręcznik</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="abstract.html" >Warstwa obiektów abstrakcyjnych</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Iterator Protocol</a></li>
                 <li class="right">
                     
@@ -369,7 +369,7 @@ along the exception.</p>
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

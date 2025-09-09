@@ -8,10 +8,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://docs.python.org/3/whatsnew/3.3.html" />
 <meta property="og:site_name" content="Python documentation" />
-<meta property="og:description" content="This article explains the new features in Python 3.3, compared to 3.2. Python 3.3 was released on September 29, 2012. For full details, see the changelog. Summary – Release highlights: New syntax f..." />
+<meta property="og:description" content="This article explains the new features in Python 3.3, compared to 3.2. Python 3.3 was released on September 29, 2012. For full details, see the changelog. Podsumowanie – najważniejsze nowości: Nowe..." />
 <meta property="og:image" content="_static/og-image.png" />
 <meta property="og:image:alt" content="Python documentation" />
-<meta name="description" content="This article explains the new features in Python 3.3, compared to 3.2. Python 3.3 was released on September 29, 2012. For full details, see the changelog. Summary – Release highlights: New syntax f..." />
+<meta name="description" content="This article explains the new features in Python 3.3, compared to 3.2. Python 3.3 was released on September 29, 2012. For full details, see the changelog. Podsumowanie – najważniejsze nowości: Nowe..." />
 <meta name="theme-color" content="#3776ab">
 <meta property="og:image:width" content="200">
 <meta property="og:image:height" content="200">
@@ -31,11 +31,11 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="What’s New In Python 3.2" href="3.2.html" />
     <link rel="prev" title="What’s New In Python 3.4" href="3.4.html" />
@@ -98,10 +98,10 @@
     </select>
 </label>
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#">What’s New In Python 3.3</a><ul>
-<li><a class="reference internal" href="#summary-release-highlights">Summary – Release highlights</a></li>
+<li><a class="reference internal" href="#summary-release-highlights">Podsumowanie – najważniejsze nowości</a></li>
 <li><a class="reference internal" href="#pep-405-virtual-environments">PEP 405: Virtual Environments</a></li>
 <li><a class="reference internal" href="#pep-420-implicit-namespace-packages">PEP 420: Implicit Namespace Packages</a></li>
 <li><a class="reference internal" href="#pep-3118-new-memoryview-implementation-and-buffer-protocol-documentation">PEP 3118: New memoryview implementation and buffer protocol documentation</a><ul>
@@ -140,7 +140,7 @@
 <li><a class="reference internal" href="#lzma">lzma</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#improved-modules">Improved Modules</a><ul>
+<li><a class="reference internal" href="#improved-modules">Ulepszone moduły</a><ul>
 <li><a class="reference internal" href="#abc">abc</a></li>
 <li><a class="reference internal" href="#array">array</a></li>
 <li><a class="reference internal" href="#base64">base64</a></li>
@@ -233,14 +233,14 @@
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="3.4.html"
-                          title="previous chapter">What’s New In Python 3.4</a></p>
+                          title="poprzedni rozdział">What’s New In Python 3.4</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="3.2.html"
-                          title="next chapter">What’s New In Python 3.2</a></p>
+                          title="następny rozdział">What’s New In Python 3.2</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -287,7 +287,7 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">What’s New in Python</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Co nowego w Pythonie</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">What’s New In Python 3.3</a></li>
                 <li class="right">
                     
@@ -328,13 +328,13 @@ see the <a class="reference external" href="https://docs.python.org/3.3/whatsnew
 <p><span class="target" id="index-0"></span><a class="pep reference external" href="https://peps.python.org/pep-0398/"><strong>PEP 398</strong></a> - Python 3.3 Release Schedule</p>
 </div>
 <section id="summary-release-highlights">
-<h2>Summary – Release highlights<a class="headerlink" href="#summary-release-highlights" title="Link to this heading">¶</a></h2>
-<p>New syntax features:</p>
+<h2>Podsumowanie – najważniejsze nowości<a class="headerlink" href="#summary-release-highlights" title="Link to this heading">¶</a></h2>
+<p>Nowe cechy składni:</p>
 <ul class="simple">
 <li><p>New <code class="docutils literal notranslate"><span class="pre">yield</span> <span class="pre">from</span></code> expression for <a class="reference internal" href="#pep-380"><span class="std std-ref">generator delegation</span></a>.</p></li>
 <li><p>The <code class="docutils literal notranslate"><span class="pre">u'unicode'</span></code> syntax is accepted again for <a class="reference internal" href="../library/stdtypes.html#str" title="str"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a> objects.</p></li>
 </ul>
-<p>New library modules:</p>
+<p>Nowe moduły biblioteki:</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="../library/faulthandler.html#module-faulthandler" title="faulthandler: Dump the Python traceback."><code class="xref py py-mod docutils literal notranslate"><span class="pre">faulthandler</span></code></a> (helps debugging low-level crashes)</p></li>
 <li><p><a class="reference internal" href="../library/ipaddress.html#module-ipaddress" title="ipaddress: IPv4/IPv6 manipulation library."><code class="xref py py-mod docutils literal notranslate"><span class="pre">ipaddress</span></code></a> (high-level objects representing IP addresses and masks)</p></li>
@@ -343,7 +343,7 @@ see the <a class="reference external" href="https://docs.python.org/3.3/whatsnew
 <li><p><a class="reference internal" href="../library/venv.html#module-venv" title="venv: Creation of virtual environments."><code class="xref py py-mod docutils literal notranslate"><span class="pre">venv</span></code></a> (Python <a class="reference internal" href="#pep-405"><span class="std std-ref">virtual environments</span></a>, as in the
 popular <code class="docutils literal notranslate"><span class="pre">virtualenv</span></code> package)</p></li>
 </ul>
-<p>New built-in features:</p>
+<p>Nowe wbudowane funkcje:</p>
 <ul class="simple">
 <li><p>Reworked <a class="reference internal" href="#pep-3151"><span class="std std-ref">I/O exception hierarchy</span></a>.</p></li>
 </ul>
@@ -1058,10 +1058,10 @@ documentation sections for the individual builtin sequence types
 <p>This new debug module <a class="reference internal" href="../library/faulthandler.html#module-faulthandler" title="faulthandler: Dump the Python traceback."><code class="xref py py-mod docutils literal notranslate"><span class="pre">faulthandler</span></code></a> contains functions to dump Python tracebacks explicitly,
 on a fault (a crash like a segmentation fault), after a timeout, or on a user
 signal. Call <a class="reference internal" href="../library/faulthandler.html#faulthandler.enable" title="faulthandler.enable"><code class="xref py py-func docutils literal notranslate"><span class="pre">faulthandler.enable()</span></code></a> to install fault handlers for the
-<code class="xref py py-const docutils literal notranslate"><span class="pre">SIGSEGV</span></code>, <code class="xref py py-const docutils literal notranslate"><span class="pre">SIGFPE</span></code>, <code class="xref py py-const docutils literal notranslate"><span class="pre">SIGABRT</span></code>, <code class="xref py py-const docutils literal notranslate"><span class="pre">SIGBUS</span></code>, and
-<code class="xref py py-const docutils literal notranslate"><span class="pre">SIGILL</span></code> signals. You can also enable them at startup by setting the
-<span class="target" id="index-24"></span><a class="reference internal" href="../using/cmdline.html#envvar-PYTHONFAULTHANDLER"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">PYTHONFAULTHANDLER</span></code></a> environment variable or by using <a class="reference internal" href="../using/cmdline.html#cmdoption-X"><code class="xref std std-option docutils literal notranslate"><span class="pre">-X</span></code></a>
-<code class="docutils literal notranslate"><span class="pre">faulthandler</span></code> command line option.</p>
+<a class="reference internal" href="../library/signal.html#signal.SIGSEGV" title="signal.SIGSEGV"><code class="xref py py-const docutils literal notranslate"><span class="pre">SIGSEGV</span></code></a>, <a class="reference internal" href="../library/signal.html#signal.SIGFPE" title="signal.SIGFPE"><code class="xref py py-const docutils literal notranslate"><span class="pre">SIGFPE</span></code></a>, <a class="reference internal" href="../library/signal.html#signal.SIGABRT" title="signal.SIGABRT"><code class="xref py py-const docutils literal notranslate"><span class="pre">SIGABRT</span></code></a>,
+<a class="reference internal" href="../library/signal.html#signal.SIGBUS" title="signal.SIGBUS"><code class="xref py py-const docutils literal notranslate"><span class="pre">SIGBUS</span></code></a>, and <a class="reference internal" href="../library/signal.html#signal.SIGILL" title="signal.SIGILL"><code class="xref py py-const docutils literal notranslate"><span class="pre">SIGILL</span></code></a> signals.
+You can also enable them at startup by setting the <span class="target" id="index-24"></span><a class="reference internal" href="../using/cmdline.html#envvar-PYTHONFAULTHANDLER"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">PYTHONFAULTHANDLER</span></code></a>
+environment variable or by using <a class="reference internal" href="../using/cmdline.html#cmdoption-X"><code class="xref std std-option docutils literal notranslate"><span class="pre">-X</span></code></a> <code class="docutils literal notranslate"><span class="pre">faulthandler</span></code> command line option.</p>
 <p>Example of a segmentation fault on Linux:</p>
 <div class="highlight-shell-session notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>python<span class="w"> </span>-q<span class="w"> </span>-X<span class="w"> </span>faulthandler
 <span class="go">&gt;&gt;&gt; import ctypes</span>
@@ -1091,7 +1091,7 @@ file formats.</p>
 </section>
 </section>
 <section id="improved-modules">
-<h2>Improved Modules<a class="headerlink" href="#improved-modules" title="Link to this heading">¶</a></h2>
+<h2>Ulepszone moduły<a class="headerlink" href="#improved-modules" title="Link to this heading">¶</a></h2>
 <section id="abc">
 <h3>abc<a class="headerlink" href="#abc" title="Link to this heading">¶</a></h3>
 <p>Improved support for abstract base classes containing descriptors composed with
@@ -1214,8 +1214,8 @@ function to the <code class="xref py py-mod docutils literal notranslate"><span 
 functions when Unicode strings or characters are passed (e.g.
 <code class="xref c c-func docutils literal notranslate"><span class="pre">waddwstr()</span></code>), and bytes functions otherwise (e.g. <code class="xref c c-func docutils literal notranslate"><span class="pre">waddstr()</span></code>).</p></li>
 <li><p>Use the locale encoding instead of <code class="docutils literal notranslate"><span class="pre">utf-8</span></code> to encode Unicode strings.</p></li>
-<li><p><code class="xref py py-class docutils literal notranslate"><span class="pre">curses.window</span></code> has a new <a class="reference internal" href="../library/curses.html#curses.window.encoding" title="curses.window.encoding"><code class="xref py py-attr docutils literal notranslate"><span class="pre">curses.window.encoding</span></code></a> attribute.</p></li>
-<li><p>The <code class="xref py py-class docutils literal notranslate"><span class="pre">curses.window</span></code> class has a new <a class="reference internal" href="../library/curses.html#curses.window.get_wch" title="curses.window.get_wch"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_wch()</span></code></a>
+<li><p><a class="reference internal" href="../library/curses.html#curses.window" title="curses.window"><code class="xref py py-class docutils literal notranslate"><span class="pre">curses.window</span></code></a> has a new <a class="reference internal" href="../library/curses.html#curses.window.encoding" title="curses.window.encoding"><code class="xref py py-attr docutils literal notranslate"><span class="pre">curses.window.encoding</span></code></a> attribute.</p></li>
+<li><p>The <a class="reference internal" href="../library/curses.html#curses.window" title="curses.window"><code class="xref py py-class docutils literal notranslate"><span class="pre">curses.window</span></code></a> class has a new <a class="reference internal" href="../library/curses.html#curses.window.get_wch" title="curses.window.get_wch"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_wch()</span></code></a>
 method to get a wide character</p></li>
 <li><p>The <a class="reference internal" href="../library/curses.html#module-curses" title="curses: An interface to the curses library, providing portable terminal handling. (Unix)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">curses</span></code></a> module has a new <a class="reference internal" href="../library/curses.html#curses.unget_wch" title="curses.unget_wch"><code class="xref py py-meth docutils literal notranslate"><span class="pre">unget_wch()</span></code></a> function to
 push a wide character so the next <a class="reference internal" href="../library/curses.html#curses.window.get_wch" title="curses.window.get_wch"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_wch()</span></code></a> will return
@@ -1306,15 +1306,15 @@ architecture:</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><code class="xref py py-const docutils literal notranslate"><span class="pre">MAX_PREC</span></code></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../library/decimal.html#decimal.MAX_PREC" title="decimal.MAX_PREC"><code class="xref py py-const docutils literal notranslate"><span class="pre">MAX_PREC</span></code></a></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">425000000</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">999999999999999999</span></code></p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-const docutils literal notranslate"><span class="pre">MAX_EMAX</span></code></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../library/decimal.html#decimal.MAX_EMAX" title="decimal.MAX_EMAX"><code class="xref py py-const docutils literal notranslate"><span class="pre">MAX_EMAX</span></code></a></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">425000000</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">999999999999999999</span></code></p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-const docutils literal notranslate"><span class="pre">MIN_EMIN</span></code></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../library/decimal.html#decimal.MIN_EMIN" title="decimal.MIN_EMIN"><code class="xref py py-const docutils literal notranslate"><span class="pre">MIN_EMIN</span></code></a></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">-425000000</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">-999999999999999999</span></code></p></td>
 </tr>
@@ -1653,8 +1653,8 @@ by Petri Lehtinen in <a class="reference external" href="https://bugs.python.org
 <p>The new <a class="reference internal" href="../library/multiprocessing.html#multiprocessing.connection.wait" title="multiprocessing.connection.wait"><code class="xref py py-func docutils literal notranslate"><span class="pre">multiprocessing.connection.wait()</span></code></a> function allows polling
 multiple objects (such as connections, sockets and pipes) with a timeout.
 (Contributed by Richard Oudkerk in <a class="reference external" href="https://bugs.python.org/issue?&#64;action=redirect&amp;bpo=12328">bpo-12328</a>.)</p>
-<p><code class="xref py py-class docutils literal notranslate"><span class="pre">multiprocessing.Connection</span></code> objects can now be transferred over
-multiprocessing connections.
+<p><a class="reference internal" href="../library/multiprocessing.html#multiprocessing.connection.Connection" title="multiprocessing.connection.Connection"><code class="xref py py-class docutils literal notranslate"><span class="pre">multiprocessing.connection.Connection</span></code></a> objects can now be transferred
+over multiprocessing connections.
 (Contributed by Richard Oudkerk in <a class="reference external" href="https://bugs.python.org/issue?&#64;action=redirect&amp;bpo=4892">bpo-4892</a>.)</p>
 <p><a class="reference internal" href="../library/multiprocessing.html#multiprocessing.Process" title="multiprocessing.Process"><code class="xref py py-class docutils literal notranslate"><span class="pre">multiprocessing.Process</span></code></a> now accepts a <code class="docutils literal notranslate"><span class="pre">daemon</span></code> keyword argument
 to override the default behavior of inheriting the <code class="docutils literal notranslate"><span class="pre">daemon</span></code> flag from
@@ -1719,7 +1719,7 @@ following symlinks</span></a>):
 <a class="reference internal" href="../library/os.html#os.rename" title="os.rename"><code class="xref py py-func docutils literal notranslate"><span class="pre">rename()</span></code></a>, <a class="reference internal" href="../library/os.html#os.replace" title="os.replace"><code class="xref py py-func docutils literal notranslate"><span class="pre">replace()</span></code></a>, <a class="reference internal" href="../library/os.html#os.rmdir" title="os.rmdir"><code class="xref py py-func docutils literal notranslate"><span class="pre">rmdir()</span></code></a>, <a class="reference internal" href="../library/os.html#os.stat" title="os.stat"><code class="xref py py-func docutils literal notranslate"><span class="pre">stat()</span></code></a>,
 <a class="reference internal" href="../library/os.html#os.symlink" title="os.symlink"><code class="xref py py-func docutils literal notranslate"><span class="pre">symlink()</span></code></a>, <a class="reference internal" href="../library/os.html#os.unlink" title="os.unlink"><code class="xref py py-func docutils literal notranslate"><span class="pre">unlink()</span></code></a>, <a class="reference internal" href="../library/os.html#os.utime" title="os.utime"><code class="xref py py-func docutils literal notranslate"><span class="pre">utime()</span></code></a>.  Platform
 support for using these parameters can be checked via the sets
-<a class="reference internal" href="../library/os.html#os.supports_dir_fd" title="os.supports_dir_fd"><code class="xref py py-data docutils literal notranslate"><span class="pre">os.supports_dir_fd</span></code></a> and <code class="xref py py-data docutils literal notranslate"><span class="pre">os.supports_follows_symlinks</span></code>.</p></li>
+<a class="reference internal" href="../library/os.html#os.supports_dir_fd" title="os.supports_dir_fd"><code class="xref py py-data docutils literal notranslate"><span class="pre">os.supports_dir_fd</span></code></a> and <a class="reference internal" href="../library/os.html#os.supports_follow_symlinks" title="os.supports_follow_symlinks"><code class="xref py py-data docutils literal notranslate"><span class="pre">os.supports_follow_symlinks</span></code></a>.</p></li>
 <li><p>The following functions now support a file descriptor for their path argument:
 <a class="reference internal" href="../library/os.html#os.chdir" title="os.chdir"><code class="xref py py-func docutils literal notranslate"><span class="pre">chdir()</span></code></a>, <a class="reference internal" href="../library/os.html#os.chmod" title="os.chmod"><code class="xref py py-func docutils literal notranslate"><span class="pre">chmod()</span></code></a>, <a class="reference internal" href="../library/os.html#os.chown" title="os.chown"><code class="xref py py-func docutils literal notranslate"><span class="pre">chown()</span></code></a>,
 <a class="reference internal" href="../library/os.html#os.execve" title="os.execve"><code class="xref py py-func docutils literal notranslate"><span class="pre">execve()</span></code></a>, <a class="reference internal" href="../library/os.html#os.listdir" title="os.listdir"><code class="xref py py-func docutils literal notranslate"><span class="pre">listdir()</span></code></a>, <a class="reference internal" href="../library/os.html#os.pathconf" title="os.pathconf"><code class="xref py py-func docutils literal notranslate"><span class="pre">pathconf()</span></code></a>, <a class="reference internal" href="../library/os.path.html#os.path.exists" title="os.path.exists"><code class="xref py py-func docutils literal notranslate"><span class="pre">exists()</span></code></a>,
@@ -2064,8 +2064,7 @@ tuple</span></a> holding information about the thread implementation
 </section>
 <section id="tempfile">
 <h3>tempfile<a class="headerlink" href="#tempfile" title="Link to this heading">¶</a></h3>
-<p><a class="reference internal" href="../library/tempfile.html#tempfile.SpooledTemporaryFile" title="tempfile.SpooledTemporaryFile"><code class="xref py py-class docutils literal notranslate"><span class="pre">tempfile.SpooledTemporaryFile</span></code></a>'s
-<code class="xref py py-meth docutils literal notranslate"><span class="pre">truncate()</span></code> method now accepts
+<p><a class="reference internal" href="../library/tempfile.html#tempfile.SpooledTemporaryFile" title="tempfile.SpooledTemporaryFile"><code class="xref py py-class docutils literal notranslate"><span class="pre">tempfile.SpooledTemporaryFile</span></code></a>'s <code class="xref py py-meth docutils literal notranslate"><span class="pre">truncate()</span></code> method now accepts
 a <code class="docutils literal notranslate"><span class="pre">size</span></code> parameter.  (Contributed by Ryan Kelly in <a class="reference external" href="https://bugs.python.org/issue?&#64;action=redirect&amp;bpo=9957">bpo-9957</a>.)</p>
 </section>
 <section id="textwrap">
@@ -2384,8 +2383,8 @@ index of 0. It is preferred, though, that you use
 <li><p><a class="reference internal" href="../library/functions.html#import__" title="__import__"><code class="xref py py-func docutils literal notranslate"><span class="pre">__import__()</span></code></a> no longer allows one to use an index value other than 0
 for top-level modules. E.g. <code class="docutils literal notranslate"><span class="pre">__import__('sys',</span> <span class="pre">level=1)</span></code> is now an error.</p></li>
 <li><p>Because <a class="reference internal" href="../library/sys.html#sys.meta_path" title="sys.meta_path"><code class="xref py py-data docutils literal notranslate"><span class="pre">sys.meta_path</span></code></a> and <a class="reference internal" href="../library/sys.html#sys.path_hooks" title="sys.path_hooks"><code class="xref py py-data docutils literal notranslate"><span class="pre">sys.path_hooks</span></code></a> now have finders on
-them by default, you will most likely want to use <code class="xref py py-meth docutils literal notranslate"><span class="pre">list.insert()</span></code> instead
-of <code class="xref py py-meth docutils literal notranslate"><span class="pre">list.append()</span></code> to add to those lists.</p></li>
+them by default, you will most likely want to use <a class="reference internal" href="../library/stdtypes.html#list.insert" title="list.insert"><code class="xref py py-meth docutils literal notranslate"><span class="pre">list.insert()</span></code></a> instead
+of <a class="reference internal" href="../library/stdtypes.html#list.append" title="list.append"><code class="xref py py-meth docutils literal notranslate"><span class="pre">list.append()</span></code></a> to add to those lists.</p></li>
 <li><p>Because <code class="docutils literal notranslate"><span class="pre">None</span></code> is now inserted into <a class="reference internal" href="../library/sys.html#sys.path_importer_cache" title="sys.path_importer_cache"><code class="xref py py-data docutils literal notranslate"><span class="pre">sys.path_importer_cache</span></code></a>, if you
 are clearing out entries in the dictionary of paths that do not have a
 finder, you will need to remove keys paired with values of <code class="docutils literal notranslate"><span class="pre">None</span></code> <strong>and</strong>
@@ -2515,10 +2514,10 @@ previous versions, it did.</p>
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#">What’s New In Python 3.3</a><ul>
-<li><a class="reference internal" href="#summary-release-highlights">Summary – Release highlights</a></li>
+<li><a class="reference internal" href="#summary-release-highlights">Podsumowanie – najważniejsze nowości</a></li>
 <li><a class="reference internal" href="#pep-405-virtual-environments">PEP 405: Virtual Environments</a></li>
 <li><a class="reference internal" href="#pep-420-implicit-namespace-packages">PEP 420: Implicit Namespace Packages</a></li>
 <li><a class="reference internal" href="#pep-3118-new-memoryview-implementation-and-buffer-protocol-documentation">PEP 3118: New memoryview implementation and buffer protocol documentation</a><ul>
@@ -2557,7 +2556,7 @@ previous versions, it did.</p>
 <li><a class="reference internal" href="#lzma">lzma</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#improved-modules">Improved Modules</a><ul>
+<li><a class="reference internal" href="#improved-modules">Ulepszone moduły</a><ul>
 <li><a class="reference internal" href="#abc">abc</a></li>
 <li><a class="reference internal" href="#array">array</a></li>
 <li><a class="reference internal" href="#base64">base64</a></li>
@@ -2650,14 +2649,14 @@ previous versions, it did.</p>
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="3.4.html"
-                          title="previous chapter">What’s New In Python 3.4</a></p>
+                          title="poprzedni rozdział">What’s New In Python 3.4</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="3.2.html"
-                          title="next chapter">What’s New In Python 3.2</a></p>
+                          title="następny rozdział">What’s New In Python 3.2</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -2671,7 +2670,7 @@ previous versions, it did.</p>
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -2707,7 +2706,7 @@ previous versions, it did.</p>
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >What’s New in Python</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Co nowego w Pythonie</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">What’s New In Python 3.3</a></li>
                 <li class="right">
                     
@@ -2755,7 +2754,7 @@ previous versions, it did.</p>
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

@@ -8,10 +8,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://docs.python.org/3/howto/logging-cookbook.html" />
 <meta property="og:site_name" content="Python documentation" />
-<meta property="og:description" content="Author, Vinay Sajip &lt;vinay_sajip at red-dove dot com&gt;,. This page contains a number of recipes related to logging, which have been found useful in the past. For links to tutorial and referenc..." />
+<meta property="og:description" content="Autor, Vinay Sajip &lt;vinay_sajip at red-dove dot com&gt;,. This page contains a number of recipes related to logging, which have been found useful in the past. For links to tutorial and reference..." />
 <meta property="og:image" content="_static/og-image.png" />
 <meta property="og:image:alt" content="Python documentation" />
-<meta name="description" content="Author, Vinay Sajip &lt;vinay_sajip at red-dove dot com&gt;,. This page contains a number of recipes related to logging, which have been found useful in the past. For links to tutorial and referenc..." />
+<meta name="description" content="Autor, Vinay Sajip &lt;vinay_sajip at red-dove dot com&gt;,. This page contains a number of recipes related to logging, which have been found useful in the past. For links to tutorial and reference..." />
 <meta name="theme-color" content="#3776ab">
 <meta property="og:image:width" content="200">
 <meta property="og:image:height" content="200">
@@ -31,13 +31,13 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
-    <link rel="next" title="Regular Expression HOWTO" href="regex.html" />
+    <link rel="next" title="Wyrażenia regularne PORADNIK" href="regex.html" />
     <link rel="prev" title="Logging HOWTO" href="logging.html" />
     
       
@@ -98,7 +98,7 @@
     </select>
 </label>
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#">Logging Cookbook</a><ul>
 <li><a class="reference internal" href="#using-logging-in-multiple-modules">Using logging in multiple modules</a></li>
@@ -170,21 +170,21 @@
 <li><a class="reference internal" href="#creating-a-lot-of-loggers">Creating a lot of loggers</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#other-resources">Other resources</a></li>
+<li><a class="reference internal" href="#other-resources">Inne zasoby</a></li>
 </ul>
 </li>
 </ul>
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="logging.html"
-                          title="previous chapter">Logging HOWTO</a></p>
+                          title="poprzedni rozdział">Logging HOWTO</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="regex.html"
-                          title="next chapter">Regular Expression HOWTO</a></p>
+                          title="następny rozdział">Wyrażenia regularne PORADNIK</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -212,7 +212,7 @@
           <a href="../py-modindex.html" title="Indeks modułów Pythona"
              >moduły</a> |</li>
         <li class="right" >
-          <a href="regex.html" title="Regular Expression HOWTO"
+          <a href="regex.html" title="Wyrażenia regularne PORADNIK"
              accesskey="N">dalej</a> |</li>
         <li class="right" >
           <a href="logging.html" title="Logging HOWTO"
@@ -231,7 +231,7 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Python HOWTOs</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Pythonowe „Jak to zrobić?”</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Logging Cookbook</a></li>
                 <li class="right">
                     
@@ -265,13 +265,13 @@
   <section id="logging-cookbook">
 <span id="id1"></span><h1>Logging Cookbook<a class="headerlink" href="#logging-cookbook" title="Link to this heading">¶</a></h1>
 <dl class="field-list simple">
-<dt class="field-odd">Author<span class="colon">:</span></dt>
+<dt class="field-odd">Autor<span class="colon">:</span></dt>
 <dd class="field-odd"><p>Vinay Sajip &lt;vinay_sajip at red-dove dot com&gt;</p>
 </dd>
 </dl>
 <p>This page contains a number of recipes related to logging, which have been found
 useful in the past. For links to tutorial and reference information, please see
-<a class="reference internal" href="#cookbook-ref-links"><span class="std std-ref">Other resources</span></a>.</p>
+<a class="reference internal" href="#cookbook-ref-links"><span class="std std-ref">Inne zasoby</span></a>.</p>
 <section id="using-logging-in-multiple-modules">
 <h2>Using logging in multiple modules<a class="headerlink" href="#using-logging-in-multiple-modules" title="Link to this heading">¶</a></h2>
 <p>Multiple calls to <code class="docutils literal notranslate"><span class="pre">logging.getLogger('someLogger')</span></code> return a reference to the
@@ -332,7 +332,7 @@ child will pass up to the parent.  Here is a main module:</p>
     <span class="n">module_logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;received a call to &quot;some_function&quot;&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>The output looks like this:</p>
+<p>Wynik wygląda tak:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>2005-03-23 23:47:11,663 - spam_application - INFO -
    creating an instance of auxiliary_module.Auxiliary
 2005-03-23 23:47:11,665 - spam_application.auxiliary.Auxiliary - INFO -
@@ -1675,11 +1675,11 @@ separate thread:</p>
     <span class="n">logging</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">dictConfig</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
     <span class="n">lp</span> <span class="o">=</span> <span class="n">threading</span><span class="o">.</span><span class="n">Thread</span><span class="p">(</span><span class="n">target</span><span class="o">=</span><span class="n">logger_thread</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">q</span><span class="p">,))</span>
     <span class="n">lp</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
-    <span class="c1"># At this point, the main process could do some useful work of its own</span>
-    <span class="c1"># Once it&#39;s done that, it can wait for the workers to terminate...</span>
+    <span class="c1"># W tym momencie główny proces mógłby wykonać jakąś pożyteczną pracę samodzielnie</span>
+    <span class="c1"># Gdy już to zrobi, może poczekać, aż pracownicy zakończą pracę...</span>
     <span class="k">for</span> <span class="n">wp</span> <span class="ow">in</span> <span class="n">workers</span><span class="p">:</span>
         <span class="n">wp</span><span class="o">.</span><span class="n">join</span><span class="p">()</span>
-    <span class="c1"># And now tell the logging thread to finish up, too</span>
+    <span class="c1"># A teraz powiedz wątkowi rejestrującemu, żeby zakończył działanie</span>
     <span class="n">q</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
     <span class="n">lp</span><span class="o">.</span><span class="n">join</span><span class="p">()</span>
 </pre></div>
@@ -4214,7 +4214,7 @@ more fine-grained than that).</p>
 </section>
 </section>
 <section id="other-resources">
-<span id="cookbook-ref-links"></span><h2>Other resources<a class="headerlink" href="#other-resources" title="Link to this heading">¶</a></h2>
+<span id="cookbook-ref-links"></span><h2>Inne zasoby<a class="headerlink" href="#other-resources" title="Link to this heading">¶</a></h2>
 <div class="admonition seealso">
 <p class="admonition-title">Zobacz także</p>
 <dl class="simple">
@@ -4239,7 +4239,7 @@ more fine-grained than that).</p>
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#">Logging Cookbook</a><ul>
 <li><a class="reference internal" href="#using-logging-in-multiple-modules">Using logging in multiple modules</a></li>
@@ -4311,21 +4311,21 @@ more fine-grained than that).</p>
 <li><a class="reference internal" href="#creating-a-lot-of-loggers">Creating a lot of loggers</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#other-resources">Other resources</a></li>
+<li><a class="reference internal" href="#other-resources">Inne zasoby</a></li>
 </ul>
 </li>
 </ul>
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="logging.html"
-                          title="previous chapter">Logging HOWTO</a></p>
+                          title="poprzedni rozdział">Logging HOWTO</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="regex.html"
-                          title="next chapter">Regular Expression HOWTO</a></p>
+                          title="następny rozdział">Wyrażenia regularne PORADNIK</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -4339,7 +4339,7 @@ more fine-grained than that).</p>
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -4356,7 +4356,7 @@ more fine-grained than that).</p>
           <a href="../py-modindex.html" title="Indeks modułów Pythona"
              >moduły</a> |</li>
         <li class="right" >
-          <a href="regex.html" title="Regular Expression HOWTO"
+          <a href="regex.html" title="Wyrażenia regularne PORADNIK"
              >dalej</a> |</li>
         <li class="right" >
           <a href="logging.html" title="Logging HOWTO"
@@ -4375,7 +4375,7 @@ more fine-grained than that).</p>
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >Python HOWTOs</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Pythonowe „Jak to zrobić?”</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Logging Cookbook</a></li>
                 <li class="right">
                     
@@ -4423,7 +4423,7 @@ more fine-grained than that).</p>
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

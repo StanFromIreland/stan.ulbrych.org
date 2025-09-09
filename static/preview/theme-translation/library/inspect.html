@@ -8,10 +8,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://docs.python.org/3/library/inspect.html" />
 <meta property="og:site_name" content="Python documentation" />
-<meta property="og:description" content="Source code: Lib/inspect.py The inspect module provides several useful functions to help get information about live objects such as modules, classes, methods, functions, tracebacks, frame objects, ..." />
+<meta property="og:description" content="Kod źródłowy: Lib/inspect.py The inspect module provides several useful functions to help get information about live objects such as modules, classes, methods, functions, tracebacks, frame objects,..." />
 <meta property="og:image" content="_static/og-image.png" />
 <meta property="og:image:alt" content="Python documentation" />
-<meta name="description" content="Source code: Lib/inspect.py The inspect module provides several useful functions to help get information about live objects such as modules, classes, methods, functions, tracebacks, frame objects, ..." />
+<meta name="description" content="Kod źródłowy: Lib/inspect.py The inspect module provides several useful functions to help get information about live objects such as modules, classes, methods, functions, tracebacks, frame objects,..." />
 <meta name="theme-color" content="#3776ab">
 <meta property="og:image:width" content="200">
 <meta property="og:image:height" content="200">
@@ -31,11 +31,11 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="annotationlib — Functionality for introspecting annotations" href="annotationlib.html" />
     <link rel="prev" title="gc — Garbage Collector interface" href="gc.html" />
@@ -98,7 +98,7 @@
     </select>
 </label>
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">inspect</span></code> — Inspect live objects</a><ul>
 <li><a class="reference internal" href="#types-and-members">Types and members</a></li>
@@ -110,21 +110,21 @@
 <li><a class="reference internal" href="#current-state-of-generators-coroutines-and-asynchronous-generators">Current State of Generators, Coroutines, and Asynchronous Generators</a></li>
 <li><a class="reference internal" href="#code-objects-bit-flags">Code Objects Bit Flags</a></li>
 <li><a class="reference internal" href="#buffer-flags">Buffer flags</a></li>
-<li><a class="reference internal" href="#command-line-interface">Command Line Interface</a></li>
+<li><a class="reference internal" href="#command-line-interface">Interfejs linii komend</a></li>
 </ul>
 </li>
 </ul>
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="gc.html"
-                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">gc</span></code> — Garbage Collector interface</a></p>
+                          title="poprzedni rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">gc</span></code> — Garbage Collector interface</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="annotationlib.html"
-                          title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">annotationlib</span></code> — Functionality for introspecting annotations</a></p>
+                          title="następny rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">annotationlib</span></code> — Functionality for introspecting annotations</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -171,7 +171,7 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="python.html" accesskey="U">Python Runtime Services</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">inspect</span></code> — Inspect live objects</a></li>
                 <li class="right">
@@ -205,7 +205,7 @@
             
   <section id="inspect-inspect-live-objects">
 <h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">inspect</span></code> — Inspect live objects<a class="headerlink" href="#inspect-inspect-live-objects" title="Link to this heading">¶</a></h1>
-<p id="module-inspect"><strong>Source code:</strong> <a class="extlink-source reference external" href="https://github.com/python/cpython/tree/main/Lib/inspect.py">Lib/inspect.py</a></p>
+<p id="module-inspect"><strong>Kod źródłowy:</strong> <a class="extlink-source reference external" href="https://github.com/python/cpython/tree/main/Lib/inspect.py">Lib/inspect.py</a></p>
 <hr class="docutils" />
 <p>The <a class="reference internal" href="#module-inspect" title="inspect: Extract information and source code from live objects."><code class="xref py py-mod docutils literal notranslate"><span class="pre">inspect</span></code></a> module provides several useful functions to help get
 information about live objects such as modules, classes, methods, functions,
@@ -225,13 +225,13 @@ They also help you determine when you can expect to find the following special
 attributes (see <a class="reference internal" href="../reference/datamodel.html#import-mod-attrs"><span class="std std-ref">Import-related attributes on module objects</span></a> for module attributes):</p>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head"><p>Type</p></th>
-<th class="head"><p>Attribute</p></th>
-<th class="head"><p>Description</p></th>
+<tr class="row-odd"><th class="head"><p>Typ</p></th>
+<th class="head"><p>atrybut</p></th>
+<th class="head"><p>Opis</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>class</p></td>
+<tr class="row-even"><td><p>klasa</p></td>
 <td><p>__doc__</p></td>
 <td><p>documentation string</p></td>
 </tr>
@@ -255,7 +255,7 @@ this class was defined</p></td>
 <a class="reference internal" href="../reference/compound_stmts.html#type-params"><span class="std std-ref">type parameters</span></a> of
 a generic class</p></td>
 </tr>
-<tr class="row-odd"><td><p>method</p></td>
+<tr class="row-odd"><td><p>metoda</p></td>
 <td><p>__doc__</p></td>
 <td><p>documentation string</p></td>
 </tr>
@@ -285,7 +285,7 @@ method is bound, or
 <td><p>name of module in which
 this method was defined</p></td>
 </tr>
-<tr class="row-odd"><td><p>function</p></td>
+<tr class="row-odd"><td><p>funkcja</p></td>
 <td><p>__doc__</p></td>
 <td><p>documentation string</p></td>
 </tr>
@@ -546,7 +546,7 @@ values</p></td>
 </tr>
 <tr class="row-even"><td><p>generator</p></td>
 <td><p>__name__</p></td>
-<td><p>name</p></td>
+<td><p>nazwa</p></td>
 </tr>
 <tr class="row-odd"><td></td>
 <td><p>__qualname__</p></td>
@@ -572,7 +572,7 @@ values</p></td>
 </tr>
 <tr class="row-even"><td><p>async generator</p></td>
 <td><p>__name__</p></td>
-<td><p>name</p></td>
+<td><p>nazwa</p></td>
 </tr>
 <tr class="row-odd"><td></td>
 <td><p>__qualname__</p></td>
@@ -597,7 +597,7 @@ or <code class="docutils literal notranslate"><span class="pre">None</span></cod
 </tr>
 <tr class="row-even"><td><p>coroutine</p></td>
 <td><p>__name__</p></td>
-<td><p>name</p></td>
+<td><p>nazwa</p></td>
 </tr>
 <tr class="row-odd"><td></td>
 <td><p>__qualname__</p></td>
@@ -962,7 +962,7 @@ not guaranteed.</p>
 <span class="sig-prename descclassname"><span class="pre">inspect.</span></span><span class="sig-name descname"><span class="pre">isgetsetdescriptor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">object</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#inspect.isgetsetdescriptor" title="Link to this definition">¶</a></dt>
 <dd><p>Return <code class="docutils literal notranslate"><span class="pre">True</span></code> if the object is a getset descriptor.</p>
 <div class="impl-detail compound">
-<p><strong>CPython implementation detail:</strong> getsets are attributes defined in extension modules via
+<p><strong>Szczegół implementacyjny CPythona:</strong> getsets are attributes defined in extension modules via
 <a class="reference internal" href="../c-api/structures.html#c.PyGetSetDef" title="PyGetSetDef"><code class="xref c c-type docutils literal notranslate"><span class="pre">PyGetSetDef</span></code></a> structures.  For Python implementations without such
 types, this method will always return <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
 </div>
@@ -973,7 +973,7 @@ types, this method will always return <code class="docutils literal notranslate"
 <span class="sig-prename descclassname"><span class="pre">inspect.</span></span><span class="sig-name descname"><span class="pre">ismemberdescriptor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">object</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#inspect.ismemberdescriptor" title="Link to this definition">¶</a></dt>
 <dd><p>Return <code class="docutils literal notranslate"><span class="pre">True</span></code> if the object is a member descriptor.</p>
 <div class="impl-detail compound">
-<p><strong>CPython implementation detail:</strong> Member descriptors are attributes defined in extension modules via
+<p><strong>Szczegół implementacyjny CPythona:</strong> Member descriptors are attributes defined in extension modules via
 <a class="reference internal" href="../c-api/structures.html#c.PyMemberDef" title="PyMemberDef"><code class="xref c c-type docutils literal notranslate"><span class="pre">PyMemberDef</span></code></a> structures.  For Python implementations without such
 types, this method will always return <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
 </div>
@@ -1144,7 +1144,7 @@ Python.  For example, in CPython, some built-in functions defined in
 C provide no metadata about their arguments.</p>
 </div>
 <div class="impl-detail compound">
-<p><strong>CPython implementation detail:</strong> If the passed object has a <code class="xref py py-attr docutils literal notranslate"><span class="pre">__signature__</span></code> attribute,
+<p><strong>Szczegół implementacyjny CPythona:</strong> If the passed object has a <code class="xref py py-attr docutils literal notranslate"><span class="pre">__signature__</span></code> attribute,
 we may use it to create the signature.
 The exact semantics are an implementation detail and are subject to
 unannounced changes. Consult the source code for current semantics.</p>
@@ -1302,7 +1302,7 @@ annotations.</p>
 <dd><p>The name of the parameter as a string.  The name must be a valid
 Python identifier.</p>
 <div class="impl-detail compound">
-<p><strong>CPython implementation detail:</strong> CPython generates implicit parameter names of the form <code class="docutils literal notranslate"><span class="pre">.0</span></code> on the
+<p><strong>Szczegół implementacyjny CPythona:</strong> CPython generates implicit parameter names of the form <code class="docutils literal notranslate"><span class="pre">.0</span></code> on the
 code objects used to implement comprehensions and generator
 expressions.</p>
 <div class="versionchanged">
@@ -1334,8 +1334,8 @@ values are accessible via <a class="reference internal" href="#inspect.Parameter
 and support comparison and ordering, in the following order:</p>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Meaning</p></th>
+<tr class="row-odd"><th class="head"><p>Nazwa</p></th>
+<th class="head"><p>Znaczenie</p></th>
 </tr>
 </thead>
 <tbody>
@@ -1692,6 +1692,11 @@ chain has a <code class="docutils literal notranslate"><span class="pre">__signa
 <dd><p>Compute the annotations dict for an object.</p>
 <p>This is an alias for <a class="reference internal" href="annotationlib.html#annotationlib.get_annotations" title="annotationlib.get_annotations"><code class="xref py py-func docutils literal notranslate"><span class="pre">annotationlib.get_annotations()</span></code></a>; see the documentation
 of that function for more information.</p>
+<div class="admonition caution">
+<p class="admonition-title">Ostrzeżenie</p>
+<p>This function may execute arbitrary code contained in annotations.
+See <a class="reference internal" href="annotationlib.html#annotationlib-security"><span class="std std-ref">Security implications of introspecting annotations</span></a> for more information.</p>
+</div>
 <div class="versionadded">
 <p><span class="versionmodified added"> Dodane w wersji 3.10.</span></p>
 </div>
@@ -1895,7 +1900,7 @@ is returned.</p>
 <span class="sig-prename descclassname"><span class="pre">inspect.</span></span><span class="sig-name descname"><span class="pre">currentframe</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#inspect.currentframe" title="Link to this definition">¶</a></dt>
 <dd><p>Return the frame object for the caller’s stack frame.</p>
 <div class="impl-detail compound">
-<p><strong>CPython implementation detail:</strong> This function relies on Python stack frame support in the interpreter,
+<p><strong>Szczegół implementacyjny CPythona:</strong> This function relies on Python stack frame support in the interpreter,
 which isn’t guaranteed to exist in all implementations of Python.  If
 running in an implementation without Python stack frame support this
 function returns <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
@@ -2069,7 +2074,7 @@ generator, and all the same caveats apply.</p>
 then an empty dictionary is returned.  <a class="reference internal" href="exceptions.html#TypeError" title="TypeError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">TypeError</span></code></a> is raised if
 <em>generator</em> is not a Python generator object.</p>
 <div class="impl-detail compound">
-<p><strong>CPython implementation detail:</strong> This function relies on the generator exposing a Python stack frame
+<p><strong>Szczegół implementacyjny CPythona:</strong> This function relies on the generator exposing a Python stack frame
 for introspection, which isn’t guaranteed to be the case in all
 implementations of Python. In such cases, this function will always
 return an empty dictionary.</p>
@@ -2318,7 +2323,7 @@ implementing the <a class="reference internal" href="../c-api/buffer.html#buffer
 
 </section>
 <section id="command-line-interface">
-<span id="inspect-module-cli"></span><h2>Command Line Interface<a class="headerlink" href="#command-line-interface" title="Link to this heading">¶</a></h2>
+<span id="inspect-module-cli"></span><h2>Interfejs linii komend<a class="headerlink" href="#command-line-interface" title="Link to this heading">¶</a></h2>
 <p>The <a class="reference internal" href="#module-inspect" title="inspect: Extract information and source code from live objects."><code class="xref py py-mod docutils literal notranslate"><span class="pre">inspect</span></code></a> module also provides a basic introspection capability
 from the command line.</p>
 <p>By default, accepts the name of a module and prints the source of that
@@ -2341,7 +2346,7 @@ appended a colon and the qualified name of the target object.</p>
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">inspect</span></code> — Inspect live objects</a><ul>
 <li><a class="reference internal" href="#types-and-members">Types and members</a></li>
@@ -2353,21 +2358,21 @@ appended a colon and the qualified name of the target object.</p>
 <li><a class="reference internal" href="#current-state-of-generators-coroutines-and-asynchronous-generators">Current State of Generators, Coroutines, and Asynchronous Generators</a></li>
 <li><a class="reference internal" href="#code-objects-bit-flags">Code Objects Bit Flags</a></li>
 <li><a class="reference internal" href="#buffer-flags">Buffer flags</a></li>
-<li><a class="reference internal" href="#command-line-interface">Command Line Interface</a></li>
+<li><a class="reference internal" href="#command-line-interface">Interfejs linii komend</a></li>
 </ul>
 </li>
 </ul>
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="gc.html"
-                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">gc</span></code> — Garbage Collector interface</a></p>
+                          title="poprzedni rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">gc</span></code> — Garbage Collector interface</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="annotationlib.html"
-                          title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">annotationlib</span></code> — Functionality for introspecting annotations</a></p>
+                          title="następny rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">annotationlib</span></code> — Functionality for introspecting annotations</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -2381,7 +2386,7 @@ appended a colon and the qualified name of the target object.</p>
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -2417,7 +2422,7 @@ appended a colon and the qualified name of the target object.</p>
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="python.html" >Python Runtime Services</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">inspect</span></code> — Inspect live objects</a></li>
                 <li class="right">
@@ -2466,7 +2471,7 @@ appended a colon and the qualified name of the target object.</p>
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

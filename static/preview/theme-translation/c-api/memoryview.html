@@ -31,13 +31,13 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
-    <link rel="next" title="Weak Reference Objects" href="weakref.html" />
+    <link rel="next" title="Слабкі довідкові об’єкти" href="weakref.html" />
     <link rel="prev" title="Slice Objects" href="slice.html" />
     
       
@@ -98,14 +98,14 @@
     </select>
 </label>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="slice.html"
-                          title="previous chapter">Slice Objects</a></p>
+                          title="poprzedni rozdział">Slice Objects</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="weakref.html"
-                          title="next chapter">Weak Reference Objects</a></p>
+                          title="następny rozdział">Слабкі довідкові об’єкти</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -133,7 +133,7 @@
           <a href="../py-modindex.html" title="Indeks modułów Pythona"
              >moduły</a> |</li>
         <li class="right" >
-          <a href="weakref.html" title="Weak Reference Objects"
+          <a href="weakref.html" title="Слабкі довідкові об’єкти"
              accesskey="N">dalej</a> |</li>
         <li class="right" >
           <a href="slice.html" title="Slice Objects"
@@ -152,7 +152,7 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Reference Manual</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Podręcznik</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="concrete.html" accesskey="U">Concrete Objects Layer</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">MemoryView objects</a></li>
                 <li class="right">
@@ -191,7 +191,7 @@ any other object.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyMemoryView_FromObject">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyMemoryView_FromObject</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">obj</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyMemoryView_FromObject" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Create a memoryview object from an object that provides the buffer interface.
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Create a memoryview object from an object that provides the buffer interface.
 If <em>obj</em> supports writable buffer exports, the memoryview object will be
 read/write, otherwise it may be either read-only or read/write at the
 discretion of the exporter.</p>
@@ -212,7 +212,7 @@ discretion of the exporter.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyMemoryView_FromMemory">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyMemoryView_FromMemory</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">mem</span></span>, <a class="reference internal" href="intro.html#c.Py_ssize_t" title="Py_ssize_t"><span class="n"><span class="pre">Py_ssize_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">size</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n"><span class="pre">flags</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyMemoryView_FromMemory" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.7.</em><p>Create a memoryview object using <em>mem</em> as the underlying buffer.
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.7.</em><p>Create a memoryview object using <em>mem</em> as the underlying buffer.
 <em>flags</em> can be one of <a class="reference internal" href="#c.PyBUF_READ" title="PyBUF_READ"><code class="xref c c-macro docutils literal notranslate"><span class="pre">PyBUF_READ</span></code></a> or <a class="reference internal" href="#c.PyBUF_WRITE" title="PyBUF_WRITE"><code class="xref c c-macro docutils literal notranslate"><span class="pre">PyBUF_WRITE</span></code></a>.</p>
 <div class="versionadded">
 <p><span class="versionmodified added"> Dodane w wersji 3.3.</span></p>
@@ -222,7 +222,7 @@ discretion of the exporter.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyMemoryView_FromBuffer">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyMemoryView_FromBuffer</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="buffer.html#c.Py_buffer" title="Py_buffer"><span class="n"><span class="pre">Py_buffer</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">view</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyMemoryView_FromBuffer" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.11.</em><p>Create a memoryview object wrapping the given buffer structure <em>view</em>.
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.11.</em><p>Create a memoryview object wrapping the given buffer structure <em>view</em>.
 For simple byte buffers, <a class="reference internal" href="#c.PyMemoryView_FromMemory" title="PyMemoryView_FromMemory"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyMemoryView_FromMemory()</span></code></a> is the preferred
 function.</p>
 </dd></dl>
@@ -230,7 +230,7 @@ function.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyMemoryView_GetContiguous">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyMemoryView_GetContiguous</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">obj</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n"><span class="pre">buffertype</span></span>, <span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="n"><span class="pre">order</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyMemoryView_GetContiguous" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a>.</em><p>Create a memoryview object to a <a class="reference internal" href="../glossary.html#term-contiguous"><span class="xref std std-term">contiguous</span></a> chunk of memory (in either
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a>.</em><p>Create a memoryview object to a <a class="reference internal" href="../glossary.html#term-contiguous"><span class="xref std std-term">contiguous</span></a> chunk of memory (in either
 «C» or «F’ortran <em>order</em>) from an object that defines the buffer
 interface. If memory is contiguous, the memoryview object points to the
 original memory. Otherwise, a copy is made and the memoryview points to a
@@ -273,14 +273,14 @@ on or <code class="docutils literal notranslate"><span class="pre">NULL</span></
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="slice.html"
-                          title="previous chapter">Slice Objects</a></p>
+                          title="poprzedni rozdział">Slice Objects</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="weakref.html"
-                          title="next chapter">Weak Reference Objects</a></p>
+                          title="następny rozdział">Слабкі довідкові об’єкти</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -294,7 +294,7 @@ on or <code class="docutils literal notranslate"><span class="pre">NULL</span></
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -311,7 +311,7 @@ on or <code class="docutils literal notranslate"><span class="pre">NULL</span></
           <a href="../py-modindex.html" title="Indeks modułów Pythona"
              >moduły</a> |</li>
         <li class="right" >
-          <a href="weakref.html" title="Weak Reference Objects"
+          <a href="weakref.html" title="Слабкі довідкові об’єкти"
              >dalej</a> |</li>
         <li class="right" >
           <a href="slice.html" title="Slice Objects"
@@ -330,7 +330,7 @@ on or <code class="docutils literal notranslate"><span class="pre">NULL</span></
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Reference Manual</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Podręcznik</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="concrete.html" >Concrete Objects Layer</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">MemoryView objects</a></li>
                 <li class="right">
@@ -379,7 +379,7 @@ on or <code class="docutils literal notranslate"><span class="pre">NULL</span></
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

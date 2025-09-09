@@ -31,11 +31,11 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="sys.monitoring — Execution event monitoring" href="sys.monitoring.html" />
     <link rel="prev" title="Python Runtime Services" href="python.html" />
@@ -98,14 +98,14 @@
     </select>
 </label>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="python.html"
-                          title="previous chapter">Python Runtime Services</a></p>
+                          title="poprzedni rozdział">Python Runtime Services</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="sys.monitoring.html"
-                          title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">sys.monitoring</span></code> — Execution event monitoring</a></p>
+                          title="następny rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">sys.monitoring</span></code> — Execution event monitoring</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -152,7 +152,7 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="python.html" accesskey="U">Python Runtime Services</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">sys</span></code> — System-specific parameters and functions</a></li>
                 <li class="right">
@@ -191,6 +191,60 @@
 interpreter and to functions that interact strongly with the interpreter. It is
 always available. Unless explicitly noted otherwise, all variables are read-only.</p>
 <dl class="py data">
+<dt class="sig sig-object py" id="sys.abi_info">
+<span class="sig-prename descclassname"><span class="pre">sys.</span></span><span class="sig-name descname"><span class="pre">abi_info</span></span><a class="headerlink" href="#sys.abi_info" title="Link to this definition">¶</a></dt>
+<dd><div class="versionadded">
+<p><span class="versionmodified added"> Dodane w wersji 3.15.0a0 (unreleased).</span></p>
+</div>
+<p>An object containing information about the ABI of the currently running
+Python interpreter.
+It should include information that affect the CPython ABI in ways that
+require a specific build of the interpreter chosen from variants that can
+co-exist on a single machine.
+For example, it does not encode the base OS (Linux or Windows), but does
+include pointer size since some systems support both 32- and 64-bit builds.
+The available entries are the same on all platforms;
+e.g. <em>pointer_size</em> is available even on 64-bit-only architectures.</p>
+<p>The following attributes are available:</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sys.abi_info.pointer_bits">
+<span class="sig-prename descclassname"><span class="pre">abi_info.</span></span><span class="sig-name descname"><span class="pre">pointer_bits</span></span><a class="headerlink" href="#sys.abi_info.pointer_bits" title="Link to this definition">¶</a></dt>
+<dd><p>The width of pointers in bits, as an integer,
+equivalent to <code class="docutils literal notranslate"><span class="pre">8</span> <span class="pre">*</span> <span class="pre">sizeof(void</span> <span class="pre">*)</span></code>.
+Usually, this is  <code class="docutils literal notranslate"><span class="pre">32</span></code> or <code class="docutils literal notranslate"><span class="pre">64</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sys.abi_info.free_threaded">
+<span class="sig-prename descclassname"><span class="pre">abi_info.</span></span><span class="sig-name descname"><span class="pre">free_threaded</span></span><a class="headerlink" href="#sys.abi_info.free_threaded" title="Link to this definition">¶</a></dt>
+<dd><p>A Boolean indicating whether the interpreter was built with
+<a class="reference internal" href="../glossary.html#term-free-threading"><span class="xref std std-term">free threading</span></a> support.
+This reflects either the presence of the <a class="reference internal" href="../using/configure.html#cmdoption-disable-gil"><code class="xref std std-option docutils literal notranslate"><span class="pre">--disable-gil</span></code></a>
+<code class="file docutils literal notranslate"><span class="pre">configure</span></code> option (on Unix)
+or setting the <code class="docutils literal notranslate"><span class="pre">DisableGil</span></code> property (on Windows).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sys.abi_info.debug">
+<span class="sig-prename descclassname"><span class="pre">abi_info.</span></span><span class="sig-name descname"><span class="pre">debug</span></span><a class="headerlink" href="#sys.abi_info.debug" title="Link to this definition">¶</a></dt>
+<dd><p>A Boolean indicating whether the interpreter was built in
+<a class="reference internal" href="../using/configure.html#debug-build"><span class="std std-ref">debug mode</span></a>.
+This reflects either the presence of the <a class="reference internal" href="../using/configure.html#cmdoption-with-pydebug"><code class="xref std std-option docutils literal notranslate"><span class="pre">--with-pydebug</span></code></a>
+<code class="file docutils literal notranslate"><span class="pre">configure</span></code> option (on Unix)
+or the <code class="docutils literal notranslate"><span class="pre">Debug</span></code> configuration (on Windows).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sys.abi_info.byteorder">
+<span class="sig-prename descclassname"><span class="pre">abi_info.</span></span><span class="sig-name descname"><span class="pre">byteorder</span></span><a class="headerlink" href="#sys.abi_info.byteorder" title="Link to this definition">¶</a></dt>
+<dd><p>A string indicating the native byte order,
+either <code class="docutils literal notranslate"><span class="pre">'big'</span></code> or <code class="docutils literal notranslate"><span class="pre">'little'</span></code>.
+This is the same as the <a class="reference internal" href="#sys.byteorder" title="sys.byteorder"><code class="xref py py-data docutils literal notranslate"><span class="pre">byteorder</span></code></a> attribute.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py data">
 <dt class="sig sig-object py" id="sys.abiflags">
 <span class="sig-prename descclassname"><span class="pre">sys.</span></span><span class="sig-name descname"><span class="pre">abiflags</span></span><a class="headerlink" href="#sys.abiflags" title="Link to this definition">¶</a></dt>
 <dd><p>On POSIX systems where Python was built with the standard <code class="docutils literal notranslate"><span class="pre">configure</span></code>
@@ -203,7 +257,7 @@ script, this contains the ABI flags as specified by <span class="target" id="ind
 removed).</p>
 </div>
 <div class="availability docutils container">
-<p><a class="reference internal" href="intro.html#availability"><span class="std std-ref">Availability</span></a>: Unix.</p>
+<p><a class="reference internal" href="intro.html#availability"><span class="std std-ref">Dostępność</span></a>: Unix.</p>
 </div>
 </dd></dl>
 
@@ -243,7 +297,7 @@ CPython, and <span class="target" id="index-1"></span><a class="pep reference ex
 are no longer suppressed.</p>
 </div>
 <div class="impl-detail compound">
-<p><strong>CPython implementation detail:</strong> When tracing is enabled (see <a class="reference internal" href="#sys.settrace" title="sys.settrace"><code class="xref py py-func docutils literal notranslate"><span class="pre">settrace()</span></code></a>), Python hooks are only
+<p><strong>Szczegół implementacyjny CPythona:</strong> When tracing is enabled (see <a class="reference internal" href="#sys.settrace" title="sys.settrace"><code class="xref py py-func docutils literal notranslate"><span class="pre">settrace()</span></code></a>), Python hooks are only
 traced if the callable has a <code class="docutils literal notranslate"><span class="pre">__cantrace__</span></code> member that is set to a
 true value. Otherwise, trace functions will skip the hook.</p>
 </div>
@@ -459,7 +513,7 @@ internal consistency checks.</p>
 <p><span class="versionmodified added"> Dodane w wersji 3.3.</span></p>
 </div>
 <div class="impl-detail compound">
-<p><strong>CPython implementation detail:</strong> This function is specific to CPython.  The exact output format is not
+<p><strong>Szczegół implementacyjny CPythona:</strong> This function is specific to CPython.  The exact output format is not
 defined here, and may change.</p>
 </div>
 </dd></dl>
@@ -469,7 +523,7 @@ defined here, and may change.</p>
 <span class="sig-prename descclassname"><span class="pre">sys.</span></span><span class="sig-name descname"><span class="pre">dllhandle</span></span><a class="headerlink" href="#sys.dllhandle" title="Link to this definition">¶</a></dt>
 <dd><p>Integer specifying the handle of the Python DLL.</p>
 <div class="availability docutils container">
-<p><a class="reference internal" href="intro.html#availability"><span class="std std-ref">Availability</span></a>: Windows.</p>
+<p><a class="reference internal" href="intro.html#availability"><span class="std std-ref">Dostępność</span></a>: Windows.</p>
 </div>
 </dd></dl>
 
@@ -550,7 +604,7 @@ in the future.</p>
 </dd></dl>
 
 <div class="availability docutils container">
-<p><a class="reference internal" href="intro.html#availability"><span class="std std-ref">Availability</span></a>: Emscripten.</p>
+<p><a class="reference internal" href="intro.html#availability"><span class="std std-ref">Dostępność</span></a>: Emscripten.</p>
 </div>
 <div class="versionadded">
 <p><span class="versionmodified added"> Dodane w wersji 3.11.</span></p>
@@ -713,8 +767,9 @@ particular, <code class="docutils literal notranslate"><span class="pre">sys.exi
 program when an error occurs.</p>
 <p>Since <a class="reference internal" href="constants.html#exit" title="exit"><code class="xref py py-func docutils literal notranslate"><span class="pre">exit()</span></code></a> ultimately „only” raises an exception, it will only exit
 the process when called from the main thread, and the exception is not
-intercepted. Cleanup actions specified by finally clauses of <a class="reference internal" href="../reference/compound_stmts.html#try"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">try</span></code></a> statements
-are honored, and it is possible to intercept the exit attempt at an outer level.</p>
+intercepted. Cleanup actions specified by <a class="reference internal" href="../reference/compound_stmts.html#finally"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">finally</span></code></a> clauses of
+<a class="reference internal" href="../reference/compound_stmts.html#try"><code class="xref std std-keyword docutils literal notranslate"><span class="pre">try</span></code></a> statements are honored, and it is possible to intercept the
+exit attempt at an outer level.</p>
 <div class="versionchanged">
 <p><span class="versionmodified changed">Zmienione w wersji 3.6: </span>If an error occurs in the cleanup after the Python interpreter
 has caught <a class="reference internal" href="exceptions.html#SystemExit" title="SystemExit"><code class="xref py py-exc docutils literal notranslate"><span class="pre">SystemExit</span></code></a> (such as an error flushing buffered data
@@ -952,7 +1007,7 @@ programming language; see section 5.2.4.2.2 of the 1999 ISO/IEC C standard
 <table class="docutils align-default" id="id2">
 <caption><span class="caption-text">Attributes of the <code class="xref py py-data docutils literal notranslate"><span class="pre">float_info</span></code> <a class="reference internal" href="../glossary.html#term-named-tuple"><span class="xref std std-term">named tuple</span></a></span><a class="headerlink" href="#id2" title="Link to this table">¶</a></caption>
 <thead>
-<tr class="row-odd"><th class="head"><p>attribute</p></th>
+<tr class="row-odd"><th class="head"><p>atrybut</p></th>
 <th class="head"><p>float.h macro</p></th>
 <th class="head"><p>explanation</p></th>
 </tr>
@@ -1151,7 +1206,7 @@ information, <a class="reference internal" href="#sys.getallocatedblocks" title=
 minimum version of Android this build of Python can run on. For runtime
 version information, see <a class="reference internal" href="platform.html#platform.android_ver" title="platform.android_ver"><code class="xref py py-func docutils literal notranslate"><span class="pre">platform.android_ver()</span></code></a>.</p>
 <div class="availability docutils container">
-<p><a class="reference internal" href="intro.html#availability"><span class="std std-ref">Availability</span></a>: Android.</p>
+<p><a class="reference internal" href="intro.html#availability"><span class="std std-ref">Dostępność</span></a>: Android.</p>
 </div>
 <div class="versionadded">
 <p><span class="versionmodified added"> Dodane w wersji 3.7.</span></p>
@@ -1173,7 +1228,7 @@ in methods like <a class="reference internal" href="stdtypes.html#str.encode" ti
 found in the <a class="reference internal" href="os.html#module-os" title="os: Miscellaneous operating system interfaces."><code class="xref py py-mod docutils literal notranslate"><span class="pre">os</span></code></a> module (<code class="samp docutils literal notranslate"><span class="pre">RTLD_</span><em><span class="pre">xxx</span></em></code> constants, e.g.
 <a class="reference internal" href="os.html#os.RTLD_LAZY" title="os.RTLD_LAZY"><code class="xref py py-const docutils literal notranslate"><span class="pre">os.RTLD_LAZY</span></code></a>).</p>
 <div class="availability docutils container">
-<p><a class="reference internal" href="intro.html#availability"><span class="std std-ref">Availability</span></a>: Unix.</p>
+<p><a class="reference internal" href="intro.html#availability"><span class="std std-ref">Dostępność</span></a>: Unix.</p>
 </div>
 </dd></dl>
 
@@ -1246,7 +1301,7 @@ objects are <a class="reference internal" href="../glossary.html#term-immortal">
 reflect the actual number of references.  Consequently, do not rely
 on the returned value to be accurate, other than a value of 0 or 1.</p>
 <div class="impl-detail compound">
-<p><strong>CPython implementation detail:</strong> <a class="reference internal" href="../glossary.html#term-immortal"><span class="xref std std-term">Immortal</span></a> objects with a large reference count can be
+<p><strong>Szczegół implementacyjny CPythona:</strong> <a class="reference internal" href="../glossary.html#term-immortal"><span class="xref std std-term">Immortal</span></a> objects with a large reference count can be
 identified via <a class="reference internal" href="#sys._is_immortal" title="sys._is_immortal"><code class="xref py py-func docutils literal notranslate"><span class="pre">_is_immortal()</span></code></a>.</p>
 </div>
 <div class="versionchanged">
@@ -1302,7 +1357,7 @@ that is deeper than the call stack, <a class="reference internal" href="exceptio
 for <em>depth</em> is zero, returning the frame at the top of the call stack.</p>
 <p class="audit-hook">Raises an <a class="reference internal" href="#auditing"><span class="std std-ref">auditing event</span></a> <code class="docutils literal notranslate"><span class="pre">sys._getframe</span></code> with argument <code class="docutils literal notranslate"><span class="pre">frame</span></code>.</p>
 <div class="impl-detail compound">
-<p><strong>CPython implementation detail:</strong> This function should be used for internal and specialized purposes only.
+<p><strong>Szczegół implementacyjny CPythona:</strong> This function should be used for internal and specialized purposes only.
 It is not guaranteed to exist in all implementations of Python.</p>
 </div>
 </dd></dl>
@@ -1317,7 +1372,7 @@ that is deeper than the call stack, or if the module is unidentifiable,
 module at the top of the call stack.</p>
 <p class="audit-hook">Raises an <a class="reference internal" href="#auditing"><span class="std std-ref">auditing event</span></a> <code class="docutils literal notranslate"><span class="pre">sys._getframemodulename</span></code> with argument <code class="docutils literal notranslate"><span class="pre">depth</span></code>.</p>
 <div class="impl-detail compound">
-<p><strong>CPython implementation detail:</strong> This function should be used for internal and specialized purposes only.
+<p><strong>Szczegół implementacyjny CPythona:</strong> This function should be used for internal and specialized purposes only.
 It is not guaranteed to exist in all implementations of Python.</p>
 </div>
 <div class="versionadded">
@@ -1343,7 +1398,7 @@ or using <a class="reference internal" href="../c-api/init.html#c.Py_NewInterpre
 Mixing objects from different interpreters may lead to crashes
 or other unexpected behavior.</p>
 <div class="impl-detail compound">
-<p><strong>CPython implementation detail:</strong> This function should be used for specialized purposes only.
+<p><strong>Szczegół implementacyjny CPythona:</strong> This function should be used for specialized purposes only.
 It is not guaranteed to exist in all implementations of Python.</p>
 </div>
 <div class="versionchanged">
@@ -1362,7 +1417,7 @@ It is not guaranteed to exist in all implementations of Python.</p>
 <span class="sig-prename descclassname"><span class="pre">sys.</span></span><span class="sig-name descname"><span class="pre">gettrace</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sys.gettrace" title="Link to this definition">¶</a></dt>
 <dd><p id="index-14">Get the trace function as set by <a class="reference internal" href="#sys.settrace" title="sys.settrace"><code class="xref py py-func docutils literal notranslate"><span class="pre">settrace()</span></code></a>.</p>
 <div class="impl-detail compound">
-<p><strong>CPython implementation detail:</strong> The <a class="reference internal" href="#sys.gettrace" title="sys.gettrace"><code class="xref py py-func docutils literal notranslate"><span class="pre">gettrace()</span></code></a> function is intended only for implementing debuggers,
+<p><strong>Szczegół implementacyjny CPythona:</strong> The <a class="reference internal" href="#sys.gettrace" title="sys.gettrace"><code class="xref py py-func docutils literal notranslate"><span class="pre">gettrace()</span></code></a> function is intended only for implementing debuggers,
 profilers, coverage tools and the like.  Its behavior is part of the
 implementation platform, rather than part of the language definition, and
 thus may not be available in all Python implementations.</p>
@@ -1386,8 +1441,8 @@ versions, only the first 5 elements are retrievable by indexing.</p>
 <p><em>product_type</em> may be one of the following values:</p>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head"><p>Constant</p></th>
-<th class="head"><p>Meaning</p></th>
+<tr class="row-odd"><th class="head"><p>Stała</p></th>
+<th class="head"><p>Znaczenie</p></th>
 </tr>
 </thead>
 <tbody>
@@ -1418,7 +1473,7 @@ version than the OS version. Please use <a class="reference internal" href="plat
 OS version.</p>
 </div>
 <div class="availability docutils container">
-<p><a class="reference internal" href="intro.html#availability"><span class="std std-ref">Availability</span></a>: Windows.</p>
+<p><a class="reference internal" href="intro.html#availability"><span class="std std-ref">Dostępność</span></a>: Windows.</p>
 </div>
 <div class="versionchanged">
 <p><span class="versionmodified changed">Zmienione w wersji 3.2: </span>Changed to a named tuple and added <em>service_pack_minor</em>,
@@ -1543,7 +1598,7 @@ example, to test that the Python interpreter is at least version 1.5.2, use:</p>
 as the result of passing it to the built-in <a class="reference internal" href="functions.html#hex" title="hex"><code class="xref py py-func docutils literal notranslate"><span class="pre">hex()</span></code></a> function.  The
 <a class="reference internal" href="../glossary.html#term-named-tuple"><span class="xref std std-term">named tuple</span></a>  <a class="reference internal" href="#sys.version_info" title="sys.version_info"><code class="xref py py-data docutils literal notranslate"><span class="pre">sys.version_info</span></code></a> may be used for a more
 human-friendly encoding of the same information.</p>
-<p>More details of <code class="docutils literal notranslate"><span class="pre">hexversion</span></code> can be found at <a class="reference internal" href="../c-api/apiabiversion.html#apiabiversion"><span class="std std-ref">API and ABI Versioning</span></a>.</p>
+<p>More details of <code class="docutils literal notranslate"><span class="pre">hexversion</span></code> can be found at <a class="reference internal" href="../c-api/apiabiversion.html#apiabiversion"><span class="std std-ref">API i wersjonowanie ABI</span></a>.</p>
 </dd></dl>
 
 <dl class="py data">
@@ -1679,7 +1734,7 @@ it is disabled.</p>
 <p><span class="versionmodified added"> Dodane w wersji 3.13.</span></p>
 </div>
 <div class="impl-detail compound">
-<p><strong>CPython implementation detail:</strong> It is not guaranteed to exist in all implementations of Python.</p>
+<p><strong>Szczegół implementacyjny CPythona:</strong> It is not guaranteed to exist in all implementations of Python.</p>
 </div>
 </dd></dl>
 
@@ -1699,7 +1754,7 @@ it is disabled.</p>
 <span class="sig-prename descclassname"><span class="pre">sys.</span></span><span class="sig-name descname"><span class="pre">_jit</span></span><a class="headerlink" href="#sys._jit" title="Link to this definition">¶</a></dt>
 <dd><p>Utilities for observing just-in-time compilation.</p>
 <div class="impl-detail compound">
-<p><strong>CPython implementation detail:</strong> JIT compilation is an <em>experimental implementation detail</em> of CPython.
+<p><strong>Szczegół implementacyjny CPythona:</strong> JIT compilation is an <em>experimental implementation detail</em> of CPython.
 <code class="docutils literal notranslate"><span class="pre">sys._jit</span></code> is not guaranteed to exist or behave the same way in all
 Python implementations, versions, or build configurations.</p>
 </div>
@@ -1789,7 +1844,7 @@ and vice versa for mortal objects.</p>
 <p><span class="versionmodified added"> Dodane w wersji 3.14.</span></p>
 </div>
 <div class="impl-detail compound">
-<p><strong>CPython implementation detail:</strong> This function should be used for specialized purposes only.
+<p><strong>Szczegół implementacyjny CPythona:</strong> This function should be used for specialized purposes only.
 It is not guaranteed to exist in all implementations of Python.</p>
 </div>
 </dd></dl>
@@ -1803,7 +1858,7 @@ otherwise.</p>
 <p><span class="versionmodified added"> Dodane w wersji 3.13.</span></p>
 </div>
 <div class="impl-detail compound">
-<p><strong>CPython implementation detail:</strong> It is not guaranteed to exist in all implementations of Python.</p>
+<p><strong>Szczegół implementacyjny CPythona:</strong> It is not guaranteed to exist in all implementations of Python.</p>
 </div>
 </dd></dl>
 
@@ -2103,7 +2158,7 @@ lazy resolving of symbols when importing a module, if called as
 can be found in the <a class="reference internal" href="os.html#module-os" title="os: Miscellaneous operating system interfaces."><code class="xref py py-mod docutils literal notranslate"><span class="pre">os</span></code></a> module (<code class="samp docutils literal notranslate"><span class="pre">RTLD_</span><em><span class="pre">xxx</span></em></code> constants, e.g.
 <a class="reference internal" href="os.html#os.RTLD_LAZY" title="os.RTLD_LAZY"><code class="xref py py-const docutils literal notranslate"><span class="pre">os.RTLD_LAZY</span></code></a>).</p>
 <div class="availability docutils container">
-<p><a class="reference internal" href="intro.html#availability"><span class="std std-ref">Availability</span></a>: Unix.</p>
+<p><a class="reference internal" href="intro.html#availability"><span class="std std-ref">Dostępność</span></a>: Unix.</p>
 </div>
 </dd></dl>
 
@@ -2264,7 +2319,7 @@ itself immediately on each frame).</p>
 <p>For more information on code and frame objects, refer to <a class="reference internal" href="../reference/datamodel.html#types"><span class="std std-ref">The standard type hierarchy</span></a>.</p>
 <p class="audit-hook">Raises an <a class="reference internal" href="#auditing"><span class="std std-ref">auditing event</span></a> <code class="docutils literal notranslate"><span class="pre">sys.settrace</span></code> with no arguments.</p>
 <div class="impl-detail compound">
-<p><strong>CPython implementation detail:</strong> The <a class="reference internal" href="#sys.settrace" title="sys.settrace"><code class="xref py py-func docutils literal notranslate"><span class="pre">settrace()</span></code></a> function is intended only for implementing debuggers,
+<p><strong>Szczegół implementacyjny CPythona:</strong> The <a class="reference internal" href="#sys.settrace" title="sys.settrace"><code class="xref py py-func docutils literal notranslate"><span class="pre">settrace()</span></code></a> function is intended only for implementing debuggers,
 profilers, coverage tools and the like.  Its behavior is part of the
 implementation platform, rather than part of the language definition, and
 thus may not be available in all Python implementations.</p>
@@ -2330,7 +2385,7 @@ for details.)  Use it only for debugging purposes.</p>
 The only supported backend is <code class="docutils literal notranslate"><span class="pre">&quot;perf&quot;</span></code>.</p>
 <p>Stack trampolines cannot be activated if the JIT is active.</p>
 <div class="availability docutils container">
-<p><a class="reference internal" href="intro.html#availability"><span class="std std-ref">Availability</span></a>: Linux.</p>
+<p><a class="reference internal" href="intro.html#availability"><span class="std std-ref">Dostępność</span></a>: Linux.</p>
 </div>
 <div class="versionadded">
 <p><span class="versionmodified added"> Dodane w wersji 3.12.</span></p>
@@ -2350,7 +2405,7 @@ The only supported backend is <code class="docutils literal notranslate"><span c
 <dd><p>Deactivate the current stack profiler trampoline backend.</p>
 <p>If no stack profiler is activated, this function has no effect.</p>
 <div class="availability docutils container">
-<p><a class="reference internal" href="intro.html#availability"><span class="std std-ref">Availability</span></a>: Linux.</p>
+<p><a class="reference internal" href="intro.html#availability"><span class="std std-ref">Dostępność</span></a>: Linux.</p>
 </div>
 <div class="versionadded">
 <p><span class="versionmodified added"> Dodane w wersji 3.12.</span></p>
@@ -2362,7 +2417,7 @@ The only supported backend is <code class="docutils literal notranslate"><span c
 <span class="sig-prename descclassname"><span class="pre">sys.</span></span><span class="sig-name descname"><span class="pre">is_stack_trampoline_active</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sys.is_stack_trampoline_active" title="Link to this definition">¶</a></dt>
 <dd><p>Return <code class="docutils literal notranslate"><span class="pre">True</span></code> if a stack profiler trampoline is active.</p>
 <div class="availability docutils container">
-<p><a class="reference internal" href="intro.html#availability"><span class="std std-ref">Availability</span></a>: Linux.</p>
+<p><a class="reference internal" href="intro.html#availability"><span class="std std-ref">Dostępność</span></a>: Linux.</p>
 </div>
 <div class="versionadded">
 <p><span class="versionmodified added"> Dodane w wersji 3.12.</span></p>
@@ -2389,7 +2444,7 @@ local and remote interpreters must be the same exact version.</p>
 the <em>pid</em> and the path to the script file.
 This event is raised in the process that called <a class="reference internal" href="#sys.remote_exec" title="sys.remote_exec"><code class="xref py py-func docutils literal notranslate"><span class="pre">sys.remote_exec()</span></code></a>.</p>
 </p>
-<p class="audit-hook" id="audit_event_cpython_remote_debugger_script_0"><p>When the script is executed in the remote process, an
+<p class="audit-hook" id="audit_event_cpython_remote_debugger_script_2"><p>When the script is executed in the remote process, an
 <a class="reference internal" href="#auditing"><span class="std std-ref">auditing event</span></a>
 <code class="docutils literal notranslate"><span class="pre">cpython.remote_debugger_script</span></code> is raised
 with the path in the remote process.
@@ -2397,7 +2452,7 @@ This event is raised in the remote process, not the one
 that called <a class="reference internal" href="#sys.remote_exec" title="sys.remote_exec"><code class="xref py py-func docutils literal notranslate"><span class="pre">sys.remote_exec()</span></code></a>.</p>
 </p>
 <div class="availability docutils container">
-<p><a class="reference internal" href="intro.html#availability"><span class="std std-ref">Availability</span></a>: Unix, Windows.</p>
+<p><a class="reference internal" href="intro.html#availability"><span class="std std-ref">Dostępność</span></a>: Unix, Windows.</p>
 </div>
 <div class="versionadded">
 <p><span class="versionmodified added"> Dodane w wersji 3.14.</span></p>
@@ -2415,7 +2470,7 @@ environment variable before launching Python.</p>
 <p>See also <a class="reference internal" href="#sys.getfilesystemencoding" title="sys.getfilesystemencoding"><code class="xref py py-func docutils literal notranslate"><span class="pre">sys.getfilesystemencoding()</span></code></a> and
 <a class="reference internal" href="#sys.getfilesystemencodeerrors" title="sys.getfilesystemencodeerrors"><code class="xref py py-func docutils literal notranslate"><span class="pre">sys.getfilesystemencodeerrors()</span></code></a>.</p>
 <div class="availability docutils container">
-<p><a class="reference internal" href="intro.html#availability"><span class="std std-ref">Availability</span></a>: Windows.</p>
+<p><a class="reference internal" href="intro.html#availability"><span class="std std-ref">Dostępność</span></a>: Windows.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Informacja</p>
@@ -2685,7 +2740,7 @@ major and minor versions of the running Python interpreter.  It is provided in t
 module for informational purposes; modifying this value has no effect on the
 registry keys used by Python.</p>
 <div class="availability docutils container">
-<p><a class="reference internal" href="intro.html#availability"><span class="std std-ref">Availability</span></a>: Windows.</p>
+<p><a class="reference internal" href="intro.html#availability"><span class="std std-ref">Dostępność</span></a>: Windows.</p>
 </div>
 </dd></dl>
 
@@ -2713,7 +2768,7 @@ their values, if given explicitly, or to <a class="reference internal" href="con
 </pre></div>
 </div>
 <div class="impl-detail compound">
-<p><strong>CPython implementation detail:</strong> This is a CPython-specific way of accessing options passed through
+<p><strong>Szczegół implementacyjny CPythona:</strong> This is a CPython-specific way of accessing options passed through
 <a class="reference internal" href="../using/cmdline.html#cmdoption-X"><code class="xref std std-option docutils literal notranslate"><span class="pre">-X</span></code></a>.  Other implementations may export them through other
 means, or not at all.</p>
 </div>
@@ -2739,14 +2794,14 @@ means, or not at all.</p>
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="python.html"
-                          title="previous chapter">Python Runtime Services</a></p>
+                          title="poprzedni rozdział">Python Runtime Services</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="sys.monitoring.html"
-                          title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">sys.monitoring</span></code> — Execution event monitoring</a></p>
+                          title="następny rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">sys.monitoring</span></code> — Execution event monitoring</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -2760,7 +2815,7 @@ means, or not at all.</p>
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -2796,7 +2851,7 @@ means, or not at all.</p>
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="python.html" >Python Runtime Services</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">sys</span></code> — System-specific parameters and functions</a></li>
                 <li class="right">
@@ -2845,7 +2900,7 @@ means, or not at all.</p>
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

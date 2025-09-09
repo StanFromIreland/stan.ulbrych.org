@@ -31,11 +31,11 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="Policies" href="asyncio-policy.html" />
     <link rel="prev" title="Futures" href="asyncio-future.html" />
@@ -98,7 +98,7 @@
     </select>
 </label>
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#">Transports and Protocols</a><ul>
 <li><a class="reference internal" href="#transports">Transports</a><ul>
@@ -119,7 +119,7 @@
 <li><a class="reference internal" href="#subprocess-protocols">Subprocess Protocols</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#examples">Examples</a><ul>
+<li><a class="reference internal" href="#examples">Przykłady</a><ul>
 <li><a class="reference internal" href="#tcp-echo-server">TCP Echo Server</a></li>
 <li><a class="reference internal" href="#tcp-echo-client">TCP Echo Client</a></li>
 <li><a class="reference internal" href="#udp-echo-server">UDP Echo Server</a></li>
@@ -134,14 +134,14 @@
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="asyncio-future.html"
-                          title="previous chapter">Futures</a></p>
+                          title="poprzedni rozdział">Futures</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="asyncio-policy.html"
-                          title="next chapter">Policies</a></p>
+                          title="następny rozdział">Policies</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -188,7 +188,7 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="ipc.html" >Networking and Interprocess Communication</a> &#187;</li>
           <li class="nav-item nav-item-3"><a href="asyncio.html" accesskey="U"><code class="xref py py-mod docutils literal notranslate"><span class="pre">asyncio</span></code> — Asynchronous I/O</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Transports and Protocols</a></li>
@@ -232,7 +232,7 @@ implementations of network or IPC protocols (e.g. HTTP).</p>
 libraries and frameworks and never in high-level asyncio
 applications.</p>
 <p>This documentation page covers both <a class="reference internal" href="#transports">Transports</a> and <a class="reference internal" href="#protocols">Protocols</a>.</p>
-<p class="rubric">Introduction</p>
+<p class="rubric">Wprowadzenie</p>
 <p>At the highest level, the transport is concerned with <em>how</em> bytes
 are transmitted, while the protocol determines <em>which</em> bytes to
 transmit (and to some extent when).</p>
@@ -252,7 +252,7 @@ has been received.</p>
 <em>protocol_factory</em> argument used to create a <em>Protocol</em> object
 for an accepted connection, represented by a <em>Transport</em> object.
 Such methods usually return a tuple of <code class="docutils literal notranslate"><span class="pre">(transport,</span> <span class="pre">protocol)</span></code>.</p>
-<p class="rubric">Contents</p>
+<p class="rubric">Zawartość</p>
 <p>This documentation page contains the following sections:</p>
 <ul class="simple">
 <li><p>The <a class="reference internal" href="#transports">Transports</a> section documents asyncio <a class="reference internal" href="#asyncio.BaseTransport" title="asyncio.BaseTransport"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseTransport</span></code></a>,
@@ -267,7 +267,7 @@ protocols, and low-level event loop APIs.</p></li>
 </ul>
 <section id="transports">
 <span id="asyncio-transport"></span><h2>Transports<a class="headerlink" href="#transports" title="Link to this heading">¶</a></h2>
-<p><strong>Source code:</strong> <a class="extlink-source reference external" href="https://github.com/python/cpython/tree/main/Lib/asyncio/transports.py">Lib/asyncio/transports.py</a></p>
+<p><strong>Kod źródłowy:</strong> <a class="extlink-source reference external" href="https://github.com/python/cpython/tree/main/Lib/asyncio/transports.py">Lib/asyncio/transports.py</a></p>
 <hr class="docutils" />
 <p>Transports are classes provided by <a class="reference internal" href="asyncio.html#module-asyncio" title="asyncio: Asynchronous I/O."><code class="xref py py-mod docutils literal notranslate"><span class="pre">asyncio</span></code></a> in order to abstract
 various kinds of communication channels.</p>
@@ -659,7 +659,7 @@ stop the subprocess.</p>
 </section>
 <section id="protocols">
 <span id="asyncio-protocol"></span><h2>Protocols<a class="headerlink" href="#protocols" title="Link to this heading">¶</a></h2>
-<p><strong>Source code:</strong> <a class="extlink-source reference external" href="https://github.com/python/cpython/tree/main/Lib/asyncio/protocols.py">Lib/asyncio/protocols.py</a></p>
+<p><strong>Kod źródłowy:</strong> <a class="extlink-source reference external" href="https://github.com/python/cpython/tree/main/Lib/asyncio/protocols.py">Lib/asyncio/protocols.py</a></p>
 <hr class="docutils" />
 <p>asyncio provides a set of abstract base classes that should be used
 to implement network protocols.  Those classes are meant to be used
@@ -922,7 +922,7 @@ is closed.</p>
 </section>
 </section>
 <section id="examples">
-<h2>Examples<a class="headerlink" href="#examples" title="Link to this heading">¶</a></h2>
+<h2>Przykłady<a class="headerlink" href="#examples" title="Link to this heading">¶</a></h2>
 <section id="tcp-echo-server">
 <span id="asyncio-example-tcp-echo-server-protocol"></span><h3>TCP Echo Server<a class="headerlink" href="#tcp-echo-server" title="Link to this heading">¶</a></h3>
 <p>Create a TCP echo server using the <a class="reference internal" href="asyncio-eventloop.html#asyncio.loop.create_server" title="asyncio.loop.create_server"><code class="xref py py-meth docutils literal notranslate"><span class="pre">loop.create_server()</span></code></a> method, send back
@@ -1257,7 +1257,7 @@ written using high-level APIs.</p>
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#">Transports and Protocols</a><ul>
 <li><a class="reference internal" href="#transports">Transports</a><ul>
@@ -1278,7 +1278,7 @@ written using high-level APIs.</p>
 <li><a class="reference internal" href="#subprocess-protocols">Subprocess Protocols</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#examples">Examples</a><ul>
+<li><a class="reference internal" href="#examples">Przykłady</a><ul>
 <li><a class="reference internal" href="#tcp-echo-server">TCP Echo Server</a></li>
 <li><a class="reference internal" href="#tcp-echo-client">TCP Echo Client</a></li>
 <li><a class="reference internal" href="#udp-echo-server">UDP Echo Server</a></li>
@@ -1293,14 +1293,14 @@ written using high-level APIs.</p>
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="asyncio-future.html"
-                          title="previous chapter">Futures</a></p>
+                          title="poprzedni rozdział">Futures</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="asyncio-policy.html"
-                          title="next chapter">Policies</a></p>
+                          title="następny rozdział">Policies</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -1314,7 +1314,7 @@ written using high-level APIs.</p>
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -1350,7 +1350,7 @@ written using high-level APIs.</p>
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="ipc.html" >Networking and Interprocess Communication</a> &#187;</li>
           <li class="nav-item nav-item-3"><a href="asyncio.html" ><code class="xref py py-mod docutils literal notranslate"><span class="pre">asyncio</span></code> — Asynchronous I/O</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Transports and Protocols</a></li>
@@ -1400,7 +1400,7 @@ written using high-level APIs.</p>
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

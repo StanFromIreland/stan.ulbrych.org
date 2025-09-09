@@ -31,11 +31,11 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="Initialization, Finalization, and Threads" href="init.html" />
     <link rel="prev" title="DateTime Objects" href="datetime.html" />
@@ -98,14 +98,14 @@
     </select>
 </label>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="datetime.html"
-                          title="previous chapter">DateTime Objects</a></p>
+                          title="poprzedni rozdział">DateTime Objects</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="init.html"
-                          title="next chapter">Initialization, Finalization, and Threads</a></p>
+                          title="następny rozdział">Initialization, Finalization, and Threads</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -152,7 +152,7 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Reference Manual</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Podręcznik</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="concrete.html" accesskey="U">Concrete Objects Layer</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Objects for Type Hinting</a></li>
                 <li class="right">
@@ -192,7 +192,7 @@ two types exist – <a class="reference internal" href="../library/stdtypes.html
 <dl class="c function">
 <dt class="sig sig-object c" id="c.Py_GenericAlias">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">Py_GenericAlias</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">origin</span></span>, <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.Py_GenericAlias" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.9.</em><p>Create a <a class="reference internal" href="../library/stdtypes.html#types-genericalias"><span class="std std-ref">GenericAlias</span></a> object.
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.9.</em><p>Create a <a class="reference internal" href="../library/stdtypes.html#types-genericalias"><span class="std std-ref">GenericAlias</span></a> object.
 Equivalent to calling the Python class
 <a class="reference internal" href="../library/types.html#types.GenericAlias" title="types.GenericAlias"><code class="xref py py-class docutils literal notranslate"><span class="pre">types.GenericAlias</span></code></a>.  The <em>origin</em> and <em>args</em> arguments set the
 <code class="docutils literal notranslate"><span class="pre">GenericAlias</span></code>«s <code class="docutils literal notranslate"><span class="pre">__origin__</span></code> and <code class="docutils literal notranslate"><span class="pre">__args__</span></code> attributes respectively.
@@ -227,7 +227,7 @@ returned.</p>
 <dl class="c var">
 <dt class="sig sig-object c" id="c.Py_GenericAliasType">
 <a class="reference internal" href="type.html#c.PyTypeObject" title="PyTypeObject"><span class="n"><span class="pre">PyTypeObject</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Py_GenericAliasType</span></span></span><a class="headerlink" href="#c.Py_GenericAliasType" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="stableabi"> Part of the <a class="reference internal" href="stable.html#stable"><span class="std std-ref">Stable ABI</span></a> since version 3.9.</em><p>The C type of the object returned by <a class="reference internal" href="#c.Py_GenericAlias" title="Py_GenericAlias"><code class="xref c c-func docutils literal notranslate"><span class="pre">Py_GenericAlias()</span></code></a>. Equivalent to
+<dd><em class="stableabi"> Część <a class="reference internal" href="stable.html#stable"><span class="std std-ref">stabilnego ABI</span></a> od wersji 3.9.</em><p>The C type of the object returned by <a class="reference internal" href="#c.Py_GenericAlias" title="Py_GenericAlias"><code class="xref c c-func docutils literal notranslate"><span class="pre">Py_GenericAlias()</span></code></a>. Equivalent to
 <a class="reference internal" href="../library/types.html#types.GenericAlias" title="types.GenericAlias"><code class="xref py py-class docutils literal notranslate"><span class="pre">types.GenericAlias</span></code></a> in Python.</p>
 <div class="versionadded">
 <p><span class="versionmodified added"> Dodane w wersji 3.9.</span></p>
@@ -244,14 +244,14 @@ returned.</p>
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="datetime.html"
-                          title="previous chapter">DateTime Objects</a></p>
+                          title="poprzedni rozdział">DateTime Objects</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="init.html"
-                          title="next chapter">Initialization, Finalization, and Threads</a></p>
+                          title="następny rozdział">Initialization, Finalization, and Threads</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -265,7 +265,7 @@ returned.</p>
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -301,7 +301,7 @@ returned.</p>
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Reference Manual</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Podręcznik</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="concrete.html" >Concrete Objects Layer</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Objects for Type Hinting</a></li>
                 <li class="right">
@@ -350,7 +350,7 @@ returned.</p>
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

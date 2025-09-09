@@ -8,10 +8,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://docs.python.org/3/library/shutil.html" />
 <meta property="og:site_name" content="Python documentation" />
-<meta property="og:description" content="Source code: Lib/shutil.py The shutil module offers a number of high-level operations on files and collections of files. In particular, functions are provided which support file copying and removal..." />
+<meta property="og:description" content="Kod źródłowy: Lib/shutil.py The shutil module offers a number of high-level operations on files and collections of files. In particular, functions are provided which support file copying and remova..." />
 <meta property="og:image" content="_static/og-image.png" />
 <meta property="og:image:alt" content="Python documentation" />
-<meta name="description" content="Source code: Lib/shutil.py The shutil module offers a number of high-level operations on files and collections of files. In particular, functions are provided which support file copying and removal..." />
+<meta name="description" content="Kod źródłowy: Lib/shutil.py The shutil module offers a number of high-level operations on files and collections of files. In particular, functions are provided which support file copying and remova..." />
 <meta name="theme-color" content="#3776ab">
 <meta property="og:image:width" content="200">
 <meta property="og:image:height" content="200">
@@ -31,11 +31,11 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="Data Persistence" href="persistence.html" />
     <link rel="prev" title="linecache — Random access to text lines" href="linecache.html" />
@@ -98,7 +98,7 @@
     </select>
 </label>
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">shutil</span></code> — High-level file operations</a><ul>
 <li><a class="reference internal" href="#directory-and-files-operations">Directory and files operations</a><ul>
@@ -119,14 +119,14 @@
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="linecache.html"
-                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">linecache</span></code> — Random access to text lines</a></p>
+                          title="poprzedni rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">linecache</span></code> — Random access to text lines</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="persistence.html"
-                          title="next chapter">Data Persistence</a></p>
+                          title="następny rozdział">Data Persistence</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -173,7 +173,7 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="filesys.html" accesskey="U">File and Directory Access</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">shutil</span></code> — High-level file operations</a></li>
                 <li class="right">
@@ -207,7 +207,7 @@
             
   <section id="module-shutil">
 <span id="shutil-high-level-file-operations"></span><h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">shutil</span></code> — High-level file operations<a class="headerlink" href="#module-shutil" title="Link to this heading">¶</a></h1>
-<p><strong>Source code:</strong> <a class="extlink-source reference external" href="https://github.com/python/cpython/tree/main/Lib/shutil.py">Lib/shutil.py</a></p>
+<p><strong>Kod źródłowy:</strong> <a class="extlink-source reference external" href="https://github.com/python/cpython/tree/main/Lib/shutil.py">Lib/shutil.py</a></p>
 <hr class="docutils" id="index-0" />
 <p>The <a class="reference internal" href="#module-shutil" title="shutil: High-level file operations, including copying."><code class="xref py py-mod docutils literal notranslate"><span class="pre">shutil</span></code></a> module offers a number of high-level operations on files and
 collections of files.  In particular, functions are provided  which support file
@@ -274,6 +274,16 @@ a subclass of the latter, this change is backward compatible.</p>
 <p><span class="versionmodified changed">Zmienione w wersji 3.8: </span>Platform-specific fast-copy syscalls may be used internally in order to
 copy the file more efficiently. See
 <a class="reference internal" href="#shutil-platform-dependent-efficient-copy-operations"><span class="std std-ref">Platform-dependent efficient copy operations</span></a> section.</p>
+</div>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="shutil.SpecialFileError">
+<em class="property"><span class="k"><span class="pre">exception</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">shutil.</span></span><span class="sig-name descname"><span class="pre">SpecialFileError</span></span><a class="headerlink" href="#shutil.SpecialFileError" title="Link to this definition">¶</a></dt>
+<dd><p>This exception is raised when <a class="reference internal" href="#shutil.copyfile" title="shutil.copyfile"><code class="xref py py-func docutils literal notranslate"><span class="pre">copyfile()</span></code></a> or <a class="reference internal" href="#shutil.copytree" title="shutil.copytree"><code class="xref py py-func docutils literal notranslate"><span class="pre">copytree()</span></code></a> attempt
+to copy a named pipe.</p>
+<div class="versionadded">
+<p><span class="versionmodified added"> Dodane w wersji 2.7.</span></p>
 </div>
 </dd></dl>
 
@@ -602,7 +612,7 @@ retrieve disk usage information from non-mounted filesystems.</p>
 <p><span class="versionmodified changed">Zmienione w wersji 3.8: </span>On Windows, <em>path</em> can now be a file or directory.</p>
 </div>
 <div class="availability docutils container">
-<p><a class="reference internal" href="intro.html#availability"><span class="std std-ref">Availability</span></a>: Unix, Windows.</p>
+<p><a class="reference internal" href="intro.html#availability"><span class="std std-ref">Dostępność</span></a>: Unix, Windows.</p>
 </div>
 </dd></dl>
 
@@ -615,7 +625,7 @@ least one argument is required.</p>
 <p>See also <a class="reference internal" href="os.html#os.chown" title="os.chown"><code class="xref py py-func docutils literal notranslate"><span class="pre">os.chown()</span></code></a>, the underlying function.</p>
 <p class="audit-hook">Raises an <a class="reference internal" href="sys.html#auditing"><span class="std std-ref">auditing event</span></a> <code class="docutils literal notranslate"><span class="pre">shutil.chown</span></code> with arguments <code class="docutils literal notranslate"><span class="pre">path</span></code>, <code class="docutils literal notranslate"><span class="pre">user</span></code>, <code class="docutils literal notranslate"><span class="pre">group</span></code>.</p>
 <div class="availability docutils container">
-<p><a class="reference internal" href="intro.html#availability"><span class="std std-ref">Availability</span></a>: Unix.</p>
+<p><a class="reference internal" href="intro.html#availability"><span class="std std-ref">Dostępność</span></a>: Unix.</p>
 </div>
 <div class="versionadded">
 <p><span class="versionmodified added"> Dodane w wersji 3.3.</span></p>
@@ -1046,7 +1056,7 @@ returns zeroes.</p>
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">shutil</span></code> — High-level file operations</a><ul>
 <li><a class="reference internal" href="#directory-and-files-operations">Directory and files operations</a><ul>
@@ -1067,14 +1077,14 @@ returns zeroes.</p>
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="linecache.html"
-                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">linecache</span></code> — Random access to text lines</a></p>
+                          title="poprzedni rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">linecache</span></code> — Random access to text lines</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="persistence.html"
-                          title="next chapter">Data Persistence</a></p>
+                          title="następny rozdział">Data Persistence</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -1088,7 +1098,7 @@ returns zeroes.</p>
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -1124,7 +1134,7 @@ returns zeroes.</p>
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="filesys.html" >File and Directory Access</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">shutil</span></code> — High-level file operations</a></li>
                 <li class="right">
@@ -1173,7 +1183,7 @@ returns zeroes.</p>
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

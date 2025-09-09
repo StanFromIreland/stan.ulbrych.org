@@ -8,10 +8,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://docs.python.org/3/library/io.html" />
 <meta property="og:site_name" content="Python documentation" />
-<meta property="og:description" content="Source code: Lib/io.py Overview: The io module provides Python’s main facilities for dealing with various types of I/O. There are three main types of I/O: text I/O, binary I/O and raw I/O. These ar..." />
+<meta property="og:description" content="Kod źródłowy: Lib/io.py Skorowidz: The io module provides Python’s main facilities for dealing with various types of I/O. There are three main types of I/O: text I/O, binary I/O and raw I/O. These ..." />
 <meta property="og:image" content="_static/og-image.png" />
 <meta property="og:image:alt" content="Python documentation" />
-<meta name="description" content="Source code: Lib/io.py Overview: The io module provides Python’s main facilities for dealing with various types of I/O. There are three main types of I/O: text I/O, binary I/O and raw I/O. These ar..." />
+<meta name="description" content="Kod źródłowy: Lib/io.py Skorowidz: The io module provides Python’s main facilities for dealing with various types of I/O. There are three main types of I/O: text I/O, binary I/O and raw I/O. These ..." />
 <meta name="theme-color" content="#3776ab">
 <meta property="og:image:width" content="200">
 <meta property="og:image:height" content="200">
@@ -31,11 +31,11 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="time — Time access and conversions" href="time.html" />
     <link rel="prev" title="os — Miscellaneous operating system interfaces" href="os.html" />
@@ -98,10 +98,10 @@
     </select>
 </label>
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">io</span></code> — Core tools for working with streams</a><ul>
-<li><a class="reference internal" href="#overview">Overview</a><ul>
+<li><a class="reference internal" href="#overview">Skorowidz</a><ul>
 <li><a class="reference internal" href="#text-i-o">Text I/O</a></li>
 <li><a class="reference internal" href="#binary-i-o">Binary I/O</a></li>
 <li><a class="reference internal" href="#raw-i-o">Raw I/O</a></li>
@@ -120,10 +120,10 @@
 </ul>
 </li>
 <li><a class="reference internal" href="#static-typing">Static Typing</a></li>
-<li><a class="reference internal" href="#performance">Performance</a><ul>
+<li><a class="reference internal" href="#performance">Wydajność</a><ul>
 <li><a class="reference internal" href="#id2">Binary I/O</a></li>
 <li><a class="reference internal" href="#id3">Text I/O</a></li>
-<li><a class="reference internal" href="#multi-threading">Multi-threading</a></li>
+<li><a class="reference internal" href="#multi-threading">Wielowątkowość</a></li>
 <li><a class="reference internal" href="#reentrancy">Reentrancy</a></li>
 </ul>
 </li>
@@ -133,14 +133,14 @@
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="os.html"
-                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">os</span></code> — Miscellaneous operating system interfaces</a></p>
+                          title="poprzedni rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">os</span></code> — Miscellaneous operating system interfaces</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="time.html"
-                          title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">time</span></code> — Time access and conversions</a></p>
+                          title="następny rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">time</span></code> — Time access and conversions</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -187,7 +187,7 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="allos.html" accesskey="U">Generic Operating System Services</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">io</span></code> — Core tools for working with streams</a></li>
                 <li class="right">
@@ -221,10 +221,10 @@
             
   <section id="module-io">
 <span id="io-core-tools-for-working-with-streams"></span><h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">io</span></code> — Core tools for working with streams<a class="headerlink" href="#module-io" title="Link to this heading">¶</a></h1>
-<p><strong>Source code:</strong> <a class="extlink-source reference external" href="https://github.com/python/cpython/tree/main/Lib/io.py">Lib/io.py</a></p>
+<p><strong>Kod źródłowy:</strong> <a class="extlink-source reference external" href="https://github.com/python/cpython/tree/main/Lib/io.py">Lib/io.py</a></p>
 <hr class="docutils" />
 <section id="overview">
-<span id="io-overview"></span><h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">¶</a></h2>
+<span id="io-overview"></span><h2>Skorowidz<a class="headerlink" href="#overview" title="Link to this heading">¶</a></h2>
 <p id="index-0">The <a class="reference internal" href="#module-io" title="io: Core tools for working with streams."><code class="xref py py-mod docutils literal notranslate"><span class="pre">io</span></code></a> module provides Python’s main facilities for dealing with various
 types of I/O.  There are three main types of I/O: <em>text I/O</em>, <em>binary I/O</em>
 and <em>raw I/O</em>.  These are generic categories, and various backing stores can
@@ -903,7 +903,7 @@ file descriptor for the file object is then obtained by calling <em>opener</em> 
 (<em>name</em>, <em>flags</em>). <em>opener</em> must return an open file descriptor (passing
 <a class="reference internal" href="os.html#os.open" title="os.open"><code class="xref py py-mod docutils literal notranslate"><span class="pre">os.open</span></code></a> as <em>opener</em> results in functionality similar to passing
 <code class="docutils literal notranslate"><span class="pre">None</span></code>).</p>
-<p>The newly created file is <a class="reference internal" href="os.html#fd-inheritance"><span class="std std-ref">non-inheritable</span></a>.</p>
+<p>Nowo utworzony plik jest <a class="reference internal" href="os.html#fd-inheritance"><span class="std std-ref">non-inheritable</span></a>.</p>
 <p>See the <a class="reference internal" href="functions.html#open" title="open"><code class="xref py py-func docutils literal notranslate"><span class="pre">open()</span></code></a> built-in function for examples on using the <em>opener</em>
 parameter.</p>
 <div class="versionchanged">
@@ -911,7 +911,7 @@ parameter.</p>
 The <code class="docutils literal notranslate"><span class="pre">'x'</span></code> mode was added.</p>
 </div>
 <div class="versionchanged">
-<p><span class="versionmodified changed">Zmienione w wersji 3.4: </span>The file is now non-inheritable.</p>
+<p><span class="versionmodified changed">Zmienione w wersji 3.4: </span>Plik nie jest teraz dziedziczony.</p>
 </div>
 <p><a class="reference internal" href="#io.FileIO" title="io.FileIO"><code class="xref py py-class docutils literal notranslate"><span class="pre">FileIO</span></code></a> provides these data attributes in addition to those from
 <a class="reference internal" href="#io.RawIOBase" title="io.RawIOBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">RawIOBase</span></code></a> and <a class="reference internal" href="#io.IOBase" title="io.IOBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">IOBase</span></code></a>:</p>
@@ -1251,11 +1251,7 @@ newlines mode is enabled, but line endings are returned to the caller
 untranslated.  If <em>newline</em> has any of the other legal values, input lines
 are only terminated by the given string, and the line ending is returned to
 the caller untranslated.</p></li>
-<li><p>When writing output to the stream, if <em>newline</em> is <code class="docutils literal notranslate"><span class="pre">None</span></code>, any <code class="docutils literal notranslate"><span class="pre">'\n'</span></code>
-characters written are translated to the system default line separator,
-<a class="reference internal" href="os.html#os.linesep" title="os.linesep"><code class="xref py py-data docutils literal notranslate"><span class="pre">os.linesep</span></code></a>.  If <em>newline</em> is <code class="docutils literal notranslate"><span class="pre">''</span></code> or <code class="docutils literal notranslate"><span class="pre">'\n'</span></code>, no translation
-takes place.  If <em>newline</em> is any of the other legal values, any <code class="docutils literal notranslate"><span class="pre">'\n'</span></code>
-characters written are translated to the given string.</p></li>
+<li><p>Podczas zapisywania danych wyjściowych do strumienia, jeśli <em>newline</em> ma wartość <code class="docutils literal notranslate"><span class="pre">None</span></code>, wszelkie zapisane <code class="docutils literal notranslate"><span class="pre">'\n'</span></code> znaki są tłumaczone na systemowy domyślny separator linii, <a class="reference internal" href="os.html#os.linesep" title="os.linesep"><code class="xref py py-data docutils literal notranslate"><span class="pre">os.linesep</span></code></a>.  Jeśli <em>newline</em> ma wartość <code class="docutils literal notranslate"><span class="pre">''</span></code> lub <code class="docutils literal notranslate"><span class="pre">'\n'</span></code>, tłumaczenie nie jest wykonywane.  Jeśli <em>newline</em> jest dowolną z pozostałych legalnych wartości, wszelkie zapisane <code class="docutils literal notranslate"><span class="pre">'\n'</span></code> znaki są tłumaczone na podany napis.</p></li>
 </ul>
 <p>If <em>line_buffering</em> is <code class="docutils literal notranslate"><span class="pre">True</span></code>, <a class="reference internal" href="#io.IOBase.flush" title="io.IOBase.flush"><code class="xref py py-meth docutils literal notranslate"><span class="pre">flush()</span></code></a> is implied when a call to
 write contains a newline character or a carriage return.</p>
@@ -1429,7 +1425,7 @@ specified, it should be an integer, and at most <em>size</em> items
 (bytes/characters) will be read.</p>
 </dd></dl>
 
-<p>For example:</p>
+<p>Dla przykładu:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">read_it</span><span class="p">(</span><span class="n">reader</span><span class="p">:</span> <span class="n">Reader</span><span class="p">[</span><span class="nb">str</span><span class="p">]):</span>
     <span class="n">data</span> <span class="o">=</span> <span class="n">reader</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span>
     <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span>
@@ -1453,7 +1449,7 @@ written to the stream.</p>
 (bytes/characters) written.</p>
 </dd></dl>
 
-<p>For example:</p>
+<p>Dla przykładu:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">write_binary</span><span class="p">(</span><span class="n">writer</span><span class="p">:</span> <span class="n">Writer</span><span class="p">[</span><span class="nb">bytes</span><span class="p">]):</span>
     <span class="n">writer</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">b</span><span class="s2">&quot;Hello world!</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
@@ -1464,7 +1460,7 @@ written to the stream.</p>
 used for static type checking.</p>
 </section>
 <section id="performance">
-<h2>Performance<a class="headerlink" href="#performance" title="Link to this heading">¶</a></h2>
+<h2>Wydajność<a class="headerlink" href="#performance" title="Link to this heading">¶</a></h2>
 <p>This section discusses the performance of the provided concrete I/O
 implementations.</p>
 <section id="id2">
@@ -1490,7 +1486,7 @@ due to the reconstruction algorithm used.</p>
 exhibit similar speed to <a class="reference internal" href="#io.BytesIO" title="io.BytesIO"><code class="xref py py-class docutils literal notranslate"><span class="pre">BytesIO</span></code></a>.</p>
 </section>
 <section id="multi-threading">
-<h3>Multi-threading<a class="headerlink" href="#multi-threading" title="Link to this heading">¶</a></h3>
+<h3>Wielowątkowość<a class="headerlink" href="#multi-threading" title="Link to this heading">¶</a></h3>
 <p><a class="reference internal" href="#io.FileIO" title="io.FileIO"><code class="xref py py-class docutils literal notranslate"><span class="pre">FileIO</span></code></a> objects are thread-safe to the extent that the operating system
 calls (such as <em class="manpage"><a class="manpage reference external" href="https://manpages.debian.org/read(2)">read(2)</a></em> under Unix) they wrap are thread-safe too.</p>
 <p>Binary buffered objects (instances of <a class="reference internal" href="#io.BufferedReader" title="io.BufferedReader"><code class="xref py py-class docutils literal notranslate"><span class="pre">BufferedReader</span></code></a>,
@@ -1524,10 +1520,10 @@ well.</p>
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">io</span></code> — Core tools for working with streams</a><ul>
-<li><a class="reference internal" href="#overview">Overview</a><ul>
+<li><a class="reference internal" href="#overview">Skorowidz</a><ul>
 <li><a class="reference internal" href="#text-i-o">Text I/O</a></li>
 <li><a class="reference internal" href="#binary-i-o">Binary I/O</a></li>
 <li><a class="reference internal" href="#raw-i-o">Raw I/O</a></li>
@@ -1546,10 +1542,10 @@ well.</p>
 </ul>
 </li>
 <li><a class="reference internal" href="#static-typing">Static Typing</a></li>
-<li><a class="reference internal" href="#performance">Performance</a><ul>
+<li><a class="reference internal" href="#performance">Wydajność</a><ul>
 <li><a class="reference internal" href="#id2">Binary I/O</a></li>
 <li><a class="reference internal" href="#id3">Text I/O</a></li>
-<li><a class="reference internal" href="#multi-threading">Multi-threading</a></li>
+<li><a class="reference internal" href="#multi-threading">Wielowątkowość</a></li>
 <li><a class="reference internal" href="#reentrancy">Reentrancy</a></li>
 </ul>
 </li>
@@ -1559,14 +1555,14 @@ well.</p>
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="os.html"
-                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">os</span></code> — Miscellaneous operating system interfaces</a></p>
+                          title="poprzedni rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">os</span></code> — Miscellaneous operating system interfaces</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="time.html"
-                          title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">time</span></code> — Time access and conversions</a></p>
+                          title="następny rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">time</span></code> — Time access and conversions</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -1580,7 +1576,7 @@ well.</p>
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -1616,7 +1612,7 @@ well.</p>
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="allos.html" >Generic Operating System Services</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">io</span></code> — Core tools for working with streams</a></li>
                 <li class="right">
@@ -1665,7 +1661,7 @@ well.</p>
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

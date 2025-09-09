@@ -8,10 +8,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://docs.python.org/3/using/cmdline.html" />
 <meta property="og:site_name" content="Python documentation" />
-<meta property="og:description" content="The CPython interpreter scans the command line and the environment for various settings. CPython implementation detail: Other implementations» command line schemes may differ. See Alternate Impleme..." />
+<meta property="og:description" content="The CPython interpreter scans the command line and the environment for various settings. Szczegół implementacyjny CPythona: Other implementations» command line schemes may differ. See Alternate Imp..." />
 <meta property="og:image" content="_static/og-image.png" />
 <meta property="og:image:alt" content="Python documentation" />
-<meta name="description" content="The CPython interpreter scans the command line and the environment for various settings. CPython implementation detail: Other implementations» command line schemes may differ. See Alternate Impleme..." />
+<meta name="description" content="The CPython interpreter scans the command line and the environment for various settings. Szczegół implementacyjny CPythona: Other implementations» command line schemes may differ. See Alternate Imp..." />
 <meta name="theme-color" content="#3776ab">
 <meta property="og:image:width" content="200">
 <meta property="og:image:height" content="200">
@@ -31,14 +31,14 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
-    <link rel="next" title="2. Using Python on Unix platforms" href="unix.html" />
-    <link rel="prev" title="Python Setup and Usage" href="index.html" />
+    <link rel="next" title="2. Python na platformach Unix" href="unix.html" />
+    <link rel="prev" title="Instalacja i używanie Pythona" href="index.html" />
     
       
       <link rel="canonical" href="https://docs.python.org/3/using/cmdline.html">
@@ -98,7 +98,7 @@
     </select>
 </label>
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#">1. Command line and environment</a><ul>
 <li><a class="reference internal" href="#command-line">1.1. Command line</a><ul>
@@ -118,14 +118,14 @@
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="index.html"
-                          title="previous chapter">Python Setup and Usage</a></p>
+                          title="poprzedni rozdział">Instalacja i używanie Pythona</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="unix.html"
-                          title="next chapter"><span class="section-number">2. </span>Using Python on Unix platforms</a></p>
+                          title="następny rozdział"><span class="section-number">2. </span>Python na platformach Unix</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -153,10 +153,10 @@
           <a href="../py-modindex.html" title="Indeks modułów Pythona"
              >moduły</a> |</li>
         <li class="right" >
-          <a href="unix.html" title="2. Using Python on Unix platforms"
+          <a href="unix.html" title="2. Python na platformach Unix"
              accesskey="N">dalej</a> |</li>
         <li class="right" >
-          <a href="index.html" title="Python Setup and Usage"
+          <a href="index.html" title="Instalacja i używanie Pythona"
              accesskey="P">wstecz</a> |</li>
 
           <li><img src="../_static/py.svg" alt="Python logo" style="vertical-align: middle; margin-top: -1px"></li>
@@ -172,7 +172,7 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Python Setup and Usage</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Instalacja i używanie Pythona</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><span class="section-number">1. </span>Command line and environment</a></li>
                 <li class="right">
                     
@@ -208,7 +208,7 @@
 <p>The CPython interpreter scans the command line and the environment for various
 settings.</p>
 <div class="impl-detail compound">
-<p><strong>CPython implementation detail:</strong> Other implementations» command line schemes may differ.  See
+<p><strong>Szczegół implementacyjny CPythona:</strong> Other implementations» command line schemes may differ.  See
 <a class="reference internal" href="../reference/introduction.html#implementations"><span class="std std-ref">Alternate Implementations</span></a> for further resources.</p>
 </div>
 <section id="command-line">
@@ -229,7 +229,7 @@ additional methods of invocation:</p>
 <li><p>When called with standard input connected to a tty device, it prompts for
 commands and executes them until an EOF (an end-of-file character, you can
 produce that with <kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">D</kbd> on UNIX or <kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">Z,</kbd> <kbd class="kbd docutils literal notranslate">Enter</kbd> on Windows) is read.
-For more on interactive mode, see <a class="reference internal" href="../tutorial/appendix.html#tut-interac"><span class="std std-ref">Interactive Mode</span></a>.</p></li>
+For more on interactive mode, see <a class="reference internal" href="../tutorial/appendix.html#tut-interac"><span class="std std-ref">Tryb interaktywny</span></a>.</p></li>
 <li><p>When called with a file name argument or with a file as standard input, it
 reads and executes a script from that file.</p></li>
 <li><p>When called with a directory name argument, it reads and executes an
@@ -322,7 +322,7 @@ a terminal, <a class="reference internal" href="#cmdoption-i"><code class="xref 
 <p>If this option is given, the first element of <a class="reference internal" href="../library/sys.html#sys.argv" title="sys.argv"><code class="xref py py-data docutils literal notranslate"><span class="pre">sys.argv</span></code></a> will be
 <code class="docutils literal notranslate"><span class="pre">&quot;-&quot;</span></code> and the current directory will be added to the start of
 <a class="reference internal" href="../library/sys.html#sys.path" title="sys.path"><code class="xref py py-data docutils literal notranslate"><span class="pre">sys.path</span></code></a>.</p>
-<p class="audit-hook" id="audit_event_cpython_run_stdin_0">Raises an <a class="reference internal" href="../library/sys.html#auditing"><span class="std std-ref">auditing event</span></a> <code class="docutils literal notranslate"><span class="pre">cpython.run_stdin</span></code> with no arguments.</p>
+<p class="audit-hook" id="audit_event_cpython_run_stdin_3">Raises an <a class="reference internal" href="../library/sys.html#auditing"><span class="std std-ref">auditing event</span></a> <code class="docutils literal notranslate"><span class="pre">cpython.run_stdin</span></code> with no arguments.</p>
 </dd></dl>
 
 <dl class="describe" id="cmdarg-script">
@@ -344,7 +344,7 @@ that location is executed as the <a class="reference internal" href="../library/
 <a class="reference internal" href="../library/sys.html#sys.path" title="sys.path"><code class="xref py py-data docutils literal notranslate"><span class="pre">sys.path</span></code></a> contains neither the script’s directory nor the user’s
 site-packages directory. All <code class="docutils literal notranslate"><span class="pre">PYTHON*</span></code> environment variables are
 ignored, too.</p>
-<p class="audit-hook" id="audit_event_cpython_run_file_0">Raises an <a class="reference internal" href="../library/sys.html#auditing"><span class="std std-ref">auditing event</span></a> <code class="docutils literal notranslate"><span class="pre">cpython.run_file</span></code> with argument <code class="docutils literal notranslate"><span class="pre">filename</span></code>.</p>
+<p class="audit-hook" id="audit_event_cpython_run_file_1">Raises an <a class="reference internal" href="../library/sys.html#auditing"><span class="std std-ref">auditing event</span></a> <code class="docutils literal notranslate"><span class="pre">cpython.run_file</span></code> with argument <code class="docutils literal notranslate"><span class="pre">filename</span></code>.</p>
 <div class="admonition seealso">
 <p class="admonition-title">Zobacz także</p>
 <dl class="simple">
@@ -361,7 +361,7 @@ automatically enabled, if available on your platform (see
 <a class="reference internal" href="../library/site.html#rlcompleter-config"><span class="std std-ref">Readline configuration</span></a>).</p>
 <div class="admonition seealso">
 <p class="admonition-title">Zobacz także</p>
-<p><a class="reference internal" href="../tutorial/interpreter.html#tut-invoking"><span class="std std-ref">Invoking the Interpreter</span></a></p>
+<p><a class="reference internal" href="../tutorial/interpreter.html#tut-invoking"><span class="std std-ref">Wywoływanie Interpretera</span></a></p>
 </div>
 <div class="versionchanged">
 <p><span class="versionmodified changed">Zmienione w wersji 3.4: </span>Automatic enabling of tab-completion and history editing.</p>
@@ -566,8 +566,8 @@ and <a class="reference internal" href="#cmdoption-I"><code class="xref std std-
 <dt class="sig sig-object std" id="cmdoption-R">
 <span class="sig-name descname"><span class="pre">-R</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-R" title="Link to this definition">¶</a></dt>
 <dd><p>Turn on hash randomization. This option only has an effect if the
-<span class="target" id="index-13"></span><a class="reference internal" href="#envvar-PYTHONHASHSEED"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">PYTHONHASHSEED</span></code></a> environment variable is set to <code class="docutils literal notranslate"><span class="pre">0</span></code>, since hash
-randomization is enabled by default.</p>
+<span class="target" id="index-13"></span><a class="reference internal" href="#envvar-PYTHONHASHSEED"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">PYTHONHASHSEED</span></code></a> environment variable is set to anything other
+than <code class="docutils literal notranslate"><span class="pre">random</span></code>, since hash randomization is enabled by default.</p>
 <p>On previous versions of Python, this option turns on hash randomization,
 so that the <a class="reference internal" href="../reference/datamodel.html#object.__hash__" title="object.__hash__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">__hash__()</span></code></a> values of str and bytes objects
 are „salted” with an unpredictable random value.  Although they remain
@@ -1027,7 +1027,7 @@ to do nothing but return immediately.</p>
 <a class="reference internal" href="#cmdoption-i"><code class="xref std std-option docutils literal notranslate"><span class="pre">-i</span></code></a> option.</p>
 <p>This variable can also be modified by Python code using <a class="reference internal" href="../library/os.html#os.environ" title="os.environ"><code class="xref py py-data docutils literal notranslate"><span class="pre">os.environ</span></code></a>
 to force inspect mode on program termination.</p>
-<p class="audit-hook" id="audit_event_cpython_run_stdin_1">Raises an <a class="reference internal" href="../library/sys.html#auditing"><span class="std std-ref">auditing event</span></a> <code class="docutils literal notranslate"><span class="pre">cpython.run_stdin</span></code> with no arguments.</p>
+<p class="audit-hook" id="audit_event_cpython_run_stdin_4">Raises an <a class="reference internal" href="../library/sys.html#auditing"><span class="std std-ref">auditing event</span></a> <code class="docutils literal notranslate"><span class="pre">cpython.run_stdin</span></code> with no arguments.</p>
 <div class="versionchanged">
 <p><span class="versionmodified changed">Zmienione w wersji 3.12.5: </span>(also 3.11.10, 3.10.15, 3.9.20, and 3.8.20)
 Emits audit events.</p>
@@ -1293,7 +1293,7 @@ error handler</span></a> mode will revert to their pre-3.6 values of «mbcs» an
 <p>This may also be enabled at runtime with
 <a class="reference internal" href="../library/sys.html#sys._enablelegacywindowsfsencoding" title="sys._enablelegacywindowsfsencoding"><code class="xref py py-func docutils literal notranslate"><span class="pre">sys._enablelegacywindowsfsencoding()</span></code></a>.</p>
 <div class="availability docutils container">
-<p><a class="reference internal" href="../library/intro.html#availability"><span class="std std-ref">Availability</span></a>: Windows.</p>
+<p><a class="reference internal" href="../library/intro.html#availability"><span class="std std-ref">Dostępność</span></a>: Windows.</p>
 </div>
 <div class="versionadded">
 <p><span class="versionmodified added"> Dodane w wersji 3.6: </span>See <span class="target" id="index-55"></span><a class="pep reference external" href="https://peps.python.org/pep-0529/"><strong>PEP 529</strong></a> for more details.</p>
@@ -1309,7 +1309,7 @@ the active console code page, rather than using utf-8.</p>
 <p>This variable is ignored if the standard streams are redirected (to files
 or pipes) rather than referring to console buffers.</p>
 <div class="availability docutils container">
-<p><a class="reference internal" href="../library/intro.html#availability"><span class="std std-ref">Availability</span></a>: Windows.</p>
+<p><a class="reference internal" href="../library/intro.html#availability"><span class="std std-ref">Dostępność</span></a>: Windows.</p>
 </div>
 <div class="versionadded">
 <p><span class="versionmodified added"> Dodane w wersji 3.6.</span></p>
@@ -1359,7 +1359,7 @@ default in legacy ASCII-based locales. Both features must be disabled in
 order to force the interpreter to use <code class="docutils literal notranslate"><span class="pre">ASCII</span></code> instead of <code class="docutils literal notranslate"><span class="pre">UTF-8</span></code> for
 system interfaces.</p>
 <div class="availability docutils container">
-<p><a class="reference internal" href="../library/intro.html#availability"><span class="std std-ref">Availability</span></a>: Unix.</p>
+<p><a class="reference internal" href="../library/intro.html#availability"><span class="std std-ref">Dostępność</span></a>: Unix.</p>
 </div>
 <div class="versionadded">
 <p><span class="versionmodified added"> Dodane w wersji 3.7: </span>See <span class="target" id="index-58"></span><a class="pep reference external" href="https://peps.python.org/pep-0538/"><strong>PEP 538</strong></a> for more details.</p>
@@ -1629,7 +1629,7 @@ which takes precedence over this variable.</p>
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#">1. Command line and environment</a><ul>
 <li><a class="reference internal" href="#command-line">1.1. Command line</a><ul>
@@ -1649,14 +1649,14 @@ which takes precedence over this variable.</p>
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="index.html"
-                          title="previous chapter">Python Setup and Usage</a></p>
+                          title="poprzedni rozdział">Instalacja i używanie Pythona</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="unix.html"
-                          title="next chapter"><span class="section-number">2. </span>Using Python on Unix platforms</a></p>
+                          title="następny rozdział"><span class="section-number">2. </span>Python na platformach Unix</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -1670,7 +1670,7 @@ which takes precedence over this variable.</p>
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -1687,10 +1687,10 @@ which takes precedence over this variable.</p>
           <a href="../py-modindex.html" title="Indeks modułów Pythona"
              >moduły</a> |</li>
         <li class="right" >
-          <a href="unix.html" title="2. Using Python on Unix platforms"
+          <a href="unix.html" title="2. Python na platformach Unix"
              >dalej</a> |</li>
         <li class="right" >
-          <a href="index.html" title="Python Setup and Usage"
+          <a href="index.html" title="Instalacja i używanie Pythona"
              >wstecz</a> |</li>
 
           <li><img src="../_static/py.svg" alt="Python logo" style="vertical-align: middle; margin-top: -1px"></li>
@@ -1706,7 +1706,7 @@ which takes precedence over this variable.</p>
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >Python Setup and Usage</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Instalacja i używanie Pythona</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><span class="section-number">1. </span>Command line and environment</a></li>
                 <li class="right">
                     
@@ -1754,7 +1754,7 @@ which takes precedence over this variable.</p>
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

@@ -8,10 +8,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://docs.python.org/3/library/configparser.html" />
 <meta property="og:site_name" content="Python documentation" />
-<meta property="og:description" content="Source code: Lib/configparser.py This module provides the ConfigParser class which implements a basic configuration language which provides a structure similar to what’s found in Microsoft Windows ..." />
+<meta property="og:description" content="Kod źródłowy: Lib/configparser.py This module provides the ConfigParser class which implements a basic configuration language which provides a structure similar to what’s found in Microsoft Windows..." />
 <meta property="og:image" content="_static/og-image.png" />
 <meta property="og:image:alt" content="Python documentation" />
-<meta name="description" content="Source code: Lib/configparser.py This module provides the ConfigParser class which implements a basic configuration language which provides a structure similar to what’s found in Microsoft Windows ..." />
+<meta name="description" content="Kod źródłowy: Lib/configparser.py This module provides the ConfigParser class which implements a basic configuration language which provides a structure similar to what’s found in Microsoft Windows..." />
 <meta name="theme-color" content="#3776ab">
 <meta property="og:image:width" content="200">
 <meta property="og:image:height" content="200">
@@ -31,11 +31,11 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
     <link rel="next" title="tomllib — Parse TOML files" href="tomllib.html" />
     <link rel="prev" title="csv — CSV File Reading and Writing" href="csv.html" />
@@ -98,7 +98,7 @@
     </select>
 </label>
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">configparser</span></code> — Configuration file parser</a><ul>
 <li><a class="reference internal" href="#quick-start">Quick Start</a></li>
@@ -112,21 +112,21 @@
 <li><a class="reference internal" href="#legacy-api-examples">Legacy API Examples</a></li>
 <li><a class="reference internal" href="#configparser-objects">ConfigParser Objects</a></li>
 <li><a class="reference internal" href="#rawconfigparser-objects">RawConfigParser Objects</a></li>
-<li><a class="reference internal" href="#exceptions">Exceptions</a></li>
+<li><a class="reference internal" href="#exceptions">Wyjątki</a></li>
 </ul>
 </li>
 </ul>
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="csv.html"
-                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">csv</span></code> — CSV File Reading and Writing</a></p>
+                          title="poprzedni rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">csv</span></code> — CSV File Reading and Writing</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="tomllib.html"
-                          title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">tomllib</span></code> — Parse TOML files</a></p>
+                          title="następny rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">tomllib</span></code> — Parse TOML files</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -173,7 +173,7 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="fileformats.html" accesskey="U">File Formats</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">configparser</span></code> — Configuration file parser</a></li>
                 <li class="right">
@@ -207,7 +207,7 @@
             
   <section id="module-configparser">
 <span id="configparser-configuration-file-parser"></span><h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">configparser</span></code> — Configuration file parser<a class="headerlink" href="#module-configparser" title="Link to this heading">¶</a></h1>
-<p><strong>Source code:</strong> <a class="extlink-source reference external" href="https://github.com/python/cpython/tree/main/Lib/configparser.py">Lib/configparser.py</a></p>
+<p><strong>Kod źródłowy:</strong> <a class="extlink-source reference external" href="https://github.com/python/cpython/tree/main/Lib/configparser.py">Lib/configparser.py</a></p>
 <hr class="docutils" id="index-0" />
 <p>This module provides the <a class="reference internal" href="#configparser.ConfigParser" title="configparser.ConfigParser"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConfigParser</span></code></a> class which implements a basic
 configuration language which provides a structure similar to what’s found in
@@ -224,10 +224,10 @@ the Windows Registry extended version of INI syntax.</p>
 <dt>Module <a class="reference internal" href="tomllib.html#module-tomllib" title="tomllib: Parse TOML files."><code class="xref py py-mod docutils literal notranslate"><span class="pre">tomllib</span></code></a></dt><dd><p>TOML is a well-specified format for application configuration files.
 It is specifically designed to be an improved version of INI.</p>
 </dd>
-<dt>Module <a class="reference internal" href="shlex.html#module-shlex" title="shlex: Simple lexical analysis for Unix shell-like languages."><code class="xref py py-mod docutils literal notranslate"><span class="pre">shlex</span></code></a></dt><dd><p>Support for creating Unix shell-like mini-languages which can also
+<dt>moduł <a class="reference internal" href="shlex.html#module-shlex" title="shlex: Simple lexical analysis for Unix shell-like languages."><code class="xref py py-mod docutils literal notranslate"><span class="pre">shlex</span></code></a></dt><dd><p>Support for creating Unix shell-like mini-languages which can also
 be used for application configuration files.</p>
 </dd>
-<dt>Module <a class="reference internal" href="json.html#module-json" title="json: Encode and decode the JSON format."><code class="xref py py-mod docutils literal notranslate"><span class="pre">json</span></code></a></dt><dd><p>The <code class="docutils literal notranslate"><span class="pre">json</span></code> module implements a subset of JavaScript syntax which is
+<dt>moduł <a class="reference internal" href="json.html#module-json" title="json: Encode and decode the JSON format."><code class="xref py py-mod docutils literal notranslate"><span class="pre">json</span></code></a></dt><dd><p>The <code class="docutils literal notranslate"><span class="pre">json</span></code> module implements a subset of JavaScript syntax which is
 sometimes used for configuration, but does not support comments.</p>
 </dd>
 </dl>
@@ -430,7 +430,7 @@ the keys/values may be retrieved by <a class="reference internal" href="#configp
 <p>Configuration files may include comments, prefixed by specific
 characters (<code class="docutils literal notranslate"><span class="pre">#</span></code> and <code class="docutils literal notranslate"><span class="pre">;</span></code> by default <a class="footnote-reference brackets" href="#id16" id="id8" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>).  Comments may appear on
 their own on an otherwise empty line, possibly indented. <a class="footnote-reference brackets" href="#id16" id="id9" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p>
-<p>For example:</p>
+<p>Na przykład:</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[Simple Values]</span>
 <span class="na">key</span><span class="o">=</span><span class="s">value</span>
 <span class="na">spaces in keys</span><span class="o">=</span><span class="s">allowed</span>
@@ -504,7 +504,7 @@ from <code class="docutils literal notranslate"><span class="pre">get()</span></
 values to contain format strings which refer to other values in the same
 section, or values in the special default section <a class="footnote-reference brackets" href="#id16" id="id11" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>.  Additional default
 values can be provided on initialization.</p>
-<p>For example:</p>
+<p>Na przykład:</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[Paths]</span>
 <span class="na">home_dir</span><span class="o">:</span><span class="w"> </span><span class="s">/Users</span>
 <span class="na">my_dir</span><span class="o">:</span><span class="w"> </span><span class="s">%(home_dir)s/lumberjack</span>
@@ -1466,7 +1466,7 @@ which does not allow such assignments to take place.</p>
 
 </section>
 <section id="exceptions">
-<h2>Exceptions<a class="headerlink" href="#exceptions" title="Link to this heading">¶</a></h2>
+<h2>Wyjątki<a class="headerlink" href="#exceptions" title="Link to this heading">¶</a></h2>
 <dl class="py exception">
 <dt class="sig sig-object py" id="configparser.Error">
 <em class="property"><span class="k"><span class="pre">exception</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">configparser.</span></span><span class="sig-name descname"><span class="pre">Error</span></span><a class="headerlink" href="#configparser.Error" title="Link to this definition">¶</a></dt>
@@ -1588,7 +1588,7 @@ this exception.</p>
 </div>
 </dd></dl>
 
-<p class="rubric">Footnotes</p>
+<p class="rubric">Przypisy</p>
 <aside class="footnote-list brackets">
 <aside class="footnote brackets" id="id16" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
@@ -1609,7 +1609,7 @@ changing the behaviour outlined by the footnote reference, consult the
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
 <li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">configparser</span></code> — Configuration file parser</a><ul>
 <li><a class="reference internal" href="#quick-start">Quick Start</a></li>
@@ -1623,21 +1623,21 @@ changing the behaviour outlined by the footnote reference, consult the
 <li><a class="reference internal" href="#legacy-api-examples">Legacy API Examples</a></li>
 <li><a class="reference internal" href="#configparser-objects">ConfigParser Objects</a></li>
 <li><a class="reference internal" href="#rawconfigparser-objects">RawConfigParser Objects</a></li>
-<li><a class="reference internal" href="#exceptions">Exceptions</a></li>
+<li><a class="reference internal" href="#exceptions">Wyjątki</a></li>
 </ul>
 </li>
 </ul>
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="csv.html"
-                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">csv</span></code> — CSV File Reading and Writing</a></p>
+                          title="poprzedni rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">csv</span></code> — CSV File Reading and Writing</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="tomllib.html"
-                          title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">tomllib</span></code> — Parse TOML files</a></p>
+                          title="następny rozdział"><code class="xref py py-mod docutils literal notranslate"><span class="pre">tomllib</span></code> — Parse TOML files</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -1651,7 +1651,7 @@ changing the behaviour outlined by the footnote reference, consult the
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -1687,7 +1687,7 @@ changing the behaviour outlined by the footnote reference, consult the
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >The Python Standard Library</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Biblioteka standardowa Pythona</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="fileformats.html" >File Formats</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">configparser</span></code> — Configuration file parser</a></li>
                 <li class="right">
@@ -1736,7 +1736,7 @@ changing the behaviour outlined by the footnote reference, consult the
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

@@ -4,19 +4,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="What’s New In Python 3.9" />
+<meta property="og:title" content="Co nowego w Pythonie 3.9" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://docs.python.org/3/whatsnew/3.9.html" />
 <meta property="og:site_name" content="Python documentation" />
-<meta property="og:description" content="Editor, Łukasz Langa,. This article explains the new features in Python 3.9, compared to 3.8. Python 3.9 was released on October 5, 2020. For full details, see the changelog. Summary – Release high..." />
+<meta property="og:description" content="redakcja, Łukasz Langa,. This article explains the new features in Python 3.9, compared to 3.8. Python 3.9 was released on October 5, 2020. For full details, see the changelog. Podsumowanie – najwa..." />
 <meta property="og:image" content="_static/og-image.png" />
 <meta property="og:image:alt" content="Python documentation" />
-<meta name="description" content="Editor, Łukasz Langa,. This article explains the new features in Python 3.9, compared to 3.8. Python 3.9 was released on October 5, 2020. For full details, see the changelog. Summary – Release high..." />
+<meta name="description" content="redakcja, Łukasz Langa,. This article explains the new features in Python 3.9, compared to 3.8. Python 3.9 was released on October 5, 2020. For full details, see the changelog. Podsumowanie – najwa..." />
 <meta name="theme-color" content="#3776ab">
 <meta property="og:image:width" content="200">
 <meta property="og:image:height" content="200">
 
-    <title>What’s New In Python 3.9 &#8212; Python 3.15.0a0 - dokumentacja</title><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Co nowego w Pythonie 3.9 &#8212; Python 3.15.0a0 - dokumentacja</title><meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=234b1a7c" />
@@ -31,14 +31,14 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
-    <link rel="next" title="What’s New In Python 3.8" href="3.8.html" />
-    <link rel="prev" title="What’s New In Python 3.10" href="3.10.html" />
+    <link rel="next" title="Co nowego w Pythonie 3.8" href="3.8.html" />
+    <link rel="prev" title="Co nowego w Pythonie 3.10" href="3.10.html" />
     
       
       <link rel="canonical" href="https://docs.python.org/3/whatsnew/3.9.html">
@@ -98,13 +98,13 @@
     </select>
 </label>
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
-<li><a class="reference internal" href="#">What’s New In Python 3.9</a><ul>
-<li><a class="reference internal" href="#summary-release-highlights">Summary – Release highlights</a></li>
-<li><a class="reference internal" href="#you-should-check-for-deprecationwarning-in-your-code">You should check for DeprecationWarning in your code</a></li>
-<li><a class="reference internal" href="#new-features">New Features</a><ul>
-<li><a class="reference internal" href="#dictionary-merge-update-operators">Dictionary Merge &amp; Update Operators</a></li>
+<li><a class="reference internal" href="#">Co nowego w Pythonie 3.9</a><ul>
+<li><a class="reference internal" href="#summary-release-highlights">Podsumowanie – najważniejsze nowości</a></li>
+<li><a class="reference internal" href="#you-should-check-for-deprecationwarning-in-your-code">Powinieneś(-winnaś) sprawdzić DeprecationWarningi w swoim kodzie</a></li>
+<li><a class="reference internal" href="#new-features">Nowe funkcjonalności</a><ul>
+<li><a class="reference internal" href="#dictionary-merge-update-operators">Operatory łączenia i aktualizowania słowników</a></li>
 <li><a class="reference internal" href="#new-string-methods-to-remove-prefixes-and-suffixes">New String Methods to Remove Prefixes and Suffixes</a></li>
 <li><a class="reference internal" href="#type-hinting-generics-in-standard-collections">Type Hinting Generics in Standard Collections</a></li>
 <li><a class="reference internal" href="#new-parser">New Parser</a></li>
@@ -116,7 +116,7 @@
 <li><a class="reference internal" href="#graphlib">graphlib</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#improved-modules">Improved Modules</a><ul>
+<li><a class="reference internal" href="#improved-modules">Ulepszone moduły</a><ul>
 <li><a class="reference internal" href="#ast">ast</a></li>
 <li><a class="reference internal" href="#asyncio">asyncio</a></li>
 <li><a class="reference internal" href="#compileall">compileall</a></li>
@@ -166,13 +166,13 @@
 </ul>
 </li>
 <li><a class="reference internal" href="#build-changes">Build Changes</a></li>
-<li><a class="reference internal" href="#c-api-changes">C API Changes</a><ul>
-<li><a class="reference internal" href="#id1">New Features</a></li>
+<li><a class="reference internal" href="#c-api-changes">Zmiany w C API</a><ul>
+<li><a class="reference internal" href="#id1">Nowe funkcjonalności</a></li>
 <li><a class="reference internal" href="#id2">Porting to Python 3.9</a></li>
 <li><a class="reference internal" href="#id3">Removed</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#notable-changes-in-python-3-9-1">Notable changes in Python 3.9.1</a><ul>
+<li><a class="reference internal" href="#notable-changes-in-python-3-9-1">Istotne zmiany w wersji 3.9.1</a><ul>
 <li><a class="reference internal" href="#id4">typing</a></li>
 <li><a class="reference internal" href="#macos-11-0-big-sur-and-apple-silicon-mac-support">macOS 11.0 (Big Sur) and Apple Silicon Mac support</a></li>
 </ul>
@@ -198,14 +198,14 @@
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="3.10.html"
-                          title="previous chapter">What’s New In Python 3.10</a></p>
+                          title="poprzedni rozdział">Co nowego w Pythonie 3.10</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="3.8.html"
-                          title="next chapter">What’s New In Python 3.8</a></p>
+                          title="następny rozdział">Co nowego w Pythonie 3.8</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -233,10 +233,10 @@
           <a href="../py-modindex.html" title="Indeks modułów Pythona"
              >moduły</a> |</li>
         <li class="right" >
-          <a href="3.8.html" title="What’s New In Python 3.8"
+          <a href="3.8.html" title="Co nowego w Pythonie 3.8"
              accesskey="N">dalej</a> |</li>
         <li class="right" >
-          <a href="3.10.html" title="What’s New In Python 3.10"
+          <a href="3.10.html" title="Co nowego w Pythonie 3.10"
              accesskey="P">wstecz</a> |</li>
 
           <li><img src="../_static/py.svg" alt="Python logo" style="vertical-align: middle; margin-top: -1px"></li>
@@ -252,8 +252,8 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">What’s New in Python</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">What’s New In Python 3.9</a></li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Co nowego w Pythonie</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Co nowego w Pythonie 3.9</a></li>
                 <li class="right">
                     
 
@@ -284,9 +284,9 @@
           <div class="body" role="main">
             
   <section id="what-s-new-in-python-3-9">
-<h1>What’s New In Python 3.9<a class="headerlink" href="#what-s-new-in-python-3-9" title="Link to this heading">¶</a></h1>
+<h1>Co nowego w Pythonie 3.9<a class="headerlink" href="#what-s-new-in-python-3-9" title="Link to this heading">¶</a></h1>
 <dl class="field-list simple">
-<dt class="field-odd">Editor<span class="colon">:</span></dt>
+<dt class="field-odd">redakcja<span class="colon">:</span></dt>
 <dd class="field-odd"><p>Łukasz Langa</p>
 </dd>
 </dl>
@@ -298,31 +298,28 @@ For full details, see the <a class="reference internal" href="changelog.html#cha
 <p><span class="target" id="index-0"></span><a class="pep reference external" href="https://peps.python.org/pep-0596/"><strong>PEP 596</strong></a> - Python 3.9 Release Schedule</p>
 </div>
 <section id="summary-release-highlights">
-<h2>Summary – Release highlights<a class="headerlink" href="#summary-release-highlights" title="Link to this heading">¶</a></h2>
-<p>New syntax features:</p>
+<h2>Podsumowanie – najważniejsze nowości<a class="headerlink" href="#summary-release-highlights" title="Link to this heading">¶</a></h2>
+<p>Nowe cechy składni:</p>
 <ul class="simple">
-<li><p><span class="target" id="index-1"></span><a class="pep reference external" href="https://peps.python.org/pep-0584/"><strong>PEP 584</strong></a>, union operators added to <code class="docutils literal notranslate"><span class="pre">dict</span></code>;</p></li>
-<li><p><span class="target" id="index-2"></span><a class="pep reference external" href="https://peps.python.org/pep-0585/"><strong>PEP 585</strong></a>, type hinting generics in standard collections;</p></li>
-<li><p><span class="target" id="index-3"></span><a class="pep reference external" href="https://peps.python.org/pep-0614/"><strong>PEP 614</strong></a>, relaxed grammar restrictions on decorators.</p></li>
+<li><p><span class="target" id="index-41"></span><a class="pep reference external" href="https://peps.python.org/pep-0584/"><strong>PEP 584</strong></a>, operatory sumy dodane do <code class="docutils literal notranslate"><span class="pre">dict</span></code>a;</p></li>
+<li><p><span class="target" id="index-42"></span><a class="pep reference external" href="https://peps.python.org/pep-0585/"><strong>PEP 585</strong></a>, type-hintowanie genericów w standardowych kolekcjach;</p></li>
+<li><p><span class="target" id="index-43"></span><a class="pep reference external" href="https://peps.python.org/pep-0614/"><strong>PEP 614</strong></a>, zmniejszenie składniowych restrykcji dla dekoratorów.</p></li>
 </ul>
-<p>New built-in features:</p>
+<p>Nowe wbudowane funkcje:</p>
 <ul class="simple">
-<li><p><span class="target" id="index-4"></span><a class="pep reference external" href="https://peps.python.org/pep-0616/"><strong>PEP 616</strong></a>, string methods to remove prefixes and suffixes.</p></li>
+<li><p><span class="target" id="index-44"></span><a class="pep reference external" href="https://peps.python.org/pep-0616/"><strong>PEP 616</strong></a>, metody ciągu znaków do usuwania prefiksów i sufiksów.</p></li>
 </ul>
-<p>New features in the standard library:</p>
+<p>Nowe funkcjonalności w bibliotece standardowej:</p>
 <ul class="simple">
-<li><p><span class="target" id="index-5"></span><a class="pep reference external" href="https://peps.python.org/pep-0593/"><strong>PEP 593</strong></a>, flexible function and variable annotations;</p></li>
-<li><p><a class="reference internal" href="../library/os.html#os.pidfd_open" title="os.pidfd_open"><code class="xref py py-func docutils literal notranslate"><span class="pre">os.pidfd_open()</span></code></a> added that allows process management without races
-and signals.</p></li>
+<li><p><span class="target" id="index-45"></span><a class="pep reference external" href="https://peps.python.org/pep-0593/"><strong>PEP 593</strong></a>, elastyczne adnotowanie funkcji i zmiennych;</p></li>
+<li><p>dodane <a class="reference internal" href="../library/os.html#os.pidfd_open" title="os.pidfd_open"><code class="xref py py-func docutils literal notranslate"><span class="pre">os.pidfd_open()</span></code></a> pozwalające na zarządzanie procesami bez wyścigów i sygnałów.</p></li>
 </ul>
-<p>Interpreter improvements:</p>
+<p>Udoskonalenia interpretera:</p>
 <ul class="simple">
-<li><p><span class="target" id="index-6"></span><a class="pep reference external" href="https://peps.python.org/pep-0573/"><strong>PEP 573</strong></a>, fast access to module state from methods of C extension
-types;</p></li>
-<li><p><span class="target" id="index-7"></span><a class="pep reference external" href="https://peps.python.org/pep-0617/"><strong>PEP 617</strong></a>, CPython now uses a new parser based on PEG;</p></li>
-<li><p>a number of Python builtins (range, tuple, set, frozenset, list, dict) are
-now sped up using <span class="target" id="index-8"></span><a class="pep reference external" href="https://peps.python.org/pep-0590/"><strong>PEP 590</strong></a> vectorcall;</p></li>
-<li><p>garbage collection does not block on resurrected objects;</p></li>
+<li><p><span class="target" id="index-46"></span><a class="pep reference external" href="https://peps.python.org/pep-0573/"><strong>PEP 573</strong></a>, szybki dostęp do stanu modułu z metod typów rozszerzeń C;</p></li>
+<li><p><span class="target" id="index-47"></span><a class="pep reference external" href="https://peps.python.org/pep-0617/"><strong>PEP 617</strong></a>, CPython używa teraz nowego parsera opartego na PEG;</p></li>
+<li><p>wiele wbudowanych struktur danych Pythona (range, tuple, set, frozenset, list, dict) są teraz przyspieszone przy użyciu vectorcall z <span class="target" id="index-48"></span><a class="pep reference external" href="https://peps.python.org/pep-0590/"><strong>PEP 590</strong></a>;</p></li>
+<li><p>garbage collection nie blokuje się na wskrzeszonych obiektach;</p></li>
 <li><p>a number of Python modules (<code class="xref py py-mod docutils literal notranslate"><span class="pre">_abc</span></code>, <code class="xref py py-mod docutils literal notranslate"><span class="pre">audioop</span></code>, <code class="xref py py-mod docutils literal notranslate"><span class="pre">_bz2</span></code>,
 <code class="xref py py-mod docutils literal notranslate"><span class="pre">_codecs</span></code>, <code class="xref py py-mod docutils literal notranslate"><span class="pre">_contextvars</span></code>, <code class="xref py py-mod docutils literal notranslate"><span class="pre">_crypt</span></code>, <code class="xref py py-mod docutils literal notranslate"><span class="pre">_functools</span></code>,
 <code class="xref py py-mod docutils literal notranslate"><span class="pre">_json</span></code>, <code class="xref py py-mod docutils literal notranslate"><span class="pre">_locale</span></code>, <a class="reference internal" href="../library/math.html#module-math" title="math: Mathematical functions (sin() etc.)."><code class="xref py py-mod docutils literal notranslate"><span class="pre">math</span></code></a>, <a class="reference internal" href="../library/operator.html#module-operator" title="operator: Functions corresponding to the standard operators."><code class="xref py py-mod docutils literal notranslate"><span class="pre">operator</span></code></a>, <a class="reference internal" href="../library/resource.html#module-resource" title="resource: An interface to provide resource usage information on the current process. (Unix)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">resource</span></code></a>,
@@ -333,50 +330,35 @@ by PEP 489;</p></li>
 <a class="reference internal" href="../library/select.html#module-select" title="select: Wait for I/O completion on multiple streams."><code class="xref py py-mod docutils literal notranslate"><span class="pre">select</span></code></a>, <a class="reference internal" href="../library/struct.html#module-struct" title="struct: Interpret bytes as packed binary data."><code class="xref py py-mod docutils literal notranslate"><span class="pre">struct</span></code></a>, <a class="reference internal" href="../library/termios.html#module-termios" title="termios: POSIX style tty control. (Unix)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">termios</span></code></a>, <a class="reference internal" href="../library/zlib.html#module-zlib" title="zlib: Low-level interface to compression and decompression routines compatible with gzip."><code class="xref py py-mod docutils literal notranslate"><span class="pre">zlib</span></code></a>) are now using
 the stable ABI defined by PEP 384.</p></li>
 </ul>
-<p>New library modules:</p>
+<p>Nowe moduły biblioteki:</p>
 <ul class="simple">
-<li><p><span class="target" id="index-9"></span><a class="pep reference external" href="https://peps.python.org/pep-0615/"><strong>PEP 615</strong></a>, the IANA Time Zone Database is now present in the standard
-library in the <a class="reference internal" href="../library/zoneinfo.html#module-zoneinfo" title="zoneinfo: IANA time zone support"><code class="xref py py-mod docutils literal notranslate"><span class="pre">zoneinfo</span></code></a> module;</p></li>
-<li><p>an implementation of a topological sort of a graph is now provided in
-the new <a class="reference internal" href="../library/graphlib.html#module-graphlib" title="graphlib: Functionality to operate with graph-like structures"><code class="xref py py-mod docutils literal notranslate"><span class="pre">graphlib</span></code></a> module.</p></li>
+<li><p><span class="target" id="index-49"></span><a class="pep reference external" href="https://peps.python.org/pep-0615/"><strong>PEP 615</strong></a>, baza danych stref czasowych IANA jest teraz dostępna w bibliotece standardowej w module <a class="reference internal" href="../library/zoneinfo.html#module-zoneinfo" title="zoneinfo: IANA time zone support"><code class="xref py py-mod docutils literal notranslate"><span class="pre">zoneinfo</span></code></a>;</p></li>
+<li><p>implementacja sortowania topologicznego grafu znajduje się w nowym module <a class="reference internal" href="../library/graphlib.html#module-graphlib" title="graphlib: Functionality to operate with graph-like structures"><code class="xref py py-mod docutils literal notranslate"><span class="pre">graphlib</span></code></a>.</p></li>
 </ul>
-<p>Release process changes:</p>
+<p>Zmiany w procesie wydawniczym:</p>
 <ul class="simple">
-<li><p><span class="target" id="index-10"></span><a class="pep reference external" href="https://peps.python.org/pep-0602/"><strong>PEP 602</strong></a>, CPython adopts an annual release cycle.</p></li>
+<li><p><span class="target" id="index-50"></span><a class="pep reference external" href="https://peps.python.org/pep-0602/"><strong>PEP 602</strong></a>, CPython przyjmuje roczny cykl wydawniczy.</p></li>
 </ul>
 </section>
 <section id="you-should-check-for-deprecationwarning-in-your-code">
-<h2>You should check for DeprecationWarning in your code<a class="headerlink" href="#you-should-check-for-deprecationwarning-in-your-code" title="Link to this heading">¶</a></h2>
-<p>When Python 2.7 was still supported, a lot of functionality in Python 3
-was kept for backward compatibility with Python 2.7. With the end of Python
-2 support, these backward compatibility layers have been removed, or will
-be removed soon. Most of them emitted a <a class="reference internal" href="../library/exceptions.html#DeprecationWarning" title="DeprecationWarning"><code class="xref py py-exc docutils literal notranslate"><span class="pre">DeprecationWarning</span></code></a> warning for
-several years. For example, using <code class="docutils literal notranslate"><span class="pre">collections.Mapping</span></code> instead of
-<code class="docutils literal notranslate"><span class="pre">collections.abc.Mapping</span></code> emits a <a class="reference internal" href="../library/exceptions.html#DeprecationWarning" title="DeprecationWarning"><code class="xref py py-exc docutils literal notranslate"><span class="pre">DeprecationWarning</span></code></a> since Python
-3.3, released in 2012.</p>
-<p>Test your application with the <a class="reference internal" href="../using/cmdline.html#cmdoption-W"><code class="xref std std-option docutils literal notranslate"><span class="pre">-W</span></code></a> <code class="docutils literal notranslate"><span class="pre">default</span></code> command-line option to see
-<a class="reference internal" href="../library/exceptions.html#DeprecationWarning" title="DeprecationWarning"><code class="xref py py-exc docutils literal notranslate"><span class="pre">DeprecationWarning</span></code></a> and <a class="reference internal" href="../library/exceptions.html#PendingDeprecationWarning" title="PendingDeprecationWarning"><code class="xref py py-exc docutils literal notranslate"><span class="pre">PendingDeprecationWarning</span></code></a>, or even with
-<a class="reference internal" href="../using/cmdline.html#cmdoption-W"><code class="xref std std-option docutils literal notranslate"><span class="pre">-W</span></code></a> <code class="docutils literal notranslate"><span class="pre">error</span></code> to treat them as errors. <a class="reference internal" href="../library/warnings.html#warning-filter"><span class="std std-ref">Warnings Filter</span></a> can be used to ignore warnings from third-party code.</p>
-<p>Python 3.9 is the last version providing those Python 2 backward compatibility
-layers, to give more time to Python projects maintainers to organize the
-removal of the Python 2 support and add support for Python 3.9.</p>
-<p>Aliases to <a class="reference internal" href="../library/collections.abc.html#collections-abstract-base-classes"><span class="std std-ref">Abstract Base Classes</span></a> in
-the <a class="reference internal" href="../library/collections.html#module-collections" title="collections: Container datatypes"><code class="xref py py-mod docutils literal notranslate"><span class="pre">collections</span></code></a> module, like <code class="docutils literal notranslate"><span class="pre">collections.Mapping</span></code> alias to
-<a class="reference internal" href="../library/collections.abc.html#collections.abc.Mapping" title="collections.abc.Mapping"><code class="xref py py-class docutils literal notranslate"><span class="pre">collections.abc.Mapping</span></code></a>, are kept for one last release for backward
-compatibility. They will be removed from Python 3.10.</p>
+<h2>Powinieneś(-winnaś) sprawdzić DeprecationWarningi w swoim kodzie<a class="headerlink" href="#you-should-check-for-deprecationwarning-in-your-code" title="Link to this heading">¶</a></h2>
+<p>Gdy Python 2.7 był jeszcze wspierany, wiele funkcjonalności było utrzymanych w Pythonie 3 dla zgodności wstecznej z Pythonem 2.7. Wraz z zakończeniem wsparcia dla Pythona 2.7, te warstwy kompatybilności wstecznej zostały usunięte, lub zostaną wkrótce usunięte. Większość z nich emitowała warning <a class="reference internal" href="../library/exceptions.html#DeprecationWarning" title="DeprecationWarning"><code class="xref py py-exc docutils literal notranslate"><span class="pre">DeprecationWarning</span></code></a> przez kilka lat. Na przykład użycie <code class="docutils literal notranslate"><span class="pre">collections.Mapping</span></code> zamiast <code class="docutils literal notranslate"><span class="pre">collections.abc.Mapping</span></code> emituje <a class="reference internal" href="../library/exceptions.html#DeprecationWarning" title="DeprecationWarning"><code class="xref py py-exc docutils literal notranslate"><span class="pre">DeprecationWarning</span></code></a> od Pythona 3.3, wydanego w 2012.</p>
+<p>Testuj swoją aplikację z opcją linii komend <a class="reference internal" href="../using/cmdline.html#cmdoption-W"><code class="xref std std-option docutils literal notranslate"><span class="pre">-W</span></code></a> <code class="docutils literal notranslate"><span class="pre">default</span></code>, by widzieć <a class="reference internal" href="../library/exceptions.html#DeprecationWarning" title="DeprecationWarning"><code class="xref py py-exc docutils literal notranslate"><span class="pre">DeprecationWarning</span></code></a>i i <a class="reference internal" href="../library/exceptions.html#PendingDeprecationWarning" title="PendingDeprecationWarning"><code class="xref py py-exc docutils literal notranslate"><span class="pre">PendingDeprecationWarning</span></code></a>i, lub nawet z <a class="reference internal" href="../using/cmdline.html#cmdoption-W"><code class="xref std std-option docutils literal notranslate"><span class="pre">-W</span></code></a> <code class="docutils literal notranslate"><span class="pre">error</span></code>, by traktować je jako błędy. Możesz użyć <a class="reference internal" href="../library/warnings.html#warning-filter"><span class="std std-ref">filtra warningów</span></a>, by ignorować warningi z kodu od osób trzecich.</p>
+<p>Python 3.9 jest ostatnią wersją z tymi warstwami wstecznej kompatybilności z Pythonem 2, aby dać więcej czasu maintainerom pythonowych projektów na zorganizowanie usunięcia wsparcia dla Pythona 2 i dodania wsparcia dla Pythona 3.9.</p>
+<p>Aliasy <a class="reference internal" href="../library/collections.abc.html#collections-abstract-base-classes"><span class="std std-ref">abstrakcyjnych klas bazowych</span></a> w module <a class="reference internal" href="../library/collections.html#module-collections" title="collections: Container datatypes"><code class="xref py py-mod docutils literal notranslate"><span class="pre">collections</span></code></a>, takie jak alias <code class="docutils literal notranslate"><span class="pre">collections.Mapping</span></code> do <a class="reference internal" href="../library/collections.abc.html#collections.abc.Mapping" title="collections.abc.Mapping"><code class="xref py py-class docutils literal notranslate"><span class="pre">collections.abc.Mapping</span></code></a>, są zachowane na to jedno wydanie dla zgodności wstecznej. Zostaną usunięte z Pythona 3.10.</p>
 <p>More generally, try to run your tests in the <a class="reference internal" href="../library/devmode.html#devmode"><span class="std std-ref">Python Development Mode</span></a> which helps to prepare your code to make it compatible with the
 next Python version.</p>
 <p>Note: a number of pre-existing deprecations were removed in this version of
 Python as well. Consult the <a class="reference internal" href="#removed-in-python-39"><span class="std std-ref">Removed</span></a> section.</p>
 </section>
 <section id="new-features">
-<h2>New Features<a class="headerlink" href="#new-features" title="Link to this heading">¶</a></h2>
+<h2>Nowe funkcjonalności<a class="headerlink" href="#new-features" title="Link to this heading">¶</a></h2>
 <section id="dictionary-merge-update-operators">
-<h3>Dictionary Merge &amp; Update Operators<a class="headerlink" href="#dictionary-merge-update-operators" title="Link to this heading">¶</a></h3>
+<h3>Operatory łączenia i aktualizowania słowników<a class="headerlink" href="#dictionary-merge-update-operators" title="Link to this heading">¶</a></h3>
 <p>Merge (<code class="docutils literal notranslate"><span class="pre">|</span></code>) and update (<code class="docutils literal notranslate"><span class="pre">|=</span></code>) operators have been added to the built-in
 <a class="reference internal" href="../library/stdtypes.html#dict" title="dict"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a> class. Those complement the existing <code class="docutils literal notranslate"><span class="pre">dict.update</span></code> and
 <code class="docutils literal notranslate"><span class="pre">{**d1,</span> <span class="pre">**d2}</span></code> methods of merging dictionaries.</p>
-<p>Example:</p>
+<p>Przykład:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;key1&quot;</span><span class="p">:</span> <span class="s2">&quot;value1 from x&quot;</span><span class="p">,</span> <span class="s2">&quot;key2&quot;</span><span class="p">:</span> <span class="s2">&quot;value2 from x&quot;</span><span class="p">}</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;key2&quot;</span><span class="p">:</span> <span class="s2">&quot;value2 from y&quot;</span><span class="p">,</span> <span class="s2">&quot;key3&quot;</span><span class="p">:</span> <span class="s2">&quot;value3 from y&quot;</span><span class="p">}</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">|</span> <span class="n">y</span>
@@ -404,7 +386,7 @@ added. See <span class="target" id="index-12"></span><a class="pep reference ext
 corresponding capitalized types (e.g. <code class="docutils literal notranslate"><span class="pre">List</span></code> or <code class="docutils literal notranslate"><span class="pre">Dict</span></code>) from
 <code class="docutils literal notranslate"><span class="pre">typing</span></code>.  Some other types in the standard library are also now generic,
 for example <code class="docutils literal notranslate"><span class="pre">queue.Queue</span></code>.</p>
-<p>Example:</p>
+<p>Przykład:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">greet_all</span><span class="p">(</span><span class="n">names</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
     <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">names</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
@@ -488,7 +470,7 @@ and <a class="reference external" href="https://bugs.python.org/issue?&#64;actio
 <p>The <a class="reference internal" href="../library/zoneinfo.html#module-zoneinfo" title="zoneinfo: IANA time zone support"><code class="xref py py-mod docutils literal notranslate"><span class="pre">zoneinfo</span></code></a> module brings support for the IANA time zone database to
 the standard library. It adds <a class="reference internal" href="../library/zoneinfo.html#zoneinfo.ZoneInfo" title="zoneinfo.ZoneInfo"><code class="xref py py-class docutils literal notranslate"><span class="pre">zoneinfo.ZoneInfo</span></code></a>, a concrete
 <a class="reference internal" href="../library/datetime.html#datetime.tzinfo" title="datetime.tzinfo"><code class="xref py py-class docutils literal notranslate"><span class="pre">datetime.tzinfo</span></code></a> implementation backed by the system’s time zone data.</p>
-<p>Example:</p>
+<p>Przykład:</p>
 <div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">zoneinfo</span><span class="w"> </span><span class="kn">import</span> <span class="n">ZoneInfo</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">timedelta</span>
 
@@ -527,7 +509,7 @@ Larry Hastings in <a class="reference external" href="https://bugs.python.org/is
 </section>
 </section>
 <section id="improved-modules">
-<h2>Improved Modules<a class="headerlink" href="#improved-modules" title="Link to this heading">¶</a></h2>
+<h2>Ulepszone moduły<a class="headerlink" href="#improved-modules" title="Link to this heading">¶</a></h2>
 <section id="ast">
 <h3>ast<a class="headerlink" href="#ast" title="Link to this heading">¶</a></h3>
 <p>Added the <em>indent</em> option to <a class="reference internal" href="../library/ast.html#ast.dump" title="ast.dump"><code class="xref py py-func docutils literal notranslate"><span class="pre">dump()</span></code></a> which allows it to produce a
@@ -1221,7 +1203,7 @@ types that have a custom <a class="reference internal" href="../c-api/typeobj.ht
 ensure that all custom <code class="docutils literal notranslate"><span class="pre">tp_traverse</span></code> functions of heap-allocated types
 visit the object’s type.</p>
 <blockquote>
-<div><p>Example:</p>
+<div><p>Przykład:</p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span>
 <span class="nf">foo_traverse</span><span class="p">(</span><span class="n">PyObject</span><span class="w"> </span><span class="o">*</span><span class="n">self</span><span class="p">,</span><span class="w"> </span><span class="n">visitproc</span><span class="w"> </span><span class="n">visit</span><span class="p">,</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="n">arg</span><span class="p">)</span>
 <span class="p">{</span>
@@ -1323,9 +1305,9 @@ environment, workload, and compiler tool chain.
 </ul>
 </section>
 <section id="c-api-changes">
-<h2>C API Changes<a class="headerlink" href="#c-api-changes" title="Link to this heading">¶</a></h2>
+<h2>Zmiany w C API<a class="headerlink" href="#c-api-changes" title="Link to this heading">¶</a></h2>
 <section id="id1">
-<h3>New Features<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h3>
+<h3>Nowe funkcjonalności<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h3>
 <ul>
 <li><p><span class="target" id="index-23"></span><a class="pep reference external" href="https://peps.python.org/pep-0573/"><strong>PEP 573</strong></a>: Added <a class="reference internal" href="../c-api/type.html#c.PyType_FromModuleAndSpec" title="PyType_FromModuleAndSpec"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyType_FromModuleAndSpec()</span></code></a> to associate
 a module with a class; <a class="reference internal" href="../c-api/type.html#c.PyType_GetModule" title="PyType_GetModule"><code class="xref c c-func docutils literal notranslate"><span class="pre">PyType_GetModule()</span></code></a> and
@@ -1525,7 +1507,7 @@ The public API symbols being removed are:
 </section>
 </section>
 <section id="notable-changes-in-python-3-9-1">
-<h2>Notable changes in Python 3.9.1<a class="headerlink" href="#notable-changes-in-python-3-9-1" title="Link to this heading">¶</a></h2>
+<h2>Istotne zmiany w wersji 3.9.1<a class="headerlink" href="#notable-changes-in-python-3-9-1" title="Link to this heading">¶</a></h2>
 <section id="id4">
 <h3>typing<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
 <p>The behavior of <a class="reference internal" href="../library/typing.html#typing.Literal" title="typing.Literal"><code class="xref py py-class docutils literal notranslate"><span class="pre">typing.Literal</span></code></a> was changed to conform with <span class="target" id="index-27"></span><a class="pep reference external" href="https://peps.python.org/pep-0586/"><strong>PEP 586</strong></a>
@@ -1655,13 +1637,13 @@ In Python 3.14, the default will switch to <code class="docutils literal notrans
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h3><a href="../contents.html">Table of Contents</a></h3>
+    <h3><a href="../contents.html">Spis treści</a></h3>
     <ul>
-<li><a class="reference internal" href="#">What’s New In Python 3.9</a><ul>
-<li><a class="reference internal" href="#summary-release-highlights">Summary – Release highlights</a></li>
-<li><a class="reference internal" href="#you-should-check-for-deprecationwarning-in-your-code">You should check for DeprecationWarning in your code</a></li>
-<li><a class="reference internal" href="#new-features">New Features</a><ul>
-<li><a class="reference internal" href="#dictionary-merge-update-operators">Dictionary Merge &amp; Update Operators</a></li>
+<li><a class="reference internal" href="#">Co nowego w Pythonie 3.9</a><ul>
+<li><a class="reference internal" href="#summary-release-highlights">Podsumowanie – najważniejsze nowości</a></li>
+<li><a class="reference internal" href="#you-should-check-for-deprecationwarning-in-your-code">Powinieneś(-winnaś) sprawdzić DeprecationWarningi w swoim kodzie</a></li>
+<li><a class="reference internal" href="#new-features">Nowe funkcjonalności</a><ul>
+<li><a class="reference internal" href="#dictionary-merge-update-operators">Operatory łączenia i aktualizowania słowników</a></li>
 <li><a class="reference internal" href="#new-string-methods-to-remove-prefixes-and-suffixes">New String Methods to Remove Prefixes and Suffixes</a></li>
 <li><a class="reference internal" href="#type-hinting-generics-in-standard-collections">Type Hinting Generics in Standard Collections</a></li>
 <li><a class="reference internal" href="#new-parser">New Parser</a></li>
@@ -1673,7 +1655,7 @@ In Python 3.14, the default will switch to <code class="docutils literal notrans
 <li><a class="reference internal" href="#graphlib">graphlib</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#improved-modules">Improved Modules</a><ul>
+<li><a class="reference internal" href="#improved-modules">Ulepszone moduły</a><ul>
 <li><a class="reference internal" href="#ast">ast</a></li>
 <li><a class="reference internal" href="#asyncio">asyncio</a></li>
 <li><a class="reference internal" href="#compileall">compileall</a></li>
@@ -1723,13 +1705,13 @@ In Python 3.14, the default will switch to <code class="docutils literal notrans
 </ul>
 </li>
 <li><a class="reference internal" href="#build-changes">Build Changes</a></li>
-<li><a class="reference internal" href="#c-api-changes">C API Changes</a><ul>
-<li><a class="reference internal" href="#id1">New Features</a></li>
+<li><a class="reference internal" href="#c-api-changes">Zmiany w C API</a><ul>
+<li><a class="reference internal" href="#id1">Nowe funkcjonalności</a></li>
 <li><a class="reference internal" href="#id2">Porting to Python 3.9</a></li>
 <li><a class="reference internal" href="#id3">Removed</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#notable-changes-in-python-3-9-1">Notable changes in Python 3.9.1</a><ul>
+<li><a class="reference internal" href="#notable-changes-in-python-3-9-1">Istotne zmiany w wersji 3.9.1</a><ul>
 <li><a class="reference internal" href="#id4">typing</a></li>
 <li><a class="reference internal" href="#macos-11-0-big-sur-and-apple-silicon-mac-support">macOS 11.0 (Big Sur) and Apple Silicon Mac support</a></li>
 </ul>
@@ -1755,14 +1737,14 @@ In Python 3.14, the default will switch to <code class="docutils literal notrans
 
   </div>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="3.10.html"
-                          title="previous chapter">What’s New In Python 3.10</a></p>
+                          title="poprzedni rozdział">Co nowego w Pythonie 3.10</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="3.8.html"
-                          title="next chapter">What’s New In Python 3.8</a></p>
+                          title="następny rozdział">Co nowego w Pythonie 3.8</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -1776,7 +1758,7 @@ In Python 3.14, the default will switch to <code class="docutils literal notrans
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -1793,10 +1775,10 @@ In Python 3.14, the default will switch to <code class="docutils literal notrans
           <a href="../py-modindex.html" title="Indeks modułów Pythona"
              >moduły</a> |</li>
         <li class="right" >
-          <a href="3.8.html" title="What’s New In Python 3.8"
+          <a href="3.8.html" title="Co nowego w Pythonie 3.8"
              >dalej</a> |</li>
         <li class="right" >
-          <a href="3.10.html" title="What’s New In Python 3.10"
+          <a href="3.10.html" title="Co nowego w Pythonie 3.10"
              >wstecz</a> |</li>
 
           <li><img src="../_static/py.svg" alt="Python logo" style="vertical-align: middle; margin-top: -1px"></li>
@@ -1812,8 +1794,8 @@ In Python 3.14, the default will switch to <code class="docutils literal notrans
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >What’s New in Python</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">What’s New In Python 3.9</a></li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Co nowego w Pythonie</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Co nowego w Pythonie 3.9</a></li>
                 <li class="right">
                     
 
@@ -1860,7 +1842,7 @@ In Python 3.14, the default will switch to <code class="docutils literal notrans
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     

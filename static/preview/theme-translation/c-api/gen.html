@@ -31,13 +31,13 @@
     <script src="../_static/sidebar.js"></script>
     
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Python 3.15.0a0 - dokumentacja"
+          title="Szukaj pośród Python 3.15.0a0 - dokumentacja"
           href="../_static/opensearch.xml"/>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="author" title="O tych dokumentach" href="../about.html" />
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Szukaj" href="../search.html" />
     <link rel="copyright" title="Prawa autorskie" href="../copyright.html" />
-    <link rel="next" title="Coroutine Objects" href="coro.html" />
+    <link rel="next" title="Objek Coroutine" href="coro.html" />
     <link rel="prev" title="Frame Objects" href="frame.html" />
     
       
@@ -98,14 +98,14 @@
     </select>
 </label>
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="frame.html"
-                          title="previous chapter">Frame Objects</a></p>
+                          title="poprzedni rozdział">Frame Objects</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="coro.html"
-                          title="next chapter">Coroutine Objects</a></p>
+                          title="następny rozdział">Objek Coroutine</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -133,7 +133,7 @@
           <a href="../py-modindex.html" title="Indeks modułów Pythona"
              >moduły</a> |</li>
         <li class="right" >
-          <a href="coro.html" title="Coroutine Objects"
+          <a href="coro.html" title="Objek Coroutine"
              accesskey="N">dalej</a> |</li>
         <li class="right" >
           <a href="frame.html" title="Frame Objects"
@@ -152,7 +152,7 @@
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Reference Manual</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Podręcznik</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="concrete.html" accesskey="U">Concrete Objects Layer</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Generator Objects</a></li>
                 <li class="right">
@@ -218,7 +218,7 @@ function always succeeds.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyGen_New">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyGen_New</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="frame.html#c.PyFrameObject" title="PyFrameObject"><span class="n"><span class="pre">PyFrameObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">frame</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyGen_New" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><p>Create and return a new generator object based on the <em>frame</em> object.
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><p>Create and return a new generator object based on the <em>frame</em> object.
 A reference to <em>frame</em> is stolen by this function. The argument must not be
 <code class="docutils literal notranslate"><span class="pre">NULL</span></code>.</p>
 </dd></dl>
@@ -226,7 +226,7 @@ A reference to <em>frame</em> is stolen by this function. The argument must not 
 <dl class="c function">
 <dt class="sig sig-object c" id="c.PyGen_NewWithQualName">
 <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PyGen_NewWithQualName</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="frame.html#c.PyFrameObject" title="PyFrameObject"><span class="n"><span class="pre">PyFrameObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">frame</span></span>, <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">name</span></span>, <a class="reference internal" href="structures.html#c.PyObject" title="PyObject"><span class="n"><span class="pre">PyObject</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">qualname</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.PyGen_NewWithQualName" title="Link to this definition">¶</a><br /></dt>
-<dd><em class="refcount return_new_ref">Return value: New reference.</em><p>Create and return a new generator object based on the <em>frame</em> object,
+<dd><em class="refcount return_new_ref">Wartość zwracana: nowa referencja.</em><p>Create and return a new generator object based on the <em>frame</em> object,
 with <code class="docutils literal notranslate"><span class="pre">__name__</span></code> and <code class="docutils literal notranslate"><span class="pre">__qualname__</span></code> set to <em>name</em> and <em>qualname</em>.
 A reference to <em>frame</em> is stolen by this function.  The <em>frame</em> argument
 must not be <code class="docutils literal notranslate"><span class="pre">NULL</span></code>.</p>
@@ -242,14 +242,14 @@ must not be <code class="docutils literal notranslate"><span class="pre">NULL</s
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
-    <h4>Previous topic</h4>
+    <h4>Poprzedni temat</h4>
     <p class="topless"><a href="frame.html"
-                          title="previous chapter">Frame Objects</a></p>
+                          title="poprzedni rozdział">Frame Objects</a></p>
   </div>
   <div>
-    <h4>Next topic</h4>
+    <h4>Następny temat</h4>
     <p class="topless"><a href="coro.html"
-                          title="next chapter">Coroutine Objects</a></p>
+                          title="następny rozdział">Objek Coroutine</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This page</h3>
@@ -263,7 +263,7 @@ must not be <code class="docutils literal notranslate"><span class="pre">NULL</s
     </ul>
   </div>
         </div>
-<div id="sidebarbutton" title="Collapse sidebar">
+<div id="sidebarbutton" title="Zwiń pasek boczny">
 <span>«</span>
 </div>
 
@@ -280,7 +280,7 @@ must not be <code class="docutils literal notranslate"><span class="pre">NULL</s
           <a href="../py-modindex.html" title="Indeks modułów Pythona"
              >moduły</a> |</li>
         <li class="right" >
-          <a href="coro.html" title="Coroutine Objects"
+          <a href="coro.html" title="Objek Coroutine"
              >dalej</a> |</li>
         <li class="right" >
           <a href="frame.html" title="Frame Objects"
@@ -299,7 +299,7 @@ must not be <code class="docutils literal notranslate"><span class="pre">NULL</s
       <a href="../index.html">3.15.0a0 Documentation</a> &#187;
     </li>
 
-          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Reference Manual</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Python/C API Podręcznik</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="concrete.html" >Concrete Objects Layer</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Generator Objects</a></li>
                 <li class="right">
@@ -348,7 +348,7 @@ must not be <code class="docutils literal notranslate"><span class="pre">NULL</s
 <a href="https://www.python.org/psf/donations/">Prosimy o wsparcie.</a>
 <br>
     <br>
-      Ostatnia aktualizacja wrz 02, 2025 (20:04 UTC).
+      Ostatnia aktualizacja wrz 09, 2025 (14:31 UTC).
     
       <a href="/bugs.html">Znalazłeś(-aś) błąd</a>?
     
