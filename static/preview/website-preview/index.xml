@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sensory Theraphy Ennis</title>
-    <link>/</link>
+    <link>https://stan.ulbrych.org/preview/website-preview/</link>
     <description>Recent content on Sensory Theraphy Ennis</description>
     <generator>Hugo</generator>
     <language>en-uk</language>
-    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://stan.ulbrych.org/preview/website-preview/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>/about/</link>
+      <link>https://stan.ulbrych.org/preview/website-preview/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/about/</guid>
+      <guid>https://stan.ulbrych.org/preview/website-preview/about/</guid>
       <description>&lt;h1 id=&#34;about-us&#34;&gt;About us&lt;/h1&gt;&#xA;&lt;p&gt;Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contact</title>
-      <link>/contact/</link>
+      <link>https://stan.ulbrych.org/preview/website-preview/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/contact/</guid>
+      <guid>https://stan.ulbrych.org/preview/website-preview/contact/</guid>
       <description>&lt;h1 id=&#34;ultricies-eget-tempor-sit-amet&#34;&gt;Ultricies eget, tempor sit amet&lt;/h1&gt;&#xA;&lt;p&gt;Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.&lt;/p&gt;</description>
     </item>
   </channel>
