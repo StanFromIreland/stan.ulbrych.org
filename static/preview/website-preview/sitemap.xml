@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://stan.ulbrych.org/preview/website-preview/</loc>
+    <lastmod>2025-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://stan.ulbrych.org/preview/website-preview/blog/2025/09/01/about-play-theraphy/</loc>
+    <lastmod>2025-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://stan.ulbrych.org/preview/website-preview/blog/</loc>
+    <lastmod>2025-09-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://stan.ulbrych.org/preview/website-preview/about/</loc>
   </url><url>
     <loc>https://stan.ulbrych.org/preview/website-preview/authors/</loc>
@@ -9,8 +18,6 @@
     <loc>https://stan.ulbrych.org/preview/website-preview/categories/</loc>
   </url><url>
     <loc>https://stan.ulbrych.org/preview/website-preview/contact/</loc>
-  </url><url>
-    <loc>https://stan.ulbrych.org/preview/website-preview/</loc>
   </url><url>
     <loc>https://stan.ulbrych.org/preview/website-preview/tags/</loc>
   </url>

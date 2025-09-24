@@ -2621,12 +2621,24 @@ fieldset[disabled] .btn-template-primary.active {
 #footer .social a:hover {
   color: var(--primary-accent);
 }
+html, body {
+  height: 100%;        /* Full height */
+  margin: 0;           /* Remove default margins */
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;             /* Expands to push footer down */
+}
+
 #copyright {
   background: #333;
   color: #ccc;
   padding: 50px 0;
   font-size: 12px;
   line-height: 28px;
+  margin-top: auto;
 }
 #copyright p {
   margin: 0;
