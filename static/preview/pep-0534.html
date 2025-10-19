@@ -111,7 +111,7 @@ Stan Ulbrych &lt;stanulbrych&#32;&#97;t&#32;gmail.com&gt;</dd>
 </ul>
 </li>
 <li><a class="reference internal" href="#specification">Specification</a><ul>
-<li><a class="reference internal" href="#apis-to-list-expected-standard-library-modules">APIs to list expected standard library modules</a></li>
+<li><a class="reference internal" href="#api-to-list-optional-standard-library-modules">API to list optional standard library modules</a></li>
 <li><a class="reference internal" href="#changes-to-the-default-sys-excepthook-implementation">Changes to the default <code class="docutils literal notranslate"><span class="pre">sys.excepthook</span></code> implementation</a></li>
 </ul>
 </li>
@@ -202,9 +202,9 @@ package is not installed:</p>
 </section>
 <section id="specification">
 <h2><a class="toc-backref" href="#specification" role="doc-backlink">Specification</a></h2>
-<section id="apis-to-list-expected-standard-library-modules">
-<h3><a class="toc-backref" href="#apis-to-list-expected-standard-library-modules" role="doc-backlink">APIs to list expected standard library modules</a></h3>
-<p>To allow for easier identification of which module names are <em>expected</em> to be
+<section id="api-to-list-optional-standard-library-modules">
+<h3><a class="toc-backref" href="#api-to-list-optional-standard-library-modules" role="doc-backlink">API to list optional standard library modules</a></h3>
+<p>To allow for easier identification of which module names are <em>optional</em> to be
 resolved in the standard library, the <a class="reference external" href="https://docs.python.org/3/library/sys.html#module-sys" title="(in Python v3.14)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">sys</span></code></a> module will gain a new
 constant, <code class="xref py py-data docutils literal notranslate"><span class="pre">sys.stdlib_optional_module_names</span></code>, which will be a
 <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#frozenset" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">frozenset</span></code></a> that lists <em class="dfn">optional public standard library</em> module names.
@@ -238,45 +238,45 @@ import a module identified by one of the two <a class="reference external" href=
 as belonging to the Python <a class="reference external" href="https://docs.python.org/3/glossary.html#term-standard-library" title="(in Python v3.14)"><span class="xref std std-term">standard library</span></a>.</p>
 <p>Revised error message for a module that relies on an optional build dependency
 or is otherwise considered optional when Python is installed:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>./python<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;import sqlite3&quot;</span>
-Traceback<span class="w"> </span><span class="o">(</span>most<span class="w"> </span>recent<span class="w"> </span>call<span class="w"> </span>last<span class="o">)</span>:
-<span class="w">  </span>File<span class="w"> </span><span class="s2">&quot;&lt;string&gt;&quot;</span>,<span class="w"> </span>line<span class="w"> </span><span class="m">1</span>,<span class="w"> </span><span class="k">in</span><span class="w"> </span>&lt;module&gt;
-<span class="w">  </span>File<span class="w"> </span><span class="s2">&quot;/home/ncoghlan/devel/cpython/Lib/sqlite3/__init__.py&quot;</span>,<span class="w"> </span>line<span class="w"> </span><span class="m">23</span>,<span class="w"> </span><span class="k">in</span><span class="w"> </span>&lt;module&gt;
-<span class="w">    </span>from<span class="w"> </span>sqlite3.dbapi2<span class="w"> </span>import<span class="w"> </span>*
-<span class="w">  </span>File<span class="w"> </span><span class="s2">&quot;/home/ncoghlan/devel/cpython/Lib/sqlite3/dbapi2.py&quot;</span>,<span class="w"> </span>line<span class="w"> </span><span class="m">27</span>,<span class="w"> </span><span class="k">in</span><span class="w"> </span>&lt;module&gt;
-<span class="w">    </span>from<span class="w"> </span>_sqlite3<span class="w"> </span>import<span class="w"> </span>*
-ModuleNotFoundError:<span class="w"> </span>Optional<span class="w"> </span>standard<span class="w"> </span>library<span class="w"> </span>module<span class="w"> </span><span class="s1">&#39;_sqlite3&#39;</span><span class="w"> </span>was<span class="w"> </span>not<span class="w"> </span>found
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ ./python -c &quot;import sqlite3&quot;
+Traceback (most recent call last):
+  File &quot;&lt;string&gt;&quot;, line 1, in &lt;module&gt;
+  File &quot;/home/ncoghlan/devel/cpython/Lib/sqlite3/__init__.py&quot;, line 23, in &lt;module&gt;
+    from sqlite3.dbapi2 import *
+  File &quot;/home/ncoghlan/devel/cpython/Lib/sqlite3/dbapi2.py&quot;, line 27, in &lt;module&gt;
+    from _sqlite3 import *
+ModuleNotFoundError: Optional standard library module &#39;_sqlite3&#39; was not found
 </pre></div>
 </div>
 <p>Revised error message for a submodule of an optional top level package when the
 entire top level package is missing:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>./python<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;import test.regrtest&quot;</span>
-Traceback<span class="w"> </span><span class="o">(</span>most<span class="w"> </span>recent<span class="w"> </span>call<span class="w"> </span>last<span class="o">)</span>:
-<span class="w">  </span>File<span class="w"> </span><span class="s2">&quot;&lt;string&gt;&quot;</span>,<span class="w"> </span>line<span class="w"> </span><span class="m">1</span>,<span class="w"> </span><span class="k">in</span><span class="w"> </span>&lt;module&gt;
-ModuleNotFoundError:<span class="w"> </span>Optional<span class="w"> </span>standard<span class="w"> </span>library<span class="w"> </span>module<span class="w"> </span><span class="s1">&#39;test&#39;</span><span class="w"> </span>was<span class="w"> </span>not<span class="w"> </span>found
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ ./python -c &quot;import test.regrtest&quot;
+Traceback (most recent call last):
+  File &quot;&lt;string&gt;&quot;, line 1, in &lt;module&gt;
+ModuleNotFoundError: Optional standard library module &#39;test&#39; was not found
 </pre></div>
 </div>
 <p>Revised error message for a submodule of an optional top level package when the
 top level package is present:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>./python<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;import test.regrtest&quot;</span>
-Traceback<span class="w"> </span><span class="o">(</span>most<span class="w"> </span>recent<span class="w"> </span>call<span class="w"> </span>last<span class="o">)</span>:
-<span class="w">  </span>File<span class="w"> </span><span class="s2">&quot;&lt;string&gt;&quot;</span>,<span class="w"> </span>line<span class="w"> </span><span class="m">1</span>,<span class="w"> </span><span class="k">in</span><span class="w"> </span>&lt;module&gt;
-ModuleNotFoundError:<span class="w"> </span>No<span class="w"> </span>submodule<span class="w"> </span>named<span class="w"> </span><span class="s1">&#39;test.regrtest&#39;</span><span class="w"> </span><span class="k">in</span><span class="w"> </span>optional<span class="w"> </span>standard<span class="w"> </span>library<span class="w"> </span>module<span class="w"> </span><span class="s1">&#39;test&#39;</span>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ ./python -c &quot;import test.regrtest&quot;
+Traceback (most recent call last):
+  File &quot;&lt;string&gt;&quot;, line 1, in &lt;module&gt;
+ModuleNotFoundError: No submodule named &#39;test.regrtest&#39; in optional standard library module &#39;test&#39;
 </pre></div>
 </div>
 <p>Revised error message for a module that is always expected to be available:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>./python<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;import ensurepip&quot;</span>
-Traceback<span class="w"> </span><span class="o">(</span>most<span class="w"> </span>recent<span class="w"> </span>call<span class="w"> </span>last<span class="o">)</span>:
-<span class="w">  </span>File<span class="w"> </span><span class="s2">&quot;&lt;string&gt;&quot;</span>,<span class="w"> </span>line<span class="w"> </span><span class="m">1</span>,<span class="w"> </span><span class="k">in</span><span class="w"> </span>&lt;module&gt;
-ModuleNotFoundError:<span class="w"> </span>Standard<span class="w"> </span>library<span class="w"> </span>module<span class="w"> </span><span class="s1">&#39;ensurepip&#39;</span><span class="w"> </span>was<span class="w"> </span>not<span class="w"> </span>found
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ ./python -c &quot;import ensurepip&quot;
+Traceback (most recent call last):
+  File &quot;&lt;string&gt;&quot;, line 1, in &lt;module&gt;
+ModuleNotFoundError: Standard library module &#39;ensurepip&#39; was not found
 </pre></div>
 </div>
 <p>Revised error message for a missing submodule of a standard library package when
 the top level package is present:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>./python<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;import encodings.mbcs&quot;</span>
-Traceback<span class="w"> </span><span class="o">(</span>most<span class="w"> </span>recent<span class="w"> </span>call<span class="w"> </span>last<span class="o">)</span>:
-<span class="w">  </span>File<span class="w"> </span><span class="s2">&quot;&lt;string&gt;&quot;</span>,<span class="w"> </span>line<span class="w"> </span><span class="m">1</span>,<span class="w"> </span><span class="k">in</span><span class="w"> </span>&lt;module&gt;
-ModuleNotFoundError:<span class="w"> </span>No<span class="w"> </span>submodule<span class="w"> </span>named<span class="w"> </span><span class="s1">&#39;encodings.mbcs&#39;</span><span class="w"> </span><span class="k">in</span><span class="w"> </span>standard<span class="w"> </span>library<span class="w"> </span>module<span class="w"> </span><span class="s1">&#39;encodings&#39;</span>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ ./python -c &quot;import encodings.mbcs&quot;
+Traceback (most recent call last):
+  File &quot;&lt;string&gt;&quot;, line 1, in &lt;module&gt;
+ModuleNotFoundError: No submodule named &#39;encodings.mbcs&#39; in standard library module &#39;encodings&#39;
 </pre></div>
 </div>
 <p>These revised error messages make it clear that the missing modules are expected
@@ -317,10 +317,10 @@ extra complexity.</p>
 <p>There is one known consequence of this restriction, which is that the new
 default <a class="reference external" href="https://docs.python.org/3/library/sys.html#sys.excepthook" title="(in Python v3.14)"><code class="xref py py-func docutils literal notranslate"><span class="pre">sys.excepthook()</span></code></a> implementation will report incorrect submodules names the
 same way that it reports genuinely missing standard library submodules:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>./python<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;import unittest.muck&quot;</span>
-Traceback<span class="w"> </span><span class="o">(</span>most<span class="w"> </span>recent<span class="w"> </span>call<span class="w"> </span>last<span class="o">)</span>:
-<span class="w">  </span>File<span class="w"> </span><span class="s2">&quot;&lt;string&gt;&quot;</span>,<span class="w"> </span>line<span class="w"> </span><span class="m">1</span>,<span class="w"> </span><span class="k">in</span><span class="w"> </span>&lt;module&gt;
-ModuleNotFoundError:<span class="w"> </span>No<span class="w"> </span>submodule<span class="w"> </span>named<span class="w"> </span><span class="s1">&#39;unittest.muck&#39;</span><span class="w"> </span><span class="k">in</span><span class="w"> </span>standard<span class="w"> </span>library<span class="w"> </span>module<span class="w"> </span><span class="s1">&#39;unittest&#39;</span>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ ./python -c &quot;import unittest.muck&quot;
+Traceback (most recent call last):
+  File &quot;&lt;string&gt;&quot;, line 1, in &lt;module&gt;
+ModuleNotFoundError: No submodule named &#39;unittest.muck&#39; in standard library module &#39;unittest&#39;
 </pre></div>
 </div>
 </section>
@@ -355,11 +355,11 @@ enable, but they’re considered out of scope for the initial proposal.</p>
 <p>Some standard library modules may be missing because they’re only provided on
 particular platforms. For example, the <a class="reference external" href="https://docs.python.org/3/library/winreg.html#module-winreg" title="(in Python v3.14)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">winreg</span></code></a> module is only available on
 Windows, on Linux:</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>python3.15<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;import winreg&quot;</span>
-Traceback<span class="w"> </span><span class="o">(</span>most<span class="w"> </span>recent<span class="w"> </span>call<span class="w"> </span>last<span class="o">)</span>:
-<span class="w">  </span>File<span class="w"> </span><span class="s2">&quot;&lt;string&gt;&quot;</span>,<span class="w"> </span>line<span class="w"> </span><span class="m">1</span>,<span class="w"> </span><span class="k">in</span><span class="w"> </span>&lt;module&gt;
-<span class="w">    </span>import<span class="w"> </span>winreg
-ModuleNotFoundError:<span class="w"> </span>No<span class="w"> </span>module<span class="w"> </span>named<span class="w"> </span><span class="s1">&#39;winreg&#39;</span>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ python3.15 -c &quot;import winreg&quot;
+Traceback (most recent call last):
+  File &quot;&lt;string&gt;&quot;, line 1, in &lt;module&gt;
+    import winreg
+ModuleNotFoundError: No module named &#39;winreg&#39;
 </pre></div>
 </div>
 <p>In the current proposal, these platform dependent modules will simply be
@@ -444,7 +444,7 @@ CC0-1.0-Universal license, whichever is more permissive.</p>
 </ul>
 </li>
 <li><a class="reference internal" href="#specification">Specification</a><ul>
-<li><a class="reference internal" href="#apis-to-list-expected-standard-library-modules">APIs to list expected standard library modules</a></li>
+<li><a class="reference internal" href="#api-to-list-optional-standard-library-modules">API to list optional standard library modules</a></li>
 <li><a class="reference internal" href="#changes-to-the-default-sys-excepthook-implementation">Changes to the default <code class="docutils literal notranslate"><span class="pre">sys.excepthook</span></code> implementation</a></li>
 </ul>
 </li>
