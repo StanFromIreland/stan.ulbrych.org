@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Mothers Day!</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #87CEEB 0%, #b0d8f0 50%, #98e098 70%, #5a9a3a 100%);
+  overflow: hidden;
+  font-family: 'Georgia', serif;
+}
+h1 {
+  font-size: 5vw;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.35), 0 0 20px rgba(0,0,0,0.15);
+  z-index: 10;
+  position: relative;
+  text-align: center;
+  line-height: 1.3;
+}
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<h1>Happy Mothers Day!</h1>
+<script>
+const canvas = document.getElementById('c');
+const ctx = canvas.getContext('2d');
+let W, H;
+
+function resize() {
+  W = canvas.width = window.innerWidth;
+  H = canvas.height = window.innerHeight;
+}
+window.addEventListener('resize', resize);
+resize();
+
+const windmills = [
+  { x: 0.55, y: 0.6, scale: 1.4, speed: -0.4 },
+];
+
+const bandColors = [
+  '#e8304a',
+  '#f5c542',
+  '#e84dcf',
+  '#f07030',
+  '#9040d0',
+  '#e8304a',
+  '#f5c542',
+  '#e84dcf',
+  '#f07030',
+  '#e8304a',
+  '#9040d0',
+  '#f5c542',
+  '#e84dcf',
+  '#f07030',
+  '#e8304a',
+  '#f5c542',
+];
+
+function drawTulipFields(time) {
+  const groundStart = H * 0.6;
+  const groundH = H - groundStart;
+  const numBands = bandColors.length;
+  const bandH = groundH / numBands;
+
+  for (let i = 0; i < numBands; i++) {
+    const y = groundStart + i * bandH;
+    const depth = i / numBands;
+    const scale = 0.3 + depth * 0.7;
+
+    ctx.fillStyle = i % 2 === 0 ? '#3a7a22' : '#358020';
+    ctx.fillRect(0, y, W, bandH + 1);
+
+    const color = bandColors[i];
+    const tulipH = (6 + scale * 12);
+    const spacing = 5 + scale * 7;
+    const cols = Math.ceil(W / spacing) + 2;
+
+    for (let c = 0; c < cols; c++) {
+      const tx = c * spacing + ((i % 2) * spacing * 0.5);
+      const sway = Math.sin(time * 1.2 + c * 0.3 + i * 0.7) * scale * 0.8;
+      const ty = y + bandH * 0.5 + Math.sin(c * 0.5) * bandH * 0.15;
+
+      const stemTop = ty - tulipH * 0.7;
+      const sx = tx + sway * 0.5;
+
+      ctx.strokeStyle = '#2a6a1a';
+      ctx.lineWidth = Math.max(1, scale * 1.5);
+      ctx.beginPath();
+      ctx.moveTo(tx, ty + tulipH * 0.3);
+      ctx.quadraticCurveTo(tx + sway * 0.3, ty - tulipH * 0.2, sx, stemTop);
+      ctx.stroke();
+
+      const leafY = ty - tulipH * 0.1;
+      ctx.beginPath();
+      ctx.moveTo(tx + sway * 0.15, leafY);
+      ctx.quadraticCurveTo(tx + sway * 0.15 + scale * 5, leafY - scale * 4, tx + sway * 0.3, leafY - scale * 8);
+      ctx.strokeStyle = '#3a8a2a';
+      ctx.lineWidth = Math.max(0.8, scale * 1.2);
+      ctx.stroke();
+
+      const bw = 2.5 + scale * 4;
+      const bh = 3.5 + scale * 5;
+      ctx.fillStyle = color;
+      ctx.beginPath();
+      ctx.moveTo(sx, stemTop + bh * 0.3);
+      ctx.quadraticCurveTo(sx - bw, stemTop - bh * 0.2, sx - bw * 0.5, stemTop - bh);
+      ctx.quadraticCurveTo(sx - bw * 0.15, stemTop - bh * 1.3, sx, stemTop - bh * 0.9);
+      ctx.quadraticCurveTo(sx + bw * 0.15, stemTop - bh * 1.3, sx + bw * 0.5, stemTop - bh);
+      ctx.quadraticCurveTo(sx + bw, stemTop - bh * 0.2, sx, stemTop + bh * 0.3);
+      ctx.fill();
+
+      const darkerColor = color.replace(/[0-9a-f]{2}$/i, m => {
+        return Math.max(0, parseInt(m, 16) - 30).toString(16).padStart(2, '0');
+      });
+      ctx.strokeStyle = darkerColor;
+      ctx.lineWidth = Math.max(0.5, scale * 0.6);
+      ctx.beginPath();
+      ctx.moveTo(sx, stemTop + bh * 0.1);
+      ctx.lineTo(sx, stemTop - bh * 0.85);
+      ctx.stroke();
+    }
+
+    const darkStripe = 'rgba(0,40,0,0.08)';
+    ctx.fillStyle = darkStripe;
+    ctx.fillRect(0, y + bandH - 1, W, 2);
+  }
+}
+
+function drawSail(cx, cy, angle, len, scale) {
+  ctx.save();
+  ctx.translate(cx, cy);
+  ctx.rotate(angle);
+
+  const armW = 3 * scale;
+  const sailW = 18 * scale;
+
+  ctx.fillStyle = '#6b4226';
+  ctx.fillRect(-armW / 2, 0, armW, -len);
+
+  ctx.beginPath();
+  ctx.moveTo(armW / 2, -len * 0.1);
+  ctx.lineTo(armW / 2 + sailW, -len * 0.18);
+  ctx.lineTo(armW / 2 + sailW * 0.8, -len * 0.88);
+  ctx.lineTo(armW / 2, -len * 0.92);
+  ctx.closePath();
+  ctx.fillStyle = 'rgba(245, 235, 220, 0.85)';
+  ctx.fill();
+  ctx.strokeStyle = '#8b7355';
+  ctx.lineWidth = 1;
+  ctx.stroke();
+
+  const slats = 6;
+  for (let i = 0; i <= slats; i++) {
+    const t = 0.1 + (0.82 / slats) * i;
+    const y = -len * t;
+    const xLeft = armW / 2;
+    const frac = (t - 0.1) / 0.82;
+    const xRight = armW / 2 + sailW * (1 - frac * 0.2);
+    ctx.beginPath();
+    ctx.moveTo(xLeft, y);
+    ctx.lineTo(xRight, y);
+    ctx.strokeStyle = '#8b7355';
+    ctx.lineWidth = 0.5;
+    ctx.stroke();
+  }
+
+  ctx.restore();
+}
+
+function drawWindmill(cx, cy, scale, angle) {
+  const bodyH = 200 * scale;
+  const bodyWBot = 50 * scale;
+  const bodyWTop = 25 * scale;
+  const capH = 30 * scale;
+  const bladeLen = 120 * scale;
+  const hubY = cy - bodyH - capH * 0.3;
+
+  ctx.beginPath();
+  ctx.moveTo(cx - bodyWBot, cy);
+  ctx.lineTo(cx + bodyWBot, cy);
+  ctx.lineTo(cx + bodyWTop, cy - bodyH);
+  ctx.lineTo(cx - bodyWTop, cy - bodyH);
+  ctx.closePath();
+  ctx.fillStyle = '#f5f0e8';
+  ctx.fill();
+  ctx.strokeStyle = '#b0a090';
+  ctx.lineWidth = 1.5;
+  ctx.stroke();
+
+  const brickRows = 8;
+  for (let i = 1; i < brickRows; i++) {
+    const t = i / brickRows;
+    const y = cy - bodyH * t;
+    const w = bodyWBot + (bodyWTop - bodyWBot) * t;
+    ctx.beginPath();
+    ctx.moveTo(cx - w, y);
+    ctx.lineTo(cx + w, y);
+    ctx.strokeStyle = 'rgba(160,140,120,0.3)';
+    ctx.lineWidth = 0.5;
+    ctx.stroke();
+  }
+
+  const doorW = 16 * scale;
+  const doorH = 35 * scale;
+  ctx.beginPath();
+  ctx.moveTo(cx - doorW, cy);
+  ctx.lineTo(cx - doorW, cy - doorH);
+  ctx.arc(cx, cy - doorH, doorW, Math.PI, 0);
+  ctx.lineTo(cx + doorW, cy);
+  ctx.closePath();
+  ctx.fillStyle = '#5a3a1a';
+  ctx.fill();
+
+  const winY = cy - bodyH * 0.55;
+  const winR = 8 * scale;
+  ctx.beginPath();
+  ctx.arc(cx, winY, winR, 0, Math.PI * 2);
+  ctx.fillStyle = '#a0d4f0';
+  ctx.fill();
+  ctx.strokeStyle = '#6b4226';
+  ctx.lineWidth = 2;
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.moveTo(cx - winR, winY);
+  ctx.lineTo(cx + winR, winY);
+  ctx.moveTo(cx, winY - winR);
+  ctx.lineTo(cx, winY + winR);
+  ctx.strokeStyle = '#6b4226';
+  ctx.lineWidth = 1.5;
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.moveTo(cx - bodyWTop - 5 * scale, cy - bodyH);
+  ctx.lineTo(cx + bodyWTop + 5 * scale, cy - bodyH);
+  ctx.lineTo(cx + 6 * scale, cy - bodyH - capH);
+  ctx.lineTo(cx - 6 * scale, cy - bodyH - capH);
+  ctx.closePath();
+  ctx.fillStyle = '#4a4a4a';
+  ctx.fill();
+  ctx.strokeStyle = '#333';
+  ctx.lineWidth = 1;
+  ctx.stroke();
+
+  for (let i = 0; i < 4; i++) {
+    drawSail(cx, hubY, angle + (Math.PI / 2) * i, bladeLen, scale);
+  }
+
+  ctx.beginPath();
+  ctx.arc(cx, hubY, 7 * scale, 0, Math.PI * 2);
+  ctx.fillStyle = '#5a3a1a';
+  ctx.fill();
+  ctx.strokeStyle = '#3a2210';
+  ctx.lineWidth = 2;
+  ctx.stroke();
+}
+
+let t = 0;
+function draw() {
+  t += 0.016;
+  ctx.clearRect(0, 0, W, H);
+
+  drawTulipFields(t);
+
+  for (const wm of windmills) {
+    const cx = wm.x * W;
+    const cy = wm.y * H;
+    drawWindmill(cx, cy, wm.scale, t * wm.speed);
+  }
+
+  requestAnimationFrame(draw);
+}
+draw();
+</script>
+</body>
+</html>
