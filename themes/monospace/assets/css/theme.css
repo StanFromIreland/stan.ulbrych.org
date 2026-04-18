@@ -22,3 +22,9 @@ div.sidebar, div.admonition, div.attention, div.caution, div.danger, div.error, 
 ul.breadcrumb > li:before {
     content: " / ";
 }
+@media (max-width: 215px) {
+    #wrap { width: auto !important; display: flex; flex-direction: column; padding: 0 15px; }
+    #container { width: auto !important; float: none; order: 2; }
+    #sidebar { order: 1; width: auto; text-align: left; border-right: none; border-bottom: 1px dotted #C8C8C8; padding: 0px 0px 15px 0px; }
+    #footer { order: 3; }
+}
