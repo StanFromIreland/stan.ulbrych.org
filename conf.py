@@ -144,7 +144,7 @@ NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         #       ("/articles/", "Articles"), lets hide this for now.
         ("/contact/", "Contact"),
-        ("/rss.xml", "RSS feed"),
+        #("/rss.xml", "RSS feed"),
     ),
 }
 
