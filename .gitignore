@@ -1,0 +1,12 @@
+# Nikola
+output/
+cache/
+.doit.db*
+
+# Python
+__pycache__/
+*.pyc
+
+# Editors / OS
+.idea/
+.DS_Store
