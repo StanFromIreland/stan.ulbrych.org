@@ -5,9 +5,8 @@
 .. type: text
 -->
 
-I work on several open source projects, primarily
-[CPython](https://github.com/python/cpython)
-and auxiliary projects.
+I work as a snake charmer on several open source projects, primarily
+[CPython](https://github.com/python/cpython).
 
 You can find me under `@StanFromIreland` on [GitHub](https://github.com/StanFromIreland)
 and [Mastodon](https://mastodon.social/@stanfromireland).
