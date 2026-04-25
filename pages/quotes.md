@@ -1,7 +1,7 @@
 <!--
 .. title: Quotes
 .. slug: quotes
-.. description: python-docs-pl translation history
+.. description: A collection of quotes/maxims I like.
 .. type: text
 -->
 
@@ -22,3 +22,9 @@
 > The only thing I know is that I know nothing.
 > 
 > — Socrates
+
+<br/>
+
+> De gustibus non est disputandum.
+> 
+> [There is no disputing about taste.]
