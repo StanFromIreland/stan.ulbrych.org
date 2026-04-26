@@ -14,5 +14,5 @@ I am also a [Python Software Foundation](https://www.python.org/psf-landing/) fe
 You can find me under `@StanFromIreland` on [GitHub](https://github.com/StanFromIreland)
 and [Mastodon](https://mastodon.social/@stanfromireland).
 
-<!-- For verification on mastodon -->
+<!-- For verification on Mastodon -->
 <a rel="me" href="https://mastodon.social/@stanfromireland"></a>
