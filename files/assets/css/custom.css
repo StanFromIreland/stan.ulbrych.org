@@ -1,5 +1,11 @@
 #blog-title { text-align: left; }
 
+.content a img[style*="height:1em"] {
+    display: inline-block;
+    max-width: none;
+    margin: 0;
+}
+
 .sr-only {
     position: absolute;
     width: 1px;
