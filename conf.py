@@ -143,6 +143,7 @@ TRANSLATIONS_PATTERN = '{path}.{lang}.{ext}'
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         #       ("/articles/", "Articles"), lets hide this for now.
+        ("/blog/", "Blog"),
         ("/quotes/", "Quotes"),
         ("/contact/", "Contact"),
         #("/rss.xml", "RSS feed"),
