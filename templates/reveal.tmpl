@@ -1,0 +1,61 @@
+{#  -*- coding: utf-8 -*- #}
+{#
+    Template for reveal.js presentations, adapted from
+    https://www.roma1.infn.it/~rovigatl/posts/revealjs-presentations/
+    Use it in a pages/*.html file with `.. template: reveal.tmpl`;
+    add `.. is_html: true` if the slides are written in HTML rather than markdown.
+#}<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title|e }} | {{ blog_title|e }}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/theme/white.min.css">
+    <link rel="stylesheet" href="/assets/css/slides.css">
+</head>
+<body>
+    <a class="back_button" href="#" onclick="history.back()"></a>
+
+    <div class="reveal">
+        <div class="slides">
+            {% if post.meta('is_html') and post.meta('is_html') == 'true' %}
+            {{ post.text() }}
+            {% else %}
+            <section data-markdown>
+                <textarea data-template>
+                    {{ post.text() }}
+                </textarea>
+            </section>
+            {% endif %}
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/reveal.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/plugin/notes/notes.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/plugin/markdown/markdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/plugin/highlight/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/plugin/math/math.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/plugin/zoom/zoom.min.js"></script>
+    <script>
+    Reveal.initialize({
+        hash: true,
+
+        math: {
+            mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+            config: 'TeX-AMS_HTML-full',
+        },
+
+        markdown: {
+            smartypants: true
+        },
+
+        slideNumber: 'c/t',
+        showSlideNumber: 'all',
+
+        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath, RevealZoom ]
+    });
+    </script>
+</body>
+</html>

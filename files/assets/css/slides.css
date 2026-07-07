@@ -1,0 +1,18 @@
+/* Custom styles for reveal.js presentations (used by templates/reveal.tmpl). */
+
+a.back_button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 999 !important;
+    text-decoration: none;
+    color: #606060;
+}
+
+a.back_button:before {
+    /* The original post uses Font Awesome's \f060 arrow; this site does not
+       ship Font Awesome, so use the equivalent Unicode arrow instead. */
+    content: "\2190";
+    font-weight: bold;
+    font-size: 130%;
+}
