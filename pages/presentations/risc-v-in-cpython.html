@@ -1,0 +1,138 @@
+<!--
+.. title: CPython RISC-V support
+.. slug: risc-v-in-cpython
+.. date: 2026-07-07 10:00:00 UTC
+.. tags: risc-v, cpython
+.. category:
+.. link:
+.. description: CPython support for RISC-V platforms
+.. type: text
+.. template: reveal.tmpl
+.. has_math: false
+-->
+
+<!--
+Deck outline:
+ 1. Title
+ 2. A little bit about RISC-V
+ 3. Current ecosystem support
+ 4. Current CPython support
+ 5. git grep — the RISC-V-specific logic in CPython is tiny
+ 6. Why? It's a RISE-ing platform (justification)
+ 7. Cooperation with the RISE project (buildbots + offers)
+ 8. ./configure warning — the pain, sets up the ask
+ 9. What exactly am I proposing? (Tier 3 + PEP 11 checklist)
+10. Want to try it yourself? (SSH key)
+11. Thank you / Questions
+-->
+
+# CPython RISC-V support
+
+<div style="display: flex; justify-content: center; align-items: center; gap: 2em;">
+  <img src="/images/risc-v-logo.png" height="300">
+  <img src="/images/python-logo.svg" height="300">
+</div>
+
+
+---
+
+# A little bit about RISC-V...
+
+- A *Reduced Instruction Set Computer* (a.k.a. RISC) architecture.
+- Open ~~source~~ standard, with a permissive license! Full specification is freely available online.
+- There are many large ongoing investments in RISC-V (e.g., a recent EU research project for use in supercomputers and AI).
+- See https://riscv.org for more information about RISC-V.
+
+---
+
+# Current *ecosystem* support
+
+- Supported by:
+  - various toolchains like GCC, LLVM
+  - platforms like the Linux kernel, and FreeBSD (and various other 'BSDs)
+  - [QEMU](https://en.wikipedia.org/wiki/QEMU "QEMU") (useful for development)
+  - languages like Rust and Go (Tier 2), and experimentally by Julia
+  - Python packaging (see [Discourse thread](https://discuss.python.org/t/packaging-support-for-riscv64/58475) for more information)
+  - ...and even uv!
+
+---
+
+# Current *CPython* support
+
+- Has three stable Buildbots (release, debug and NoGIL builds)!
+- However, the current JIT is not supported yet.
+- Overall support required quite minimal changes.
+
+---
+
+## RISC-V specific logic in CPython
+
+```sh
+$ git grep __riscv
+Include/cpython/object.h:#elif defined(__riscv)
+Misc/platform_triplet.c:# elif defined(__riscv)
+Misc/platform_triplet.c:#  if __riscv_xlen == 32
+Misc/platform_triplet.c:#  elif __riscv_xlen == 64
+Modules/_ctypes/callproc.c:    defined(__aarch64__) || defined(__riscv)
+Modules/_hacl/include/krml/internal/types.h:    (defined(__riscv) && __riscv_xlen == 64) || \
+Modules/_testinternalcapi.c:#elif defined(__riscv)
+Objects/floatobject.c:#ifndef __riscv
+Objects/floatobject.c:#ifndef __riscv
+Python/perf_jit_trampoline.c:#  elif defined(__riscv)
+Python/perf_jit_trampoline.c:#elif defined(__riscv)
+```
+
+---
+
+## Why? It's a *RISE*ing platform!
+
+- Linux distros already build and ship Python on riscv64 (Debian, Fedora, Ubuntu, Alpine, ...). The users are already out there.
+- Real hardware is available and getting cheaper: dev boards, laptops, and server-class machines.
+- Prebuilt binary wheels for RISC-V 64-bit already exist for CPython (supported by RISE).
+
+---
+
+## Cooperation with the RISE project
+
+- [RISE](https://riseproject.dev/) (RISC-V Software Ecosystem) provided two of our Buildbots and additional machines.
+- And they are offering more:
+  - additional Buildbot machines,
+  - GitHub Actions runners,
+  - expert support,
+  - contract work (JIT support or performance improvements in the future?!)
+
+---
+
+## Meanwhile, `./configure` says...
+
+```text
+configure: WARNING:
+
+Platform "riscv64-unknown-linux-gnu" with compiler "gcc" is not supported by the
+CPython core team, see https://peps.python.org/pep-0011/ for more information.
+```
+
+<img src="/images/the-sad-reality.gif" height="180" alt="The sad reality">
+
+---
+
+## What exactly am I proposing?
+
+- Tier 3 support for the `riscv64-unknown-linux-gnu` target triple.
+- PEP 11 asks for just two things:
+  - a reliable Buildbot — we have *three*!
+  - a core developer signed up to support the platform — we have *me*! (And also Emma!)
+- It's low-risk, Tier 3 failures never block a release.
+
+---
+
+## Want to try it yourself?
+
+- We have one RISC-V machine available for testing.
+- Send me an SSH key and I'll get you access (reach me by email: `stan@python.org`)!
+
+---
+
+# Thank you!
+
+Questions?
