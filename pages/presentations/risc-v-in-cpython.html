@@ -59,7 +59,7 @@ Deck outline:
 
 # Current *CPython* support
 
-- Has three stable Buildbots (release, debug and NoGIL builds)!
+- Has four stable Buildbots (release, debug, free-threading, and debug w/ Clang builds)!
 - However, the current JIT is not supported yet.
 - Overall support required quite minimal changes.
 
@@ -96,7 +96,7 @@ Python/perf_jit_trampoline.c:#elif defined(__riscv)
 
 - [RISE](https://riseproject.dev/) (RISC-V Software Ecosystem) wants to accelerate
   the development of open source software support for the RISC-V architecture.
-- They provided two of our Buildbots and additional machines.
+- They provided three of our Buildbots and additional machines.
 - And they are offering more:
   - additional Buildbot machines,
   - GitHub Actions runners,
