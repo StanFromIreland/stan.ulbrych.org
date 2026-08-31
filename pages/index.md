@@ -13,7 +13,7 @@ I am also a [Python Software Foundation](https://www.python.org/psf-landing/)
 and [Sovereign Tech Agency](https://www.sovereign.tech/programs/fellowship) fellow.
 
 You can find me under `@StanFromIreland` on [GitHub](https://github.com/StanFromIreland)
-and [Mastodon](https://mastodon.social/@stanfromireland).
+and [Mastodon](https://mastodon.social/@stanfromireland), or reach me by [email](/contact/).
 
 <!-- For verification on Mastodon -->
 <a rel="me" href="https://mastodon.social/@stanfromireland"></a>
