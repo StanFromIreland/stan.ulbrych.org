@@ -5,25 +5,34 @@
 .. type: text
 -->
 
-<br/>
+An assorted collection of quotes (and maxims) that I personally like.
 
 > Strive not to be a success, but rather to be of value.
 > 
 > — Albert Einstein
 
-<br/>
+<!-- -->
 
 > Everything has beauty, but not everyone can see.
 > 
 > — Confucius
 
-<br/>
+<!-- -->
 
 > The only thing I know is that I know nothing.
 > 
 > — Socrates
 
-<br/>
+<!-- -->
+
+> Let everything happen to you<br/>
+> Beauty and terror<br/>
+> Just keep going<br/>
+> No feeling is final<br/>
+>
+> — Rainer Maria Rilke
+
+<!-- -->
 
 > De gustibus non est disputandum.
 > 
