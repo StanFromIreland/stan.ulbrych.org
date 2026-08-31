@@ -589,7 +589,8 @@ INDEX_PATH = "blog"
 # Optional HTML that displayed on “main” blog index.html files.
 # May be used for a greeting. (translatable)
 FRONT_INDEX_HEADER = {
-    DEFAULT_LANG: ''
+    DEFAULT_LANG: '<p class="front-note">I also occasionally write posts on the '
+                  '<a href="https://blog.python.org/">Python Insider</a> blog.</p>'
 }
 
 # Create per-month archives instead of per-year

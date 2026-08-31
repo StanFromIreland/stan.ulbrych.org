@@ -16,3 +16,18 @@
     clip: rect(0, 0, 0, 0);
     border: 0;
 }
+
+/* Note above the blog post list, with a short green rule below it. */
+.front-note {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.front-note::after {
+    content: "";
+    display: block;
+    width: 10rem;
+    height: 2px;
+    margin: 1.25rem auto 0;
+    background-color: #90a959;
+}
